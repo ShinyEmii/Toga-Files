@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x00007dcd Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 250 Name Offset: 0x00000205
-Export Count: 120 Export Offset: 0x0000229d
-Import Count: 53 Import Offset: 0x00001cd1
-Depends Offset: 0x0000445d
-Import Export Guids Offset: 0x0000445d
+Name Count: 251 Name Offset: 0x00000211
+Export Count: 120 Export Offset: 0x000022c5
+Import Count: 53 Import Offset: 0x00001cf9
+Depends Offset: 0x00004485
+Import Export Guids Offset: 0x00004485
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x1b0c8044 0x479cfb97 0xd6e8b286 0x88d3cd3b
+GUID: 0x7bda2bdd 0x42b7fe65 0x0c70b284 0xccd3bd51
 Generations:
 [0]
 	Export Count: 112
@@ -127,6 +127,10 @@ Generations:
 	Export Count: 120
 	Name Count: 250
 	Net Object Count: 0
+[27]
+	Export Count: 120
+	Name Count: 251
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression Flags: 0x00000001
@@ -154,10 +158,10 @@ Texture Allocations Texture Types:
 	Tex Create Flags: 1
 	Export Indices:
 	[0] 96
-Test Data Size: 0x00003864
-Compressed Chunk Info Offset: 0x00004258
-Last Block Size: 0x00000008
-Base Header Size: 0x00000205
+Test Data Size: 0x00003824
+Compressed Chunk Info Offset: 0x00004274
+Last Block Size: 0x0000000c
+Base Header Size: 0x00000211
 
 AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
 
@@ -415,6 +419,7 @@ AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
 [247] Vehicle_Parent_MaterialFunctions
 [248] Use_UV2
 [249] PaintMask_MaskedByAlpha
+[250] IncludePaintIDs
 
 
     ~ Exports ~ 
@@ -821,21 +826,21 @@ AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
 	Class: MaterialInstanceConstant
 	Outer: Package Body_Force
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000131fe8 with 0x00000916 Bytes
+	Serialized data: at 0x0000000000132010 with 0x00000916 Bytes
 	Export Flags: 0x00000001
 [67]
 	Name: Force_ShapeShifter_MIC
 	Class: MaterialInstanceConstant
 	Outer: Package skin_force_shapeshifter
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000001328fe with 0x000009ce Bytes
+	Serialized data: at 0x0000000000132926 with 0x000009ce Bytes
 	Export Flags: 0x00000001
 [68]
 	Name: Force_ShapeShifter_Paintable_MIC
 	Class: MaterialInstanceConstant
 	Outer: Package skin_force_shapeshifter
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000001332cc with 0x000009ce Bytes
+	Serialized data: at 0x00000000001332f4 with 0x000009ce Bytes
 	Export Flags: 0x00000001
 [69]
 	Name: None
@@ -853,7 +858,7 @@ AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000000b897 with 0x0000002c Bytes
+	Serialized data: at 0x000000000000b8bf with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [72]
 	Name: None
@@ -865,7 +870,7 @@ AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
 	Name: Body_Force
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000b8cf with 0x0000000c Bytes
+	Serialized data: at 0x000000000000b8f7 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -873,7 +878,7 @@ AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
 	Name: Body_Force_Textures
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000b8db with 0x0000000c Bytes
+	Serialized data: at 0x000000000000b903 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -941,7 +946,7 @@ AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
 	Name: skin_force_shapeshifter
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000b95f with 0x0000000c Bytes
+	Serialized data: at 0x000000000000b987 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -949,7 +954,7 @@ AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
 	Name: skin_force_shapeshifter_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000b96b with 0x0000000c Bytes
+	Serialized data: at 0x000000000000b993 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -983,14 +988,14 @@ AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
 	Outer: Package skin_force_shapeshifter
 	Archetype: ProductAsset_Skin_TA_0
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000012fabc with 0x00000064 Bytes
+	Serialized data: at 0x000000000012fae4 with 0x00000064 Bytes
 	Export Flags: 0x00000001
 [92]
 	Name: ProductAttribute_PaintSettings_TA_0
 	Class: ProductAttribute_PaintSettings_TA
 	Outer: ProductAsset_Skin_TA skin_force_shapeshifter
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000ba27 with 0x000000a4 Bytes
+	Serialized data: at 0x0000000000133cc2 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [93]
 	Name: None
@@ -1015,21 +1020,21 @@ AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
 	Class: Texture2D
 	Outer: Package Body_Force_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000d4f2 with 0x00000d10 Bytes
+	Serialized data: at 0x000000000000d51a with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [97]
 	Name: Force_Body_BlankSkin
 	Class: Texture2D
 	Outer: Package Body_Force_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000e202 with 0x000017c8 Bytes
+	Serialized data: at 0x000000000000e22a with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [98]
 	Name: Force_Body_D
 	Class: Texture2D
 	Outer: Package Body_Force_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000f9ca with 0x000017c8 Bytes
+	Serialized data: at 0x000000000000f9f2 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [99]
 	Name: None
@@ -1078,7 +1083,7 @@ AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
 	Class: Texture2D
 	Outer: Package skin_force_shapeshifter
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000197d6 with 0x000017c8 Bytes
+	Serialized data: at 0x00000000000197fe with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [107]
 	Name: None

@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x00008a9d Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 305 Name Offset: 0x00000231
-Export Count: 149 Export Offset: 0x00002959
-Import Count: 60 Import Offset: 0x000022c9
-Depends Offset: 0x00005341
-Import Export Guids Offset: 0x00005341
+Name Count: 306 Name Offset: 0x0000023d
+Export Count: 149 Export Offset: 0x00002981
+Import Count: 60 Import Offset: 0x000022f1
+Depends Offset: 0x00005369
+Import Export Guids Offset: 0x00005369
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x131960ae 0x4e904998 0xa015e483 0x378f91f3
+GUID: 0x43581db5 0x4a5ed033 0xc37e748c 0xe948f389
 Generations:
 [0]
 	Export Count: 138
@@ -127,6 +127,10 @@ Generations:
 	Export Count: 149
 	Name Count: 305
 	Net Object Count: 0
+[27]
+	Export Count: 149
+	Name Count: 306
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression Flags: 0x00000001
@@ -166,10 +170,10 @@ Texture Allocations Texture Types:
 	[0] 116
 	[1] 118
 	[2] 120
-Test Data Size: 0x00003680
-Compressed Chunk Info Offset: 0x00005110
-Last Block Size: 0x0000000c
-Base Header Size: 0x00000231
+Test Data Size: 0x00003640
+Compressed Chunk Info Offset: 0x0000512c
+Last Block Size: 0x00000000
+Base Header Size: 0x0000023d
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -482,6 +486,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [302] TextureCube
 [303] RawLights
 [304] PaintMask_MaskedByAlpha
+[305] IncludePaintIDs
 
 
     ~ Exports ~ 
@@ -492,14 +497,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Material
 	Outer: Package body_scallop
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000f98da with 0x000004d3 Bytes
+	Serialized data: at 0x00000000000f9902 with 0x000004d3 Bytes
 	Export Flags: 0x00000001
 [1]
 	Name: MasterChassis_GoodENV_MAT
 	Class: Material
 	Outer: Package Chassis_01
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000fbf71 with 0x0000044e Bytes
+	Serialized data: at 0x00000000000fbf99 with 0x0000044e Bytes
 	Export Flags: 0x00000001
 [2]
 	Name: None
@@ -512,35 +517,35 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MasterChassis_GoodENV_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000066c2 with 0x000000c6 Bytes
+	Serialized data: at 0x00000000000066ea with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [4]
 	Name: MaterialExpressionScalarParameter_1
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MasterChassis_GoodENV_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006788 with 0x00000098 Bytes
+	Serialized data: at 0x00000000000067b0 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [5]
 	Name: MaterialExpressionScalarParameter_2
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MasterChassis_GoodENV_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006820 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000006848 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [6]
 	Name: MaterialExpressionScalarParameter_3
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MasterChassis_GoodENV_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000068d4 with 0x000000b4 Bytes
+	Serialized data: at 0x00000000000068fc with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [7]
 	Name: MaterialExpressionScalarParameter_9
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MasterChassis_GoodENV_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006988 with 0x000000c6 Bytes
+	Serialized data: at 0x00000000000069b0 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [8]
 	Name: None
@@ -577,7 +582,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MasterChassis_GoodENV_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006d92 with 0x00000100 Bytes
+	Serialized data: at 0x0000000000006dba with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [14]
 	Name: None
@@ -782,21 +787,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MasterChassis_GoodENV_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000009622 with 0x000000d6 Bytes
+	Serialized data: at 0x000000000000964a with 0x000000d6 Bytes
 	Export Flags: 0x00000001
 [48]
 	Name: MaterialExpressionTextureSampleParameter2D_1
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MasterChassis_GoodENV_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000096f8 with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000009720 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [49]
 	Name: MaterialExpressionTextureSampleParameter2D_2
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MasterChassis_GoodENV_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000fa1db with 0x000000cd Bytes
+	Serialized data: at 0x00000000000fa203 with 0x000000cd Bytes
 	Export Flags: 0x00000001
 [50]
 	Name: None
@@ -893,21 +898,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MasterChassis_GoodENV_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a475 with 0x000000c8 Bytes
+	Serialized data: at 0x000000000000a49d with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [66]
 	Name: MaterialExpressionVectorParameter_1
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MasterChassis_GoodENV_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a53d with 0x000000c8 Bytes
+	Serialized data: at 0x000000000000a565 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [67]
 	Name: MaterialExpressionVectorParameter_2
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MasterChassis_GoodENV_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a605 with 0x000000c8 Bytes
+	Serialized data: at 0x000000000000a62d with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [68]
 	Name: None
@@ -980,7 +985,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialFunction
 	Outer: Package Psy_MaterialFunctions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000b0f2 with 0x00000124 Bytes
+	Serialized data: at 0x000000000000b11a with 0x00000124 Bytes
 	Export Flags: 0x00000001
 [80]
 	Name: None
@@ -993,21 +998,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialInstanceConstant
 	Outer: Package body_flatbread
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000fc3bf with 0x00000679 Bytes
+	Serialized data: at 0x00000000000fc3e7 with 0x00000679 Bytes
 	Export Flags: 0x00000001
 [82]
 	Name: MIC_Flatbread_Daemon
 	Class: MaterialInstanceConstant
 	Outer: Package skin_Flatbread_daemon
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000fe333 with 0x00000a3a Bytes
+	Serialized data: at 0x00000000000fe35b with 0x00000a3a Bytes
 	Export Flags: 0x00000001
 [83]
 	Name: MIC_Flatbread_Daemon_Painted
 	Class: MaterialInstanceConstant
 	Outer: Package skin_Flatbread_daemon
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000fed6d with 0x00000a3a Bytes
+	Serialized data: at 0x00000000000fed95 with 0x00000a3a Bytes
 	Export Flags: 0x00000001
 [84]
 	Name: None
@@ -1019,7 +1024,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000000cdd8 with 0x0000002c Bytes
+	Serialized data: at 0x000000000000ce00 with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [86]
 	Name: None
@@ -1031,7 +1036,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Body_Darkcar
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000ce10 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000ce38 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1039,7 +1044,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: body_flatbread
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000ce1c with 0x0000000c Bytes
+	Serialized data: at 0x000000000000ce44 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1071,7 +1076,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: body_scallop
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000ce58 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000ce80 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1079,7 +1084,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Chassis_01
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000ce64 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000ce8c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
@@ -1111,7 +1116,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: NEO_Stadium_Materials
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000cea0 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000cec8 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1120,7 +1125,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package NEO_Stadium_Materials
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000ceac with 0x0000000c Bytes
+	Serialized data: at 0x000000000000ced4 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [101]
 	Name: None
@@ -1132,7 +1137,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Psy_MaterialFunctions
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000cec4 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000ceec with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1140,7 +1145,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: skin_Flatbread_daemon
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000ced0 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000cef8 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1148,7 +1153,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: skin_Flatbread_daemon_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000cedc with 0x0000000c Bytes
+	Serialized data: at 0x000000000000cf04 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -1188,21 +1193,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: Package skin_Flatbread_daemon
 	Archetype: ProductAsset_Skin_TA_0
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000fbcf5 with 0x0000027c Bytes
+	Serialized data: at 0x00000000000fbd1d with 0x0000027c Bytes
 	Export Flags: 0x00000001
 [111]
 	Name: ProductAssetReferenceBody_TA_205
 	Class: ProductAssetReferenceBody_TA
 	Outer: ProductAsset_Skin_TA skin_Flatbread_daemon
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000000d1bc with 0x00000028 Bytes
+	Serialized data: at 0x000000000000d1e4 with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [112]
 	Name: ProductAttribute_PaintSettings_TA_131
 	Class: ProductAttribute_PaintSettings_TA
 	Outer: ProductAsset_Skin_TA skin_Flatbread_daemon
 	Object Flags: 0x0007010000000000
-	Serialized data: at 0x000000000000d1e4 with 0x000000a4 Bytes
+	Serialized data: at 0x00000000000ff7cf with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [113]
 	Name: None
@@ -1227,49 +1232,49 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package Body_Darkcar
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000ecaf with 0x00000d2c Bytes
+	Serialized data: at 0x000000000000ecd7 with 0x00000d2c Bytes
 	Export Flags: 0x00000001
 [117]
 	Name: Darkcar_Chassis_RGB
 	Class: Texture2D
 	Outer: Package Body_Darkcar
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000f9db with 0x000017c8 Bytes
+	Serialized data: at 0x000000000000fa03 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [118]
 	Name: Flatbread_Body_Curv
 	Class: Texture2D
 	Outer: Package body_flatbread
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000111a3 with 0x00000d10 Bytes
+	Serialized data: at 0x00000000000111cb with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [119]
 	Name: Flatbread_Body_D
 	Class: Texture2D
 	Outer: Package body_flatbread
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000011eb3 with 0x000017c8 Bytes
+	Serialized data: at 0x0000000000011edb with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [120]
 	Name: Flatbread_Chasis_D
 	Class: Texture2D
 	Outer: Package body_flatbread
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001367b with 0x00000d10 Bytes
+	Serialized data: at 0x00000000000136a3 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [121]
 	Name: Flatbread_Chasis_N
 	Class: Texture2D
 	Outer: Package body_flatbread
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001438b with 0x00001885 Bytes
+	Serialized data: at 0x00000000000143b3 with 0x00001885 Bytes
 	Export Flags: 0x00000001
 [122]
 	Name: Flatbread_Chasis_RGB
 	Class: Texture2D
 	Outer: Package body_flatbread
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000015c10 with 0x000017c8 Bytes
+	Serialized data: at 0x0000000000015c38 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [123]
 	Name: None
@@ -1318,14 +1323,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000208bc with 0x00001885 Bytes
+	Serialized data: at 0x00000000000208e4 with 0x00001885 Bytes
 	Export Flags: 0x00000001
 [131]
 	Name: Flatbread_Body_Daemon
 	Class: Texture2D
 	Outer: Package skin_Flatbread_daemon
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000022141 with 0x000017c8 Bytes
+	Serialized data: at 0x0000000000022169 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [132]
 	Name: None
@@ -1416,21 +1421,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MasterChassis_GoodENV_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000fde2c with 0x000001ad Bytes
+	Serialized data: at 0x00000000000fde54 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [147]
 	Name: MaterialExpressionStaticSwitchParameter_6
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MasterChassis_GoodENV_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000fdfd9 with 0x000001ad Bytes
+	Serialized data: at 0x00000000000fe001 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [148]
 	Name: MaterialExpressionStaticSwitchParameter_8
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MasterChassis_GoodENV_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000fe186 with 0x000001ad Bytes
+	Serialized data: at 0x00000000000fe1ae with 0x000001ad Bytes
 	Export Flags: 0x00000001
 
 

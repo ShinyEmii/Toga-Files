@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x00008a2d Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 296 Name Offset: 0x00000241
-Export Count: 146 Export Offset: 0x000027ce
-Import Count: 56 Import Offset: 0x000021ae
-Depends Offset: 0x000050de
-Import Export Guids Offset: 0x000050de
+Name Count: 297 Name Offset: 0x0000024d
+Export Count: 146 Export Offset: 0x000027f6
+Import Count: 56 Import Offset: 0x000021d6
+Depends Offset: 0x00005106
+Import Export Guids Offset: 0x00005106
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x0a91ebe2 0x4414d16d 0xed37fa9f 0x1b519ccd
+GUID: 0x022aeee7 0x4cf1c232 0x7ad71b98 0x46fb0fa7
 Generations:
 [0]
 	Export Count: 138
@@ -127,6 +127,10 @@ Generations:
 	Export Count: 146
 	Name Count: 296
 	Net Object Count: 0
+[27]
+	Export Count: 146
+	Name Count: 297
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression Flags: 0x00000001
@@ -171,10 +175,10 @@ Texture Allocations Texture Types:
 	Tex Create Flags: 1
 	Export Indices:
 	[0] 121
-Test Data Size: 0x00003813
-Compressed Chunk Info Offset: 0x00004e9d
-Last Block Size: 0x0000000c
-Base Header Size: 0x00000241
+Test Data Size: 0x000037d3
+Compressed Chunk Info Offset: 0x00004eb9
+Last Block Size: 0x00000000
+Base Header Size: 0x0000024d
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -478,6 +482,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [293] Vehicle_Parent_MaterialFunctions
 [294] Use_UV2
 [295] PaintMask_MaskedByAlpha
+[296] IncludePaintIDs
 
 
     ~ Exports ~ 
@@ -956,28 +961,28 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialInstanceConstant
 	Outer: Package Body_Orion
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000055a57c with 0x00000cae Bytes
+	Serialized data: at 0x000000000055a5a4 with 0x00000cae Bytes
 	Export Flags: 0x00000001
 [79]
 	Name: OrionChassis_MIC
 	Class: MaterialInstanceConstant
 	Outer: Package Body_Orion
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000554510 with 0x00000378 Bytes
+	Serialized data: at 0x0000000000554538 with 0x00000378 Bytes
 	Export Flags: 0x00000001
 [80]
 	Name: MIC_Orion_Shaperacer
 	Class: MaterialInstanceConstant
 	Outer: Package Skin_Orion_Shaperacer
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000558f28 with 0x00000bb2 Bytes
+	Serialized data: at 0x0000000000558f50 with 0x00000bb2 Bytes
 	Export Flags: 0x00000001
 [81]
 	Name: MIC_Orion_Shaperacer_Paintable
 	Class: MaterialInstanceConstant
 	Outer: Package Skin_Orion_Shaperacer
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000559ada with 0x00000aa2 Bytes
+	Serialized data: at 0x0000000000559b02 with 0x00000aa2 Bytes
 	Export Flags: 0x00000001
 [82]
 	Name: None
@@ -989,7 +994,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000000d00b with 0x0000002c Bytes
+	Serialized data: at 0x000000000000d033 with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [84]
 	Name: None
@@ -1019,7 +1024,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Body_Orion
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000d067 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000d08f with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1027,7 +1032,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Body_Orion_Textures
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000d073 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000d09b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1107,7 +1112,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Skin_Orion_Shaperacer
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000d10f with 0x0000000c Bytes
+	Serialized data: at 0x000000000000d137 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1115,7 +1120,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Skin_Orion_Shaperacer_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000d11b with 0x0000000c Bytes
+	Serialized data: at 0x000000000000d143 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -1149,21 +1154,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: Package Skin_Orion_Shaperacer
 	Archetype: ProductAsset_Skin_TA_0
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000555e5c with 0x000001dc Bytes
+	Serialized data: at 0x0000000000555e84 with 0x000001dc Bytes
 	Export Flags: 0x00000001
 [109]
 	Name: ProductAssetReferenceBody_TA_474
 	Class: ProductAssetReferenceBody_TA
 	Outer: ProductAsset_Skin_TA Skin_Orion_Shaperacer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000000d34f with 0x00000028 Bytes
+	Serialized data: at 0x000000000000d377 with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [110]
 	Name: ProductAttribute_PaintSettings_TA_226
 	Class: ProductAttribute_PaintSettings_TA
 	Outer: ProductAsset_Skin_TA Skin_Orion_Shaperacer
 	Object Flags: 0x0007010000000000
-	Serialized data: at 0x000000000000d377 with 0x000000a4 Bytes
+	Serialized data: at 0x000000000055b252 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [111]
 	Name: None
@@ -1224,42 +1229,42 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package Body_Orion_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000016917 with 0x00000d10 Bytes
+	Serialized data: at 0x000000000001693f with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [121]
 	Name: Orion_Body_BlankSkin
 	Class: Texture2D
 	Outer: Package Body_Orion_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000017627 with 0x00400144 Bytes
+	Serialized data: at 0x000000000001764f with 0x00400144 Bytes
 	Export Flags: 0x00000001
 [122]
 	Name: Orion_Body_D
 	Class: Texture2D
 	Outer: Package Body_Orion_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000041776b with 0x000017c8 Bytes
+	Serialized data: at 0x0000000000417793 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [123]
 	Name: Orion_Mask
 	Class: Texture2D
 	Outer: Package Body_Orion_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000418f33 with 0x000017c8 Bytes
+	Serialized data: at 0x0000000000418f5b with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [124]
 	Name: Orion_Parts_D
 	Class: Texture2D
 	Outer: Package Body_Orion_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000041a6fb with 0x00000d2c Bytes
+	Serialized data: at 0x000000000041a723 with 0x00000d2c Bytes
 	Export Flags: 0x00000001
 [125]
 	Name: Orion_Parts_N
 	Class: Texture2D
 	Outer: Package Body_Orion_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000041b427 with 0x00001885 Bytes
+	Serialized data: at 0x000000000041b44f with 0x00001885 Bytes
 	Export Flags: 0x00000001
 [126]
 	Name: None
@@ -1302,7 +1307,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package Skin_Orion_Shaperacer
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000478536 with 0x000017c8 Bytes
+	Serialized data: at 0x000000000047855e with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [133]
 	Name: None

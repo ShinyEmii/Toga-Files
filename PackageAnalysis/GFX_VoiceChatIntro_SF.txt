@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x00004ab9 Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 59 Name Offset: 0x0000016d
-Export Count: 9 Export Offset: 0x0000084e
-Import Count: 9 Import Offset: 0x00000752
-Depends Offset: 0x00000ad6
-Import Export Guids Offset: 0x00000ad6
+Name Count: 64 Name Offset: 0x00000179
+Export Count: 14 Export Offset: 0x000008f2
+Import Count: 9 Import Offset: 0x000007f6
+Depends Offset: 0x00000ce2
+Import Export Guids Offset: 0x00000ce2
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0xc9973e19 0x42f0de9a 0x5683c3b5 0xe44abdc2
+GUID: 0xd5c0ba96 0x4de24f90 0x76fa0788 0x84d44e63
 Generations:
 [0]
 	Export Count: 9
@@ -51,6 +51,10 @@ Generations:
 	Export Count: 9
 	Name Count: 59
 	Net Object Count: 0
+[8]
+	Export Count: 14
+	Name Count: 64
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression Flags: 0x00000001
@@ -61,13 +65,13 @@ Additional Packages To Cook:
 	Empty
 Texture Allocations Texture Types:
 [0]
-	Size X: 16
-	Size Y: 92
+	Size X: 512
+	Size Y: 64
 	Num Mips: 1
 	Format: 7
 	Tex Create Flags: 0
 	Export Indices:
-	[0] 4
+	[0] 9
 [1]
 	Size X: 16
 	Size Y: 40
@@ -75,23 +79,23 @@ Texture Allocations Texture Types:
 	Format: 7
 	Tex Create Flags: 0
 	Export Indices:
-	[0] 5
+	[0] 10
 [2]
+	Size X: 16
+	Size Y: 92
+	Num Mips: 1
+	Format: 7
+	Tex Create Flags: 0
+	Export Indices:
+	[0] 11
+[3]
 	Size X: 128
 	Size Y: 128
 	Num Mips: 1
 	Format: 7
 	Tex Create Flags: 0
 	Export Indices:
-	[0] 6
-[3]
-	Size X: 512
-	Size Y: 64
-	Num Mips: 1
-	Format: 7
-	Tex Create Flags: 0
-	Export Indices:
-	[0] 7
+	[0] 12
 [4]
 	Size X: 1200
 	Size Y: 340
@@ -99,11 +103,11 @@ Texture Allocations Texture Types:
 	Format: 7
 	Tex Create Flags: 0
 	Export Indices:
-	[0] 8
-Test Data Size: 0x00003f97
-Compressed Chunk Info Offset: 0x00000969
-Last Block Size: 0x0000000c
-Base Header Size: 0x0000016d
+	[0] 13
+Test Data Size: 0x00003d73
+Compressed Chunk Info Offset: 0x00000b69
+Last Block Size: 0x00000000
+Base Header Size: 0x00000179
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -170,6 +174,11 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [56] Textures7
 [57] TMGS_NoMipmaps
 [58] VoiceChatIntro
+[59] VoiceChatIntro_I1
+[60] VoiceChatIntro_I11
+[61] VoiceChatIntro_I12
+[62] VoiceChatIntro_IC
+[63] VoiceChatIntro_ID
 
 
     ~ Exports ~ 
@@ -179,13 +188,13 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000222d52 with 0x00000040 Bytes
+	Serialized data: at 0x0000000000222f9e with 0x00000040 Bytes
 	Export Flags: 0x00000000
 [1]
 	Name: GFX_VoiceChatIntro
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000000b16 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000000d22 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -193,7 +202,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: GFX_VoiceChatIntro_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000000b22 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000000d2e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -202,42 +211,72 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SwfMovie
 	Outer: Package GFX_VoiceChatIntro
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000148882 with 0x000da4d0 Bytes
+	Serialized data: at 0x0000000000222fde with 0x00000ac1 Bytes
 	Export Flags: 0x00000001
 [4]
-	Name: GradientFadeOverlayBottom
-	Class: Texture2D
-	Outer: Package GFX_VoiceChatIntro
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000d7f16 with 0x0000073e Bytes
-	Export Flags: 0x00000001
+	Name: None
+	Class: Class
+	Object Flags: 0x0000000000000000
+	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
+	Export Flags: 0x00000000
 [5]
-	Name: GradientFadeOverlayTop
-	Class: Texture2D
-	Outer: Package GFX_VoiceChatIntro
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000d8654 with 0x000003fe Bytes
-	Export Flags: 0x00000001
+	Name: None
+	Class: Class
+	Object Flags: 0x0000000000000000
+	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
+	Export Flags: 0x00000000
 [6]
-	Name: Icon_VoiceChat
-	Class: Texture2D
-	Outer: Package GFX_VoiceChatIntro
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000d8a52 with 0x00004179 Bytes
-	Export Flags: 0x00000001
+	Name: None
+	Class: Class
+	Object Flags: 0x0000000000000000
+	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
+	Export Flags: 0x00000000
 [7]
-	Name: KeyConversionStrip
-	Class: Texture2D
-	Outer: Package GFX_VoiceChatIntro
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000dcbcb with 0x00008179 Bytes
-	Export Flags: 0x00000001
+	Name: None
+	Class: Class
+	Object Flags: 0x0000000000000000
+	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
+	Export Flags: 0x00000000
 [8]
-	Name: LensFlare
+	Name: None
+	Class: Class
+	Object Flags: 0x0000000000000000
+	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
+	Export Flags: 0x00000000
+[9]
+	Name: VoiceChatIntro_I1
 	Class: Texture2D
 	Outer: Package GFX_VoiceChatIntro
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000e4d44 with 0x00063b3e Bytes
+	Serialized data: at 0x0000000000223a9f with 0x00008179 Bytes
+	Export Flags: 0x00000001
+[10]
+	Name: VoiceChatIntro_I11
+	Class: Texture2D
+	Outer: Package GFX_VoiceChatIntro
+	Object Flags: 0x0007000400000000
+	Serialized data: at 0x000000000022bc18 with 0x000003fe Bytes
+	Export Flags: 0x00000001
+[11]
+	Name: VoiceChatIntro_I12
+	Class: Texture2D
+	Outer: Package GFX_VoiceChatIntro
+	Object Flags: 0x0007000400000000
+	Serialized data: at 0x000000000022c016 with 0x0000073e Bytes
+	Export Flags: 0x00000001
+[12]
+	Name: VoiceChatIntro_IC
+	Class: Texture2D
+	Outer: Package GFX_VoiceChatIntro
+	Object Flags: 0x0007000400000000
+	Serialized data: at 0x000000000022c754 with 0x00004179 Bytes
+	Export Flags: 0x00000001
+[13]
+	Name: VoiceChatIntro_ID
+	Class: Texture2D
+	Outer: Package GFX_VoiceChatIntro
+	Object Flags: 0x0007000400000000
+	Serialized data: at 0x00000000002308cd with 0x00063b3e Bytes
 	Export Flags: 0x00000001
 
 

@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x00007ec5 Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 253 Name Offset: 0x0000020d
-Export Count: 122 Export Offset: 0x000022fe
-Import Count: 53 Import Offset: 0x00001d32
-Depends Offset: 0x0000454e
-Import Export Guids Offset: 0x0000454e
+Name Count: 254 Name Offset: 0x00000219
+Export Count: 122 Export Offset: 0x00002326
+Import Count: 53 Import Offset: 0x00001d5a
+Depends Offset: 0x00004576
+Import Export Guids Offset: 0x00004576
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0xea8cab31 0x40092179 0xb3b1d19d 0xc99d1c14
+GUID: 0xf41c35ee 0x4e5a1ccf 0x51ebe184 0x5b235361
 Generations:
 [0]
 	Export Count: 114
@@ -127,6 +127,10 @@ Generations:
 	Export Count: 122
 	Name Count: 253
 	Net Object Count: 0
+[27]
+	Export Count: 122
+	Name Count: 254
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression Flags: 0x00000001
@@ -156,10 +160,10 @@ Texture Allocations Texture Types:
 	Export Indices:
 	[0] 97
 	[1] 98
-Test Data Size: 0x0000386b
-Compressed Chunk Info Offset: 0x00004341
-Last Block Size: 0x00000008
-Base Header Size: 0x0000020d
+Test Data Size: 0x0000382b
+Compressed Chunk Info Offset: 0x0000435d
+Last Block Size: 0x0000000c
+Base Header Size: 0x00000219
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -420,6 +424,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [250] Vehicle_Parent_MaterialFunctions
 [251] Use_UV2
 [252] PaintMask_MaskedByAlpha
+[253] IncludePaintIDs
 
 
     ~ Exports ~ 
@@ -826,21 +831,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialInstanceConstant
 	Outer: Package Body_Force
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000135a01 with 0x00000916 Bytes
+	Serialized data: at 0x0000000000135a29 with 0x00000916 Bytes
 	Export Flags: 0x00000001
 [67]
 	Name: MIC_Body_backfire_hologram
 	Class: MaterialInstanceConstant
 	Outer: Package skin_backfire_hologram
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000136317 with 0x00000a42 Bytes
+	Serialized data: at 0x000000000013633f with 0x00000a42 Bytes
 	Export Flags: 0x00000001
 [68]
 	Name: MIC_Body_backfire_hologram_Paintable
 	Class: MaterialInstanceConstant
 	Outer: Package skin_backfire_hologram
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000136d59 with 0x00000a42 Bytes
+	Serialized data: at 0x0000000000136d81 with 0x00000a42 Bytes
 	Export Flags: 0x00000001
 [69]
 	Name: None
@@ -858,13 +863,13 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000000ba70 with 0x0000002c Bytes
+	Serialized data: at 0x000000000000ba98 with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [72]
 	Name: Body_Backfire_Textures
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000ba9c with 0x0000000c Bytes
+	Serialized data: at 0x000000000000bac4 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -872,7 +877,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Body_Force
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000baa8 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000bad0 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -880,7 +885,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Body_Force_Textures
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000bab4 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000badc with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -948,7 +953,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: skin_backfire_hologram
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000bb38 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000bb60 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -956,7 +961,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: skin_backfire_hologram_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000bb44 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000bb6c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -990,14 +995,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: Package skin_backfire_hologram
 	Archetype: ProductAsset_Skin_TA_0
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000001326dd with 0x00000064 Bytes
+	Serialized data: at 0x0000000000132705 with 0x00000064 Bytes
 	Export Flags: 0x00000001
 [92]
 	Name: ProductAttribute_PaintSettings_TA_0
 	Class: ProductAttribute_PaintSettings_TA
 	Outer: ProductAsset_Skin_TA skin_backfire_hologram
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000bc00 with 0x000000a4 Bytes
+	Serialized data: at 0x00000000001377c3 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [93]
 	Name: None
@@ -1016,7 +1021,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package Body_Backfire_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000be46 with 0x000017c8 Bytes
+	Serialized data: at 0x000000000000be6e with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [96]
 	Name: None
@@ -1029,28 +1034,28 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package Body_Backfire_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000132741 with 0x00000d10 Bytes
+	Serialized data: at 0x0000000000132769 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [98]
 	Name: Body_Force_Curvature
 	Class: Texture2D
 	Outer: Package Body_Force_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000fba3 with 0x00000d10 Bytes
+	Serialized data: at 0x000000000000fbcb with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [99]
 	Name: Force_Body_BlankSkin
 	Class: Texture2D
 	Outer: Package Body_Force_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000108b3 with 0x000017c8 Bytes
+	Serialized data: at 0x00000000000108db with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [100]
 	Name: Force_Body_D
 	Class: Texture2D
 	Outer: Package Body_Force_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001207b with 0x000017c8 Bytes
+	Serialized data: at 0x00000000000120a3 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [101]
 	Name: None
@@ -1099,7 +1104,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package skin_backfire_hologram
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001be87 with 0x000017c8 Bytes
+	Serialized data: at 0x000000000001beaf with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [109]
 	Name: None

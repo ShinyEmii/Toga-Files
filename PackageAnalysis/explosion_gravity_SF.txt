@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x0000b369 Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 524 Name Offset: 0x00000271
-Export Count: 185 Export Offset: 0x0000440b
-Import Count: 90 Import Offset: 0x00003a33
-Depends Offset: 0x00007813
-Import Export Guids Offset: 0x00007813
+Name Count: 525 Name Offset: 0x0000027d
+Export Count: 185 Export Offset: 0x00004433
+Import Count: 90 Import Offset: 0x00003a5b
+Depends Offset: 0x0000783b
+Import Export Guids Offset: 0x0000783b
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0xe4367a80 0x436078e7 0x1009f59c 0x6978ad3a
+GUID: 0xa888c817 0x46b5903f 0x080a31a8 0x99f6af66
 Generations:
 [0]
 	Export Count: 183
@@ -135,6 +135,10 @@ Generations:
 	Export Count: 185
 	Name Count: 524
 	Net Object Count: 0
+[29]
+	Export Count: 185
+	Name Count: 525
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression Flags: 0x00000001
@@ -186,10 +190,10 @@ Texture Allocations Texture Types:
 	Tex Create Flags: 1
 	Export Indices:
 	[0] 182
-Test Data Size: 0x00003aaa
-Compressed Chunk Info Offset: 0x000075a2
-Last Block Size: 0x00000008
-Base Header Size: 0x00000271
+Test Data Size: 0x00003a6a
+Compressed Chunk Info Offset: 0x000075be
+Last Block Size: 0x0000000c
+Base Header Size: 0x0000027d
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -721,6 +725,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [521] OverrideAttachLocationOffset
 [522] OverrideAttachRotationOffset
 [523] Rotator
+[524] IncludePaintIDs
 
 
     ~ Exports ~ 
@@ -731,28 +736,28 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: AkBank
 	Outer: Package SFX_GoalExplosions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000007813 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000783b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [1]
 	Name: AkPlaySoundComponent_0
 	Class: AkPlaySoundComponent
 	Outer: FXActor_TA explosion_GravityFX
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000000781f with 0x0000005e Bytes
+	Serialized data: at 0x0000000000007847 with 0x0000005e Bytes
 	Export Flags: 0x00000001
 [2]
 	Name: GoalExplosion_Gravity
 	Class: AkSoundCue
 	Outer: Package SFX_GoalExplosions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000787d with 0x0000005f Bytes
+	Serialized data: at 0x00000000000078a5 with 0x0000005f Bytes
 	Export Flags: 0x00000001
 [3]
 	Name: AnimateParametersComponent_X_1
 	Class: AnimateParametersComponent_X
 	Outer: FXActor_TA explosion_GravityFX
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x00000000000078dc with 0x000004b4 Bytes
+	Serialized data: at 0x0000000000007904 with 0x000004b4 Bytes
 	Export Flags: 0x00000001
 [4]
 	Name: None
@@ -765,413 +770,413 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ApplyVelocityHitHandler_TA
 	Outer: ProductAsset_GoalExplosion_TA explosion_gravity
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000007d9c with 0x00000055 Bytes
+	Serialized data: at 0x0000000000007dc4 with 0x00000055 Bytes
 	Export Flags: 0x00000001
 [6]
 	Name: AudioStateComponent_TA_0
 	Class: AudioStateComponent_TA
 	Outer: FXActor_TA explosion_GravityFX
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000007df1 with 0x00000089 Bytes
+	Serialized data: at 0x0000000000007e19 with 0x00000089 Bytes
 	Export Flags: 0x00000001
 [7]
 	Name: BallLocationComponent_TA_2
 	Class: BallLocationComponent_TA
 	Outer: FXActor_TA explosion_GravityFX
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000007e7a with 0x0000002c Bytes
+	Serialized data: at 0x0000000000007ea2 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [8]
 	Name: Explosion_Large_CameraShake
 	Class: CameraShake
 	Outer: Package Explosion
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x0000000000007ea6 with 0x000002d4 Bytes
+	Serialized data: at 0x0000000000007ece with 0x000002d4 Bytes
 	Export Flags: 0x00000001
 [9]
 	Name: DistributionFloatParticleParameter_0
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic ParticleModuleParameterDynamic_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000817a with 0x00000071 Bytes
+	Serialized data: at 0x00000000000081a2 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [10]
 	Name: DistributionVectorParticleParameter_0
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor ParticleModuleColor_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000081eb with 0x000000ed Bytes
+	Serialized data: at 0x0000000000008213 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [11]
 	Name: DistributionVectorParticleParameter_2
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor ParticleModuleColor_6
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000082d8 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000008300 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [12]
 	Name: Explosion_Large_FF
 	Class: ForceFeedbackWaveform
 	Outer: Package Explosion
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x00000000000083c5 with 0x000002b8 Bytes
+	Serialized data: at 0x00000000000083ed with 0x000002b8 Bytes
 	Export Flags: 0x00000001
 [13]
 	Name: Explosion_Parent_FXActor
 	Class: FXActor_TA
 	Outer: Package Archetypes
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x0000000000353760 with 0x0000036b Bytes
+	Serialized data: at 0x0000000000353788 with 0x0000036b Bytes
 	Export Flags: 0x00000001
 [14]
 	Name: explosion_GravityFX
 	Class: FXActor_TA
 	Outer: Package explosion_gravity
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x0000000000353acb with 0x00001dca Bytes
+	Serialized data: at 0x0000000000353af3 with 0x00001dca Bytes
 	Export Flags: 0x00000001
 [15]
 	Name: Exp_CircleGradient_MAT
 	Class: Material
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000009fc7 with 0x000001fe Bytes
+	Serialized data: at 0x0000000000009fef with 0x000001fe Bytes
 	Export Flags: 0x00000001
 [16]
 	Name: GravityBits_MAT
 	Class: Material
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000000a1c5 with 0x000001c5 Bytes
+	Serialized data: at 0x000000000000a1ed with 0x000001c5 Bytes
 	Export Flags: 0x00000001
 [17]
 	Name: Gravityenergy_MAT
 	Class: Material
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000355895 with 0x00000607 Bytes
+	Serialized data: at 0x00000000003558bd with 0x00000607 Bytes
 	Export Flags: 0x00000001
 [18]
 	Name: ChromaBlurParticle_MAT
 	Class: Material
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000355e9c with 0x00000436 Bytes
+	Serialized data: at 0x0000000000355ec4 with 0x00000436 Bytes
 	Export Flags: 0x00000001
 [19]
 	Name: CircleGradient_MAT
 	Class: Material
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000000adae with 0x00000202 Bytes
+	Serialized data: at 0x000000000000add6 with 0x00000202 Bytes
 	Export Flags: 0x00000001
 [20]
 	Name: MaterialExpressionScalarParameter_3
 	Class: MaterialExpressionScalarParameter
 	Outer: Material GravityBits_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000afb0 with 0x00000078 Bytes
+	Serialized data: at 0x000000000000afd8 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [21]
 	Name: MaterialExpressionScalarParameter_0
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b028 with 0x00000098 Bytes
+	Serialized data: at 0x000000000000b050 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [22]
 	Name: MaterialExpressionScalarParameter_1
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b0c0 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000b0e8 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [23]
 	Name: MaterialExpressionScalarParameter_10
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b174 with 0x00000078 Bytes
+	Serialized data: at 0x000000000000b19c with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [24]
 	Name: MaterialExpressionScalarParameter_11
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b1ec with 0x00000078 Bytes
+	Serialized data: at 0x000000000000b214 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [25]
 	Name: MaterialExpressionScalarParameter_12
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b264 with 0x00000094 Bytes
+	Serialized data: at 0x000000000000b28c with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [26]
 	Name: MaterialExpressionScalarParameter_13
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b2f8 with 0x00000094 Bytes
+	Serialized data: at 0x000000000000b320 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [27]
 	Name: MaterialExpressionScalarParameter_2
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b38c with 0x00000094 Bytes
+	Serialized data: at 0x000000000000b3b4 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [28]
 	Name: MaterialExpressionScalarParameter_20
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b420 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000b448 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [29]
 	Name: MaterialExpressionScalarParameter_21
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b4d4 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000b4fc with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [30]
 	Name: MaterialExpressionScalarParameter_22
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b588 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000b5b0 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [31]
 	Name: MaterialExpressionScalarParameter_23
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b63c with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000b664 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [32]
 	Name: MaterialExpressionScalarParameter_25
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b6f0 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000b718 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [33]
 	Name: MaterialExpressionScalarParameter_3
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b7a4 with 0x00000098 Bytes
+	Serialized data: at 0x000000000000b7cc with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [34]
 	Name: MaterialExpressionScalarParameter_30
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b83c with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000b864 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [35]
 	Name: MaterialExpressionScalarParameter_31
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b8f0 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000b918 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [36]
 	Name: MaterialExpressionScalarParameter_4
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b9a4 with 0x00000094 Bytes
+	Serialized data: at 0x000000000000b9cc with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [37]
 	Name: MaterialExpressionScalarParameter_7
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ba38 with 0x00000094 Bytes
+	Serialized data: at 0x000000000000ba60 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [38]
 	Name: MaterialExpressionScalarParameter_8
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bacc with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000baf4 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [39]
 	Name: MaterialExpressionScalarParameter_9
 	Class: MaterialExpressionScalarParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bb80 with 0x00000098 Bytes
+	Serialized data: at 0x000000000000bba8 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [40]
 	Name: MaterialExpressionScalarParameter_0
 	Class: MaterialExpressionScalarParameter
 	Outer: Material ChromaBlurParticle_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bc18 with 0x00000078 Bytes
+	Serialized data: at 0x000000000000bc40 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [41]
 	Name: MaterialExpressionScalarParameter_1
 	Class: MaterialExpressionScalarParameter
 	Outer: Material ChromaBlurParticle_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bc90 with 0x00000094 Bytes
+	Serialized data: at 0x000000000000bcb8 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [42]
 	Name: MaterialExpressionScalarParameter_2
 	Class: MaterialExpressionScalarParameter
 	Outer: Material ChromaBlurParticle_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bd24 with 0x00000094 Bytes
+	Serialized data: at 0x000000000000bd4c with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [43]
 	Name: MaterialExpressionScalarParameter_3
 	Class: MaterialExpressionScalarParameter
 	Outer: Material ChromaBlurParticle_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bdb8 with 0x00000078 Bytes
+	Serialized data: at 0x000000000000bde0 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [44]
 	Name: MaterialExpressionScalarParameter_4
 	Class: MaterialExpressionScalarParameter
 	Outer: Material ChromaBlurParticle_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000be30 with 0x00000094 Bytes
+	Serialized data: at 0x000000000000be58 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [45]
 	Name: MaterialExpressionScalarParameter_8
 	Class: MaterialExpressionScalarParameter
 	Outer: Material ChromaBlurParticle_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bec4 with 0x00000094 Bytes
+	Serialized data: at 0x000000000000beec with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [46]
 	Name: MaterialExpressionStaticBoolParameter_1
 	Class: MaterialExpressionStaticBoolParameter
 	Outer: Material ChromaBlurParticle_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bf58 with 0x00000091 Bytes
+	Serialized data: at 0x000000000000bf80 with 0x00000091 Bytes
 	Export Flags: 0x00000001
 [47]
 	Name: MaterialExpressionStaticBoolParameter_2
 	Class: MaterialExpressionStaticBoolParameter
 	Outer: Material ChromaBlurParticle_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bfe9 with 0x00000078 Bytes
+	Serialized data: at 0x000000000000c011 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [48]
 	Name: MaterialExpressionStaticSwitchParameter_2
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material Exp_CircleGradient_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c061 with 0x00000100 Bytes
+	Serialized data: at 0x000000000000c089 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [49]
 	Name: MaterialExpressionStaticSwitchParameter_1
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c161 with 0x00000120 Bytes
+	Serialized data: at 0x000000000000c189 with 0x00000120 Bytes
 	Export Flags: 0x00000001
 [50]
 	Name: MaterialExpressionStaticSwitchParameter_3
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c281 with 0x00000120 Bytes
+	Serialized data: at 0x000000000000c2a9 with 0x00000120 Bytes
 	Export Flags: 0x00000001
 [51]
 	Name: MaterialExpressionStaticSwitchParameter_0
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material ChromaBlurParticle_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c3a1 with 0x00000100 Bytes
+	Serialized data: at 0x000000000000c3c9 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [52]
 	Name: MaterialExpressionStaticSwitchParameter_0
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material CircleGradient_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c4a1 with 0x00000100 Bytes
+	Serialized data: at 0x000000000000c4c9 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [53]
 	Name: MaterialExpressionTextureObjectParameter_1
 	Class: MaterialExpressionTextureObjectParameter
 	Outer: Material ChromaBlurParticle_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c5a1 with 0x000000ad Bytes
+	Serialized data: at 0x000000000000c5c9 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [54]
 	Name: MaterialExpressionTextureObjectParameter_2
 	Class: MaterialExpressionTextureObjectParameter
 	Outer: Material ChromaBlurParticle_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c64e with 0x000000ad Bytes
+	Serialized data: at 0x000000000000c676 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [55]
 	Name: MaterialExpressionTextureSampleParameter2D_1
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c6fb with 0x000000d8 Bytes
+	Serialized data: at 0x000000000000c723 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [56]
 	Name: MaterialExpressionTextureSampleParameter2D_2
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000003562d2 with 0x000000f8 Bytes
+	Serialized data: at 0x00000000003562fa with 0x000000f8 Bytes
 	Export Flags: 0x00000001
 [57]
 	Name: MaterialExpressionTextureSampleParameter2D_3
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c8cb with 0x000000d8 Bytes
+	Serialized data: at 0x000000000000c8f3 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [58]
 	Name: MaterialExpressionVectorParameter_1
 	Class: MaterialExpressionVectorParameter
 	Outer: Material GravityBits_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c9a3 with 0x00000078 Bytes
+	Serialized data: at 0x000000000000c9cb with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [59]
 	Name: MaterialExpressionVectorParameter_0
 	Class: MaterialExpressionVectorParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ca1b with 0x00000078 Bytes
+	Serialized data: at 0x000000000000ca43 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [60]
 	Name: MaterialExpressionVectorParameter_1
 	Class: MaterialExpressionVectorParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ca93 with 0x000000a8 Bytes
+	Serialized data: at 0x000000000000cabb with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [61]
 	Name: MaterialExpressionVectorParameter_3
 	Class: MaterialExpressionVectorParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cb3b with 0x000000a8 Bytes
+	Serialized data: at 0x000000000000cb63 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [62]
 	Name: MaterialExpressionVectorParameter_6
 	Class: MaterialExpressionVectorParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cbe3 with 0x00000078 Bytes
+	Serialized data: at 0x000000000000cc0b with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [63]
 	Name: MaterialExpressionVectorParameter_9
 	Class: MaterialExpressionVectorParameter
 	Outer: Material Gravityenergy_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cc5b with 0x000000c8 Bytes
+	Serialized data: at 0x000000000000cc83 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [64]
 	Name: None
@@ -1184,7 +1189,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialFunction
 	Outer: Package Functions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000cef9 with 0x00000228 Bytes
+	Serialized data: at 0x000000000000cf21 with 0x00000228 Bytes
 	Export Flags: 0x00000001
 [66]
 	Name: None
@@ -1197,48 +1202,48 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialInstanceConstant
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000003563ca with 0x000002fd Bytes
+	Serialized data: at 0x00000000003563f2 with 0x000002fd Bytes
 	Export Flags: 0x00000001
 [68]
 	Name: GravityBits_MAT_INST
 	Class: MaterialInstanceConstant
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000000d4ba with 0x000000fc Bytes
+	Serialized data: at 0x000000000000d4e2 with 0x000000fc Bytes
 	Export Flags: 0x00000001
 [69]
 	Name: gravityenergy_MIC
 	Class: MaterialInstanceConstant
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000003566c7 with 0x00000b79 Bytes
+	Serialized data: at 0x00000000003566ef with 0x00000b79 Bytes
 	Export Flags: 0x00000001
 [70]
 	Name: Solar_ChromaBlur_Burst_MIC
 	Class: MaterialInstanceConstant
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000000e12f with 0x00000521 Bytes
+	Serialized data: at 0x000000000000e157 with 0x00000521 Bytes
 	Export Flags: 0x00000001
 [71]
 	Name: MICParamDispenserComponent_X_0
 	Class: MICParamDispenserComponent_X
 	Outer: FXActor_TA explosion_GravityFX
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000000e650 with 0x00000030 Bytes
+	Serialized data: at 0x000000000000e678 with 0x00000030 Bytes
 	Export Flags: 0x00000001
 [72]
 	Name: MICParamDispenserComponent_X_1
 	Class: MICParamDispenserComponent_X
 	Outer: FXActor_TA explosion_GravityFX
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000000e680 with 0x0000004c Bytes
+	Serialized data: at 0x000000000000e6a8 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [73]
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000000e6cc with 0x0000002c Bytes
+	Serialized data: at 0x000000000000e6f4 with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [74]
 	Name: None
@@ -1256,7 +1261,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: boost_constellation
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e710 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e738 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1265,7 +1270,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package boost_constellation
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e71c with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e744 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [78]
 	Name: None
@@ -1283,7 +1288,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Breakout_FX
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e740 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e768 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1292,20 +1297,20 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package Breakout_FX
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e74c with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e774 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [82]
 	Name: Textures
 	Class: Package
 	Outer: Package OOB
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e758 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e780 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [83]
 	Name: CameraShakes
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e764 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e78c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1314,7 +1319,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package CameraShakes
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e770 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e798 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [85]
 	Name: None
@@ -1332,7 +1337,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Explosion_Assets
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e794 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e7bc with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1341,34 +1346,34 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package Explosion_Assets
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e7a0 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e7c8 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [89]
 	Name: Functions
 	Class: Package
 	Outer: Package Explosion_Assets
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e7ac with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e7d4 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [90]
 	Name: Materials
 	Class: Package
 	Outer: Package Explosion_Assets
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e7b8 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e7e0 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [91]
 	Name: Textures
 	Class: Package
 	Outer: Package Explosion_Assets
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e7c4 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e7ec with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [92]
 	Name: explosion_gravity
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e7d0 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e7f8 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1377,27 +1382,27 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package explosion_gravity
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e7dc with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e804 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [94]
 	Name: Materials
 	Class: Package
 	Outer: Package explosion_gravity
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e7e8 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e810 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [95]
 	Name: Meshes
 	Class: Package
 	Outer: Package explosion_gravity
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e7f4 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e81c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [96]
 	Name: explosion_gravity_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e800 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e828 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -1405,7 +1410,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Explosion_Interstellar
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e80c with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e834 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1413,7 +1418,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: explosion_solar
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e818 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e840 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1422,7 +1427,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package explosion_solar
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e824 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e84c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [100]
 	Name: None
@@ -1440,7 +1445,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Miky_Arc_Skybox_Copies
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e848 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e870 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1449,7 +1454,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package Miky_Arc_Skybox_Copies
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e854 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e87c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [104]
 	Name: None
@@ -1467,7 +1472,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: SFX_GoalExplosions
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e878 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e8a0 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1475,7 +1480,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: SpaceStation_FX
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e884 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e8ac with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1484,20 +1489,20 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package SpaceStation_FX
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e890 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e8b8 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [109]
 	Name: Textures
 	Class: Package
 	Outer: Package SpaceStation_FX
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e89c with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e8c4 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [110]
 	Name: ss_space_tear
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e8a8 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e8d0 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1506,7 +1511,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package ss_space_tear
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e8b4 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e8dc with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [112]
 	Name: DefaultParameters
@@ -1514,7 +1519,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: FXActor_TA Explosion_Parent_FXActor
 	Archetype: DefaultParameters
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x000000000000e8c0 with 0x00000010 Bytes
+	Serialized data: at 0x000000000000e8e8 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [113]
 	Name: DefaultParameters
@@ -1522,371 +1527,371 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: FXActor_TA explosion_GravityFX
 	Archetype: DefaultParameters
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x000000000000e8d0 with 0x00000010 Bytes
+	Serialized data: at 0x000000000000e8f8 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [114]
 	Name: ParticleLODLevel_1
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e8e0 with 0x00000098 Bytes
+	Serialized data: at 0x000000000000e908 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [115]
 	Name: ParticleLODLevel_2
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e978 with 0x00000098 Bytes
+	Serialized data: at 0x000000000000e9a0 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [116]
 	Name: ParticleLODLevel_3
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_5
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ea10 with 0x00000098 Bytes
+	Serialized data: at 0x000000000000ea38 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [117]
 	Name: ParticleLODLevel_1
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000eaa8 with 0x000000a0 Bytes
+	Serialized data: at 0x000000000000ead0 with 0x000000a0 Bytes
 	Export Flags: 0x00000001
 [118]
 	Name: ParticleLODLevel_1
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000eb48 with 0x0000008c Bytes
+	Serialized data: at 0x000000000000eb70 with 0x0000008c Bytes
 	Export Flags: 0x00000001
 [119]
 	Name: ParticleLODLevel_0
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_6
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ebd4 with 0x00000094 Bytes
+	Serialized data: at 0x000000000000ebfc with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [120]
 	Name: ParticleModuleCameraOffset_1
 	Class: ParticleModuleCameraOffset
 	Outer: ParticleSystem GravityAmbientFX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ec68 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000ec90 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [121]
 	Name: ParticleModuleColor_3
 	Class: ParticleModuleColor
 	Outer: ParticleSystem GravityAmbientFX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ed05 with 0x000000d1 Bytes
+	Serialized data: at 0x000000000000ed2d with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [122]
 	Name: ParticleModuleColor_6
 	Class: ParticleModuleColor
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000edd6 with 0x000000ea Bytes
+	Serialized data: at 0x000000000000edfe with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [123]
 	Name: ParticleModuleColorScaleOverLife_2
 	Class: ParticleModuleColorScaleOverLife
 	Outer: ParticleSystem GravityAmbientFX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000eec0 with 0x00000185 Bytes
+	Serialized data: at 0x000000000000eee8 with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [124]
 	Name: ParticleModuleColorScaleOverLife_3
 	Class: ParticleModuleColorScaleOverLife
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f045 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000000f06d with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [125]
 	Name: ParticleModuleColorScaleOverLife_4
 	Class: ParticleModuleColorScaleOverLife
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f136 with 0x00000185 Bytes
+	Serialized data: at 0x000000000000f15e with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [126]
 	Name: ParticleModuleColorScaleOverLife_5
 	Class: ParticleModuleColorScaleOverLife
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f2bb with 0x000000f1 Bytes
+	Serialized data: at 0x000000000000f2e3 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [127]
 	Name: ParticleModuleKillBox_0
 	Class: ParticleModuleKillBox
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f3ac with 0x00000178 Bytes
+	Serialized data: at 0x000000000000f3d4 with 0x00000178 Bytes
 	Export Flags: 0x00000001
 [128]
 	Name: ParticleModuleLifetime_3
 	Class: ParticleModuleLifetime
 	Outer: ParticleSystem GravityAmbientFX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f524 with 0x00000108 Bytes
+	Serialized data: at 0x000000000000f54c with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [129]
 	Name: ParticleModuleLifetime_3
 	Class: ParticleModuleLifetime
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f62c with 0x00000108 Bytes
+	Serialized data: at 0x000000000000f654 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [130]
 	Name: ParticleModuleLifetime_4
 	Class: ParticleModuleLifetime
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f734 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000f75c with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [131]
 	Name: ParticleModuleLifetime_6
 	Class: ParticleModuleLifetime
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f7d1 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000f7f9 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [132]
 	Name: ParticleModuleLocation_1
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem GravityAmbientFX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f86e with 0x00000128 Bytes
+	Serialized data: at 0x000000000000f896 with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [133]
 	Name: ParticleModuleLocationPrimitiveSphere_0
 	Class: ParticleModuleLocationPrimitiveSphere
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f996 with 0x00000240 Bytes
+	Serialized data: at 0x000000000000f9be with 0x00000240 Bytes
 	Export Flags: 0x00000001
 [134]
 	Name: ParticleModuleOrbit_1
 	Class: ParticleModuleOrbit
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000fbd6 with 0x000001c2 Bytes
+	Serialized data: at 0x000000000000fbfe with 0x000001c2 Bytes
 	Export Flags: 0x00000001
 [135]
 	Name: ParticleModuleParameterDynamic_0
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem GravityAmbientFX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000fd98 with 0x00000771 Bytes
+	Serialized data: at 0x000000000000fdc0 with 0x00000771 Bytes
 	Export Flags: 0x00000001
 [136]
 	Name: ParticleModuleParameterDynamic_4
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000010509 with 0x00000819 Bytes
+	Serialized data: at 0x0000000000010531 with 0x00000819 Bytes
 	Export Flags: 0x00000001
 [137]
 	Name: ParticleModuleRequired_3
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem GravityAmbientFX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000010d22 with 0x00000113 Bytes
+	Serialized data: at 0x0000000000010d4a with 0x00000113 Bytes
 	Export Flags: 0x00000001
 [138]
 	Name: ParticleModuleRequired_3
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000010e35 with 0x0000016d Bytes
+	Serialized data: at 0x0000000000010e5d with 0x0000016d Bytes
 	Export Flags: 0x00000001
 [139]
 	Name: ParticleModuleRequired_4
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000010fa2 with 0x00000110 Bytes
+	Serialized data: at 0x0000000000010fca with 0x00000110 Bytes
 	Export Flags: 0x00000001
 [140]
 	Name: ParticleModuleRequired_8
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000110b2 with 0x00000129 Bytes
+	Serialized data: at 0x00000000000110da with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [141]
 	Name: ParticleModuleSize_3
 	Class: ParticleModuleSize
 	Outer: ParticleSystem GravityAmbientFX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000111db with 0x00000149 Bytes
+	Serialized data: at 0x0000000000011203 with 0x00000149 Bytes
 	Export Flags: 0x00000001
 [142]
 	Name: ParticleModuleSize_0
 	Class: ParticleModuleSize
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011324 with 0x000000ad Bytes
+	Serialized data: at 0x000000000001134c with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [143]
 	Name: ParticleModuleSize_3
 	Class: ParticleModuleSize
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000113d1 with 0x000000ad Bytes
+	Serialized data: at 0x00000000000113f9 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [144]
 	Name: ParticleModuleSize_4
 	Class: ParticleModuleSize
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001147e with 0x000000ad Bytes
+	Serialized data: at 0x00000000000114a6 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [145]
 	Name: ParticleModuleSizeMultiplyLife_0
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001152b with 0x000001ad Bytes
+	Serialized data: at 0x0000000000011553 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [146]
 	Name: ParticleModuleSizeMultiplyLife_2
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000116d8 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000011700 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [147]
 	Name: ParticleModuleSpawn_3
 	Class: ParticleModuleSpawn
 	Outer: ParticleSystem GravityAmbientFX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011885 with 0x000000e1 Bytes
+	Serialized data: at 0x00000000000118ad with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [148]
 	Name: ParticleModuleSpawn_2
 	Class: ParticleModuleSpawn
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011966 with 0x00000159 Bytes
+	Serialized data: at 0x000000000001198e with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [149]
 	Name: ParticleModuleSpawn_3
 	Class: ParticleModuleSpawn
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011abf with 0x0000010d Bytes
+	Serialized data: at 0x0000000000011ae7 with 0x0000010d Bytes
 	Export Flags: 0x00000001
 [150]
 	Name: ParticleModuleSpawn_6
 	Class: ParticleModuleSpawn
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011bcc with 0x00000159 Bytes
+	Serialized data: at 0x0000000000011bf4 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [151]
 	Name: ParticleModuleVelocityOverLifetime_0
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011d25 with 0x000000c9 Bytes
+	Serialized data: at 0x0000000000011d4d with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [152]
 	Name: ParticleSpriteEmitter_0
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem GravityAmbientFX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011dee with 0x00000025 Bytes
+	Serialized data: at 0x0000000000011e16 with 0x00000025 Bytes
 	Export Flags: 0x00000001
 [153]
 	Name: ParticleSpriteEmitter_2
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem GravityAmbientFX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011e13 with 0x00000025 Bytes
+	Serialized data: at 0x0000000000011e3b with 0x00000025 Bytes
 	Export Flags: 0x00000001
 [154]
 	Name: ParticleSpriteEmitter_3
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem GravityAmbientFX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011e38 with 0x0000002c Bytes
+	Serialized data: at 0x0000000000011e60 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [155]
 	Name: ParticleSpriteEmitter_4
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem GravityAmbientFX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011e64 with 0x0000002c Bytes
+	Serialized data: at 0x0000000000011e8c with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [156]
 	Name: ParticleSpriteEmitter_5
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem GravityAmbientFX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011e90 with 0x0000002c Bytes
+	Serialized data: at 0x0000000000011eb8 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [157]
 	Name: ParticleSpriteEmitter_12
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011ebc with 0x00000045 Bytes
+	Serialized data: at 0x0000000000011ee4 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [158]
 	Name: ParticleSpriteEmitter_13
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011f01 with 0x00000045 Bytes
+	Serialized data: at 0x0000000000011f29 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [159]
 	Name: ParticleSpriteEmitter_3
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011f46 with 0x0000002c Bytes
+	Serialized data: at 0x0000000000011f6e with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [160]
 	Name: ParticleSpriteEmitter_4
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011f72 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000011f9a with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [161]
 	Name: ParticleSpriteEmitter_6
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem GravityIntro_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011fbe with 0x0000004c Bytes
+	Serialized data: at 0x0000000000011fe6 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [162]
 	Name: GravityAmbientFX_PS
 	Class: ParticleSystem
 	Outer: Package FX
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000001200a with 0x00000181 Bytes
+	Serialized data: at 0x0000000000012032 with 0x00000181 Bytes
 	Export Flags: 0x00000001
 [163]
 	Name: GravityIntro_PS
 	Class: ParticleSystem
 	Outer: Package FX
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000001218b with 0x0000012f Bytes
+	Serialized data: at 0x00000000000121b3 with 0x0000012f Bytes
 	Export Flags: 0x00000001
 [164]
 	Name: ParticleSystemComponent_0
 	Class: ParticleSystemComponent
 	Outer: FXActor_TA explosion_GravityFX
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x00000000000122ba with 0x00000089 Bytes
+	Serialized data: at 0x00000000000122e2 with 0x00000089 Bytes
 	Export Flags: 0x00000001
 [165]
 	Name: ParticleSystemComponent_2
 	Class: ParticleSystemComponent
 	Outer: FXActor_TA explosion_GravityFX
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000012343 with 0x0000025a Bytes
+	Serialized data: at 0x000000000001236b with 0x0000025a Bytes
 	Export Flags: 0x00000001
 [166]
 	Name: explosion_gravity
@@ -1894,14 +1899,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: Package explosion_gravity
 	Archetype: ProductAsset_GoalExplosion_TA_0
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000357240 with 0x00000068 Bytes
+	Serialized data: at 0x0000000000357268 with 0x00000068 Bytes
 	Export Flags: 0x00000001
 [167]
 	Name: ProductAttribute_PaintSettings_TA_0
 	Class: ProductAttribute_PaintSettings_TA
 	Outer: ProductAsset_GoalExplosion_TA explosion_gravity
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000012621 with 0x00000180 Bytes
+	Serialized data: at 0x00000000003572d0 with 0x000001d0 Bytes
 	Export Flags: 0x00000001
 [168]
 	Name: None
@@ -1914,21 +1919,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ShakeComponent_X
 	Outer: FXActor_TA Explosion_Parent_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x00000000000128f6 with 0x000000b2 Bytes
+	Serialized data: at 0x000000000001291e with 0x000000b2 Bytes
 	Export Flags: 0x00000001
 [170]
 	Name: GravExpMeshPack_SM
 	Class: StaticMesh
 	Outer: Package Meshes
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000129a8 with 0x002064c2 Bytes
+	Serialized data: at 0x00000000000129d0 with 0x002064c2 Bytes
 	Export Flags: 0x00000001
 [171]
 	Name: StaticMeshComponent_12660
 	Class: StaticMeshComponent
 	Outer: FXActor_TA explosion_GravityFX
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000218e6a with 0x000000b9 Bytes
+	Serialized data: at 0x0000000000218e92 with 0x000000b9 Bytes
 	Export Flags: 0x00000001
 [172]
 	Name: None
@@ -1941,7 +1946,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000219c14 with 0x00001790 Bytes
+	Serialized data: at 0x0000000000219c3c with 0x00001790 Bytes
 	Export Flags: 0x00000001
 [174]
 	Name: None
@@ -1954,14 +1959,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000220be2 with 0x000017ac Bytes
+	Serialized data: at 0x0000000000220c0a with 0x000017ac Bytes
 	Export Flags: 0x00000001
 [176]
 	Name: CausticsNoMip_D
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000022238e with 0x00100194 Bytes
+	Serialized data: at 0x00000000002223b6 with 0x00100194 Bytes
 	Export Flags: 0x00000001
 [177]
 	Name: None
@@ -1974,7 +1979,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package Explosion_Interstellar
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000003426c0 with 0x000017ac Bytes
+	Serialized data: at 0x00000000003426e8 with 0x000017ac Bytes
 	Export Flags: 0x00000001
 [179]
 	Name: None
@@ -1987,28 +1992,28 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000034963d with 0x000007c0 Bytes
+	Serialized data: at 0x0000000000349665 with 0x000007c0 Bytes
 	Export Flags: 0x00000001
 [181]
 	Name: PlanetFlow_T
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000349dfd with 0x0000585d Bytes
+	Serialized data: at 0x0000000000349e25 with 0x0000585d Bytes
 	Export Flags: 0x00000001
 [182]
 	Name: SS_Space_Tear_Space_T
 	Class: Texture2D
 	Outer: Package T
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000034f65a with 0x00000cd8 Bytes
+	Serialized data: at 0x000000000034f682 with 0x00000cd8 Bytes
 	Export Flags: 0x00000001
 [183]
 	Name: BallLocationComponent_TA_0
 	Class: BallLocationComponent_TA
 	Outer: FXActor_TA explosion_GravityFX
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000353079 with 0x0000002c Bytes
+	Serialized data: at 0x00000000003530a1 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [184]
 	Name: None

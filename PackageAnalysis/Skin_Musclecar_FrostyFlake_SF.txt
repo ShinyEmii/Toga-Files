@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x00005469 Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 116 Name Offset: 0x000001dd
-Export Count: 11 Export Offset: 0x00001281
-Import Count: 41 Import Offset: 0x00000e05
-Depends Offset: 0x00001599
-Import Export Guids Offset: 0x00001599
+Name Count: 117 Name Offset: 0x000001e9
+Export Count: 11 Export Offset: 0x000012a9
+Import Count: 41 Import Offset: 0x00000e2d
+Depends Offset: 0x000015c1
+Import Export Guids Offset: 0x000015c1
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x8235a733 0x45610bea 0xc293948e 0xf821239b
+GUID: 0x7d760ccd 0x4b90a190 0xd5f1f1af 0x69dda033
 Generations:
 [0]
 	Export Count: 11
@@ -115,6 +115,10 @@ Generations:
 	Export Count: 11
 	Name Count: 116
 	Net Object Count: 0
+[24]
+	Export Count: 11
+	Name Count: 117
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression Flags: 0x00000001
@@ -141,10 +145,10 @@ Texture Allocations Texture Types:
 	Tex Create Flags: 1
 	Export Indices:
 	[0] 8
-Test Data Size: 0x00003e6c
-Compressed Chunk Info Offset: 0x000013bc
-Last Block Size: 0x0000000c
-Base Header Size: 0x000001dd
+Test Data Size: 0x00003e2c
+Compressed Chunk Info Offset: 0x000013d8
+Last Block Size: 0x00000000
+Base Header Size: 0x000001e9
 
 AES: LrVEo265HtDsXQ6/JdI6gYrZ+2/Z2clJvSsc8IahVHA=
 
@@ -268,6 +272,7 @@ AES: LrVEo265HtDsXQ6/JdI6gYrZ+2/Z2clJvSsc8IahVHA=
 [113] VertexColorMasks
 [114] WhiteGoldMetal_00
 [115] PaintMask_MaskedByAlpha
+[116] IncludePaintIDs
 
 
     ~ Exports ~ 
@@ -278,26 +283,26 @@ AES: LrVEo265HtDsXQ6/JdI6gYrZ+2/Z2clJvSsc8IahVHA=
 	Class: MaterialInstanceConstant
 	Outer: Package Skin_Musclecar_FrostyFlake
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000008749 with 0x000009fe Bytes
+	Serialized data: at 0x0000000000008771 with 0x000009fe Bytes
 	Export Flags: 0x00000001
 [1]
 	Name: MIC_Body_MuscleCar_FrostyFlake_Painted
 	Class: MaterialInstanceConstant
 	Outer: Package Skin_Musclecar_FrostyFlake
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000009147 with 0x0000079e Bytes
+	Serialized data: at 0x000000000000916f with 0x0000079e Bytes
 	Export Flags: 0x00000001
 [2]
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000000026b5 with 0x0000002c Bytes
+	Serialized data: at 0x00000000000026dd with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [3]
 	Name: Body_MuscleCar
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000026e1 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000002709 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -305,7 +310,7 @@ AES: LrVEo265HtDsXQ6/JdI6gYrZ+2/Z2clJvSsc8IahVHA=
 	Name: Skin_Musclecar_FrostyFlake
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000026ed with 0x0000000c Bytes
+	Serialized data: at 0x0000000000002715 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -313,7 +318,7 @@ AES: LrVEo265HtDsXQ6/JdI6gYrZ+2/Z2clJvSsc8IahVHA=
 	Name: Skin_Musclecar_FrostyFlake_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000026f9 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000002721 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -323,35 +328,35 @@ AES: LrVEo265HtDsXQ6/JdI6gYrZ+2/Z2clJvSsc8IahVHA=
 	Outer: Package Skin_Musclecar_FrostyFlake
 	Archetype: ProductAsset_Skin_TA_0
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000002705 with 0x00000048 Bytes
+	Serialized data: at 0x000000000000272d with 0x00000048 Bytes
 	Export Flags: 0x00000001
 [7]
 	Name: ProductAttribute_PaintSettings_TA_0
 	Class: ProductAttribute_PaintSettings_TA
 	Outer: ProductAsset_Skin_TA Skin_Musclecar_FrostyFlake
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000274d with 0x000000a4 Bytes
+	Serialized data: at 0x000000000000990d with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [8]
 	Name: MuscleCar_Body_Curvature
 	Class: Texture2D
 	Outer: Package Body_MuscleCar
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000027f1 with 0x00000d10 Bytes
+	Serialized data: at 0x0000000000002819 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [9]
 	Name: MuscleCar_Body_D
 	Class: Texture2D
 	Outer: Package Body_MuscleCar
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000003501 with 0x000017c8 Bytes
+	Serialized data: at 0x0000000000003529 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [10]
 	Name: Skin_Musclecar_FrostyFlake_RGB
 	Class: Texture2D
 	Outer: Package Skin_Musclecar_FrostyFlake
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000004cc9 with 0x000017c8 Bytes
+	Serialized data: at 0x0000000000004cf1 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 
 
