@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x00012515 Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 691 Name Offset: 0x000003b1
-Export Count: 582 Export Offset: 0x00005753
-Import Count: 90 Import Offset: 0x00004d7b
-Depends Offset: 0x0000fb03
-Import Export Guids Offset: 0x0000fb03
+Name Count: 691 Name Offset: 0x000003bd
+Export Count: 582 Export Offset: 0x0000575f
+Import Count: 90 Import Offset: 0x00004d87
+Depends Offset: 0x0000fb0f
+Import Export Guids Offset: 0x0000fb0f
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0xcc0976e7 0x4014b4a7 0x896ee4b5 0x286b88f0
+GUID: 0x3b2e6a34 0x4fe727f5 0x56396ba9 0xd5a07c74
 Generations:
 [0]
 	Export Count: 531
@@ -215,6 +215,10 @@ Generations:
 	Export Count: 582
 	Name Count: 691
 	Net Object Count: 0
+[49]
+	Export Count: 582
+	Name Count: 691
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression Flags: 0x00000001
@@ -225,15 +229,6 @@ Additional Packages To Cook:
 	Empty
 Texture Allocations Texture Types:
 [0]
-	Size X: 2048
-	Size Y: 2048
-	Num Mips: 1
-	Format: 2
-	Tex Create Flags: 1
-	Export Indices:
-	[0] 512
-	[1] 513
-[1]
 	Size X: 1024
 	Size Y: 512
 	Num Mips: 1
@@ -241,7 +236,7 @@ Texture Allocations Texture Types:
 	Tex Create Flags: 1
 	Export Indices:
 	[0] 517
-[2]
+[1]
 	Size X: 64
 	Size Y: 16
 	Num Mips: 7
@@ -249,7 +244,7 @@ Texture Allocations Texture Types:
 	Tex Create Flags: 1
 	Export Indices:
 	[0] 510
-[3]
+[2]
 	Size X: 64
 	Size Y: 32
 	Num Mips: 7
@@ -257,7 +252,7 @@ Texture Allocations Texture Types:
 	Tex Create Flags: 1
 	Export Indices:
 	[0] 511
-[4]
+[3]
 	Size X: 1024
 	Size Y: 1024
 	Num Mips: 1
@@ -266,7 +261,7 @@ Texture Allocations Texture Types:
 	Export Indices:
 	[0] 529
 	[1] 530
-[5]
+[4]
 	Size X: 64
 	Size Y: 64
 	Num Mips: 7
@@ -280,7 +275,7 @@ Texture Allocations Texture Types:
 	[4] 521
 	[5] 522
 	[6] 524
-[6]
+[5]
 	Size X: 64
 	Size Y: 64
 	Num Mips: 7
@@ -288,10 +283,19 @@ Texture Allocations Texture Types:
 	Tex Create Flags: 1
 	Export Indices:
 	[0] 514
-Test Data Size: 0x000027b6
+[6]
+	Size X: 2048
+	Size Y: 2048
+	Num Mips: 1
+	Format: 2
+	Tex Create Flags: 1
+	Export Indices:
+	[0] 512
+	[1] 513
+Test Data Size: 0x000027aa
 Compressed Chunk Info Offset: 0x0000f752
-Last Block Size: 0x00000004
-Base Header Size: 0x000003b1
+Last Block Size: 0x00000008
+Base Header Size: 0x000003bd
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -1000,7 +1004,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: AkBank
 	Outer: Package SFX_Car_Boost
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000fb03 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000fb0f with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [1]
 	Name: None
@@ -1013,21 +1017,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: AkPlaySoundComponent
 	Outer: FXActor_Boost_TA FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000000fb1b with 0x00000045 Bytes
+	Serialized data: at 0x000000000000fb27 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [3]
 	Name: Boost_VT_Loop
 	Class: AkSoundCue
 	Outer: Package SFX_Car_Boost
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000fb60 with 0x00000086 Bytes
+	Serialized data: at 0x000000000000fb6c with 0x00000086 Bytes
 	Export Flags: 0x00000001
 [4]
 	Name: UI_BoostFail
 	Class: AkSoundCue
 	Outer: Package SFX_UI_Boost
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000003f5dc9c with 0x00000056 Bytes
+	Serialized data: at 0x0000000003f5dca8 with 0x00000056 Bytes
 	Export Flags: 0x00000001
 [5]
 	Name: None
@@ -1058,217 +1062,217 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleSpawnPerUnit ParticleModuleSpawnPerUnit_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000143b3 with 0x000000c5 Bytes
+	Serialized data: at 0x00000000000143bf with 0x000000c5 Bytes
 	Export Flags: 0x00000001
 [10]
 	Name: DistributionFloatParticleParameter_18
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleSpawnPerUnit ParticleModuleSpawnPerUnit_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014478 with 0x000000c5 Bytes
+	Serialized data: at 0x0000000000014484 with 0x000000c5 Bytes
 	Export Flags: 0x00000001
 [11]
 	Name: DistributionVectorParticleParameter_0
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor ParticleModuleColor_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001453d with 0x000000ed Bytes
+	Serialized data: at 0x0000000000014549 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [12]
 	Name: DistributionVectorParticleParameter_0
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor ParticleModuleColor_11
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001462a with 0x000000ed Bytes
+	Serialized data: at 0x0000000000014636 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [13]
 	Name: DistributionVectorParticleParameter_3
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor ParticleModuleColor_13
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014717 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000014723 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [14]
 	Name: DistributionVectorParticleParameter_0
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor ParticleModuleColor_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014804 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000014810 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [15]
 	Name: DistributionVectorParticleParameter_0
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor ParticleModuleColor_6
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000148f1 with 0x000000ed Bytes
+	Serialized data: at 0x00000000000148fd with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [16]
 	Name: DistributionVectorParticleParameter_0
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor ParticleModuleColor_8
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000149de with 0x000000ed Bytes
+	Serialized data: at 0x00000000000149ea with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [17]
 	Name: DistributionVectorParticleParameter_0
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleSize ParticleModuleSize_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014acb with 0x00000119 Bytes
+	Serialized data: at 0x0000000000014ad7 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [18]
 	Name: DistributionVectorParticleParameter_0
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor ParticleModuleColor_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014be4 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000014bf0 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [19]
 	Name: DistributionVectorParticleParameter_0
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor ParticleModuleColor_11
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014cd1 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000014cdd with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [20]
 	Name: DistributionVectorParticleParameter_3
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor ParticleModuleColor_13
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014dbe with 0x000000ed Bytes
+	Serialized data: at 0x0000000000014dca with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [21]
 	Name: DistributionVectorParticleParameter_0
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor ParticleModuleColor_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014eab with 0x000000ed Bytes
+	Serialized data: at 0x0000000000014eb7 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [22]
 	Name: DistributionVectorParticleParameter_0
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor ParticleModuleColor_6
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014f98 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000014fa4 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [23]
 	Name: DistributionVectorParticleParameter_0
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor ParticleModuleColor_8
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015085 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000015091 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [24]
 	Name: DistributionVectorParticleParameter_0
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleSize ParticleModuleSize_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015172 with 0x00000119 Bytes
+	Serialized data: at 0x000000000001517e with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [25]
 	Name: BoostActivated_FF
 	Class: ForceFeedbackWaveform
 	Outer: Package FX
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x000000000001528b with 0x00000170 Bytes
+	Serialized data: at 0x0000000000015297 with 0x00000170 Bytes
 	Export Flags: 0x00000001
 [26]
 	Name: ForceFeedback
 	Class: ForceFeedbackWaveform
 	Outer: Package FX
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x00000000000153fb with 0x00000189 Bytes
+	Serialized data: at 0x0000000000015407 with 0x00000189 Bytes
 	Export Flags: 0x00000001
 [27]
 	Name: FXActor
 	Class: FXActor_Boost_TA
 	Outer: Package boost_vt
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x0000000003f5a17e with 0x00000cfd Bytes
+	Serialized data: at 0x0000000003f5a18a with 0x00000cfd Bytes
 	Export Flags: 0x00000001
 [28]
 	Name: FXActor
 	Class: FXActor_Boost_TA
 	Outer: Package BoostBase
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x0000000003f2fda3 with 0x000006be Bytes
+	Serialized data: at 0x0000000003f2fdaf with 0x000006be Bytes
 	Export Flags: 0x00000001
 [29]
 	Name: FXTrait_BoostParticle_TA_7
 	Class: FXTrait_BoostParticle_TA
 	Outer: FXActor_Boost_TA FXActor
 	Object Flags: 0x0007000402000000
-	Serialized data: at 0x00000000000166bf with 0x000005c0 Bytes
+	Serialized data: at 0x00000000000166cb with 0x000005c0 Bytes
 	Export Flags: 0x00000001
 [30]
 	Name: FXTrait_BoostParticle_TA_8
 	Class: FXTrait_BoostParticle_TA
 	Outer: FXActor_Boost_TA FXActor
 	Object Flags: 0x0007000402000000
-	Serialized data: at 0x0000000000016c7f with 0x0000000c Bytes
+	Serialized data: at 0x0000000000016c8b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [31]
 	Name: VT_LF
 	Class: LensFlare
 	Outer: Package LF
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000016c8b with 0x00002b53 Bytes
+	Serialized data: at 0x0000000000016c97 with 0x00002b53 Bytes
 	Export Flags: 0x00000001
 [32]
 	Name: LensFlareComponent_X_3
 	Class: LensFlareComponent_X
 	Outer: FXActor_Boost_TA FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x00000000000197de with 0x00000078 Bytes
+	Serialized data: at 0x00000000000197ea with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [33]
 	Name: BurnOutFlare_Mat
 	Class: Material
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000019856 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000019862 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [34]
 	Name: BoostMesh_Base_MAT
 	Class: Material
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000019a03 with 0x0000031e Bytes
+	Serialized data: at 0x0000000000019a0f with 0x0000031e Bytes
 	Export Flags: 0x00000001
 [35]
 	Name: Blank_MAT
 	Class: Material
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000019d21 with 0x00000158 Bytes
+	Serialized data: at 0x0000000000019d2d with 0x00000158 Bytes
 	Export Flags: 0x00000001
 [36]
 	Name: BoostMesh_Base_MAT
 	Class: Material
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000019e79 with 0x0000038a Bytes
+	Serialized data: at 0x0000000000019e85 with 0x0000038a Bytes
 	Export Flags: 0x00000001
 [37]
 	Name: Lightning_01_MAT
 	Class: Material
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000003f5ae7b with 0x000002ae Bytes
+	Serialized data: at 0x0000000003f5ae87 with 0x000002ae Bytes
 	Export Flags: 0x00000001
 [38]
 	Name: VT_Trail_MAT
 	Class: Material
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000003f5b129 with 0x000004b9 Bytes
+	Serialized data: at 0x0000000003f5b135 with 0x000004b9 Bytes
 	Export Flags: 0x00000001
 [39]
 	Name: LightningGlow_Mat
 	Class: Material
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000001a96a with 0x000001df Bytes
+	Serialized data: at 0x000000000001a976 with 0x000001df Bytes
 	Export Flags: 0x00000001
 [40]
 	Name: None
@@ -1281,105 +1285,105 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Material BurnOutFlare_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001aed8 with 0x00000094 Bytes
+	Serialized data: at 0x000000000001aee4 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [42]
 	Name: MaterialExpressionScalarParameter_1
 	Class: MaterialExpressionScalarParameter
 	Outer: Material BurnOutFlare_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001af6c with 0x00000094 Bytes
+	Serialized data: at 0x000000000001af78 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [43]
 	Name: MaterialExpressionScalarParameter_10
 	Class: MaterialExpressionScalarParameter
 	Outer: Material BoostMesh_Base_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b000 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001b00c with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [44]
 	Name: MaterialExpressionScalarParameter_11
 	Class: MaterialExpressionScalarParameter
 	Outer: Material BoostMesh_Base_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b0b4 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001b0c0 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [45]
 	Name: MaterialExpressionScalarParameter_12
 	Class: MaterialExpressionScalarParameter
 	Outer: Material BoostMesh_Base_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b168 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001b174 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [46]
 	Name: MaterialExpressionScalarParameter_13
 	Class: MaterialExpressionScalarParameter
 	Outer: Material BoostMesh_Base_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b21c with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001b228 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [47]
 	Name: MaterialExpressionScalarParameter_14
 	Class: MaterialExpressionScalarParameter
 	Outer: Material BoostMesh_Base_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b2d0 with 0x00000094 Bytes
+	Serialized data: at 0x000000000001b2dc with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [48]
 	Name: MaterialExpressionScalarParameter_7
 	Class: MaterialExpressionScalarParameter
 	Outer: Material BoostMesh_Base_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b364 with 0x00000098 Bytes
+	Serialized data: at 0x000000000001b370 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [49]
 	Name: MaterialExpressionScalarParameter_8
 	Class: MaterialExpressionScalarParameter
 	Outer: Material BoostMesh_Base_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b3fc with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001b408 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [50]
 	Name: MaterialExpressionScalarParameter_9
 	Class: MaterialExpressionScalarParameter
 	Outer: Material BoostMesh_Base_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b4b0 with 0x00000098 Bytes
+	Serialized data: at 0x000000000001b4bc with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [51]
 	Name: MaterialExpressionScalarParameter_4
 	Class: MaterialExpressionScalarParameter
 	Outer: Material VT_Trail_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b548 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001b554 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [52]
 	Name: MaterialExpressionScalarParameter_5
 	Class: MaterialExpressionScalarParameter
 	Outer: Material VT_Trail_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b5fc with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001b608 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [53]
 	Name: MaterialExpressionScalarParameter_6
 	Class: MaterialExpressionScalarParameter
 	Outer: Material VT_Trail_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b6b0 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001b6bc with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [54]
 	Name: MaterialExpressionScalarParameter_7
 	Class: MaterialExpressionScalarParameter
 	Outer: Material VT_Trail_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b764 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001b770 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [55]
 	Name: MaterialExpressionScalarParameter_8
 	Class: MaterialExpressionScalarParameter
 	Outer: Material VT_Trail_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b818 with 0x00000094 Bytes
+	Serialized data: at 0x000000000001b824 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [56]
 	Name: None
@@ -1458,84 +1462,84 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticComponentMaskParameter
 	Outer: Material Lightning_01_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001bf9c with 0x00000145 Bytes
+	Serialized data: at 0x000000000001bfa8 with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [69]
 	Name: MaterialExpressionStaticComponentMaskParameter_2
 	Class: MaterialExpressionStaticComponentMaskParameter
 	Outer: Material Lightning_01_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c0e1 with 0x00000145 Bytes
+	Serialized data: at 0x000000000001c0ed with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [70]
 	Name: MaterialExpressionStaticSwitchParameter_0
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material BurnOutFlare_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c226 with 0x00000170 Bytes
+	Serialized data: at 0x000000000001c232 with 0x00000170 Bytes
 	Export Flags: 0x00000001
 [71]
 	Name: MaterialExpressionStaticSwitchParameter_1
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material BoostMesh_Base_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c396 with 0x00000091 Bytes
+	Serialized data: at 0x000000000001c3a2 with 0x00000091 Bytes
 	Export Flags: 0x00000001
 [72]
 	Name: MaterialExpressionStaticSwitchParameter_1
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material VT_Trail_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c427 with 0x00000120 Bytes
+	Serialized data: at 0x000000000001c433 with 0x00000120 Bytes
 	Export Flags: 0x00000001
 [73]
 	Name: MaterialExpressionTextureSampleParameter2D_0
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material BurnOutFlare_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c547 with 0x00000094 Bytes
+	Serialized data: at 0x000000000001c553 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [74]
 	Name: MaterialExpressionTextureSampleParameter2D_1
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material BurnOutFlare_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c5db with 0x000000f1 Bytes
+	Serialized data: at 0x000000000001c5e7 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [75]
 	Name: MaterialExpressionTextureSampleParameter2D_1
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material BoostMesh_Base_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c6cc with 0x000000d8 Bytes
+	Serialized data: at 0x000000000001c6d8 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [76]
 	Name: MaterialExpressionTextureSampleParameter2D_0
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material Lightning_01_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c7a4 with 0x000000d8 Bytes
+	Serialized data: at 0x000000000001c7b0 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [77]
 	Name: MaterialExpressionTextureSampleParameter2D_1
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material Lightning_01_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c87c with 0x000000d8 Bytes
+	Serialized data: at 0x000000000001c888 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [78]
 	Name: MaterialExpressionVectorParameter_0
 	Class: MaterialExpressionVectorParameter
 	Outer: Material BoostMesh_Base_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c954 with 0x000000a8 Bytes
+	Serialized data: at 0x000000000001c960 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [79]
 	Name: MaterialExpressionVectorParameter_0
 	Class: MaterialExpressionVectorParameter
 	Outer: Material VT_Trail_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c9fc with 0x000000a8 Bytes
+	Serialized data: at 0x000000000001ca08 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [80]
 	Name: None
@@ -1566,14 +1570,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialInstanceConstant
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000001d518 with 0x000001ad Bytes
+	Serialized data: at 0x000000000001d524 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [85]
 	Name: BurnOutFlare_03_MIC
 	Class: MaterialInstanceConstant
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000001d6c5 with 0x0000029d Bytes
+	Serialized data: at 0x000000000001d6d1 with 0x0000029d Bytes
 	Export Flags: 0x00000001
 [86]
 	Name: None
@@ -1598,7 +1602,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialInstanceConstant
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000001eb66 with 0x00000495 Bytes
+	Serialized data: at 0x000000000001eb72 with 0x00000495 Bytes
 	Export Flags: 0x00000001
 [90]
 	Name: None
@@ -1635,77 +1639,77 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialInstanceConstant
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000020717 with 0x00000279 Bytes
+	Serialized data: at 0x0000000000020723 with 0x00000279 Bytes
 	Export Flags: 0x00000001
 [96]
 	Name: Lightning_01_MIC
 	Class: MaterialInstanceConstant
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000003f5b5e2 with 0x0000025d Bytes
+	Serialized data: at 0x0000000003f5b5ee with 0x0000025d Bytes
 	Export Flags: 0x00000001
 [97]
 	Name: Trail_VT_01_MIC
 	Class: MaterialInstanceConstant
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000003f5b83f with 0x00000415 Bytes
+	Serialized data: at 0x0000000003f5b84b with 0x00000415 Bytes
 	Export Flags: 0x00000001
 [98]
 	Name: Trail_VT_01M_MIC
 	Class: MaterialInstanceConstant
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000003f5bc54 with 0x00000415 Bytes
+	Serialized data: at 0x0000000003f5bc60 with 0x00000415 Bytes
 	Export Flags: 0x00000001
 [99]
 	Name: Trail_VT_02_MIC
 	Class: MaterialInstanceConstant
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000003f5c069 with 0x00000415 Bytes
+	Serialized data: at 0x0000000003f5c075 with 0x00000415 Bytes
 	Export Flags: 0x00000001
 [100]
 	Name: Trail_VT_02M_MIC
 	Class: MaterialInstanceConstant
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000003f5c47e with 0x00000415 Bytes
+	Serialized data: at 0x0000000003f5c48a with 0x00000415 Bytes
 	Export Flags: 0x00000001
 [101]
 	Name: Trail_VT_03_MIC
 	Class: MaterialInstanceConstant
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000003f5c893 with 0x00000415 Bytes
+	Serialized data: at 0x0000000003f5c89f with 0x00000415 Bytes
 	Export Flags: 0x00000001
 [102]
 	Name: Trail_VT_04_MIC
 	Class: MaterialInstanceConstant
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000003f5cca8 with 0x00000371 Bytes
+	Serialized data: at 0x0000000003f5ccb4 with 0x00000371 Bytes
 	Export Flags: 0x00000001
 [103]
 	Name: Trail_VT_04M_MIC
 	Class: MaterialInstanceConstant
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000003f5d019 with 0x00000415 Bytes
+	Serialized data: at 0x0000000003f5d025 with 0x00000415 Bytes
 	Export Flags: 0x00000001
 [104]
 	Name: Trail_VT_05_MIC
 	Class: MaterialInstanceConstant
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000003f5d42e with 0x00000415 Bytes
+	Serialized data: at 0x0000000003f5d43a with 0x00000415 Bytes
 	Export Flags: 0x00000001
 [105]
 	Name: Trail_VT_05M_MIC
 	Class: MaterialInstanceConstant
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000003f5d843 with 0x00000415 Bytes
+	Serialized data: at 0x0000000003f5d84f with 0x00000415 Bytes
 	Export Flags: 0x00000001
 [106]
 	Name: None
@@ -1723,7 +1727,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002363a with 0x0000002c Bytes
+	Serialized data: at 0x0000000000023646 with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [109]
 	Name: None
@@ -1885,7 +1889,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: boost_alienliquid
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002379e with 0x0000000c Bytes
+	Serialized data: at 0x00000000000237aa with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
@@ -1894,13 +1898,13 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package boost_alienliquid
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000237aa with 0x0000000c Bytes
+	Serialized data: at 0x00000000000237b6 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [137]
 	Name: Boost_Burnout
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000237b6 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000237c2 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1921,14 +1925,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package Boost_Burnout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000237da with 0x0000000c Bytes
+	Serialized data: at 0x00000000000237e6 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [141]
 	Name: Textures
 	Class: Package
 	Outer: Package Boost_Burnout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000237e6 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000237f2 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [142]
 	Name: None
@@ -1970,7 +1974,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: boost_gpp
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002383a with 0x0000000c Bytes
+	Serialized data: at 0x0000000000023846 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1979,21 +1983,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package boost_gpp
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000023846 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000023852 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [150]
 	Name: Meshes
 	Class: Package
 	Outer: Package boost_gpp
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000023852 with 0x0000000c Bytes
+	Serialized data: at 0x000000000002385e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [151]
 	Name: Textures
 	Class: Package
 	Outer: Package boost_gpp
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002385e with 0x0000000c Bytes
+	Serialized data: at 0x000000000002386a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [152]
 	Name: None
@@ -2011,7 +2015,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Boost_Lightning
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000023882 with 0x0000000c Bytes
+	Serialized data: at 0x000000000002388e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2020,7 +2024,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package Boost_Lightning
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002388e with 0x0000000c Bytes
+	Serialized data: at 0x000000000002389a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [156]
 	Name: None
@@ -2044,7 +2048,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Boost_Tests
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000238be with 0x0000000c Bytes
+	Serialized data: at 0x00000000000238ca with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2065,7 +2069,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package Boost_Tests
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000238e2 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000238ee with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [163]
 	Name: None
@@ -2083,7 +2087,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: boost_vt
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000023906 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000023912 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2092,34 +2096,34 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package boost_vt
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000023912 with 0x0000000c Bytes
+	Serialized data: at 0x000000000002391e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [167]
 	Name: LF
 	Class: Package
 	Outer: Package boost_vt
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002391e with 0x0000000c Bytes
+	Serialized data: at 0x000000000002392a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [168]
 	Name: Materials
 	Class: Package
 	Outer: Package boost_vt
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002392a with 0x0000000c Bytes
+	Serialized data: at 0x0000000000023936 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [169]
 	Name: Textures
 	Class: Package
 	Outer: Package boost_vt
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000023936 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000023942 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [170]
 	Name: boost_vt_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000023942 with 0x0000000c Bytes
+	Serialized data: at 0x000000000002394e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -2127,7 +2131,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: boost_zti
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002394e with 0x0000000c Bytes
+	Serialized data: at 0x000000000002395a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2136,13 +2140,13 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package boost_zti
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002395a with 0x0000000c Bytes
+	Serialized data: at 0x0000000000023966 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [173]
 	Name: BoostBase
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000023966 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000023972 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2151,13 +2155,13 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package BoostBase
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000023972 with 0x0000000c Bytes
+	Serialized data: at 0x000000000002397e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [175]
 	Name: EditorMaterials
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002397e with 0x0000000c Bytes
+	Serialized data: at 0x000000000002398a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2225,7 +2229,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: SFX_Car_Boost
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000023a02 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000023a0e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2233,7 +2237,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: SFX_UI_Boost
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000023a0e with 0x0000000c Bytes
+	Serialized data: at 0x0000000000023a1a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2253,7 +2257,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: wheel_betray_tier4
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000023a32 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000023a3e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2262,1274 +2266,1274 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package wheel_betray_tier4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000023a3e with 0x0000000c Bytes
+	Serialized data: at 0x0000000000023a4a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [192]
 	Name: ParameterDispenser_X_0
 	Class: ParameterDispenser_X
 	Outer: FXActor_Boost_TA FXActor
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x0000000000023a4a with 0x00000010 Bytes
+	Serialized data: at 0x0000000000023a56 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [193]
 	Name: ParameterDispenser_X_0
 	Class: ParameterDispenser_X
 	Outer: FXActor_Boost_TA FXActor
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x0000000000023a5a with 0x00000010 Bytes
+	Serialized data: at 0x0000000000023a66 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [194]
 	Name: ParticleLODLevel_2
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_11
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023a6a with 0x000000b8 Bytes
+	Serialized data: at 0x0000000000023a76 with 0x000000b8 Bytes
 	Export Flags: 0x00000001
 [195]
 	Name: ParticleLODLevel_2
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000003c8e291 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000003c8e29d with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [196]
 	Name: ParticleLODLevel_0
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023bd6 with 0x000000c8 Bytes
+	Serialized data: at 0x0000000000023be2 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [197]
 	Name: ParticleLODLevel_0
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_5
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023c9e with 0x000000c8 Bytes
+	Serialized data: at 0x0000000000023caa with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [198]
 	Name: ParticleLODLevel_0
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_6
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023d66 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000023d72 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [199]
 	Name: ParticleLODLevel_0
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_7
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023dfa with 0x000000c8 Bytes
+	Serialized data: at 0x0000000000023e06 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [200]
 	Name: ParticleLODLevel_2
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_8
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023ec2 with 0x000000c8 Bytes
+	Serialized data: at 0x0000000000023ece with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [201]
 	Name: ParticleLODLevel_2
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_9
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023f8a with 0x000000c8 Bytes
+	Serialized data: at 0x0000000000023f96 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [202]
 	Name: ParticleLODLevel_2
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_11
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024052 with 0x000000b8 Bytes
+	Serialized data: at 0x000000000002405e with 0x000000b8 Bytes
 	Export Flags: 0x00000001
 [203]
 	Name: ParticleLODLevel_2
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000003c8e345 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000003c8e351 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [204]
 	Name: ParticleLODLevel_0
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000241be with 0x000000c8 Bytes
+	Serialized data: at 0x00000000000241ca with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [205]
 	Name: ParticleLODLevel_0
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_5
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024286 with 0x000000c8 Bytes
+	Serialized data: at 0x0000000000024292 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [206]
 	Name: ParticleLODLevel_0
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_6
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002434e with 0x00000094 Bytes
+	Serialized data: at 0x000000000002435a with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [207]
 	Name: ParticleLODLevel_0
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_7
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000243e2 with 0x000000c8 Bytes
+	Serialized data: at 0x00000000000243ee with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [208]
 	Name: ParticleLODLevel_2
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_8
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000244aa with 0x000000c8 Bytes
+	Serialized data: at 0x00000000000244b6 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [209]
 	Name: ParticleLODLevel_2
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_9
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024572 with 0x000000c8 Bytes
+	Serialized data: at 0x000000000002457e with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [210]
 	Name: ParticleModuleAcceleration_2
 	Class: ParticleModuleAcceleration
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002463a with 0x00000141 Bytes
+	Serialized data: at 0x0000000000024646 with 0x00000141 Bytes
 	Export Flags: 0x00000001
 [211]
 	Name: ParticleModuleAcceleration_3
 	Class: ParticleModuleAcceleration
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002477b with 0x0000015a Bytes
+	Serialized data: at 0x0000000000024787 with 0x0000015a Bytes
 	Export Flags: 0x00000001
 [212]
 	Name: ParticleModuleAcceleration_2
 	Class: ParticleModuleAcceleration
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000248d5 with 0x00000141 Bytes
+	Serialized data: at 0x00000000000248e1 with 0x00000141 Bytes
 	Export Flags: 0x00000001
 [213]
 	Name: ParticleModuleAcceleration_3
 	Class: ParticleModuleAcceleration
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024a16 with 0x0000015a Bytes
+	Serialized data: at 0x0000000000024a22 with 0x0000015a Bytes
 	Export Flags: 0x00000001
 [214]
 	Name: ParticleModuleColor_0
 	Class: ParticleModuleColor
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024b70 with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000024b7c with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [215]
 	Name: ParticleModuleColor_11
 	Class: ParticleModuleColor
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024c41 with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000024c4d with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [216]
 	Name: ParticleModuleColor_13
 	Class: ParticleModuleColor
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024d12 with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000024d1e with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [217]
 	Name: ParticleModuleColor_17
 	Class: ParticleModuleColor
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024de3 with 0x0000011d Bytes
+	Serialized data: at 0x0000000000024def with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [218]
 	Name: ParticleModuleColor_4
 	Class: ParticleModuleColor
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024f00 with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000024f0c with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [219]
 	Name: ParticleModuleColor_6
 	Class: ParticleModuleColor
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024fd1 with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000024fdd with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [220]
 	Name: ParticleModuleColor_8
 	Class: ParticleModuleColor
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000250a2 with 0x000000d1 Bytes
+	Serialized data: at 0x00000000000250ae with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [221]
 	Name: ParticleModuleColor_0
 	Class: ParticleModuleColor
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025173 with 0x000000d1 Bytes
+	Serialized data: at 0x000000000002517f with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [222]
 	Name: ParticleModuleColor_11
 	Class: ParticleModuleColor
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025244 with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000025250 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [223]
 	Name: ParticleModuleColor_13
 	Class: ParticleModuleColor
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025315 with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000025321 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [224]
 	Name: ParticleModuleColor_17
 	Class: ParticleModuleColor
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000253e6 with 0x0000011d Bytes
+	Serialized data: at 0x00000000000253f2 with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [225]
 	Name: ParticleModuleColor_4
 	Class: ParticleModuleColor
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025503 with 0x000000d1 Bytes
+	Serialized data: at 0x000000000002550f with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [226]
 	Name: ParticleModuleColor_6
 	Class: ParticleModuleColor
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000255d4 with 0x000000d1 Bytes
+	Serialized data: at 0x00000000000255e0 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [227]
 	Name: ParticleModuleColor_8
 	Class: ParticleModuleColor
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000256a5 with 0x000000d1 Bytes
+	Serialized data: at 0x00000000000256b1 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [228]
 	Name: ParticleModuleColorScaleOverLife_2
 	Class: ParticleModuleColorScaleOverLife
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025776 with 0x0000021d Bytes
+	Serialized data: at 0x0000000000025782 with 0x0000021d Bytes
 	Export Flags: 0x00000001
 [229]
 	Name: ParticleModuleColorScaleOverLife_4
 	Class: ParticleModuleColorScaleOverLife
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025993 with 0x00000185 Bytes
+	Serialized data: at 0x000000000002599f with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [230]
 	Name: ParticleModuleColorScaleOverLife_6
 	Class: ParticleModuleColorScaleOverLife
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025b18 with 0x0000011d Bytes
+	Serialized data: at 0x0000000000025b24 with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [231]
 	Name: ParticleModuleColorScaleOverLife_2
 	Class: ParticleModuleColorScaleOverLife
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025c35 with 0x0000021d Bytes
+	Serialized data: at 0x0000000000025c41 with 0x0000021d Bytes
 	Export Flags: 0x00000001
 [232]
 	Name: ParticleModuleColorScaleOverLife_4
 	Class: ParticleModuleColorScaleOverLife
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025e52 with 0x00000185 Bytes
+	Serialized data: at 0x0000000000025e5e with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [233]
 	Name: ParticleModuleColorScaleOverLife_6
 	Class: ParticleModuleColorScaleOverLife
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025fd7 with 0x0000011d Bytes
+	Serialized data: at 0x0000000000025fe3 with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [234]
 	Name: ParticleModuleLifetime_1
 	Class: ParticleModuleLifetime
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000260f4 with 0x0000009d Bytes
+	Serialized data: at 0x0000000000026100 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [235]
 	Name: ParticleModuleLifetime_3
 	Class: ParticleModuleLifetime
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026191 with 0x0000009d Bytes
+	Serialized data: at 0x000000000002619d with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [236]
 	Name: ParticleModuleLifetime_4
 	Class: ParticleModuleLifetime
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002622e with 0x0000009d Bytes
+	Serialized data: at 0x000000000002623a with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [237]
 	Name: ParticleModuleLifetime_7
 	Class: ParticleModuleLifetime
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000262cb with 0x0000009d Bytes
+	Serialized data: at 0x00000000000262d7 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [238]
 	Name: ParticleModuleLifetime_1
 	Class: ParticleModuleLifetime
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026368 with 0x0000009d Bytes
+	Serialized data: at 0x0000000000026374 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [239]
 	Name: ParticleModuleLifetime_3
 	Class: ParticleModuleLifetime
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026405 with 0x0000009d Bytes
+	Serialized data: at 0x0000000000026411 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [240]
 	Name: ParticleModuleLifetime_4
 	Class: ParticleModuleLifetime
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000264a2 with 0x0000009d Bytes
+	Serialized data: at 0x00000000000264ae with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [241]
 	Name: ParticleModuleLifetime_7
 	Class: ParticleModuleLifetime
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002653f with 0x0000009d Bytes
+	Serialized data: at 0x000000000002654b with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [242]
 	Name: ParticleModuleLocation_0
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000265dc with 0x000000c6 Bytes
+	Serialized data: at 0x00000000000265e8 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [243]
 	Name: ParticleModuleLocation_1
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000266a2 with 0x000000c6 Bytes
+	Serialized data: at 0x00000000000266ae with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [244]
 	Name: ParticleModuleLocation_11
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026768 with 0x00000071 Bytes
+	Serialized data: at 0x0000000000026774 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [245]
 	Name: ParticleModuleLocation_3
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000267d9 with 0x000000c6 Bytes
+	Serialized data: at 0x00000000000267e5 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [246]
 	Name: ParticleModuleLocation_5
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002689f with 0x000000c6 Bytes
+	Serialized data: at 0x00000000000268ab with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [247]
 	Name: ParticleModuleLocation_7
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026965 with 0x000000c6 Bytes
+	Serialized data: at 0x0000000000026971 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [248]
 	Name: ParticleModuleLocation_0
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026a2b with 0x000000c6 Bytes
+	Serialized data: at 0x0000000000026a37 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [249]
 	Name: ParticleModuleLocation_1
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026af1 with 0x000000c6 Bytes
+	Serialized data: at 0x0000000000026afd with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [250]
 	Name: ParticleModuleLocation_11
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026bb7 with 0x00000071 Bytes
+	Serialized data: at 0x0000000000026bc3 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [251]
 	Name: ParticleModuleLocation_3
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026c28 with 0x000000c6 Bytes
+	Serialized data: at 0x0000000000026c34 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [252]
 	Name: ParticleModuleLocation_5
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026cee with 0x000000c6 Bytes
+	Serialized data: at 0x0000000000026cfa with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [253]
 	Name: ParticleModuleLocation_7
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026db4 with 0x000000c6 Bytes
+	Serialized data: at 0x0000000000026dc0 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [254]
 	Name: ParticleModuleLocationEmitter_1
 	Class: ParticleModuleLocationEmitter
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026e7a with 0x0000008e Bytes
+	Serialized data: at 0x0000000000026e86 with 0x0000008e Bytes
 	Export Flags: 0x00000001
 [255]
 	Name: ParticleModuleLocationEmitter_1
 	Class: ParticleModuleLocationEmitter
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026f08 with 0x0000008e Bytes
+	Serialized data: at 0x0000000000026f14 with 0x0000008e Bytes
 	Export Flags: 0x00000001
 [256]
 	Name: ParticleModuleLocationPrimitiveCylinder_0
 	Class: ParticleModuleLocationPrimitiveCylinder
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026f96 with 0x0000022b Bytes
+	Serialized data: at 0x0000000000026fa2 with 0x0000022b Bytes
 	Export Flags: 0x00000001
 [257]
 	Name: ParticleModuleLocationPrimitiveCylinder_2
 	Class: ParticleModuleLocationPrimitiveCylinder
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000271c1 with 0x0000024d Bytes
+	Serialized data: at 0x00000000000271cd with 0x0000024d Bytes
 	Export Flags: 0x00000001
 [258]
 	Name: ParticleModuleLocationPrimitiveCylinder_0
 	Class: ParticleModuleLocationPrimitiveCylinder
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002740e with 0x0000022b Bytes
+	Serialized data: at 0x000000000002741a with 0x0000022b Bytes
 	Export Flags: 0x00000001
 [259]
 	Name: ParticleModuleLocationPrimitiveCylinder_2
 	Class: ParticleModuleLocationPrimitiveCylinder
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027639 with 0x0000024d Bytes
+	Serialized data: at 0x0000000000027645 with 0x0000024d Bytes
 	Export Flags: 0x00000001
 [260]
 	Name: ParticleModuleLocationPrimitiveSphere_1
 	Class: ParticleModuleLocationPrimitiveSphere
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027886 with 0x0000013e Bytes
+	Serialized data: at 0x0000000000027892 with 0x0000013e Bytes
 	Export Flags: 0x00000001
 [261]
 	Name: ParticleModuleLocationPrimitiveSphere_1
 	Class: ParticleModuleLocationPrimitiveSphere
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000279c4 with 0x0000013e Bytes
+	Serialized data: at 0x00000000000279d0 with 0x0000013e Bytes
 	Export Flags: 0x00000001
 [262]
 	Name: ParticleModuleMeshRotation_0
 	Class: ParticleModuleMeshRotation
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027b02 with 0x000000c5 Bytes
+	Serialized data: at 0x0000000000027b0e with 0x000000c5 Bytes
 	Export Flags: 0x00000001
 [263]
 	Name: ParticleModuleMeshRotation_0
 	Class: ParticleModuleMeshRotation
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027bc7 with 0x000000c5 Bytes
+	Serialized data: at 0x0000000000027bd3 with 0x000000c5 Bytes
 	Export Flags: 0x00000001
 [264]
 	Name: ParticleModuleOrientationAxisLock_0
 	Class: ParticleModuleOrientationAxisLock
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027c8c with 0x0000006e Bytes
+	Serialized data: at 0x0000000000027c98 with 0x0000006e Bytes
 	Export Flags: 0x00000001
 [265]
 	Name: ParticleModuleOrientationAxisLock_0
 	Class: ParticleModuleOrientationAxisLock
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027cfa with 0x0000006e Bytes
+	Serialized data: at 0x0000000000027d06 with 0x0000006e Bytes
 	Export Flags: 0x00000001
 [266]
 	Name: ParticleModuleParameterDynamic_11
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027d68 with 0x00000765 Bytes
+	Serialized data: at 0x0000000000027d74 with 0x00000765 Bytes
 	Export Flags: 0x00000001
 [267]
 	Name: ParticleModuleParameterDynamic_14
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000284cd with 0x00000781 Bytes
+	Serialized data: at 0x00000000000284d9 with 0x00000781 Bytes
 	Export Flags: 0x00000001
 [268]
 	Name: ParticleModuleParameterDynamic_2
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000028c4e with 0x00000765 Bytes
+	Serialized data: at 0x0000000000028c5a with 0x00000765 Bytes
 	Export Flags: 0x00000001
 [269]
 	Name: ParticleModuleParameterDynamic_3
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000293b3 with 0x000007cd Bytes
+	Serialized data: at 0x00000000000293bf with 0x000007cd Bytes
 	Export Flags: 0x00000001
 [270]
 	Name: ParticleModuleParameterDynamic_5
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029b80 with 0x00000765 Bytes
+	Serialized data: at 0x0000000000029b8c with 0x00000765 Bytes
 	Export Flags: 0x00000001
 [271]
 	Name: ParticleModuleParameterDynamic_6
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002a2e5 with 0x00000765 Bytes
+	Serialized data: at 0x000000000002a2f1 with 0x00000765 Bytes
 	Export Flags: 0x00000001
 [272]
 	Name: ParticleModuleParameterDynamic_9
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002aa4a with 0x00000765 Bytes
+	Serialized data: at 0x000000000002aa56 with 0x00000765 Bytes
 	Export Flags: 0x00000001
 [273]
 	Name: ParticleModuleParameterDynamic_11
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002b1af with 0x00000765 Bytes
+	Serialized data: at 0x000000000002b1bb with 0x00000765 Bytes
 	Export Flags: 0x00000001
 [274]
 	Name: ParticleModuleParameterDynamic_14
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002b914 with 0x00000781 Bytes
+	Serialized data: at 0x000000000002b920 with 0x00000781 Bytes
 	Export Flags: 0x00000001
 [275]
 	Name: ParticleModuleParameterDynamic_2
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002c095 with 0x00000765 Bytes
+	Serialized data: at 0x000000000002c0a1 with 0x00000765 Bytes
 	Export Flags: 0x00000001
 [276]
 	Name: ParticleModuleParameterDynamic_3
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002c7fa with 0x000007cd Bytes
+	Serialized data: at 0x000000000002c806 with 0x000007cd Bytes
 	Export Flags: 0x00000001
 [277]
 	Name: ParticleModuleParameterDynamic_5
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002cfc7 with 0x00000765 Bytes
+	Serialized data: at 0x000000000002cfd3 with 0x00000765 Bytes
 	Export Flags: 0x00000001
 [278]
 	Name: ParticleModuleParameterDynamic_6
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002d72c with 0x00000765 Bytes
+	Serialized data: at 0x000000000002d738 with 0x00000765 Bytes
 	Export Flags: 0x00000001
 [279]
 	Name: ParticleModuleParameterDynamic_9
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002de91 with 0x00000765 Bytes
+	Serialized data: at 0x000000000002de9d with 0x00000765 Bytes
 	Export Flags: 0x00000001
 [280]
 	Name: ParticleModuleRequired_11
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002e5f6 with 0x000000f7 Bytes
+	Serialized data: at 0x000000000002e602 with 0x000000f7 Bytes
 	Export Flags: 0x00000001
 [281]
 	Name: ParticleModuleRequired_13
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002e6ed with 0x000000f7 Bytes
+	Serialized data: at 0x000000000002e6f9 with 0x000000f7 Bytes
 	Export Flags: 0x00000001
 [282]
 	Name: ParticleModuleRequired_15
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002e7e4 with 0x000000f4 Bytes
+	Serialized data: at 0x000000000002e7f0 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [283]
 	Name: ParticleModuleRequired_2
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002e8d8 with 0x0000017f Bytes
+	Serialized data: at 0x000000000002e8e4 with 0x0000017f Bytes
 	Export Flags: 0x00000001
 [284]
 	Name: ParticleModuleRequired_4
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002ea57 with 0x000000f7 Bytes
+	Serialized data: at 0x000000000002ea63 with 0x000000f7 Bytes
 	Export Flags: 0x00000001
 [285]
 	Name: ParticleModuleRequired_6
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002eb4e with 0x000000f7 Bytes
+	Serialized data: at 0x000000000002eb5a with 0x000000f7 Bytes
 	Export Flags: 0x00000001
 [286]
 	Name: ParticleModuleRequired_8
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002ec45 with 0x000000f7 Bytes
+	Serialized data: at 0x000000000002ec51 with 0x000000f7 Bytes
 	Export Flags: 0x00000001
 [287]
 	Name: ParticleModuleRequired_9
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002ed3c with 0x00000138 Bytes
+	Serialized data: at 0x000000000002ed48 with 0x00000138 Bytes
 	Export Flags: 0x00000001
 [288]
 	Name: ParticleModuleRequired_11
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002ee74 with 0x000000f7 Bytes
+	Serialized data: at 0x000000000002ee80 with 0x000000f7 Bytes
 	Export Flags: 0x00000001
 [289]
 	Name: ParticleModuleRequired_13
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002ef6b with 0x000000f7 Bytes
+	Serialized data: at 0x000000000002ef77 with 0x000000f7 Bytes
 	Export Flags: 0x00000001
 [290]
 	Name: ParticleModuleRequired_15
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002f062 with 0x000000f4 Bytes
+	Serialized data: at 0x000000000002f06e with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [291]
 	Name: ParticleModuleRequired_2
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002f156 with 0x0000017f Bytes
+	Serialized data: at 0x000000000002f162 with 0x0000017f Bytes
 	Export Flags: 0x00000001
 [292]
 	Name: ParticleModuleRequired_4
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002f2d5 with 0x000000f7 Bytes
+	Serialized data: at 0x000000000002f2e1 with 0x000000f7 Bytes
 	Export Flags: 0x00000001
 [293]
 	Name: ParticleModuleRequired_6
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002f3cc with 0x000000f7 Bytes
+	Serialized data: at 0x000000000002f3d8 with 0x000000f7 Bytes
 	Export Flags: 0x00000001
 [294]
 	Name: ParticleModuleRequired_8
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002f4c3 with 0x000000f7 Bytes
+	Serialized data: at 0x000000000002f4cf with 0x000000f7 Bytes
 	Export Flags: 0x00000001
 [295]
 	Name: ParticleModuleRequired_9
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002f5ba with 0x00000138 Bytes
+	Serialized data: at 0x000000000002f5c6 with 0x00000138 Bytes
 	Export Flags: 0x00000001
 [296]
 	Name: ParticleModuleRotation_1
 	Class: ParticleModuleRotation
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002f6f2 with 0x00000071 Bytes
+	Serialized data: at 0x000000000002f6fe with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [297]
 	Name: ParticleModuleRotation_1
 	Class: ParticleModuleRotation
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002f763 with 0x00000071 Bytes
+	Serialized data: at 0x000000000002f76f with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [298]
 	Name: ParticleModuleRotationRate_1
 	Class: ParticleModuleRotationRate
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002f7d4 with 0x00000108 Bytes
+	Serialized data: at 0x000000000002f7e0 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [299]
 	Name: ParticleModuleRotationRate_1
 	Class: ParticleModuleRotationRate
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002f8dc with 0x00000108 Bytes
+	Serialized data: at 0x000000000002f8e8 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [300]
 	Name: ParticleModuleSize_2
 	Class: ParticleModuleSize
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002f9e4 with 0x000000ad Bytes
+	Serialized data: at 0x000000000002f9f0 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [301]
 	Name: ParticleModuleSize_3
 	Class: ParticleModuleSize
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002fa91 with 0x0000008d Bytes
+	Serialized data: at 0x000000000002fa9d with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [302]
 	Name: ParticleModuleSize_6
 	Class: ParticleModuleSize
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002fb1e with 0x00000128 Bytes
+	Serialized data: at 0x000000000002fb2a with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [303]
 	Name: ParticleModuleSize_7
 	Class: ParticleModuleSize
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002fc46 with 0x000000ad Bytes
+	Serialized data: at 0x000000000002fc52 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [304]
 	Name: ParticleModuleSize_2
 	Class: ParticleModuleSize
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002fcf3 with 0x000000ad Bytes
+	Serialized data: at 0x000000000002fcff with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [305]
 	Name: ParticleModuleSize_3
 	Class: ParticleModuleSize
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002fda0 with 0x0000008d Bytes
+	Serialized data: at 0x000000000002fdac with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [306]
 	Name: ParticleModuleSize_6
 	Class: ParticleModuleSize
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002fe2d with 0x00000128 Bytes
+	Serialized data: at 0x000000000002fe39 with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [307]
 	Name: ParticleModuleSize_7
 	Class: ParticleModuleSize
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002ff55 with 0x000000ad Bytes
+	Serialized data: at 0x000000000002ff61 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [308]
 	Name: ParticleModuleSizeMultiplyLife_2
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000030002 with 0x000001bd Bytes
+	Serialized data: at 0x000000000003000e with 0x000001bd Bytes
 	Export Flags: 0x00000001
 [309]
 	Name: ParticleModuleSizeMultiplyLife_5
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000301bf with 0x000001ad Bytes
+	Serialized data: at 0x00000000000301cb with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [310]
 	Name: ParticleModuleSizeMultiplyLife_2
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000003036c with 0x000001bd Bytes
+	Serialized data: at 0x0000000000030378 with 0x000001bd Bytes
 	Export Flags: 0x00000001
 [311]
 	Name: ParticleModuleSizeMultiplyLife_5
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000030529 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000030535 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [312]
 	Name: ParticleModuleSizeScale_0
 	Class: ParticleModuleSizeScale
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000306d6 with 0x000000c6 Bytes
+	Serialized data: at 0x00000000000306e2 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [313]
 	Name: ParticleModuleSizeScale_0
 	Class: ParticleModuleSizeScale
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000003079c with 0x000000c6 Bytes
+	Serialized data: at 0x00000000000307a8 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [314]
 	Name: ParticleModuleSizeScaleByTime_2
 	Class: ParticleModuleSizeScaleByTime
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000030862 with 0x000001ad Bytes
+	Serialized data: at 0x000000000003086e with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [315]
 	Name: ParticleModuleSizeScaleByTime_2
 	Class: ParticleModuleSizeScaleByTime
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000030a0f with 0x000001ad Bytes
+	Serialized data: at 0x0000000000030a1b with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [316]
 	Name: ParticleModuleSourceMovement_0
 	Class: ParticleModuleSourceMovement
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000030bbc with 0x000000c9 Bytes
+	Serialized data: at 0x0000000000030bc8 with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [317]
 	Name: ParticleModuleSourceMovement_0
 	Class: ParticleModuleSourceMovement
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000030c85 with 0x000000c9 Bytes
+	Serialized data: at 0x0000000000030c91 with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [318]
 	Name: ParticleModuleSpawn_2
 	Class: ParticleModuleSpawn
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000030d4e with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000030d5a with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [319]
 	Name: ParticleModuleSpawn_4
 	Class: ParticleModuleSpawn
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000030e2f with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000030e3b with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [320]
 	Name: ParticleModuleSpawn_6
 	Class: ParticleModuleSpawn
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000030f10 with 0x0000012d Bytes
+	Serialized data: at 0x0000000000030f1c with 0x0000012d Bytes
 	Export Flags: 0x00000001
 [321]
 	Name: ParticleModuleSpawn_7
 	Class: ParticleModuleSpawn
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000003103d with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000031049 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [322]
 	Name: ParticleModuleSpawn_2
 	Class: ParticleModuleSpawn
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000003111e with 0x000000e1 Bytes
+	Serialized data: at 0x000000000003112a with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [323]
 	Name: ParticleModuleSpawn_4
 	Class: ParticleModuleSpawn
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000311ff with 0x000000e1 Bytes
+	Serialized data: at 0x000000000003120b with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [324]
 	Name: ParticleModuleSpawn_6
 	Class: ParticleModuleSpawn
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000312e0 with 0x0000012d Bytes
+	Serialized data: at 0x00000000000312ec with 0x0000012d Bytes
 	Export Flags: 0x00000001
 [325]
 	Name: ParticleModuleSpawn_7
 	Class: ParticleModuleSpawn
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000003140d with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000031419 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [326]
 	Name: ParticleModuleSpawnPerUnit_0
 	Class: ParticleModuleSpawnPerUnit
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000314ee with 0x000000a9 Bytes
+	Serialized data: at 0x00000000000314fa with 0x000000a9 Bytes
 	Export Flags: 0x00000001
 [327]
 	Name: ParticleModuleSpawnPerUnit_0
 	Class: ParticleModuleSpawnPerUnit
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000031597 with 0x000000a9 Bytes
+	Serialized data: at 0x00000000000315a3 with 0x000000a9 Bytes
 	Export Flags: 0x00000001
 [328]
 	Name: ParticleModuleSubUV_1
 	Class: ParticleModuleSubUV
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000031640 with 0x00000105 Bytes
+	Serialized data: at 0x000000000003164c with 0x00000105 Bytes
 	Export Flags: 0x00000001
 [329]
 	Name: ParticleModuleSubUV_1
 	Class: ParticleModuleSubUV
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000031745 with 0x00000105 Bytes
+	Serialized data: at 0x0000000000031751 with 0x00000105 Bytes
 	Export Flags: 0x00000001
 [330]
 	Name: ParticleModuleTypeDataMesh_0
 	Class: ParticleModuleTypeDataMesh
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000003184a with 0x0000007e Bytes
+	Serialized data: at 0x0000000000031856 with 0x0000007e Bytes
 	Export Flags: 0x00000001
 [331]
 	Name: ParticleModuleTypeDataMesh_0
 	Class: ParticleModuleTypeDataMesh
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000318c8 with 0x0000007e Bytes
+	Serialized data: at 0x00000000000318d4 with 0x0000007e Bytes
 	Export Flags: 0x00000001
 [332]
 	Name: ParticleModuleTypeDataRibbon_0
 	Class: ParticleModuleTypeDataRibbon
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000031946 with 0x00000097 Bytes
+	Serialized data: at 0x0000000000031952 with 0x00000097 Bytes
 	Export Flags: 0x00000001
 [333]
 	Name: ParticleModuleTypeDataRibbon_0
 	Class: ParticleModuleTypeDataRibbon
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000319dd with 0x00000097 Bytes
+	Serialized data: at 0x00000000000319e9 with 0x00000097 Bytes
 	Export Flags: 0x00000001
 [334]
 	Name: ParticleModuleVelocity_3
 	Class: ParticleModuleVelocity
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000031a74 with 0x00000185 Bytes
+	Serialized data: at 0x0000000000031a80 with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [335]
 	Name: ParticleModuleVelocity_3
 	Class: ParticleModuleVelocity
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000031bf9 with 0x00000185 Bytes
+	Serialized data: at 0x0000000000031c05 with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [336]
 	Name: ParticleModuleVelocityOverLifetime_0
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000031d7e with 0x000000fb Bytes
+	Serialized data: at 0x0000000000031d8a with 0x000000fb Bytes
 	Export Flags: 0x00000001
 [337]
 	Name: ParticleModuleVelocityOverLifetime_2
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000003c8e3f9 with 0x0000015e Bytes
+	Serialized data: at 0x0000000003c8e405 with 0x0000015e Bytes
 	Export Flags: 0x00000001
 [338]
 	Name: ParticleModuleVelocityOverLifetime_7
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000031fd7 with 0x00000167 Bytes
+	Serialized data: at 0x0000000000031fe3 with 0x00000167 Bytes
 	Export Flags: 0x00000001
 [339]
 	Name: ParticleModuleVelocityOverLifetime_9
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000003213e with 0x0000012b Bytes
+	Serialized data: at 0x000000000003214a with 0x0000012b Bytes
 	Export Flags: 0x00000001
 [340]
 	Name: ParticleModuleVelocityOverLifetime_0
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032269 with 0x000000fb Bytes
+	Serialized data: at 0x0000000000032275 with 0x000000fb Bytes
 	Export Flags: 0x00000001
 [341]
 	Name: ParticleModuleVelocityOverLifetime_2
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000003c8e557 with 0x0000015e Bytes
+	Serialized data: at 0x0000000003c8e563 with 0x0000015e Bytes
 	Export Flags: 0x00000001
 [342]
 	Name: ParticleModuleVelocityOverLifetime_7
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000324c2 with 0x00000167 Bytes
+	Serialized data: at 0x00000000000324ce with 0x00000167 Bytes
 	Export Flags: 0x00000001
 [343]
 	Name: ParticleModuleVelocityOverLifetime_9
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032629 with 0x0000012b Bytes
+	Serialized data: at 0x0000000000032635 with 0x0000012b Bytes
 	Export Flags: 0x00000001
 [344]
 	Name: ParticleSpriteEmitter_0
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032754 with 0x00000045 Bytes
+	Serialized data: at 0x0000000000032760 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [345]
 	Name: ParticleSpriteEmitter_1
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032799 with 0x00000045 Bytes
+	Serialized data: at 0x00000000000327a5 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [346]
 	Name: ParticleSpriteEmitter_10
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000327de with 0x00000045 Bytes
+	Serialized data: at 0x00000000000327ea with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [347]
 	Name: ParticleSpriteEmitter_11
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032823 with 0x0000004c Bytes
+	Serialized data: at 0x000000000003282f with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [348]
 	Name: ParticleSpriteEmitter_12
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000003286f with 0x00000045 Bytes
+	Serialized data: at 0x000000000003287b with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [349]
 	Name: ParticleSpriteEmitter_2
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000328b4 with 0x0000004c Bytes
+	Serialized data: at 0x00000000000328c0 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [350]
 	Name: ParticleSpriteEmitter_3
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032900 with 0x00000045 Bytes
+	Serialized data: at 0x000000000003290c with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [351]
 	Name: ParticleSpriteEmitter_4
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032945 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000032951 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [352]
 	Name: ParticleSpriteEmitter_5
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032991 with 0x0000004c Bytes
+	Serialized data: at 0x000000000003299d with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [353]
 	Name: ParticleSpriteEmitter_6
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000329dd with 0x0000004c Bytes
+	Serialized data: at 0x00000000000329e9 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [354]
 	Name: ParticleSpriteEmitter_7
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032a29 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000032a35 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [355]
 	Name: ParticleSpriteEmitter_8
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032a75 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000032a81 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [356]
 	Name: ParticleSpriteEmitter_9
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_Mirrored_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032ac1 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000032acd with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [357]
 	Name: ParticleSpriteEmitter_0
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032b0d with 0x00000045 Bytes
+	Serialized data: at 0x0000000000032b19 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [358]
 	Name: ParticleSpriteEmitter_1
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032b52 with 0x00000045 Bytes
+	Serialized data: at 0x0000000000032b5e with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [359]
 	Name: ParticleSpriteEmitter_10
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032b97 with 0x00000045 Bytes
+	Serialized data: at 0x0000000000032ba3 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [360]
 	Name: ParticleSpriteEmitter_11
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032bdc with 0x0000004c Bytes
+	Serialized data: at 0x0000000000032be8 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [361]
 	Name: ParticleSpriteEmitter_12
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032c28 with 0x00000045 Bytes
+	Serialized data: at 0x0000000000032c34 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [362]
 	Name: ParticleSpriteEmitter_2
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032c6d with 0x0000004c Bytes
+	Serialized data: at 0x0000000000032c79 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [363]
 	Name: ParticleSpriteEmitter_3
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032cb9 with 0x00000045 Bytes
+	Serialized data: at 0x0000000000032cc5 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [364]
 	Name: ParticleSpriteEmitter_4
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032cfe with 0x0000004c Bytes
+	Serialized data: at 0x0000000000032d0a with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [365]
 	Name: ParticleSpriteEmitter_5
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032d4a with 0x0000004c Bytes
+	Serialized data: at 0x0000000000032d56 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [366]
 	Name: ParticleSpriteEmitter_6
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032d96 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000032da2 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [367]
 	Name: ParticleSpriteEmitter_7
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032de2 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000032dee with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [368]
 	Name: ParticleSpriteEmitter_8
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032e2e with 0x0000004c Bytes
+	Serialized data: at 0x0000000000032e3a with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [369]
 	Name: ParticleSpriteEmitter_9
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000032e7a with 0x0000004c Bytes
+	Serialized data: at 0x0000000000032e86 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [370]
 	Name: Boost_Mirrored_PS
 	Class: ParticleSystem
 	Outer: Package FX
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000032ec6 with 0x000001e5 Bytes
+	Serialized data: at 0x0000000000032ed2 with 0x000001e5 Bytes
 	Export Flags: 0x00000001
 [371]
 	Name: Boost_PS
 	Class: ParticleSystem
 	Outer: Package FX
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000330ab with 0x000001e5 Bytes
+	Serialized data: at 0x00000000000330b7 with 0x000001e5 Bytes
 	Export Flags: 0x00000001
 [372]
 	Name: ParticleSystemComponent_1
 	Class: ParticleSystemComponent
 	Outer: FXActor_Boost_TA FXActor
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x0000000000033290 with 0x00000485 Bytes
+	Serialized data: at 0x000000000003329c with 0x00000485 Bytes
 	Export Flags: 0x00000001
 [373]
 	Name: boost_vt
@@ -3537,7 +3541,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: Package boost_vt
 	Archetype: ProductAsset_Boost_TA_0
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000003f5dc58 with 0x00000044 Bytes
+	Serialized data: at 0x0000000003f5dc64 with 0x00000044 Bytes
 	Export Flags: 0x00000001
 [374]
 	Name: None
@@ -3550,14 +3554,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ShakeComponent_X
 	Outer: FXActor_Boost_TA FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x00000000000338ba with 0x0000006d Bytes
+	Serialized data: at 0x00000000000338c6 with 0x0000006d Bytes
 	Export Flags: 0x00000001
 [376]
 	Name: ShakeComponent_X_1
 	Class: ShakeComponent_X
 	Outer: FXActor_Boost_TA FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000033927 with 0x0000006d Bytes
+	Serialized data: at 0x0000000000033933 with 0x0000006d Bytes
 	Export Flags: 0x00000001
 [377]
 	Name: None
@@ -3720,7 +3724,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: StaticMesh
 	Outer: Package Meshes
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000002d7832 with 0x000004a1 Bytes
+	Serialized data: at 0x00000000002d783e with 0x000004a1 Bytes
 	Export Flags: 0x00000001
 [404]
 	Name: None
@@ -4357,63 +4361,63 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000333512 with 0x00000d2c Bytes
+	Serialized data: at 0x000000000033351e with 0x00000d2c Bytes
 	Export Flags: 0x00000001
 [510]
 	Name: Flare_SideColor_01
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000033423e with 0x00000501 Bytes
+	Serialized data: at 0x000000000033424a with 0x00000501 Bytes
 	Export Flags: 0x00000001
 [511]
 	Name: FlareSide_D
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000033473f with 0x00002d51 Bytes
+	Serialized data: at 0x000000000033474b with 0x00002d51 Bytes
 	Export Flags: 0x00000001
 [512]
 	Name: FlareRays_RGB_02_T
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000337490 with 0x01000192 Bytes
+	Serialized data: at 0x000000000033749c with 0x01000192 Bytes
 	Export Flags: 0x00000001
 [513]
 	Name: FlareRays_RGB_T
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000001337622 with 0x01000192 Bytes
+	Serialized data: at 0x000000000133762e with 0x01000192 Bytes
 	Export Flags: 0x00000001
 [514]
 	Name: Lightning_T
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000023377b4 with 0x000017d4 Bytes
+	Serialized data: at 0x00000000023377c0 with 0x000017d4 Bytes
 	Export Flags: 0x00000001
 [515]
 	Name: LightningFlip_T
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000002338f88 with 0x00000d1c Bytes
+	Serialized data: at 0x0000000002338f94 with 0x00000d1c Bytes
 	Export Flags: 0x00000001
 [516]
 	Name: Clouds_T
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000002339ca4 with 0x00000cf1 Bytes
+	Serialized data: at 0x0000000002339cb0 with 0x00000cf1 Bytes
 	Export Flags: 0x00000001
 [517]
 	Name: FlareDirt_T
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000233a995 with 0x000401a1 Bytes
+	Serialized data: at 0x000000000233a9a1 with 0x000401a1 Bytes
 	Export Flags: 0x00000001
 [518]
 	Name: None
@@ -4432,21 +4436,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000002381049 with 0x00000cf4 Bytes
+	Serialized data: at 0x0000000002381055 with 0x00000cf4 Bytes
 	Export Flags: 0x00000001
 [521]
 	Name: Bolt_Base_RGB_04_T
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000002381d3d with 0x00000cf4 Bytes
+	Serialized data: at 0x0000000002381d49 with 0x00000cf4 Bytes
 	Export Flags: 0x00000001
 [522]
 	Name: Bolt_Base_RGB_05_T
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000002382a31 with 0x00000d10 Bytes
+	Serialized data: at 0x0000000002382a3d with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [523]
 	Name: None
@@ -4459,7 +4463,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package EditorMaterials
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000023c38fb with 0x00000cbc Bytes
+	Serialized data: at 0x00000000023c3907 with 0x00000cbc Bytes
 	Export Flags: 0x00000001
 [525]
 	Name: None
@@ -4490,14 +4494,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000033c6f03 with 0x004001ab Bytes
+	Serialized data: at 0x00000000033c6f0f with 0x004001ab Bytes
 	Export Flags: 0x00000001
 [530]
 	Name: Lightning_FB_RGB_05_T
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000037c70ae with 0x004001ab Bytes
+	Serialized data: at 0x00000000037c70ba with 0x004001ab Bytes
 	Export Flags: 0x00000001
 [531]
 	Name: None
