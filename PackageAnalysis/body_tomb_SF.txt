@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x000164bd Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 967 Name Offset: 0x00000299
-Export Count: 585 Export Offset: 0x0000803b
-Import Count: 179 Import Offset: 0x00006ca7
-Depends Offset: 0x000124c3
-Import Export Guids Offset: 0x000124c3
+Name Count: 970 Name Offset: 0x000002a5
+Export Count: 589 Export Offset: 0x00008095
+Import Count: 179 Import Offset: 0x00006d01
+Depends Offset: 0x0001263d
+Import Export Guids Offset: 0x0001263d
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x690b75a1 0x40b00818 0x260778b8 0x74d58235
+GUID: 0x8dc16256 0x44c3bf61 0xecf0f1a8 0xcb27ffcf
 Generations:
 [0]
 	Export Count: 552
@@ -151,6 +151,10 @@ Generations:
 	Export Count: 585
 	Name Count: 967
 	Net Object Count: 0
+[33]
+	Export Count: 589
+	Name Count: 970
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression Flags: 0x00000001
@@ -199,10 +203,10 @@ Texture Allocations Texture Types:
 	Tex Create Flags: 1
 	Export Indices:
 	[0] 526
-Test Data Size: 0x00003fae
-Compressed Chunk Info Offset: 0x0001222a
-Last Block Size: 0x00000004
-Base Header Size: 0x00000299
+Test Data Size: 0x00003e1c
+Compressed Chunk Info Offset: 0x00012398
+Last Block Size: 0x00000008
+Base Header Size: 0x000002a5
 
 AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 
@@ -1177,6 +1181,9 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 [964] TrimSheet1Mirrored_RotationOffset
 [965] Value
 [966] VectorParameters
+[967] ENVMap_ClampMin
+[968] OverlayENV_Intensity
+[969] Tint
 
 
     ~ Exports ~ 
@@ -1193,7 +1200,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: AnimTree
 	Outer: Package Body_AT
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000124c3 with 0x00000a9d Bytes
+	Serialized data: at 0x000000000001263d with 0x00000a9d Bytes
 	Export Flags: 0x00000001
 [2]
 	Name: None
@@ -1254,7 +1261,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: FXActor_TA
 	Outer: Package Body_FX
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x0000000000012f60 with 0x0000068a Bytes
+	Serialized data: at 0x00000000000130da with 0x0000068a Bytes
 	Export Flags: 0x00000001
 [12]
 	Name: None
@@ -1267,7 +1274,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: FXActor_TA
 	Outer: Package body_tomb
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x00000000000135ea with 0x000006c6 Bytes
+	Serialized data: at 0x0000000000013764 with 0x000006c6 Bytes
 	Export Flags: 0x00000001
 [14]
 	Name: None
@@ -1280,7 +1287,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: Material
 	Outer: Package body_endo
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000013cb0 with 0x000004e3 Bytes
+	Serialized data: at 0x0000000000013e2a with 0x000004e3 Bytes
 	Export Flags: 0x00000001
 [16]
 	Name: None
@@ -1293,21 +1300,21 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: Material
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000014193 with 0x00000233 Bytes
+	Serialized data: at 0x000000000001430d with 0x00000233 Bytes
 	Export Flags: 0x00000001
 [18]
 	Name: MAT_Body_Tomb
 	Class: Material
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000143c6 with 0x000007dc Bytes
+	Serialized data: at 0x0000000000014540 with 0x000007dc Bytes
 	Export Flags: 0x00000001
 [19]
 	Name: flame_MAT
 	Class: Material
 	Outer: Package Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000014ba2 with 0x0000021f Bytes
+	Serialized data: at 0x0000000000014d1c with 0x0000021f Bytes
 	Export Flags: 0x00000001
 [20]
 	Name: None
@@ -1350,63 +1357,63 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014dc1 with 0x000000c6 Bytes
+	Serialized data: at 0x0000000000014f3b with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [27]
 	Name: MaterialExpressionScalarParameter_1
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014e87 with 0x00000098 Bytes
+	Serialized data: at 0x0000000000015001 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [28]
 	Name: MaterialExpressionScalarParameter_2
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014f1f with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000015099 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [29]
 	Name: MaterialExpressionScalarParameter_3
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014fd3 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001514d with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [30]
 	Name: MaterialExpressionScalarParameter_9
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015087 with 0x000000c6 Bytes
+	Serialized data: at 0x0000000000015201 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [31]
 	Name: MaterialExpressionScalarParameter_0
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001514d with 0x00000094 Bytes
+	Serialized data: at 0x00000000000152c7 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [32]
 	Name: MaterialExpressionScalarParameter_1
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000151e1 with 0x00000094 Bytes
+	Serialized data: at 0x000000000001535b with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [33]
 	Name: MaterialExpressionScalarParameter_6
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015275 with 0x00000078 Bytes
+	Serialized data: at 0x00000000000153ef with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [34]
 	Name: MaterialExpressionScalarParameter_7
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000152ed with 0x00000078 Bytes
+	Serialized data: at 0x0000000000015467 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [35]
 	Name: None
@@ -1503,224 +1510,224 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: MaterialExpressionStaticComponentMaskParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015365 with 0x00000165 Bytes
+	Serialized data: at 0x00000000000154df with 0x00000165 Bytes
 	Export Flags: 0x00000001
 [51]
 	Name: MaterialExpressionStaticSwitchParameter_0
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000154ca with 0x0000016d Bytes
+	Serialized data: at 0x0000000000015644 with 0x0000016d Bytes
 	Export Flags: 0x00000001
 [52]
 	Name: MaterialExpressionStaticSwitchParameter_1
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015637 with 0x00000100 Bytes
+	Serialized data: at 0x00000000000157b1 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [53]
 	Name: MaterialExpressionStaticSwitchParameter_2
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015737 with 0x00000120 Bytes
+	Serialized data: at 0x00000000000158b1 with 0x00000120 Bytes
 	Export Flags: 0x00000001
 [54]
 	Name: MaterialExpressionStaticSwitchParameter_3
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015857 with 0x00000189 Bytes
+	Serialized data: at 0x00000000000159d1 with 0x00000189 Bytes
 	Export Flags: 0x00000001
 [55]
 	Name: MaterialExpressionStaticSwitchParameter_4
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000159e0 with 0x000001e0 Bytes
+	Serialized data: at 0x0000000000015b5a with 0x000001e0 Bytes
 	Export Flags: 0x00000001
 [56]
 	Name: MaterialExpressionStaticSwitchParameter_5
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015bc0 with 0x0000018d Bytes
+	Serialized data: at 0x0000000000015d3a with 0x0000018d Bytes
 	Export Flags: 0x00000001
 [57]
 	Name: MaterialExpressionStaticSwitchParameter_8
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015d4d with 0x00000100 Bytes
+	Serialized data: at 0x0000000000015ec7 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [58]
 	Name: MaterialExpressionStaticSwitchParameter_0
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015e4d with 0x00000119 Bytes
+	Serialized data: at 0x0000000000015fc7 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [59]
 	Name: MaterialExpressionStaticSwitchParameter_1
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015f66 with 0x000001c1 Bytes
+	Serialized data: at 0x00000000000160e0 with 0x000001c1 Bytes
 	Export Flags: 0x00000001
 [60]
 	Name: MaterialExpressionStaticSwitchParameter_100
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016127 with 0x00000132 Bytes
+	Serialized data: at 0x00000000000162a1 with 0x00000132 Bytes
 	Export Flags: 0x00000001
 [61]
 	Name: MaterialExpressionStaticSwitchParameter_101
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016259 with 0x00000119 Bytes
+	Serialized data: at 0x00000000000163d3 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [62]
 	Name: MaterialExpressionStaticSwitchParameter_103
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016372 with 0x000001e0 Bytes
+	Serialized data: at 0x00000000000164ec with 0x000001e0 Bytes
 	Export Flags: 0x00000001
 [63]
 	Name: MaterialExpressionStaticSwitchParameter_105
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016552 with 0x00000119 Bytes
+	Serialized data: at 0x00000000000166cc with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [64]
 	Name: MaterialExpressionStaticSwitchParameter_106
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001666b with 0x00000119 Bytes
+	Serialized data: at 0x00000000000167e5 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [65]
 	Name: MaterialExpressionStaticSwitchParameter_107
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016784 with 0x000001dd Bytes
+	Serialized data: at 0x00000000000168fe with 0x000001dd Bytes
 	Export Flags: 0x00000001
 [66]
 	Name: MaterialExpressionStaticSwitchParameter_109
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016961 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000016adb with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [67]
 	Name: MaterialExpressionStaticSwitchParameter_110
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016a7a with 0x00000100 Bytes
+	Serialized data: at 0x0000000000016bf4 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [68]
 	Name: MaterialExpressionStaticSwitchParameter_112
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016b7a with 0x00000186 Bytes
+	Serialized data: at 0x0000000000016cf4 with 0x00000186 Bytes
 	Export Flags: 0x00000001
 [69]
 	Name: MaterialExpressionStaticSwitchParameter_113
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016d00 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000016e7a with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [70]
 	Name: MaterialExpressionStaticSwitchParameter_114
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016e19 with 0x000001e0 Bytes
+	Serialized data: at 0x0000000000016f93 with 0x000001e0 Bytes
 	Export Flags: 0x00000001
 [71]
 	Name: MaterialExpressionStaticSwitchParameter_115
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016ff9 with 0x000001a8 Bytes
+	Serialized data: at 0x0000000000017173 with 0x000001a8 Bytes
 	Export Flags: 0x00000001
 [72]
 	Name: MaterialExpressionStaticSwitchParameter_117
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000171a1 with 0x00000100 Bytes
+	Serialized data: at 0x000000000001731b with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [73]
 	Name: MaterialExpressionStaticSwitchParameter_119
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000172a1 with 0x00000119 Bytes
+	Serialized data: at 0x000000000001741b with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [74]
 	Name: MaterialExpressionStaticSwitchParameter_121
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000173ba with 0x00000119 Bytes
+	Serialized data: at 0x0000000000017534 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [75]
 	Name: MaterialExpressionStaticSwitchParameter_123
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000174d3 with 0x00000119 Bytes
+	Serialized data: at 0x000000000001764d with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [76]
 	Name: MaterialExpressionStaticSwitchParameter_125
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000175ec with 0x00000132 Bytes
+	Serialized data: at 0x0000000000017766 with 0x00000132 Bytes
 	Export Flags: 0x00000001
 [77]
 	Name: MaterialExpressionStaticSwitchParameter_2
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001771e with 0x00000119 Bytes
+	Serialized data: at 0x0000000000017898 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [78]
 	Name: MaterialExpressionStaticSwitchParameter_95
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017837 with 0x00000119 Bytes
+	Serialized data: at 0x00000000000179b1 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [79]
 	Name: MaterialExpressionStaticSwitchParameter_96
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017950 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000017aca with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [80]
 	Name: MaterialExpressionStaticSwitchParameter_97
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017a69 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000017be3 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [81]
 	Name: MaterialExpressionStaticSwitchParameter_98
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017b82 with 0x000001e0 Bytes
+	Serialized data: at 0x0000000000017cfc with 0x000001e0 Bytes
 	Export Flags: 0x00000001
 [82]
 	Name: None
@@ -1775,42 +1782,42 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017d62 with 0x000000d6 Bytes
+	Serialized data: at 0x0000000000017edc with 0x000000d6 Bytes
 	Export Flags: 0x00000001
 [91]
 	Name: MaterialExpressionTextureSampleParameter2D_1
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017e38 with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000017fb2 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [92]
 	Name: MaterialExpressionTextureSampleParameter2D_2
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017f10 with 0x000000cd Bytes
+	Serialized data: at 0x000000000001808a with 0x000000cd Bytes
 	Export Flags: 0x00000001
 [93]
 	Name: MaterialExpressionTextureSampleParameter2D_3
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017fdd with 0x000000cd Bytes
+	Serialized data: at 0x0000000000018157 with 0x000000cd Bytes
 	Export Flags: 0x00000001
 [94]
 	Name: MaterialExpressionTextureSampleParameter2D_4
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000180aa with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000018224 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [95]
 	Name: MaterialExpressionTextureSampleParameter2D_5
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001815e with 0x00000123 Bytes
+	Serialized data: at 0x00000000000182d8 with 0x00000123 Bytes
 	Export Flags: 0x00000001
 [96]
 	Name: None
@@ -1823,56 +1830,56 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018281 with 0x000000ad Bytes
+	Serialized data: at 0x00000000000183fb with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [98]
 	Name: MaterialExpressionTextureSampleParameter2D_38
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001832e with 0x000000f1 Bytes
+	Serialized data: at 0x00000000000184a8 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [99]
 	Name: MaterialExpressionTextureSampleParameter2D_39
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001841f with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000018599 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [100]
 	Name: MaterialExpressionTextureSampleParameter2D_40
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000184f7 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000018671 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [101]
 	Name: MaterialExpressionTextureSampleParameter2D_41
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001858b with 0x000000ad Bytes
+	Serialized data: at 0x0000000000018705 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [102]
 	Name: MaterialExpressionTextureSampleParameter2D_42
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018638 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000187b2 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [103]
 	Name: MaterialExpressionTextureSampleParameter2D_44
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000186cc with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000018846 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [104]
 	Name: MaterialExpressionTextureSampleParameter2D_47
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000187a4 with 0x000000d8 Bytes
+	Serialized data: at 0x000000000001891e with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [105]
 	Name: None
@@ -1933,147 +1940,147 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: MaterialExpressionTextureSampleParameterSubUV
 	Outer: Material flame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001887c with 0x00000094 Bytes
+	Serialized data: at 0x00000000000189f6 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [115]
 	Name: MaterialExpressionTextureSampleParameterSubUV_0
 	Class: MaterialExpressionTextureSampleParameterSubUV
 	Outer: Material flame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018910 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000018a8a with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [116]
 	Name: MaterialExpressionVectorParameter_0
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000189a4 with 0x000000c8 Bytes
+	Serialized data: at 0x0000000000018b1e with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [117]
 	Name: MaterialExpressionVectorParameter_1
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018a6c with 0x000000c8 Bytes
+	Serialized data: at 0x0000000000018be6 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [118]
 	Name: MaterialExpressionVectorParameter_2
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018b34 with 0x000000c8 Bytes
+	Serialized data: at 0x0000000000018cae with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [119]
 	Name: MaterialExpressionVectorParameter_3
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018bfc with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000018d76 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [120]
 	Name: MaterialExpressionVectorParameter_4
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018ca4 with 0x000000cf Bytes
+	Serialized data: at 0x0000000000018e1e with 0x000000cf Bytes
 	Export Flags: 0x00000001
 [121]
 	Name: MaterialExpressionVectorParameter_5
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018d73 with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000018eed with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [122]
 	Name: MaterialExpressionVectorParameter_6
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018e1b with 0x000000cf Bytes
+	Serialized data: at 0x0000000000018f95 with 0x000000cf Bytes
 	Export Flags: 0x00000001
 [123]
 	Name: MaterialExpressionVectorParameter_7
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018eea with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000019064 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [124]
 	Name: MaterialExpressionVectorParameter_8
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018f92 with 0x000000cf Bytes
+	Serialized data: at 0x000000000001910c with 0x000000cf Bytes
 	Export Flags: 0x00000001
 [125]
 	Name: MaterialExpressionVectorParameter_9
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_NewWorldChassis
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019061 with 0x000000a8 Bytes
+	Serialized data: at 0x00000000000191db with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [126]
 	Name: MaterialExpressionVectorParameter_0
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019109 with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000019283 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [127]
 	Name: MaterialExpressionVectorParameter_1
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000191b1 with 0x000000a8 Bytes
+	Serialized data: at 0x000000000001932b with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [128]
 	Name: MaterialExpressionVectorParameter_2
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019259 with 0x000000a8 Bytes
+	Serialized data: at 0x00000000000193d3 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [129]
 	Name: MaterialExpressionVectorParameter_24
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019301 with 0x000000a8 Bytes
+	Serialized data: at 0x000000000001947b with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [130]
 	Name: MaterialExpressionVectorParameter_25
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000193a9 with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000019523 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [131]
 	Name: MaterialExpressionVectorParameter_26
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019451 with 0x0000010c Bytes
+	Serialized data: at 0x00000000000195cb with 0x0000010c Bytes
 	Export Flags: 0x00000001
 [132]
 	Name: MaterialExpressionVectorParameter_27
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001955d with 0x0000010c Bytes
+	Serialized data: at 0x00000000000196d7 with 0x0000010c Bytes
 	Export Flags: 0x00000001
 [133]
 	Name: MaterialExpressionVectorParameter_28
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019669 with 0x000000f4 Bytes
+	Serialized data: at 0x00000000000197e3 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [134]
 	Name: MaterialExpressionVectorParameter_29
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_Tomb
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001975d with 0x000000f4 Bytes
+	Serialized data: at 0x00000000000198d7 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [135]
 	Name: None
@@ -2122,14 +2129,14 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: MaterialInstanceConstant
 	Outer: Package body_tomb
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000019851 with 0x00000c6a Bytes
+	Serialized data: at 0x00000000000199cb with 0x00000c6a Bytes
 	Export Flags: 0x00000001
 [143]
 	Name: chassis_tomb_MIC
 	Class: MaterialInstanceConstant
 	Outer: Package body_tomb
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000001a4bb with 0x00000769 Bytes
+	Serialized data: at 0x000000000001a635 with 0x00000769 Bytes
 	Export Flags: 0x00000001
 [144]
 	Name: None
@@ -2177,13 +2184,13 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000001ac24 with 0x0000002c Bytes
+	Serialized data: at 0x000000000001ad9e with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [152]
 	Name: Body_AT
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001ac50 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001adca with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2191,7 +2198,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Name: body_endo
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001ac5c with 0x0000000c Bytes
+	Serialized data: at 0x000000000001add6 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2199,7 +2206,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Name: Body_FX
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001ac68 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001ade2 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2207,7 +2214,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Name: Body_MuscleCar
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001ac74 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001adee with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2221,7 +2228,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Name: body_tomb
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001ac80 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001adfa with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2230,13 +2237,13 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: Package
 	Outer: Package body_tomb
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001ac8c with 0x0000000c Bytes
+	Serialized data: at 0x000000000001ae06 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [159]
 	Name: body_tomb_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001ac98 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001ae12 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -2244,7 +2251,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Name: boost_berry
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001aca4 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001ae1e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2253,14 +2260,14 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: Package
 	Outer: Package boost_berry
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001acb0 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001ae2a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [162]
 	Name: Textures
 	Class: Package
 	Outer: Package boost_berry
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001acbc with 0x0000000c Bytes
+	Serialized data: at 0x000000000001ae36 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [163]
 	Name: None
@@ -2410,7 +2417,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Name: SpaceStation_FieldAssets
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001acc8 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001ae42 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2419,7 +2426,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: Package
 	Outer: Package SpaceStation_FieldAssets
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001acd4 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001ae4e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [189]
 	Name: None
@@ -2468,7 +2475,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: ParameterDispenser_X
 	Outer: FXActor_TA Body_FXActor
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x000000000001ace0 with 0x00000010 Bytes
+	Serialized data: at 0x000000000001ae5a with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [197]
 	Name: None
@@ -2481,105 +2488,105 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: ParameterDispenser_X
 	Outer: FXActor_TA FXActor_body_tomb
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x000000000001acf0 with 0x00000010 Bytes
+	Serialized data: at 0x000000000001ae6a with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [199]
 	Name: ParticleLODLevel_0
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001ad00 with 0x000000a8 Bytes
+	Serialized data: at 0x000000000001ae7a with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [200]
 	Name: ParticleLODLevel_2
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_10
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001ada8 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001af22 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [201]
 	Name: ParticleLODLevel_2
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_11
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001ae5c with 0x000000b0 Bytes
+	Serialized data: at 0x000000000001afd6 with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [202]
 	Name: ParticleLODLevel_3
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_12
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001af0c with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001b086 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [203]
 	Name: ParticleLODLevel_4
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_13
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001afc0 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001b13a with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [204]
 	Name: ParticleLODLevel_5
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_14
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b074 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001b1ee with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [205]
 	Name: ParticleLODLevel_6
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_15
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b128 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001b2a2 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [206]
 	Name: ParticleLODLevel_1
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b1dc with 0x000000b0 Bytes
+	Serialized data: at 0x000000000001b356 with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [207]
 	Name: ParticleLODLevel_3
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b28c with 0x000000a8 Bytes
+	Serialized data: at 0x000000000001b406 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [208]
 	Name: ParticleLODLevel_2
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b334 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001b4ae with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [209]
 	Name: ParticleLODLevel_3
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_5
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b3e8 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001b562 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [210]
 	Name: ParticleLODLevel_4
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_6
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b49c with 0x000000b0 Bytes
+	Serialized data: at 0x000000000001b616 with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [211]
 	Name: ParticleLODLevel_5
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_8
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b54c with 0x000000b0 Bytes
+	Serialized data: at 0x000000000001b6c6 with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [212]
 	Name: ParticleLODLevel_1
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_9
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b5fc with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001b776 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [213]
 	Name: None
@@ -2634,49 +2641,49 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: ParticleModuleAcceleration
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b6b0 with 0x00000141 Bytes
+	Serialized data: at 0x000000000001b82a with 0x00000141 Bytes
 	Export Flags: 0x00000001
 [222]
 	Name: ParticleModuleAcceleration_3
 	Class: ParticleModuleAcceleration
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b7f1 with 0x0000015a Bytes
+	Serialized data: at 0x000000000001b96b with 0x0000015a Bytes
 	Export Flags: 0x00000001
 [223]
 	Name: ParticleModuleAcceleration_4
 	Class: ParticleModuleAcceleration
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b94b with 0x0000015a Bytes
+	Serialized data: at 0x000000000001bac5 with 0x0000015a Bytes
 	Export Flags: 0x00000001
 [224]
 	Name: ParticleModuleAcceleration_5
 	Class: ParticleModuleAcceleration
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001baa5 with 0x0000015a Bytes
+	Serialized data: at 0x000000000001bc1f with 0x0000015a Bytes
 	Export Flags: 0x00000001
 [225]
 	Name: ParticleModuleAcceleration_6
 	Class: ParticleModuleAcceleration
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001bbff with 0x0000015a Bytes
+	Serialized data: at 0x000000000001bd79 with 0x0000015a Bytes
 	Export Flags: 0x00000001
 [226]
 	Name: ParticleModuleAcceleration_7
 	Class: ParticleModuleAcceleration
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001bd59 with 0x00000141 Bytes
+	Serialized data: at 0x000000000001bed3 with 0x00000141 Bytes
 	Export Flags: 0x00000001
 [227]
 	Name: ParticleModuleAcceleration_8
 	Class: ParticleModuleAcceleration
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001be9a with 0x00000141 Bytes
+	Serialized data: at 0x000000000001c014 with 0x00000141 Bytes
 	Export Flags: 0x00000001
 [228]
 	Name: None
@@ -2695,63 +2702,63 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: ParticleModuleColor
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001bfdb with 0x0000011d Bytes
+	Serialized data: at 0x000000000001c155 with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [231]
 	Name: ParticleModuleColor_10
 	Class: ParticleModuleColor
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c0f8 with 0x0000011d Bytes
+	Serialized data: at 0x000000000001c272 with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [232]
 	Name: ParticleModuleColor_2
 	Class: ParticleModuleColor
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c215 with 0x0000011d Bytes
+	Serialized data: at 0x000000000001c38f with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [233]
 	Name: ParticleModuleColor_3
 	Class: ParticleModuleColor
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c332 with 0x0000011d Bytes
+	Serialized data: at 0x000000000001c4ac with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [234]
 	Name: ParticleModuleColor_4
 	Class: ParticleModuleColor
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c44f with 0x0000011d Bytes
+	Serialized data: at 0x000000000001c5c9 with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [235]
 	Name: ParticleModuleColor_5
 	Class: ParticleModuleColor
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c56c with 0x0000011d Bytes
+	Serialized data: at 0x000000000001c6e6 with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [236]
 	Name: ParticleModuleColor_7
 	Class: ParticleModuleColor
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c689 with 0x0000011d Bytes
+	Serialized data: at 0x000000000001c803 with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [237]
 	Name: ParticleModuleColor_8
 	Class: ParticleModuleColor
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c7a6 with 0x0000011d Bytes
+	Serialized data: at 0x000000000001c920 with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [238]
 	Name: ParticleModuleColor_9
 	Class: ParticleModuleColor
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c8c3 with 0x0000011d Bytes
+	Serialized data: at 0x000000000001ca3d with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [239]
 	Name: None
@@ -2812,35 +2819,35 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c9e0 with 0x00000135 Bytes
+	Serialized data: at 0x000000000001cb5a with 0x00000135 Bytes
 	Export Flags: 0x00000001
 [249]
 	Name: ParticleModuleColorScaleOverLife_1
 	Class: ParticleModuleColorScaleOverLife
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cb15 with 0x0000022a Bytes
+	Serialized data: at 0x000000000001cc8f with 0x0000022a Bytes
 	Export Flags: 0x00000001
 [250]
 	Name: ParticleModuleColorScaleOverLife_11
 	Class: ParticleModuleColorScaleOverLife
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cd3f with 0x0000022a Bytes
+	Serialized data: at 0x000000000001ceb9 with 0x0000022a Bytes
 	Export Flags: 0x00000001
 [251]
 	Name: ParticleModuleColorScaleOverLife_12
 	Class: ParticleModuleColorScaleOverLife
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cf69 with 0x00000211 Bytes
+	Serialized data: at 0x000000000001d0e3 with 0x00000211 Bytes
 	Export Flags: 0x00000001
 [252]
 	Name: ParticleModuleColorScaleOverLife_3
 	Class: ParticleModuleColorScaleOverLife
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d17a with 0x00000211 Bytes
+	Serialized data: at 0x000000000001d2f4 with 0x00000211 Bytes
 	Export Flags: 0x00000001
 [253]
 	Name: None
@@ -2895,28 +2902,28 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: ParticleModuleLifetime
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d38b with 0x00000108 Bytes
+	Serialized data: at 0x000000000001d505 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [262]
 	Name: ParticleModuleLifetime_1
 	Class: ParticleModuleLifetime
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d493 with 0x00000108 Bytes
+	Serialized data: at 0x000000000001d60d with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [263]
 	Name: ParticleModuleLifetime_11
 	Class: ParticleModuleLifetime
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d59b with 0x00000108 Bytes
+	Serialized data: at 0x000000000001d715 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [264]
 	Name: ParticleModuleLifetime_5
 	Class: ParticleModuleLifetime
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d6a3 with 0x00000108 Bytes
+	Serialized data: at 0x000000000001d81d with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [265]
 	Name: None
@@ -2965,126 +2972,126 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d7ab with 0x000000ad Bytes
+	Serialized data: at 0x000000000001d925 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [273]
 	Name: ParticleModuleLocation_10
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d858 with 0x000000c6 Bytes
+	Serialized data: at 0x000000000001d9d2 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [274]
 	Name: ParticleModuleLocation_11
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d91e with 0x000000ad Bytes
+	Serialized data: at 0x000000000001da98 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [275]
 	Name: ParticleModuleLocation_12
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d9cb with 0x000000c6 Bytes
+	Serialized data: at 0x000000000001db45 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [276]
 	Name: ParticleModuleLocation_15
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001da91 with 0x000000ad Bytes
+	Serialized data: at 0x000000000001dc0b with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [277]
 	Name: ParticleModuleLocation_18
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001db3e with 0x000000ad Bytes
+	Serialized data: at 0x000000000001dcb8 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [278]
 	Name: ParticleModuleLocation_21
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001dbeb with 0x000000ad Bytes
+	Serialized data: at 0x000000000001dd65 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [279]
 	Name: ParticleModuleLocation_22
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001dc98 with 0x000000ad Bytes
+	Serialized data: at 0x000000000001de12 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [280]
 	Name: ParticleModuleLocation_23
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001dd45 with 0x000000ad Bytes
+	Serialized data: at 0x000000000001debf with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [281]
 	Name: ParticleModuleLocation_24
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001ddf2 with 0x000000ad Bytes
+	Serialized data: at 0x000000000001df6c with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [282]
 	Name: ParticleModuleLocation_25
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001de9f with 0x000000ad Bytes
+	Serialized data: at 0x000000000001e019 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [283]
 	Name: ParticleModuleLocation_26
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001df4c with 0x000000ad Bytes
+	Serialized data: at 0x000000000001e0c6 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [284]
 	Name: ParticleModuleLocation_3
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001dff9 with 0x00000141 Bytes
+	Serialized data: at 0x000000000001e173 with 0x00000141 Bytes
 	Export Flags: 0x00000001
 [285]
 	Name: ParticleModuleLocation_4
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e13a with 0x000000ad Bytes
+	Serialized data: at 0x000000000001e2b4 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [286]
 	Name: ParticleModuleLocation_5
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e1e7 with 0x000000c6 Bytes
+	Serialized data: at 0x000000000001e361 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [287]
 	Name: ParticleModuleLocation_6
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e2ad with 0x000000ad Bytes
+	Serialized data: at 0x000000000001e427 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [288]
 	Name: ParticleModuleLocation_7
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e35a with 0x000000ad Bytes
+	Serialized data: at 0x000000000001e4d4 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [289]
 	Name: ParticleModuleLocation_9
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e407 with 0x000000ad Bytes
+	Serialized data: at 0x000000000001e581 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [290]
 	Name: None
@@ -3181,63 +3188,63 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e4b4 with 0x0000082d Bytes
+	Serialized data: at 0x000000000001e62e with 0x0000082d Bytes
 	Export Flags: 0x00000001
 [306]
 	Name: ParticleModuleParameterDynamic_8
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001ece1 with 0x0000082d Bytes
+	Serialized data: at 0x000000000001ee5b with 0x0000082d Bytes
 	Export Flags: 0x00000001
 [307]
 	Name: ParticleModuleRequired_0
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001f50e with 0x00000189 Bytes
+	Serialized data: at 0x000000000001f688 with 0x00000189 Bytes
 	Export Flags: 0x00000001
 [308]
 	Name: ParticleModuleRequired_1
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001f697 with 0x000001b1 Bytes
+	Serialized data: at 0x000000000001f811 with 0x000001b1 Bytes
 	Export Flags: 0x00000001
 [309]
 	Name: ParticleModuleRequired_11
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001f848 with 0x000001cd Bytes
+	Serialized data: at 0x000000000001f9c2 with 0x000001cd Bytes
 	Export Flags: 0x00000001
 [310]
 	Name: ParticleModuleRequired_2
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001fa15 with 0x000001b1 Bytes
+	Serialized data: at 0x000000000001fb8f with 0x000001b1 Bytes
 	Export Flags: 0x00000001
 [311]
 	Name: ParticleModuleRequired_3
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001fbc6 with 0x000001b1 Bytes
+	Serialized data: at 0x000000000001fd40 with 0x000001b1 Bytes
 	Export Flags: 0x00000001
 [312]
 	Name: ParticleModuleRequired_4
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001fd77 with 0x000001cd Bytes
+	Serialized data: at 0x000000000001fef1 with 0x000001cd Bytes
 	Export Flags: 0x00000001
 [313]
 	Name: ParticleModuleRequired_5
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001ff44 with 0x000001cd Bytes
+	Serialized data: at 0x00000000000200be with 0x000001cd Bytes
 	Export Flags: 0x00000001
 [314]
 	Name: None
@@ -3286,63 +3293,63 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: ParticleModuleRotation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020111 with 0x000000a5 Bytes
+	Serialized data: at 0x000000000002028b with 0x000000a5 Bytes
 	Export Flags: 0x00000001
 [322]
 	Name: ParticleModuleRotation_2
 	Class: ParticleModuleRotation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000201b6 with 0x000000a5 Bytes
+	Serialized data: at 0x0000000000020330 with 0x000000a5 Bytes
 	Export Flags: 0x00000001
 [323]
 	Name: ParticleModuleRotation_3
 	Class: ParticleModuleRotation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002025b with 0x000000a5 Bytes
+	Serialized data: at 0x00000000000203d5 with 0x000000a5 Bytes
 	Export Flags: 0x00000001
 [324]
 	Name: ParticleModuleRotation_4
 	Class: ParticleModuleRotation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020300 with 0x000000a5 Bytes
+	Serialized data: at 0x000000000002047a with 0x000000a5 Bytes
 	Export Flags: 0x00000001
 [325]
 	Name: ParticleModuleRotation_5
 	Class: ParticleModuleRotation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000203a5 with 0x000000be Bytes
+	Serialized data: at 0x000000000002051f with 0x000000be Bytes
 	Export Flags: 0x00000001
 [326]
 	Name: ParticleModuleRotation_6
 	Class: ParticleModuleRotation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020463 with 0x000000be Bytes
+	Serialized data: at 0x00000000000205dd with 0x000000be Bytes
 	Export Flags: 0x00000001
 [327]
 	Name: ParticleModuleRotation_7
 	Class: ParticleModuleRotation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020521 with 0x000000be Bytes
+	Serialized data: at 0x000000000002069b with 0x000000be Bytes
 	Export Flags: 0x00000001
 [328]
 	Name: ParticleModuleRotation_8
 	Class: ParticleModuleRotation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000205df with 0x000000a5 Bytes
+	Serialized data: at 0x0000000000020759 with 0x000000a5 Bytes
 	Export Flags: 0x00000001
 [329]
 	Name: ParticleModuleRotation_9
 	Class: ParticleModuleRotation
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020684 with 0x000000a5 Bytes
+	Serialized data: at 0x00000000000207fe with 0x000000a5 Bytes
 	Export Flags: 0x00000001
 [330]
 	Name: None
@@ -3361,28 +3368,28 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: ParticleModuleSize
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020729 with 0x00000128 Bytes
+	Serialized data: at 0x00000000000208a3 with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [333]
 	Name: ParticleModuleSize_2
 	Class: ParticleModuleSize
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020851 with 0x00000128 Bytes
+	Serialized data: at 0x00000000000209cb with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [334]
 	Name: ParticleModuleSize_4
 	Class: ParticleModuleSize
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020979 with 0x00000128 Bytes
+	Serialized data: at 0x0000000000020af3 with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [335]
 	Name: ParticleModuleSize_9
 	Class: ParticleModuleSize
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020aa1 with 0x00000128 Bytes
+	Serialized data: at 0x0000000000020c1b with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [336]
 	Name: None
@@ -3431,42 +3438,42 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020bc9 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000020d43 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [344]
 	Name: ParticleModuleSizeMultiplyLife_10
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020d76 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000020ef0 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [345]
 	Name: ParticleModuleSizeMultiplyLife_3
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020f23 with 0x000001ad Bytes
+	Serialized data: at 0x000000000002109d with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [346]
 	Name: ParticleModuleSizeMultiplyLife_4
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000210d0 with 0x000001ad Bytes
+	Serialized data: at 0x000000000002124a with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [347]
 	Name: ParticleModuleSizeMultiplyLife_5
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002127d with 0x000001ad Bytes
+	Serialized data: at 0x00000000000213f7 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [348]
 	Name: ParticleModuleSizeMultiplyLife_9
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002142a with 0x000001ad Bytes
+	Serialized data: at 0x00000000000215a4 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [349]
 	Name: None
@@ -3491,28 +3498,28 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: ParticleModuleSpawn
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000215d7 with 0x00000181 Bytes
+	Serialized data: at 0x0000000000021751 with 0x00000181 Bytes
 	Export Flags: 0x00000001
 [353]
 	Name: ParticleModuleSpawn_2
 	Class: ParticleModuleSpawn
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021758 with 0x00000181 Bytes
+	Serialized data: at 0x00000000000218d2 with 0x00000181 Bytes
 	Export Flags: 0x00000001
 [354]
 	Name: ParticleModuleSpawn_3
 	Class: ParticleModuleSpawn
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000218d9 with 0x00000155 Bytes
+	Serialized data: at 0x0000000000021a53 with 0x00000155 Bytes
 	Export Flags: 0x00000001
 [355]
 	Name: ParticleModuleSpawn_9
 	Class: ParticleModuleSpawn
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021a2e with 0x000000dd Bytes
+	Serialized data: at 0x0000000000021ba8 with 0x000000dd Bytes
 	Export Flags: 0x00000001
 [356]
 	Name: None
@@ -3573,140 +3580,140 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: ParticleModuleSubUV
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021b0b with 0x000000b9 Bytes
+	Serialized data: at 0x0000000000021c85 with 0x000000b9 Bytes
 	Export Flags: 0x00000001
 [366]
 	Name: ParticleModuleSubUV_1
 	Class: ParticleModuleSubUV
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021bc4 with 0x000000b9 Bytes
+	Serialized data: at 0x0000000000021d3e with 0x000000b9 Bytes
 	Export Flags: 0x00000001
 [367]
 	Name: ParticleModuleSubUV_14
 	Class: ParticleModuleSubUV
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021c7d with 0x000000b9 Bytes
+	Serialized data: at 0x0000000000021df7 with 0x000000b9 Bytes
 	Export Flags: 0x00000001
 [368]
 	Name: ParticleModuleSubUV_2
 	Class: ParticleModuleSubUV
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021d36 with 0x000000b9 Bytes
+	Serialized data: at 0x0000000000021eb0 with 0x000000b9 Bytes
 	Export Flags: 0x00000001
 [369]
 	Name: ParticleModuleSubUV_3
 	Class: ParticleModuleSubUV
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021def with 0x000000b9 Bytes
+	Serialized data: at 0x0000000000021f69 with 0x000000b9 Bytes
 	Export Flags: 0x00000001
 [370]
 	Name: ParticleModuleSubUV_4
 	Class: ParticleModuleSubUV
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021ea8 with 0x000000b9 Bytes
+	Serialized data: at 0x0000000000022022 with 0x000000b9 Bytes
 	Export Flags: 0x00000001
 [371]
 	Name: ParticleModuleSubUV_5
 	Class: ParticleModuleSubUV
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021f61 with 0x000000b9 Bytes
+	Serialized data: at 0x00000000000220db with 0x000000b9 Bytes
 	Export Flags: 0x00000001
 [372]
 	Name: ParticleModuleSubUV_6
 	Class: ParticleModuleSubUV
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002201a with 0x000000b9 Bytes
+	Serialized data: at 0x0000000000022194 with 0x000000b9 Bytes
 	Export Flags: 0x00000001
 [373]
 	Name: ParticleModuleSubUV_7
 	Class: ParticleModuleSubUV
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000220d3 with 0x000000b9 Bytes
+	Serialized data: at 0x000000000002224d with 0x000000b9 Bytes
 	Export Flags: 0x00000001
 [374]
 	Name: ParticleModuleVelocity_0
 	Class: ParticleModuleVelocity
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002218c with 0x0000016c Bytes
+	Serialized data: at 0x0000000000022306 with 0x0000016c Bytes
 	Export Flags: 0x00000001
 [375]
 	Name: ParticleModuleVelocity_1
 	Class: ParticleModuleVelocity
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000222f8 with 0x0000016c Bytes
+	Serialized data: at 0x0000000000022472 with 0x0000016c Bytes
 	Export Flags: 0x00000001
 [376]
 	Name: ParticleModuleVelocity_10
 	Class: ParticleModuleVelocity
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022464 with 0x0000016c Bytes
+	Serialized data: at 0x00000000000225de with 0x0000016c Bytes
 	Export Flags: 0x00000001
 [377]
 	Name: ParticleModuleVelocity_13
 	Class: ParticleModuleVelocity
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000225d0 with 0x0000016c Bytes
+	Serialized data: at 0x000000000002274a with 0x0000016c Bytes
 	Export Flags: 0x00000001
 [378]
 	Name: ParticleModuleVelocity_2
 	Class: ParticleModuleVelocity
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002273c with 0x0000016c Bytes
+	Serialized data: at 0x00000000000228b6 with 0x0000016c Bytes
 	Export Flags: 0x00000001
 [379]
 	Name: ParticleModuleVelocity_3
 	Class: ParticleModuleVelocity
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000228a8 with 0x00000185 Bytes
+	Serialized data: at 0x0000000000022a22 with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [380]
 	Name: ParticleModuleVelocity_4
 	Class: ParticleModuleVelocity
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022a2d with 0x0000016c Bytes
+	Serialized data: at 0x0000000000022ba7 with 0x0000016c Bytes
 	Export Flags: 0x00000001
 [381]
 	Name: ParticleModuleVelocity_5
 	Class: ParticleModuleVelocity
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022b99 with 0x0000016c Bytes
+	Serialized data: at 0x0000000000022d13 with 0x0000016c Bytes
 	Export Flags: 0x00000001
 [382]
 	Name: ParticleModuleVelocity_6
 	Class: ParticleModuleVelocity
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022d05 with 0x0000016c Bytes
+	Serialized data: at 0x0000000000022e7f with 0x0000016c Bytes
 	Export Flags: 0x00000001
 [383]
 	Name: ParticleModuleVelocity_7
 	Class: ParticleModuleVelocity
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022e71 with 0x0000016c Bytes
+	Serialized data: at 0x0000000000022feb with 0x0000016c Bytes
 	Export Flags: 0x00000001
 [384]
 	Name: ParticleModuleVelocity_9
 	Class: ParticleModuleVelocity
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022fdd with 0x0000016c Bytes
+	Serialized data: at 0x0000000000023157 with 0x0000016c Bytes
 	Export Flags: 0x00000001
 [385]
 	Name: None
@@ -3755,126 +3762,126 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023149 with 0x00000171 Bytes
+	Serialized data: at 0x00000000000232c3 with 0x00000171 Bytes
 	Export Flags: 0x00000001
 [393]
 	Name: ParticleModuleVelocityOverLifetime_12
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000232ba with 0x00000171 Bytes
+	Serialized data: at 0x0000000000023434 with 0x00000171 Bytes
 	Export Flags: 0x00000001
 [394]
 	Name: ParticleModuleVelocityOverLifetime_3
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002342b with 0x000000ad Bytes
+	Serialized data: at 0x00000000000235a5 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [395]
 	Name: ParticleModuleVelocityOverLifetime_6
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000234d8 with 0x00000135 Bytes
+	Serialized data: at 0x0000000000023652 with 0x00000135 Bytes
 	Export Flags: 0x00000001
 [396]
 	Name: ParticleSpriteEmitter_0
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002360d with 0x0000004c Bytes
+	Serialized data: at 0x0000000000023787 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [397]
 	Name: ParticleSpriteEmitter_10
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023659 with 0x0000004c Bytes
+	Serialized data: at 0x00000000000237d3 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [398]
 	Name: ParticleSpriteEmitter_11
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000236a5 with 0x0000004c Bytes
+	Serialized data: at 0x000000000002381f with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [399]
 	Name: ParticleSpriteEmitter_12
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000236f1 with 0x0000004c Bytes
+	Serialized data: at 0x000000000002386b with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [400]
 	Name: ParticleSpriteEmitter_13
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002373d with 0x0000004c Bytes
+	Serialized data: at 0x00000000000238b7 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [401]
 	Name: ParticleSpriteEmitter_14
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023789 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000023903 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [402]
 	Name: ParticleSpriteEmitter_15
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000237d5 with 0x0000004c Bytes
+	Serialized data: at 0x000000000002394f with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [403]
 	Name: ParticleSpriteEmitter_2
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023821 with 0x0000004c Bytes
+	Serialized data: at 0x000000000002399b with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [404]
 	Name: ParticleSpriteEmitter_3
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002386d with 0x0000004c Bytes
+	Serialized data: at 0x00000000000239e7 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [405]
 	Name: ParticleSpriteEmitter_4
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000238b9 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000023a33 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [406]
 	Name: ParticleSpriteEmitter_5
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023905 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000023a7f with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [407]
 	Name: ParticleSpriteEmitter_6
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023951 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000023acb with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [408]
 	Name: ParticleSpriteEmitter_8
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002399d with 0x0000004c Bytes
+	Serialized data: at 0x0000000000023b17 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [409]
 	Name: ParticleSpriteEmitter_9
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem body_tomb_AmbientBoost_IG_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000239e9 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000023b63 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [410]
 	Name: None
@@ -3935,7 +3942,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: ParticleSystem
 	Outer: Package body_tomb
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000023a35 with 0x000001f6 Bytes
+	Serialized data: at 0x0000000000023baf with 0x000001f6 Bytes
 	Export Flags: 0x00000001
 [420]
 	Name: None
@@ -3960,21 +3967,21 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: ParticleSystemComponent
 	Outer: FXActor_TA Body_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000023c2b with 0x0000007a Bytes
+	Serialized data: at 0x0000000000023da5 with 0x0000007a Bytes
 	Export Flags: 0x00000001
 [424]
 	Name: ParticleSystemComponent_1
 	Class: ParticleSystemComponent
 	Outer: FXActor_TA Body_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000023ca5 with 0x0000007a Bytes
+	Serialized data: at 0x0000000000023e1f with 0x0000007a Bytes
 	Export Flags: 0x00000001
 [425]
 	Name: ParticleSystemComponent_2
 	Class: ParticleSystemComponent
 	Outer: FXActor_TA FXActor_body_tomb
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000023d1f with 0x0000007a Bytes
+	Serialized data: at 0x0000000000023e99 with 0x0000007a Bytes
 	Export Flags: 0x00000001
 [426]
 	Name: None
@@ -3987,7 +3994,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: PhysicsAsset
 	Outer: Package Body_MuscleCar
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000023d99 with 0x00000068 Bytes
+	Serialized data: at 0x0000000000023f13 with 0x00000068 Bytes
 	Export Flags: 0x00000001
 [428]
 	Name: None
@@ -4000,7 +4007,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: PhysicsAssetInstance
 	Outer: PhysicsAsset Body_MuscleCar_Physics
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023e01 with 0x00000030 Bytes
+	Serialized data: at 0x0000000000023f7b with 0x00000030 Bytes
 	Export Flags: 0x00000001
 [430]
 	Name: None
@@ -4050,7 +4057,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Outer: Package body_tomb
 	Archetype: ProductAsset_Body_TA_2
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000023e31 with 0x00000634 Bytes
+	Serialized data: at 0x0000000000023fab with 0x00000634 Bytes
 	Export Flags: 0x00000001
 [438]
 	Name: None
@@ -4069,14 +4076,14 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: ProductAssetReference_TA
 	Outer: ProductAsset_Body_TA body_tomb
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000024465 with 0x00000028 Bytes
+	Serialized data: at 0x00000000000245df with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [441]
 	Name: ProductAssetReference_TA_0
 	Class: ProductAssetReference_TA
 	Outer: ProductEquipProfileSlot_Custom_TA ProductEquipProfileSlot_Custom_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002448d with 0x00000028 Bytes
+	Serialized data: at 0x0000000000024607 with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [442]
 	Name: ProductAssetReference_TA_0
@@ -4084,7 +4091,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Outer: ProductEquipProfileSlot_ForcedProduct_TA ProductEquipProfileSlot_ForcedProduct_TA_0
 	Archetype: DefaultForcedProduct
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000244b5 with 0x00000028 Bytes
+	Serialized data: at 0x000000000002462f with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [443]
 	Name: ProductAssetReference_TA_1
@@ -4092,7 +4099,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Outer: ProductEquipProfileSlot_ForcedProduct_TA ProductEquipProfileSlot_ForcedProduct_TA_1
 	Archetype: DefaultForcedProduct
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000244dd with 0x00000028 Bytes
+	Serialized data: at 0x0000000000024657 with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [444]
 	Name: ProductAssetReference_TA_2
@@ -4100,7 +4107,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Outer: ProductEquipProfileSlot_ForcedProduct_TA ProductEquipProfileSlot_ForcedProduct_TA_2
 	Archetype: DefaultForcedProduct
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000024505 with 0x00000028 Bytes
+	Serialized data: at 0x000000000002467f with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [445]
 	Name: ProductAssetReference_TA_1
@@ -4108,7 +4115,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Outer: ProductEquipProfileSlot_ForcedProduct_TA ProductEquipProfileSlot_ForcedProduct_TA_3
 	Archetype: DefaultForcedProduct
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002452d with 0x00000028 Bytes
+	Serialized data: at 0x00000000000246a7 with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [446]
 	Name: ProductAssetReference_TA_1
@@ -4116,7 +4123,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Outer: ProductEquipProfileSlot_ForcedProduct_TA ProductEquipProfileSlot_ForcedProduct_TA_4
 	Archetype: DefaultForcedProduct
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000024555 with 0x00000028 Bytes
+	Serialized data: at 0x00000000000246cf with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [447]
 	Name: ProductAssetReference_TA_2
@@ -4124,14 +4131,14 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Outer: ProductEquipProfileSlot_ForcedProduct_TA ProductEquipProfileSlot_ForcedProduct_TA_5
 	Archetype: DefaultForcedProduct
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002457d with 0x00000028 Bytes
+	Serialized data: at 0x00000000000246f7 with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [448]
 	Name: ProductAssetReferenceWheel_TA_0
 	Class: ProductAssetReferenceWheel_TA
 	Outer: ProductAsset_Body_TA body_tomb
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000245a5 with 0x00000028 Bytes
+	Serialized data: at 0x000000000002471f with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [449]
 	Name: None
@@ -4145,70 +4152,70 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Outer: ProductAsset_Body_TA body_tomb
 	Archetype: DefaultEquipProfile
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000245cd with 0x00000174 Bytes
+	Serialized data: at 0x0000000000024747 with 0x00000174 Bytes
 	Export Flags: 0x00000001
 [451]
 	Name: ProductEquipProfileSlot_Custom_TA_0
 	Class: ProductEquipProfileSlot_Custom_TA
 	Outer: ProductEquipProfile_TA ProductEquipProfile_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000024741 with 0x00000054 Bytes
+	Serialized data: at 0x00000000000248bb with 0x00000054 Bytes
 	Export Flags: 0x00000001
 [452]
 	Name: ProductEquipProfileSlot_Disabled_TA_0
 	Class: ProductEquipProfileSlot_Disabled_TA
 	Outer: ProductEquipProfile_TA ProductEquipProfile_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000024795 with 0x0000000c Bytes
+	Serialized data: at 0x000000000002490f with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [453]
 	Name: ProductEquipProfileSlot_Disabled_TA_1
 	Class: ProductEquipProfileSlot_Disabled_TA
 	Outer: ProductEquipProfile_TA ProductEquipProfile_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000247a1 with 0x0000000c Bytes
+	Serialized data: at 0x000000000002491b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [454]
 	Name: ProductEquipProfileSlot_ForcedProduct_TA_0
 	Class: ProductEquipProfileSlot_ForcedProduct_TA
 	Outer: ProductEquipProfile_TA ProductEquipProfile_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000247ad with 0x00000028 Bytes
+	Serialized data: at 0x0000000000024927 with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [455]
 	Name: ProductEquipProfileSlot_ForcedProduct_TA_1
 	Class: ProductEquipProfileSlot_ForcedProduct_TA
 	Outer: ProductEquipProfile_TA ProductEquipProfile_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000247d5 with 0x00000028 Bytes
+	Serialized data: at 0x000000000002494f with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [456]
 	Name: ProductEquipProfileSlot_ForcedProduct_TA_2
 	Class: ProductEquipProfileSlot_ForcedProduct_TA
 	Outer: ProductEquipProfile_TA ProductEquipProfile_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000247fd with 0x00000028 Bytes
+	Serialized data: at 0x0000000000024977 with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [457]
 	Name: ProductEquipProfileSlot_ForcedProduct_TA_3
 	Class: ProductEquipProfileSlot_ForcedProduct_TA
 	Outer: ProductEquipProfile_TA ProductEquipProfile_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000024825 with 0x00000028 Bytes
+	Serialized data: at 0x000000000002499f with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [458]
 	Name: ProductEquipProfileSlot_ForcedProduct_TA_4
 	Class: ProductEquipProfileSlot_ForcedProduct_TA
 	Outer: ProductEquipProfile_TA ProductEquipProfile_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002484d with 0x00000028 Bytes
+	Serialized data: at 0x00000000000249c7 with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [459]
 	Name: ProductEquipProfileSlot_ForcedProduct_TA_5
 	Class: ProductEquipProfileSlot_ForcedProduct_TA
 	Outer: ProductEquipProfile_TA ProductEquipProfile_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000024875 with 0x00000028 Bytes
+	Serialized data: at 0x00000000000249ef with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [460]
 	Name: None
@@ -4227,7 +4234,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: RB_BodyInstance
 	Outer: PhysicsAssetInstance PhysicsAssetInstance_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002489d with 0x0000000c Bytes
+	Serialized data: at 0x0000000000024a17 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [463]
 	Name: None
@@ -4240,7 +4247,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: RB_BodySetup
 	Outer: PhysicsAsset Body_MuscleCar_Physics
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000248a9 with 0x0000017e Bytes
+	Serialized data: at 0x0000000000024a23 with 0x0000017e Bytes
 	Export Flags: 0x00000001
 [465]
 	Name: None
@@ -4259,196 +4266,196 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000024a27 with 0x000000d9 Bytes
+	Serialized data: at 0x0000000000024ba1 with 0x000000d9 Bytes
 	Export Flags: 0x00000001
 [468]
 	Name: SkelControlLookAt_1
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000024b00 with 0x000000c0 Bytes
+	Serialized data: at 0x0000000000024c7a with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [469]
 	Name: SkelControlLookAt_10
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000024bc0 with 0x000000d9 Bytes
+	Serialized data: at 0x0000000000024d3a with 0x000000d9 Bytes
 	Export Flags: 0x00000001
 [470]
 	Name: SkelControlLookAt_11
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000024c99 with 0x00000089 Bytes
+	Serialized data: at 0x0000000000024e13 with 0x00000089 Bytes
 	Export Flags: 0x00000001
 [471]
 	Name: SkelControlLookAt_2
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000024d22 with 0x00000089 Bytes
+	Serialized data: at 0x0000000000024e9c with 0x00000089 Bytes
 	Export Flags: 0x00000001
 [472]
 	Name: SkelControlLookAt_3
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000024dab with 0x000000c0 Bytes
+	Serialized data: at 0x0000000000024f25 with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [473]
 	Name: SkelControlLookAt_4
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000024e6b with 0x000000d9 Bytes
+	Serialized data: at 0x0000000000024fe5 with 0x000000d9 Bytes
 	Export Flags: 0x00000001
 [474]
 	Name: SkelControlLookAt_5
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000024f44 with 0x00000070 Bytes
+	Serialized data: at 0x00000000000250be with 0x00000070 Bytes
 	Export Flags: 0x00000001
 [475]
 	Name: SkelControlLookAt_6
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000024fb4 with 0x000000c0 Bytes
+	Serialized data: at 0x000000000002512e with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [476]
 	Name: SkelControlLookAt_7
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000025074 with 0x000000d9 Bytes
+	Serialized data: at 0x00000000000251ee with 0x000000d9 Bytes
 	Export Flags: 0x00000001
 [477]
 	Name: SkelControlLookAt_8
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002514d with 0x00000070 Bytes
+	Serialized data: at 0x00000000000252c7 with 0x00000070 Bytes
 	Export Flags: 0x00000001
 [478]
 	Name: SkelControlLookAt_9
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000000251bd with 0x000000c0 Bytes
+	Serialized data: at 0x0000000000025337 with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [479]
 	Name: SkelControlSingleBone_1
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002527d with 0x00000086 Bytes
+	Serialized data: at 0x00000000000253f7 with 0x00000086 Bytes
 	Export Flags: 0x00000001
 [480]
 	Name: SkelControlSingleBone_10
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000025303 with 0x000000a2 Bytes
+	Serialized data: at 0x000000000002547d with 0x000000a2 Bytes
 	Export Flags: 0x00000001
 [481]
 	Name: SkelControlSingleBone_11
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000000253a5 with 0x000000e0 Bytes
+	Serialized data: at 0x000000000002551f with 0x000000e0 Bytes
 	Export Flags: 0x00000001
 [482]
 	Name: SkelControlSingleBone_12
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000025485 with 0x00000086 Bytes
+	Serialized data: at 0x00000000000255ff with 0x00000086 Bytes
 	Export Flags: 0x00000001
 [483]
 	Name: SkelControlSingleBone_13
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002550b with 0x00000086 Bytes
+	Serialized data: at 0x0000000000025685 with 0x00000086 Bytes
 	Export Flags: 0x00000001
 [484]
 	Name: SkelControlSingleBone_14
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000025591 with 0x0000009f Bytes
+	Serialized data: at 0x000000000002570b with 0x0000009f Bytes
 	Export Flags: 0x00000001
 [485]
 	Name: SkelControlSingleBone_15
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000025630 with 0x000000a2 Bytes
+	Serialized data: at 0x00000000000257aa with 0x000000a2 Bytes
 	Export Flags: 0x00000001
 [486]
 	Name: SkelControlSingleBone_2
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000000256d2 with 0x000000ea Bytes
+	Serialized data: at 0x000000000002584c with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [487]
 	Name: SkelControlSingleBone_3
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000000257bc with 0x000000ea Bytes
+	Serialized data: at 0x0000000000025936 with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [488]
 	Name: SkelControlSingleBone_4
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000000258a6 with 0x000000ea Bytes
+	Serialized data: at 0x0000000000025a20 with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [489]
 	Name: SkelControlSingleBone_5
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000025990 with 0x000000ea Bytes
+	Serialized data: at 0x0000000000025b0a with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [490]
 	Name: SkelControlSingleBone_6
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000025a7a with 0x000000a2 Bytes
+	Serialized data: at 0x0000000000025bf4 with 0x000000a2 Bytes
 	Export Flags: 0x00000001
 [491]
 	Name: SkelControlSingleBone_7
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000025b1c with 0x00000086 Bytes
+	Serialized data: at 0x0000000000025c96 with 0x00000086 Bytes
 	Export Flags: 0x00000001
 [492]
 	Name: SkelControlSingleBone_8
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000025ba2 with 0x0000009f Bytes
+	Serialized data: at 0x0000000000025d1c with 0x0000009f Bytes
 	Export Flags: 0x00000001
 [493]
 	Name: SkelControlSingleBone_9
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000025c41 with 0x000000a2 Bytes
+	Serialized data: at 0x0000000000025dbb with 0x000000a2 Bytes
 	Export Flags: 0x00000001
 [494]
 	Name: body_tomb_sk
 	Class: SkeletalMesh
 	Outer: Package body_tomb
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000025ce3 with 0x0054b9ec Bytes
+	Serialized data: at 0x0000000000025e5d with 0x0054b9ec Bytes
 	Export Flags: 0x00000001
 [495]
 	Name: None
@@ -4467,56 +4474,56 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: SkeletalMeshSocket
 	Outer: SkeletalMesh body_tomb_sk
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000005716cf with 0x00000078 Bytes
+	Serialized data: at 0x0000000000571849 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [498]
 	Name: SkeletalMeshSocket_1
 	Class: SkeletalMeshSocket
 	Outer: SkeletalMesh body_tomb_sk
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000571747 with 0x00000078 Bytes
+	Serialized data: at 0x00000000005718c1 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [499]
 	Name: SkeletalMeshSocket_2
 	Class: SkeletalMeshSocket
 	Outer: SkeletalMesh body_tomb_sk
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000005717bf with 0x00000078 Bytes
+	Serialized data: at 0x0000000000571939 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [500]
 	Name: SkeletalMeshSocket_3
 	Class: SkeletalMeshSocket
 	Outer: SkeletalMesh body_tomb_sk
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000571837 with 0x00000078 Bytes
+	Serialized data: at 0x00000000005719b1 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [501]
 	Name: SkeletalMeshSocket_4
 	Class: SkeletalMeshSocket
 	Outer: SkeletalMesh body_tomb_sk
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000005718af with 0x00000078 Bytes
+	Serialized data: at 0x0000000000571a29 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [502]
 	Name: SkeletalMeshSocket_5
 	Class: SkeletalMeshSocket
 	Outer: SkeletalMesh body_tomb_sk
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000571927 with 0x00000078 Bytes
+	Serialized data: at 0x0000000000571aa1 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [503]
 	Name: SkeletalMeshSocket_6
 	Class: SkeletalMeshSocket
 	Outer: SkeletalMesh body_tomb_sk
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000057199f with 0x00000078 Bytes
+	Serialized data: at 0x0000000000571b19 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [504]
 	Name: SkeletalMeshSocket_7
 	Class: SkeletalMeshSocket
 	Outer: SkeletalMesh body_tomb_sk
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000571a17 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000571b91 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [505]
 	Name: None
@@ -4535,7 +4542,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: StaticMesh
 	Outer: Package body_tomb
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000571a63 with 0x000161c9 Bytes
+	Serialized data: at 0x0000000000571bdd with 0x000161c9 Bytes
 	Export Flags: 0x00000001
 [508]
 	Name: None
@@ -4578,7 +4585,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: StaticMeshComponent
 	Outer: FXActor_TA FXActor_body_tomb
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000587c2c with 0x00000065 Bytes
+	Serialized data: at 0x0000000000587da6 with 0x00000065 Bytes
 	Export Flags: 0x00000001
 [515]
 	Name: None
@@ -4597,70 +4604,70 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: Texture2D
 	Outer: Package body_endo
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000587c91 with 0x00000d10 Bytes
+	Serialized data: at 0x0000000000587e0b with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [518]
 	Name: Endo_Chassis_N
 	Class: Texture2D
 	Outer: Package body_endo
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000005889a1 with 0x00001885 Bytes
+	Serialized data: at 0x0000000000588b1b with 0x00001885 Bytes
 	Export Flags: 0x00000001
 [519]
 	Name: Endo_Chassis_RGB
 	Class: Texture2D
 	Outer: Package body_endo
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000058a226 with 0x000017f0 Bytes
+	Serialized data: at 0x000000000058a3a0 with 0x000017f0 Bytes
 	Export Flags: 0x00000001
 [520]
 	Name: body_tomb_blankskin
 	Class: Texture2D
 	Outer: Package body_tomb
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000058ba16 with 0x000017c8 Bytes
+	Serialized data: at 0x000000000058bb90 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [521]
 	Name: body_tomb_curvature
 	Class: Texture2D
 	Outer: Package body_tomb
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000058d1de with 0x00000d10 Bytes
+	Serialized data: at 0x000000000058d358 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [522]
 	Name: body_tomb_d
 	Class: Texture2D
 	Outer: Package body_tomb
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000058deee with 0x000017c8 Bytes
+	Serialized data: at 0x000000000058e068 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [523]
 	Name: chassis_tomb_d
 	Class: Texture2D
 	Outer: Package body_tomb
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000058f6b6 with 0x00000d10 Bytes
+	Serialized data: at 0x000000000058f830 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [524]
 	Name: chassis_tomb_n
 	Class: Texture2D
 	Outer: Package body_tomb
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000005903c6 with 0x00001885 Bytes
+	Serialized data: at 0x0000000000590540 with 0x00001885 Bytes
 	Export Flags: 0x00000001
 [525]
 	Name: chassis_tomb_rgb
 	Class: Texture2D
 	Outer: Package body_tomb
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000591c4b with 0x000017c8 Bytes
+	Serialized data: at 0x0000000000591dc5 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [526]
 	Name: FireBurst_01_T
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000593413 with 0x00002d7a Bytes
+	Serialized data: at 0x000000000059358d with 0x00002d7a Bytes
 	Export Flags: 0x00000001
 [527]
 	Name: None
@@ -4715,7 +4722,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: Texture2D
 	Outer: Package Tex
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000059618d with 0x000017dd Bytes
+	Serialized data: at 0x0000000000596307 with 0x000017dd Bytes
 	Export Flags: 0x00000001
 [536]
 	Name: None
@@ -4818,7 +4825,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: MaterialFunction
 	Outer: Package Psy_MaterialFunctions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000059796a with 0x00000124 Bytes
+	Serialized data: at 0x0000000000597ae4 with 0x00000124 Bytes
 	Export Flags: 0x00000001
 [553]
 	Name: None
@@ -4860,7 +4867,7 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Name: Psy_MaterialFunctions
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000597a8e with 0x0000000c Bytes
+	Serialized data: at 0x0000000000597c08 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -4995,30 +5002,58 @@ AES: zc6NN13Xk6fO9fQtYdKpTC04LGE99r97r+XxHXL4FVs=
 	Class: Material
 	Outer: Package Vehicle_Parent_Materials02
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000597a9a with 0x00000519 Bytes
+	Serialized data: at 0x00000000005983c8 with 0x00000569 Bytes
 	Export Flags: 0x00000001
 [582]
 	Name: MaterialExpressionTextureSampleParameter2D_0
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Vehicle_Glass_Translucent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000597fb3 with 0x000000d8 Bytes
+	Serialized data: at 0x000000000059812d with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [583]
 	Name: MaterialExpressionTextureSampleParameter2D_1
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Vehicle_Glass_Translucent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000059808b with 0x000001b7 Bytes
+	Serialized data: at 0x0000000000598205 with 0x000001b7 Bytes
 	Export Flags: 0x00000001
 [584]
 	Name: Vehicle_Parent_Materials02
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000598242 with 0x0000000c Bytes
+	Serialized data: at 0x00000000005983bc with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
+[585]
+	Name: MaterialExpressionScalarParameter_0
+	Class: MaterialExpressionScalarParameter
+	Outer: Material MAT_Vehicle_Glass_Translucent
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000598931 with 0x00000094 Bytes
+	Export Flags: 0x00000001
+[586]
+	Name: MaterialExpressionScalarParameter_1
+	Class: MaterialExpressionScalarParameter
+	Outer: Material MAT_Vehicle_Glass_Translucent
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x00000000005989c5 with 0x00000078 Bytes
+	Export Flags: 0x00000001
+[587]
+	Name: MaterialExpressionScalarParameter_4
+	Class: MaterialExpressionScalarParameter
+	Outer: Material MAT_Vehicle_Glass_Translucent
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000598a3d with 0x00000078 Bytes
+	Export Flags: 0x00000001
+[588]
+	Name: MaterialExpressionVectorParameter_0
+	Class: MaterialExpressionVectorParameter
+	Outer: Material MAT_Vehicle_Glass_Translucent
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000598ab5 with 0x000000a8 Bytes
+	Export Flags: 0x00000001
 
 
     ~ Imports ~ 

@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x0001427d Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 960 Name Offset: 0x000002dd
-Export Count: 519 Export Offset: 0x00007f48
-Import Count: 177 Import Offset: 0x00006bec
-Depends Offset: 0x00011140
-Import Export Guids Offset: 0x00011140
+Name Count: 963 Name Offset: 0x000002e9
+Export Count: 523 Export Offset: 0x00007fda
+Import Count: 179 Import Offset: 0x00006c46
+Depends Offset: 0x000112f2
+Import Export Guids Offset: 0x000112f2
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x31702c4c 0x46e54867 0x37159c94 0xb33f893c
+GUID: 0x1ae6c710 0x43787f3e 0xa1f01da8 0xd405535e
 Generations:
 [0]
 	Export Count: 500
@@ -139,6 +139,10 @@ Generations:
 	Export Count: 519
 	Name Count: 960
 	Net Object Count: 0
+[30]
+	Export Count: 523
+	Name Count: 963
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression Flags: 0x00000001
@@ -216,10 +220,10 @@ Texture Allocations Texture Types:
 	Tex Create Flags: 0
 	Export Indices:
 	[0] 451
-Test Data Size: 0x00002f89
-Compressed Chunk Info Offset: 0x00010e63
-Last Block Size: 0x00000000
-Base Header Size: 0x000002dd
+Test Data Size: 0x00002dbf
+Compressed Chunk Info Offset: 0x00011009
+Last Block Size: 0x00000004
+Base Header Size: 0x000002e9
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -1187,6 +1191,9 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [957] TrimSheet1Mirrored_Opacity
 [958] TrimSheet1Mirrored_RotationOffset
 [959] VectorParameters
+[960] ENVMap_ClampMin
+[961] OverlayENV_Intensity
+[962] Tint
 
 
     ~ Exports ~ 
@@ -1203,7 +1210,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: AnimTree
 	Outer: Package Body_AT
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001114c with 0x00000a9d Bytes
+	Serialized data: at 0x00000000000112fe with 0x00000a9d Bytes
 	Export Flags: 0x00000001
 [2]
 	Name: None
@@ -1264,7 +1271,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: FXActor_TA
 	Outer: Package Body_FX
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x0000000000a35640 with 0x0000068a Bytes
+	Serialized data: at 0x0000000000a357f2 with 0x0000068a Bytes
 	Export Flags: 0x00000001
 [12]
 	Name: None
@@ -1277,7 +1284,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: FXActor_TA
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x0000000000a36035 with 0x0000069e Bytes
+	Serialized data: at 0x0000000000a361e7 with 0x0000069e Bytes
 	Export Flags: 0x00000001
 [14]
 	Name: None
@@ -1290,28 +1297,28 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Material
 	Outer: Package body_gilliam
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000cd6838 with 0x000002a7 Bytes
+	Serialized data: at 0x0000000000cd69ea with 0x000002a7 Bytes
 	Export Flags: 0x00000001
 [16]
 	Name: MAT_Body_NewWindshield
 	Class: Material
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000a58642 with 0x00000978 Bytes
+	Serialized data: at 0x0000000000a587f4 with 0x00000978 Bytes
 	Export Flags: 0x00000001
 [17]
 	Name: MAT_Chassis_Detail_Tiling
 	Class: Material
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000a52ef9 with 0x00000644 Bytes
+	Serialized data: at 0x0000000000a530ab with 0x00000644 Bytes
 	Export Flags: 0x00000001
 [18]
 	Name: MAT_Chassis_Lights
 	Class: Material
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000a5353d with 0x000006b4 Bytes
+	Serialized data: at 0x0000000000a536ef with 0x000006b4 Bytes
 	Export Flags: 0x00000001
 [19]
 	Name: None
@@ -1360,98 +1367,98 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Material AmbientFlames_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016285 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000016437 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [27]
 	Name: MaterialExpressionScalarParameter_4
 	Class: MaterialExpressionScalarParameter
 	Outer: Material AmbientFlames_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016339 with 0x000000b4 Bytes
+	Serialized data: at 0x00000000000164eb with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [28]
 	Name: MaterialExpressionScalarParameter_5
 	Class: MaterialExpressionScalarParameter
 	Outer: Material AmbientFlames_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000163ed with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001659f with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [29]
 	Name: MaterialExpressionScalarParameter_0
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000164a1 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000016653 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [30]
 	Name: MaterialExpressionScalarParameter_6
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016535 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000166e7 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [31]
 	Name: MaterialExpressionScalarParameter_67
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000165c9 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001677b with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [32]
 	Name: MaterialExpressionScalarParameter_7
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001667d with 0x00000094 Bytes
+	Serialized data: at 0x000000000001682f with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [33]
 	Name: MaterialExpressionScalarParameter_73
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016711 with 0x000000b4 Bytes
+	Serialized data: at 0x00000000000168c3 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [34]
 	Name: MaterialExpressionScalarParameter_1
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_Chassis_Detail_Tiling
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000167c5 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000016977 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [35]
 	Name: MaterialExpressionScalarParameter_1
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_Chassis_Lights
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016879 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000016a2b with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [36]
 	Name: MaterialExpressionScalarParameter_2
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_Chassis_Lights
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001692d with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000016adf with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [37]
 	Name: MaterialExpressionScalarParameter_3
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_Chassis_Lights
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000169e1 with 0x000000c6 Bytes
+	Serialized data: at 0x0000000000016b93 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [38]
 	Name: MaterialExpressionScalarParameter_6
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_Chassis_Lights
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016aa7 with 0x000000c6 Bytes
+	Serialized data: at 0x0000000000016c59 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [39]
 	Name: MaterialExpressionScalarParameter_7
 	Class: MaterialExpressionScalarParameter
 	Outer: Material MAT_Chassis_Lights
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016b6d with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000016d1f with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [40]
 	Name: None
@@ -1548,189 +1555,189 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000174cd with 0x00000100 Bytes
+	Serialized data: at 0x000000000001767f with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [56]
 	Name: MaterialExpressionStaticSwitchParameter_1
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000175cd with 0x000001c1 Bytes
+	Serialized data: at 0x000000000001777f with 0x000001c1 Bytes
 	Export Flags: 0x00000001
 [57]
 	Name: MaterialExpressionStaticSwitchParameter_100
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001778e with 0x00000132 Bytes
+	Serialized data: at 0x0000000000017940 with 0x00000132 Bytes
 	Export Flags: 0x00000001
 [58]
 	Name: MaterialExpressionStaticSwitchParameter_101
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000178c0 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000017a72 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [59]
 	Name: MaterialExpressionStaticSwitchParameter_102
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000179d9 with 0x00000100 Bytes
+	Serialized data: at 0x0000000000017b8b with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [60]
 	Name: MaterialExpressionStaticSwitchParameter_103
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017ad9 with 0x00000170 Bytes
+	Serialized data: at 0x0000000000017c8b with 0x00000170 Bytes
 	Export Flags: 0x00000001
 [61]
 	Name: MaterialExpressionStaticSwitchParameter_104
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017c49 with 0x00000132 Bytes
+	Serialized data: at 0x0000000000017dfb with 0x00000132 Bytes
 	Export Flags: 0x00000001
 [62]
 	Name: MaterialExpressionStaticSwitchParameter_105
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017d7b with 0x00000119 Bytes
+	Serialized data: at 0x0000000000017f2d with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [63]
 	Name: MaterialExpressionStaticSwitchParameter_106
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017e94 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000018046 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [64]
 	Name: MaterialExpressionStaticSwitchParameter_107
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017fad with 0x000001dd Bytes
+	Serialized data: at 0x000000000001815f with 0x000001dd Bytes
 	Export Flags: 0x00000001
 [65]
 	Name: MaterialExpressionStaticSwitchParameter_108
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001818a with 0x00000100 Bytes
+	Serialized data: at 0x000000000001833c with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [66]
 	Name: MaterialExpressionStaticSwitchParameter_109
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001828a with 0x00000119 Bytes
+	Serialized data: at 0x000000000001843c with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [67]
 	Name: MaterialExpressionStaticSwitchParameter_110
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000183a3 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000018555 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [68]
 	Name: MaterialExpressionStaticSwitchParameter_112
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000184bc with 0x00000186 Bytes
+	Serialized data: at 0x000000000001866e with 0x00000186 Bytes
 	Export Flags: 0x00000001
 [69]
 	Name: MaterialExpressionStaticSwitchParameter_113
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018642 with 0x00000119 Bytes
+	Serialized data: at 0x00000000000187f4 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [70]
 	Name: MaterialExpressionStaticSwitchParameter_114
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001875b with 0x000001e0 Bytes
+	Serialized data: at 0x000000000001890d with 0x000001e0 Bytes
 	Export Flags: 0x00000001
 [71]
 	Name: MaterialExpressionStaticSwitchParameter_115
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001893b with 0x000001a8 Bytes
+	Serialized data: at 0x0000000000018aed with 0x000001a8 Bytes
 	Export Flags: 0x00000001
 [72]
 	Name: MaterialExpressionStaticSwitchParameter_116
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018ae3 with 0x00000100 Bytes
+	Serialized data: at 0x0000000000018c95 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [73]
 	Name: MaterialExpressionStaticSwitchParameter_117
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018be3 with 0x00000100 Bytes
+	Serialized data: at 0x0000000000018d95 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [74]
 	Name: MaterialExpressionStaticSwitchParameter_118
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018ce3 with 0x0000012c Bytes
+	Serialized data: at 0x0000000000018e95 with 0x0000012c Bytes
 	Export Flags: 0x00000001
 [75]
 	Name: MaterialExpressionStaticSwitchParameter_119
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018e0f with 0x00000119 Bytes
+	Serialized data: at 0x0000000000018fc1 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [76]
 	Name: MaterialExpressionStaticSwitchParameter_120
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018f28 with 0x00000100 Bytes
+	Serialized data: at 0x00000000000190da with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [77]
 	Name: MaterialExpressionStaticSwitchParameter_121
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019028 with 0x00000119 Bytes
+	Serialized data: at 0x00000000000191da with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [78]
 	Name: MaterialExpressionStaticSwitchParameter_122
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019141 with 0x0000012d Bytes
+	Serialized data: at 0x00000000000192f3 with 0x0000012d Bytes
 	Export Flags: 0x00000001
 [79]
 	Name: MaterialExpressionStaticSwitchParameter_123
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001926e with 0x00000119 Bytes
+	Serialized data: at 0x0000000000019420 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [80]
 	Name: MaterialExpressionStaticSwitchParameter_124
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019387 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000019539 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [81]
 	Name: MaterialExpressionStaticSwitchParameter_125
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000194a0 with 0x00000132 Bytes
+	Serialized data: at 0x0000000000019652 with 0x00000132 Bytes
 	Export Flags: 0x00000001
 [82]
 	Name: None
@@ -1743,84 +1750,84 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001964a with 0x00000100 Bytes
+	Serialized data: at 0x00000000000197fc with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [84]
 	Name: MaterialExpressionStaticSwitchParameter_3
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001974a with 0x00000231 Bytes
+	Serialized data: at 0x00000000000198fc with 0x00000231 Bytes
 	Export Flags: 0x00000001
 [85]
 	Name: MaterialExpressionStaticSwitchParameter_5
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001997b with 0x00000231 Bytes
+	Serialized data: at 0x0000000000019b2d with 0x00000231 Bytes
 	Export Flags: 0x00000001
 [86]
 	Name: MaterialExpressionStaticSwitchParameter_95
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019bac with 0x00000119 Bytes
+	Serialized data: at 0x0000000000019d5e with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [87]
 	Name: MaterialExpressionStaticSwitchParameter_96
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019cc5 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000019e77 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [88]
 	Name: MaterialExpressionStaticSwitchParameter_97
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019dde with 0x00000119 Bytes
+	Serialized data: at 0x0000000000019f90 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [89]
 	Name: MaterialExpressionStaticSwitchParameter_98
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019ef7 with 0x00000170 Bytes
+	Serialized data: at 0x000000000001a0a9 with 0x00000170 Bytes
 	Export Flags: 0x00000001
 [90]
 	Name: MaterialExpressionStaticSwitchParameter_99
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a067 with 0x00000100 Bytes
+	Serialized data: at 0x000000000001a219 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [91]
 	Name: MaterialExpressionStaticSwitchParameter_0
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Chassis_Detail_Tiling
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a167 with 0x00000078 Bytes
+	Serialized data: at 0x000000000001a319 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [92]
 	Name: MaterialExpressionStaticSwitchParameter_0
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Chassis_Lights
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a1df with 0x00000100 Bytes
+	Serialized data: at 0x000000000001a391 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [93]
 	Name: MaterialExpressionStaticSwitchParameter_1
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Chassis_Lights
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a2df with 0x00000170 Bytes
+	Serialized data: at 0x000000000001a491 with 0x00000170 Bytes
 	Export Flags: 0x00000001
 [94]
 	Name: MaterialExpressionStaticSwitchParameter_2
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Material MAT_Chassis_Lights
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a44f with 0x000001f9 Bytes
+	Serialized data: at 0x000000000001a601 with 0x000001f9 Bytes
 	Export Flags: 0x00000001
 [95]
 	Name: None
@@ -1875,84 +1882,84 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000a540a2 with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000a54254 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [104]
 	Name: MaterialExpressionTextureSampleParameter2D_37
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000a5417a with 0x000000ad Bytes
+	Serialized data: at 0x0000000000a5432c with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [105]
 	Name: MaterialExpressionTextureSampleParameter2D_38
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000a54227 with 0x000000f1 Bytes
+	Serialized data: at 0x0000000000a543d9 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [106]
 	Name: MaterialExpressionTextureSampleParameter2D_39
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000a54318 with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000a544ca with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [107]
 	Name: MaterialExpressionTextureSampleParameter2D_40
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000a543f0 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000a545a2 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [108]
 	Name: MaterialExpressionTextureSampleParameter2D_41
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000a54484 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000a54636 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [109]
 	Name: MaterialExpressionTextureSampleParameter2D_42
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000a54531 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000a546e3 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [110]
 	Name: MaterialExpressionTextureSampleParameter2D_43
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000a545c5 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000a54777 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [111]
 	Name: MaterialExpressionTextureSampleParameter2D_44
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000a54659 with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000a5480b with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [112]
 	Name: MaterialExpressionTextureSampleParameter2D_45
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000a54731 with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000a548e3 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [113]
 	Name: MaterialExpressionTextureSampleParameter2D_46
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000a54809 with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000a549bb with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [114]
 	Name: MaterialExpressionTextureSampleParameter2D_47
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000a548e1 with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000a54a93 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [115]
 	Name: None
@@ -1965,77 +1972,77 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000a549b9 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000a54b6b with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [117]
 	Name: MaterialExpressionTextureSampleParameter2D_0
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Chassis_Detail_Tiling
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001bb2d with 0x000000d6 Bytes
+	Serialized data: at 0x000000000001bcdf with 0x000000d6 Bytes
 	Export Flags: 0x00000001
 [118]
 	Name: MaterialExpressionTextureSampleParameter2D_1
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Chassis_Detail_Tiling
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001bc03 with 0x000000d8 Bytes
+	Serialized data: at 0x000000000001bdb5 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [119]
 	Name: MaterialExpressionTextureSampleParameter2D_2
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Chassis_Detail_Tiling
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001bcdb with 0x000000cd Bytes
+	Serialized data: at 0x000000000001be8d with 0x000000cd Bytes
 	Export Flags: 0x00000001
 [120]
 	Name: MaterialExpressionTextureSampleParameter2D_3
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Chassis_Detail_Tiling
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001bda8 with 0x000000d8 Bytes
+	Serialized data: at 0x000000000001bf5a with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [121]
 	Name: MaterialExpressionTextureSampleParameter2D_5
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Chassis_Detail_Tiling
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001be80 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000001c032 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [122]
 	Name: MaterialExpressionTextureSampleParameter2D_0
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Chassis_Lights
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001bf71 with 0x000000d6 Bytes
+	Serialized data: at 0x000000000001c123 with 0x000000d6 Bytes
 	Export Flags: 0x00000001
 [123]
 	Name: MaterialExpressionTextureSampleParameter2D_1
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Chassis_Lights
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c047 with 0x000000d8 Bytes
+	Serialized data: at 0x000000000001c1f9 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [124]
 	Name: MaterialExpressionTextureSampleParameter2D_2
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Chassis_Lights
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c11f with 0x000000cd Bytes
+	Serialized data: at 0x000000000001c2d1 with 0x000000cd Bytes
 	Export Flags: 0x00000001
 [125]
 	Name: MaterialExpressionTextureSampleParameter2D_3
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Chassis_Lights
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c1ec with 0x000000d8 Bytes
+	Serialized data: at 0x000000000001c39e with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [126]
 	Name: MaterialExpressionTextureSampleParameter2D_5
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Chassis_Lights
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c2c4 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000001c476 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [127]
 	Name: None
@@ -2102,126 +2109,126 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: Material AmbientFlames_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001ca4c with 0x00000088 Bytes
+	Serialized data: at 0x000000000001cbfe with 0x00000088 Bytes
 	Export Flags: 0x00000001
 [138]
 	Name: MaterialExpressionVectorParameter_2
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000a324c2 with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000a32674 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [139]
 	Name: MaterialExpressionVectorParameter_23
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cb7c with 0x000000a8 Bytes
+	Serialized data: at 0x000000000001cd2e with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [140]
 	Name: MaterialExpressionVectorParameter_24
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cc24 with 0x000000a8 Bytes
+	Serialized data: at 0x000000000001cdd6 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [141]
 	Name: MaterialExpressionVectorParameter_25
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cccc with 0x000000a8 Bytes
+	Serialized data: at 0x000000000001ce7e with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [142]
 	Name: MaterialExpressionVectorParameter_26
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cd74 with 0x0000010c Bytes
+	Serialized data: at 0x000000000001cf26 with 0x0000010c Bytes
 	Export Flags: 0x00000001
 [143]
 	Name: MaterialExpressionVectorParameter_27
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001ce80 with 0x0000010c Bytes
+	Serialized data: at 0x000000000001d032 with 0x0000010c Bytes
 	Export Flags: 0x00000001
 [144]
 	Name: MaterialExpressionVectorParameter_28
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cf8c with 0x000000f4 Bytes
+	Serialized data: at 0x000000000001d13e with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [145]
 	Name: MaterialExpressionVectorParameter_29
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d080 with 0x000000f4 Bytes
+	Serialized data: at 0x000000000001d232 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [146]
 	Name: MaterialExpressionVectorParameter_48
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d174 with 0x00000145 Bytes
+	Serialized data: at 0x000000000001d326 with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [147]
 	Name: MaterialExpressionVectorParameter_49
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d2b9 with 0x0000012c Bytes
+	Serialized data: at 0x000000000001d46b with 0x0000012c Bytes
 	Export Flags: 0x00000001
 [148]
 	Name: MaterialExpressionVectorParameter_50
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d3e5 with 0x00000114 Bytes
+	Serialized data: at 0x000000000001d597 with 0x00000114 Bytes
 	Export Flags: 0x00000001
 [149]
 	Name: MaterialExpressionVectorParameter_2
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Chassis_Detail_Tiling
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d4f9 with 0x000000c8 Bytes
+	Serialized data: at 0x000000000001d6ab with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [150]
 	Name: MaterialExpressionVectorParameter_0
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Chassis_Lights
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d5c1 with 0x00000091 Bytes
+	Serialized data: at 0x000000000001d773 with 0x00000091 Bytes
 	Export Flags: 0x00000001
 [151]
 	Name: MaterialExpressionVectorParameter_1
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Chassis_Lights
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d652 with 0x000000c8 Bytes
+	Serialized data: at 0x000000000001d804 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [152]
 	Name: MaterialExpressionVectorParameter_2
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Chassis_Lights
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d71a with 0x000000c8 Bytes
+	Serialized data: at 0x000000000001d8cc with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [153]
 	Name: MaterialExpressionVectorParameter_3
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Chassis_Lights
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d7e2 with 0x000000c8 Bytes
+	Serialized data: at 0x000000000001d994 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [154]
 	Name: MaterialExpressionVectorParameter_4
 	Class: MaterialExpressionVectorParameter
 	Outer: Material MAT_Chassis_Lights
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d8aa with 0x000000c8 Bytes
+	Serialized data: at 0x000000000001da5c with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [155]
 	Name: None
@@ -2264,42 +2271,42 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialFunction
 	Outer: Package Materials
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001dda3 with 0x000000f8 Bytes
+	Serialized data: at 0x000000000001df55 with 0x000000f8 Bytes
 	Export Flags: 0x00000001
 [162]
 	Name: ParallexCorrectWorldENV
 	Class: MaterialFunction
 	Outer: Package Psy_MaterialFunctions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001de9b with 0x00000124 Bytes
+	Serialized data: at 0x000000000001e04d with 0x00000124 Bytes
 	Export Flags: 0x00000001
 [163]
 	Name: MAT_Chassis_Base
 	Class: MaterialInstanceConstant
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000a54a6d with 0x00000649 Bytes
+	Serialized data: at 0x0000000000a54c1f with 0x00000649 Bytes
 	Export Flags: 0x00000001
 [164]
 	Name: MIC_Body_Rye_Tier02
 	Class: MaterialInstanceConstant
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000a58fba with 0x00000e32 Bytes
+	Serialized data: at 0x0000000000a5916c with 0x00000e32 Bytes
 	Export Flags: 0x00000001
 [165]
 	Name: MIC_Chassis_BodyKit_Tier02
 	Class: MaterialInstanceConstant
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000a55ee8 with 0x00000399 Bytes
+	Serialized data: at 0x0000000000a5609a with 0x00000399 Bytes
 	Export Flags: 0x00000001
 [166]
 	Name: MIC_Chassis_Lights
 	Class: MaterialInstanceConstant
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000a56281 with 0x000003d9 Bytes
+	Serialized data: at 0x0000000000a56433 with 0x000003d9 Bytes
 	Export Flags: 0x00000001
 [167]
 	Name: None
@@ -2353,13 +2360,13 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000021578 with 0x0000002c Bytes
+	Serialized data: at 0x000000000002172a with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [176]
 	Name: Body_AT
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000215a4 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000021756 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2373,7 +2380,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Body_FX
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000215bc with 0x0000000c Bytes
+	Serialized data: at 0x000000000002176e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2381,7 +2388,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: body_gilliam
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000215c8 with 0x0000000c Bytes
+	Serialized data: at 0x000000000002177a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2407,7 +2414,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Body_Rye
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000215f8 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000217aa with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2415,7 +2422,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Body_Rye_Tier2
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000021604 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000217b6 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2423,7 +2430,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Body_Rye_Tier2_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000021610 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000217c2 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -2431,7 +2438,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Boost_LiquidMetal
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002161c with 0x0000000c Bytes
+	Serialized data: at 0x00000000000217ce with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2440,7 +2447,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package Boost_LiquidMetal
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000021628 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000217da with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [188]
 	Name: None
@@ -2500,7 +2507,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: CHG_GarageAssets
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000216a0 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000021852 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2509,7 +2516,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package CHG_GarageAssets
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000216ac with 0x0000000c Bytes
+	Serialized data: at 0x000000000002185e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [199]
 	Name: None
@@ -2605,7 +2612,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: ItemsMode
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002176c with 0x0000000c Bytes
+	Serialized data: at 0x000000000002191e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2614,14 +2621,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package ItemsMode
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000021778 with 0x0000000c Bytes
+	Serialized data: at 0x000000000002192a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [216]
 	Name: Textures
 	Class: Package
 	Outer: Package Car
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000021784 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000021936 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [217]
 	Name: None
@@ -2669,7 +2676,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Psy_MaterialFunctions
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000217e4 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000021996 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2695,7 +2702,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: SpaceStation_FieldAssets
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000021814 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000219c6 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2704,7 +2711,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Package SpaceStation_FieldAssets
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000021820 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000219d2 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [230]
 	Name: None
@@ -2765,7 +2772,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParameterDispenser_X
 	Outer: FXActor_TA Body_FXActor
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x0000000000021898 with 0x00000010 Bytes
+	Serialized data: at 0x0000000000021a4a with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [240]
 	Name: None
@@ -2778,21 +2785,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParameterDispenser_X
 	Outer: FXActor_TA FXActor
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x00000000000218b8 with 0x00000010 Bytes
+	Serialized data: at 0x0000000000021a6a with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [242]
 	Name: ParticleLODLevel_0
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000218c8 with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000021a7a with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [243]
 	Name: ParticleLODLevel_0
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter ParticleSpriteEmitter_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021970 with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000021b22 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [244]
 	Name: None
@@ -2859,7 +2866,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleColor
 	Outer: ParticleSystem Body_Rye_AmbientBoost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002206e with 0x00000188 Bytes
+	Serialized data: at 0x0000000000022220 with 0x00000188 Bytes
 	Export Flags: 0x00000001
 [255]
 	Name: None
@@ -2920,7 +2927,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: ParticleSystem Body_Rye_AmbientBoost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022d6b with 0x00000255 Bytes
+	Serialized data: at 0x0000000000022f1d with 0x00000255 Bytes
 	Export Flags: 0x00000001
 [265]
 	Name: None
@@ -2975,7 +2982,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleLifetime
 	Outer: ParticleSystem Body_Rye_AmbientBoost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023e89 with 0x0000009d Bytes
+	Serialized data: at 0x000000000002403b with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [274]
 	Name: None
@@ -3024,14 +3031,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem Body_Rye_AmbientBoost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000243dc with 0x000000ad Bytes
+	Serialized data: at 0x000000000002458e with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [282]
 	Name: ParticleModuleLocation_3
 	Class: ParticleModuleLocation
 	Outer: ParticleSystem Body_Rye_AmbientBoost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024489 with 0x000000ad Bytes
+	Serialized data: at 0x000000000002463b with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [283]
 	Name: None
@@ -3128,14 +3135,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleParameterDynamic
 	Outer: ParticleSystem Body_Rye_AmbientBoost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002572c with 0x00000789 Bytes
+	Serialized data: at 0x00000000000258de with 0x00000789 Bytes
 	Export Flags: 0x00000001
 [299]
 	Name: ParticleModuleRequired_0
 	Class: ParticleModuleRequired
 	Outer: ParticleSystem Body_Rye_AmbientBoost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025eb5 with 0x00000129 Bytes
+	Serialized data: at 0x0000000000026067 with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [300]
 	Name: None
@@ -3184,7 +3191,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleRotation
 	Outer: ParticleSystem Body_Rye_AmbientBoost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026806 with 0x00000071 Bytes
+	Serialized data: at 0x00000000000269b8 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [308]
 	Name: None
@@ -3203,14 +3210,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleRotationRate
 	Outer: ParticleSystem Body_Rye_AmbientBoost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026a77 with 0x00000108 Bytes
+	Serialized data: at 0x0000000000026c29 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [311]
 	Name: ParticleModuleSize_1
 	Class: ParticleModuleSize
 	Outer: ParticleSystem Body_Rye_AmbientBoost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026b7f with 0x00000128 Bytes
+	Serialized data: at 0x0000000000026d31 with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [312]
 	Name: None
@@ -3259,7 +3266,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: ParticleSystem Body_Rye_AmbientBoost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000273c9 with 0x000001ad Bytes
+	Serialized data: at 0x000000000002757b with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [320]
 	Name: None
@@ -3284,7 +3291,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSpawn
 	Outer: ParticleSystem Body_Rye_AmbientBoost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027ad1 with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000027c83 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [324]
 	Name: None
@@ -3345,7 +3352,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleVelocity
 	Outer: ParticleSystem Body_Rye_AmbientBoost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000284fe with 0x0000016c Bytes
+	Serialized data: at 0x00000000000286b0 with 0x0000016c Bytes
 	Export Flags: 0x00000001
 [334]
 	Name: None
@@ -3394,21 +3401,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: ParticleSystem Body_Rye_AmbientBoost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000028d02 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000028eb4 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [342]
 	Name: ParticleSpriteEmitter_0
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Body_Rye_AmbientBoost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000028eaf with 0x0000004c Bytes
+	Serialized data: at 0x0000000000029061 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [343]
 	Name: ParticleSpriteEmitter_1
 	Class: ParticleSpriteEmitter
 	Outer: ParticleSystem Body_Rye_AmbientBoost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000028efb with 0x0000004c Bytes
+	Serialized data: at 0x00000000000290ad with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [344]
 	Name: None
@@ -3469,7 +3476,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSystem
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000029109 with 0x000001e2 Bytes
+	Serialized data: at 0x00000000000292bb with 0x000001e2 Bytes
 	Export Flags: 0x00000001
 [354]
 	Name: None
@@ -3494,21 +3501,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSystemComponent
 	Outer: FXActor_TA Body_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000a5665a with 0x0000007a Bytes
+	Serialized data: at 0x0000000000a5680c with 0x0000007a Bytes
 	Export Flags: 0x00000001
 [358]
 	Name: ParticleSystemComponent_1
 	Class: ParticleSystemComponent
 	Outer: FXActor_TA Body_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000a566d4 with 0x0000007a Bytes
+	Serialized data: at 0x0000000000a56886 with 0x0000007a Bytes
 	Export Flags: 0x00000001
 [359]
 	Name: ParticleSystemComponent_3
 	Class: ParticleSystemComponent
 	Outer: FXActor_TA FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x00000000000297e7 with 0x00000061 Bytes
+	Serialized data: at 0x0000000000029999 with 0x00000061 Bytes
 	Export Flags: 0x00000001
 [360]
 	Name: None
@@ -3582,7 +3589,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: Package Body_Rye_Tier2
 	Archetype: ProductAsset_Body_TA_2
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000aa9e71 with 0x000007a4 Bytes
+	Serialized data: at 0x0000000000aaa023 with 0x000007a4 Bytes
 	Export Flags: 0x00000001
 [372]
 	Name: None
@@ -3601,14 +3608,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductAssetReference_TA
 	Outer: ProductAsset_Body_TA Body_Rye_Tier2
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002a4fb with 0x00000028 Bytes
+	Serialized data: at 0x000000000002a6ad with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [375]
 	Name: ProductAssetReferenceWheel_TA_61
 	Class: ProductAssetReferenceWheel_TA
 	Outer: ProductAsset_Body_TA Body_Rye_Tier2
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002a523 with 0x00000028 Bytes
+	Serialized data: at 0x000000000002a6d5 with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [376]
 	Name: None
@@ -3622,7 +3629,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: ProductAsset_Body_TA Body_Rye_Tier2
 	Archetype: DefaultEquipProfile
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002a5cf with 0x0000000c Bytes
+	Serialized data: at 0x000000000002a781 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [378]
 	Name: None
@@ -3671,196 +3678,196 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002b4a2 with 0x000000d9 Bytes
+	Serialized data: at 0x000000000002b654 with 0x000000d9 Bytes
 	Export Flags: 0x00000001
 [386]
 	Name: SkelControlLookAt_1
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002b57b with 0x000000c0 Bytes
+	Serialized data: at 0x000000000002b72d with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [387]
 	Name: SkelControlLookAt_10
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002b63b with 0x000000d9 Bytes
+	Serialized data: at 0x000000000002b7ed with 0x000000d9 Bytes
 	Export Flags: 0x00000001
 [388]
 	Name: SkelControlLookAt_11
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002b714 with 0x00000089 Bytes
+	Serialized data: at 0x000000000002b8c6 with 0x00000089 Bytes
 	Export Flags: 0x00000001
 [389]
 	Name: SkelControlLookAt_2
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002b79d with 0x00000089 Bytes
+	Serialized data: at 0x000000000002b94f with 0x00000089 Bytes
 	Export Flags: 0x00000001
 [390]
 	Name: SkelControlLookAt_3
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002b826 with 0x000000c0 Bytes
+	Serialized data: at 0x000000000002b9d8 with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [391]
 	Name: SkelControlLookAt_4
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002b8e6 with 0x000000d9 Bytes
+	Serialized data: at 0x000000000002ba98 with 0x000000d9 Bytes
 	Export Flags: 0x00000001
 [392]
 	Name: SkelControlLookAt_5
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002b9bf with 0x00000070 Bytes
+	Serialized data: at 0x000000000002bb71 with 0x00000070 Bytes
 	Export Flags: 0x00000001
 [393]
 	Name: SkelControlLookAt_6
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002ba2f with 0x000000c0 Bytes
+	Serialized data: at 0x000000000002bbe1 with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [394]
 	Name: SkelControlLookAt_7
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002baef with 0x000000d9 Bytes
+	Serialized data: at 0x000000000002bca1 with 0x000000d9 Bytes
 	Export Flags: 0x00000001
 [395]
 	Name: SkelControlLookAt_8
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002bbc8 with 0x00000070 Bytes
+	Serialized data: at 0x000000000002bd7a with 0x00000070 Bytes
 	Export Flags: 0x00000001
 [396]
 	Name: SkelControlLookAt_9
 	Class: SkelControlLookAt
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002bc38 with 0x000000c0 Bytes
+	Serialized data: at 0x000000000002bdea with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [397]
 	Name: SkelControlSingleBone_1
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002bcf8 with 0x00000086 Bytes
+	Serialized data: at 0x000000000002beaa with 0x00000086 Bytes
 	Export Flags: 0x00000001
 [398]
 	Name: SkelControlSingleBone_10
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002bd7e with 0x000000a2 Bytes
+	Serialized data: at 0x000000000002bf30 with 0x000000a2 Bytes
 	Export Flags: 0x00000001
 [399]
 	Name: SkelControlSingleBone_11
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002be20 with 0x000000e0 Bytes
+	Serialized data: at 0x000000000002bfd2 with 0x000000e0 Bytes
 	Export Flags: 0x00000001
 [400]
 	Name: SkelControlSingleBone_12
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002bf00 with 0x00000086 Bytes
+	Serialized data: at 0x000000000002c0b2 with 0x00000086 Bytes
 	Export Flags: 0x00000001
 [401]
 	Name: SkelControlSingleBone_13
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002bf86 with 0x00000086 Bytes
+	Serialized data: at 0x000000000002c138 with 0x00000086 Bytes
 	Export Flags: 0x00000001
 [402]
 	Name: SkelControlSingleBone_14
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002c00c with 0x0000009f Bytes
+	Serialized data: at 0x000000000002c1be with 0x0000009f Bytes
 	Export Flags: 0x00000001
 [403]
 	Name: SkelControlSingleBone_15
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002c0ab with 0x000000a2 Bytes
+	Serialized data: at 0x000000000002c25d with 0x000000a2 Bytes
 	Export Flags: 0x00000001
 [404]
 	Name: SkelControlSingleBone_2
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002c14d with 0x000000ea Bytes
+	Serialized data: at 0x000000000002c2ff with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [405]
 	Name: SkelControlSingleBone_3
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002c237 with 0x000000ea Bytes
+	Serialized data: at 0x000000000002c3e9 with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [406]
 	Name: SkelControlSingleBone_4
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002c321 with 0x000000ea Bytes
+	Serialized data: at 0x000000000002c4d3 with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [407]
 	Name: SkelControlSingleBone_5
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002c40b with 0x000000ea Bytes
+	Serialized data: at 0x000000000002c5bd with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [408]
 	Name: SkelControlSingleBone_6
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002c4f5 with 0x000000a2 Bytes
+	Serialized data: at 0x000000000002c6a7 with 0x000000a2 Bytes
 	Export Flags: 0x00000001
 [409]
 	Name: SkelControlSingleBone_7
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002c597 with 0x00000086 Bytes
+	Serialized data: at 0x000000000002c749 with 0x00000086 Bytes
 	Export Flags: 0x00000001
 [410]
 	Name: SkelControlSingleBone_8
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002c61d with 0x0000009f Bytes
+	Serialized data: at 0x000000000002c7cf with 0x0000009f Bytes
 	Export Flags: 0x00000001
 [411]
 	Name: SkelControlSingleBone_9
 	Class: SkelControlSingleBone
 	Outer: AnimTree Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002c6bc with 0x000000a2 Bytes
+	Serialized data: at 0x000000000002c86e with 0x000000a2 Bytes
 	Export Flags: 0x00000001
 [412]
 	Name: Body_Rye_Tier2_SK
 	Class: SkeletalMesh
 	Outer: Package Body_Rye_Tier2
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000aaa615 with 0x0022c223 Bytes
+	Serialized data: at 0x0000000000aaa7c7 with 0x0022c223 Bytes
 	Export Flags: 0x00000001
 [413]
 	Name: None
@@ -3879,70 +3886,70 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkeletalMeshSocket
 	Outer: SkeletalMesh Body_Rye_Tier2_SK
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000258b1f with 0x000000a4 Bytes
+	Serialized data: at 0x0000000000258cd1 with 0x000000a4 Bytes
 	Export Flags: 0x00000001
 [416]
 	Name: SkeletalMeshSocket_13
 	Class: SkeletalMeshSocket
 	Outer: SkeletalMesh Body_Rye_Tier2_SK
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000258bc3 with 0x00000078 Bytes
+	Serialized data: at 0x0000000000258d75 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [417]
 	Name: SkeletalMeshSocket_14
 	Class: SkeletalMeshSocket
 	Outer: SkeletalMesh Body_Rye_Tier2_SK
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000258c3b with 0x00000078 Bytes
+	Serialized data: at 0x0000000000258ded with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [418]
 	Name: SkeletalMeshSocket_15
 	Class: SkeletalMeshSocket
 	Outer: SkeletalMesh Body_Rye_Tier2_SK
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000258cb3 with 0x00000078 Bytes
+	Serialized data: at 0x0000000000258e65 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [419]
 	Name: SkeletalMeshSocket_16
 	Class: SkeletalMeshSocket
 	Outer: SkeletalMesh Body_Rye_Tier2_SK
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000258d2b with 0x0000004c Bytes
+	Serialized data: at 0x0000000000258edd with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [420]
 	Name: SkeletalMeshSocket_17
 	Class: SkeletalMeshSocket
 	Outer: SkeletalMesh Body_Rye_Tier2_SK
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000258d77 with 0x00000078 Bytes
+	Serialized data: at 0x0000000000258f29 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [421]
 	Name: SkeletalMeshSocket_18
 	Class: SkeletalMeshSocket
 	Outer: SkeletalMesh Body_Rye_Tier2_SK
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000258def with 0x00000078 Bytes
+	Serialized data: at 0x0000000000258fa1 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [422]
 	Name: SkeletalMeshSocket_19
 	Class: SkeletalMeshSocket
 	Outer: SkeletalMesh Body_Rye_Tier2_SK
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000258e67 with 0x00000078 Bytes
+	Serialized data: at 0x0000000000259019 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [423]
 	Name: SkeletalMeshSocket_6
 	Class: SkeletalMeshSocket
 	Outer: SkeletalMesh Body_Rye_Tier2_SK
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000258edf with 0x00000078 Bytes
+	Serialized data: at 0x0000000000259091 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [424]
 	Name: SkeletalMeshSocket_7
 	Class: SkeletalMeshSocket
 	Outer: SkeletalMesh Body_Rye_Tier2_SK
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000258f57 with 0x00000078 Bytes
+	Serialized data: at 0x0000000000259109 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [425]
 	Name: None
@@ -3961,7 +3968,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: StaticMesh
 	Outer: Package Body_Rye_Tier2
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000a59dec with 0x0004eb94 Bytes
+	Serialized data: at 0x0000000000a59f9e with 0x0004eb94 Bytes
 	Export Flags: 0x00000001
 [428]
 	Name: None
@@ -4010,7 +4017,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: StaticMeshComponent
 	Outer: FXActor_TA FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000cd6adf with 0x0000006c Bytes
+	Serialized data: at 0x0000000000cd6cfd with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [436]
 	Name: None
@@ -4071,112 +4078,112 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000315b24 with 0x000017c8 Bytes
+	Serialized data: at 0x0000000000315cd6 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [446]
 	Name: Body_Rye_BodyKit_D
 	Class: Texture2D
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000003172ec with 0x0008016c Bytes
+	Serialized data: at 0x000000000031749e with 0x0008016c Bytes
 	Export Flags: 0x00000001
 [447]
 	Name: Body_Rye_BodyKit_N
 	Class: Texture2D
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000397458 with 0x00400201 Bytes
+	Serialized data: at 0x000000000039760a with 0x00400201 Bytes
 	Export Flags: 0x00000001
 [448]
 	Name: Body_Rye_BodyKit_PBR
 	Class: Texture2D
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000797659 with 0x0010016c Bytes
+	Serialized data: at 0x000000000079780b with 0x0010016c Bytes
 	Export Flags: 0x00000001
 [449]
 	Name: Body_Rye_BodyNormalMap
 	Class: Texture2D
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000008977c5 with 0x00001885 Bytes
+	Serialized data: at 0x0000000000897977 with 0x00001885 Bytes
 	Export Flags: 0x00000001
 [450]
 	Name: Body_Rye_Curvature_Tier1
 	Class: Texture2D
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000089904a with 0x000017c8 Bytes
+	Serialized data: at 0x00000000008991fc with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [451]
 	Name: Body_Rye_FXMasks
 	Class: Texture2D
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000089a812 with 0x000057f7 Bytes
+	Serialized data: at 0x000000000089a9c4 with 0x000057f7 Bytes
 	Export Flags: 0x00000001
 [452]
 	Name: Body_Rye_Tier02_D
 	Class: Texture2D
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000008a0009 with 0x000017c8 Bytes
+	Serialized data: at 0x00000000008a01bb with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [453]
 	Name: Car_Grille_Hexy_N
 	Class: Texture2D
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000008a17d1 with 0x00001869 Bytes
+	Serialized data: at 0x00000000008a1983 with 0x00001869 Bytes
 	Export Flags: 0x00000001
 [454]
 	Name: Chassis_Rye_D
 	Class: Texture2D
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000008a303a with 0x000017c8 Bytes
+	Serialized data: at 0x00000000008a31ec with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [455]
 	Name: Chassis_Rye_Lights_D
 	Class: Texture2D
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000008a4802 with 0x00000d10 Bytes
+	Serialized data: at 0x00000000008a49b4 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [456]
 	Name: Chassis_Rye_Lights_N
 	Class: Texture2D
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000008a5512 with 0x00001869 Bytes
+	Serialized data: at 0x00000000008a56c4 with 0x00001869 Bytes
 	Export Flags: 0x00000001
 [457]
 	Name: Chassis_Rye_Lights_PBR
 	Class: Texture2D
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000008a6d7b with 0x000017ac Bytes
+	Serialized data: at 0x00000000008a6f2d with 0x000017ac Bytes
 	Export Flags: 0x00000001
 [458]
 	Name: Chassis_Rye_N
 	Class: Texture2D
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000008a8527 with 0x00001885 Bytes
+	Serialized data: at 0x00000000008a86d9 with 0x00001885 Bytes
 	Export Flags: 0x00000001
 [459]
 	Name: Chassis_Rye_PBR
 	Class: Texture2D
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000008a9dac with 0x000017c8 Bytes
+	Serialized data: at 0x00000000008a9f5e with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [460]
 	Name: SmokeMask_T
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000008ab574 with 0x00000cd8 Bytes
+	Serialized data: at 0x00000000008ab726 with 0x00000cd8 Bytes
 	Export Flags: 0x00000001
 [461]
 	Name: None
@@ -4249,7 +4256,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000914818 with 0x00001790 Bytes
+	Serialized data: at 0x00000000009149ca with 0x00001790 Bytes
 	Export Flags: 0x00000001
 [473]
 	Name: None
@@ -4286,7 +4293,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package Tex
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000091b6bd with 0x000017dd Bytes
+	Serialized data: at 0x000000000091b86f with 0x000017dd Bytes
 	Export Flags: 0x00000001
 [479]
 	Name: None
@@ -4431,14 +4438,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticBoolParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000a33454 with 0x00000098 Bytes
+	Serialized data: at 0x0000000000a33606 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [503]
 	Name: MaterialExpressionTextureObjectParameter_0
 	Class: MaterialExpressionTextureObjectParameter
 	Outer: Material MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000a56dc6 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000a56f78 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [504]
 	Name: None
@@ -4505,37 +4512,65 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Package Body_Rye
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000a56e7a with 0x000017c8 Bytes
+	Serialized data: at 0x0000000000a5702c with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [515]
 	Name: MAT_Vehicle_Glass_Translucent
 	Class: Material
 	Outer: Package Vehicle_Parent_Materials02
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000aa91b4 with 0x00000519 Bytes
+	Serialized data: at 0x0000000000cd6d69 with 0x00000569 Bytes
 	Export Flags: 0x00000001
 [516]
 	Name: MaterialExpressionTextureSampleParameter2D_0
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Vehicle_Glass_Translucent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000aa8f19 with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000aa90cb with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [517]
 	Name: MaterialExpressionTextureSampleParameter2D_1
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Material MAT_Vehicle_Glass_Translucent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000aa8ff1 with 0x000001b7 Bytes
+	Serialized data: at 0x0000000000aa91a3 with 0x000001b7 Bytes
 	Export Flags: 0x00000001
 [518]
 	Name: Vehicle_Parent_Materials02
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000aa91a8 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000aa935a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
+[519]
+	Name: MaterialExpressionScalarParameter_0
+	Class: MaterialExpressionScalarParameter
+	Outer: Material MAT_Vehicle_Glass_Translucent
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000cd72d2 with 0x00000094 Bytes
+	Export Flags: 0x00000001
+[520]
+	Name: MaterialExpressionScalarParameter_1
+	Class: MaterialExpressionScalarParameter
+	Outer: Material MAT_Vehicle_Glass_Translucent
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000cd7366 with 0x00000078 Bytes
+	Export Flags: 0x00000001
+[521]
+	Name: MaterialExpressionScalarParameter_4
+	Class: MaterialExpressionScalarParameter
+	Outer: Material MAT_Vehicle_Glass_Translucent
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000cd73de with 0x00000078 Bytes
+	Export Flags: 0x00000001
+[522]
+	Name: MaterialExpressionVectorParameter_0
+	Class: MaterialExpressionVectorParameter
+	Outer: Material MAT_Vehicle_Glass_Translucent
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000cd7456 with 0x000000a8 Bytes
+	Export Flags: 0x00000001
 
 
     ~ Imports ~ 
@@ -5329,3 +5364,13 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Package: Engine
 	Outer: Package Textures
+[177]
+	Name: Nitrous_Generic_Boost_MIC
+	Class: MaterialInstanceConstant
+	Package: Engine
+	Outer: Package Materials
+[178]
+	Name: Materials
+	Class: Package
+	Package: Core
+	Outer: Package Boost_Tests

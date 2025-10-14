@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x00004929 Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 50 Name Offset: 0x000001c1
-Export Count: 6 Export Offset: 0x00000783
-Import Count: 9 Import Offset: 0x00000687
-Depends Offset: 0x00000933
-Import Export Guids Offset: 0x00000933
+Name Count: 56 Name Offset: 0x000001cd
+Export Count: 8 Export Offset: 0x0000083e
+Import Count: 9 Import Offset: 0x00000742
+Depends Offset: 0x00000a7e
+Import Export Guids Offset: 0x00000a7e
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x590f5a9d 0x485ba31d 0xe81e43b2 0x1a62a7e8
+GUID: 0x152f2020 0x4d14c81e 0x3395fabb 0x5366cf4c
 Generations:
 [0]
 	Export Count: 4
@@ -107,6 +107,10 @@ Generations:
 	Export Count: 6
 	Name Count: 50
 	Net Object Count: 0
+[22]
+	Export Count: 8
+	Name Count: 56
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression Flags: 0x00000001
@@ -123,7 +127,7 @@ Texture Allocations Texture Types:
 	Format: 7
 	Tex Create Flags: 0
 	Export Indices:
-	[0] 5
+	[0] 6
 [1]
 	Size X: 512
 	Size Y: 64
@@ -131,11 +135,11 @@ Texture Allocations Texture Types:
 	Format: 7
 	Tex Create Flags: 0
 	Export Indices:
-	[0] 4
-Test Data Size: 0x00003fc2
-Compressed Chunk Info Offset: 0x00000772
-Last Block Size: 0x00000008
-Base Header Size: 0x000001c1
+	[0] 7
+Test Data Size: 0x00003e5f
+Compressed Chunk Info Offset: 0x000008b1
+Last Block Size: 0x0000000c
+Base Header Size: 0x000001cd
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -193,6 +197,12 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [47] Textures
 [48] Top
 [49] RequeueBack
+[50] MipGenSettings
+[51] NeverStream
+[52] TextureMipGenSettings
+[53] TintableRequeueBack
+[54] TintableRequeueTop
+[55] TMGS_NoMipmaps
 
 
     ~ Exports ~ 
@@ -202,13 +212,13 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000000933 with 0x00000034 Bytes
+	Serialized data: at 0x00000000001f811a with 0x00000034 Bytes
 	Export Flags: 0x00000000
 [1]
 	Name: GFX_WinnerMenu
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000000967 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000000ab2 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -216,7 +226,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: GFX_WinnerMenu_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000000973 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000000abe with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -225,21 +235,33 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SwfMovie
 	Outer: Package GFX_WinnerMenu
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000104b79 with 0x000f3456 Bytes
+	Serialized data: at 0x00000000001f814e with 0x000fa119 Bytes
 	Export Flags: 0x00000001
 [4]
-	Name: Top
-	Class: Texture2D
-	Outer: Package GFX_WinnerMenu
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000ec887 with 0x00008179 Bytes
-	Export Flags: 0x00000001
+	Name: None
+	Class: Class
+	Object Flags: 0x0000000000000000
+	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
+	Export Flags: 0x00000000
 [5]
-	Name: RequeueBack
+	Name: None
+	Class: Class
+	Object Flags: 0x0000000000000000
+	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
+	Export Flags: 0x00000000
+[6]
+	Name: TintableRequeueBack
 	Class: Texture2D
 	Outer: Package GFX_WinnerMenu
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000f4a00 with 0x00010179 Bytes
+	Serialized data: at 0x00000000002f2267 with 0x0001017e Bytes
+	Export Flags: 0x00000001
+[7]
+	Name: TintableRequeueTop
+	Class: Texture2D
+	Outer: Package GFX_WinnerMenu
+	Object Flags: 0x0007000400000000
+	Serialized data: at 0x00000000003023e5 with 0x0000817e Bytes
 	Export Flags: 0x00000001
 
 
