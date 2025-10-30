@@ -1,9 +1,9 @@
 # Directories
 ## PackageAnalysis
 This directory includes info about every UPK in game.
-This info being:
+This info includes:
 - Header Info
-- AES Key
+- AES key
 - Names
 - Imports
 - Exports
@@ -23,3 +23,16 @@ List of every UPK that changed since this repository was last updated.
 List of every AES key and ewem file that uses it.
 ## missed_ewem.txt
 List of EWEM files that are currently unavailable to be decrypted.
+## products.csv
+CSV file with info about every product.
+This info includes:
+- ID
+- Name
+- Label
+- Slot
+- Quality
+- Unlock method
+- Folder
+- Package
+- AES key for the package
+  
