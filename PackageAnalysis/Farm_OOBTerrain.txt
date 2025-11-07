@@ -210,6 +210,7 @@ Test Data Size: 0x00003d73
 Compressed Chunk Info Offset: 0x000027d9
 Last Block Size: 0x00000000
 Base Header Size: 0x000002a5
+Encrypted Header Size: 0x000065e0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -217,643 +218,522 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] A
-[1] AddressY
-[2] AdjustBrightness
-[3] ArrayProperty
-[4] B
-[5] bAllowLightmapSpecular
-[6] bBlockActors
-[7] bCastDynamicShadow
-[8] bCastStaticShadow
-[9] bCollideActors
-[10] bHasHandheldQualityConnection
-[11] bHasQualitySwitch
-[12] bHasStaticPermutationResource
-[13] bInitialized
-[14] bIsMasked
-[15] BLEND_Masked
-[16] BlendMode
-[17] bMapNeedsLightingFullyRebuilt
-[18] BoolProperty
-[19] bOverrideLightMapRes
-[20] bSelfShadowOnly
-[21] bUseAsOccluder
-[22] bUsedWithInstancedMeshes
-[23] bUsedWithStaticLighting
-[24] ByteProperty
-[25] CastShadow
-[26] Cheap
-[27] Class
-[28] CollideActors
-[29] ColorMaterialInput
-[30] CompressionSettings
-[31] Core
-[32] Default__StaticMeshActor
-[33] DetailMode
-[34] DiffuseColor
-[35] DirectionalMaxComponent0
-[36] DM_High
-[37] DM_Medium
-[38] EBlendMode
-[39] EDetailMode
-[40] ELightingBuildQuality
-[41] EmissiveColor
-[42] Engine
-[43] EPixelFormat
-[44] Expression
-[45] ExpressionGUID
-[46] ExpressionInput
-[47] Expressions
-[48] Farm_FieldsVariation
-[49] Farm_Foliage
-[50] farm_oobterrain
-[51] Farm_Terrain
-[52] Farm_Textures
-[53] FirstResourceMemMip
-[54] FloatProperty
-[55] Format
-[56] Function
-[57] Grass_Base01_D
-[58] Grass_Base01_N
-[59] Grass_Textures
-[60] GrassStrip_Quarter_N
-[61] Guid
-[62] Hill_01
-[63] Hill_01_Foliage
-[64] Hill_01_N
-[65] Hill_01_RGB
-[66] Hill_Mat
-[67] IntProperty
-[68] Level
-[69] LevelLightingQuality
-[70] LightingChannelContainer
-[71] LightingChannels
-[72] LightMapCoordinateIndex
-[73] LightMapResolution
-[74] LightMapTexture2D
-[75] LightmapTotalSize
-[76] LODBias
-[77] LODGroup
-[78] Main_Sequence
-[79] Mask
-[80] MaskA
-[81] Mat
-[82] Material
-[83] MaterialExpressionStaticSwitchParameter
-[84] MaterialFunction
-[85] MaterialFunctionInfos
-[86] MaterialInstanceConstant
-[87] Materials
-[88] MeshCollector0
-[89] Meshes
-[90] MipGenSettings
-[91] MipTailBaseIdx
-[92] Model
-[93] NameProperty
-[94] NeverStream
-[95] None
-[96] Normal
-[97] NormalizedAverageColor0
-[98] ObjectProperty
-[99] Opacity
-[100] OpacityMask
-[101] OpacityMaskClipValue
-[102] OriginalSizeX
-[103] OriginalSizeY
-[104] OutputIndex
-[105] OverriddenLightMapRes
-[106] Package
-[107] ParameterName
-[108] Parent
-[109] ParentLightingGuid
-[110] PersistentLevel
-[111] PF_DXT1
-[112] PF_DXT5
-[113] Polys
-[114] PreviewEnvironmentShadowing
-[115] Proto_World01
-[116] Psy_MaterialFunctions
-[117] Quality_Production
-[118] ReplacementPrimitive
-[119] Rotation
-[120] Rotator
-[121] ScalarMaterialInput
-[122] Scale3D
-[123] Sequence
-[124] SizeX
-[125] SizeY
-[126] SpecularColor
-[127] SRGB
-[128] StateId
-[129] Static
-[130] StaticMesh
-[131] StaticMeshActor
-[132] StaticMeshActor_SMC
-[133] StaticMeshCollectionActor
-[134] StaticMeshComponent
-[135] StaticMeshComponent0
-[136] StaticMeshComponents
-[137] StructProperty
-[138] TA_Clamp
-[139] Tag
-[140] TC_NormalmapAlpha
-[141] TC_NormalmapSwizzle
-[142] TeamColor_WorldSpace
-[143] Texture2D
-[144] TextureAddress
-[145] TextureCompressionSettings
-[146] TextureFileCacheName
-[147] TextureGroup
-[148] TEXTUREGROUP_WorldNormalMap
-[149] TextureMipGenSettings
-[150] Textures
-[151] Textures2
-[152] TheWorld
-[153] TMGS_Sharpen7
-[154] Translation
-[155] TwoSided
-[156] UnpackMin
-[157] Vector
-[158] VectorMaterialInput
-[159] VertexPositionVersionNumber
-[160] VisibilityId
-[161] Wheat_Mat
-[162] Wheat_Mat_Cheap_INST
-[163] World
-[164] WorldInfo
-[165] WorldPositionOffset
-[166] Quality_Preview
-[167] ForNS
-[168] SpecularPower
-[169] Textures5
-[170] bAcceptsDynamicLights
-[171] bAcceptsLights
-[172] FunctionExpressions
+[Name 0] [0x0007001000000000] A
+[Name 1] [0x0007000000000000] AddressY
+[Name 2] [0x0007001000000000] AdjustBrightness
+[Name 3] [0x0007001000000000] ArrayProperty
+[Name 4] [0x0007001000000000] B
+[Name 5] [0x0007001000000000] bAllowLightmapSpecular
+[Name 6] [0x0007001000000000] bBlockActors
+[Name 7] [0x0007001000000000] bCastDynamicShadow
+[Name 8] [0x0007001000000000] bCastStaticShadow
+[Name 9] [0x0007001000000000] bCollideActors
+[Name 10] [0x0007001000000000] bHasHandheldQualityConnection
+[Name 11] [0x0007001000000000] bHasQualitySwitch
+[Name 12] [0x0007001000000000] bHasStaticPermutationResource
+[Name 13] [0x0007001000000000] bInitialized
+[Name 14] [0x0007001000000000] bIsMasked
+[Name 15] [0x0007001000000000] BLEND_Masked
+[Name 16] [0x0007001000000000] BlendMode
+[Name 17] [0x0007001000000000] bMapNeedsLightingFullyRebuilt
+[Name 18] [0x0007001000000000] BoolProperty
+[Name 19] [0x0007001000000000] bOverrideLightMapRes
+[Name 20] [0x0007001000000000] bSelfShadowOnly
+[Name 21] [0x0007001000000000] bUseAsOccluder
+[Name 22] [0x0007001000000000] bUsedWithInstancedMeshes
+[Name 23] [0x0007001000000000] bUsedWithStaticLighting
+[Name 24] [0x0007001000000000] ByteProperty
+[Name 25] [0x0007001000000000] CastShadow
+[Name 26] [0x0007001000000000] Cheap
+[Name 27] [0x0007001000000000] Class
+[Name 28] [0x0007001000000000] CollideActors
+[Name 29] [0x0007001000000000] ColorMaterialInput
+[Name 30] [0x0007001000000000] CompressionSettings
+[Name 31] [0x0007001000000000] Core
+[Name 32] [0x0007001000000000] Default__StaticMeshActor
+[Name 33] [0x0007001000000000] DetailMode
+[Name 34] [0x0007001000000000] DiffuseColor
+[Name 35] [0x0007000000000000] DirectionalMaxComponent0
+[Name 36] [0x0007001000000000] DM_High
+[Name 37] [0x0007001000000000] DM_Medium
+[Name 38] [0x0007001000000000] EBlendMode
+[Name 39] [0x0007001000000000] EDetailMode
+[Name 40] [0x0007001000000000] ELightingBuildQuality
+[Name 41] [0x0007001000000000] EmissiveColor
+[Name 42] [0x0007001000000000] Engine
+[Name 43] [0x0007001000000000] EPixelFormat
+[Name 44] [0x0007001000000000] Expression
+[Name 45] [0x0007001000000000] ExpressionGUID
+[Name 46] [0x0007001000000000] ExpressionInput
+[Name 47] [0x0007001000000000] Expressions
+[Name 48] [0x0007001000000000] Farm_FieldsVariation
+[Name 49] [0x0007001000000000] Farm_Foliage
+[Name 50] [0x0007001000000000] farm_oobterrain
+[Name 51] [0x0007001000000000] Farm_Terrain
+[Name 52] [0x0007001000000000] Farm_Textures
+[Name 53] [0x0007001000000000] FirstResourceMemMip
+[Name 54] [0x0007001000000000] FloatProperty
+[Name 55] [0x0007001000000000] Format
+[Name 56] [0x0007001000000000] Function
+[Name 57] [0x0007001000000000] Grass_Base01_D
+[Name 58] [0x0007001000000000] Grass_Base01_N
+[Name 59] [0x0007001000000000] Grass_Textures
+[Name 60] [0x0007001000000000] GrassStrip_Quarter_N
+[Name 61] [0x0007001000000000] Guid
+[Name 62] [0x0007001000000000] Hill_01
+[Name 63] [0x0007001000000000] Hill_01_Foliage
+[Name 64] [0x0007001000000000] Hill_01_N
+[Name 65] [0x0007001000000000] Hill_01_RGB
+[Name 66] [0x0007001000000000] Hill_Mat
+[Name 67] [0x0007001000000000] IntProperty
+[Name 68] [0x0007001000000000] Level
+[Name 69] [0x0007001000000000] LevelLightingQuality
+[Name 70] [0x0007001000000000] LightingChannelContainer
+[Name 71] [0x0007001000000000] LightingChannels
+[Name 72] [0x0007001000000000] LightMapCoordinateIndex
+[Name 73] [0x0007001000000000] LightMapResolution
+[Name 74] [0x0007000000000000] LightMapTexture2D
+[Name 75] [0x0007000000000000] LightmapTotalSize
+[Name 76] [0x0007000000000000] LODBias
+[Name 77] [0x0007001000000000] LODGroup
+[Name 78] [0x0007001000000000] Main_Sequence
+[Name 79] [0x0007001000000000] Mask
+[Name 80] [0x0007001000000000] MaskA
+[Name 81] [0x0007001000000000] Mat
+[Name 82] [0x0007001000000000] Material
+[Name 83] [0x0007001000000000] MaterialExpressionStaticSwitchParameter
+[Name 84] [0x0007001000000000] MaterialFunction
+[Name 85] [0x0007001000000000] MaterialFunctionInfos
+[Name 86] [0x0007001000000000] MaterialInstanceConstant
+[Name 87] [0x0007001000000000] Materials
+[Name 88] [0x0007001000000000] MeshCollector0
+[Name 89] [0x0007001000000000] Meshes
+[Name 90] [0x0007000000000000] MipGenSettings
+[Name 91] [0x0007001000000000] MipTailBaseIdx
+[Name 92] [0x0007001000000000] Model
+[Name 93] [0x0007001000000000] NameProperty
+[Name 94] [0x0007000000000000] NeverStream
+[Name 95] [0x0007001000000000] None
+[Name 96] [0x0007001000000000] Normal
+[Name 97] [0x0007000000000000] NormalizedAverageColor0
+[Name 98] [0x0007001000000000] ObjectProperty
+[Name 99] [0x0007001000000000] Opacity
+[Name 100] [0x0007001000000000] OpacityMask
+[Name 101] [0x0007001000000000] OpacityMaskClipValue
+[Name 102] [0x0007001000000000] OriginalSizeX
+[Name 103] [0x0007001000000000] OriginalSizeY
+[Name 104] [0x0007001000000000] OutputIndex
+[Name 105] [0x0007001000000000] OverriddenLightMapRes
+[Name 106] [0x0007001000000000] Package
+[Name 107] [0x0007001000000000] ParameterName
+[Name 108] [0x0007001000000000] Parent
+[Name 109] [0x0007001000000000] ParentLightingGuid
+[Name 110] [0x0007001000000000] PersistentLevel
+[Name 111] [0x0007001000000000] PF_DXT1
+[Name 112] [0x0007001000000000] PF_DXT5
+[Name 113] [0x0007001000000000] Polys
+[Name 114] [0x0007001000000000] PreviewEnvironmentShadowing
+[Name 115] [0x0007001000000000] Proto_World01
+[Name 116] [0x0007001000000000] Psy_MaterialFunctions
+[Name 117] [0x0007001000000000] Quality_Production
+[Name 118] [0x0007001000000000] ReplacementPrimitive
+[Name 119] [0x0007001000000000] Rotation
+[Name 120] [0x0007001000000000] Rotator
+[Name 121] [0x0007001000000000] ScalarMaterialInput
+[Name 122] [0x0007001000000000] Scale3D
+[Name 123] [0x0007001000000000] Sequence
+[Name 124] [0x0007001000000000] SizeX
+[Name 125] [0x0007001000000000] SizeY
+[Name 126] [0x0007001000000000] SpecularColor
+[Name 127] [0x0007001000000000] SRGB
+[Name 128] [0x0007001000000000] StateId
+[Name 129] [0x0007001000000000] Static
+[Name 130] [0x0007001000000000] StaticMesh
+[Name 131] [0x0007001000000000] StaticMeshActor
+[Name 132] [0x0007001000000000] StaticMeshActor_SMC
+[Name 133] [0x0007001000000000] StaticMeshCollectionActor
+[Name 134] [0x0007001000000000] StaticMeshComponent
+[Name 135] [0x0007001000000000] StaticMeshComponent0
+[Name 136] [0x0007001000000000] StaticMeshComponents
+[Name 137] [0x0007001000000000] StructProperty
+[Name 138] [0x0007000000000000] TA_Clamp
+[Name 139] [0x0007001000000000] Tag
+[Name 140] [0x0007001000000000] TC_NormalmapAlpha
+[Name 141] [0x0007001000000000] TC_NormalmapSwizzle
+[Name 142] [0x0007001000000000] TeamColor_WorldSpace
+[Name 143] [0x0007001000000000] Texture2D
+[Name 144] [0x0007000000000000] TextureAddress
+[Name 145] [0x0007001000000000] TextureCompressionSettings
+[Name 146] [0x0007001000000000] TextureFileCacheName
+[Name 147] [0x0007001000000000] TextureGroup
+[Name 148] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 149] [0x0007000000000000] TextureMipGenSettings
+[Name 150] [0x0007001000000000] Textures
+[Name 151] [0x0007000000000000] Textures2
+[Name 152] [0x0007001000000000] TheWorld
+[Name 153] [0x0007000000000000] TMGS_Sharpen7
+[Name 154] [0x0007001000000000] Translation
+[Name 155] [0x0007001000000000] TwoSided
+[Name 156] [0x0007001000000000] UnpackMin
+[Name 157] [0x0007001000000000] Vector
+[Name 158] [0x0007001000000000] VectorMaterialInput
+[Name 159] [0x0007001000000000] VertexPositionVersionNumber
+[Name 160] [0x0007001000000000] VisibilityId
+[Name 161] [0x0007001000000000] Wheat_Mat
+[Name 162] [0x0007001000000000] Wheat_Mat_Cheap_INST
+[Name 163] [0x0007001000000000] World
+[Name 164] [0x0007001000000000] WorldInfo
+[Name 165] [0x0007001000000000] WorldPositionOffset
+[Name 166] [0x0007000000000000] Quality_Preview
+[Name 167] [0x0007001000000000] ForNS
+[Name 168] [0x0007001000000000] SpecularPower
+[Name 169] [0x0007001000000000] Textures5
+[Name 170] [0x0007001000000000] bAcceptsDynamicLights
+[Name 171] [0x0007001000000000] bAcceptsLights
+[Name 172] [0x0007000000000000] FunctionExpressions
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: ULevel Farm_OOBTerrain.TheWorld.PersistentLevel
 	Name: PersistentLevel
-	Class: Level
-	Outer: World TheWorld
+	Class: ULevel
+	Outer: TheWorld
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000452e26 with 0x00000351 Bytes
 	Export Flags: 0x00000000
-[1]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[2]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[3]
+[Export 3]
+	Full Name: UMaterial Farm_OOBTerrain.Farm_Foliage.Materials.Wheat_Mat
 	Name: Wheat_Mat
-	Class: Material
-	Outer: Package Materials
+	Class: UMaterial
+	Outer: Materials
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000453177 with 0x000004f3 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UMaterial Farm_OOBTerrain.Farm_Terrain.Materials.Hill_Mat
 	Name: Hill_Mat
-	Class: Material
-	Outer: Package Materials
+	Class: UMaterial
+	Outer: Materials
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000032c2 with 0x0000031a Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UMaterialExpressionStaticSwitchParameter Farm_OOBTerrain.Farm_Foliage.Materials.Wheat_Mat.MaterialExpressionStaticSwitchParameter_0
 	Name: MaterialExpressionStaticSwitchParameter_0
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Wheat_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Wheat_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000035dc with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UMaterialExpressionStaticSwitchParameter Farm_OOBTerrain.Farm_Foliage.Materials.Wheat_Mat.MaterialExpressionStaticSwitchParameter_4
 	Name: MaterialExpressionStaticSwitchParameter_4
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Wheat_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Wheat_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000036dc with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UMaterialInstanceConstant Farm_OOBTerrain.Farm_Foliage.Materials.Wheat_Mat_Cheap_INST
 	Name: Wheat_Mat_Cheap_INST
-	Class: MaterialInstanceConstant
-	Outer: Package Materials
+	Class: UMaterialInstanceConstant
+	Outer: Materials
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x000000000045366a with 0x000001cf Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UModel Farm_OOBTerrain.TheWorld.PersistentLevel.Model_5
 	Name: Model_5
-	Class: Model
-	Outer: Level PersistentLevel
+	Class: UModel
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000453839 with 0x0000009c Bytes
 	Export Flags: 0x00000000
-[9]
+[Export 9]
+	Full Name: UPackage Farm_OOBTerrain.Farm_Foliage
 	Name: Farm_Foliage
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003a47 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[10]
+[Export 10]
+	Full Name: UPackage Farm_OOBTerrain.Farm_Foliage.Materials
 	Name: Materials
-	Class: Package
-	Outer: Package Farm_Foliage
+	Class: UPackage
+	Outer: Farm_Foliage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003a53 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UPackage Farm_OOBTerrain.farm_oobterrain
 	Name: farm_oobterrain
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003a5f with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x2e699ef0 0x422d100d 0xdf8827a0 0xb8364ca7
 	Package Flags: 0x228a0009
-[12]
+[Export 12]
+	Full Name: UPackage Farm_OOBTerrain.Farm_Terrain
 	Name: Farm_Terrain
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003a6b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[13]
+[Export 13]
+	Full Name: UPackage Farm_OOBTerrain.Farm_Terrain.Materials
 	Name: Materials
-	Class: Package
-	Outer: Package Farm_Terrain
+	Class: UPackage
+	Outer: Farm_Terrain
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003a77 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UPackage Farm_OOBTerrain.Farm_Terrain.Meshes
 	Name: Meshes
-	Class: Package
-	Outer: Package Farm_Terrain
+	Class: UPackage
+	Outer: Farm_Terrain
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003a83 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UPackage Farm_OOBTerrain.Farm_Terrain.Textures
 	Name: Textures
-	Class: Package
-	Outer: Package Farm_Terrain
+	Class: UPackage
+	Outer: Farm_Terrain
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003a8f with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UPackage Farm_OOBTerrain.Farm_Textures
 	Name: Farm_Textures
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003a9b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[17]
+[Export 17]
+	Full Name: UPackage Farm_OOBTerrain.Farm_Textures.Textures
 	Name: Textures
-	Class: Package
-	Outer: Package Farm_Textures
+	Class: UPackage
+	Outer: Farm_Textures
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003aa7 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[18]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[19]
+[Export 19]
+	Full Name: UPackage Farm_OOBTerrain.Proto_World01
 	Name: Proto_World01
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003abf with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[20]
+[Export 20]
+	Full Name: UPackage Farm_OOBTerrain.Proto_World01.Mat
 	Name: Mat
-	Class: Package
-	Outer: Package Proto_World01
+	Class: UPackage
+	Outer: Proto_World01
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003acb with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[21]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[22]
+[Export 22]
+	Full Name: USequence Farm_OOBTerrain.TheWorld.PersistentLevel.Main_Sequence
 	Name: Main_Sequence
-	Class: Sequence
-	Outer: Level PersistentLevel
+	Class: USequence
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003ad7 with 0x0000000c Bytes
 	Export Flags: 0x00000000
-[23]
+[Export 23]
+	Full Name: UStaticMesh Farm_OOBTerrain.Farm_Terrain.Meshes.Hill_01
 	Name: Hill_01
-	Class: StaticMesh
-	Outer: Package Meshes
+	Class: UStaticMesh
+	Outer: Meshes
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003ae3 with 0x00016211 Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UStaticMesh Farm_OOBTerrain.Farm_Terrain.Meshes.Hill_01_Foliage
 	Name: Hill_01_Foliage
-	Class: StaticMesh
-	Outer: Package Meshes
+	Class: UStaticMesh
+	Outer: Meshes
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000019cf4 with 0x0019c921 Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UStaticMeshCollectionActor Farm_OOBTerrain.TheWorld.PersistentLevel.MeshCollector0
 	Name: MeshCollector0
-	Class: StaticMeshCollectionActor
-	Outer: Level PersistentLevel
+	Class: UStaticMeshCollectionActor
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000001b6615 with 0x0000009e Bytes
 	Export Flags: 0x00000000
-[26]
+[Export 26]
+	Full Name: UStaticMeshComponent Farm_OOBTerrain.TheWorld.PersistentLevel.MeshCollector0.StaticMeshActor_SMC_30
 	Name: StaticMeshActor_SMC_30
-	Class: StaticMeshComponent
-	Outer: StaticMeshCollectionActor MeshCollector0
+	Class: UStaticMeshComponent
+	Outer: MeshCollector0
 	Archetype: StaticMeshComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000004538d5 with 0x00089882 Bytes
 	Export Flags: 0x00000000
-[27]
+[Export 27]
+	Full Name: UStaticMeshComponent Farm_OOBTerrain.TheWorld.PersistentLevel.MeshCollector0.StaticMeshActor_SMC_34
 	Name: StaticMeshActor_SMC_34
-	Class: StaticMeshComponent
-	Outer: StaticMeshCollectionActor MeshCollector0
+	Class: UStaticMeshComponent
+	Outer: MeshCollector0
 	Archetype: StaticMeshComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000004dd157 with 0x00089d52 Bytes
 	Export Flags: 0x00000000
-[28]
+[Export 28]
+	Full Name: UStaticMeshComponent Farm_OOBTerrain.TheWorld.PersistentLevel.MeshCollector0.StaticMeshActor_SMC_36
 	Name: StaticMeshActor_SMC_36
-	Class: StaticMeshComponent
-	Outer: StaticMeshCollectionActor MeshCollector0
+	Class: UStaticMeshComponent
+	Outer: MeshCollector0
 	Archetype: StaticMeshComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000566ea9 with 0x0005bb82 Bytes
 	Export Flags: 0x00000000
-[29]
+[Export 29]
+	Full Name: UStaticMeshComponent Farm_OOBTerrain.TheWorld.PersistentLevel.MeshCollector0.StaticMeshActor_SMC_37
 	Name: StaticMeshActor_SMC_37
-	Class: StaticMeshComponent
-	Outer: StaticMeshCollectionActor MeshCollector0
+	Class: UStaticMeshComponent
+	Outer: MeshCollector0
 	Archetype: StaticMeshComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000005c2a2b with 0x000898d9 Bytes
 	Export Flags: 0x00000000
-[30]
+[Export 30]
+	Full Name: UStaticMeshComponent Farm_OOBTerrain.TheWorld.PersistentLevel.MeshCollector0.StaticMeshActor_SMC_38
 	Name: StaticMeshActor_SMC_38
-	Class: StaticMeshComponent
-	Outer: StaticMeshCollectionActor MeshCollector0
+	Class: UStaticMeshComponent
+	Outer: MeshCollector0
 	Archetype: StaticMeshComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000003af0e2 with 0x00004a3a Bytes
 	Export Flags: 0x00000000
-[31]
+[Export 31]
+	Full Name: UStaticMeshComponent Farm_OOBTerrain.TheWorld.PersistentLevel.MeshCollector0.StaticMeshActor_SMC_39
 	Name: StaticMeshActor_SMC_39
-	Class: StaticMeshComponent
-	Outer: StaticMeshCollectionActor MeshCollector0
+	Class: UStaticMeshComponent
+	Outer: MeshCollector0
 	Archetype: StaticMeshComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000003b3b1c with 0x0000325e Bytes
 	Export Flags: 0x00000000
-[32]
+[Export 32]
+	Full Name: UStaticMeshComponent Farm_OOBTerrain.TheWorld.PersistentLevel.MeshCollector0.StaticMeshActor_SMC_46
 	Name: StaticMeshActor_SMC_46
-	Class: StaticMeshComponent
-	Outer: StaticMeshCollectionActor MeshCollector0
+	Class: UStaticMeshComponent
+	Outer: MeshCollector0
 	Archetype: StaticMeshComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000064c304 with 0x000033c0 Bytes
 	Export Flags: 0x00000000
-[33]
+[Export 33]
+	Full Name: UStaticMeshComponent Farm_OOBTerrain.TheWorld.PersistentLevel.MeshCollector0.StaticMeshActor_SMC_47
 	Name: StaticMeshActor_SMC_47
-	Class: StaticMeshComponent
-	Outer: StaticMeshCollectionActor MeshCollector0
+	Class: UStaticMeshComponent
+	Outer: MeshCollector0
 	Archetype: StaticMeshComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000064f6c4 with 0x00003230 Bytes
 	Export Flags: 0x00000000
-[34]
+[Export 34]
+	Full Name: UStaticMeshComponent Farm_OOBTerrain.TheWorld.PersistentLevel.MeshCollector0.StaticMeshActor_SMC_9
 	Name: StaticMeshActor_SMC_9
-	Class: StaticMeshComponent
-	Outer: StaticMeshCollectionActor MeshCollector0
+	Class: UStaticMeshComponent
+	Outer: MeshCollector0
 	Archetype: StaticMeshComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000006528f4 with 0x00089872 Bytes
 	Export Flags: 0x00000000
-[35]
+[Export 35]
+	Full Name: UTexture2D Farm_OOBTerrain.Farm_Terrain.Textures.Hill_01_N
 	Name: Hill_01_N
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000446bdc with 0x00001885 Bytes
 	Export Flags: 0x00000001
-[36]
+[Export 36]
+	Full Name: UTexture2D Farm_OOBTerrain.Farm_Terrain.Textures.Hill_01_RGB
 	Name: Hill_01_RGB
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000448461 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
-[37]
+[Export 37]
+	Full Name: UTexture2D Farm_OOBTerrain.Farm_Textures.Textures.Farm_FieldsVariation
 	Name: Farm_FieldsVariation
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000449171 with 0x00000ca0 Bytes
 	Export Flags: 0x00000001
-[38]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[39]
+[Export 39]
+	Full Name: UTexture2D Farm_OOBTerrain.Proto_World01.Mat.Grass_Base01_D
 	Name: Grass_Base01_D
-	Class: Texture2D
-	Outer: Package Mat
+	Class: UTexture2D
+	Outer: Mat
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000044f5db with 0x000017ac Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UTexture2D Farm_OOBTerrain.Proto_World01.Mat.Grass_Base01_N
 	Name: Grass_Base01_N
-	Class: Texture2D
-	Outer: Package Mat
+	Class: UTexture2D
+	Outer: Mat
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000450d87 with 0x0000184d Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UWorld Farm_OOBTerrain.TheWorld
 	Name: TheWorld
-	Class: World
+	Class: UWorld
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000004525d4 with 0x0000008c Bytes
 	Export Flags: 0x00000000
-[42]
+[Export 42]
+	Full Name: UWorldInfo Farm_OOBTerrain.TheWorld.PersistentLevel.WorldInfo_3
 	Name: WorldInfo_3
-	Class: WorldInfo
-	Outer: Level PersistentLevel
+	Class: UWorldInfo
+	Outer: PersistentLevel
 	Object Flags: 0x0207000100000000
 	Serialized data: at 0x0000000000452660 with 0x00000083 Bytes
 	Export Flags: 0x00000000
-[43]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[44]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[45]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[46]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[47]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[48]
+[Export 48]
+	Full Name: UMaterialExpressionStaticSwitchParameter Farm_OOBTerrain.Farm_Terrain.Materials.Hill_Mat.MaterialExpressionStaticSwitchParameter_0
 	Name: MaterialExpressionStaticSwitchParameter_0
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Hill_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Hill_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000004526e3 with 0x00000078 Bytes
 	Export Flags: 0x00000001
-[49]
+[Export 49]
+	Full Name: UMaterialExpressionStaticSwitchParameter Farm_OOBTerrain.Farm_Terrain.Materials.Hill_Mat.MaterialExpressionStaticSwitchParameter_2
 	Name: MaterialExpressionStaticSwitchParameter_2
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Hill_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Hill_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000045275b with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[50]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[51]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[52]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[53]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[54]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[55]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[56]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[57]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[58]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[59]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[60]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[61]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[62]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[63]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[64]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[65]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[66]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[67]
+[Export 67]
+	Full Name: UPolys Farm_OOBTerrain.TheWorld.PersistentLevel.Polys_23
 	Name: Polys_23
-	Class: Polys
-	Outer: Level PersistentLevel
+	Class: UPolys
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000006dc166 with 0x00000018 Bytes
 	Export Flags: 0x00000000
@@ -862,125 +742,131 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.Level
 	Name: Level
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
-	Name: None
-	Class: None
-	Package: None
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.MaterialExpressionStaticSwitchParameter
 	Name: MaterialExpressionStaticSwitchParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.Model
 	Name: Model
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.Polys
 	Name: Polys
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.Sequence
 	Name: Sequence
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass Engine.StaticMesh
 	Name: StaticMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[10]
+	Class Package: Core
+	Outer: Engine
+[Import 10]
+	Full Name: UClass Engine.StaticMeshCollectionActor
 	Name: StaticMeshCollectionActor
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[11]
+	Class Package: Core
+	Outer: Engine
+[Import 11]
+	Full Name: UClass Engine.StaticMeshComponent
 	Name: StaticMeshComponent
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[12]
+	Class Package: Core
+	Outer: Engine
+[Import 12]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[13]
+	Class Package: Core
+	Outer: Engine
+[Import 13]
+	Full Name: UClass Engine.World
 	Name: World
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[14]
+	Class Package: Core
+	Outer: Engine
+[Import 14]
+	Full Name: UClass Engine.WorldInfo
 	Name: WorldInfo
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[15]
-	Name: None
-	Class: None
-	Package: None
-[16]
+	Class Package: Core
+	Outer: Engine
+[Import 16]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[18]
-	Name: None
-	Class: None
-	Package: None
-[19]
+	Class Package: Core
+[Import 19]
+	Full Name: UStaticMeshActor Engine.Default__StaticMeshActor
 	Name: Default__StaticMeshActor
 	Class: StaticMeshActor
-	Package: Engine
-	Outer: Package Engine
-[20]
+	Class Package: Engine
+	Outer: Engine
+[Import 20]
+	Full Name: UStaticMeshComponent Engine.Default__StaticMeshActor.StaticMeshComponent0
 	Name: StaticMeshComponent0
 	Class: StaticMeshComponent
-	Package: Engine
-	Outer: StaticMeshActor Default__StaticMeshActor
-[21]
-	Name: None
-	Class: None
-	Package: None
-[22]
+	Class Package: Engine
+	Outer: Default__StaticMeshActor
+[Import 22]
+	Full Name: UMaterialFunction Psy_MaterialFunctions.TeamColor_WorldSpace
 	Name: TeamColor_WorldSpace
 	Class: MaterialFunction
-	Package: Engine
-	Outer: Package Psy_MaterialFunctions
-[23]
+	Class Package: Engine
+	Outer: Psy_MaterialFunctions
+[Import 23]
+	Full Name: UPackage Grass_Textures
 	Name: Grass_Textures
 	Class: Package
-	Package: Core
-[24]
+	Class Package: Core
+[Import 24]
+	Full Name: UPackage Psy_MaterialFunctions
 	Name: Psy_MaterialFunctions
 	Class: Package
-	Package: Core
-[25]
+	Class Package: Core
+[Import 25]
+	Full Name: UTexture2D Grass_Textures.GrassStrip_Quarter_N
 	Name: GrassStrip_Quarter_N
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Grass_Textures
+	Class Package: Engine
+	Outer: Grass_Textures

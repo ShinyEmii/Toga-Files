@@ -41,6 +41,7 @@ Test Data Size: 0x00003fe0
 Compressed Chunk Info Offset: 0x00001f98
 Last Block Size: 0x00000004
 Base Header Size: 0x00000099
+Encrypted Header Size: 0x00005f90
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -48,456 +49,495 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] A
-[1] ACF_Float96NoW
-[2] AKF_VariableKeyLerp
-[3] AnimationCompressionFormat
-[4] AnimationKeyFormat
-[5] AnimName
-[6] AnimSequence
-[7] AnimSet
-[8] AnimTickArray
-[9] AnimTree
-[10] AnimTreeTemplate
-[11] Antenna
-[12] Antenna_Root
-[13] Antenna_Spaceship_Anim
-[14] Antenna_Spaceship_AnimSet
-[15] Antenna_Spaceship_SK
-[16] antenna_tower
-[17] antenna_tower.Antenna_Spaceship_SK
-[18] Antenna_Tower_AT
-[19] antenna_tower_SF
-[20] Antenna_Tower_SK
-[21] AntennaComponent_TA
-[22] AntennaMesh
-[23] ArrayProperty
-[24] Attach
-[25] AttachmentAnim_TA
-[26] Attachments
-[27] B
-[28] bAddRotation
-[29] bAddTranslation
-[30] bApplyRotation
-[31] bApplyTranslation
-[32] BCS_BoneSpace
-[33] BCS_ComponentSpace
-[34] BCS_ParentBoneSpace
-[35] bDisableCompressions
-[36] Behaviors
-[37] bEnableShadowCasting
-[38] Bend02
-[39] Bend03
-[40] Bend04
-[41] bHasBeenSimplified
-[42] bHasStaticPermutationResource
-[43] bHasVertexColors
-[44] BLEND_Translucent
-[45] BlendMode
-[46] Bone002
-[47] Bone003
-[48] Bone004
-[49] bone_rotate
-[50] bone_translate
-[51] BoneName
-[52] BoneRotationSpace
-[53] BoneTranslationSpace
-[54] BoolProperty
-[55] bParentNodeArrayBuilt
-[56] bUsedWithSkeletalMesh
-[57] ByteProperty
-[58] Class
-[59] ClothingAssets
-[60] ClothTearFactor
-[61] Color-BottomLeft
-[62] Color-BottomRight1
-[63] Color-BottomRight2
-[64] Color-Highlight
-[65] Color-Shadow
-[66] Color-TopLeft
-[67] Color-TopRight1
-[68] Color-TopRight2
-[69] ColorMaterialInput
-[70] Component
-[71] CompressedTrackOffsets
-[72] ControlHead
-[73] ControlName
-[74] ControlStrength
-[75] Core
-[76] CustomLeftRightAxis
-[77] CustomLeftRightBoneName
-[78] DefaultValue
-[79] DiffuseColor
-[80] DisplayFactor
-[81] DrawY
-[82] EBlendMode
-[83] EBoneControlSpace
-[84] EditorX
-[85] EditorY
-[86] EMaterialLightingModel
-[87] EmissiveColor
-[88] Engine
-[89] EProductAttachmentSocket
-[90] Expression
-[91] ExpressionGUID
-[92] ExpressionInput
-[93] Expressions
-[94] FloatProperty
-[95] FXActor
-[96] Guid
-[97] InheritCarAttribute
-[98] IntProperty
-[99] KeyEncodingFormat
-[100] LightingModel
-[101] LinearColor
-[102] LODHysteresis
-[103] LODInfo
-[104] LODMaterialMap
-[105] Mask
-[106] MaskA
-[107] MaskB
-[108] MaskG
-[109] MaskR
-[110] MAT_Antenna_Tower_Toon
-[111] MAT_Antenna_Tower_Toon_Transparent
-[112] Material
-[113] MaterialExpressionScalarParameter
-[114] MaterialExpressionStaticSwitchParameter
-[115] MaterialExpressionVectorParameter
-[116] MaterialInstanceConstant
-[117] MIC_Antenna_Tower_Toon
-[118] MIC_Antenna_Tower_Toon_Transparent
-[119] MLM_Unlit
-[120] NameProperty
-[121] None
-[122] NumFrames
-[123] ObjectProperty
-[124] ObjectReferencer
-[125] Opacity
-[126] OpacityMask
-[127] OutputIndex
-[128] Package
-[129] ParameterName
-[130] Parent
-[131] ParentLightingGuid
-[132] ParticleSystem
-[133] PAS_Antenna
-[134] PreviewSkelMeshName
-[135] ProductAsset_Attachment_TA
-[136] ProductSlot_TA
-[137] ProductSlots
-[138] ReferencedObjects
-[139] Root
-[140] Rotation
-[141] RotationCompressionFormat
-[142] Rotator
-[143] ScalarMaterialInput
-[144] Scale
-[145] SequenceLength
-[146] SequenceName
-[147] Sequences
-[148] SkelControlLists
-[149] SkelControlSingleBone
-[150] SkeletalMesh
-[151] SkeletalMeshSocket
-[152] Socket
-[153] SocketName
-[154] Sockets
-[155] StandaloneSeekFreeReferencer
-[156] StaticMesh
-[157] StrengthTarget
-[158] StructProperty
-[159] TAGame
-[160] TopperSocket
-[161] TrackBoneNames
-[162] Translation
-[163] TriangleSortAxis
-[164] TriangleSorting
-[165] TriangleSortOption
-[166] TriangleSortSettings
-[167] TRISORT_None
-[168] TSA_X_Axis
-[169] UseMultiplyForShadow
-[170] Vector
-[171] Vector-LightDirection
+[Name 0] [0x0007001000000000] A
+[Name 1] [0x0007001000000000] ACF_Float96NoW
+[Name 2] [0x0007001000000000] AKF_VariableKeyLerp
+[Name 3] [0x0007001000000000] AnimationCompressionFormat
+[Name 4] [0x0007001000000000] AnimationKeyFormat
+[Name 5] [0x0007001000000000] AnimName
+[Name 6] [0x0007001000000000] AnimSequence
+[Name 7] [0x0007001000000000] AnimSet
+[Name 8] [0x0007001000000000] AnimTickArray
+[Name 9] [0x0007001000000000] AnimTree
+[Name 10] [0x0007001000000000] AnimTreeTemplate
+[Name 11] [0x0007001000000000] Antenna
+[Name 12] [0x0007001000000000] Antenna_Root
+[Name 13] [0x0007001000000000] Antenna_Spaceship_Anim
+[Name 14] [0x0007001000000000] Antenna_Spaceship_AnimSet
+[Name 15] [0x0007001000000000] Antenna_Spaceship_SK
+[Name 16] [0x0007001000000000] antenna_tower
+[Name 17] [0x0007001000000000] antenna_tower.Antenna_Spaceship_SK
+[Name 18] [0x0007001000000000] Antenna_Tower_AT
+[Name 19] [0x0007001000000000] antenna_tower_SF
+[Name 20] [0x0007001000000000] Antenna_Tower_SK
+[Name 21] [0x0007001000000000] AntennaComponent_TA
+[Name 22] [0x0007001000000000] AntennaMesh
+[Name 23] [0x0007001000000000] ArrayProperty
+[Name 24] [0x0007001000000000] Attach
+[Name 25] [0x0007001000000000] AttachmentAnim_TA
+[Name 26] [0x0007001000000000] Attachments
+[Name 27] [0x0007001000000000] B
+[Name 28] [0x0007001000000000] bAddRotation
+[Name 29] [0x0007001000000000] bAddTranslation
+[Name 30] [0x0007001000000000] bApplyRotation
+[Name 31] [0x0007001000000000] bApplyTranslation
+[Name 32] [0x0007001000000000] BCS_BoneSpace
+[Name 33] [0x0007001000000000] BCS_ComponentSpace
+[Name 34] [0x0007001000000000] BCS_ParentBoneSpace
+[Name 35] [0x0007001000000000] bDisableCompressions
+[Name 36] [0x0007001000000000] Behaviors
+[Name 37] [0x0007001000000000] bEnableShadowCasting
+[Name 38] [0x0007001000000000] Bend02
+[Name 39] [0x0007001000000000] Bend03
+[Name 40] [0x0007001000000000] Bend04
+[Name 41] [0x0007001000000000] bHasBeenSimplified
+[Name 42] [0x0007001000000000] bHasStaticPermutationResource
+[Name 43] [0x0007001000000000] bHasVertexColors
+[Name 44] [0x0007001000000000] BLEND_Translucent
+[Name 45] [0x0007001000000000] BlendMode
+[Name 46] [0x0007001000000000] Bone002
+[Name 47] [0x0007001000000000] Bone003
+[Name 48] [0x0007001000000000] Bone004
+[Name 49] [0x0007001000000000] bone_rotate
+[Name 50] [0x0007001000000000] bone_translate
+[Name 51] [0x0007001000000000] BoneName
+[Name 52] [0x0007001000000000] BoneRotationSpace
+[Name 53] [0x0007001000000000] BoneTranslationSpace
+[Name 54] [0x0007001000000000] BoolProperty
+[Name 55] [0x0007001000000000] bParentNodeArrayBuilt
+[Name 56] [0x0007001000000000] bUsedWithSkeletalMesh
+[Name 57] [0x0007001000000000] ByteProperty
+[Name 58] [0x0007001000000000] Class
+[Name 59] [0x0007001000000000] ClothingAssets
+[Name 60] [0x0007001000000000] ClothTearFactor
+[Name 61] [0x0007001000000000] Color-BottomLeft
+[Name 62] [0x0007001000000000] Color-BottomRight1
+[Name 63] [0x0007001000000000] Color-BottomRight2
+[Name 64] [0x0007001000000000] Color-Highlight
+[Name 65] [0x0007001000000000] Color-Shadow
+[Name 66] [0x0007001000000000] Color-TopLeft
+[Name 67] [0x0007001000000000] Color-TopRight1
+[Name 68] [0x0007001000000000] Color-TopRight2
+[Name 69] [0x0007001000000000] ColorMaterialInput
+[Name 70] [0x0007001000000000] Component
+[Name 71] [0x0007001000000000] CompressedTrackOffsets
+[Name 72] [0x0007001000000000] ControlHead
+[Name 73] [0x0007001000000000] ControlName
+[Name 74] [0x0007001000000000] ControlStrength
+[Name 75] [0x0007001000000000] Core
+[Name 76] [0x0007001000000000] CustomLeftRightAxis
+[Name 77] [0x0007001000000000] CustomLeftRightBoneName
+[Name 78] [0x0007001000000000] DefaultValue
+[Name 79] [0x0007001000000000] DiffuseColor
+[Name 80] [0x0007001000000000] DisplayFactor
+[Name 81] [0x0007001000000000] DrawY
+[Name 82] [0x0007001000000000] EBlendMode
+[Name 83] [0x0007001000000000] EBoneControlSpace
+[Name 84] [0x0007001000000000] EditorX
+[Name 85] [0x0007001000000000] EditorY
+[Name 86] [0x0007001000000000] EMaterialLightingModel
+[Name 87] [0x0007001000000000] EmissiveColor
+[Name 88] [0x0007001000000000] Engine
+[Name 89] [0x0007001000000000] EProductAttachmentSocket
+[Name 90] [0x0007001000000000] Expression
+[Name 91] [0x0007001000000000] ExpressionGUID
+[Name 92] [0x0007001000000000] ExpressionInput
+[Name 93] [0x0007001000000000] Expressions
+[Name 94] [0x0007001000000000] FloatProperty
+[Name 95] [0x0007001000000000] FXActor
+[Name 96] [0x0007001000000000] Guid
+[Name 97] [0x0007001000000000] InheritCarAttribute
+[Name 98] [0x0007001000000000] IntProperty
+[Name 99] [0x0007001000000000] KeyEncodingFormat
+[Name 100] [0x0007001000000000] LightingModel
+[Name 101] [0x0007001000000000] LinearColor
+[Name 102] [0x0007001000000000] LODHysteresis
+[Name 103] [0x0007001000000000] LODInfo
+[Name 104] [0x0007001000000000] LODMaterialMap
+[Name 105] [0x0007001000000000] Mask
+[Name 106] [0x0007001000000000] MaskA
+[Name 107] [0x0007001000000000] MaskB
+[Name 108] [0x0007001000000000] MaskG
+[Name 109] [0x0007001000000000] MaskR
+[Name 110] [0x0007001000000000] MAT_Antenna_Tower_Toon
+[Name 111] [0x0007001000000000] MAT_Antenna_Tower_Toon_Transparent
+[Name 112] [0x0007001000000000] Material
+[Name 113] [0x0007001000000000] MaterialExpressionScalarParameter
+[Name 114] [0x0007001000000000] MaterialExpressionStaticSwitchParameter
+[Name 115] [0x0007001000000000] MaterialExpressionVectorParameter
+[Name 116] [0x0007001000000000] MaterialInstanceConstant
+[Name 117] [0x0007001000000000] MIC_Antenna_Tower_Toon
+[Name 118] [0x0007001000000000] MIC_Antenna_Tower_Toon_Transparent
+[Name 119] [0x0007001000000000] MLM_Unlit
+[Name 120] [0x0007001000000000] NameProperty
+[Name 121] [0x0007001000000000] None
+[Name 122] [0x0007001000000000] NumFrames
+[Name 123] [0x0007001000000000] ObjectProperty
+[Name 124] [0x0007001000000000] ObjectReferencer
+[Name 125] [0x0007001000000000] Opacity
+[Name 126] [0x0007001000000000] OpacityMask
+[Name 127] [0x0007001000000000] OutputIndex
+[Name 128] [0x0007001000000000] Package
+[Name 129] [0x0007001000000000] ParameterName
+[Name 130] [0x0007001000000000] Parent
+[Name 131] [0x0007001000000000] ParentLightingGuid
+[Name 132] [0x0007001000000000] ParticleSystem
+[Name 133] [0x0007001000000000] PAS_Antenna
+[Name 134] [0x0007001000000000] PreviewSkelMeshName
+[Name 135] [0x0007001000000000] ProductAsset_Attachment_TA
+[Name 136] [0x0007001000000000] ProductSlot_TA
+[Name 137] [0x0007001000000000] ProductSlots
+[Name 138] [0x0007001000000000] ReferencedObjects
+[Name 139] [0x0007001000000000] Root
+[Name 140] [0x0007001000000000] Rotation
+[Name 141] [0x0007001000000000] RotationCompressionFormat
+[Name 142] [0x0007001000000000] Rotator
+[Name 143] [0x0007001000000000] ScalarMaterialInput
+[Name 144] [0x0007001000000000] Scale
+[Name 145] [0x0007001000000000] SequenceLength
+[Name 146] [0x0007001000000000] SequenceName
+[Name 147] [0x0007001000000000] Sequences
+[Name 148] [0x0007001000000000] SkelControlLists
+[Name 149] [0x0007001000000000] SkelControlSingleBone
+[Name 150] [0x0007001000000000] SkeletalMesh
+[Name 151] [0x0007001000000000] SkeletalMeshSocket
+[Name 152] [0x0007001000000000] Socket
+[Name 153] [0x0007001000000000] SocketName
+[Name 154] [0x0007001000000000] Sockets
+[Name 155] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 156] [0x0007001000000000] StaticMesh
+[Name 157] [0x0007001000000000] StrengthTarget
+[Name 158] [0x0007001000000000] StructProperty
+[Name 159] [0x0007001000000000] TAGame
+[Name 160] [0x0007001000000000] TopperSocket
+[Name 161] [0x0007001000000000] TrackBoneNames
+[Name 162] [0x0007001000000000] Translation
+[Name 163] [0x0007001000000000] TriangleSortAxis
+[Name 164] [0x0007001000000000] TriangleSorting
+[Name 165] [0x0007001000000000] TriangleSortOption
+[Name 166] [0x0007001000000000] TriangleSortSettings
+[Name 167] [0x0007001000000000] TRISORT_None
+[Name 168] [0x0007001000000000] TSA_X_Axis
+[Name 169] [0x0007001000000000] UseMultiplyForShadow
+[Name 170] [0x0007001000000000] Vector
+[Name 171] [0x0007001000000000] Vector-LightDirection
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAnimSequence antenna_tower.antenna_tower.Antenna_Spaceship_AnimSet.AnimSequence_0
 	Name: AnimSequence_0
-	Class: AnimSequence
-	Outer: AnimSet Antenna_Spaceship_AnimSet
+	Class: UAnimSequence
+	Outer: Antenna_Spaceship_AnimSet
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000002031 with 0x00000900 Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UAnimSet antenna_tower.antenna_tower.Antenna_Spaceship_AnimSet
 	Name: Antenna_Spaceship_AnimSet
-	Class: AnimSet
-	Outer: Package antenna_tower
+	Class: UAnimSet
+	Outer: antenna_tower
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002931 with 0x00000080 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UAnimTree antenna_tower.antenna_tower.Antenna_Tower_AT
 	Name: Antenna_Tower_AT
-	Class: AnimTree
-	Outer: Package antenna_tower
+	Class: UAnimTree
+	Outer: antenna_tower
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000029b1 with 0x000001e1 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UAntennaComponent_TA antenna_tower.antenna_tower.antenna_tower.AntennaComponent_TA_1
 	Name: AntennaComponent_TA_1
-	Class: AntennaComponent_TA
-	Outer: ProductAsset_Attachment_TA antenna_tower
+	Class: UAntennaComponent_TA
+	Outer: antenna_tower
 	Archetype: AntennaComponent_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002b92 with 0x00000048 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UAttachmentAnim_TA antenna_tower.antenna_tower.antenna_tower.AttachmentAnim_TA_0
 	Name: AttachmentAnim_TA_0
-	Class: AttachmentAnim_TA
-	Outer: ProductAsset_Attachment_TA antenna_tower
+	Class: UAttachmentAnim_TA
+	Outer: antenna_tower
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002bda with 0x00000048 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UMaterial antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon
 	Name: MAT_Antenna_Tower_Toon
-	Class: Material
-	Outer: Package antenna_tower
+	Class: UMaterial
+	Outer: antenna_tower
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000002c22 with 0x000003c9 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UMaterial antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon_Transparent
 	Name: MAT_Antenna_Tower_Toon_Transparent
-	Class: Material
-	Outer: Package antenna_tower
+	Class: UMaterial
+	Outer: antenna_tower
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000002feb with 0x000003a1 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UMaterialExpressionScalarParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon_Transparent.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Antenna_Tower_Toon_Transparent
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Antenna_Tower_Toon_Transparent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000338c with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UMaterialExpressionStaticSwitchParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon.MaterialExpressionStaticSwitchParameter_4
 	Name: MaterialExpressionStaticSwitchParameter_4
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material MAT_Antenna_Tower_Toon
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: MAT_Antenna_Tower_Toon
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003420 with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UMaterialExpressionVectorParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon.MaterialExpressionVectorParameter_34
 	Name: MaterialExpressionVectorParameter_34
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Antenna_Tower_Toon
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Antenna_Tower_Toon
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003520 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UMaterialExpressionVectorParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon.MaterialExpressionVectorParameter_35
 	Name: MaterialExpressionVectorParameter_35
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Antenna_Tower_Toon
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Antenna_Tower_Toon
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000035c8 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UMaterialExpressionVectorParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon.MaterialExpressionVectorParameter_36
 	Name: MaterialExpressionVectorParameter_36
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Antenna_Tower_Toon
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Antenna_Tower_Toon
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003670 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UMaterialExpressionVectorParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon.MaterialExpressionVectorParameter_37
 	Name: MaterialExpressionVectorParameter_37
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Antenna_Tower_Toon
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Antenna_Tower_Toon
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003718 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UMaterialExpressionVectorParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon.MaterialExpressionVectorParameter_38
 	Name: MaterialExpressionVectorParameter_38
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Antenna_Tower_Toon
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Antenna_Tower_Toon
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000037c0 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UMaterialExpressionVectorParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon.MaterialExpressionVectorParameter_39
 	Name: MaterialExpressionVectorParameter_39
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Antenna_Tower_Toon
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Antenna_Tower_Toon
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003868 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UMaterialExpressionVectorParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon.MaterialExpressionVectorParameter_4
 	Name: MaterialExpressionVectorParameter_4
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Antenna_Tower_Toon
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Antenna_Tower_Toon
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003910 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UMaterialExpressionVectorParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon.MaterialExpressionVectorParameter_5
 	Name: MaterialExpressionVectorParameter_5
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Antenna_Tower_Toon
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Antenna_Tower_Toon
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000039b8 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UMaterialExpressionVectorParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon.MaterialExpressionVectorParameter_6
 	Name: MaterialExpressionVectorParameter_6
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Antenna_Tower_Toon
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Antenna_Tower_Toon
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003a60 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UMaterialExpressionVectorParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon_Transparent.MaterialExpressionVectorParameter_33
 	Name: MaterialExpressionVectorParameter_33
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Antenna_Tower_Toon_Transparent
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Antenna_Tower_Toon_Transparent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003b08 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UMaterialExpressionVectorParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon_Transparent.MaterialExpressionVectorParameter_34
 	Name: MaterialExpressionVectorParameter_34
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Antenna_Tower_Toon_Transparent
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Antenna_Tower_Toon_Transparent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003bb0 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UMaterialExpressionVectorParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon_Transparent.MaterialExpressionVectorParameter_35
 	Name: MaterialExpressionVectorParameter_35
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Antenna_Tower_Toon_Transparent
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Antenna_Tower_Toon_Transparent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003c58 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UMaterialExpressionVectorParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon_Transparent.MaterialExpressionVectorParameter_36
 	Name: MaterialExpressionVectorParameter_36
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Antenna_Tower_Toon_Transparent
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Antenna_Tower_Toon_Transparent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003d00 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UMaterialExpressionVectorParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon_Transparent.MaterialExpressionVectorParameter_37
 	Name: MaterialExpressionVectorParameter_37
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Antenna_Tower_Toon_Transparent
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Antenna_Tower_Toon_Transparent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003da8 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UMaterialExpressionVectorParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon_Transparent.MaterialExpressionVectorParameter_38
 	Name: MaterialExpressionVectorParameter_38
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Antenna_Tower_Toon_Transparent
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Antenna_Tower_Toon_Transparent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003e50 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UMaterialExpressionVectorParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon_Transparent.MaterialExpressionVectorParameter_4
 	Name: MaterialExpressionVectorParameter_4
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Antenna_Tower_Toon_Transparent
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Antenna_Tower_Toon_Transparent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003ef8 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UMaterialExpressionVectorParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon_Transparent.MaterialExpressionVectorParameter_5
 	Name: MaterialExpressionVectorParameter_5
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Antenna_Tower_Toon_Transparent
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Antenna_Tower_Toon_Transparent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003fa0 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UMaterialExpressionVectorParameter antenna_tower.antenna_tower.MAT_Antenna_Tower_Toon_Transparent.MaterialExpressionVectorParameter_6
 	Name: MaterialExpressionVectorParameter_6
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Antenna_Tower_Toon_Transparent
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Antenna_Tower_Toon_Transparent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004048 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UMaterialInstanceConstant antenna_tower.antenna_tower.MIC_Antenna_Tower_Toon
 	Name: MIC_Antenna_Tower_Toon
-	Class: MaterialInstanceConstant
-	Outer: Package antenna_tower
+	Class: UMaterialInstanceConstant
+	Outer: antenna_tower
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000040f0 with 0x00000105 Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UMaterialInstanceConstant antenna_tower.antenna_tower.MIC_Antenna_Tower_Toon_Transparent
 	Name: MIC_Antenna_Tower_Toon_Transparent
-	Class: MaterialInstanceConstant
-	Outer: Package antenna_tower
+	Class: UMaterialInstanceConstant
+	Outer: antenna_tower
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000041f5 with 0x000000e5 Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UObjectReferencer antenna_tower.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x00000000000042da with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[30]
+[Export 30]
+	Full Name: UPackage antenna_tower.antenna_tower
 	Name: antenna_tower
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004306 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[31]
+[Export 31]
+	Full Name: UPackage antenna_tower.antenna_tower_SF
 	Name: antenna_tower_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004312 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[32]
+[Export 32]
+	Full Name: UProductAsset_Attachment_TA antenna_tower.antenna_tower.antenna_tower
 	Name: antenna_tower
-	Class: ProductAsset_Attachment_TA
-	Outer: Package antenna_tower
+	Class: UProductAsset_Attachment_TA
+	Outer: antenna_tower
 	Archetype: ProductAsset_Attachment_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000431e with 0x000001cc Bytes
 	Export Flags: 0x00000001
-[33]
+[Export 33]
+	Full Name: USkelControlSingleBone antenna_tower.antenna_tower.Antenna_Tower_AT.SkelControlSingleBone_0
 	Name: SkelControlSingleBone_0
-	Class: SkelControlSingleBone
-	Outer: AnimTree Antenna_Tower_AT
+	Class: USkelControlSingleBone
+	Outer: Antenna_Tower_AT
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x00000000000044ea with 0x00000118 Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: USkelControlSingleBone antenna_tower.antenna_tower.Antenna_Tower_AT.SkelControlSingleBone_3
 	Name: SkelControlSingleBone_3
-	Class: SkelControlSingleBone
-	Outer: AnimTree Antenna_Tower_AT
+	Class: USkelControlSingleBone
+	Outer: Antenna_Tower_AT
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000004602 with 0x00000118 Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: USkelControlSingleBone antenna_tower.antenna_tower.Antenna_Tower_AT.SkelControlSingleBone_4
 	Name: SkelControlSingleBone_4
-	Class: SkelControlSingleBone
-	Outer: AnimTree Antenna_Tower_AT
+	Class: USkelControlSingleBone
+	Outer: Antenna_Tower_AT
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x000000000000471a with 0x00000118 Bytes
 	Export Flags: 0x00000001
-[36]
+[Export 36]
+	Full Name: USkeletalMesh antenna_tower.antenna_tower.Antenna_Spaceship_SK
 	Name: Antenna_Spaceship_SK
-	Class: SkeletalMesh
-	Outer: Package antenna_tower
+	Class: USkeletalMesh
+	Outer: antenna_tower
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000004832 with 0x00074b96 Bytes
 	Export Flags: 0x00000001
-[37]
+[Export 37]
+	Full Name: USkeletalMesh antenna_tower.antenna_tower.Antenna_Tower_SK
 	Name: Antenna_Tower_SK
-	Class: SkeletalMesh
-	Outer: Package antenna_tower
+	Class: USkeletalMesh
+	Outer: antenna_tower
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000793c8 with 0x00086c48 Bytes
 	Export Flags: 0x00000001
-[38]
+[Export 38]
+	Full Name: USkeletalMeshSocket antenna_tower.antenna_tower.Antenna_Tower_SK.SkeletalMeshSocket_0
 	Name: SkeletalMeshSocket_0
-	Class: SkeletalMeshSocket
-	Outer: SkeletalMesh Antenna_Tower_SK
+	Class: USkeletalMeshSocket
+	Outer: Antenna_Tower_SK
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000100010 with 0x0000004c Bytes
 	Export Flags: 0x00000001
@@ -506,114 +546,137 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UAntennaComponent_TA ProductSlots.Antenna.ProductAsset_Attachment_TA_0.AntennaComponent_TA_0
 	Name: AntennaComponent_TA_0
 	Class: AntennaComponent_TA
-	Package: TAGame
-	Outer: ProductAsset_Attachment_TA ProductAsset_Attachment_TA_0
-[1]
+	Class Package: TAGame
+	Outer: ProductAsset_Attachment_TA_0
+[Import 1]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[2]
+	Class Package: Core
+	Outer: Core
+[Import 2]
+	Full Name: UClass Engine.AnimSequence
 	Name: AnimSequence
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.AnimSet
 	Name: AnimSet
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.AnimTree
 	Name: AnimTree
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.MaterialExpressionStaticSwitchParameter
 	Name: MaterialExpressionStaticSwitchParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.MaterialExpressionVectorParameter
 	Name: MaterialExpressionVectorParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[10]
+	Class Package: Core
+	Outer: Engine
+[Import 10]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[11]
+	Class Package: Core
+	Outer: Engine
+[Import 11]
+	Full Name: UClass Engine.SkelControlSingleBone
 	Name: SkelControlSingleBone
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[12]
+	Class Package: Core
+	Outer: Engine
+[Import 12]
+	Full Name: UClass Engine.SkeletalMesh
 	Name: SkeletalMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[13]
+	Class Package: Core
+	Outer: Engine
+[Import 13]
+	Full Name: UClass Engine.SkeletalMeshSocket
 	Name: SkeletalMeshSocket
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[14]
+	Class Package: Core
+	Outer: Engine
+[Import 14]
+	Full Name: UClass TAGame.AntennaComponent_TA
 	Name: AntennaComponent_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[15]
+	Class Package: Core
+	Outer: TAGame
+[Import 15]
+	Full Name: UClass TAGame.AttachmentAnim_TA
 	Name: AttachmentAnim_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[16]
+	Class Package: Core
+	Outer: TAGame
+[Import 16]
+	Full Name: UClass TAGame.ProductAsset_Attachment_TA
 	Name: ProductAsset_Attachment_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[17]
+	Class Package: Core
+	Outer: TAGame
+[Import 17]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[18]
+	Class Package: Core
+[Import 18]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[19]
+	Class Package: Core
+[Import 19]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[20]
+	Class Package: Core
+[Import 20]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[21]
+	Class Package: Core
+[Import 21]
+	Full Name: UProductAsset_Attachment_TA ProductSlots.Antenna.ProductAsset_Attachment_TA_0
 	Name: ProductAsset_Attachment_TA_0
 	Class: ProductAsset_Attachment_TA
-	Package: TAGame
-	Outer: ProductSlot_TA Antenna
-[22]
+	Class Package: TAGame
+	Outer: Antenna
+[Import 22]
+	Full Name: UProductSlot_TA ProductSlots.Antenna
 	Name: Antenna
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots

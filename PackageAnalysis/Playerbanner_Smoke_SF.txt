@@ -129,6 +129,7 @@ Test Data Size: 0x00003fc2
 Compressed Chunk Info Offset: 0x0000163e
 Last Block Size: 0x00000004
 Base Header Size: 0x000001e1
+Encrypted Header Size: 0x00005630
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -136,409 +137,454 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] BackSmoke
-[2] BackSmoke_00
-[3] BackSmoke_01
-[4] BackSmoke_02
-[5] BackSmoke_03
-[6] BackSmoke_04
-[7] BackSmoke_05
-[8] BackSmoke_06
-[9] BackSmoke_07
-[10] BackSmoke_08
-[11] BackSmoke_09
-[12] BackTireSpin_00
-[13] BackTireSpin_01
-[14] BackTireSpin_02
-[15] Banner_Smoke
-[16] bg
-[17] BoolProperty
-[18] ByteProperty
-[19] Car_Bottom
-[20] Car_FrontWheel2
-[21] Car_Top
-[22] Class
-[23] Core
-[24] Editions
-[25] Engine
-[26] EPixelFormat
-[27] FlashTextureRescale
-[28] FlashTextureScale_Mult4
-[29] Format
-[30] FrontTireSpin_00
-[31] FrontTireSpin_01
-[32] FrontTireSpin_02
-[33] FrontTrail
-[34] FrontTrail_00
-[35] FrontTrail_01
-[36] FrontTrail_02
-[37] FrontTrail_03
-[38] FrontTrail_04
-[39] FrontTrail_05
-[40] FrontTrail_06
-[41] FrontTrail_07
-[42] FrontTrail_08
-[43] FrontTrail_09
-[44] GFxUI
-[45] IntProperty
-[46] LODGroup
-[47] MipGenSettings
-[48] MovieReference
-[49] NeverStream
-[50] None
-[51] ObjectProperty
-[52] ObjectReferencer
-[53] OriginalSizeX
-[54] OriginalSizeY
-[55] Package
-[56] PackTextureSize
-[57] PF_DXT5
-[58] PlayerBanner
-[59] Playerbanner_Smoke
-[60] Playerbanner_Smoke_SF
-[61] ProductAsset_PlayerBanner_TA
-[62] ProductSlot_TA
-[63] ProductSlots
-[64] RawData
-[65] ReferencedObjects
-[66] References
-[67] SizeX
-[68] SizeY
-[69] SourceFile
-[70] SourceFileCRC
-[71] SourceFileTimestamp
-[72] SRGB
-[73] StandaloneSeekFreeReferencer
-[74] StrProperty
-[75] SwfMovie
-[76] TAGame
-[77] Texture2D
-[78] TextureFormat
-[79] TextureGroup
-[80] TEXTUREGROUP_UI
-[81] TextureMipGenSettings
-[82] TextureRescale
-[83] TMGS_NoMipmaps
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] BackSmoke
+[Name 2] [0x0007001000000000] BackSmoke_00
+[Name 3] [0x0007001000000000] BackSmoke_01
+[Name 4] [0x0007001000000000] BackSmoke_02
+[Name 5] [0x0007001000000000] BackSmoke_03
+[Name 6] [0x0007001000000000] BackSmoke_04
+[Name 7] [0x0007001000000000] BackSmoke_05
+[Name 8] [0x0007001000000000] BackSmoke_06
+[Name 9] [0x0007001000000000] BackSmoke_07
+[Name 10] [0x0007001000000000] BackSmoke_08
+[Name 11] [0x0007001000000000] BackSmoke_09
+[Name 12] [0x0007001000000000] BackTireSpin_00
+[Name 13] [0x0007001000000000] BackTireSpin_01
+[Name 14] [0x0007001000000000] BackTireSpin_02
+[Name 15] [0x0007001000000000] Banner_Smoke
+[Name 16] [0x0007001000000000] bg
+[Name 17] [0x0007001000000000] BoolProperty
+[Name 18] [0x0007001000000000] ByteProperty
+[Name 19] [0x0007001000000000] Car_Bottom
+[Name 20] [0x0007001000000000] Car_FrontWheel2
+[Name 21] [0x0007001000000000] Car_Top
+[Name 22] [0x0007001000000000] Class
+[Name 23] [0x0007001000000000] Core
+[Name 24] [0x0007001000000000] Editions
+[Name 25] [0x0007001000000000] Engine
+[Name 26] [0x0007001000000000] EPixelFormat
+[Name 27] [0x0007001000000000] FlashTextureRescale
+[Name 28] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 29] [0x0007001000000000] Format
+[Name 30] [0x0007001000000000] FrontTireSpin_00
+[Name 31] [0x0007001000000000] FrontTireSpin_01
+[Name 32] [0x0007001000000000] FrontTireSpin_02
+[Name 33] [0x0007001000000000] FrontTrail
+[Name 34] [0x0007001000000000] FrontTrail_00
+[Name 35] [0x0007001000000000] FrontTrail_01
+[Name 36] [0x0007001000000000] FrontTrail_02
+[Name 37] [0x0007001000000000] FrontTrail_03
+[Name 38] [0x0007001000000000] FrontTrail_04
+[Name 39] [0x0007001000000000] FrontTrail_05
+[Name 40] [0x0007001000000000] FrontTrail_06
+[Name 41] [0x0007001000000000] FrontTrail_07
+[Name 42] [0x0007001000000000] FrontTrail_08
+[Name 43] [0x0007001000000000] FrontTrail_09
+[Name 44] [0x0007001000000000] GFxUI
+[Name 45] [0x0007001000000000] IntProperty
+[Name 46] [0x0007001000000000] LODGroup
+[Name 47] [0x0007001000000000] MipGenSettings
+[Name 48] [0x0007001000000000] MovieReference
+[Name 49] [0x0007001000000000] NeverStream
+[Name 50] [0x0007001000000000] None
+[Name 51] [0x0007001000000000] ObjectProperty
+[Name 52] [0x0007001000000000] ObjectReferencer
+[Name 53] [0x0007001000000000] OriginalSizeX
+[Name 54] [0x0007001000000000] OriginalSizeY
+[Name 55] [0x0007001000000000] Package
+[Name 56] [0x0007001000000000] PackTextureSize
+[Name 57] [0x0007001000000000] PF_DXT5
+[Name 58] [0x0007001000000000] PlayerBanner
+[Name 59] [0x0007001000000000] Playerbanner_Smoke
+[Name 60] [0x0007001000000000] Playerbanner_Smoke_SF
+[Name 61] [0x0007001000000000] ProductAsset_PlayerBanner_TA
+[Name 62] [0x0007001000000000] ProductSlot_TA
+[Name 63] [0x0007001000000000] ProductSlots
+[Name 64] [0x0007001000000000] RawData
+[Name 65] [0x0007001000000000] ReferencedObjects
+[Name 66] [0x0007001000000000] References
+[Name 67] [0x0007001000000000] SizeX
+[Name 68] [0x0007001000000000] SizeY
+[Name 69] [0x0007001000000000] SourceFile
+[Name 70] [0x0007001000000000] SourceFileCRC
+[Name 71] [0x0007001000000000] SourceFileTimestamp
+[Name 72] [0x0007001000000000] SRGB
+[Name 73] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 74] [0x0007001000000000] StrProperty
+[Name 75] [0x0007001000000000] SwfMovie
+[Name 76] [0x0007001000000000] TAGame
+[Name 77] [0x0007001000000000] Texture2D
+[Name 78] [0x0007001000000000] TextureFormat
+[Name 79] [0x0007001000000000] TextureGroup
+[Name 80] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 81] [0x0007001000000000] TextureMipGenSettings
+[Name 82] [0x0007001000000000] TextureRescale
+[Name 83] [0x0007001000000000] TMGS_NoMipmaps
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UObjectReferencer Playerbanner_Smoke.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x000000000000181f with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UPackage Playerbanner_Smoke.Playerbanner_Smoke
 	Name: Playerbanner_Smoke
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000184b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[2]
+[Export 2]
+	Full Name: UPackage Playerbanner_Smoke.Playerbanner_Smoke_SF
 	Name: Playerbanner_Smoke_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001857 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[3]
+[Export 3]
+	Full Name: UProductAsset_PlayerBanner_TA Playerbanner_Smoke.Playerbanner_Smoke.Playerbanner_Smoke
 	Name: Playerbanner_Smoke
-	Class: ProductAsset_PlayerBanner_TA
-	Outer: Package Playerbanner_Smoke
+	Class: UProductAsset_PlayerBanner_TA
+	Outer: Playerbanner_Smoke
 	Archetype: ProductAsset_PlayerBanner_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001863 with 0x00000028 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: USwfMovie Playerbanner_Smoke.Playerbanner_Smoke.Banner_Smoke
 	Name: Banner_Smoke
-	Class: SwfMovie
-	Outer: Package Playerbanner_Smoke
+	Class: USwfMovie
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000188b with 0x000025c8 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.BackSmoke_00
 	Name: BackSmoke_00
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003e53 with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.BackSmoke_01
 	Name: BackSmoke_01
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000020951 with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.BackSmoke_02
 	Name: BackSmoke_02
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000003d44f with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.BackSmoke_03
 	Name: BackSmoke_03
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000059f4d with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.BackSmoke_04
 	Name: BackSmoke_04
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000076a4b with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.BackSmoke_05
 	Name: BackSmoke_05
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000093549 with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.BackSmoke_06
 	Name: BackSmoke_06
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000b0047 with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.BackSmoke_07
 	Name: BackSmoke_07
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000ccb45 with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.BackSmoke_08
 	Name: BackSmoke_08
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000e9643 with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.BackSmoke_09
 	Name: BackSmoke_09
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000106141 with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.BackSmoke_10
 	Name: BackSmoke_10
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000122c3f with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.BackSmoke_11
 	Name: BackSmoke_11
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000013f73d with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.BackSmoke_12
 	Name: BackSmoke_12
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000015c23b with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.BackSmoke_13
 	Name: BackSmoke_13
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000178d39 with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.BackSmoke_14
 	Name: BackSmoke_14
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000195837 with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.BackTireSpin_00
 	Name: BackTireSpin_00
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001b2335 with 0x0000fe6e Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.BackTireSpin_01
 	Name: BackTireSpin_01
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001c21a3 with 0x0000fe6e Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.BackTireSpin_02
 	Name: BackTireSpin_02
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001d2011 with 0x0000fe6e Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.bg
 	Name: bg
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001e1e7f with 0x0001fcfe Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.Car_Bottom
 	Name: Car_Bottom
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000201b7d with 0x000047fe Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.Car_FrontWheel2
 	Name: Car_FrontWheel2
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000020637b with 0x000009ee Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.Car_Top
 	Name: Car_Top
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000206d69 with 0x0001007e Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.FrontTireSpin_00
 	Name: FrontTireSpin_00
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000216de7 with 0x000069fe Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.FrontTireSpin_01
 	Name: FrontTireSpin_01
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000021d7e5 with 0x000069fe Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.FrontTireSpin_02
 	Name: FrontTireSpin_02
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002241e3 with 0x000069fe Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.FrontTrail_00
 	Name: FrontTrail_00
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000022abe1 with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.FrontTrail_01
 	Name: FrontTrail_01
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002476df with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.FrontTrail_02
 	Name: FrontTrail_02
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002641dd with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[33]
+[Export 33]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.FrontTrail_03
 	Name: FrontTrail_03
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000280cdb with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.FrontTrail_04
 	Name: FrontTrail_04
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000029d7d9 with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.FrontTrail_05
 	Name: FrontTrail_05
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002ba2d7 with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[36]
+[Export 36]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.FrontTrail_06
 	Name: FrontTrail_06
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002d6dd5 with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[37]
+[Export 37]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.FrontTrail_07
 	Name: FrontTrail_07
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002f38d3 with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[38]
+[Export 38]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.FrontTrail_08
 	Name: FrontTrail_08
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000003103d1 with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[39]
+[Export 39]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.FrontTrail_09
 	Name: FrontTrail_09
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000032cecf with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.FrontTrail_10
 	Name: FrontTrail_10
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000003499cd with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.FrontTrail_11
 	Name: FrontTrail_11
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000003664cb with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[42]
+[Export 42]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.FrontTrail_12
 	Name: FrontTrail_12
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000382fc9 with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[43]
+[Export 43]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.FrontTrail_13
 	Name: FrontTrail_13
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000039fac7 with 0x0001cafe Bytes
 	Export Flags: 0x00000001
-[44]
+[Export 44]
+	Full Name: UTexture2D Playerbanner_Smoke.Playerbanner_Smoke.FrontTrail_14
 	Name: FrontTrail_14
-	Class: Texture2D
-	Outer: Package Playerbanner_Smoke
+	Class: UTexture2D
+	Outer: Playerbanner_Smoke
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000003bc5c5 with 0x0001cafe Bytes
 	Export Flags: 0x00000001
@@ -547,58 +593,70 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[4]
+	Class Package: Core
+	Outer: GFxUI
+[Import 4]
+	Full Name: UClass TAGame.ProductAsset_PlayerBanner_TA
 	Name: ProductAsset_PlayerBanner_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[6]
+	Class Package: Core
+[Import 6]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UProductAsset_PlayerBanner_TA ProductSlots.PlayerBanner.ProductAsset_PlayerBanner_TA_0
 	Name: ProductAsset_PlayerBanner_TA_0
 	Class: ProductAsset_PlayerBanner_TA
-	Package: TAGame
-	Outer: ProductSlot_TA PlayerBanner
-[11]
+	Class Package: TAGame
+	Outer: PlayerBanner
+[Import 11]
+	Full Name: UProductSlot_TA ProductSlots.PlayerBanner
 	Name: PlayerBanner
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots

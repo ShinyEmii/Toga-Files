@@ -80,6 +80,7 @@ Test Data Size: 0x00003eee
 Compressed Chunk Info Offset: 0x0000112a
 Last Block Size: 0x00000004
 Base Header Size: 0x0000011d
+Encrypted Header Size: 0x00005060
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -87,215 +88,203 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] AdditiveLayer
-[1] ArrayProperty
-[2] Attributes
-[3] bAllowLicensedEquip
-[4] Banner
-[5] Banner_Marbled
-[6] BaseImage
-[7] bIsSourceArtUncompressed
-[8] BlackMetal_00
-[9] BoolProperty
-[10] bReplicated
-[11] ByteProperty
-[12] Class
-[13] CompressionNone
-[14] Core
-[15] DefaultPaintColor
-[16] DefaultProduct_New
-[17] Editions
-[18] Engine
-[19] EPixelFormat
-[20] FlashTextureRescale
-[21] FlashTextureScale_Mult4
-[22] Format
-[23] GFxUI
-[24] GoldMetal_00
-[25] Icon
-[26] IconLarge
-[27] Icons
-[28] IntProperty
-[29] Label
-[30] LinearColor
-[31] LODGroup
-[32] MatchesRequiredToUnlock
-[33] MaterialGroups
-[34] Materials
-[35] MipGenSettings
-[36] MipTailBaseIdx
-[37] MovieReference
-[38] NeverStream
-[39] None
-[40] ObjectProperty
-[41] ObjectReferencer
-[42] OnlineLabel
-[43] OriginalSizeX
-[44] OriginalSizeY
-[45] Package
-[46] PackTextureSize
-[47] PaintedLayer
-[48] PaintMaterialGroup
-[49] Paints
-[50] PF_A8R8G8B8
-[51] PlatinumMetal_00
-[52] PlayerBanner
-[53] PlayerBanner_Marbled
-[54] PlayerBanner_Marbled_SF
-[55] playerBanner_RLShield
-[56] PluralLabel
-[57] Product_TA
-[58] ProductAsset_PlayerBanner_TA
-[59] ProductAttribute_PaintSettings_TA
-[60] ProductPaint
-[61] ProductPaint_TA
-[62] Products
-[63] ProductsDB
-[64] ProductSlot_TA
-[65] ProductSlots
-[66] RawData
-[67] ReferencedObjects
-[68] References
-[69] RoseGoldMetal_00
-[70] SizeX
-[71] SizeY
-[72] SourceFile
-[73] SourceFileCRC
-[74] SourceFileTimestamp
-[75] SRGB
-[76] StandaloneSeekFreeReferencer
-[77] StrProperty
-[78] StructProperty
-[79] SwfMovie
-[80] TAGame
-[81] Texture2D
-[82] TextureFormat
-[83] TextureGroup
-[84] TEXTUREGROUP_UI
-[85] TextureMipGenSettings
-[86] TextureRescale
-[87] Thumb_Banner_Marbled
-[88] Thumbnail
-[89] TintAltScroll
-[90] TintLayer
-[91] TMGS_NoMipmaps
-[92] TopShadow
-[93] UnsupportedPaints
-[94] WhiteGoldMetal_00
-[95] FloatProperty
-[96] ThumbnailKeyLightBrightnessScale
+[Name 0] [0x0007001000000000] AdditiveLayer
+[Name 1] [0x0007001000000000] ArrayProperty
+[Name 2] [0x0007001000000000] Attributes
+[Name 3] [0x0007000000000000] bAllowLicensedEquip
+[Name 4] [0x0007000000000000] Banner
+[Name 5] [0x0007001000000000] Banner_Marbled
+[Name 6] [0x0007001000000000] BaseImage
+[Name 7] [0x0007001000000000] bIsSourceArtUncompressed
+[Name 8] [0x0007001000000000] BlackMetal_00
+[Name 9] [0x0007001000000000] BoolProperty
+[Name 10] [0x0007000000000000] bReplicated
+[Name 11] [0x0007001000000000] ByteProperty
+[Name 12] [0x0007001000000000] Class
+[Name 13] [0x0007001000000000] CompressionNone
+[Name 14] [0x0007001000000000] Core
+[Name 15] [0x0007001000000000] DefaultPaintColor
+[Name 16] [0x0007000000000000] DefaultProduct_New
+[Name 17] [0x0007001000000000] Editions
+[Name 18] [0x0007001000000000] Engine
+[Name 19] [0x0007001000000000] EPixelFormat
+[Name 20] [0x0007001000000000] FlashTextureRescale
+[Name 21] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 22] [0x0007001000000000] Format
+[Name 23] [0x0007001000000000] GFxUI
+[Name 24] [0x0007001000000000] GoldMetal_00
+[Name 25] [0x0007000000000000] Icon
+[Name 26] [0x0007000000000000] IconLarge
+[Name 27] [0x0007000000000000] Icons
+[Name 28] [0x0007001000000000] IntProperty
+[Name 29] [0x0007000000000000] Label
+[Name 30] [0x0007001000000000] LinearColor
+[Name 31] [0x0007001000000000] LODGroup
+[Name 32] [0x0007000000000000] MatchesRequiredToUnlock
+[Name 33] [0x0007001000000000] MaterialGroups
+[Name 34] [0x0007001000000000] Materials
+[Name 35] [0x0007001000000000] MipGenSettings
+[Name 36] [0x0007001000000000] MipTailBaseIdx
+[Name 37] [0x0007001000000000] MovieReference
+[Name 38] [0x0007001000000000] NeverStream
+[Name 39] [0x0007001000000000] None
+[Name 40] [0x0007001000000000] ObjectProperty
+[Name 41] [0x0007001000000000] ObjectReferencer
+[Name 42] [0x0007000000000000] OnlineLabel
+[Name 43] [0x0007001000000000] OriginalSizeX
+[Name 44] [0x0007001000000000] OriginalSizeY
+[Name 45] [0x0007001000000000] Package
+[Name 46] [0x0007001000000000] PackTextureSize
+[Name 47] [0x0007001000000000] PaintedLayer
+[Name 48] [0x0007001000000000] PaintMaterialGroup
+[Name 49] [0x0007001000000000] Paints
+[Name 50] [0x0007001000000000] PF_A8R8G8B8
+[Name 51] [0x0007001000000000] PlatinumMetal_00
+[Name 52] [0x0007001000000000] PlayerBanner
+[Name 53] [0x0007001000000000] PlayerBanner_Marbled
+[Name 54] [0x0007001000000000] PlayerBanner_Marbled_SF
+[Name 55] [0x0007000000000000] playerBanner_RLShield
+[Name 56] [0x0007000000000000] PluralLabel
+[Name 57] [0x0007000000000000] Product_TA
+[Name 58] [0x0007001000000000] ProductAsset_PlayerBanner_TA
+[Name 59] [0x0007001000000000] ProductAttribute_PaintSettings_TA
+[Name 60] [0x0007001000000000] ProductPaint
+[Name 61] [0x0007001000000000] ProductPaint_TA
+[Name 62] [0x0007000000000000] Products
+[Name 63] [0x0007000000000000] ProductsDB
+[Name 64] [0x0007001000000000] ProductSlot_TA
+[Name 65] [0x0007001000000000] ProductSlots
+[Name 66] [0x0007001000000000] RawData
+[Name 67] [0x0007001000000000] ReferencedObjects
+[Name 68] [0x0007001000000000] References
+[Name 69] [0x0007001000000000] RoseGoldMetal_00
+[Name 70] [0x0007001000000000] SizeX
+[Name 71] [0x0007001000000000] SizeY
+[Name 72] [0x0007001000000000] SourceFile
+[Name 73] [0x0007001000000000] SourceFileCRC
+[Name 74] [0x0007001000000000] SourceFileTimestamp
+[Name 75] [0x0007001000000000] SRGB
+[Name 76] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 77] [0x0007001000000000] StrProperty
+[Name 78] [0x0007001000000000] StructProperty
+[Name 79] [0x0007001000000000] SwfMovie
+[Name 80] [0x0007001000000000] TAGame
+[Name 81] [0x0007001000000000] Texture2D
+[Name 82] [0x0007001000000000] TextureFormat
+[Name 83] [0x0007001000000000] TextureGroup
+[Name 84] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 85] [0x0007001000000000] TextureMipGenSettings
+[Name 86] [0x0007001000000000] TextureRescale
+[Name 87] [0x0007000000000000] Thumb_Banner_Marbled
+[Name 88] [0x0007000000000000] Thumbnail
+[Name 89] [0x0007001000000000] TintAltScroll
+[Name 90] [0x0007001000000000] TintLayer
+[Name 91] [0x0007001000000000] TMGS_NoMipmaps
+[Name 92] [0x0007001000000000] TopShadow
+[Name 93] [0x0007001000000000] UnsupportedPaints
+[Name 94] [0x0007001000000000] WhiteGoldMetal_00
+[Name 95] [0x0007001000000000] FloatProperty
+[Name 96] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
 
 
     ~ Exports ~ 
 
 
-[0]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UObjectReferencer PlayerBanner_Marbled.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000001253 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[2]
+[Export 2]
+	Full Name: UPackage PlayerBanner_Marbled.PlayerBanner_Marbled
 	Name: PlayerBanner_Marbled
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000127f with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[3]
+[Export 3]
+	Full Name: UPackage PlayerBanner_Marbled.PlayerBanner_Marbled_SF
 	Name: PlayerBanner_Marbled_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000128b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[4]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[5]
+[Export 5]
+	Full Name: UProductAsset_PlayerBanner_TA PlayerBanner_Marbled.PlayerBanner_Marbled.PlayerBanner_Marbled
 	Name: PlayerBanner_Marbled
-	Class: ProductAsset_PlayerBanner_TA
-	Outer: Package PlayerBanner_Marbled
+	Class: UProductAsset_PlayerBanner_TA
+	Outer: PlayerBanner_Marbled
 	Archetype: ProductAsset_PlayerBanner_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000001308fd with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UProductAttribute_PaintSettings_TA PlayerBanner_Marbled.PlayerBanner_Marbled.PlayerBanner_Marbled.ProductAttribute_PaintSettings_TA_0
 	Name: ProductAttribute_PaintSettings_TA_0
-	Class: ProductAttribute_PaintSettings_TA
-	Outer: ProductAsset_PlayerBanner_TA PlayerBanner_Marbled
+	Class: UProductAttribute_PaintSettings_TA
+	Outer: PlayerBanner_Marbled
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001337 with 0x00000084 Bytes
 	Export Flags: 0x00000001
-[7]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[8]
+[Export 8]
+	Full Name: USwfMovie PlayerBanner_Marbled.PlayerBanner_Marbled.Banner_Marbled
 	Name: Banner_Marbled
-	Class: SwfMovie
-	Outer: Package PlayerBanner_Marbled
+	Class: USwfMovie
+	Outer: PlayerBanner_Marbled
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000014e8 with 0x0000155c Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UTexture2D PlayerBanner_Marbled.PlayerBanner_Marbled.AdditiveLayer
 	Name: AdditiveLayer
-	Class: Texture2D
-	Outer: Package PlayerBanner_Marbled
+	Class: UTexture2D
+	Outer: PlayerBanner_Marbled
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002a44 with 0x000291f0 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UTexture2D PlayerBanner_Marbled.PlayerBanner_Marbled.BaseImage
 	Name: BaseImage
-	Class: Texture2D
-	Outer: Package PlayerBanner_Marbled
+	Class: UTexture2D
+	Outer: PlayerBanner_Marbled
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000002bc34 with 0x000291f0 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UTexture2D PlayerBanner_Marbled.PlayerBanner_Marbled.PaintedLayer
 	Name: PaintedLayer
-	Class: Texture2D
-	Outer: Package PlayerBanner_Marbled
+	Class: UTexture2D
+	Outer: PlayerBanner_Marbled
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000054e24 with 0x000291f0 Bytes
 	Export Flags: 0x00000001
-[12]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[13]
+[Export 13]
+	Full Name: UTexture2D PlayerBanner_Marbled.PlayerBanner_Marbled.TintAltScroll
 	Name: TintAltScroll
-	Class: Texture2D
-	Outer: Package PlayerBanner_Marbled
+	Class: UTexture2D
+	Outer: PlayerBanner_Marbled
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000be1b8 with 0x000201a4 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UTexture2D PlayerBanner_Marbled.PlayerBanner_Marbled.TintLayer
 	Name: TintLayer
-	Class: Texture2D
-	Outer: Package PlayerBanner_Marbled
+	Class: UTexture2D
+	Outer: PlayerBanner_Marbled
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000de35c with 0x000291f0 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UTexture2D PlayerBanner_Marbled.PlayerBanner_Marbled.TopShadow
 	Name: TopShadow
-	Class: Texture2D
-	Outer: Package PlayerBanner_Marbled
+	Class: UTexture2D
+	Outer: PlayerBanner_Marbled
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000010754c with 0x000291f0 Bytes
 	Export Flags: 0x00000001
@@ -304,121 +293,117 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[4]
+	Class Package: Core
+	Outer: GFxUI
+[Import 4]
+	Full Name: UClass TAGame.ProductAsset_PlayerBanner_TA
 	Name: ProductAsset_PlayerBanner_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UClass TAGame.ProductAttribute_PaintSettings_TA
 	Name: ProductAttribute_PaintSettings_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
-	Name: None
-	Class: None
-	Package: None
-[7]
+	Class Package: Core
+	Outer: TAGame
+[Import 7]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage ProductPaint
 	Name: ProductPaint
 	Class: Package
-	Package: Core
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UPackage ProductPaint.Paints
 	Name: Paints
 	Class: Package
-	Package: Core
-	Outer: Package ProductPaint
-[12]
-	Name: None
-	Class: None
-	Package: None
-[13]
-	Name: None
-	Class: None
-	Package: None
-[14]
-	Name: None
-	Class: None
-	Package: None
-[15]
+	Class Package: Core
+	Outer: ProductPaint
+[Import 15]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[16]
-	Name: None
-	Class: None
-	Package: None
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UProductPaint_TA ProductPaint.Paints.BlackMetal_00
 	Name: BlackMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[18]
+	Class Package: TAGame
+	Outer: Paints
+[Import 18]
+	Full Name: UProductPaint_TA ProductPaint.Paints.GoldMetal_00
 	Name: GoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[19]
+	Class Package: TAGame
+	Outer: Paints
+[Import 19]
+	Full Name: UProductPaint_TA ProductPaint.Paints.PlatinumMetal_00
 	Name: PlatinumMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[20]
+	Class Package: TAGame
+	Outer: Paints
+[Import 20]
+	Full Name: UProductPaint_TA ProductPaint.Paints.RoseGoldMetal_00
 	Name: RoseGoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[21]
+	Class Package: TAGame
+	Outer: Paints
+[Import 21]
+	Full Name: UProductPaint_TA ProductPaint.Paints.WhiteGoldMetal_00
 	Name: WhiteGoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[22]
-	Name: None
-	Class: None
-	Package: None
-[23]
+	Class Package: TAGame
+	Outer: Paints
+[Import 23]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[24]
+	Class Package: Core
+[Import 24]
+	Full Name: UProductAsset_PlayerBanner_TA ProductSlots.PlayerBanner.ProductAsset_PlayerBanner_TA_0
 	Name: ProductAsset_PlayerBanner_TA_0
 	Class: ProductAsset_PlayerBanner_TA
-	Package: TAGame
-	Outer: ProductSlot_TA PlayerBanner
-[25]
+	Class Package: TAGame
+	Outer: PlayerBanner
+[Import 25]
+	Full Name: UProductSlot_TA ProductSlots.PlayerBanner
 	Name: PlayerBanner
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots

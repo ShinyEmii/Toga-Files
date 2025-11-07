@@ -66,6 +66,7 @@ Test Data Size: 0x00003f63
 Compressed Chunk Info Offset: 0x00001bc5
 Last Block Size: 0x0000000c
 Base Header Size: 0x000000f1
+Encrypted Header Size: 0x00005b50
 
 AES: LrVEo265HtDsXQ6/JdI6gYrZ+2/Z2clJvSsc8IahVHA=
 
@@ -73,418 +74,435 @@ AES: LrVEo265HtDsXQ6/JdI6gYrZ+2/Z2clJvSsc8IahVHA=
     ~ Names ~ 
 
 
-[0] A
-[1] Antenna
-[2] ArrayProperty
-[3] Attachments
-[4] Behaviors
-[5] bExposeToLibrary
-[6] bHasStaticPermutationResource
-[7] BoolProperty
-[8] ByteProperty
-[9] CheapContrast
-[10] Class
-[11] ColorCavity
-[12] ColorMaterialInput
-[13] ColorSnow
-[14] Component
-[15] CompressionSettings
-[16] Core
-[17] DefaultValue
-[18] Desc
-[19] Description
-[20] DiffuseColor
-[21] Emissive
-[22] EmissiveColor
-[23] EmissiveFlicker
-[24] EmissiveTint
-[25] Engine
-[26] Engine_MaterialFunctions01
-[27] EPixelFormat
-[28] EProductAttachmentSocket
-[29] Expression
-[30] ExpressionGUID
-[31] ExpressionInput
-[32] Expressions
-[33] FirstResourceMemMip
-[34] FlecksNormalIntensity
-[35] FlecksNormalTiling
-[36] FlickerIntensity
-[37] FlickerSpeed
-[38] FloatProperty
-[39] Format
-[40] Fresnel
-[41] Fresnel_Advanced
-[42] FresnelSharpness
-[43] FresnelStrength
-[44] FresnelTint
-[45] Function
-[46] FunctionExpressions
-[47] FXActor
-[48] Glitter_N
-[49] GlitterSpecIntensity
-[50] Group
-[51] Guid
-[52] Hat
-[53] Hat_Igloo
-[54] Hat_Igloo_N
-[55] Hat_Igloo_RGB
-[56] Hat_Igloo_SF
-[57] Hat_Igloo_SM
-[58] Hat_Igloo_Spec
-[59] ImageAdjustment
-[60] InheritCarAttribute
-[61] IntProperty
-[62] LibraryCategories
-[63] LightMapCoordinateIndex
-[64] LightMapResolution
-[65] LinearColor
-[66] LODGroup
-[67] MAT_Snow
-[68] Material
-[69] MaterialExpressionScalarParameter
-[70] MaterialExpressionStaticSwitchParameter
-[71] MaterialExpressionTextureSampleParameter2D
-[72] MaterialExpressionVectorParameter
-[73] MaterialFunction
-[74] MaterialFunctionInfos
-[75] MaterialInstanceConstant
-[76] MIC_Hat_Igloo
-[77] MipTailBaseIdx
-[78] NameProperty
-[79] Noise_1D
-[80] None
-[81] Normal
-[82] Normals
-[83] ObjectProperty
-[84] ObjectReferencer
-[85] OriginalSizeX
-[86] OriginalSizeY
-[87] Package
-[88] ParameterName
-[89] ParameterValue
-[90] Parent
-[91] ParentLightingGuid
-[92] ParticleSystem
-[93] PAS_Hat
-[94] PF_DXT1
-[95] PF_DXT5
-[96] ProductAsset_Attachment_TA
-[97] ProductSlot_TA
-[98] ProductSlots
-[99] Psy_MaterialFunctions_02
-[100] Psy_MaterialFunctions_03
-[101] ReferencedObjects
-[102] RGB_Masks
-[103] Rotation
-[104] Rotator
-[105] ScalarMaterialInput
-[106] ScalarParameterValues
-[107] Scale
-[108] SizeX
-[109] SizeY
-[110] SkeletalMesh
-[111] SnowSpecIntensity
-[112] Socket
-[113] SpecIntensity
-[114] SpecPower
-[115] SpecularColor
-[116] SpecularPower
-[117] SRGB
-[118] StandaloneSeekFreeReferencer
-[119] StateId
-[120] StaticMesh
-[121] StrProperty
-[122] StructProperty
-[123] SubSurface
-[124] SubSurfaceIntensity
-[125] SubSurfaceTint
-[126] TAGame
-[127] TC_NormalmapSwizzle
-[128] Texture
-[129] Texture2D
-[130] TextureCompressionSettings
-[131] TextureFileCacheName
-[132] TextureGroup
-[133] TEXTUREGROUP_WorldNormalMap
-[134] Textures
-[135] Textures2
-[136] ThumbnailKeyLightBrightnessScale
-[137] Translation
-[138] UnpackMin
-[139] UseEmissive
-[140] Vector
-[141] VectorMaterialInput
-[142] VectorParameterValues
+[Name 0] [0x0007001000000000] A
+[Name 1] [0x0007001000000000] Antenna
+[Name 2] [0x0007001000000000] ArrayProperty
+[Name 3] [0x0007001000000000] Attachments
+[Name 4] [0x0007001000000000] Behaviors
+[Name 5] [0x0007001000000000] bExposeToLibrary
+[Name 6] [0x0007001000000000] bHasStaticPermutationResource
+[Name 7] [0x0007001000000000] BoolProperty
+[Name 8] [0x0007001000000000] ByteProperty
+[Name 9] [0x0007001000000000] CheapContrast
+[Name 10] [0x0007001000000000] Class
+[Name 11] [0x0007001000000000] ColorCavity
+[Name 12] [0x0007001000000000] ColorMaterialInput
+[Name 13] [0x0007001000000000] ColorSnow
+[Name 14] [0x0007001000000000] Component
+[Name 15] [0x0007001000000000] CompressionSettings
+[Name 16] [0x0007001000000000] Core
+[Name 17] [0x0007001000000000] DefaultValue
+[Name 18] [0x0007001000000000] Desc
+[Name 19] [0x0007001000000000] Description
+[Name 20] [0x0007001000000000] DiffuseColor
+[Name 21] [0x0007001000000000] Emissive
+[Name 22] [0x0007001000000000] EmissiveColor
+[Name 23] [0x0007001000000000] EmissiveFlicker
+[Name 24] [0x0007001000000000] EmissiveTint
+[Name 25] [0x0007001000000000] Engine
+[Name 26] [0x0007001000000000] Engine_MaterialFunctions01
+[Name 27] [0x0007001000000000] EPixelFormat
+[Name 28] [0x0007001000000000] EProductAttachmentSocket
+[Name 29] [0x0007001000000000] Expression
+[Name 30] [0x0007001000000000] ExpressionGUID
+[Name 31] [0x0007001000000000] ExpressionInput
+[Name 32] [0x0007001000000000] Expressions
+[Name 33] [0x0007001000000000] FirstResourceMemMip
+[Name 34] [0x0007001000000000] FlecksNormalIntensity
+[Name 35] [0x0007001000000000] FlecksNormalTiling
+[Name 36] [0x0007001000000000] FlickerIntensity
+[Name 37] [0x0007001000000000] FlickerSpeed
+[Name 38] [0x0007001000000000] FloatProperty
+[Name 39] [0x0007001000000000] Format
+[Name 40] [0x0007001000000000] Fresnel
+[Name 41] [0x0007001000000000] Fresnel_Advanced
+[Name 42] [0x0007001000000000] FresnelSharpness
+[Name 43] [0x0007001000000000] FresnelStrength
+[Name 44] [0x0007001000000000] FresnelTint
+[Name 45] [0x0007001000000000] Function
+[Name 46] [0x0007001000000000] FunctionExpressions
+[Name 47] [0x0007001000000000] FXActor
+[Name 48] [0x0007001000000000] Glitter_N
+[Name 49] [0x0007001000000000] GlitterSpecIntensity
+[Name 50] [0x0007001000000000] Group
+[Name 51] [0x0007001000000000] Guid
+[Name 52] [0x0007001000000000] Hat
+[Name 53] [0x0007001000000000] Hat_Igloo
+[Name 54] [0x0007001000000000] Hat_Igloo_N
+[Name 55] [0x0007001000000000] Hat_Igloo_RGB
+[Name 56] [0x0007001000000000] Hat_Igloo_SF
+[Name 57] [0x0007001000000000] Hat_Igloo_SM
+[Name 58] [0x0007001000000000] Hat_Igloo_Spec
+[Name 59] [0x0007001000000000] ImageAdjustment
+[Name 60] [0x0007001000000000] InheritCarAttribute
+[Name 61] [0x0007001000000000] IntProperty
+[Name 62] [0x0007001000000000] LibraryCategories
+[Name 63] [0x0007001000000000] LightMapCoordinateIndex
+[Name 64] [0x0007001000000000] LightMapResolution
+[Name 65] [0x0007001000000000] LinearColor
+[Name 66] [0x0007001000000000] LODGroup
+[Name 67] [0x0007001000000000] MAT_Snow
+[Name 68] [0x0007001000000000] Material
+[Name 69] [0x0007001000000000] MaterialExpressionScalarParameter
+[Name 70] [0x0007001000000000] MaterialExpressionStaticSwitchParameter
+[Name 71] [0x0007001000000000] MaterialExpressionTextureSampleParameter2D
+[Name 72] [0x0007001000000000] MaterialExpressionVectorParameter
+[Name 73] [0x0007001000000000] MaterialFunction
+[Name 74] [0x0007001000000000] MaterialFunctionInfos
+[Name 75] [0x0007001000000000] MaterialInstanceConstant
+[Name 76] [0x0007001000000000] MIC_Hat_Igloo
+[Name 77] [0x0007001000000000] MipTailBaseIdx
+[Name 78] [0x0007001000000000] NameProperty
+[Name 79] [0x0007001000000000] Noise_1D
+[Name 80] [0x0007001000000000] None
+[Name 81] [0x0007001000000000] Normal
+[Name 82] [0x0007001000000000] Normals
+[Name 83] [0x0007001000000000] ObjectProperty
+[Name 84] [0x0007001000000000] ObjectReferencer
+[Name 85] [0x0007001000000000] OriginalSizeX
+[Name 86] [0x0007001000000000] OriginalSizeY
+[Name 87] [0x0007001000000000] Package
+[Name 88] [0x0007001000000000] ParameterName
+[Name 89] [0x0007001000000000] ParameterValue
+[Name 90] [0x0007001000000000] Parent
+[Name 91] [0x0007001000000000] ParentLightingGuid
+[Name 92] [0x0007001000000000] ParticleSystem
+[Name 93] [0x0007001000000000] PAS_Hat
+[Name 94] [0x0007001000000000] PF_DXT1
+[Name 95] [0x0007001000000000] PF_DXT5
+[Name 96] [0x0007001000000000] ProductAsset_Attachment_TA
+[Name 97] [0x0007001000000000] ProductSlot_TA
+[Name 98] [0x0007001000000000] ProductSlots
+[Name 99] [0x0007001000000000] Psy_MaterialFunctions_02
+[Name 100] [0x0007001000000000] Psy_MaterialFunctions_03
+[Name 101] [0x0007001000000000] ReferencedObjects
+[Name 102] [0x0007001000000000] RGB_Masks
+[Name 103] [0x0007001000000000] Rotation
+[Name 104] [0x0007001000000000] Rotator
+[Name 105] [0x0007001000000000] ScalarMaterialInput
+[Name 106] [0x0007001000000000] ScalarParameterValues
+[Name 107] [0x0007001000000000] Scale
+[Name 108] [0x0007001000000000] SizeX
+[Name 109] [0x0007001000000000] SizeY
+[Name 110] [0x0007001000000000] SkeletalMesh
+[Name 111] [0x0007001000000000] SnowSpecIntensity
+[Name 112] [0x0007001000000000] Socket
+[Name 113] [0x0007001000000000] SpecIntensity
+[Name 114] [0x0007001000000000] SpecPower
+[Name 115] [0x0007001000000000] SpecularColor
+[Name 116] [0x0007001000000000] SpecularPower
+[Name 117] [0x0007001000000000] SRGB
+[Name 118] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 119] [0x0007001000000000] StateId
+[Name 120] [0x0007001000000000] StaticMesh
+[Name 121] [0x0007001000000000] StrProperty
+[Name 122] [0x0007001000000000] StructProperty
+[Name 123] [0x0007001000000000] SubSurface
+[Name 124] [0x0007001000000000] SubSurfaceIntensity
+[Name 125] [0x0007001000000000] SubSurfaceTint
+[Name 126] [0x0007001000000000] TAGame
+[Name 127] [0x0007001000000000] TC_NormalmapSwizzle
+[Name 128] [0x0007001000000000] Texture
+[Name 129] [0x0007001000000000] Texture2D
+[Name 130] [0x0007001000000000] TextureCompressionSettings
+[Name 131] [0x0007001000000000] TextureFileCacheName
+[Name 132] [0x0007001000000000] TextureGroup
+[Name 133] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 134] [0x0007001000000000] Textures
+[Name 135] [0x0007001000000000] Textures2
+[Name 136] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
+[Name 137] [0x0007001000000000] Translation
+[Name 138] [0x0007001000000000] UnpackMin
+[Name 139] [0x0007001000000000] UseEmissive
+[Name 140] [0x0007001000000000] Vector
+[Name 141] [0x0007001000000000] VectorMaterialInput
+[Name 142] [0x0007001000000000] VectorParameterValues
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UMaterial Hat_Igloo.Hat_Igloo.MAT_Snow
 	Name: MAT_Snow
-	Class: Material
-	Outer: Package Hat_Igloo
+	Class: UMaterial
+	Outer: Hat_Igloo
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000914ea with 0x00000490 Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterialExpressionScalarParameter Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionScalarParameter_0
 	Name: MaterialExpressionScalarParameter_0
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002146 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterialExpressionScalarParameter Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002227 with 0x000000e2 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterialExpressionScalarParameter Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionScalarParameter_10
 	Name: MaterialExpressionScalarParameter_10
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002309 with 0x000000e2 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UMaterialExpressionScalarParameter Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000023eb with 0x000000e8 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UMaterialExpressionScalarParameter Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionScalarParameter_3
 	Name: MaterialExpressionScalarParameter_3
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000024d3 with 0x000000e5 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UMaterialExpressionScalarParameter Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionScalarParameter_4
 	Name: MaterialExpressionScalarParameter_4
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000025b8 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UMaterialExpressionScalarParameter Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionScalarParameter_5
 	Name: MaterialExpressionScalarParameter_5
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000264c with 0x000000bf Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UMaterialExpressionScalarParameter Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionScalarParameter_6
 	Name: MaterialExpressionScalarParameter_6
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000270b with 0x000000bb Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UMaterialExpressionScalarParameter Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionScalarParameter_7
 	Name: MaterialExpressionScalarParameter_7
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000027c6 with 0x00000078 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UMaterialExpressionScalarParameter Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionScalarParameter_8
 	Name: MaterialExpressionScalarParameter_8
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000283e with 0x000000e6 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UMaterialExpressionScalarParameter Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionScalarParameter_9
 	Name: MaterialExpressionScalarParameter_9
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002924 with 0x000000de Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UMaterialExpressionStaticSwitchParameter Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionStaticSwitchParameter_0
 	Name: MaterialExpressionStaticSwitchParameter_0
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002a02 with 0x00000121 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UMaterialExpressionStaticSwitchParameter Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionStaticSwitchParameter_2
 	Name: MaterialExpressionStaticSwitchParameter_2
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002b23 with 0x0000011e Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UMaterialExpressionTextureSampleParameter2D Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionTextureSampleParameter2D_0
 	Name: MaterialExpressionTextureSampleParameter2D_0
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002c41 with 0x000000fe Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UMaterialExpressionTextureSampleParameter2D Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionTextureSampleParameter2D_1
 	Name: MaterialExpressionTextureSampleParameter2D_1
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002d3f with 0x000000d8 Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UMaterialExpressionVectorParameter Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002e17 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UMaterialExpressionVectorParameter Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionVectorParameter_1
 	Name: MaterialExpressionVectorParameter_1
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002ee8 with 0x000000cf Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UMaterialExpressionVectorParameter Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionVectorParameter_2
 	Name: MaterialExpressionVectorParameter_2
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002fb7 with 0x000000f2 Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UMaterialExpressionVectorParameter Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionVectorParameter_3
 	Name: MaterialExpressionVectorParameter_3
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000030a9 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UMaterialExpressionVectorParameter Hat_Igloo.Hat_Igloo.MAT_Snow.MaterialExpressionVectorParameter_4
 	Name: MaterialExpressionVectorParameter_4
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Snow
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Snow
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000319a with 0x000000f5 Bytes
 	Export Flags: 0x00000001
-[21]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[22]
+[Export 22]
+	Full Name: UMaterialFunction Hat_Igloo.Psy_MaterialFunctions_02.Fresnel_Advanced
 	Name: Fresnel_Advanced
-	Class: MaterialFunction
-	Outer: Package Psy_MaterialFunctions_02
+	Class: UMaterialFunction
+	Outer: Psy_MaterialFunctions_02
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000033c5 with 0x000000e5 Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UMaterialFunction Hat_Igloo.Psy_MaterialFunctions_03.Noise_1D
 	Name: Noise_1D
-	Class: MaterialFunction
-	Outer: Package Psy_MaterialFunctions_03
+	Class: UMaterialFunction
+	Outer: Psy_MaterialFunctions_03
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000034aa with 0x00000122 Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UMaterialInstanceConstant Hat_Igloo.Hat_Igloo.MIC_Hat_Igloo
 	Name: MIC_Hat_Igloo
-	Class: MaterialInstanceConstant
-	Outer: Package Hat_Igloo
+	Class: UMaterialInstanceConstant
+	Outer: Hat_Igloo
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000035cc with 0x000008cd Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UObjectReferencer Hat_Igloo.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000003e99 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[26]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[27]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[28]
+[Export 28]
+	Full Name: UPackage Hat_Igloo.Hat_Igloo
 	Name: Hat_Igloo
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003edd with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[29]
+[Export 29]
+	Full Name: UPackage Hat_Igloo.Hat_Igloo_SF
 	Name: Hat_Igloo_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003ee9 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[30]
+[Export 30]
+	Full Name: UPackage Hat_Igloo.Psy_MaterialFunctions_02
 	Name: Psy_MaterialFunctions_02
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003ef5 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[31]
+[Export 31]
+	Full Name: UPackage Hat_Igloo.Psy_MaterialFunctions_03
 	Name: Psy_MaterialFunctions_03
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003f01 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[32]
+[Export 32]
+	Full Name: UProductAsset_Attachment_TA Hat_Igloo.Hat_Igloo.Hat_Igloo
 	Name: Hat_Igloo
-	Class: ProductAsset_Attachment_TA
-	Outer: Package Hat_Igloo
+	Class: UProductAsset_Attachment_TA
+	Outer: Hat_Igloo
 	Archetype: ProductAsset_Attachment_TA_2
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003f0d with 0x000001e4 Bytes
 	Export Flags: 0x00000001
-[33]
+[Export 33]
+	Full Name: UStaticMesh Hat_Igloo.Hat_Igloo.Hat_Igloo_SM
 	Name: Hat_Igloo_SM
-	Class: StaticMesh
-	Outer: Package Hat_Igloo
+	Class: UStaticMesh
+	Outer: Hat_Igloo
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000040f1 with 0x000888eb Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UTexture2D Hat_Igloo.Hat_Igloo.Glitter_N
 	Name: Glitter_N
-	Class: Texture2D
-	Outer: Package Hat_Igloo
+	Class: UTexture2D
+	Outer: Hat_Igloo
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000008c9dc with 0x00001869 Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: UTexture2D Hat_Igloo.Hat_Igloo.Hat_Igloo_N
 	Name: Hat_Igloo_N
-	Class: Texture2D
-	Outer: Package Hat_Igloo
+	Class: UTexture2D
+	Outer: Hat_Igloo
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000008e245 with 0x00001885 Bytes
 	Export Flags: 0x00000001
-[36]
+[Export 36]
+	Full Name: UTexture2D Hat_Igloo.Hat_Igloo.Hat_Igloo_RGB
 	Name: Hat_Igloo_RGB
-	Class: Texture2D
-	Outer: Package Hat_Igloo
+	Class: UTexture2D
+	Outer: Hat_Igloo
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000008faca with 0x00000d10 Bytes
 	Export Flags: 0x00000001
-[37]
+[Export 37]
+	Full Name: UTexture2D Hat_Igloo.Hat_Igloo.Hat_Igloo_Spec
 	Name: Hat_Igloo_Spec
-	Class: Texture2D
-	Outer: Package Hat_Igloo
+	Class: UTexture2D
+	Outer: Hat_Igloo
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000907da with 0x00000d10 Bytes
 	Export Flags: 0x00000001
@@ -493,103 +511,124 @@ AES: LrVEo265HtDsXQ6/JdI6gYrZ+2/Z2clJvSsc8IahVHA=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialExpressionStaticSwitchParameter
 	Name: MaterialExpressionStaticSwitchParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.MaterialExpressionTextureSampleParameter2D
 	Name: MaterialExpressionTextureSampleParameter2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.MaterialExpressionVectorParameter
 	Name: MaterialExpressionVectorParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.MaterialFunction
 	Name: MaterialFunction
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass Engine.StaticMesh
 	Name: StaticMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[10]
+	Class Package: Core
+	Outer: Engine
+[Import 10]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[11]
+	Class Package: Core
+	Outer: Engine
+[Import 11]
+	Full Name: UClass TAGame.ProductAsset_Attachment_TA
 	Name: ProductAsset_Attachment_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[12]
+	Class Package: Core
+	Outer: TAGame
+[Import 12]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[13]
+	Class Package: Core
+[Import 13]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[14]
+	Class Package: Core
+[Import 14]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[15]
+	Class Package: Core
+[Import 15]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UProductAsset_Attachment_TA ProductSlots.Hat.ProductAsset_Attachment_TA_2
 	Name: ProductAsset_Attachment_TA_2
 	Class: ProductAsset_Attachment_TA
-	Package: TAGame
-	Outer: ProductSlot_TA Hat
-[17]
+	Class Package: TAGame
+	Outer: Hat
+[Import 17]
+	Full Name: UProductSlot_TA ProductSlots.Hat
 	Name: Hat
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
-[18]
+	Class Package: TAGame
+	Outer: ProductSlots
+[Import 18]
+	Full Name: UMaterialFunction Engine_MaterialFunctions01.ImageAdjustment.CheapContrast
 	Name: CheapContrast
 	Class: MaterialFunction
-	Package: Engine
-	Outer: Package ImageAdjustment
-[19]
+	Class Package: Engine
+	Outer: ImageAdjustment
+[Import 19]
+	Full Name: UPackage Engine_MaterialFunctions01
 	Name: Engine_MaterialFunctions01
 	Class: Package
-	Package: Core
-[20]
+	Class Package: Core
+[Import 20]
+	Full Name: UPackage Engine_MaterialFunctions01.ImageAdjustment
 	Name: ImageAdjustment
 	Class: Package
-	Package: Core
-	Outer: Package Engine_MaterialFunctions01
+	Class Package: Core
+	Outer: Engine_MaterialFunctions01

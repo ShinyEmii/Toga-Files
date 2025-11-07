@@ -41,6 +41,7 @@ Test Data Size: 0x00003f7a
 Compressed Chunk Info Offset: 0x00000a26
 Last Block Size: 0x00000004
 Base Header Size: 0x00000099
+Encrypted Header Size: 0x000049d0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -48,150 +49,155 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ActivateDelay
-[1] AkAudio
-[2] AkBank
-[3] ArrayProperty
-[4] Bank
-[5] bClampedMax
-[6] bClampedMin
-[7] bClientSideOnly
-[8] bDisabled
-[9] bDisabledPIE
-[10] bHasImpulse
-[11] bHidden
-[12] BoolProperty
-[13] ByteProperty
-[14] Class
-[15] Core
-[16] DefaultViewX
-[17] DefaultViewY
-[18] DrawHeight
-[19] DrawWidth
-[20] DrawY
-[21] ELightingBuildQuality
-[22] Engine
-[23] FloatProperty
-[24] InputLinkIdx
-[25] InputLinks
-[26] IntProperty
-[27] Level
-[28] LevelLightingQuality
-[29] LinkDesc
-[30] LinkedOp
-[31] Links
-[32] Main_Sequence
-[33] MaxWidth
-[34] Model
-[35] music_sfx
-[36] NameProperty
-[37] None
-[38] ObjectProperty
-[39] ObjInstanceVersion
-[40] OutputLinks
-[41] OverrideDelta
-[42] Package
-[43] ParentSequence
-[44] PersistentLevel
-[45] Polys
-[46] Quality_Production
-[47] QueuedActivations
-[48] SeqAct_AkLoadBank
-[49] SeqEvent_LevelLoaded
-[50] Sequence
-[51] SequenceObjects
-[52] SFX_AMB_Reverb
-[53] StrProperty
-[54] Tag
-[55] TheWorld
-[56] World
-[57] WorldInfo
+[Name 0] [0x0007001000000000] ActivateDelay
+[Name 1] [0x0007001000000000] AkAudio
+[Name 2] [0x0007001000000000] AkBank
+[Name 3] [0x0007001000000000] ArrayProperty
+[Name 4] [0x0007001000000000] Bank
+[Name 5] [0x0007001000000000] bClampedMax
+[Name 6] [0x0007001000000000] bClampedMin
+[Name 7] [0x0007001000000000] bClientSideOnly
+[Name 8] [0x0007001000000000] bDisabled
+[Name 9] [0x0007001000000000] bDisabledPIE
+[Name 10] [0x0007001000000000] bHasImpulse
+[Name 11] [0x0007001000000000] bHidden
+[Name 12] [0x0007001000000000] BoolProperty
+[Name 13] [0x0007001000000000] ByteProperty
+[Name 14] [0x0007001000000000] Class
+[Name 15] [0x0007001000000000] Core
+[Name 16] [0x0007001000000000] DefaultViewX
+[Name 17] [0x0007001000000000] DefaultViewY
+[Name 18] [0x0007001000000000] DrawHeight
+[Name 19] [0x0007001000000000] DrawWidth
+[Name 20] [0x0007001000000000] DrawY
+[Name 21] [0x0007001000000000] ELightingBuildQuality
+[Name 22] [0x0007001000000000] Engine
+[Name 23] [0x0007001000000000] FloatProperty
+[Name 24] [0x0007001000000000] InputLinkIdx
+[Name 25] [0x0007001000000000] InputLinks
+[Name 26] [0x0007001000000000] IntProperty
+[Name 27] [0x0007001000000000] Level
+[Name 28] [0x0007001000000000] LevelLightingQuality
+[Name 29] [0x0007001000000000] LinkDesc
+[Name 30] [0x0007001000000000] LinkedOp
+[Name 31] [0x0007001000000000] Links
+[Name 32] [0x0007001000000000] Main_Sequence
+[Name 33] [0x0007001000000000] MaxWidth
+[Name 34] [0x0007001000000000] Model
+[Name 35] [0x0007001000000000] music_sfx
+[Name 36] [0x0007001000000000] NameProperty
+[Name 37] [0x0007001000000000] None
+[Name 38] [0x0007001000000000] ObjectProperty
+[Name 39] [0x0007001000000000] ObjInstanceVersion
+[Name 40] [0x0007001000000000] OutputLinks
+[Name 41] [0x0007001000000000] OverrideDelta
+[Name 42] [0x0007001000000000] Package
+[Name 43] [0x0007001000000000] ParentSequence
+[Name 44] [0x0007001000000000] PersistentLevel
+[Name 45] [0x0007001000000000] Polys
+[Name 46] [0x0007001000000000] Quality_Production
+[Name 47] [0x0007001000000000] QueuedActivations
+[Name 48] [0x0007001000000000] SeqAct_AkLoadBank
+[Name 49] [0x0007001000000000] SeqEvent_LevelLoaded
+[Name 50] [0x0007001000000000] Sequence
+[Name 51] [0x0007001000000000] SequenceObjects
+[Name 52] [0x0007001000000000] SFX_AMB_Reverb
+[Name 53] [0x0007001000000000] StrProperty
+[Name 54] [0x0007001000000000] Tag
+[Name 55] [0x0007001000000000] TheWorld
+[Name 56] [0x0007001000000000] World
+[Name 57] [0x0007001000000000] WorldInfo
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAkBank Music_SFX.SFX_AMB_Reverb.SFX_AMB_Reverb
 	Name: SFX_AMB_Reverb
-	Class: AkBank
-	Outer: Package SFX_AMB_Reverb
+	Class: UAkBank
+	Outer: SFX_AMB_Reverb
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000abf with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: ULevel Music_SFX.TheWorld.PersistentLevel
 	Name: PersistentLevel
-	Class: Level
-	Outer: World TheWorld
+	Class: ULevel
+	Outer: TheWorld
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000000acb with 0x00000108 Bytes
 	Export Flags: 0x00000000
-[2]
+[Export 2]
+	Full Name: UModel Music_SFX.TheWorld.PersistentLevel.Model_4
 	Name: Model_4
-	Class: Model
-	Outer: Level PersistentLevel
+	Class: UModel
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000017a9 with 0x0000009c Bytes
 	Export Flags: 0x00000000
-[3]
+[Export 3]
+	Full Name: UPackage Music_SFX.music_sfx
 	Name: music_sfx
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000c6f with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x99d34164 0x46c0dfaf 0xf4a675ae 0x4919e1ca
 	Package Flags: 0x228a0009
-[4]
+[Export 4]
+	Full Name: UPackage Music_SFX.SFX_AMB_Reverb
 	Name: SFX_AMB_Reverb
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000c7b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[5]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[6]
+[Export 6]
+	Full Name: USeqAct_AkLoadBank Music_SFX.TheWorld.PersistentLevel.Main_Sequence.SeqAct_AkLoadBank_0
 	Name: SeqAct_AkLoadBank_0
-	Class: SeqAct_AkLoadBank
-	Outer: Sequence Main_Sequence
+	Class: USeqAct_AkLoadBank
+	Outer: Main_Sequence
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000000c9f with 0x000004b7 Bytes
 	Export Flags: 0x00000000
-[7]
+[Export 7]
+	Full Name: USeqEvent_LevelLoaded Music_SFX.TheWorld.PersistentLevel.Main_Sequence.SeqEvent_LevelLoaded_0
 	Name: SeqEvent_LevelLoaded_0
-	Class: SeqEvent_LevelLoaded
-	Outer: Sequence Main_Sequence
+	Class: USeqEvent_LevelLoaded
+	Outer: Main_Sequence
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000001156 with 0x000004f5 Bytes
 	Export Flags: 0x00000000
-[8]
+[Export 8]
+	Full Name: USequence Music_SFX.TheWorld.PersistentLevel.Main_Sequence
 	Name: Main_Sequence
-	Class: Sequence
-	Outer: Level PersistentLevel
+	Class: USequence
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000164b with 0x00000068 Bytes
 	Export Flags: 0x00000000
-[9]
+[Export 9]
+	Full Name: UWorld Music_SFX.TheWorld
 	Name: TheWorld
-	Class: World
+	Class: UWorld
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000016b3 with 0x0000008c Bytes
 	Export Flags: 0x00000000
-[10]
+[Export 10]
+	Full Name: UWorldInfo Music_SFX.TheWorld.PersistentLevel.WorldInfo_2
 	Name: WorldInfo_2
-	Class: WorldInfo
-	Outer: Level PersistentLevel
+	Class: UWorldInfo
+	Outer: PersistentLevel
 	Object Flags: 0x0207000100000000
 	Serialized data: at 0x000000000000173f with 0x0000006a Bytes
 	Export Flags: 0x00000000
-[11]
+[Export 11]
+	Full Name: UPolys Music_SFX.TheWorld.PersistentLevel.Polys_16
 	Name: Polys_16
-	Class: Polys
-	Outer: Level PersistentLevel
+	Class: UPolys
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000001845 with 0x00000018 Bytes
 	Export Flags: 0x00000000
@@ -200,65 +206,78 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass AkAudio.SeqAct_AkLoadBank
 	Name: SeqAct_AkLoadBank
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[1]
+	Class Package: Core
+	Outer: AkAudio
+[Import 1]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[2]
+	Class Package: Core
+	Outer: Core
+[Import 2]
+	Full Name: UClass Engine.AkBank
 	Name: AkBank
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.Level
 	Name: Level
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.Model
 	Name: Model
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.Polys
 	Name: Polys
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.SeqEvent_LevelLoaded
 	Name: SeqEvent_LevelLoaded
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.Sequence
 	Name: Sequence
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.World
 	Name: World
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass Engine.WorldInfo
 	Name: WorldInfo
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[10]
+	Class Package: Core
+	Outer: Engine
+[Import 10]
+	Full Name: UPackage AkAudio
 	Name: AkAudio
 	Class: Package
-	Package: Core
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[12]
+	Class Package: Core
+[Import 12]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
+	Class Package: Core

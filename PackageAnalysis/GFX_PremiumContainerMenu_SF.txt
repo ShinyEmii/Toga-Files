@@ -289,6 +289,7 @@ Test Data Size: 0x00003f87
 Compressed Chunk Info Offset: 0x000020e1
 Last Block Size: 0x0000000c
 Base Header Size: 0x000003b5
+Encrypted Header Size: 0x000060c0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -296,547 +297,298 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] bIsSourceArtUncompressed
-[2] BoolProperty
-[3] BuildBlueprintArrow
-[4] BuildBlueprintArrowShadow
-[5] BuildBlueprintArrowStrip
-[6] bUsesFontlib
-[7] ByteProperty
-[8] Class
-[9] CompressionNone
-[10] ContainerPreviewBackgroundArrow
-[11] ContainerPreviewBackgroundArrow_Glow
-[12] ContainerPreviewPanelBackground
-[13] Core
-[14] CraftComponent_Over
-[15] CraftComponent_Up
-[16] Engine
-[17] EPixelFormat
-[18] FlashTextureRescale
-[19] FlashTextureScale_Mult4
-[20] Format
-[21] GFX_PremiumContainerMenu
-[22] GFX_PremiumContainerMenu_SF
-[23] GFX_Shared
-[24] GFX_Shared_PartnerLogos
-[25] GFxUI
-[26] IntProperty
-[27] Key_Thumbs
-[28] LODGroup
-[29] Logo_2Fast2Furious
-[30] Logo_89Batman
-[31] Logo_BackToTheFuture
-[32] Logo_BatmanVsSuperman
-[33] Logo_BBB
-[34] Logo_BeatSaber
-[35] Logo_CobraKai
-[36] Logo_DarkKnightRises
-[37] Logo_DCComics
-[38] Logo_DodgeOLP
-[39] Logo_ET
-[40] Logo_FastAndFurious
-[41] Logo_FateOfTheFurious
-[42] Logo_GearsOfWar
-[43] Logo_Ghostbusters
-[44] Logo_Halo
-[45] Logo_HatsuneMiku
-[46] Logo_HotWheels
-[47] Logo_Jeep
-[48] Logo_JurassicWorld
-[49] Logo_KarateKid
-[50] Logo_KnightRider
-[51] Logo_McLaren
-[52] Logo_Metroid
-[53] Logo_NBA
-[54] Logo_Nissan
-[55] Logo_NitroCircus
-[56] Logo_RickAndMorty
-[57] Logo_StrangerThings
-[58] Logo_SunsetOverdrive
-[59] Logo_SuperMario
-[60] Logo_TheFlash
-[61] Logo_TheGoonies
-[62] Logo_VoltronLD
-[63] Logo_WWE
-[64] Logo_WWEClassic
-[65] Logo_Xbox
-[66] MipTailBaseIdx
-[67] NameProperty
-[68] None
-[69] ObjectReferencer
-[70] OpeningBackground
-[71] OpeningBackgroundEdgeOverlay
-[72] OriginalSizeX
-[73] OriginalSizeY
-[74] Package
-[75] PackTextureSize
-[76] PartnerLogos
-[77] PF_A8R8G8B8
-[78] PF_DXT1
-[79] PF_DXT5
-[80] PremiumContainerMenu
-[81] RawData
-[82] ReferencedObjects
-[83] ReferencedSwfs
-[84] References
-[85] RouletteWheel_NeedleArrow
-[86] RouletteWheel_NeedleLine
-[87] RouletteWheel_ProductEdgeGlow
-[88] RouletteWheel_ProductFlash
-[89] RouletteWheel_ProductHighlight
-[90] RouletteWheel_ProductPulsatingGlow
-[91] SharedComponents
-[92] SizeX
-[93] SizeY
-[94] SourceFile
-[95] SourceFileCRC
-[96] SourceFileTimestamp
-[97] SRGB
-[98] StandaloneSeekFreeReferencer
-[99] StrProperty
-[100] SwfMovie
-[101] Texture2D
-[102] TextureFileCacheName
-[103] TextureFormat
-[104] TextureGroup
-[105] TEXTUREGROUP_UI
-[106] TextureRescale
-[107] Textures4
-[108] Textures5
-[109] Thumb_KeyGeneric
-[110] UserReferences
-[111] MipGenSettings
-[112] NeverStream
-[113] PremiumContainerMenu_I14
-[114] PremiumContainerMenu_IE
-[115] TextureMipGenSettings
-[116] TMGS_NoMipmaps
-[117] PremiumContainerMenu_I7
-[118] PremiumContainerMenu_IA
-[119] PremiumContainerMenu_I4
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] bIsSourceArtUncompressed
+[Name 2] [0x0007001000000000] BoolProperty
+[Name 3] [0x0007001000000000] BuildBlueprintArrow
+[Name 4] [0x0007001000000000] BuildBlueprintArrowShadow
+[Name 5] [0x0007001000000000] BuildBlueprintArrowStrip
+[Name 6] [0x0007001000000000] bUsesFontlib
+[Name 7] [0x0007001000000000] ByteProperty
+[Name 8] [0x0007001000000000] Class
+[Name 9] [0x0007001000000000] CompressionNone
+[Name 10] [0x0007000000000000] ContainerPreviewBackgroundArrow
+[Name 11] [0x0007000000000000] ContainerPreviewBackgroundArrow_Glow
+[Name 12] [0x0007001000000000] ContainerPreviewPanelBackground
+[Name 13] [0x0007001000000000] Core
+[Name 14] [0x0007001000000000] CraftComponent_Over
+[Name 15] [0x0007001000000000] CraftComponent_Up
+[Name 16] [0x0007001000000000] Engine
+[Name 17] [0x0007001000000000] EPixelFormat
+[Name 18] [0x0007001000000000] FlashTextureRescale
+[Name 19] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 20] [0x0007001000000000] Format
+[Name 21] [0x0007001000000000] GFX_PremiumContainerMenu
+[Name 22] [0x0007001000000000] GFX_PremiumContainerMenu_SF
+[Name 23] [0x0007001000000000] GFX_Shared
+[Name 24] [0x0007000000000000] GFX_Shared_PartnerLogos
+[Name 25] [0x0007001000000000] GFxUI
+[Name 26] [0x0007001000000000] IntProperty
+[Name 27] [0x0007001000000000] Key_Thumbs
+[Name 28] [0x0007001000000000] LODGroup
+[Name 29] [0x0007000000000000] Logo_2Fast2Furious
+[Name 30] [0x0007000000000000] Logo_89Batman
+[Name 31] [0x0007000000000000] Logo_BackToTheFuture
+[Name 32] [0x0007000000000000] Logo_BatmanVsSuperman
+[Name 33] [0x0007000000000000] Logo_BBB
+[Name 34] [0x0007000000000000] Logo_BeatSaber
+[Name 35] [0x0007000000000000] Logo_CobraKai
+[Name 36] [0x0007000000000000] Logo_DarkKnightRises
+[Name 37] [0x0007000000000000] Logo_DCComics
+[Name 38] [0x0007000000000000] Logo_DodgeOLP
+[Name 39] [0x0007000000000000] Logo_ET
+[Name 40] [0x0007000000000000] Logo_FastAndFurious
+[Name 41] [0x0007000000000000] Logo_FateOfTheFurious
+[Name 42] [0x0007000000000000] Logo_GearsOfWar
+[Name 43] [0x0007000000000000] Logo_Ghostbusters
+[Name 44] [0x0007000000000000] Logo_Halo
+[Name 45] [0x0007000000000000] Logo_HatsuneMiku
+[Name 46] [0x0007000000000000] Logo_HotWheels
+[Name 47] [0x0007000000000000] Logo_Jeep
+[Name 48] [0x0007000000000000] Logo_JurassicWorld
+[Name 49] [0x0007000000000000] Logo_KarateKid
+[Name 50] [0x0007000000000000] Logo_KnightRider
+[Name 51] [0x0007000000000000] Logo_McLaren
+[Name 52] [0x0007000000000000] Logo_Metroid
+[Name 53] [0x0007000000000000] Logo_NBA
+[Name 54] [0x0007000000000000] Logo_Nissan
+[Name 55] [0x0007000000000000] Logo_NitroCircus
+[Name 56] [0x0007000000000000] Logo_RickAndMorty
+[Name 57] [0x0007000000000000] Logo_StrangerThings
+[Name 58] [0x0007000000000000] Logo_SunsetOverdrive
+[Name 59] [0x0007000000000000] Logo_SuperMario
+[Name 60] [0x0007000000000000] Logo_TheFlash
+[Name 61] [0x0007000000000000] Logo_TheGoonies
+[Name 62] [0x0007000000000000] Logo_VoltronLD
+[Name 63] [0x0007000000000000] Logo_WWE
+[Name 64] [0x0007000000000000] Logo_WWEClassic
+[Name 65] [0x0007000000000000] Logo_Xbox
+[Name 66] [0x0007001000000000] MipTailBaseIdx
+[Name 67] [0x0007001000000000] NameProperty
+[Name 68] [0x0007001000000000] None
+[Name 69] [0x0007001000000000] ObjectReferencer
+[Name 70] [0x0007000000000000] OpeningBackground
+[Name 71] [0x0007001000000000] OpeningBackgroundEdgeOverlay
+[Name 72] [0x0007001000000000] OriginalSizeX
+[Name 73] [0x0007001000000000] OriginalSizeY
+[Name 74] [0x0007001000000000] Package
+[Name 75] [0x0007001000000000] PackTextureSize
+[Name 76] [0x0007000000000000] PartnerLogos
+[Name 77] [0x0007001000000000] PF_A8R8G8B8
+[Name 78] [0x0007000000000000] PF_DXT1
+[Name 79] [0x0007001000000000] PF_DXT5
+[Name 80] [0x0007001000000000] PremiumContainerMenu
+[Name 81] [0x0007001000000000] RawData
+[Name 82] [0x0007001000000000] ReferencedObjects
+[Name 83] [0x0007001000000000] ReferencedSwfs
+[Name 84] [0x0007001000000000] References
+[Name 85] [0x0007001000000000] RouletteWheel_NeedleArrow
+[Name 86] [0x0007001000000000] RouletteWheel_NeedleLine
+[Name 87] [0x0007001000000000] RouletteWheel_ProductEdgeGlow
+[Name 88] [0x0007001000000000] RouletteWheel_ProductFlash
+[Name 89] [0x0007001000000000] RouletteWheel_ProductHighlight
+[Name 90] [0x0007001000000000] RouletteWheel_ProductPulsatingGlow
+[Name 91] [0x0007001000000000] SharedComponents
+[Name 92] [0x0007001000000000] SizeX
+[Name 93] [0x0007001000000000] SizeY
+[Name 94] [0x0007001000000000] SourceFile
+[Name 95] [0x0007001000000000] SourceFileCRC
+[Name 96] [0x0007001000000000] SourceFileTimestamp
+[Name 97] [0x0007001000000000] SRGB
+[Name 98] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 99] [0x0007001000000000] StrProperty
+[Name 100] [0x0007001000000000] SwfMovie
+[Name 101] [0x0007001000000000] Texture2D
+[Name 102] [0x0007001000000000] TextureFileCacheName
+[Name 103] [0x0007001000000000] TextureFormat
+[Name 104] [0x0007001000000000] TextureGroup
+[Name 105] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 106] [0x0007001000000000] TextureRescale
+[Name 107] [0x0007001000000000] Textures4
+[Name 108] [0x0007001000000000] Textures5
+[Name 109] [0x0007001000000000] Thumb_KeyGeneric
+[Name 110] [0x0007001000000000] UserReferences
+[Name 111] [0x0007001000000000] MipGenSettings
+[Name 112] [0x0007001000000000] NeverStream
+[Name 113] [0x0007000000000000] PremiumContainerMenu_I14
+[Name 114] [0x0007000000000000] PremiumContainerMenu_IE
+[Name 115] [0x0007001000000000] TextureMipGenSettings
+[Name 116] [0x0007001000000000] TMGS_NoMipmaps
+[Name 117] [0x0007001000000000] PremiumContainerMenu_I7
+[Name 118] [0x0007000000000000] PremiumContainerMenu_IA
+[Name 119] [0x0007001000000000] PremiumContainerMenu_I4
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UObjectReferencer GFX_PremiumContainerMenu.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000002496 with 0x00000068 Bytes
 	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UPackage GFX_PremiumContainerMenu.GFX_PremiumContainerMenu
 	Name: GFX_PremiumContainerMenu
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000024fe with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[2]
+[Export 2]
+	Full Name: UPackage GFX_PremiumContainerMenu.GFX_PremiumContainerMenu_SF
 	Name: GFX_PremiumContainerMenu_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000250a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[3]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[4]
+[Export 4]
+	Full Name: UPackage GFX_PremiumContainerMenu.Key_Thumbs
 	Name: Key_Thumbs
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002516 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[5]
+[Export 5]
+	Full Name: USwfMovie GFX_PremiumContainerMenu.GFX_PremiumContainerMenu.PremiumContainerMenu
 	Name: PremiumContainerMenu
-	Class: SwfMovie
-	Outer: Package GFX_PremiumContainerMenu
+	Class: USwfMovie
+	Outer: GFX_PremiumContainerMenu
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000416bd0 with 0x001125b2 Bytes
 	Export Flags: 0x00000001
-[6]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[7]
+[Export 7]
+	Full Name: UTexture2D GFX_PremiumContainerMenu.GFX_PremiumContainerMenu.BuildBlueprintArrow
 	Name: BuildBlueprintArrow
-	Class: Texture2D
-	Outer: Package GFX_PremiumContainerMenu
+	Class: UTexture2D
+	Outer: GFX_PremiumContainerMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001084b9 with 0x00000979 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UTexture2D GFX_PremiumContainerMenu.GFX_PremiumContainerMenu.BuildBlueprintArrowShadow
 	Name: BuildBlueprintArrowShadow
-	Class: Texture2D
-	Outer: Package GFX_PremiumContainerMenu
+	Class: UTexture2D
+	Outer: GFX_PremiumContainerMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000108e32 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UTexture2D GFX_PremiumContainerMenu.GFX_PremiumContainerMenu.BuildBlueprintArrowStrip
 	Name: BuildBlueprintArrowStrip
-	Class: Texture2D
-	Outer: Package GFX_PremiumContainerMenu
+	Class: UTexture2D
+	Outer: GFX_PremiumContainerMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000118fab with 0x00008179 Bytes
 	Export Flags: 0x00000001
-[10]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[11]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[12]
+[Export 12]
+	Full Name: UTexture2D GFX_PremiumContainerMenu.GFX_PremiumContainerMenu.ContainerPreviewPanelBackground
 	Name: ContainerPreviewPanelBackground
-	Class: Texture2D
-	Outer: Package GFX_PremiumContainerMenu
+	Class: UTexture2D
+	Outer: GFX_PremiumContainerMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000121124 with 0x00020179 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UTexture2D GFX_PremiumContainerMenu.GFX_PremiumContainerMenu.CraftComponent_Over
 	Name: CraftComponent_Over
-	Class: Texture2D
-	Outer: Package GFX_PremiumContainerMenu
+	Class: UTexture2D
+	Outer: GFX_PremiumContainerMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000014129d with 0x00002179 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UTexture2D GFX_PremiumContainerMenu.GFX_PremiumContainerMenu.CraftComponent_Up
 	Name: CraftComponent_Up
-	Class: Texture2D
-	Outer: Package GFX_PremiumContainerMenu
+	Class: UTexture2D
+	Outer: GFX_PremiumContainerMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000143416 with 0x00002179 Bytes
 	Export Flags: 0x00000001
-[15]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[16]
+[Export 16]
+	Full Name: UTexture2D GFX_PremiumContainerMenu.GFX_PremiumContainerMenu.OpeningBackgroundEdgeOverlay
 	Name: OpeningBackgroundEdgeOverlay
-	Class: Texture2D
-	Outer: Package GFX_PremiumContainerMenu
+	Class: UTexture2D
+	Outer: GFX_PremiumContainerMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000014558f with 0x00004179 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UTexture2D GFX_PremiumContainerMenu.GFX_PremiumContainerMenu.RouletteWheel_NeedleArrow
 	Name: RouletteWheel_NeedleArrow
-	Class: Texture2D
-	Outer: Package GFX_PremiumContainerMenu
+	Class: UTexture2D
+	Outer: GFX_PremiumContainerMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000149708 with 0x00008179 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UTexture2D GFX_PremiumContainerMenu.GFX_PremiumContainerMenu.RouletteWheel_NeedleLine
 	Name: RouletteWheel_NeedleLine
-	Class: Texture2D
-	Outer: Package GFX_PremiumContainerMenu
+	Class: UTexture2D
+	Outer: GFX_PremiumContainerMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000151881 with 0x00004179 Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UTexture2D GFX_PremiumContainerMenu.GFX_PremiumContainerMenu.RouletteWheel_ProductEdgeGlow
 	Name: RouletteWheel_ProductEdgeGlow
-	Class: Texture2D
-	Outer: Package GFX_PremiumContainerMenu
+	Class: UTexture2D
+	Outer: GFX_PremiumContainerMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001559fa with 0x00008179 Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UTexture2D GFX_PremiumContainerMenu.GFX_PremiumContainerMenu.RouletteWheel_ProductFlash
 	Name: RouletteWheel_ProductFlash
-	Class: Texture2D
-	Outer: Package GFX_PremiumContainerMenu
+	Class: UTexture2D
+	Outer: GFX_PremiumContainerMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000015db73 with 0x00004179 Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UTexture2D GFX_PremiumContainerMenu.GFX_PremiumContainerMenu.RouletteWheel_ProductHighlight
 	Name: RouletteWheel_ProductHighlight
-	Class: Texture2D
-	Outer: Package GFX_PremiumContainerMenu
+	Class: UTexture2D
+	Outer: GFX_PremiumContainerMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000161cec with 0x00008179 Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UTexture2D GFX_PremiumContainerMenu.GFX_PremiumContainerMenu.RouletteWheel_ProductPulsatingGlow
 	Name: RouletteWheel_ProductPulsatingGlow
-	Class: Texture2D
-	Outer: Package GFX_PremiumContainerMenu
+	Class: UTexture2D
+	Outer: GFX_PremiumContainerMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000169e65 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[23]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[24]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[25]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[26]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[27]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[28]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[29]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[30]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[31]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[32]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[33]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[34]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[35]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[36]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[37]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[38]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[39]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[40]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[41]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[42]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[43]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[44]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[45]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[46]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[47]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[48]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[49]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[50]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[51]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[52]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[53]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[54]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[55]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[56]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[57]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[58]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[59]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[60]
+[Export 60]
+	Full Name: UTexture2D GFX_PremiumContainerMenu.Key_Thumbs.Thumb_KeyGeneric
 	Name: Thumb_KeyGeneric
-	Class: Texture2D
-	Outer: Package Key_Thumbs
+	Class: UTexture2D
+	Outer: Key_Thumbs
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000179fde with 0x000401ab Bytes
 	Export Flags: 0x00000001
-[61]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[62]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[63]
+[Export 63]
+	Full Name: UTexture2D GFX_PremiumContainerMenu.GFX_PremiumContainerMenu.PremiumContainerMenu_I7
 	Name: PremiumContainerMenu_I7
-	Class: Texture2D
-	Outer: Package GFX_PremiumContainerMenu
+	Class: UTexture2D
+	Outer: GFX_PremiumContainerMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001ba189 with 0x0002017e Bytes
 	Export Flags: 0x00000001
-[64]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[65]
+[Export 65]
+	Full Name: UTexture2D GFX_PremiumContainerMenu.GFX_PremiumContainerMenu.PremiumContainerMenu_I4
 	Name: PremiumContainerMenu_I4
-	Class: Texture2D
-	Outer: Package GFX_PremiumContainerMenu
+	Class: UTexture2D
+	Outer: GFX_PremiumContainerMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001da307 with 0x0002727e Bytes
 	Export Flags: 0x00000001
@@ -845,44 +597,53 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[4]
+	Class Package: Core
+	Outer: GFxUI
+[Import 4]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[5]
+	Class Package: Core
+[Import 5]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[6]
+	Class Package: Core
+[Import 6]
+	Full Name: UPackage GFX_Shared
 	Name: GFX_Shared
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: USwfMovie GFX_Shared.SharedComponents
 	Name: SharedComponents
 	Class: SwfMovie
-	Package: GFxUI
-	Outer: Package GFX_Shared
+	Class Package: GFxUI
+	Outer: GFX_Shared

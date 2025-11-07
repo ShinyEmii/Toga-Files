@@ -153,6 +153,7 @@ Test Data Size: 0x00003fcc
 Compressed Chunk Info Offset: 0x00000a04
 Last Block Size: 0x00000004
 Base Header Size: 0x000001e9
+Encrypted Header Size: 0x00004a00
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -160,190 +161,165 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] All
-[1] ArrayProperty
-[2] BoolProperty
-[3] bUsesFontlib
-[4] ByteProperty
-[5] Class
-[6] Core
-[7] Engine
-[8] EPixelFormat
-[9] FlashTextureRescale
-[10] FlashTextureScale_Mult4
-[11] Format
-[12] GFX_PremiumInventory
-[13] GFX_PremiumInventory_SF
-[14] GFX_Shared
-[15] GFxUI
-[16] Icons
-[17] IntProperty
-[18] ItemDestroyPanelArrow
-[19] ItemDestroyPanelArrow_Glow
-[20] ItemDestroyTintablePanelTab_Over
-[21] ItemDestroyTintablePanelTab_Up
-[22] LODGroup
-[23] MipTailBaseIdx
-[24] NameProperty
-[25] None
-[26] ObjectReferencer
-[27] OriginalSizeX
-[28] OriginalSizeY
-[29] Package
-[30] PackTextureSize
-[31] PF_DXT5
-[32] PremiumInventory
-[33] ProductSlots
-[34] RawData
-[35] ReferencedObjects
-[36] ReferencedSwfs
-[37] References
-[38] SharedComponents
-[39] SizeX
-[40] SizeY
-[41] SourceFile
-[42] SourceFileCRC
-[43] SourceFileTimestamp
-[44] SRGB
-[45] StandaloneSeekFreeReferencer
-[46] StrProperty
-[47] SwfMovie
-[48] Texture2D
-[49] TextureFileCacheName
-[50] TextureFormat
-[51] TextureGroup
-[52] TEXTUREGROUP_UI
-[53] TextureRescale
-[54] Textures7
-[55] TradeUp_Background
-[56] TradeUp_OpenSlot
-[57] UserReferences
+[Name 0] [0x0007001000000000] All
+[Name 1] [0x0007001000000000] ArrayProperty
+[Name 2] [0x0007001000000000] BoolProperty
+[Name 3] [0x0007001000000000] bUsesFontlib
+[Name 4] [0x0007001000000000] ByteProperty
+[Name 5] [0x0007001000000000] Class
+[Name 6] [0x0007001000000000] Core
+[Name 7] [0x0007001000000000] Engine
+[Name 8] [0x0007000000000000] EPixelFormat
+[Name 9] [0x0007001000000000] FlashTextureRescale
+[Name 10] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 11] [0x0007000000000000] Format
+[Name 12] [0x0007001000000000] GFX_PremiumInventory
+[Name 13] [0x0007001000000000] GFX_PremiumInventory_SF
+[Name 14] [0x0007001000000000] GFX_Shared
+[Name 15] [0x0007001000000000] GFxUI
+[Name 16] [0x0007001000000000] Icons
+[Name 17] [0x0007001000000000] IntProperty
+[Name 18] [0x0007000000000000] ItemDestroyPanelArrow
+[Name 19] [0x0007000000000000] ItemDestroyPanelArrow_Glow
+[Name 20] [0x0007000000000000] ItemDestroyTintablePanelTab_Over
+[Name 21] [0x0007000000000000] ItemDestroyTintablePanelTab_Up
+[Name 22] [0x0007000000000000] LODGroup
+[Name 23] [0x0007000000000000] MipTailBaseIdx
+[Name 24] [0x0007000000000000] NameProperty
+[Name 25] [0x0007001000000000] None
+[Name 26] [0x0007001000000000] ObjectReferencer
+[Name 27] [0x0007000000000000] OriginalSizeX
+[Name 28] [0x0007000000000000] OriginalSizeY
+[Name 29] [0x0007001000000000] Package
+[Name 30] [0x0007001000000000] PackTextureSize
+[Name 31] [0x0007000000000000] PF_DXT5
+[Name 32] [0x0007001000000000] PremiumInventory
+[Name 33] [0x0007001000000000] ProductSlots
+[Name 34] [0x0007001000000000] RawData
+[Name 35] [0x0007001000000000] ReferencedObjects
+[Name 36] [0x0007001000000000] ReferencedSwfs
+[Name 37] [0x0007001000000000] References
+[Name 38] [0x0007001000000000] SharedComponents
+[Name 39] [0x0007000000000000] SizeX
+[Name 40] [0x0007000000000000] SizeY
+[Name 41] [0x0007001000000000] SourceFile
+[Name 42] [0x0007001000000000] SourceFileCRC
+[Name 43] [0x0007001000000000] SourceFileTimestamp
+[Name 44] [0x0007000000000000] SRGB
+[Name 45] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 46] [0x0007001000000000] StrProperty
+[Name 47] [0x0007001000000000] SwfMovie
+[Name 48] [0x0007001000000000] Texture2D
+[Name 49] [0x0007000000000000] TextureFileCacheName
+[Name 50] [0x0007001000000000] TextureFormat
+[Name 51] [0x0007000000000000] TextureGroup
+[Name 52] [0x0007000000000000] TEXTUREGROUP_UI
+[Name 53] [0x0007001000000000] TextureRescale
+[Name 54] [0x0007000000000000] Textures7
+[Name 55] [0x0007000000000000] TradeUp_Background
+[Name 56] [0x0007000000000000] TradeUp_OpenSlot
+[Name 57] [0x0007001000000000] UserReferences
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UObjectReferencer GFX_PremiumInventory.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000000bed with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UPackage GFX_PremiumInventory.GFX_PremiumInventory
 	Name: GFX_PremiumInventory
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000c19 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[2]
+[Export 2]
+	Full Name: UPackage GFX_PremiumInventory.GFX_PremiumInventory_SF
 	Name: GFX_PremiumInventory_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000c25 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[3]
+[Export 3]
+	Full Name: USwfMovie GFX_PremiumInventory.GFX_PremiumInventory.PremiumInventory
 	Name: PremiumInventory
-	Class: SwfMovie
-	Outer: Package GFX_PremiumInventory
+	Class: USwfMovie
+	Outer: GFX_PremiumInventory
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000ffed1 with 0x001019dd Bytes
 	Export Flags: 0x00000001
-[4]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[5]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[6]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[7]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[8]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[9]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
 
 
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
-	Name: None
-	Class: None
-	Package: None
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[4]
+	Class Package: Core
+	Outer: GFxUI
+[Import 4]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[5]
+	Class Package: Core
+[Import 5]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[6]
+	Class Package: Core
+[Import 6]
+	Full Name: UPackage GFX_Shared
 	Name: GFX_Shared
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage ProductSlots.Icons
 	Name: Icons
 	Class: Package
-	Package: Core
-	Outer: Package ProductSlots
-[10]
+	Class Package: Core
+	Outer: ProductSlots
+[Import 10]
+	Full Name: USwfMovie GFX_Shared.SharedComponents
 	Name: SharedComponents
 	Class: SwfMovie
-	Package: GFxUI
-	Outer: Package GFX_Shared
-[11]
+	Class Package: GFxUI
+	Outer: GFX_Shared
+[Import 11]
+	Full Name: UTexture2D ProductSlots.Icons.All
 	Name: All
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Icons
+	Class Package: Engine
+	Outer: Icons

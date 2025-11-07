@@ -73,6 +73,7 @@ Test Data Size: 0x00003c07
 Compressed Chunk Info Offset: 0x00001899
 Last Block Size: 0x00000004
 Base Header Size: 0x000000f9
+Encrypted Header Size: 0x00005500
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -80,424 +81,456 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] AkAudio
-[1] AkBank
-[2] AkSoundCue
-[3] ArrayProperty
-[4] BALLCAM_OFF
-[5] BALLCAM_ON
-[6] Boost_Pickup_Loop
-[7] Boost_Pickup_TickUp
-[8] BOOST_TICK
-[9] ChatMessage
-[10] Class
-[11] Core
-[12] Engine
-[13] ExportClassName
-[14] GFxSoundPack_X
-[15] GFxSounds_HUD
-[16] GFxSounds_HUD_SF
-[17] ITEM_UNLOCK_BLACK_MARKET
-[18] ITEM_UNLOCK_COMMON
-[19] ITEM_UNLOCK_CRATE
-[20] ITEM_UNLOCK_EXOTIC
-[21] ITEM_UNLOCK_IMPORT
-[22] ITEM_UNLOCK_RARE
-[23] ITEM_UNLOCK_SWEET_TOOTH
-[24] ITEM_UNLOCK_UNCOMMON
-[25] ITEM_UNLOCK_VERY_RARE
-[26] ITEMS_MODE_NEW_ITEM_READY
-[27] ITEMS_MODE_TARGETED
-[28] Name
-[29] NameProperty
-[30] None
-[31] ObjectProperty
-[32] ObjectReferencer
-[33] Package
-[34] PAUSE_MENU_CLOSE
-[35] PAUSE_MENU_OPEN
-[36] ProjectX
-[37] ReferencedObjects
-[38] RequiredBank
-[39] SFX_UI_Boost
-[40] SFX_UI_InGame
-[41] SFX_UI_StatEvents
-[42] SFX_UI_Unlocks
-[43] Sound
-[44] Sounds
-[45] StandaloneSeekFreeReferencer
-[46] StartEvent
-[47] StatEvent_AerialHit
-[48] StatEvent_Assist
-[49] StatEvent_Default
-[50] StatEvent_Demolish
-[51] StatEvent_EpicSave
-[52] StatEvent_Goal
-[53] StatEvent_Loss
-[54] StatEvent_Save
-[55] StatEvent_Win
-[56] StopEvent
-[57] StrProperty
-[58] UI_InGame_BallCam_Start
-[59] UI_InGame_BallCam_Stop
-[60] UI_InGame_PauseMenu_Close
-[61] UI_InGame_PauseMenu_Open
-[62] UI_ItemsMode_NewItemReady
-[63] UI_ItemsMode_Targeted
-[64] UI_ItemUnlock_BlackMarket
-[65] UI_ItemUnlock_Common
-[66] UI_ItemUnlock_CratesAndKeysScene
-[67] UI_ItemUnlock_Exotic
-[68] UI_ItemUnlock_Import
-[69] UI_ItemUnlock_Rare
-[70] UI_ItemUnlock_SweetTooth
-[71] UI_ItemUnlock_Uncommon
-[72] UI_ItemUnlock_VeryRare
-[73] UI_Notification_ChatMessage
-[74] UI_StatEvent_ArielHit
-[75] UI_StatEvent_Assist
-[76] UI_StatEvent_Default
-[77] UI_StatEvent_Demolish
-[78] UI_StatEvent_EpicSave
-[79] UI_StatEvent_GameLose
-[80] UI_StatEvent_GameWin
-[81] UI_StatEvent_Goal
-[82] UI_StatEvent_Save
-[83] ITEM_MODE_ITEM_CYCLE
-[84] ITEM_MODE_ITEMS_APPEAR
-[85] SFX_ItemsMode
-[86] UI_Rumble_Appear_01
-[87] UI_Rumble_Toggle_01
-[88] Knockout_Ability_Reset
-[89] KO_MODE_ABILITY_RESET
-[90] SFX_Knockout
+[Name 0] [0x0007001000000000] AkAudio
+[Name 1] [0x0007001000000000] AkBank
+[Name 2] [0x0007001000000000] AkSoundCue
+[Name 3] [0x0007001000000000] ArrayProperty
+[Name 4] [0x0007001000000000] BALLCAM_OFF
+[Name 5] [0x0007001000000000] BALLCAM_ON
+[Name 6] [0x0007001000000000] Boost_Pickup_Loop
+[Name 7] [0x0007001000000000] Boost_Pickup_TickUp
+[Name 8] [0x0007001000000000] BOOST_TICK
+[Name 9] [0x0007001000000000] ChatMessage
+[Name 10] [0x0007001000000000] Class
+[Name 11] [0x0007001000000000] Core
+[Name 12] [0x0007001000000000] Engine
+[Name 13] [0x0007001000000000] ExportClassName
+[Name 14] [0x0007001000000000] GFxSoundPack_X
+[Name 15] [0x0007001000000000] GFxSounds_HUD
+[Name 16] [0x0007001000000000] GFxSounds_HUD_SF
+[Name 17] [0x0007001000000000] ITEM_UNLOCK_BLACK_MARKET
+[Name 18] [0x0007001000000000] ITEM_UNLOCK_COMMON
+[Name 19] [0x0007001000000000] ITEM_UNLOCK_CRATE
+[Name 20] [0x0007001000000000] ITEM_UNLOCK_EXOTIC
+[Name 21] [0x0007001000000000] ITEM_UNLOCK_IMPORT
+[Name 22] [0x0007001000000000] ITEM_UNLOCK_RARE
+[Name 23] [0x0007001000000000] ITEM_UNLOCK_SWEET_TOOTH
+[Name 24] [0x0007001000000000] ITEM_UNLOCK_UNCOMMON
+[Name 25] [0x0007001000000000] ITEM_UNLOCK_VERY_RARE
+[Name 26] [0x0007001000000000] ITEMS_MODE_NEW_ITEM_READY
+[Name 27] [0x0007001000000000] ITEMS_MODE_TARGETED
+[Name 28] [0x0007001000000000] Name
+[Name 29] [0x0007001000000000] NameProperty
+[Name 30] [0x0007001000000000] None
+[Name 31] [0x0007001000000000] ObjectProperty
+[Name 32] [0x0007001000000000] ObjectReferencer
+[Name 33] [0x0007001000000000] Package
+[Name 34] [0x0007001000000000] PAUSE_MENU_CLOSE
+[Name 35] [0x0007001000000000] PAUSE_MENU_OPEN
+[Name 36] [0x0007001000000000] ProjectX
+[Name 37] [0x0007001000000000] ReferencedObjects
+[Name 38] [0x0007001000000000] RequiredBank
+[Name 39] [0x0007001000000000] SFX_UI_Boost
+[Name 40] [0x0007001000000000] SFX_UI_InGame
+[Name 41] [0x0007001000000000] SFX_UI_StatEvents
+[Name 42] [0x0007001000000000] SFX_UI_Unlocks
+[Name 43] [0x0007001000000000] Sound
+[Name 44] [0x0007001000000000] Sounds
+[Name 45] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 46] [0x0007001000000000] StartEvent
+[Name 47] [0x0007001000000000] StatEvent_AerialHit
+[Name 48] [0x0007001000000000] StatEvent_Assist
+[Name 49] [0x0007001000000000] StatEvent_Default
+[Name 50] [0x0007001000000000] StatEvent_Demolish
+[Name 51] [0x0007001000000000] StatEvent_EpicSave
+[Name 52] [0x0007001000000000] StatEvent_Goal
+[Name 53] [0x0007001000000000] StatEvent_Loss
+[Name 54] [0x0007001000000000] StatEvent_Save
+[Name 55] [0x0007001000000000] StatEvent_Win
+[Name 56] [0x0007001000000000] StopEvent
+[Name 57] [0x0007001000000000] StrProperty
+[Name 58] [0x0007001000000000] UI_InGame_BallCam_Start
+[Name 59] [0x0007001000000000] UI_InGame_BallCam_Stop
+[Name 60] [0x0007001000000000] UI_InGame_PauseMenu_Close
+[Name 61] [0x0007001000000000] UI_InGame_PauseMenu_Open
+[Name 62] [0x0007001000000000] UI_ItemsMode_NewItemReady
+[Name 63] [0x0007001000000000] UI_ItemsMode_Targeted
+[Name 64] [0x0007001000000000] UI_ItemUnlock_BlackMarket
+[Name 65] [0x0007001000000000] UI_ItemUnlock_Common
+[Name 66] [0x0007001000000000] UI_ItemUnlock_CratesAndKeysScene
+[Name 67] [0x0007001000000000] UI_ItemUnlock_Exotic
+[Name 68] [0x0007001000000000] UI_ItemUnlock_Import
+[Name 69] [0x0007001000000000] UI_ItemUnlock_Rare
+[Name 70] [0x0007001000000000] UI_ItemUnlock_SweetTooth
+[Name 71] [0x0007001000000000] UI_ItemUnlock_Uncommon
+[Name 72] [0x0007001000000000] UI_ItemUnlock_VeryRare
+[Name 73] [0x0007001000000000] UI_Notification_ChatMessage
+[Name 74] [0x0007001000000000] UI_StatEvent_ArielHit
+[Name 75] [0x0007001000000000] UI_StatEvent_Assist
+[Name 76] [0x0007001000000000] UI_StatEvent_Default
+[Name 77] [0x0007001000000000] UI_StatEvent_Demolish
+[Name 78] [0x0007001000000000] UI_StatEvent_EpicSave
+[Name 79] [0x0007001000000000] UI_StatEvent_GameLose
+[Name 80] [0x0007001000000000] UI_StatEvent_GameWin
+[Name 81] [0x0007001000000000] UI_StatEvent_Goal
+[Name 82] [0x0007001000000000] UI_StatEvent_Save
+[Name 83] [0x0007001000000000] ITEM_MODE_ITEM_CYCLE
+[Name 84] [0x0007001000000000] ITEM_MODE_ITEMS_APPEAR
+[Name 85] [0x0007001000000000] SFX_ItemsMode
+[Name 86] [0x0007001000000000] UI_Rumble_Appear_01
+[Name 87] [0x0007001000000000] UI_Rumble_Toggle_01
+[Name 88] [0x0007001000000000] Knockout_Ability_Reset
+[Name 89] [0x0007001000000000] KO_MODE_ABILITY_RESET
+[Name 90] [0x0007001000000000] SFX_Knockout
 
 
     ~ Exports ~ 
 
 
-[0]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[1]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[2]
+[Export 2]
+	Full Name: UAkBank GFxSounds_HUD.SFX_UI_StatEvents.SFX_UI_StatEvents
 	Name: SFX_UI_StatEvents
-	Class: AkBank
-	Outer: Package SFX_UI_StatEvents
+	Class: UAkBank
+	Outer: SFX_UI_StatEvents
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000019aa with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UAkBank GFxSounds_HUD.SFX_UI_Unlocks.SFX_UI_Unlocks
 	Name: SFX_UI_Unlocks
-	Class: AkBank
-	Outer: Package SFX_UI_Unlocks
+	Class: UAkBank
+	Outer: SFX_UI_Unlocks
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000019b6 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_Boost.Boost_Pickup_Loop
 	Name: Boost_Pickup_Loop
-	Class: AkSoundCue
-	Outer: Package SFX_UI_Boost
+	Class: UAkSoundCue
+	Outer: SFX_UI_Boost
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003d8a with 0x0000008e Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_Boost.Boost_Pickup_TickUp
 	Name: Boost_Pickup_TickUp
-	Class: AkSoundCue
-	Outer: Package SFX_UI_Boost
+	Class: UAkSoundCue
+	Outer: SFX_UI_Boost
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003e18 with 0x0000005d Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_InGame.UI_InGame_BallCam_Start
 	Name: UI_InGame_BallCam_Start
-	Class: AkSoundCue
-	Outer: Package SFX_UI_InGame
+	Class: UAkSoundCue
+	Outer: SFX_UI_InGame
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003e75 with 0x00000061 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_InGame.UI_InGame_BallCam_Stop
 	Name: UI_InGame_BallCam_Stop
-	Class: AkSoundCue
-	Outer: Package SFX_UI_InGame
+	Class: UAkSoundCue
+	Outer: SFX_UI_InGame
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003ed6 with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_InGame.UI_InGame_PauseMenu_Close
 	Name: UI_InGame_PauseMenu_Close
-	Class: AkSoundCue
-	Outer: Package SFX_UI_InGame
+	Class: UAkSoundCue
+	Outer: SFX_UI_InGame
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003f36 with 0x00000063 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_InGame.UI_InGame_PauseMenu_Open
 	Name: UI_InGame_PauseMenu_Open
-	Class: AkSoundCue
-	Outer: Package SFX_UI_InGame
+	Class: UAkSoundCue
+	Outer: SFX_UI_InGame
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003f99 with 0x00000062 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_InGame.UI_ItemsMode_NewItemReady
 	Name: UI_ItemsMode_NewItemReady
-	Class: AkSoundCue
-	Outer: Package SFX_UI_InGame
+	Class: UAkSoundCue
+	Outer: SFX_UI_InGame
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003ffb with 0x00000063 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_InGame.UI_ItemsMode_Targeted
 	Name: UI_ItemsMode_Targeted
-	Class: AkSoundCue
-	Outer: Package SFX_UI_InGame
+	Class: UAkSoundCue
+	Outer: SFX_UI_InGame
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000405e with 0x0000005f Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_InGame.UI_Notification_ChatMessage
 	Name: UI_Notification_ChatMessage
-	Class: AkSoundCue
-	Outer: Package SFX_UI_InGame
+	Class: UAkSoundCue
+	Outer: SFX_UI_InGame
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000040bd with 0x00000065 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_StatEvents.UI_StatEvent_ArielHit
 	Name: UI_StatEvent_ArielHit
-	Class: AkSoundCue
-	Outer: Package SFX_UI_StatEvents
+	Class: UAkSoundCue
+	Outer: SFX_UI_StatEvents
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001d5a with 0x0000005f Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_StatEvents.UI_StatEvent_Assist
 	Name: UI_StatEvent_Assist
-	Class: AkSoundCue
-	Outer: Package SFX_UI_StatEvents
+	Class: UAkSoundCue
+	Outer: SFX_UI_StatEvents
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001db9 with 0x0000005d Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_StatEvents.UI_StatEvent_Default
 	Name: UI_StatEvent_Default
-	Class: AkSoundCue
-	Outer: Package SFX_UI_StatEvents
+	Class: UAkSoundCue
+	Outer: SFX_UI_StatEvents
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001e16 with 0x0000005e Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_StatEvents.UI_StatEvent_Demolish
 	Name: UI_StatEvent_Demolish
-	Class: AkSoundCue
-	Outer: Package SFX_UI_StatEvents
+	Class: UAkSoundCue
+	Outer: SFX_UI_StatEvents
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001e74 with 0x0000005f Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_StatEvents.UI_StatEvent_EpicSave
 	Name: UI_StatEvent_EpicSave
-	Class: AkSoundCue
-	Outer: Package SFX_UI_StatEvents
+	Class: UAkSoundCue
+	Outer: SFX_UI_StatEvents
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001ed3 with 0x0000005f Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_StatEvents.UI_StatEvent_GameLose
 	Name: UI_StatEvent_GameLose
-	Class: AkSoundCue
-	Outer: Package SFX_UI_StatEvents
+	Class: UAkSoundCue
+	Outer: SFX_UI_StatEvents
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001f32 with 0x0000005f Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_StatEvents.UI_StatEvent_GameWin
 	Name: UI_StatEvent_GameWin
-	Class: AkSoundCue
-	Outer: Package SFX_UI_StatEvents
+	Class: UAkSoundCue
+	Outer: SFX_UI_StatEvents
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001f91 with 0x0000005e Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_StatEvents.UI_StatEvent_Goal
 	Name: UI_StatEvent_Goal
-	Class: AkSoundCue
-	Outer: Package SFX_UI_StatEvents
+	Class: UAkSoundCue
+	Outer: SFX_UI_StatEvents
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001fef with 0x0000005b Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_StatEvents.UI_StatEvent_Save
 	Name: UI_StatEvent_Save
-	Class: AkSoundCue
-	Outer: Package SFX_UI_StatEvents
+	Class: UAkSoundCue
+	Outer: SFX_UI_StatEvents
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000204a with 0x0000005b Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_Unlocks.UI_ItemUnlock_BlackMarket
 	Name: UI_ItemUnlock_BlackMarket
-	Class: AkSoundCue
-	Outer: Package SFX_UI_Unlocks
+	Class: UAkSoundCue
+	Outer: SFX_UI_Unlocks
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000020a5 with 0x00000063 Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_Unlocks.UI_ItemUnlock_Common
 	Name: UI_ItemUnlock_Common
-	Class: AkSoundCue
-	Outer: Package SFX_UI_Unlocks
+	Class: UAkSoundCue
+	Outer: SFX_UI_Unlocks
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002108 with 0x0000005e Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_Unlocks.UI_ItemUnlock_CratesAndKeysScene
 	Name: UI_ItemUnlock_CratesAndKeysScene
-	Class: AkSoundCue
-	Outer: Package SFX_UI_Unlocks
+	Class: UAkSoundCue
+	Outer: SFX_UI_Unlocks
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002166 with 0x0000006a Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_Unlocks.UI_ItemUnlock_Exotic
 	Name: UI_ItemUnlock_Exotic
-	Class: AkSoundCue
-	Outer: Package SFX_UI_Unlocks
+	Class: UAkSoundCue
+	Outer: SFX_UI_Unlocks
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000021d0 with 0x0000005e Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_Unlocks.UI_ItemUnlock_Import
 	Name: UI_ItemUnlock_Import
-	Class: AkSoundCue
-	Outer: Package SFX_UI_Unlocks
+	Class: UAkSoundCue
+	Outer: SFX_UI_Unlocks
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000222e with 0x0000005e Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_Unlocks.UI_ItemUnlock_Rare
 	Name: UI_ItemUnlock_Rare
-	Class: AkSoundCue
-	Outer: Package SFX_UI_Unlocks
+	Class: UAkSoundCue
+	Outer: SFX_UI_Unlocks
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000228c with 0x0000005c Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_Unlocks.UI_ItemUnlock_SweetTooth
 	Name: UI_ItemUnlock_SweetTooth
-	Class: AkSoundCue
-	Outer: Package SFX_UI_Unlocks
+	Class: UAkSoundCue
+	Outer: SFX_UI_Unlocks
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000022e8 with 0x00000062 Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_Unlocks.UI_ItemUnlock_Uncommon
 	Name: UI_ItemUnlock_Uncommon
-	Class: AkSoundCue
-	Outer: Package SFX_UI_Unlocks
+	Class: UAkSoundCue
+	Outer: SFX_UI_Unlocks
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000234a with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_UI_Unlocks.UI_ItemUnlock_VeryRare
 	Name: UI_ItemUnlock_VeryRare
-	Class: AkSoundCue
-	Outer: Package SFX_UI_Unlocks
+	Class: UAkSoundCue
+	Outer: SFX_UI_Unlocks
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000023aa with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UGFxSoundPack_X GFxSounds_HUD.GFxSounds_HUD.GFxSounds_HUD
 	Name: GFxSounds_HUD
-	Class: GFxSoundPack_X
-	Outer: Package GFxSounds_HUD
+	Class: UGFxSoundPack_X
+	Outer: GFxSounds_HUD
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000034cc with 0x00000846 Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: UObjectReferencer GFxSounds_HUD.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000002b84 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[33]
+[Export 33]
+	Full Name: UPackage GFxSounds_HUD.GFxSounds_HUD
 	Name: GFxSounds_HUD
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002bb0 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[34]
+[Export 34]
+	Full Name: UPackage GFxSounds_HUD.GFxSounds_HUD_SF
 	Name: GFxSounds_HUD_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002bbc with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[35]
+[Export 35]
+	Full Name: UPackage GFxSounds_HUD.SFX_UI_Boost
 	Name: SFX_UI_Boost
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002bc8 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[36]
+[Export 36]
+	Full Name: UPackage GFxSounds_HUD.SFX_UI_InGame
 	Name: SFX_UI_InGame
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002bd4 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[37]
+[Export 37]
+	Full Name: UPackage GFxSounds_HUD.SFX_UI_StatEvents
 	Name: SFX_UI_StatEvents
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002be0 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[38]
+[Export 38]
+	Full Name: UPackage GFxSounds_HUD.SFX_UI_Unlocks
 	Name: SFX_UI_Unlocks
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002bec with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[39]
+[Export 39]
+	Full Name: UAkBank GFxSounds_HUD.SFX_ItemsMode.SFX_ItemsMode
 	Name: SFX_ItemsMode
-	Class: AkBank
-	Outer: Package SFX_ItemsMode
+	Class: UAkBank
+	Outer: SFX_ItemsMode
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000033fa with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_ItemsMode.UI_Rumble_Appear_01
 	Name: UI_Rumble_Appear_01
-	Class: AkSoundCue
-	Outer: Package SFX_ItemsMode
+	Class: UAkSoundCue
+	Outer: SFX_ItemsMode
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003406 with 0x0000005d Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_ItemsMode.UI_Rumble_Toggle_01
 	Name: UI_Rumble_Toggle_01
-	Class: AkSoundCue
-	Outer: Package SFX_ItemsMode
+	Class: UAkSoundCue
+	Outer: SFX_ItemsMode
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003463 with 0x0000005d Bytes
 	Export Flags: 0x00000001
-[42]
+[Export 42]
+	Full Name: UPackage GFxSounds_HUD.SFX_ItemsMode
 	Name: SFX_ItemsMode
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000034c0 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[43]
+[Export 43]
+	Full Name: UAkBank GFxSounds_HUD.SFX_Knockout.SFX_Knockout
 	Name: SFX_Knockout
-	Class: AkBank
-	Outer: Package SFX_Knockout
+	Class: UAkBank
+	Outer: SFX_Knockout
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003d12 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[44]
+[Export 44]
+	Full Name: UAkSoundCue GFxSounds_HUD.SFX_Knockout.Knockout_Ability_Reset
 	Name: Knockout_Ability_Reset
-	Class: AkSoundCue
-	Outer: Package SFX_Knockout
+	Class: UAkSoundCue
+	Outer: SFX_Knockout
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003d1e with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[45]
+[Export 45]
+	Full Name: UPackage GFxSounds_HUD.SFX_Knockout
 	Name: SFX_Knockout
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003d7e with 0x0000000c Bytes
 	Export Flags: 0x00000001
@@ -508,54 +541,65 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass AkAudio.AkSoundCue
 	Name: AkSoundCue
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[1]
+	Class Package: Core
+	Outer: AkAudio
+[Import 1]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[2]
+	Class Package: Core
+	Outer: Core
+[Import 2]
+	Full Name: UClass Engine.AkBank
 	Name: AkBank
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass ProjectX.GFxSoundPack_X
 	Name: GFxSoundPack_X
 	Class: Class
-	Package: Core
-	Outer: Package ProjectX
-[5]
+	Class Package: Core
+	Outer: ProjectX
+[Import 5]
+	Full Name: UPackage AkAudio
 	Name: AkAudio
 	Class: Package
-	Package: Core
-[6]
+	Class Package: Core
+[Import 6]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage ProjectX
 	Name: ProjectX
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UAkBank SFX_UI_Boost.SFX_UI_Boost
 	Name: SFX_UI_Boost
 	Class: AkBank
-	Package: Engine
-	Outer: Package SFX_UI_Boost
-[10]
+	Class Package: Engine
+	Outer: SFX_UI_Boost
+[Import 10]
+	Full Name: UAkBank SFX_UI_InGame.SFX_UI_InGame
 	Name: SFX_UI_InGame
 	Class: AkBank
-	Package: Engine
-	Outer: Package SFX_UI_InGame
+	Class Package: Engine
+	Outer: SFX_UI_InGame

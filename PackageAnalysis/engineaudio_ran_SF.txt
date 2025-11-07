@@ -141,6 +141,7 @@ Test Data Size: 0x00003e62
 Compressed Chunk Info Offset: 0x00000a7a
 Last Block Size: 0x00000008
 Base Header Size: 0x000001c5
+Encrypted Header Size: 0x000048f0
 
 AES: iwVeRJ5GJNBtMMyAJa3QerK3Xb6S69lsGScwYORfiM4=
 
@@ -148,230 +149,224 @@ AES: iwVeRJ5GJNBtMMyAJa3QerK3Xb6S69lsGScwYORfiM4=
     ~ Names ~ 
 
 
-[0] AkAudio
-[1] AkBank
-[2] AkRevSimPhysicsControls
-[3] AkSoundCue
-[4] ArrayProperty
-[5] BoolProperty
-[6] BreakingHorsePower
-[7] bReplicated
-[8] Class
-[9] Controls
-[10] Core
-[11] Default__EngineAudioProfileREV_TA
-[12] Engine
-[13] EngineAudio
-[14] engineaudio_ran
-[15] EngineAudio_Ran_Profile
-[16] engineaudio_ran_SF
-[17] EngineAudioProfileREV_TA
-[18] EngineAudioRevSimLimiter_TA
-[19] EngineTorque
-[20] ExhaustSound
-[21] FloatProperty
-[22] GearRatios
-[23] Icon
-[24] IconLarge
-[25] Icons
-[26] Label
-[27] LimitTime
-[28] None
-[29] ObjectProperty
-[30] ObjectReferencer
-[31] OnlineLabel
-[32] Package
-[33] PluralLabel
-[34] ProductAsset_EngineAudio_TA
-[35] ProductSlot_TA
-[36] ProductSlots
-[37] Profile
-[38] ReferencedObjects
-[39] RequiredBank
-[40] REV_Ran
-[41] RevLimiter
-[42] RevLimiter0
-[43] SFX_REV_Ran
-[44] StandaloneSeekFreeReferencer
-[45] StartEvent
-[46] StopEvent
-[47] StrProperty
-[48] StructProperty
-[49] TAGame
-[50] Texture2D
-[51] ThumbnailKeyLightBrightnessScale
-[52] Weight
+[Name 0] [0x0007001000000000] AkAudio
+[Name 1] [0x0007001000000000] AkBank
+[Name 2] [0x0007001000000000] AkRevSimPhysicsControls
+[Name 3] [0x0007001000000000] AkSoundCue
+[Name 4] [0x0007001000000000] ArrayProperty
+[Name 5] [0x0007000000000000] BoolProperty
+[Name 6] [0x0007001000000000] BreakingHorsePower
+[Name 7] [0x0007000000000000] bReplicated
+[Name 8] [0x0007001000000000] Class
+[Name 9] [0x0007001000000000] Controls
+[Name 10] [0x0007001000000000] Core
+[Name 11] [0x0007001000000000] Default__EngineAudioProfileREV_TA
+[Name 12] [0x0007001000000000] Engine
+[Name 13] [0x0007001000000000] EngineAudio
+[Name 14] [0x0007001000000000] engineaudio_ran
+[Name 15] [0x0007001000000000] EngineAudio_Ran_Profile
+[Name 16] [0x0007001000000000] engineaudio_ran_SF
+[Name 17] [0x0007001000000000] EngineAudioProfileREV_TA
+[Name 18] [0x0007001000000000] EngineAudioRevSimLimiter_TA
+[Name 19] [0x0007001000000000] EngineTorque
+[Name 20] [0x0007001000000000] ExhaustSound
+[Name 21] [0x0007001000000000] FloatProperty
+[Name 22] [0x0007001000000000] GearRatios
+[Name 23] [0x0007000000000000] Icon
+[Name 24] [0x0007000000000000] IconLarge
+[Name 25] [0x0007000000000000] Icons
+[Name 26] [0x0007000000000000] Label
+[Name 27] [0x0007001000000000] LimitTime
+[Name 28] [0x0007001000000000] None
+[Name 29] [0x0007001000000000] ObjectProperty
+[Name 30] [0x0007001000000000] ObjectReferencer
+[Name 31] [0x0007000000000000] OnlineLabel
+[Name 32] [0x0007001000000000] Package
+[Name 33] [0x0007000000000000] PluralLabel
+[Name 34] [0x0007001000000000] ProductAsset_EngineAudio_TA
+[Name 35] [0x0007001000000000] ProductSlot_TA
+[Name 36] [0x0007001000000000] ProductSlots
+[Name 37] [0x0007001000000000] Profile
+[Name 38] [0x0007001000000000] ReferencedObjects
+[Name 39] [0x0007001000000000] RequiredBank
+[Name 40] [0x0007001000000000] REV_Ran
+[Name 41] [0x0007001000000000] RevLimiter
+[Name 42] [0x0007001000000000] RevLimiter0
+[Name 43] [0x0007001000000000] SFX_REV_Ran
+[Name 44] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 45] [0x0007001000000000] StartEvent
+[Name 46] [0x0007001000000000] StopEvent
+[Name 47] [0x0007001000000000] StrProperty
+[Name 48] [0x0007001000000000] StructProperty
+[Name 49] [0x0007001000000000] TAGame
+[Name 50] [0x0007000000000000] Texture2D
+[Name 51] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
+[Name 52] [0x0007001000000000] Weight
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAkBank engineaudio_ran.engineaudio_ran.SFX_REV_Ran
 	Name: SFX_REV_Ran
-	Class: AkBank
-	Outer: Package engineaudio_ran
+	Class: UAkBank
+	Outer: engineaudio_ran
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000c3f with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UAkSoundCue engineaudio_ran.engineaudio_ran.REV_Ran
 	Name: REV_Ran
-	Class: AkSoundCue
-	Outer: Package engineaudio_ran
+	Class: UAkSoundCue
+	Outer: engineaudio_ran
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000c4b with 0x0000007a Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UEngineAudioProfileREV_TA engineaudio_ran.engineaudio_ran.EngineAudio_Ran_Profile
 	Name: EngineAudio_Ran_Profile
-	Class: EngineAudioProfileREV_TA
-	Outer: Package engineaudio_ran
+	Class: UEngineAudioProfileREV_TA
+	Outer: engineaudio_ran
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000cc5 with 0x000000dc Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UEngineAudioRevSimLimiter_TA engineaudio_ran.engineaudio_ran.EngineAudio_Ran_Profile.EngineAudioRevSimLimiter_TA_0
 	Name: EngineAudioRevSimLimiter_TA_0
-	Class: EngineAudioRevSimLimiter_TA
-	Outer: EngineAudioProfileREV_TA EngineAudio_Ran_Profile
+	Class: UEngineAudioRevSimLimiter_TA
+	Outer: EngineAudio_Ran_Profile
 	Archetype: RevLimiter0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000da1 with 0x0000002c Bytes
 	Export Flags: 0x00000001
-[4]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[5]
+[Export 5]
+	Full Name: UObjectReferencer engineaudio_ran.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000000dd9 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[6]
+[Export 6]
+	Full Name: UPackage engineaudio_ran.engineaudio_ran
 	Name: engineaudio_ran
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000e05 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[7]
+[Export 7]
+	Full Name: UPackage engineaudio_ran.engineaudio_ran_SF
 	Name: engineaudio_ran_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000e11 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[8]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[9]
+[Export 9]
+	Full Name: UProductAsset_EngineAudio_TA engineaudio_ran.engineaudio_ran.engineaudio_ran
 	Name: engineaudio_ran
-	Class: ProductAsset_EngineAudio_TA
-	Outer: Package engineaudio_ran
+	Class: UProductAsset_EngineAudio_TA
+	Outer: engineaudio_ran
 	Archetype: ProductAsset_EngineAudio_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000e29 with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[10]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
 
 
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass AkAudio.AkSoundCue
 	Name: AkSoundCue
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[1]
+	Class Package: Core
+	Outer: AkAudio
+[Import 1]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[2]
+	Class Package: Core
+	Outer: Core
+[Import 2]
+	Full Name: UClass Engine.AkBank
 	Name: AkBank
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass TAGame.EngineAudioProfileREV_TA
 	Name: EngineAudioProfileREV_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UClass TAGame.EngineAudioRevSimLimiter_TA
 	Name: EngineAudioRevSimLimiter_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
+	Class Package: Core
+	Outer: TAGame
+[Import 6]
+	Full Name: UClass TAGame.ProductAsset_EngineAudio_TA
 	Name: ProductAsset_EngineAudio_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[7]
-	Name: None
-	Class: None
-	Package: None
-[8]
+	Class Package: Core
+	Outer: TAGame
+[Import 8]
+	Full Name: UEngineAudioProfileREV_TA TAGame.Default__EngineAudioProfileREV_TA
 	Name: Default__EngineAudioProfileREV_TA
 	Class: EngineAudioProfileREV_TA
-	Package: TAGame
-	Outer: Package TAGame
-[9]
+	Class Package: TAGame
+	Outer: TAGame
+[Import 9]
+	Full Name: UEngineAudioRevSimLimiter_TA TAGame.Default__EngineAudioProfileREV_TA.RevLimiter0
 	Name: RevLimiter0
 	Class: EngineAudioRevSimLimiter_TA
-	Package: TAGame
-	Outer: EngineAudioProfileREV_TA Default__EngineAudioProfileREV_TA
-[10]
+	Class Package: TAGame
+	Outer: Default__EngineAudioProfileREV_TA
+[Import 10]
+	Full Name: UPackage AkAudio
 	Name: AkAudio
 	Class: Package
-	Package: Core
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[12]
+	Class Package: Core
+[Import 12]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[13]
-	Name: None
-	Class: None
-	Package: None
-[14]
+	Class Package: Core
+[Import 14]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[15]
-	Name: None
-	Class: None
-	Package: None
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UProductAsset_EngineAudio_TA ProductSlots.EngineAudio.ProductAsset_EngineAudio_TA_0
 	Name: ProductAsset_EngineAudio_TA_0
 	Class: ProductAsset_EngineAudio_TA
-	Package: TAGame
-	Outer: ProductSlot_TA EngineAudio
-[18]
+	Class Package: TAGame
+	Outer: EngineAudio
+[Import 18]
+	Full Name: UProductSlot_TA ProductSlots.EngineAudio
 	Name: EngineAudio
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots

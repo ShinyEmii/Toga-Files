@@ -70,6 +70,7 @@ Test Data Size: 0x00003fdb
 Compressed Chunk Info Offset: 0x000024cd
 Last Block Size: 0x00000004
 Base Header Size: 0x00000105
+Encrypted Header Size: 0x000064c0
 
 AES: mDGhJYi2vCOA/anTMN7gflNqZCgz8B7AmfM3qy+h+6Y=
 
@@ -77,567 +78,620 @@ AES: mDGhJYi2vCOA/anTMN7gflNqZCgz8B7AmfM3qy+h+6Y=
     ~ Names ~ 
 
 
-[0] A
-[1] animation
-[2] AnimTreeTemplate
-[3] Antenna
-[4] antenna_goldenlycheelte
-[5] Antenna_GoldenLycheeLTE01_D
-[6] Antenna_GoldenLycheeLTE01_N
-[7] Antenna_GoldenLycheeLTE01_S
-[8] Antenna_GoldenLycheeLTE02_D
-[9] Antenna_GoldenLycheeLTE02_N
-[10] Antenna_GoldenLycheeLTE02_S
-[11] antenna_goldenlycheelte_SF
-[12] Antenna_GoldenLycheeLTE_SM
-[13] Antenna_WakeupShip
-[14] AntennaComponent_TA
-[15] AntennaMesh
-[16] ArrayProperty
-[17] AT_WakeupShip_E
-[18] Attachment_Parent_Materials
-[19] Attachments
-[20] B
-[21] Basic_Mat
-[22] Behaviors
-[23] bExposeToLibrary
-[24] bHasStaticPermutationResource
-[25] bIsSourceArtUncompressed
-[26] BoolProperty
-[27] bPerPixelCameraVector
-[28] Breakout_FX
-[29] bUsedWithSkeletalMesh
-[30] bUsedWithStaticLighting
-[31] ByteProperty
-[32] Class
-[33] ColorMaterialInput
-[34] Component
-[35] CompressionNoAlpha
-[36] CompressionNone
-[37] CompressionSettings
-[38] Core
-[39] Damping
-[40] DefaultValue
-[41] Desc
-[42] Description
-[43] Diffuse
-[44] DiffuseColor
-[45] DiffuseRim
-[46] DiffuseSpec
-[47] Emissive_Glow_Mask
-[48] Emissive_Mask
-[49] Emissive_mask_color
-[50] EmissiveColor
-[51] Engine
-[52] Engine_MaterialFunctions02
-[53] EPixelFormat
-[54] EProductAttachmentSocket
-[55] Expression
-[56] ExpressionGUID
-[57] ExpressionInput
-[58] Expressions
-[59] FirstResourceMemMip
-[60] FixVertexNormals
-[61] FloatProperty
-[62] Format
-[63] FresnelColor
-[64] FresnelDarken
-[65] Function
-[66] FunctionExpressions
-[67] Functions
-[68] FXActor
-[69] Group
-[70] Guid
-[71] Hat_Viking_Helmet_Diffuse
-[72] Hat_Viking_Helmet_Normal
-[73] Hat_Viking_Helmet_Textures
-[74] InheritCarAttribute
-[75] IntProperty
-[76] LibraryCategories
-[77] LightMapCoordinateIndex
-[78] LightMapResolution
-[79] LinearColor
-[80] LODGroup
-[81] Mask
-[82] MaskA
-[83] MaskB
-[84] MaskG
-[85] MaskR
-[86] Material
-[87] MaterialExpressionScalarParameter
-[88] MaterialExpressionStaticSwitchParameter
-[89] MaterialExpressionTextureSampleParameter2D
-[90] MaterialExpressionVectorParameter
-[91] MaterialFunction
-[92] MaterialFunctionInfos
-[93] MaterialInstanceConstant
-[94] MaxDisplacement
-[95] MIC_Antenna_GoldenLycheeLTE01
-[96] MIC_Antenna_GoldenLycheeLTE02
-[97] MipTailBaseIdx
-[98] Movement(UsePreDefinedPivots)
-[99] NameProperty
-[100] None
-[101] Normal
-[102] ObjectLocalToWorldData
-[103] ObjectProperty
-[104] ObjectReferencer
-[105] OriginalSizeX
-[106] OriginalSizeY
-[107] OutputIndex
-[108] Package
-[109] ParameterName
-[110] ParameterValue
-[111] Parent
-[112] ParentLightingGuid
-[113] ParticleSystem
-[114] PAS_Antenna
-[115] PF_A8R8G8B8
-[116] PF_DXT1
-[117] PF_DXT5
-[118] PivotPainter
-[119] PivotPainter_PerObjectData
-[120] ProductAsset_Attachment_TA
-[121] ProductSlot_TA
-[122] ProductSlots
-[123] ReferencedObjects
-[124] Reflections
-[125] RimSharpness
-[126] RimValue
-[127] Rotation
-[128] Rotator
-[129] ScalarMaterialInput
-[130] ScalarParameterValues
-[131] Scale
-[132] SharpReflections
-[133] SimpleSpringSettings
-[134] SizeX
-[135] SizeY
-[136] SkeletalMesh
-[137] Socket
-[138] Sparkles
-[139] SpecBrightness
-[140] SpecInDiffuseAlpha
-[141] SpecPower
-[142] Specular
-[143] SpecularColor
-[144] SpecularPower
-[145] Spring
-[146] SRGB
-[147] StandaloneSeekFreeReferencer
-[148] StateId
-[149] StaticMesh
-[150] Strength
-[151] StrProperty
-[152] StructProperty
-[153] TAGame
-[154] TC_NormalmapSwizzle
-[155] Texture
-[156] Texture2D
-[157] TextureCompressionSettings
-[158] TextureFileCacheName
-[159] TextureGroup
-[160] TEXTUREGROUP_CharacterNormalMap
-[161] TEXTUREGROUP_Weapon
-[162] TextureParameterValues
-[163] Textures2
-[164] Textures4
-[165] Textures5
-[166] ThumbnailCameraTranslationOffset
-[167] ThumbnailKeyLightBrightnessScale
-[168] ThumbnailProductDrawScale3D
-[169] ThumbnailProductRotation
-[170] ThumbnailProductTranslationOffset
-[171] Translation
-[172] TranslationAmount
-[173] UnpackMin
-[174] UseSpecMap
-[175] Vector
-[176] VectorMaterialInput
-[177] VertexColor_Glow
-[178] VertexGlow_Color
-[179] WorldPositionOffset
+[Name 0] [0x0007001000000000] A
+[Name 1] [0x0007001000000000] animation
+[Name 2] [0x0007001000000000] AnimTreeTemplate
+[Name 3] [0x0007001000000000] Antenna
+[Name 4] [0x0007001000000000] antenna_goldenlycheelte
+[Name 5] [0x0007001000000000] Antenna_GoldenLycheeLTE01_D
+[Name 6] [0x0007001000000000] Antenna_GoldenLycheeLTE01_N
+[Name 7] [0x0007001000000000] Antenna_GoldenLycheeLTE01_S
+[Name 8] [0x0007001000000000] Antenna_GoldenLycheeLTE02_D
+[Name 9] [0x0007001000000000] Antenna_GoldenLycheeLTE02_N
+[Name 10] [0x0007001000000000] Antenna_GoldenLycheeLTE02_S
+[Name 11] [0x0007001000000000] antenna_goldenlycheelte_SF
+[Name 12] [0x0007001000000000] Antenna_GoldenLycheeLTE_SM
+[Name 13] [0x0007001000000000] Antenna_WakeupShip
+[Name 14] [0x0007001000000000] AntennaComponent_TA
+[Name 15] [0x0007001000000000] AntennaMesh
+[Name 16] [0x0007001000000000] ArrayProperty
+[Name 17] [0x0007001000000000] AT_WakeupShip_E
+[Name 18] [0x0007001000000000] Attachment_Parent_Materials
+[Name 19] [0x0007001000000000] Attachments
+[Name 20] [0x0007001000000000] B
+[Name 21] [0x0007001000000000] Basic_Mat
+[Name 22] [0x0007001000000000] Behaviors
+[Name 23] [0x0007001000000000] bExposeToLibrary
+[Name 24] [0x0007001000000000] bHasStaticPermutationResource
+[Name 25] [0x0007001000000000] bIsSourceArtUncompressed
+[Name 26] [0x0007001000000000] BoolProperty
+[Name 27] [0x0007001000000000] bPerPixelCameraVector
+[Name 28] [0x0007001000000000] Breakout_FX
+[Name 29] [0x0007001000000000] bUsedWithSkeletalMesh
+[Name 30] [0x0007001000000000] bUsedWithStaticLighting
+[Name 31] [0x0007001000000000] ByteProperty
+[Name 32] [0x0007001000000000] Class
+[Name 33] [0x0007001000000000] ColorMaterialInput
+[Name 34] [0x0007001000000000] Component
+[Name 35] [0x0007001000000000] CompressionNoAlpha
+[Name 36] [0x0007001000000000] CompressionNone
+[Name 37] [0x0007001000000000] CompressionSettings
+[Name 38] [0x0007001000000000] Core
+[Name 39] [0x0007001000000000] Damping
+[Name 40] [0x0007001000000000] DefaultValue
+[Name 41] [0x0007001000000000] Desc
+[Name 42] [0x0007001000000000] Description
+[Name 43] [0x0007001000000000] Diffuse
+[Name 44] [0x0007001000000000] DiffuseColor
+[Name 45] [0x0007001000000000] DiffuseRim
+[Name 46] [0x0007001000000000] DiffuseSpec
+[Name 47] [0x0007001000000000] Emissive_Glow_Mask
+[Name 48] [0x0007001000000000] Emissive_Mask
+[Name 49] [0x0007001000000000] Emissive_mask_color
+[Name 50] [0x0007001000000000] EmissiveColor
+[Name 51] [0x0007001000000000] Engine
+[Name 52] [0x0007001000000000] Engine_MaterialFunctions02
+[Name 53] [0x0007001000000000] EPixelFormat
+[Name 54] [0x0007001000000000] EProductAttachmentSocket
+[Name 55] [0x0007001000000000] Expression
+[Name 56] [0x0007001000000000] ExpressionGUID
+[Name 57] [0x0007001000000000] ExpressionInput
+[Name 58] [0x0007001000000000] Expressions
+[Name 59] [0x0007001000000000] FirstResourceMemMip
+[Name 60] [0x0007001000000000] FixVertexNormals
+[Name 61] [0x0007001000000000] FloatProperty
+[Name 62] [0x0007001000000000] Format
+[Name 63] [0x0007001000000000] FresnelColor
+[Name 64] [0x0007001000000000] FresnelDarken
+[Name 65] [0x0007001000000000] Function
+[Name 66] [0x0007001000000000] FunctionExpressions
+[Name 67] [0x0007001000000000] Functions
+[Name 68] [0x0007001000000000] FXActor
+[Name 69] [0x0007001000000000] Group
+[Name 70] [0x0007001000000000] Guid
+[Name 71] [0x0007001000000000] Hat_Viking_Helmet_Diffuse
+[Name 72] [0x0007001000000000] Hat_Viking_Helmet_Normal
+[Name 73] [0x0007001000000000] Hat_Viking_Helmet_Textures
+[Name 74] [0x0007001000000000] InheritCarAttribute
+[Name 75] [0x0007001000000000] IntProperty
+[Name 76] [0x0007001000000000] LibraryCategories
+[Name 77] [0x0007001000000000] LightMapCoordinateIndex
+[Name 78] [0x0007001000000000] LightMapResolution
+[Name 79] [0x0007001000000000] LinearColor
+[Name 80] [0x0007001000000000] LODGroup
+[Name 81] [0x0007001000000000] Mask
+[Name 82] [0x0007001000000000] MaskA
+[Name 83] [0x0007001000000000] MaskB
+[Name 84] [0x0007001000000000] MaskG
+[Name 85] [0x0007001000000000] MaskR
+[Name 86] [0x0007001000000000] Material
+[Name 87] [0x0007001000000000] MaterialExpressionScalarParameter
+[Name 88] [0x0007001000000000] MaterialExpressionStaticSwitchParameter
+[Name 89] [0x0007001000000000] MaterialExpressionTextureSampleParameter2D
+[Name 90] [0x0007001000000000] MaterialExpressionVectorParameter
+[Name 91] [0x0007001000000000] MaterialFunction
+[Name 92] [0x0007001000000000] MaterialFunctionInfos
+[Name 93] [0x0007001000000000] MaterialInstanceConstant
+[Name 94] [0x0007001000000000] MaxDisplacement
+[Name 95] [0x0007001000000000] MIC_Antenna_GoldenLycheeLTE01
+[Name 96] [0x0007001000000000] MIC_Antenna_GoldenLycheeLTE02
+[Name 97] [0x0007001000000000] MipTailBaseIdx
+[Name 98] [0x0007001000000000] Movement(UsePreDefinedPivots)
+[Name 99] [0x0007001000000000] NameProperty
+[Name 100] [0x0007001000000000] None
+[Name 101] [0x0007001000000000] Normal
+[Name 102] [0x0007001000000000] ObjectLocalToWorldData
+[Name 103] [0x0007001000000000] ObjectProperty
+[Name 104] [0x0007001000000000] ObjectReferencer
+[Name 105] [0x0007001000000000] OriginalSizeX
+[Name 106] [0x0007001000000000] OriginalSizeY
+[Name 107] [0x0007001000000000] OutputIndex
+[Name 108] [0x0007001000000000] Package
+[Name 109] [0x0007001000000000] ParameterName
+[Name 110] [0x0007001000000000] ParameterValue
+[Name 111] [0x0007001000000000] Parent
+[Name 112] [0x0007001000000000] ParentLightingGuid
+[Name 113] [0x0007001000000000] ParticleSystem
+[Name 114] [0x0007001000000000] PAS_Antenna
+[Name 115] [0x0007001000000000] PF_A8R8G8B8
+[Name 116] [0x0007001000000000] PF_DXT1
+[Name 117] [0x0007001000000000] PF_DXT5
+[Name 118] [0x0007001000000000] PivotPainter
+[Name 119] [0x0007001000000000] PivotPainter_PerObjectData
+[Name 120] [0x0007001000000000] ProductAsset_Attachment_TA
+[Name 121] [0x0007001000000000] ProductSlot_TA
+[Name 122] [0x0007001000000000] ProductSlots
+[Name 123] [0x0007001000000000] ReferencedObjects
+[Name 124] [0x0007001000000000] Reflections
+[Name 125] [0x0007001000000000] RimSharpness
+[Name 126] [0x0007001000000000] RimValue
+[Name 127] [0x0007001000000000] Rotation
+[Name 128] [0x0007001000000000] Rotator
+[Name 129] [0x0007001000000000] ScalarMaterialInput
+[Name 130] [0x0007001000000000] ScalarParameterValues
+[Name 131] [0x0007001000000000] Scale
+[Name 132] [0x0007001000000000] SharpReflections
+[Name 133] [0x0007001000000000] SimpleSpringSettings
+[Name 134] [0x0007001000000000] SizeX
+[Name 135] [0x0007001000000000] SizeY
+[Name 136] [0x0007001000000000] SkeletalMesh
+[Name 137] [0x0007001000000000] Socket
+[Name 138] [0x0007001000000000] Sparkles
+[Name 139] [0x0007001000000000] SpecBrightness
+[Name 140] [0x0007001000000000] SpecInDiffuseAlpha
+[Name 141] [0x0007001000000000] SpecPower
+[Name 142] [0x0007001000000000] Specular
+[Name 143] [0x0007001000000000] SpecularColor
+[Name 144] [0x0007001000000000] SpecularPower
+[Name 145] [0x0007001000000000] Spring
+[Name 146] [0x0007001000000000] SRGB
+[Name 147] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 148] [0x0007001000000000] StateId
+[Name 149] [0x0007001000000000] StaticMesh
+[Name 150] [0x0007001000000000] Strength
+[Name 151] [0x0007001000000000] StrProperty
+[Name 152] [0x0007001000000000] StructProperty
+[Name 153] [0x0007001000000000] TAGame
+[Name 154] [0x0007001000000000] TC_NormalmapSwizzle
+[Name 155] [0x0007001000000000] Texture
+[Name 156] [0x0007001000000000] Texture2D
+[Name 157] [0x0007001000000000] TextureCompressionSettings
+[Name 158] [0x0007001000000000] TextureFileCacheName
+[Name 159] [0x0007001000000000] TextureGroup
+[Name 160] [0x0007001000000000] TEXTUREGROUP_CharacterNormalMap
+[Name 161] [0x0007001000000000] TEXTUREGROUP_Weapon
+[Name 162] [0x0007001000000000] TextureParameterValues
+[Name 163] [0x0007001000000000] Textures2
+[Name 164] [0x0007001000000000] Textures4
+[Name 165] [0x0007001000000000] Textures5
+[Name 166] [0x0007001000000000] ThumbnailCameraTranslationOffset
+[Name 167] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
+[Name 168] [0x0007001000000000] ThumbnailProductDrawScale3D
+[Name 169] [0x0007001000000000] ThumbnailProductRotation
+[Name 170] [0x0007001000000000] ThumbnailProductTranslationOffset
+[Name 171] [0x0007001000000000] Translation
+[Name 172] [0x0007001000000000] TranslationAmount
+[Name 173] [0x0007001000000000] UnpackMin
+[Name 174] [0x0007001000000000] UseSpecMap
+[Name 175] [0x0007001000000000] Vector
+[Name 176] [0x0007001000000000] VectorMaterialInput
+[Name 177] [0x0007001000000000] VertexColor_Glow
+[Name 178] [0x0007001000000000] VertexGlow_Color
+[Name 179] [0x0007001000000000] WorldPositionOffset
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAntennaComponent_TA antenna_goldenlycheelte.antenna_goldenlycheelte.antenna_goldenlycheelte.AntennaComponent_TA_0
 	Name: AntennaComponent_TA_0
-	Class: AntennaComponent_TA
-	Outer: ProductAsset_Attachment_TA antenna_goldenlycheelte
+	Class: UAntennaComponent_TA
+	Outer: antenna_goldenlycheelte
 	Archetype: AntennaComponent_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000025d2 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterial antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat
 	Name: Basic_Mat
-	Class: Material
-	Outer: Package Attachment_Parent_Materials
+	Class: UMaterial
+	Outer: Attachment_Parent_Materials
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000026c6 with 0x00000557 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterialExpressionScalarParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionScalarParameter_0
 	Name: MaterialExpressionScalarParameter_0
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002c1d with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterialExpressionScalarParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002cb1 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UMaterialExpressionScalarParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002d45 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UMaterialExpressionScalarParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionScalarParameter_3
 	Name: MaterialExpressionScalarParameter_3
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002dd9 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UMaterialExpressionScalarParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionScalarParameter_4
 	Name: MaterialExpressionScalarParameter_4
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002e6d with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UMaterialExpressionScalarParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionScalarParameter_5
 	Name: MaterialExpressionScalarParameter_5
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002f01 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UMaterialExpressionScalarParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionScalarParameter_6
 	Name: MaterialExpressionScalarParameter_6
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002fb5 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UMaterialExpressionStaticSwitchParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_0
 	Name: MaterialExpressionStaticSwitchParameter_0
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003049 with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UMaterialExpressionStaticSwitchParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_1
 	Name: MaterialExpressionStaticSwitchParameter_1
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003149 with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UMaterialExpressionStaticSwitchParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_2
 	Name: MaterialExpressionStaticSwitchParameter_2
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003249 with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UMaterialExpressionStaticSwitchParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_3
 	Name: MaterialExpressionStaticSwitchParameter_3
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003349 with 0x000001c4 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UMaterialExpressionStaticSwitchParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_4
 	Name: MaterialExpressionStaticSwitchParameter_4
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000350d with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UMaterialExpressionStaticSwitchParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_5
 	Name: MaterialExpressionStaticSwitchParameter_5
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000360d with 0x00000170 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UMaterialExpressionStaticSwitchParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_6
 	Name: MaterialExpressionStaticSwitchParameter_6
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000377d with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UMaterialExpressionStaticSwitchParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_7
 	Name: MaterialExpressionStaticSwitchParameter_7
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000387d with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UMaterialExpressionStaticSwitchParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_8
 	Name: MaterialExpressionStaticSwitchParameter_8
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000397d with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UMaterialExpressionStaticSwitchParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_9
 	Name: MaterialExpressionStaticSwitchParameter_9
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003a7d with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UMaterialExpressionTextureSampleParameter2D antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionTextureSampleParameter2D_0
 	Name: MaterialExpressionTextureSampleParameter2D_0
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003b7d with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UMaterialExpressionTextureSampleParameter2D antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionTextureSampleParameter2D_2
 	Name: MaterialExpressionTextureSampleParameter2D_2
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003c11 with 0x000000b8 Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UMaterialExpressionTextureSampleParameter2D antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionTextureSampleParameter2D_3
 	Name: MaterialExpressionTextureSampleParameter2D_3
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003cc9 with 0x000000b7 Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UMaterialExpressionTextureSampleParameter2D antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionTextureSampleParameter2D_5
 	Name: MaterialExpressionTextureSampleParameter2D_5
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003d80 with 0x000000b9 Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UMaterialExpressionVectorParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionVectorParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003e39 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UMaterialExpressionVectorParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionVectorParameter_1
 	Name: MaterialExpressionVectorParameter_1
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionVectorParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003f01 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UMaterialExpressionVectorParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionVectorParameter_3
 	Name: MaterialExpressionVectorParameter_3
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionVectorParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003fa9 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UMaterialExpressionVectorParameter antenna_goldenlycheelte.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionVectorParameter_4
 	Name: MaterialExpressionVectorParameter_4
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionVectorParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004051 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UMaterialFunction antenna_goldenlycheelte.Breakout_FX.Functions.FixVertexNormals
 	Name: FixVertexNormals
-	Class: MaterialFunction
-	Outer: Package Functions
+	Class: UMaterialFunction
+	Outer: Functions
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000040f9 with 0x000000c4 Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UMaterialFunction antenna_goldenlycheelte.Engine_MaterialFunctions02.ObjectLocalToWorldData
 	Name: ObjectLocalToWorldData
-	Class: MaterialFunction
-	Outer: Package Engine_MaterialFunctions02
+	Class: UMaterialFunction
+	Outer: Engine_MaterialFunctions02
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000041bd with 0x00000106 Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UMaterialFunction antenna_goldenlycheelte.Engine_MaterialFunctions02.PivotPainter.PivotPainter_PerObjectData
 	Name: PivotPainter_PerObjectData
-	Class: MaterialFunction
-	Outer: Package PivotPainter
+	Class: UMaterialFunction
+	Outer: PivotPainter
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000042c3 with 0x0000018f Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UMaterialInstanceConstant antenna_goldenlycheelte.antenna_goldenlycheelte.MIC_Antenna_GoldenLycheeLTE01
 	Name: MIC_Antenna_GoldenLycheeLTE01
-	Class: MaterialInstanceConstant
-	Outer: Package antenna_goldenlycheelte
+	Class: UMaterialInstanceConstant
+	Outer: antenna_goldenlycheelte
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000004452 with 0x000005ad Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UMaterialInstanceConstant antenna_goldenlycheelte.antenna_goldenlycheelte.MIC_Antenna_GoldenLycheeLTE02
 	Name: MIC_Antenna_GoldenLycheeLTE02
-	Class: MaterialInstanceConstant
-	Outer: Package antenna_goldenlycheelte
+	Class: UMaterialInstanceConstant
+	Outer: antenna_goldenlycheelte
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000049ff with 0x000005ad Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: UObjectReferencer antenna_goldenlycheelte.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000004fac with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[33]
+[Export 33]
+	Full Name: UPackage antenna_goldenlycheelte.antenna_goldenlycheelte
 	Name: antenna_goldenlycheelte
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004fd8 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[34]
+[Export 34]
+	Full Name: UPackage antenna_goldenlycheelte.antenna_goldenlycheelte_SF
 	Name: antenna_goldenlycheelte_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004fe4 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[35]
+[Export 35]
+	Full Name: UPackage antenna_goldenlycheelte.Antenna_WakeupShip
 	Name: Antenna_WakeupShip
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004ff0 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[36]
+[Export 36]
+	Full Name: UPackage antenna_goldenlycheelte.Attachment_Parent_Materials
 	Name: Attachment_Parent_Materials
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004ffc with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[37]
+[Export 37]
+	Full Name: UPackage antenna_goldenlycheelte.Breakout_FX
 	Name: Breakout_FX
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000005008 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[38]
+[Export 38]
+	Full Name: UPackage antenna_goldenlycheelte.Breakout_FX.Functions
 	Name: Functions
-	Class: Package
-	Outer: Package Breakout_FX
+	Class: UPackage
+	Outer: Breakout_FX
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000005014 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[39]
+[Export 39]
+	Full Name: UPackage antenna_goldenlycheelte.Engine_MaterialFunctions02
 	Name: Engine_MaterialFunctions02
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000005020 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[40]
+[Export 40]
+	Full Name: UPackage antenna_goldenlycheelte.Engine_MaterialFunctions02.PivotPainter
 	Name: PivotPainter
-	Class: Package
-	Outer: Package Engine_MaterialFunctions02
+	Class: UPackage
+	Outer: Engine_MaterialFunctions02
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000502c with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UPackage antenna_goldenlycheelte.Hat_Viking_Helmet_Textures
 	Name: Hat_Viking_Helmet_Textures
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000005038 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[42]
+[Export 42]
+	Full Name: UProductAsset_Attachment_TA antenna_goldenlycheelte.antenna_goldenlycheelte.antenna_goldenlycheelte
 	Name: antenna_goldenlycheelte
-	Class: ProductAsset_Attachment_TA
-	Outer: Package antenna_goldenlycheelte
+	Class: UProductAsset_Attachment_TA
+	Outer: antenna_goldenlycheelte
 	Archetype: ProductAsset_Attachment_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000005044 with 0x00000294 Bytes
 	Export Flags: 0x00000001
-[43]
+[Export 43]
+	Full Name: UStaticMesh antenna_goldenlycheelte.antenna_goldenlycheelte.Antenna_GoldenLycheeLTE_SM
 	Name: Antenna_GoldenLycheeLTE_SM
-	Class: StaticMesh
-	Outer: Package antenna_goldenlycheelte
+	Class: UStaticMesh
+	Outer: antenna_goldenlycheelte
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000052d8 with 0x000161e2 Bytes
 	Export Flags: 0x00000001
-[44]
+[Export 44]
+	Full Name: UTexture2D antenna_goldenlycheelte.antenna_goldenlycheelte.Antenna_GoldenLycheeLTE01_D
 	Name: Antenna_GoldenLycheeLTE01_D
-	Class: Texture2D
-	Outer: Package antenna_goldenlycheelte
+	Class: UTexture2D
+	Outer: antenna_goldenlycheelte
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000001b4ba with 0x000057c2 Bytes
 	Export Flags: 0x00000001
-[45]
+[Export 45]
+	Full Name: UTexture2D antenna_goldenlycheelte.antenna_goldenlycheelte.Antenna_GoldenLycheeLTE01_N
 	Name: Antenna_GoldenLycheeLTE01_N
-	Class: Texture2D
-	Outer: Package antenna_goldenlycheelte
+	Class: UTexture2D
+	Outer: antenna_goldenlycheelte
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000020c7c with 0x000017ed Bytes
 	Export Flags: 0x00000001
-[46]
+[Export 46]
+	Full Name: UTexture2D antenna_goldenlycheelte.antenna_goldenlycheelte.Antenna_GoldenLycheeLTE01_S
 	Name: Antenna_GoldenLycheeLTE01_S
-	Class: Texture2D
-	Outer: Package antenna_goldenlycheelte
+	Class: UTexture2D
+	Outer: antenna_goldenlycheelte
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000022469 with 0x000057c2 Bytes
 	Export Flags: 0x00000001
-[47]
+[Export 47]
+	Full Name: UTexture2D antenna_goldenlycheelte.antenna_goldenlycheelte.Antenna_GoldenLycheeLTE02_D
 	Name: Antenna_GoldenLycheeLTE02_D
-	Class: Texture2D
-	Outer: Package antenna_goldenlycheelte
+	Class: UTexture2D
+	Outer: antenna_goldenlycheelte
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000027c2b with 0x000057c2 Bytes
 	Export Flags: 0x00000001
-[48]
+[Export 48]
+	Full Name: UTexture2D antenna_goldenlycheelte.antenna_goldenlycheelte.Antenna_GoldenLycheeLTE02_N
 	Name: Antenna_GoldenLycheeLTE02_N
-	Class: Texture2D
-	Outer: Package antenna_goldenlycheelte
+	Class: UTexture2D
+	Outer: antenna_goldenlycheelte
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000002d3ed with 0x000017ed Bytes
 	Export Flags: 0x00000001
-[49]
+[Export 49]
+	Full Name: UTexture2D antenna_goldenlycheelte.antenna_goldenlycheelte.Antenna_GoldenLycheeLTE02_S
 	Name: Antenna_GoldenLycheeLTE02_S
-	Class: Texture2D
-	Outer: Package antenna_goldenlycheelte
+	Class: UTexture2D
+	Outer: antenna_goldenlycheelte
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000002ebda with 0x000057c2 Bytes
 	Export Flags: 0x00000001
-[50]
+[Export 50]
+	Full Name: UTexture2D antenna_goldenlycheelte.Antenna_WakeupShip.AT_WakeupShip_E
 	Name: AT_WakeupShip_E
-	Class: Texture2D
-	Outer: Package Antenna_WakeupShip
+	Class: UTexture2D
+	Outer: Antenna_WakeupShip
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000003439c with 0x00000cd5 Bytes
 	Export Flags: 0x00000001
-[51]
+[Export 51]
+	Full Name: UTexture2D antenna_goldenlycheelte.Hat_Viking_Helmet_Textures.Hat_Viking_Helmet_Diffuse
 	Name: Hat_Viking_Helmet_Diffuse
-	Class: Texture2D
-	Outer: Package Hat_Viking_Helmet_Textures
+	Class: UTexture2D
+	Outer: Hat_Viking_Helmet_Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000035071 with 0x00000d00 Bytes
 	Export Flags: 0x00000001
-[52]
+[Export 52]
+	Full Name: UTexture2D antenna_goldenlycheelte.Hat_Viking_Helmet_Textures.Hat_Viking_Helmet_Normal
 	Name: Hat_Viking_Helmet_Normal
-	Class: Texture2D
-	Outer: Package Hat_Viking_Helmet_Textures
+	Class: UTexture2D
+	Outer: Hat_Viking_Helmet_Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000035d71 with 0x0000184d Bytes
 	Export Flags: 0x00000001
@@ -646,99 +700,119 @@ AES: mDGhJYi2vCOA/anTMN7gflNqZCgz8B7AmfM3qy+h+6Y=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UAntennaComponent_TA ProductSlots.Antenna.ProductAsset_Attachment_TA_0.AntennaComponent_TA_0
 	Name: AntennaComponent_TA_0
 	Class: AntennaComponent_TA
-	Package: TAGame
-	Outer: ProductAsset_Attachment_TA ProductAsset_Attachment_TA_0
-[1]
+	Class Package: TAGame
+	Outer: ProductAsset_Attachment_TA_0
+[Import 1]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[2]
+	Class Package: Core
+	Outer: Core
+[Import 2]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.MaterialExpressionStaticSwitchParameter
 	Name: MaterialExpressionStaticSwitchParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.MaterialExpressionTextureSampleParameter2D
 	Name: MaterialExpressionTextureSampleParameter2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.MaterialExpressionVectorParameter
 	Name: MaterialExpressionVectorParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.MaterialFunction
 	Name: MaterialFunction
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[10]
+	Class Package: Core
+	Outer: Engine
+[Import 10]
+	Full Name: UClass Engine.StaticMesh
 	Name: StaticMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[11]
+	Class Package: Core
+	Outer: Engine
+[Import 11]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[12]
+	Class Package: Core
+	Outer: Engine
+[Import 12]
+	Full Name: UClass TAGame.AntennaComponent_TA
 	Name: AntennaComponent_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[13]
+	Class Package: Core
+	Outer: TAGame
+[Import 13]
+	Full Name: UClass TAGame.ProductAsset_Attachment_TA
 	Name: ProductAsset_Attachment_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[14]
+	Class Package: Core
+	Outer: TAGame
+[Import 14]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[15]
+	Class Package: Core
+[Import 15]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[18]
+	Class Package: Core
+[Import 18]
+	Full Name: UProductAsset_Attachment_TA ProductSlots.Antenna.ProductAsset_Attachment_TA_0
 	Name: ProductAsset_Attachment_TA_0
 	Class: ProductAsset_Attachment_TA
-	Package: TAGame
-	Outer: ProductSlot_TA Antenna
-[19]
+	Class Package: TAGame
+	Outer: Antenna
+[Import 19]
+	Full Name: UProductSlot_TA ProductSlots.Antenna
 	Name: Antenna
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots

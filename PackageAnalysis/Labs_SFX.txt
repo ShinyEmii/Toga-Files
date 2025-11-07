@@ -216,6 +216,7 @@ Test Data Size: 0x00003bb0
 Compressed Chunk Info Offset: 0x000026c4
 Last Block Size: 0x00000008
 Base Header Size: 0x000002ad
+Encrypted Header Size: 0x000063c0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -223,592 +224,607 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ActivateDelay
-[1] AerialGoal
-[2] AerialHit
-[3] AkAudio
-[4] AkBank
-[5] AkSoundCue
-[6] Amb_RocketLabs_Base
-[7] ArrayProperty
-[8] ArriveTangent
-[9] Assist
-[10] BackwardsGoal
-[11] BallGoalDistanceNoiseCurve
-[12] BallHitNoiseDelay
-[13] bAllowAnyType
-[14] bCanMute
-[15] bClampedMax
-[16] bClampedMin
-[17] bDisabled
-[18] bDisabledPIE
-[19] bHasImpulse
-[20] bHidden
-[21] BicycleGoal
-[22] BicycleHit
-[23] bModifiesLinkedObject
-[24] BoolProperty
-[25] bSequenceNeverReadsOnlyWritesToThisVar
-[26] BulletGoal
-[27] BulletHit
-[28] bWriteable
-[29] ByteProperty
-[30] Center
-[31] CIM_Linear
-[32] Class
-[33] Clear
-[34] Core
-[35] CountdownEndNoise
-[36] CountdownStartNoise
-[37] CrowdActor
-[38] CrowdActor_TA
-[39] CrowdActors
-[40] CrowdActorSettings_RocketLabs
-[41] CrowdActorSettings_TA
-[42] CrowdDefenseSettings
-[43] CrowdManager_TA
-[44] CrowdNoiseModifier_TA
-[45] DefaultViewX
-[46] DefaultViewY
-[47] DefenseChant
-[48] DefenseZoneDistance
-[49] DefenseZoneTime
-[50] Demolish
-[51] Demolition
-[52] Description
-[53] DrawHeight
-[54] DrawScale
-[55] DrawWidth
-[56] DrawX
-[57] DrawY
-[58] DurationMax
-[59] DurationMin
-[60] EInterpCurveMode
-[61] ELightingBuildQuality
-[62] Engine
-[63] EpicSave
-[64] EPixelFormat
-[65] Events
-[66] ExpectedType
-[67] FirstTouch
-[68] FloatProperty
-[69] Format
-[70] Goal
-[71] HatTrick
-[72] IdleNoise
-[73] IdleNoiseDuration
-[74] InputLinkIdx
-[75] InputLinks
-[76] InterpCurveFloat
-[77] InterpMode
-[78] IntProperty
-[79] InVal
-[80] JuggleHit
-[81] Label
-[82] labs_sfx
-[83] LeaveTangent
-[84] Level
-[85] LevelLightingQuality
-[86] LinkDesc
-[87] LinkedOp
-[88] LinkedVariables
-[89] Links
-[90] LinkVar
-[91] Location
-[92] LODGroup
-[93] LongGoal
-[94] Loss
-[95] Main_Sequence
-[96] MatchEndedEncoreDelay
-[97] Max
-[98] MaxVars
-[99] MaxWidth
-[100] MedalThreshold
-[101] Min
-[102] MinVars
-[103] MipGenSettings
-[104] Model
-[105] MVP
-[106] MX_InGame_RocketLabs
-[107] NameProperty
-[108] NeverStream
-[109] Noise
-[110] NoiseFallRate
-[111] NoiseRiseRate
-[112] None
-[113] ObjectProperty
-[114] ObjInstanceVersion
-[115] OriginalSizeX
-[116] OriginalSizeY
-[117] OutputLinks
-[118] OutVal
-[119] OverrideDelta
-[120] OvertimeGoal
-[121] OvertimeStartNoise
-[122] Package
-[123] ParentSequence
-[124] PersistentLevel
-[125] PF_DXT5
-[126] Playmaker
-[127] PluralLabel
-[128] Points
-[129] Polys
-[130] PropertyName
-[131] Quality_Production
-[132] QueuedActivations
-[133] RandomChantsDelay
-[134] RandomRange
-[135] ReplayDelay
-[136] RequiredBank
-[137] Rotation
-[138] Rotator
-[139] Save
-[140] Savior
-[141] SeqAct_AkPlaySound
-[142] SeqEvent_LevelLoaded
-[143] Sequence
-[144] SequenceObjects
-[145] SeqVar_Object
-[146] Settings
-[147] Shot
-[148] SizeX
-[149] SizeY
-[150] SoundCue
-[151] SRGB
-[152] StartEvent
-[153] StatEvent
-[154] StatEvent_TA
-[155] StatEvents
-[156] StatNoises
-[157] StrProperty
-[158] StructProperty
-[159] Tag
-[160] TAGame
-[161] Targets
-[162] Texture
-[163] Texture2D
-[164] TextureGroup
-[165] TEXTUREGROUP_UI
-[166] TextureMipGenSettings
-[167] TheWorld
-[168] TimeAlmostOutNoise
-[169] TMGS_NoMipmaps
-[170] TrophyThreshold
-[171] ValueMax
-[172] ValueMin
-[173] VariableLinks
-[174] Vector
-[175] Win
-[176] World
-[177] WorldInfo
-[178] bClientSideOnly
-[179] SFX_AMB_RocketLabs
-[180] bNotifyTicker
-[181] Bank
-[182] SeqAct_AkLoadBank
-[183] SFX_AMB_Reverb
-[184] ArriveWeight
-[185] LeaveWeight
+[Name 0] [0x0007001000000000] ActivateDelay
+[Name 1] [0x0007001000000000] AerialGoal
+[Name 2] [0x0007001000000000] AerialHit
+[Name 3] [0x0007001000000000] AkAudio
+[Name 4] [0x0007001000000000] AkBank
+[Name 5] [0x0007001000000000] AkSoundCue
+[Name 6] [0x0007001000000000] Amb_RocketLabs_Base
+[Name 7] [0x0007001000000000] ArrayProperty
+[Name 8] [0x0007001000000000] ArriveTangent
+[Name 9] [0x0007001000000000] Assist
+[Name 10] [0x0007001000000000] BackwardsGoal
+[Name 11] [0x0007001000000000] BallGoalDistanceNoiseCurve
+[Name 12] [0x0007001000000000] BallHitNoiseDelay
+[Name 13] [0x0007001000000000] bAllowAnyType
+[Name 14] [0x0007001000000000] bCanMute
+[Name 15] [0x0007001000000000] bClampedMax
+[Name 16] [0x0007001000000000] bClampedMin
+[Name 17] [0x0007001000000000] bDisabled
+[Name 18] [0x0007001000000000] bDisabledPIE
+[Name 19] [0x0007001000000000] bHasImpulse
+[Name 20] [0x0007001000000000] bHidden
+[Name 21] [0x0007001000000000] BicycleGoal
+[Name 22] [0x0007001000000000] BicycleHit
+[Name 23] [0x0007001000000000] bModifiesLinkedObject
+[Name 24] [0x0007001000000000] BoolProperty
+[Name 25] [0x0007001000000000] bSequenceNeverReadsOnlyWritesToThisVar
+[Name 26] [0x0007001000000000] BulletGoal
+[Name 27] [0x0007001000000000] BulletHit
+[Name 28] [0x0007001000000000] bWriteable
+[Name 29] [0x0007001000000000] ByteProperty
+[Name 30] [0x0007001000000000] Center
+[Name 31] [0x0007001000000000] CIM_Linear
+[Name 32] [0x0007001000000000] Class
+[Name 33] [0x0007001000000000] Clear
+[Name 34] [0x0007001000000000] Core
+[Name 35] [0x0007001000000000] CountdownEndNoise
+[Name 36] [0x0007001000000000] CountdownStartNoise
+[Name 37] [0x0007001000000000] CrowdActor
+[Name 38] [0x0007001000000000] CrowdActor_TA
+[Name 39] [0x0007001000000000] CrowdActors
+[Name 40] [0x0007001000000000] CrowdActorSettings_RocketLabs
+[Name 41] [0x0007001000000000] CrowdActorSettings_TA
+[Name 42] [0x0007001000000000] CrowdDefenseSettings
+[Name 43] [0x0007001000000000] CrowdManager_TA
+[Name 44] [0x0007001000000000] CrowdNoiseModifier_TA
+[Name 45] [0x0007001000000000] DefaultViewX
+[Name 46] [0x0007001000000000] DefaultViewY
+[Name 47] [0x0007001000000000] DefenseChant
+[Name 48] [0x0007001000000000] DefenseZoneDistance
+[Name 49] [0x0007001000000000] DefenseZoneTime
+[Name 50] [0x0007001000000000] Demolish
+[Name 51] [0x0007001000000000] Demolition
+[Name 52] [0x0007001000000000] Description
+[Name 53] [0x0007001000000000] DrawHeight
+[Name 54] [0x0007001000000000] DrawScale
+[Name 55] [0x0007001000000000] DrawWidth
+[Name 56] [0x0007001000000000] DrawX
+[Name 57] [0x0007001000000000] DrawY
+[Name 58] [0x0007001000000000] DurationMax
+[Name 59] [0x0007001000000000] DurationMin
+[Name 60] [0x0007001000000000] EInterpCurveMode
+[Name 61] [0x0007001000000000] ELightingBuildQuality
+[Name 62] [0x0007001000000000] Engine
+[Name 63] [0x0007001000000000] EpicSave
+[Name 64] [0x0007001000000000] EPixelFormat
+[Name 65] [0x0007001000000000] Events
+[Name 66] [0x0007001000000000] ExpectedType
+[Name 67] [0x0007001000000000] FirstTouch
+[Name 68] [0x0007001000000000] FloatProperty
+[Name 69] [0x0007001000000000] Format
+[Name 70] [0x0007001000000000] Goal
+[Name 71] [0x0007001000000000] HatTrick
+[Name 72] [0x0007001000000000] IdleNoise
+[Name 73] [0x0007001000000000] IdleNoiseDuration
+[Name 74] [0x0007001000000000] InputLinkIdx
+[Name 75] [0x0007001000000000] InputLinks
+[Name 76] [0x0007001000000000] InterpCurveFloat
+[Name 77] [0x0007001000000000] InterpMode
+[Name 78] [0x0007001000000000] IntProperty
+[Name 79] [0x0007001000000000] InVal
+[Name 80] [0x0007001000000000] JuggleHit
+[Name 81] [0x0007001000000000] Label
+[Name 82] [0x0007001000000000] labs_sfx
+[Name 83] [0x0007001000000000] LeaveTangent
+[Name 84] [0x0007001000000000] Level
+[Name 85] [0x0007001000000000] LevelLightingQuality
+[Name 86] [0x0007001000000000] LinkDesc
+[Name 87] [0x0007001000000000] LinkedOp
+[Name 88] [0x0007001000000000] LinkedVariables
+[Name 89] [0x0007001000000000] Links
+[Name 90] [0x0007001000000000] LinkVar
+[Name 91] [0x0007001000000000] Location
+[Name 92] [0x0007001000000000] LODGroup
+[Name 93] [0x0007001000000000] LongGoal
+[Name 94] [0x0007001000000000] Loss
+[Name 95] [0x0007001000000000] Main_Sequence
+[Name 96] [0x0007001000000000] MatchEndedEncoreDelay
+[Name 97] [0x0007001000000000] Max
+[Name 98] [0x0007001000000000] MaxVars
+[Name 99] [0x0007001000000000] MaxWidth
+[Name 100] [0x0007000000000000] MedalThreshold
+[Name 101] [0x0007001000000000] Min
+[Name 102] [0x0007001000000000] MinVars
+[Name 103] [0x0007001000000000] MipGenSettings
+[Name 104] [0x0007001000000000] Model
+[Name 105] [0x0007001000000000] MVP
+[Name 106] [0x0007001000000000] MX_InGame_RocketLabs
+[Name 107] [0x0007001000000000] NameProperty
+[Name 108] [0x0007001000000000] NeverStream
+[Name 109] [0x0007001000000000] Noise
+[Name 110] [0x0007001000000000] NoiseFallRate
+[Name 111] [0x0007001000000000] NoiseRiseRate
+[Name 112] [0x0007001000000000] None
+[Name 113] [0x0007001000000000] ObjectProperty
+[Name 114] [0x0007001000000000] ObjInstanceVersion
+[Name 115] [0x0007001000000000] OriginalSizeX
+[Name 116] [0x0007001000000000] OriginalSizeY
+[Name 117] [0x0007001000000000] OutputLinks
+[Name 118] [0x0007001000000000] OutVal
+[Name 119] [0x0007001000000000] OverrideDelta
+[Name 120] [0x0007001000000000] OvertimeGoal
+[Name 121] [0x0007001000000000] OvertimeStartNoise
+[Name 122] [0x0007001000000000] Package
+[Name 123] [0x0007001000000000] ParentSequence
+[Name 124] [0x0007001000000000] PersistentLevel
+[Name 125] [0x0007001000000000] PF_DXT5
+[Name 126] [0x0007001000000000] Playmaker
+[Name 127] [0x0007001000000000] PluralLabel
+[Name 128] [0x0007001000000000] Points
+[Name 129] [0x0007001000000000] Polys
+[Name 130] [0x0007001000000000] PropertyName
+[Name 131] [0x0007001000000000] Quality_Production
+[Name 132] [0x0007001000000000] QueuedActivations
+[Name 133] [0x0007001000000000] RandomChantsDelay
+[Name 134] [0x0007001000000000] RandomRange
+[Name 135] [0x0007001000000000] ReplayDelay
+[Name 136] [0x0007001000000000] RequiredBank
+[Name 137] [0x0007001000000000] Rotation
+[Name 138] [0x0007001000000000] Rotator
+[Name 139] [0x0007001000000000] Save
+[Name 140] [0x0007001000000000] Savior
+[Name 141] [0x0007001000000000] SeqAct_AkPlaySound
+[Name 142] [0x0007001000000000] SeqEvent_LevelLoaded
+[Name 143] [0x0007001000000000] Sequence
+[Name 144] [0x0007001000000000] SequenceObjects
+[Name 145] [0x0007001000000000] SeqVar_Object
+[Name 146] [0x0007001000000000] Settings
+[Name 147] [0x0007001000000000] Shot
+[Name 148] [0x0007001000000000] SizeX
+[Name 149] [0x0007001000000000] SizeY
+[Name 150] [0x0007001000000000] SoundCue
+[Name 151] [0x0007001000000000] SRGB
+[Name 152] [0x0007001000000000] StartEvent
+[Name 153] [0x0007001000000000] StatEvent
+[Name 154] [0x0007001000000000] StatEvent_TA
+[Name 155] [0x0007001000000000] StatEvents
+[Name 156] [0x0007001000000000] StatNoises
+[Name 157] [0x0007001000000000] StrProperty
+[Name 158] [0x0007001000000000] StructProperty
+[Name 159] [0x0007001000000000] Tag
+[Name 160] [0x0007001000000000] TAGame
+[Name 161] [0x0007001000000000] Targets
+[Name 162] [0x0007001000000000] Texture
+[Name 163] [0x0007001000000000] Texture2D
+[Name 164] [0x0007001000000000] TextureGroup
+[Name 165] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 166] [0x0007001000000000] TextureMipGenSettings
+[Name 167] [0x0007001000000000] TheWorld
+[Name 168] [0x0007001000000000] TimeAlmostOutNoise
+[Name 169] [0x0007001000000000] TMGS_NoMipmaps
+[Name 170] [0x0007000000000000] TrophyThreshold
+[Name 171] [0x0007001000000000] ValueMax
+[Name 172] [0x0007001000000000] ValueMin
+[Name 173] [0x0007001000000000] VariableLinks
+[Name 174] [0x0007001000000000] Vector
+[Name 175] [0x0007001000000000] Win
+[Name 176] [0x0007001000000000] World
+[Name 177] [0x0007001000000000] WorldInfo
+[Name 178] [0x0007001000000000] bClientSideOnly
+[Name 179] [0x0007001000000000] SFX_AMB_RocketLabs
+[Name 180] [0x0007001000000000] bNotifyTicker
+[Name 181] [0x0007001000000000] Bank
+[Name 182] [0x0007001000000000] SeqAct_AkLoadBank
+[Name 183] [0x0007001000000000] SFX_AMB_Reverb
+[Name 184] [0x0007001000000000] ArriveWeight
+[Name 185] [0x0007001000000000] LeaveWeight
 
 
     ~ Exports ~ 
 
 
-[0]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UAkSoundCue Labs_SFX.MX_InGame_RocketLabs.Amb_RocketLabs_Base
 	Name: Amb_RocketLabs_Base
-	Class: AkSoundCue
-	Outer: Package MX_InGame_RocketLabs
+	Class: UAkSoundCue
+	Outer: MX_InGame_RocketLabs
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002971 with 0x0000005d Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UCrowdActor_TA Labs_SFX.TheWorld.PersistentLevel.CrowdActor_TA_0
 	Name: CrowdActor_TA_0
-	Class: CrowdActor_TA
-	Outer: Level PersistentLevel
+	Class: UCrowdActor_TA
+	Outer: PersistentLevel
 	Object Flags: 0x0207000100000000
 	Serialized data: at 0x00000000000029ce with 0x000000d2 Bytes
 	Export Flags: 0x00000000
-[3]
+[Export 3]
+	Full Name: UCrowdActorSettings_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs
 	Name: CrowdActorSettings_RocketLabs
-	Class: CrowdActorSettings_TA
-	Outer: Package CrowdActor
+	Class: UCrowdActorSettings_TA
+	Outer: CrowdActor
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000e9d5 with 0x00000afc Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UCrowdManager_TA Labs_SFX.TheWorld.PersistentLevel.CrowdManager_TA_0
 	Name: CrowdManager_TA_0
-	Class: CrowdManager_TA
-	Outer: Level PersistentLevel
+	Class: UCrowdManager_TA
+	Outer: PersistentLevel
 	Object Flags: 0x0207000100000000
 	Serialized data: at 0x000000000000352c with 0x000000b6 Bytes
 	Export Flags: 0x00000000
-[5]
+[Export 5]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_0
 	Name: CrowdNoiseModifier_TA_0
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000035e2 with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_1
 	Name: CrowdNoiseModifier_TA_1
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000365e with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_10
 	Name: CrowdNoiseModifier_TA_10
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000036da with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_11
 	Name: CrowdNoiseModifier_TA_11
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003756 with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_12
 	Name: CrowdNoiseModifier_TA_12
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000037d2 with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_13
 	Name: CrowdNoiseModifier_TA_13
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000384e with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_14
 	Name: CrowdNoiseModifier_TA_14
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000038ca with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_15
 	Name: CrowdNoiseModifier_TA_15
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003946 with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_16
 	Name: CrowdNoiseModifier_TA_16
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000039c2 with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_17
 	Name: CrowdNoiseModifier_TA_17
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003a3e with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_18
 	Name: CrowdNoiseModifier_TA_18
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003aba with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_19
 	Name: CrowdNoiseModifier_TA_19
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003b36 with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_2
 	Name: CrowdNoiseModifier_TA_2
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003bb2 with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_20
 	Name: CrowdNoiseModifier_TA_20
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003c2e with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_21
 	Name: CrowdNoiseModifier_TA_21
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003caa with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_22
 	Name: CrowdNoiseModifier_TA_22
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003d26 with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_23
 	Name: CrowdNoiseModifier_TA_23
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003da2 with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_25
 	Name: CrowdNoiseModifier_TA_25
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003e1e with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_26
 	Name: CrowdNoiseModifier_TA_26
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003e9a with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_3
 	Name: CrowdNoiseModifier_TA_3
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003f16 with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_4
 	Name: CrowdNoiseModifier_TA_4
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003f92 with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_5
 	Name: CrowdNoiseModifier_TA_5
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000400e with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_6
 	Name: CrowdNoiseModifier_TA_6
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000408a with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_7
 	Name: CrowdNoiseModifier_TA_7
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004106 with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_8
 	Name: CrowdNoiseModifier_TA_8
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004182 with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UCrowdNoiseModifier_TA Labs_SFX.CrowdActor.CrowdActorSettings_RocketLabs.CrowdNoiseModifier_TA_9
 	Name: CrowdNoiseModifier_TA_9
-	Class: CrowdNoiseModifier_TA
-	Outer: CrowdActorSettings_TA CrowdActorSettings_RocketLabs
+	Class: UCrowdNoiseModifier_TA
+	Outer: CrowdActorSettings_RocketLabs
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000041fe with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: ULevel Labs_SFX.TheWorld.PersistentLevel
 	Name: PersistentLevel
-	Class: Level
-	Outer: World TheWorld
+	Class: ULevel
+	Outer: TheWorld
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000427a with 0x00000110 Bytes
 	Export Flags: 0x00000000
-[32]
+[Export 32]
+	Full Name: UModel Labs_SFX.TheWorld.PersistentLevel.Model_4
 	Name: Model_4
-	Class: Model
-	Outer: Level PersistentLevel
+	Class: UModel
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000f585 with 0x0000009c Bytes
 	Export Flags: 0x00000000
-[33]
+[Export 33]
+	Full Name: UPackage Labs_SFX.CrowdActor
 	Name: CrowdActor
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004426 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[34]
+[Export 34]
+	Full Name: UPackage Labs_SFX.labs_sfx
 	Name: labs_sfx
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004432 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0xb9e725fb 0x48279f1e 0x1106efb7 0xa047e60a
 	Package Flags: 0x228a0009
-[35]
+[Export 35]
+	Full Name: UPackage Labs_SFX.MX_InGame_RocketLabs
 	Name: MX_InGame_RocketLabs
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000443e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[36]
+[Export 36]
+	Full Name: UPackage Labs_SFX.StatEvents
 	Name: StatEvents
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000444a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0xc3f17d4e 0x45f1119b 0xbb6c3386 0x3bf6165e
 	Package Flags: 0x20000000
-[37]
+[Export 37]
+	Full Name: UPackage Labs_SFX.StatEvents.Events
 	Name: Events
-	Class: Package
-	Outer: Package StatEvents
+	Class: UPackage
+	Outer: StatEvents
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000244ab with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[38]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[39]
+[Export 39]
+	Full Name: USeqAct_AkPlaySound Labs_SFX.TheWorld.PersistentLevel.Main_Sequence.SeqAct_AkPlaySound_0
 	Name: SeqAct_AkPlaySound_0
-	Class: SeqAct_AkPlaySound
-	Outer: Sequence Main_Sequence
+	Class: USeqAct_AkPlaySound
+	Outer: Main_Sequence
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000d7e1 with 0x0000068e Bytes
 	Export Flags: 0x00000000
-[40]
+[Export 40]
+	Full Name: USeqEvent_LevelLoaded Labs_SFX.TheWorld.PersistentLevel.Main_Sequence.SeqEvent_LevelLoaded_0
 	Name: SeqEvent_LevelLoaded_0
-	Class: SeqEvent_LevelLoaded
-	Outer: Sequence Main_Sequence
+	Class: USeqEvent_LevelLoaded
+	Outer: Main_Sequence
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000de6f with 0x00000535 Bytes
 	Export Flags: 0x00000000
-[41]
+[Export 41]
+	Full Name: USequence Labs_SFX.TheWorld.PersistentLevel.Main_Sequence
 	Name: Main_Sequence
-	Class: Sequence
-	Outer: Level PersistentLevel
+	Class: USequence
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000e3a4 with 0x0000006c Bytes
 	Export Flags: 0x00000000
-[42]
+[Export 42]
+	Full Name: UStatEvent_TA Labs_SFX.StatEvents.Events.BulletGoal
 	Name: BulletGoal
-	Class: StatEvent_TA
-	Outer: Package Events
+	Class: UStatEvent_TA
+	Outer: Events
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x00000000000244b7 with 0x000000d5 Bytes
 	Export Flags: 0x00000001
-[43]
+[Export 43]
+	Full Name: UStatEvent_TA Labs_SFX.StatEvents.Events.BulletHit
 	Name: BulletHit
-	Class: StatEvent_TA
-	Outer: Package Events
+	Class: UStatEvent_TA
+	Outer: Events
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x000000000002458c with 0x000000de Bytes
 	Export Flags: 0x00000001
-[44]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[45]
+[Export 45]
+	Full Name: UTexture2D Labs_SFX.StatEvents.Events.BulletHit
 	Name: BulletHit
-	Class: Texture2D
-	Outer: Package Events
+	Class: UTexture2D
+	Outer: Events
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000002c966 with 0x0000417e Bytes
 	Export Flags: 0x00000001
-[46]
+[Export 46]
+	Full Name: UWorld Labs_SFX.TheWorld
 	Name: TheWorld
-	Class: World
+	Class: UWorld
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000e410 with 0x0000008c Bytes
 	Export Flags: 0x00000000
-[47]
+[Export 47]
+	Full Name: UWorldInfo Labs_SFX.TheWorld.PersistentLevel.WorldInfo_2
 	Name: WorldInfo_2
-	Class: WorldInfo
-	Outer: Level PersistentLevel
+	Class: UWorldInfo
+	Outer: PersistentLevel
 	Object Flags: 0x0207000100000000
 	Serialized data: at 0x000000000000e49c with 0x0000006a Bytes
 	Export Flags: 0x00000000
-[48]
+[Export 48]
+	Full Name: UAkBank Labs_SFX.SFX_AMB_RocketLabs.SFX_AMB_RocketLabs
 	Name: SFX_AMB_RocketLabs
-	Class: AkBank
-	Outer: Package SFX_AMB_RocketLabs
+	Class: UAkBank
+	Outer: SFX_AMB_RocketLabs
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000009474 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[49]
+[Export 49]
+	Full Name: UPackage Labs_SFX.SFX_AMB_RocketLabs
 	Name: SFX_AMB_RocketLabs
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000009480 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[50]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[51]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[52]
+[Export 52]
+	Full Name: UAkBank Labs_SFX.SFX_AMB_Reverb.SFX_AMB_Reverb
 	Name: SFX_AMB_Reverb
-	Class: AkBank
-	Outer: Package SFX_AMB_Reverb
+	Class: UAkBank
+	Outer: SFX_AMB_Reverb
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000e506 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[53]
+[Export 53]
+	Full Name: UPackage Labs_SFX.SFX_AMB_Reverb
 	Name: SFX_AMB_Reverb
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000e512 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[54]
+[Export 54]
+	Full Name: USeqAct_AkLoadBank Labs_SFX.TheWorld.PersistentLevel.Main_Sequence.SeqAct_AkLoadBank_0
 	Name: SeqAct_AkLoadBank_0
-	Class: SeqAct_AkLoadBank
-	Outer: Sequence Main_Sequence
+	Class: USeqAct_AkLoadBank
+	Outer: Main_Sequence
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000e51e with 0x000004b7 Bytes
 	Export Flags: 0x00000000
-[55]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[56]
+[Export 56]
+	Full Name: UPolys Labs_SFX.TheWorld.PersistentLevel.Polys_16
 	Name: Polys_16
-	Class: Polys
-	Outer: Level PersistentLevel
+	Class: UPolys
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000f621 with 0x00000018 Bytes
 	Export Flags: 0x00000000
@@ -817,239 +833,287 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass AkAudio.AkSoundCue
 	Name: AkSoundCue
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[1]
+	Class Package: Core
+	Outer: AkAudio
+[Import 1]
+	Full Name: UClass AkAudio.SeqAct_AkPlaySound
 	Name: SeqAct_AkPlaySound
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[2]
+	Class Package: Core
+	Outer: AkAudio
+[Import 2]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[3]
+	Class Package: Core
+	Outer: Core
+[Import 3]
+	Full Name: UClass Engine.AkBank
 	Name: AkBank
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.Level
 	Name: Level
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.Model
 	Name: Model
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.Polys
 	Name: Polys
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.SeqEvent_LevelLoaded
 	Name: SeqEvent_LevelLoaded
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.Sequence
 	Name: Sequence
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass Engine.SeqVar_Object
 	Name: SeqVar_Object
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[10]
+	Class Package: Core
+	Outer: Engine
+[Import 10]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[11]
+	Class Package: Core
+	Outer: Engine
+[Import 11]
+	Full Name: UClass Engine.World
 	Name: World
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[12]
+	Class Package: Core
+	Outer: Engine
+[Import 12]
+	Full Name: UClass Engine.WorldInfo
 	Name: WorldInfo
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[13]
+	Class Package: Core
+	Outer: Engine
+[Import 13]
+	Full Name: UClass TAGame.CrowdActor_TA
 	Name: CrowdActor_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[14]
+	Class Package: Core
+	Outer: TAGame
+[Import 14]
+	Full Name: UClass TAGame.CrowdActorSettings_TA
 	Name: CrowdActorSettings_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[15]
+	Class Package: Core
+	Outer: TAGame
+[Import 15]
+	Full Name: UClass TAGame.CrowdManager_TA
 	Name: CrowdManager_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[16]
+	Class Package: Core
+	Outer: TAGame
+[Import 16]
+	Full Name: UClass TAGame.CrowdNoiseModifier_TA
 	Name: CrowdNoiseModifier_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[17]
+	Class Package: Core
+	Outer: TAGame
+[Import 17]
+	Full Name: UClass TAGame.StatEvent_TA
 	Name: StatEvent_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[18]
+	Class Package: Core
+	Outer: TAGame
+[Import 18]
+	Full Name: UPackage AkAudio
 	Name: AkAudio
 	Class: Package
-	Package: Core
-[19]
+	Class Package: Core
+[Import 19]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[20]
+	Class Package: Core
+[Import 20]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[21]
+	Class Package: Core
+[Import 21]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[22]
+	Class Package: Core
+[Import 22]
+	Full Name: UStatEvent_TA StatEvents.Events.AerialGoal
 	Name: AerialGoal
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[23]
+	Class Package: TAGame
+	Outer: Events
+[Import 23]
+	Full Name: UStatEvent_TA StatEvents.Events.AerialHit
 	Name: AerialHit
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[24]
+	Class Package: TAGame
+	Outer: Events
+[Import 24]
+	Full Name: UStatEvent_TA StatEvents.Events.Assist
 	Name: Assist
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[25]
+	Class Package: TAGame
+	Outer: Events
+[Import 25]
+	Full Name: UStatEvent_TA StatEvents.Events.BackwardsGoal
 	Name: BackwardsGoal
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[26]
+	Class Package: TAGame
+	Outer: Events
+[Import 26]
+	Full Name: UStatEvent_TA StatEvents.Events.BicycleGoal
 	Name: BicycleGoal
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[27]
+	Class Package: TAGame
+	Outer: Events
+[Import 27]
+	Full Name: UStatEvent_TA StatEvents.Events.BicycleHit
 	Name: BicycleHit
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[28]
+	Class Package: TAGame
+	Outer: Events
+[Import 28]
+	Full Name: UStatEvent_TA StatEvents.Events.Center
 	Name: Center
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[29]
+	Class Package: TAGame
+	Outer: Events
+[Import 29]
+	Full Name: UStatEvent_TA StatEvents.Events.Clear
 	Name: Clear
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[30]
+	Class Package: TAGame
+	Outer: Events
+[Import 30]
+	Full Name: UStatEvent_TA StatEvents.Events.Demolish
 	Name: Demolish
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[31]
+	Class Package: TAGame
+	Outer: Events
+[Import 31]
+	Full Name: UStatEvent_TA StatEvents.Events.Demolition
 	Name: Demolition
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[32]
+	Class Package: TAGame
+	Outer: Events
+[Import 32]
+	Full Name: UStatEvent_TA StatEvents.Events.EpicSave
 	Name: EpicSave
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[33]
+	Class Package: TAGame
+	Outer: Events
+[Import 33]
+	Full Name: UStatEvent_TA StatEvents.Events.FirstTouch
 	Name: FirstTouch
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[34]
+	Class Package: TAGame
+	Outer: Events
+[Import 34]
+	Full Name: UStatEvent_TA StatEvents.Events.Goal
 	Name: Goal
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[35]
+	Class Package: TAGame
+	Outer: Events
+[Import 35]
+	Full Name: UStatEvent_TA StatEvents.Events.HatTrick
 	Name: HatTrick
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[36]
+	Class Package: TAGame
+	Outer: Events
+[Import 36]
+	Full Name: UStatEvent_TA StatEvents.Events.JuggleHit
 	Name: JuggleHit
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[37]
+	Class Package: TAGame
+	Outer: Events
+[Import 37]
+	Full Name: UStatEvent_TA StatEvents.Events.LongGoal
 	Name: LongGoal
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[38]
+	Class Package: TAGame
+	Outer: Events
+[Import 38]
+	Full Name: UStatEvent_TA StatEvents.Events.Loss
 	Name: Loss
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[39]
+	Class Package: TAGame
+	Outer: Events
+[Import 39]
+	Full Name: UStatEvent_TA StatEvents.Events.MVP
 	Name: MVP
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[40]
+	Class Package: TAGame
+	Outer: Events
+[Import 40]
+	Full Name: UStatEvent_TA StatEvents.Events.OvertimeGoal
 	Name: OvertimeGoal
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[41]
+	Class Package: TAGame
+	Outer: Events
+[Import 41]
+	Full Name: UStatEvent_TA StatEvents.Events.Playmaker
 	Name: Playmaker
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[42]
+	Class Package: TAGame
+	Outer: Events
+[Import 42]
+	Full Name: UStatEvent_TA StatEvents.Events.Save
 	Name: Save
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[43]
+	Class Package: TAGame
+	Outer: Events
+[Import 43]
+	Full Name: UStatEvent_TA StatEvents.Events.Savior
 	Name: Savior
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[44]
+	Class Package: TAGame
+	Outer: Events
+[Import 44]
+	Full Name: UStatEvent_TA StatEvents.Events.Shot
 	Name: Shot
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[45]
+	Class Package: TAGame
+	Outer: Events
+[Import 45]
+	Full Name: UStatEvent_TA StatEvents.Events.Win
 	Name: Win
 	Class: StatEvent_TA
-	Package: TAGame
-	Outer: Package Events
-[46]
+	Class Package: TAGame
+	Outer: Events
+[Import 46]
+	Full Name: UTexture2D StatEvents.Events.BulletGoal
 	Name: BulletGoal
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Events
-[47]
+	Class Package: Engine
+	Outer: Events
+[Import 47]
+	Full Name: UClass AkAudio.SeqAct_AkLoadBank
 	Name: SeqAct_AkLoadBank
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
+	Class Package: Core
+	Outer: AkAudio

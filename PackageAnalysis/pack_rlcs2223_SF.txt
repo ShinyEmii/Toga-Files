@@ -49,6 +49,7 @@ Test Data Size: 0x00003fb5
 Compressed Chunk Info Offset: 0x00000413
 Last Block Size: 0x0000000c
 Base Header Size: 0x000000b1
+Encrypted Header Size: 0x000043f0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -56,57 +57,61 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] Class
-[2] Core
-[3] Engine
-[4] FloatProperty
-[5] None
-[6] ObjectProperty
-[7] ObjectReferencer
-[8] pack_rlcs2223
-[9] pack_rlcs2223_SF
-[10] pack_rlcs2223_T
-[11] pack_rlcs2223_TThumbnail
-[12] Package
-[13] ProductAsset_Pack_TA
-[14] ReferencedObjects
-[15] StandaloneSeekFreeReferencer
-[16] TAGame
-[17] Texture2D
-[18] Thumbnail
-[19] ThumbnailKeyLightBrightnessScale
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] Class
+[Name 2] [0x0007001000000000] Core
+[Name 3] [0x0007001000000000] Engine
+[Name 4] [0x0007001000000000] FloatProperty
+[Name 5] [0x0007001000000000] None
+[Name 6] [0x0007000000000000] ObjectProperty
+[Name 7] [0x0007001000000000] ObjectReferencer
+[Name 8] [0x0007001000000000] pack_rlcs2223
+[Name 9] [0x0007001000000000] pack_rlcs2223_SF
+[Name 10] [0x0007000000000000] pack_rlcs2223_T
+[Name 11] [0x0007000000000000] pack_rlcs2223_TThumbnail
+[Name 12] [0x0007001000000000] Package
+[Name 13] [0x0007001000000000] ProductAsset_Pack_TA
+[Name 14] [0x0007001000000000] ReferencedObjects
+[Name 15] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 16] [0x0007001000000000] TAGame
+[Name 17] [0x0007000000000000] Texture2D
+[Name 18] [0x0007000000000000] Thumbnail
+[Name 19] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UObjectReferencer pack_rlcs2223.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x00000000000004c4 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UPackage pack_rlcs2223.pack_rlcs2223
 	Name: pack_rlcs2223
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000004f0 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[2]
+[Export 2]
+	Full Name: UPackage pack_rlcs2223.pack_rlcs2223_SF
 	Name: pack_rlcs2223_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000004fc with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[3]
+[Export 3]
+	Full Name: UProductAsset_Pack_TA pack_rlcs2223.pack_rlcs2223.pack_rlcs2223
 	Name: pack_rlcs2223
-	Class: ProductAsset_Pack_TA
-	Outer: Package pack_rlcs2223
+	Class: UProductAsset_Pack_TA
+	Outer: pack_rlcs2223
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000054c with 0x00000028 Bytes
 	Export Flags: 0x00000001
@@ -115,38 +120,36 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass TAGame.ProductAsset_Pack_TA
 	Name: ProductAsset_Pack_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[3]
+	Class Package: Core
+	Outer: TAGame
+[Import 3]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[4]
+	Class Package: Core
+[Import 4]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[5]
-	Name: None
-	Class: None
-	Package: None
-[6]
+	Class Package: Core
+[Import 6]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[7]
-	Name: None
-	Class: None
-	Package: None
+	Class Package: Core

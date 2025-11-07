@@ -57,6 +57,7 @@ Test Data Size: 0x00003fe3
 Compressed Chunk Info Offset: 0x00000a05
 Last Block Size: 0x00000004
 Base Header Size: 0x000000d5
+Encrypted Header Size: 0x00004a00
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -64,141 +65,151 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] bAllowLicensedEquip
-[2] Banner
-[3] bIsSourceArtUncompressed
-[4] BoolProperty
-[5] bReplicated
-[6] ByteProperty
-[7] Class
-[8] CompressionNone
-[9] Core
-[10] DefaultProduct_New
-[11] Engine
-[12] EPixelFormat
-[13] Format
-[14] Icon
-[15] IconLarge
-[16] Icons
-[17] IntProperty
-[18] Label
-[19] LODGroup
-[20] MipGenSettings
-[21] MipTailBaseIdx
-[22] NeverStream
-[23] None
-[24] ObjectProperty
-[25] ObjectReferencer
-[26] OnlineLabel
-[27] OriginalSizeX
-[28] OriginalSizeY
-[29] Package
-[30] PF_A8R8G8B8
-[31] PlayerBanner
-[32] playerBanner_RLShield
-[33] playerbanner_sog
-[34] playerbanner_sog_SF
-[35] PluralLabel
-[36] Product_TA
-[37] ProductAsset_PlayerBanner_TA
-[38] Products
-[39] ProductsDB
-[40] ProductSlot_TA
-[41] ProductSlots
-[42] ReferencedObjects
-[43] SizeX
-[44] SizeY
-[45] SRGB
-[46] StandaloneSeekFreeReferencer
-[47] Static
-[48] StrProperty
-[49] TAGame
-[50] Texture2D
-[51] TextureGroup
-[52] TEXTUREGROUP_UI
-[53] TextureMipGenSettings
-[54] Thumb_Banner_sog
-[55] Thumbnail
-[56] Tintable
-[57] TintableLayer
-[58] TMGS_NoMipmaps
-[59] ToPlayer
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] bAllowLicensedEquip
+[Name 2] [0x0007001000000000] Banner
+[Name 3] [0x0007001000000000] bIsSourceArtUncompressed
+[Name 4] [0x0007001000000000] BoolProperty
+[Name 5] [0x0007001000000000] bReplicated
+[Name 6] [0x0007001000000000] ByteProperty
+[Name 7] [0x0007001000000000] Class
+[Name 8] [0x0007001000000000] CompressionNone
+[Name 9] [0x0007001000000000] Core
+[Name 10] [0x0007001000000000] DefaultProduct_New
+[Name 11] [0x0007001000000000] Engine
+[Name 12] [0x0007001000000000] EPixelFormat
+[Name 13] [0x0007001000000000] Format
+[Name 14] [0x0007001000000000] Icon
+[Name 15] [0x0007001000000000] IconLarge
+[Name 16] [0x0007001000000000] Icons
+[Name 17] [0x0007001000000000] IntProperty
+[Name 18] [0x0007001000000000] Label
+[Name 19] [0x0007001000000000] LODGroup
+[Name 20] [0x0007001000000000] MipGenSettings
+[Name 21] [0x0007001000000000] MipTailBaseIdx
+[Name 22] [0x0007001000000000] NeverStream
+[Name 23] [0x0007001000000000] None
+[Name 24] [0x0007001000000000] ObjectProperty
+[Name 25] [0x0007001000000000] ObjectReferencer
+[Name 26] [0x0007001000000000] OnlineLabel
+[Name 27] [0x0007001000000000] OriginalSizeX
+[Name 28] [0x0007001000000000] OriginalSizeY
+[Name 29] [0x0007001000000000] Package
+[Name 30] [0x0007001000000000] PF_A8R8G8B8
+[Name 31] [0x0007001000000000] PlayerBanner
+[Name 32] [0x0007001000000000] playerBanner_RLShield
+[Name 33] [0x0007001000000000] playerbanner_sog
+[Name 34] [0x0007001000000000] playerbanner_sog_SF
+[Name 35] [0x0007001000000000] PluralLabel
+[Name 36] [0x0007001000000000] Product_TA
+[Name 37] [0x0007001000000000] ProductAsset_PlayerBanner_TA
+[Name 38] [0x0007001000000000] Products
+[Name 39] [0x0007001000000000] ProductsDB
+[Name 40] [0x0007001000000000] ProductSlot_TA
+[Name 41] [0x0007001000000000] ProductSlots
+[Name 42] [0x0007001000000000] ReferencedObjects
+[Name 43] [0x0007001000000000] SizeX
+[Name 44] [0x0007001000000000] SizeY
+[Name 45] [0x0007001000000000] SRGB
+[Name 46] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 47] [0x0007001000000000] Static
+[Name 48] [0x0007001000000000] StrProperty
+[Name 49] [0x0007001000000000] TAGame
+[Name 50] [0x0007001000000000] Texture2D
+[Name 51] [0x0007001000000000] TextureGroup
+[Name 52] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 53] [0x0007001000000000] TextureMipGenSettings
+[Name 54] [0x0007001000000000] Thumb_Banner_sog
+[Name 55] [0x0007001000000000] Thumbnail
+[Name 56] [0x0007001000000000] Tintable
+[Name 57] [0x0007001000000000] TintableLayer
+[Name 58] [0x0007001000000000] TMGS_NoMipmaps
+[Name 59] [0x0007001000000000] ToPlayer
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UProductAsset_PlayerBanner_TA playerbanner_sog.ProductSlots.PlayerBanner.ProductAsset_PlayerBanner_TA_0
 	Name: ProductAsset_PlayerBanner_TA_0
-	Class: ProductAsset_PlayerBanner_TA
-	Outer: ProductSlot_TA PlayerBanner
+	Class: UProductAsset_PlayerBanner_TA
+	Outer: PlayerBanner
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000ada with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UObjectReferencer playerbanner_sog.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000000ae6 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[2]
+[Export 2]
+	Full Name: UPackage playerbanner_sog.playerbanner_sog
 	Name: playerbanner_sog
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000b12 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[3]
+[Export 3]
+	Full Name: UPackage playerbanner_sog.playerbanner_sog_SF
 	Name: playerbanner_sog_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000b1e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[4]
+[Export 4]
+	Full Name: UPackage playerbanner_sog.ProductSlots
 	Name: ProductSlots
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000b2a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[5]
+[Export 5]
+	Full Name: UProductAsset_PlayerBanner_TA playerbanner_sog.playerbanner_sog.playerbanner_sog
 	Name: playerbanner_sog
-	Class: ProductAsset_PlayerBanner_TA
-	Outer: Package playerbanner_sog
+	Class: UProductAsset_PlayerBanner_TA
+	Outer: playerbanner_sog
 	Archetype: ProductAsset_PlayerBanner_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000b36 with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UProductSlot_TA playerbanner_sog.ProductSlots.PlayerBanner
 	Name: PlayerBanner
-	Class: ProductSlot_TA
-	Outer: Package ProductSlots
+	Class: UProductSlot_TA
+	Outer: ProductSlots
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x0000000000000b96 with 0x00000111 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UTexture2D playerbanner_sog.playerbanner_sog.Static
 	Name: Static
-	Class: Texture2D
-	Outer: Package playerbanner_sog
+	Class: UTexture2D
+	Outer: playerbanner_sog
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000ca7 with 0x000291f0 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UTexture2D playerbanner_sog.playerbanner_sog.Thumb_Banner_sog
 	Name: Thumb_Banner_sog
-	Class: Texture2D
-	Outer: Package playerbanner_sog
+	Class: UTexture2D
+	Outer: playerbanner_sog
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000029e97 with 0x000401a4 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UTexture2D playerbanner_sog.playerbanner_sog.Tintable
 	Name: Tintable
-	Class: Texture2D
-	Outer: Package playerbanner_sog
+	Class: UTexture2D
+	Outer: playerbanner_sog
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000006a03b with 0x000291f0 Bytes
 	Export Flags: 0x00000001
@@ -207,64 +218,77 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass TAGame.ProductAsset_PlayerBanner_TA
 	Name: ProductAsset_PlayerBanner_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[4]
+	Class Package: Core
+	Outer: TAGame
+[Import 4]
+	Full Name: UClass TAGame.ProductSlot_TA
 	Name: ProductSlot_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[6]
+	Class Package: Core
+[Import 6]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage ProductsDB
 	Name: ProductsDB
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage ProductsDB.Products
 	Name: Products
 	Class: Package
-	Package: Core
-	Outer: Package ProductsDB
-[9]
+	Class Package: Core
+	Outer: ProductsDB
+[Import 9]
+	Full Name: UPackage ProductSlots.Icons
 	Name: Icons
 	Class: Package
-	Package: Core
-	Outer: Package ProductSlots
-[10]
+	Class Package: Core
+	Outer: ProductSlots
+[Import 10]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UProduct_TA ProductsDB.Products.playerBanner_RLShield
 	Name: playerBanner_RLShield
 	Class: Product_TA
-	Package: TAGame
-	Outer: Package Products
-[12]
+	Class Package: TAGame
+	Outer: Products
+[Import 12]
+	Full Name: UTexture2D ProductSlots.Icons.Banner
 	Name: Banner
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Icons
+	Class Package: Engine
+	Outer: Icons

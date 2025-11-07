@@ -45,6 +45,7 @@ Test Data Size: 0x00003f6e
 Compressed Chunk Info Offset: 0x00001e86
 Last Block Size: 0x00000008
 Base Header Size: 0x000000a5
+Encrypted Header Size: 0x00005e20
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -52,589 +53,622 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] AkAudio
-[1] AkBank
-[2] AkSoundCue
-[3] Album_Anthem_JulieB_Vol1
-[4] Anthem_JulieB_Vol1_ID1
-[5] Anthem_JulieB_Vol1_ID2
-[6] Anthem_JulieB_Vol1_ID3
-[7] Anthem_JulieB_Vol1_ID4
-[8] Anthem_JulieB_Vol1_ID5
-[9] Anthem_JulieBuchanan_JetFueled
-[10] Anthem_JulieBuchanan_JetFueled_EpicSave
-[11] Anthem_JulieBuchanan_JetFueled_Goal
-[12] Anthem_JulieBuchanan_JetFueled_MVP
-[13] Anthem_JulieBuchanan_LemonPump
-[14] Anthem_JulieBuchanan_LemonPump_EpicSave
-[15] Anthem_JulieBuchanan_LemonPump_Goal
-[16] Anthem_JulieBuchanan_LemonPump_MVP
-[17] Anthem_JulieBuchanan_MegaVolt
-[18] Anthem_JulieBuchanan_MegaVolt_EpicSave
-[19] Anthem_JulieBuchanan_MegaVolt_Goal
-[20] Anthem_JulieBuchanan_MegaVolt_MVP
-[21] Anthem_JulieBuchanan_TheBrick
-[22] Anthem_JulieBuchanan_TheBrick_EpicSave
-[23] Anthem_JulieBuchanan_TheBrick_Goal
-[24] Anthem_JulieBuchanan_TheBrick_MVP
-[25] Anthem_JulieBuchanan_VixenPunk
-[26] Anthem_JulieBuchanan_VixenPunk_EpicSave
-[27] Anthem_JulieBuchanan_VixenPunk_Goal
-[28] Anthem_JulieBuchanan_VixenPunk_MVP
-[29] ArrayProperty
-[30] BoolProperty
-[31] bReplicated
-[32] Class
-[33] Core
-[34] Engine
-[35] EpicSaveStinger
-[36] FloatProperty
-[37] GoalScoredStinger
-[38] GoalStinger
-[39] Icon
-[40] IconLarge
-[41] Icons
-[42] JulieBuchanan_Vol1_ID1_EpicSave
-[43] JulieBuchanan_Vol1_ID1_Goal
-[44] JulieBuchanan_Vol1_ID1_MVP
-[45] JulieBuchanan_Vol1_ID2_EpicSave
-[46] JulieBuchanan_Vol1_ID2_Goal
-[47] JulieBuchanan_Vol1_ID2_MVP
-[48] JulieBuchanan_Vol1_ID3_EpicSave
-[49] JulieBuchanan_Vol1_ID3_Goal
-[50] JulieBuchanan_Vol1_ID3_MVP
-[51] JulieBuchanan_Vol1_ID4_EpicSave
-[52] JulieBuchanan_Vol1_ID4_Goal
-[53] JulieBuchanan_Vol1_ID4_MVP
-[54] JulieBuchanan_Vol1_ID5_EpicSave
-[55] JulieBuchanan_Vol1_ID5_Goal
-[56] JulieBuchanan_Vol1_ID5_MVP
-[57] JulieBuchanan_WatchMeGo
-[58] Label
-[59] MusicStingers
-[60] MVPAnthem
-[61] MX_Anthem_JulieB_ID1
-[62] MX_Anthem_JulieB_ID2
-[63] MX_Anthem_JulieB_ID3
-[64] MX_Anthem_JulieB_ID4
-[65] MX_Anthem_JulieB_ID5
-[66] MX_Anthem_JulieBuchanan_JetFueled
-[67] MX_Anthem_JulieBuchanan_LemonPump
-[68] MX_Anthem_JulieBuchanan_MegaVolt
-[69] MX_Anthem_JulieBuchanan_TheBrick
-[70] MX_Anthem_JulieBuchanan_VixenPunk
-[71] mx_anthems_julieb_vol1
-[72] mx_anthems_julieb_vol1_SF
-[73] None
-[74] ObjectProperty
-[75] ObjectReferencer
-[76] OnlineLabel
-[77] Package
-[78] PluralLabel
-[79] ProductAsset_MusicStingers_TA
-[80] ProductAsset_Pack_TA
-[81] ProductSlot_TA
-[82] ProductSlots
-[83] ReferencedObjects
-[84] RequiredBank
-[85] StandaloneSeekFreeReferencer
-[86] StartEvent
-[87] StopEvent
-[88] StrProperty
-[89] TAGame
-[90] Texture2D
-[91] Thumbnail
-[92] ThumbnailKeyLightBrightnessScale
+[Name 0] [0x0007001000000000] AkAudio
+[Name 1] [0x0007001000000000] AkBank
+[Name 2] [0x0007001000000000] AkSoundCue
+[Name 3] [0x0007001000000000] Album_Anthem_JulieB_Vol1
+[Name 4] [0x0007001000000000] Anthem_JulieB_Vol1_ID1
+[Name 5] [0x0007001000000000] Anthem_JulieB_Vol1_ID2
+[Name 6] [0x0007001000000000] Anthem_JulieB_Vol1_ID3
+[Name 7] [0x0007001000000000] Anthem_JulieB_Vol1_ID4
+[Name 8] [0x0007001000000000] Anthem_JulieB_Vol1_ID5
+[Name 9] [0x0007001000000000] Anthem_JulieBuchanan_JetFueled
+[Name 10] [0x0007001000000000] Anthem_JulieBuchanan_JetFueled_EpicSave
+[Name 11] [0x0007001000000000] Anthem_JulieBuchanan_JetFueled_Goal
+[Name 12] [0x0007001000000000] Anthem_JulieBuchanan_JetFueled_MVP
+[Name 13] [0x0007001000000000] Anthem_JulieBuchanan_LemonPump
+[Name 14] [0x0007001000000000] Anthem_JulieBuchanan_LemonPump_EpicSave
+[Name 15] [0x0007001000000000] Anthem_JulieBuchanan_LemonPump_Goal
+[Name 16] [0x0007001000000000] Anthem_JulieBuchanan_LemonPump_MVP
+[Name 17] [0x0007001000000000] Anthem_JulieBuchanan_MegaVolt
+[Name 18] [0x0007001000000000] Anthem_JulieBuchanan_MegaVolt_EpicSave
+[Name 19] [0x0007001000000000] Anthem_JulieBuchanan_MegaVolt_Goal
+[Name 20] [0x0007001000000000] Anthem_JulieBuchanan_MegaVolt_MVP
+[Name 21] [0x0007001000000000] Anthem_JulieBuchanan_TheBrick
+[Name 22] [0x0007001000000000] Anthem_JulieBuchanan_TheBrick_EpicSave
+[Name 23] [0x0007001000000000] Anthem_JulieBuchanan_TheBrick_Goal
+[Name 24] [0x0007001000000000] Anthem_JulieBuchanan_TheBrick_MVP
+[Name 25] [0x0007001000000000] Anthem_JulieBuchanan_VixenPunk
+[Name 26] [0x0007001000000000] Anthem_JulieBuchanan_VixenPunk_EpicSave
+[Name 27] [0x0007001000000000] Anthem_JulieBuchanan_VixenPunk_Goal
+[Name 28] [0x0007001000000000] Anthem_JulieBuchanan_VixenPunk_MVP
+[Name 29] [0x0007001000000000] ArrayProperty
+[Name 30] [0x0007000000000000] BoolProperty
+[Name 31] [0x0007000000000000] bReplicated
+[Name 32] [0x0007001000000000] Class
+[Name 33] [0x0007001000000000] Core
+[Name 34] [0x0007001000000000] Engine
+[Name 35] [0x0007001000000000] EpicSaveStinger
+[Name 36] [0x0007001000000000] FloatProperty
+[Name 37] [0x0007001000000000] GoalScoredStinger
+[Name 38] [0x0007000000000000] GoalStinger
+[Name 39] [0x0007000000000000] Icon
+[Name 40] [0x0007000000000000] IconLarge
+[Name 41] [0x0007000000000000] Icons
+[Name 42] [0x0007001000000000] JulieBuchanan_Vol1_ID1_EpicSave
+[Name 43] [0x0007001000000000] JulieBuchanan_Vol1_ID1_Goal
+[Name 44] [0x0007001000000000] JulieBuchanan_Vol1_ID1_MVP
+[Name 45] [0x0007001000000000] JulieBuchanan_Vol1_ID2_EpicSave
+[Name 46] [0x0007001000000000] JulieBuchanan_Vol1_ID2_Goal
+[Name 47] [0x0007001000000000] JulieBuchanan_Vol1_ID2_MVP
+[Name 48] [0x0007001000000000] JulieBuchanan_Vol1_ID3_EpicSave
+[Name 49] [0x0007001000000000] JulieBuchanan_Vol1_ID3_Goal
+[Name 50] [0x0007001000000000] JulieBuchanan_Vol1_ID3_MVP
+[Name 51] [0x0007001000000000] JulieBuchanan_Vol1_ID4_EpicSave
+[Name 52] [0x0007001000000000] JulieBuchanan_Vol1_ID4_Goal
+[Name 53] [0x0007001000000000] JulieBuchanan_Vol1_ID4_MVP
+[Name 54] [0x0007001000000000] JulieBuchanan_Vol1_ID5_EpicSave
+[Name 55] [0x0007001000000000] JulieBuchanan_Vol1_ID5_Goal
+[Name 56] [0x0007001000000000] JulieBuchanan_Vol1_ID5_MVP
+[Name 57] [0x0007000000000000] JulieBuchanan_WatchMeGo
+[Name 58] [0x0007000000000000] Label
+[Name 59] [0x0007001000000000] MusicStingers
+[Name 60] [0x0007001000000000] MVPAnthem
+[Name 61] [0x0007001000000000] MX_Anthem_JulieB_ID1
+[Name 62] [0x0007001000000000] MX_Anthem_JulieB_ID2
+[Name 63] [0x0007001000000000] MX_Anthem_JulieB_ID3
+[Name 64] [0x0007001000000000] MX_Anthem_JulieB_ID4
+[Name 65] [0x0007001000000000] MX_Anthem_JulieB_ID5
+[Name 66] [0x0007001000000000] MX_Anthem_JulieBuchanan_JetFueled
+[Name 67] [0x0007001000000000] MX_Anthem_JulieBuchanan_LemonPump
+[Name 68] [0x0007001000000000] MX_Anthem_JulieBuchanan_MegaVolt
+[Name 69] [0x0007001000000000] MX_Anthem_JulieBuchanan_TheBrick
+[Name 70] [0x0007001000000000] MX_Anthem_JulieBuchanan_VixenPunk
+[Name 71] [0x0007001000000000] mx_anthems_julieb_vol1
+[Name 72] [0x0007001000000000] mx_anthems_julieb_vol1_SF
+[Name 73] [0x0007001000000000] None
+[Name 74] [0x0007001000000000] ObjectProperty
+[Name 75] [0x0007001000000000] ObjectReferencer
+[Name 76] [0x0007000000000000] OnlineLabel
+[Name 77] [0x0007001000000000] Package
+[Name 78] [0x0007000000000000] PluralLabel
+[Name 79] [0x0007001000000000] ProductAsset_MusicStingers_TA
+[Name 80] [0x0007001000000000] ProductAsset_Pack_TA
+[Name 81] [0x0007001000000000] ProductSlot_TA
+[Name 82] [0x0007001000000000] ProductSlots
+[Name 83] [0x0007001000000000] ReferencedObjects
+[Name 84] [0x0007001000000000] RequiredBank
+[Name 85] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 86] [0x0007001000000000] StartEvent
+[Name 87] [0x0007001000000000] StopEvent
+[Name 88] [0x0007001000000000] StrProperty
+[Name 89] [0x0007001000000000] TAGame
+[Name 90] [0x0007000000000000] Texture2D
+[Name 91] [0x0007000000000000] Thumbnail
+[Name 92] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAkBank mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.MX_Anthem_JulieB_ID1
 	Name: MX_Anthem_JulieB_ID1
-	Class: AkBank
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkBank
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001f2b with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UAkBank mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.MX_Anthem_JulieB_ID2
 	Name: MX_Anthem_JulieB_ID2
-	Class: AkBank
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkBank
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001f37 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UAkBank mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.MX_Anthem_JulieB_ID3
 	Name: MX_Anthem_JulieB_ID3
-	Class: AkBank
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkBank
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001f43 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UAkBank mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.MX_Anthem_JulieB_ID4
 	Name: MX_Anthem_JulieB_ID4
-	Class: AkBank
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkBank
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001f4f with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UAkBank mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.MX_Anthem_JulieB_ID5
 	Name: MX_Anthem_JulieB_ID5
-	Class: AkBank
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkBank
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001f5b with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UAkBank mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.MX_Anthem_JulieBuchanan_JetFueled
 	Name: MX_Anthem_JulieBuchanan_JetFueled
-	Class: AkBank
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkBank
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001f67 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UAkBank mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.MX_Anthem_JulieBuchanan_LemonPump
 	Name: MX_Anthem_JulieBuchanan_LemonPump
-	Class: AkBank
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkBank
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001f73 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UAkBank mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.MX_Anthem_JulieBuchanan_MegaVolt
 	Name: MX_Anthem_JulieBuchanan_MegaVolt
-	Class: AkBank
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkBank
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001f7f with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UAkBank mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.MX_Anthem_JulieBuchanan_TheBrick
 	Name: MX_Anthem_JulieBuchanan_TheBrick
-	Class: AkBank
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkBank
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001f8b with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UAkBank mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.MX_Anthem_JulieBuchanan_VixenPunk
 	Name: MX_Anthem_JulieBuchanan_VixenPunk
-	Class: AkBank
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkBank
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001f97 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_JetFueled_EpicSave
 	Name: Anthem_JulieBuchanan_JetFueled_EpicSave
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001fa3 with 0x000000b1 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_JetFueled_Goal
 	Name: Anthem_JulieBuchanan_JetFueled_Goal
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002054 with 0x000000ad Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_JetFueled_MVP
 	Name: Anthem_JulieBuchanan_JetFueled_MVP
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002101 with 0x000000ac Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_LemonPump_EpicSave
 	Name: Anthem_JulieBuchanan_LemonPump_EpicSave
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000021ad with 0x000000b1 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_LemonPump_Goal
 	Name: Anthem_JulieBuchanan_LemonPump_Goal
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000225e with 0x000000ad Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_LemonPump_MVP
 	Name: Anthem_JulieBuchanan_LemonPump_MVP
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000230b with 0x000000ac Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_MegaVolt_EpicSave
 	Name: Anthem_JulieBuchanan_MegaVolt_EpicSave
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000023b7 with 0x000000af Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_MegaVolt_Goal
 	Name: Anthem_JulieBuchanan_MegaVolt_Goal
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002466 with 0x000000ab Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_MegaVolt_MVP
 	Name: Anthem_JulieBuchanan_MegaVolt_MVP
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002511 with 0x000000aa Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_TheBrick_EpicSave
 	Name: Anthem_JulieBuchanan_TheBrick_EpicSave
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000025bb with 0x000000af Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_TheBrick_Goal
 	Name: Anthem_JulieBuchanan_TheBrick_Goal
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000266a with 0x000000ab Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_TheBrick_MVP
 	Name: Anthem_JulieBuchanan_TheBrick_MVP
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002715 with 0x000000aa Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_VixenPunk_EpicSave
 	Name: Anthem_JulieBuchanan_VixenPunk_EpicSave
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000027bf with 0x000000b1 Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_VixenPunk_Goal
 	Name: Anthem_JulieBuchanan_VixenPunk_Goal
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002870 with 0x000000ad Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_VixenPunk_MVP
 	Name: Anthem_JulieBuchanan_VixenPunk_MVP
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000291d with 0x000000ac Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.JulieBuchanan_Vol1_ID1_EpicSave
 	Name: JulieBuchanan_Vol1_ID1_EpicSave
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000029c9 with 0x000000a1 Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.JulieBuchanan_Vol1_ID1_Goal
 	Name: JulieBuchanan_Vol1_ID1_Goal
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002a6a with 0x0000009d Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.JulieBuchanan_Vol1_ID1_MVP
 	Name: JulieBuchanan_Vol1_ID1_MVP
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002b07 with 0x0000009c Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.JulieBuchanan_Vol1_ID2_EpicSave
 	Name: JulieBuchanan_Vol1_ID2_EpicSave
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002ba3 with 0x000000a1 Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.JulieBuchanan_Vol1_ID2_Goal
 	Name: JulieBuchanan_Vol1_ID2_Goal
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002c44 with 0x0000009d Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.JulieBuchanan_Vol1_ID2_MVP
 	Name: JulieBuchanan_Vol1_ID2_MVP
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002ce1 with 0x0000009c Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.JulieBuchanan_Vol1_ID3_EpicSave
 	Name: JulieBuchanan_Vol1_ID3_EpicSave
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002d7d with 0x000000a1 Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.JulieBuchanan_Vol1_ID3_Goal
 	Name: JulieBuchanan_Vol1_ID3_Goal
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002e1e with 0x0000009d Bytes
 	Export Flags: 0x00000001
-[33]
+[Export 33]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.JulieBuchanan_Vol1_ID3_MVP
 	Name: JulieBuchanan_Vol1_ID3_MVP
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002ebb with 0x0000009c Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.JulieBuchanan_Vol1_ID4_EpicSave
 	Name: JulieBuchanan_Vol1_ID4_EpicSave
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002f57 with 0x000000a1 Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.JulieBuchanan_Vol1_ID4_Goal
 	Name: JulieBuchanan_Vol1_ID4_Goal
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002ff8 with 0x0000009d Bytes
 	Export Flags: 0x00000001
-[36]
+[Export 36]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.JulieBuchanan_Vol1_ID4_MVP
 	Name: JulieBuchanan_Vol1_ID4_MVP
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003095 with 0x0000009c Bytes
 	Export Flags: 0x00000001
-[37]
+[Export 37]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.JulieBuchanan_Vol1_ID5_EpicSave
 	Name: JulieBuchanan_Vol1_ID5_EpicSave
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003131 with 0x000000a1 Bytes
 	Export Flags: 0x00000001
-[38]
+[Export 38]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.JulieBuchanan_Vol1_ID5_Goal
 	Name: JulieBuchanan_Vol1_ID5_Goal
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000031d2 with 0x0000009d Bytes
 	Export Flags: 0x00000001
-[39]
+[Export 39]
+	Full Name: UAkSoundCue mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.JulieBuchanan_Vol1_ID5_MVP
 	Name: JulieBuchanan_Vol1_ID5_MVP
-	Class: AkSoundCue
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000326f with 0x0000009c Bytes
 	Export Flags: 0x00000001
-[40]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[41]
+[Export 41]
+	Full Name: UObjectReferencer mx_anthems_julieb_vol1.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000003317 with 0x00000054 Bytes
 	Export Flags: 0x00000000
-[42]
+[Export 42]
+	Full Name: UPackage mx_anthems_julieb_vol1.mx_anthems_julieb_vol1
 	Name: mx_anthems_julieb_vol1
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000336b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[43]
+[Export 43]
+	Full Name: UPackage mx_anthems_julieb_vol1.mx_anthems_julieb_vol1_SF
 	Name: mx_anthems_julieb_vol1_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003377 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[44]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[45]
+[Export 45]
+	Full Name: UProductAsset_MusicStingers_TA mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieB_Vol1_ID1
 	Name: Anthem_JulieB_Vol1_ID1
-	Class: ProductAsset_MusicStingers_TA
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UProductAsset_MusicStingers_TA
+	Outer: mx_anthems_julieb_vol1
 	Archetype: ProductAsset_MusicStingers_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003986 with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[46]
+[Export 46]
+	Full Name: UProductAsset_MusicStingers_TA mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieB_Vol1_ID2
 	Name: Anthem_JulieB_Vol1_ID2
-	Class: ProductAsset_MusicStingers_TA
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UProductAsset_MusicStingers_TA
+	Outer: mx_anthems_julieb_vol1
 	Archetype: ProductAsset_MusicStingers_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000039e6 with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[47]
+[Export 47]
+	Full Name: UProductAsset_MusicStingers_TA mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieB_Vol1_ID3
 	Name: Anthem_JulieB_Vol1_ID3
-	Class: ProductAsset_MusicStingers_TA
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UProductAsset_MusicStingers_TA
+	Outer: mx_anthems_julieb_vol1
 	Archetype: ProductAsset_MusicStingers_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003a46 with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[48]
+[Export 48]
+	Full Name: UProductAsset_MusicStingers_TA mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieB_Vol1_ID4
 	Name: Anthem_JulieB_Vol1_ID4
-	Class: ProductAsset_MusicStingers_TA
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UProductAsset_MusicStingers_TA
+	Outer: mx_anthems_julieb_vol1
 	Archetype: ProductAsset_MusicStingers_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003aa6 with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[49]
+[Export 49]
+	Full Name: UProductAsset_MusicStingers_TA mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieB_Vol1_ID5
 	Name: Anthem_JulieB_Vol1_ID5
-	Class: ProductAsset_MusicStingers_TA
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UProductAsset_MusicStingers_TA
+	Outer: mx_anthems_julieb_vol1
 	Archetype: ProductAsset_MusicStingers_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003b06 with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[50]
+[Export 50]
+	Full Name: UProductAsset_MusicStingers_TA mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_JetFueled
 	Name: Anthem_JulieBuchanan_JetFueled
-	Class: ProductAsset_MusicStingers_TA
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UProductAsset_MusicStingers_TA
+	Outer: mx_anthems_julieb_vol1
 	Archetype: ProductAsset_MusicStingers_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003b66 with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[51]
+[Export 51]
+	Full Name: UProductAsset_MusicStingers_TA mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_LemonPump
 	Name: Anthem_JulieBuchanan_LemonPump
-	Class: ProductAsset_MusicStingers_TA
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UProductAsset_MusicStingers_TA
+	Outer: mx_anthems_julieb_vol1
 	Archetype: ProductAsset_MusicStingers_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003bc6 with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[52]
+[Export 52]
+	Full Name: UProductAsset_MusicStingers_TA mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_MegaVolt
 	Name: Anthem_JulieBuchanan_MegaVolt
-	Class: ProductAsset_MusicStingers_TA
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UProductAsset_MusicStingers_TA
+	Outer: mx_anthems_julieb_vol1
 	Archetype: ProductAsset_MusicStingers_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003c26 with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[53]
+[Export 53]
+	Full Name: UProductAsset_MusicStingers_TA mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_TheBrick
 	Name: Anthem_JulieBuchanan_TheBrick
-	Class: ProductAsset_MusicStingers_TA
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UProductAsset_MusicStingers_TA
+	Outer: mx_anthems_julieb_vol1
 	Archetype: ProductAsset_MusicStingers_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003c86 with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[54]
+[Export 54]
+	Full Name: UProductAsset_MusicStingers_TA mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Anthem_JulieBuchanan_VixenPunk
 	Name: Anthem_JulieBuchanan_VixenPunk
-	Class: ProductAsset_MusicStingers_TA
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UProductAsset_MusicStingers_TA
+	Outer: mx_anthems_julieb_vol1
 	Archetype: ProductAsset_MusicStingers_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003ce6 with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[55]
+[Export 55]
+	Full Name: UProductAsset_Pack_TA mx_anthems_julieb_vol1.mx_anthems_julieb_vol1.Album_Anthem_JulieB_Vol1
 	Name: Album_Anthem_JulieB_Vol1
-	Class: ProductAsset_Pack_TA
-	Outer: Package mx_anthems_julieb_vol1
+	Class: UProductAsset_Pack_TA
+	Outer: mx_anthems_julieb_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003d46 with 0x00000028 Bytes
 	Export Flags: 0x00000001
-[56]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
 
 
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass AkAudio.AkSoundCue
 	Name: AkSoundCue
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[1]
+	Class Package: Core
+	Outer: AkAudio
+[Import 1]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[2]
+	Class Package: Core
+	Outer: Core
+[Import 2]
+	Full Name: UClass Engine.AkBank
 	Name: AkBank
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass TAGame.ProductAsset_MusicStingers_TA
 	Name: ProductAsset_MusicStingers_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UClass TAGame.ProductAsset_Pack_TA
 	Name: ProductAsset_Pack_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
-	Name: None
-	Class: None
-	Package: None
-[7]
+	Class Package: Core
+	Outer: TAGame
+[Import 7]
+	Full Name: UPackage AkAudio
 	Name: AkAudio
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[10]
-	Name: None
-	Class: None
-	Package: None
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[12]
-	Name: None
-	Class: None
-	Package: None
-[13]
-	Name: None
-	Class: None
-	Package: None
-[14]
+	Class Package: Core
+[Import 14]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[15]
+	Class Package: Core
+[Import 15]
+	Full Name: UProductAsset_MusicStingers_TA ProductSlots.MusicStingers.ProductAsset_MusicStingers_TA_0
 	Name: ProductAsset_MusicStingers_TA_0
 	Class: ProductAsset_MusicStingers_TA
-	Package: TAGame
-	Outer: ProductSlot_TA MusicStingers
-[16]
+	Class Package: TAGame
+	Outer: MusicStingers
+[Import 16]
+	Full Name: UProductSlot_TA ProductSlots.MusicStingers
 	Name: MusicStingers
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots

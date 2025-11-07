@@ -48,6 +48,7 @@ Test Data Size: 0x00003fa1
 Compressed Chunk Info Offset: 0x00000d9f
 Last Block Size: 0x00000004
 Base Header Size: 0x000000b5
+Encrypted Header Size: 0x00004d70
 
 AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
 
@@ -55,195 +56,210 @@ AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
     ~ Names ~ 
 
 
-[0] AkAudio
-[1] AkBank
-[2] AkRevSimPhysicsControls
-[3] AkSoundCue
-[4] ArrayProperty
-[5] BlowoffSound
-[6] BoolProperty
-[7] bReplicated
-[8] ByteProperty
-[9] Class
-[10] CompressionNoAlpha
-[11] CompressionNone
-[12] Controls
-[13] Core
-[14] DeferCompression
-[15] Drift_BlowOffValve
-[16] Drift_Gear_Blowoff
-[17] Drift_Rev_Ignition
-[18] Engine
-[19] EngineAudio
-[20] engineaudio_drift
-[21] EngineAudio_Drift_Profile
-[22] engineaudio_drift_SF
-[23] EngineAudio_Thumbnail
-[24] EngineAudioProfileREV_TA
-[25] EngineTorque
-[26] EPixelFormat
-[27] ExhaustSound
-[28] FloatProperty
-[29] Format
-[30] GearChangeSound
-[31] Icon
-[32] IconLarge
-[33] Icons
-[34] IgnitionSound
-[35] IntProperty
-[36] Label
-[37] LODGroup
-[38] MatchesRequiredToUnlock
-[39] MipGenSettings
-[40] MipTailBaseIdx
-[41] NameProperty
-[42] None
-[43] ObjectProperty
-[44] ObjectReferencer
-[45] OnlineLabel
-[46] OriginalSizeX
-[47] OriginalSizeY
-[48] Package
-[49] PF_A8R8G8B8
-[50] PluralLabel
-[51] ProductAsset_EngineAudio_TA
-[52] ProductSlot_TA
-[53] ProductSlots
-[54] Profile
-[55] ReferencedObjects
-[56] RequiredBank
-[57] REV_Drift
-[58] SFX_REV_Drift
-[59] SizeX
-[60] SizeY
-[61] SRGB
-[62] StandaloneSeekFreeReferencer
-[63] StartEvent
-[64] StopEvent
-[65] StrProperty
-[66] StructProperty
-[67] TAGame
-[68] Texture2D
-[69] TextureFileCacheName
-[70] TextureGroup
-[71] TEXTUREGROUP_UI
-[72] TextureMipGenSettings
-[73] Textures4
-[74] Thumb_EngineAudio_D
-[75] Thumbnail
-[76] TMGS_Sharpen10
-[77] ThumbnailKeyLightBrightnessScale
+[Name 0] [0x0007001000000000] AkAudio
+[Name 1] [0x0007001000000000] AkBank
+[Name 2] [0x0007001000000000] AkRevSimPhysicsControls
+[Name 3] [0x0007001000000000] AkSoundCue
+[Name 4] [0x0007001000000000] ArrayProperty
+[Name 5] [0x0007001000000000] BlowoffSound
+[Name 6] [0x0007001000000000] BoolProperty
+[Name 7] [0x0007001000000000] bReplicated
+[Name 8] [0x0007001000000000] ByteProperty
+[Name 9] [0x0007001000000000] Class
+[Name 10] [0x0007001000000000] CompressionNoAlpha
+[Name 11] [0x0007001000000000] CompressionNone
+[Name 12] [0x0007001000000000] Controls
+[Name 13] [0x0007001000000000] Core
+[Name 14] [0x0007001000000000] DeferCompression
+[Name 15] [0x0007001000000000] Drift_BlowOffValve
+[Name 16] [0x0007001000000000] Drift_Gear_Blowoff
+[Name 17] [0x0007001000000000] Drift_Rev_Ignition
+[Name 18] [0x0007001000000000] Engine
+[Name 19] [0x0007001000000000] EngineAudio
+[Name 20] [0x0007001000000000] engineaudio_drift
+[Name 21] [0x0007001000000000] EngineAudio_Drift_Profile
+[Name 22] [0x0007001000000000] engineaudio_drift_SF
+[Name 23] [0x0007001000000000] EngineAudio_Thumbnail
+[Name 24] [0x0007001000000000] EngineAudioProfileREV_TA
+[Name 25] [0x0007001000000000] EngineTorque
+[Name 26] [0x0007001000000000] EPixelFormat
+[Name 27] [0x0007001000000000] ExhaustSound
+[Name 28] [0x0007001000000000] FloatProperty
+[Name 29] [0x0007001000000000] Format
+[Name 30] [0x0007001000000000] GearChangeSound
+[Name 31] [0x0007001000000000] Icon
+[Name 32] [0x0007001000000000] IconLarge
+[Name 33] [0x0007001000000000] Icons
+[Name 34] [0x0007001000000000] IgnitionSound
+[Name 35] [0x0007001000000000] IntProperty
+[Name 36] [0x0007001000000000] Label
+[Name 37] [0x0007001000000000] LODGroup
+[Name 38] [0x0007000000000000] MatchesRequiredToUnlock
+[Name 39] [0x0007001000000000] MipGenSettings
+[Name 40] [0x0007001000000000] MipTailBaseIdx
+[Name 41] [0x0007001000000000] NameProperty
+[Name 42] [0x0007001000000000] None
+[Name 43] [0x0007001000000000] ObjectProperty
+[Name 44] [0x0007001000000000] ObjectReferencer
+[Name 45] [0x0007001000000000] OnlineLabel
+[Name 46] [0x0007001000000000] OriginalSizeX
+[Name 47] [0x0007001000000000] OriginalSizeY
+[Name 48] [0x0007001000000000] Package
+[Name 49] [0x0007001000000000] PF_A8R8G8B8
+[Name 50] [0x0007001000000000] PluralLabel
+[Name 51] [0x0007001000000000] ProductAsset_EngineAudio_TA
+[Name 52] [0x0007001000000000] ProductSlot_TA
+[Name 53] [0x0007001000000000] ProductSlots
+[Name 54] [0x0007001000000000] Profile
+[Name 55] [0x0007001000000000] ReferencedObjects
+[Name 56] [0x0007001000000000] RequiredBank
+[Name 57] [0x0007001000000000] REV_Drift
+[Name 58] [0x0007001000000000] SFX_REV_Drift
+[Name 59] [0x0007001000000000] SizeX
+[Name 60] [0x0007001000000000] SizeY
+[Name 61] [0x0007001000000000] SRGB
+[Name 62] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 63] [0x0007001000000000] StartEvent
+[Name 64] [0x0007001000000000] StopEvent
+[Name 65] [0x0007001000000000] StrProperty
+[Name 66] [0x0007001000000000] StructProperty
+[Name 67] [0x0007001000000000] TAGame
+[Name 68] [0x0007001000000000] Texture2D
+[Name 69] [0x0007001000000000] TextureFileCacheName
+[Name 70] [0x0007001000000000] TextureGroup
+[Name 71] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 72] [0x0007001000000000] TextureMipGenSettings
+[Name 73] [0x0007001000000000] Textures4
+[Name 74] [0x0007001000000000] Thumb_EngineAudio_D
+[Name 75] [0x0007001000000000] Thumbnail
+[Name 76] [0x0007001000000000] TMGS_Sharpen10
+[Name 77] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAkBank engineaudio_drift.engineaudio_drift.SFX_REV_Drift
 	Name: SFX_REV_Drift
-	Class: AkBank
-	Outer: Package engineaudio_drift
+	Class: UAkBank
+	Outer: engineaudio_drift
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000e54 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UAkSoundCue engineaudio_drift.engineaudio_drift.Drift_BlowOffValve
 	Name: Drift_BlowOffValve
-	Class: AkSoundCue
-	Outer: Package engineaudio_drift
+	Class: UAkSoundCue
+	Outer: engineaudio_drift
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000e60 with 0x0000005c Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UAkSoundCue engineaudio_drift.engineaudio_drift.Drift_Gear_Blowoff
 	Name: Drift_Gear_Blowoff
-	Class: AkSoundCue
-	Outer: Package engineaudio_drift
+	Class: UAkSoundCue
+	Outer: engineaudio_drift
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000ebc with 0x0000005c Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UAkSoundCue engineaudio_drift.engineaudio_drift.Drift_Rev_Ignition
 	Name: Drift_Rev_Ignition
-	Class: AkSoundCue
-	Outer: Package engineaudio_drift
+	Class: UAkSoundCue
+	Outer: engineaudio_drift
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000f18 with 0x0000005c Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UAkSoundCue engineaudio_drift.engineaudio_drift.REV_Drift
 	Name: REV_Drift
-	Class: AkSoundCue
-	Outer: Package engineaudio_drift
+	Class: UAkSoundCue
+	Outer: engineaudio_drift
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000f74 with 0x0000007e Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UEngineAudioProfileREV_TA engineaudio_drift.engineaudio_drift.EngineAudio_Drift_Profile
 	Name: EngineAudio_Drift_Profile
-	Class: EngineAudioProfileREV_TA
-	Outer: Package engineaudio_drift
+	Class: UEngineAudioProfileREV_TA
+	Outer: engineaudio_drift
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000ff2 with 0x00000050 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UProductAsset_EngineAudio_TA engineaudio_drift.ProductSlots.EngineAudio.ProductAsset_EngineAudio_TA_0
 	Name: ProductAsset_EngineAudio_TA_0
-	Class: ProductAsset_EngineAudio_TA
-	Outer: ProductSlot_TA EngineAudio
+	Class: UProductAsset_EngineAudio_TA
+	Outer: EngineAudio
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001042 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UObjectReferencer engineaudio_drift.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x000000000000104e with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[8]
+[Export 8]
+	Full Name: UPackage engineaudio_drift.engineaudio_drift
 	Name: engineaudio_drift
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000107a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[9]
+[Export 9]
+	Full Name: UPackage engineaudio_drift.engineaudio_drift_SF
 	Name: engineaudio_drift_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001086 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[10]
+[Export 10]
+	Full Name: UPackage engineaudio_drift.EngineAudio_Thumbnail
 	Name: EngineAudio_Thumbnail
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001092 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[11]
+[Export 11]
+	Full Name: UPackage engineaudio_drift.ProductSlots
 	Name: ProductSlots
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000109e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[12]
+[Export 12]
+	Full Name: UProductAsset_EngineAudio_TA engineaudio_drift.engineaudio_drift.engineaudio_drift
 	Name: engineaudio_drift
-	Class: ProductAsset_EngineAudio_TA
-	Outer: Package engineaudio_drift
+	Class: UProductAsset_EngineAudio_TA
+	Outer: engineaudio_drift
 	Archetype: ProductAsset_EngineAudio_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000004143e with 0x000000d0 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UProductSlot_TA engineaudio_drift.ProductSlots.EngineAudio
 	Name: EngineAudio
-	Class: ProductSlot_TA
-	Outer: Package ProductSlots
+	Class: UProductSlot_TA
+	Outer: ProductSlots
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x000000000004150e with 0x000000d8 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UTexture2D engineaudio_drift.EngineAudio_Thumbnail.Thumb_EngineAudio_D
 	Name: Thumb_EngineAudio_D
-	Class: Texture2D
-	Outer: Package EngineAudio_Thumbnail
+	Class: UTexture2D
+	Outer: EngineAudio_Thumbnail
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001252 with 0x000401ec Bytes
 	Export Flags: 0x00000001
@@ -252,69 +268,83 @@ AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass AkAudio.AkSoundCue
 	Name: AkSoundCue
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[1]
+	Class Package: Core
+	Outer: AkAudio
+[Import 1]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[2]
+	Class Package: Core
+	Outer: Core
+[Import 2]
+	Full Name: UClass Engine.AkBank
 	Name: AkBank
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass TAGame.EngineAudioProfileREV_TA
 	Name: EngineAudioProfileREV_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
+	Class Package: Core
+	Outer: TAGame
+[Import 6]
+	Full Name: UClass TAGame.ProductAsset_EngineAudio_TA
 	Name: ProductAsset_EngineAudio_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[7]
+	Class Package: Core
+	Outer: TAGame
+[Import 7]
+	Full Name: UClass TAGame.ProductSlot_TA
 	Name: ProductSlot_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[8]
+	Class Package: Core
+	Outer: TAGame
+[Import 8]
+	Full Name: UPackage AkAudio
 	Name: AkAudio
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UPackage ProductSlots.Icons
 	Name: Icons
 	Class: Package
-	Package: Core
-	Outer: Package ProductSlots
-[12]
+	Class Package: Core
+	Outer: ProductSlots
+[Import 12]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[13]
+	Class Package: Core
+[Import 13]
+	Full Name: UTexture2D ProductSlots.Icons.EngineAudio
 	Name: EngineAudio
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Icons
+	Class Package: Engine
+	Outer: Icons

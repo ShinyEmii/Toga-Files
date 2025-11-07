@@ -118,6 +118,7 @@ Test Data Size: 0x00003f6e
 Compressed Chunk Info Offset: 0x00001e2a
 Last Block Size: 0x00000004
 Base Header Size: 0x000001c9
+Encrypted Header Size: 0x00005de0
 
 AES: h+XnieACIMK2KdVOlhS7SZe8EYN66DwX9wlZl/jbx8A=
 
@@ -125,599 +126,671 @@ AES: h+XnieACIMK2KdVOlhS7SZe8EYN66DwX9wlZl/jbx8A=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] bAllowLicensedEquip
-[2] Banner
-[3] Banner_Whiteboard51
-[4] BoolProperty
-[5] bReplicated
-[6] ByteProperty
-[7] Class
-[8] Core
-[9] DefaultProduct_New
-[10] Editions
-[11] Engine
-[12] EPixelFormat
-[13] FlashTextureRescale
-[14] FlashTextureScale_Mult4
-[15] Format
-[16] GFxUI
-[17] Icon
-[18] IconLarge
-[19] Icons
-[20] IntProperty
-[21] Label
-[22] LODGroup
-[23] Marker
-[24] marker_01
-[25] marker_02
-[26] marker_03
-[27] marker_04
-[28] marker_05
-[29] marker_06
-[30] marker_07
-[31] marker_08
-[32] marker_09
-[33] MatchesRequiredToUnlock
-[34] MipGenSettings
-[35] MipTailBaseIdx
-[36] MovieReference
-[37] NeverStream
-[38] None
-[39] ObjectProperty
-[40] ObjectReferencer
-[41] OnlineLabel
-[42] OriginalSizeX
-[43] OriginalSizeY
-[44] Package
-[45] PackTextureSize
-[46] PF_DXT5
-[47] PlayerBanner
-[48] playerBanner_RLShield
-[49] playerbanner_whiteboard51
-[50] playerbanner_whiteboard51_SF
-[51] PluralLabel
-[52] Product_TA
-[53] ProductAsset_PlayerBanner_TA
-[54] Products
-[55] ProductsDB
-[56] ProductSlot_TA
-[57] ProductSlots
-[58] RawData
-[59] ReferencedObjects
-[60] References
-[61] SizeX
-[62] SizeY
-[63] SourceFile
-[64] SourceFileCRC
-[65] SourceFileTimestamp
-[66] SRGB
-[67] StandaloneSeekFreeReferencer
-[68] StrProperty
-[69] SwfMovie
-[70] TAGame
-[71] Texture2D
-[72] TextureFormat
-[73] TextureGroup
-[74] TEXTUREGROUP_UI
-[75] TextureMipGenSettings
-[76] TextureRescale
-[77] Thumb_Banner_Whiteboard51
-[78] Thumbnail
-[79] TintedBG
-[80] TMGS_NoMipmaps
-[81] whiteboard_plate
-[82] FloatProperty
-[83] ThumbnailKeyLightBrightnessScale
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] bAllowLicensedEquip
+[Name 2] [0x0007001000000000] Banner
+[Name 3] [0x0007001000000000] Banner_Whiteboard51
+[Name 4] [0x0007001000000000] BoolProperty
+[Name 5] [0x0007001000000000] bReplicated
+[Name 6] [0x0007001000000000] ByteProperty
+[Name 7] [0x0007001000000000] Class
+[Name 8] [0x0007001000000000] Core
+[Name 9] [0x0007001000000000] DefaultProduct_New
+[Name 10] [0x0007001000000000] Editions
+[Name 11] [0x0007001000000000] Engine
+[Name 12] [0x0007001000000000] EPixelFormat
+[Name 13] [0x0007001000000000] FlashTextureRescale
+[Name 14] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 15] [0x0007001000000000] Format
+[Name 16] [0x0007001000000000] GFxUI
+[Name 17] [0x0007001000000000] Icon
+[Name 18] [0x0007001000000000] IconLarge
+[Name 19] [0x0007001000000000] Icons
+[Name 20] [0x0007001000000000] IntProperty
+[Name 21] [0x0007001000000000] Label
+[Name 22] [0x0007001000000000] LODGroup
+[Name 23] [0x0007001000000000] Marker
+[Name 24] [0x0007001000000000] marker_01
+[Name 25] [0x0007001000000000] marker_02
+[Name 26] [0x0007001000000000] marker_03
+[Name 27] [0x0007001000000000] marker_04
+[Name 28] [0x0007001000000000] marker_05
+[Name 29] [0x0007001000000000] marker_06
+[Name 30] [0x0007001000000000] marker_07
+[Name 31] [0x0007001000000000] marker_08
+[Name 32] [0x0007001000000000] marker_09
+[Name 33] [0x0007000000000000] MatchesRequiredToUnlock
+[Name 34] [0x0007001000000000] MipGenSettings
+[Name 35] [0x0007001000000000] MipTailBaseIdx
+[Name 36] [0x0007001000000000] MovieReference
+[Name 37] [0x0007001000000000] NeverStream
+[Name 38] [0x0007001000000000] None
+[Name 39] [0x0007001000000000] ObjectProperty
+[Name 40] [0x0007001000000000] ObjectReferencer
+[Name 41] [0x0007001000000000] OnlineLabel
+[Name 42] [0x0007001000000000] OriginalSizeX
+[Name 43] [0x0007001000000000] OriginalSizeY
+[Name 44] [0x0007001000000000] Package
+[Name 45] [0x0007001000000000] PackTextureSize
+[Name 46] [0x0007001000000000] PF_DXT5
+[Name 47] [0x0007001000000000] PlayerBanner
+[Name 48] [0x0007001000000000] playerBanner_RLShield
+[Name 49] [0x0007001000000000] playerbanner_whiteboard51
+[Name 50] [0x0007001000000000] playerbanner_whiteboard51_SF
+[Name 51] [0x0007001000000000] PluralLabel
+[Name 52] [0x0007001000000000] Product_TA
+[Name 53] [0x0007001000000000] ProductAsset_PlayerBanner_TA
+[Name 54] [0x0007001000000000] Products
+[Name 55] [0x0007001000000000] ProductsDB
+[Name 56] [0x0007001000000000] ProductSlot_TA
+[Name 57] [0x0007001000000000] ProductSlots
+[Name 58] [0x0007001000000000] RawData
+[Name 59] [0x0007001000000000] ReferencedObjects
+[Name 60] [0x0007001000000000] References
+[Name 61] [0x0007001000000000] SizeX
+[Name 62] [0x0007001000000000] SizeY
+[Name 63] [0x0007001000000000] SourceFile
+[Name 64] [0x0007001000000000] SourceFileCRC
+[Name 65] [0x0007001000000000] SourceFileTimestamp
+[Name 66] [0x0007001000000000] SRGB
+[Name 67] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 68] [0x0007001000000000] StrProperty
+[Name 69] [0x0007001000000000] SwfMovie
+[Name 70] [0x0007001000000000] TAGame
+[Name 71] [0x0007001000000000] Texture2D
+[Name 72] [0x0007001000000000] TextureFormat
+[Name 73] [0x0007001000000000] TextureGroup
+[Name 74] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 75] [0x0007001000000000] TextureMipGenSettings
+[Name 76] [0x0007001000000000] TextureRescale
+[Name 77] [0x0007001000000000] Thumb_Banner_Whiteboard51
+[Name 78] [0x0007001000000000] Thumbnail
+[Name 79] [0x0007001000000000] TintedBG
+[Name 80] [0x0007001000000000] TMGS_NoMipmaps
+[Name 81] [0x0007001000000000] whiteboard_plate
+[Name 82] [0x0007001000000000] FloatProperty
+[Name 83] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UProductAsset_PlayerBanner_TA playerbanner_whiteboard51.ProductSlots.PlayerBanner.ProductAsset_PlayerBanner_TA_0
 	Name: ProductAsset_PlayerBanner_TA_0
-	Class: ProductAsset_PlayerBanner_TA
-	Outer: ProductSlot_TA PlayerBanner
+	Class: UProductAsset_PlayerBanner_TA
+	Outer: PlayerBanner
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001ff3 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UObjectReferencer playerbanner_whiteboard51.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000001fff with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[2]
+[Export 2]
+	Full Name: UPackage playerbanner_whiteboard51.playerbanner_whiteboard51
 	Name: playerbanner_whiteboard51
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000202b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[3]
+[Export 3]
+	Full Name: UPackage playerbanner_whiteboard51.playerbanner_whiteboard51_SF
 	Name: playerbanner_whiteboard51_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002037 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[4]
+[Export 4]
+	Full Name: UPackage playerbanner_whiteboard51.ProductSlots
 	Name: ProductSlots
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002043 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[5]
+[Export 5]
+	Full Name: UProductAsset_PlayerBanner_TA playerbanner_whiteboard51.playerbanner_whiteboard51.playerbanner_whiteboard51
 	Name: playerbanner_whiteboard51
-	Class: ProductAsset_PlayerBanner_TA
-	Outer: Package playerbanner_whiteboard51
+	Class: UProductAsset_PlayerBanner_TA
+	Outer: playerbanner_whiteboard51
 	Archetype: ProductAsset_PlayerBanner_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000002a0f0f with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UProductSlot_TA playerbanner_whiteboard51.ProductSlots.PlayerBanner
 	Name: PlayerBanner
-	Class: ProductSlot_TA
-	Outer: Package ProductSlots
+	Class: UProductSlot_TA
+	Outer: ProductSlots
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x00000000002a0f6f with 0x00000111 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: USwfMovie playerbanner_whiteboard51.playerbanner_whiteboard51.Banner_Whiteboard51
 	Name: Banner_Whiteboard51
-	Class: SwfMovie
-	Outer: Package playerbanner_whiteboard51
+	Class: USwfMovie
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000021c0 with 0x00002deb Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.marker_01
 	Name: marker_01
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004fab with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.marker_02
 	Name: marker_02
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000f539 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.marker_03
 	Name: marker_03
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000019ac7 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.marker_04
 	Name: marker_04
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000024055 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.marker_05
 	Name: marker_05
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000002e5e3 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.marker_06
 	Name: marker_06
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000038b71 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.marker_07
 	Name: marker_07
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000430ff with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.marker_08
 	Name: marker_08
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000004d68d with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.marker_09
 	Name: marker_09
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000057c1b with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_10
 	Name: Marker_10
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000621a9 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_11
 	Name: Marker_11
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000006c737 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_12
 	Name: Marker_12
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000076cc5 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_13
 	Name: Marker_13
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000081253 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_14
 	Name: Marker_14
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000008b7e1 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_15
 	Name: Marker_15
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000095d6f with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_16
 	Name: Marker_16
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000a02fd with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_17
 	Name: Marker_17
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000aa88b with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_18
 	Name: Marker_18
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000b4e19 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_19
 	Name: Marker_19
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000bf3a7 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_20
 	Name: Marker_20
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000c9935 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_21
 	Name: Marker_21
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000d3ec3 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_22
 	Name: Marker_22
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000de451 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_23
 	Name: Marker_23
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000e89df with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_24
 	Name: Marker_24
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000f2f6d with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_25
 	Name: Marker_25
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000fd4fb with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[33]
+[Export 33]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_26
 	Name: Marker_26
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000107a89 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_27
 	Name: Marker_27
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000112017 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_28
 	Name: Marker_28
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000011c5a5 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[36]
+[Export 36]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_29
 	Name: Marker_29
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000126b33 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[37]
+[Export 37]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_30
 	Name: Marker_30
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001310c1 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[38]
+[Export 38]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_31
 	Name: Marker_31
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000013b64f with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[39]
+[Export 39]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_32
 	Name: Marker_32
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000145bdd with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_33
 	Name: Marker_33
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000015016b with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_34
 	Name: Marker_34
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000015a6f9 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[42]
+[Export 42]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_35
 	Name: Marker_35
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000164c87 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[43]
+[Export 43]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_36
 	Name: Marker_36
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000016f215 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[44]
+[Export 44]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_37
 	Name: Marker_37
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001797a3 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[45]
+[Export 45]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_38
 	Name: Marker_38
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000183d31 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[46]
+[Export 46]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_39
 	Name: Marker_39
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000018e2bf with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[47]
+[Export 47]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_40
 	Name: Marker_40
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000019884d with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[48]
+[Export 48]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_41
 	Name: Marker_41
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001a2ddb with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[49]
+[Export 49]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_42
 	Name: Marker_42
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001ad369 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[50]
+[Export 50]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_43
 	Name: Marker_43
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001b78f7 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[51]
+[Export 51]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_44
 	Name: Marker_44
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001c1e85 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[52]
+[Export 52]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_45
 	Name: Marker_45
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001cc413 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[53]
+[Export 53]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_46
 	Name: Marker_46
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001d69a1 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[54]
+[Export 54]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_47
 	Name: Marker_47
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001e0f2f with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[55]
+[Export 55]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_48
 	Name: Marker_48
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001eb4bd with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[56]
+[Export 56]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_49
 	Name: Marker_49
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001f5a4b with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[57]
+[Export 57]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_50
 	Name: Marker_50
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001fffd9 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[58]
+[Export 58]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_51
 	Name: Marker_51
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000020a567 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[59]
+[Export 59]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_52
 	Name: Marker_52
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000214af5 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[60]
+[Export 60]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_53
 	Name: Marker_53
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000021f083 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[61]
+[Export 61]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_54
 	Name: Marker_54
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000229611 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[62]
+[Export 62]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_55
 	Name: Marker_55
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000233b9f with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[63]
+[Export 63]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_56
 	Name: Marker_56
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000023e12d with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[64]
+[Export 64]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_57
 	Name: Marker_57
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002486bb with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[65]
+[Export 65]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_58
 	Name: Marker_58
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000252c49 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[66]
+[Export 66]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_59
 	Name: Marker_59
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000025d1d7 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[67]
+[Export 67]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_60
 	Name: Marker_60
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000267765 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[68]
+[Export 68]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Marker_61
 	Name: Marker_61
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000271cf3 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[69]
+[Export 69]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.Thumb_Banner_Whiteboard51
 	Name: Thumb_Banner_Whiteboard51
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000027c281 with 0x00010172 Bytes
 	Export Flags: 0x00000001
-[70]
+[Export 70]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.TintedBG
 	Name: TintedBG
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000028c3f3 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[71]
+[Export 71]
+	Full Name: UTexture2D playerbanner_whiteboard51.playerbanner_whiteboard51.whiteboard_plate
 	Name: whiteboard_plate
-	Class: Texture2D
-	Outer: Package playerbanner_whiteboard51
+	Class: UTexture2D
+	Outer: playerbanner_whiteboard51
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000296981 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
@@ -726,73 +799,88 @@ AES: h+XnieACIMK2KdVOlhS7SZe8EYN66DwX9wlZl/jbx8A=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[4]
+	Class Package: Core
+	Outer: GFxUI
+[Import 4]
+	Full Name: UClass TAGame.ProductAsset_PlayerBanner_TA
 	Name: ProductAsset_PlayerBanner_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UClass TAGame.ProductSlot_TA
 	Name: ProductSlot_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
+	Class Package: Core
+	Outer: TAGame
+[Import 6]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage ProductsDB
 	Name: ProductsDB
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage ProductsDB.Products
 	Name: Products
 	Class: Package
-	Package: Core
-	Outer: Package ProductsDB
-[11]
+	Class Package: Core
+	Outer: ProductsDB
+[Import 11]
+	Full Name: UPackage ProductSlots.Icons
 	Name: Icons
 	Class: Package
-	Package: Core
-	Outer: Package ProductSlots
-[12]
+	Class Package: Core
+	Outer: ProductSlots
+[Import 12]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[13]
+	Class Package: Core
+[Import 13]
+	Full Name: UProduct_TA ProductsDB.Products.playerBanner_RLShield
 	Name: playerBanner_RLShield
 	Class: Product_TA
-	Package: TAGame
-	Outer: Package Products
-[14]
+	Class Package: TAGame
+	Outer: Products
+[Import 14]
+	Full Name: UTexture2D ProductSlots.Icons.Banner
 	Name: Banner
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Icons
+	Class Package: Engine
+	Outer: Icons

@@ -144,6 +144,7 @@ Test Data Size: 0x00003f6f
 Compressed Chunk Info Offset: 0x000017e9
 Last Block Size: 0x00000004
 Base Header Size: 0x00000211
+Encrypted Header Size: 0x000057a0
 
 AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
 
@@ -151,414 +152,456 @@ AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] bAllowLicensedEquip
-[2] Banner
-[3] Banner_Lightning
-[4] Base
-[5] bIsSourceArtUncompressed
-[6] bolt_1_01
-[7] bolt_1_02
-[8] bolt_1_03
-[9] bolt_1_04
-[10] bolt_1_05
-[11] bolt_1_06
-[12] bolt_2_01
-[13] bolt_2_02
-[14] bolt_2_03
-[15] bolt_2_04
-[16] bolt_3_01
-[17] bolt_3_02
-[18] bolt_3_03
-[19] bolt_3_04
-[20] bolt_3_05
-[21] bolt_4_01
-[22] bolt_4_02
-[23] bolt_4_03
-[24] bolt_4_04
-[25] bolt_4_05
-[26] bolt_5_01
-[27] bolt_5_02
-[28] bolt_5_03
-[29] bolt_6_01
-[30] bolt_6_02
-[31] bolt_6_03
-[32] bolt_6_04
-[33] bolt_7_01
-[34] bolt_7_02
-[35] bolt_7_03
-[36] bolt_7_04
-[37] BoolProperty
-[38] bReplicated
-[39] ByteProperty
-[40] Class
-[41] CompressionNone
-[42] Core
-[43] DefaultProduct_New
-[44] DeferCompression
-[45] Editions
-[46] Engine
-[47] EPixelFormat
-[48] flash_bg
-[49] FlashTextureRescale
-[50] FlashTextureScale_Mult4
-[51] Format
-[52] GFxUI
-[53] Icon
-[54] IconLarge
-[55] Icons
-[56] IntProperty
-[57] Label
-[58] LODGroup
-[59] MatchesRequiredToUnlock
-[60] MipGenSettings
-[61] MipTailBaseIdx
-[62] MovieReference
-[63] NeverStream
-[64] None
-[65] ObjectProperty
-[66] ObjectReferencer
-[67] OnlineLabel
-[68] OriginalSizeX
-[69] OriginalSizeY
-[70] Package
-[71] PackTextureSize
-[72] PF_A8R8G8B8
-[73] PF_DXT1
-[74] PlayerBanner
-[75] playerbanner_lightning
-[76] playerbanner_lightning_SF
-[77] playerBanner_RLShield
-[78] PluralLabel
-[79] Product_TA
-[80] ProductAsset_PlayerBanner_TA
-[81] Products
-[82] ProductsDB
-[83] ProductSlot_TA
-[84] ProductSlots
-[85] RawData
-[86] ReferencedObjects
-[87] References
-[88] SizeX
-[89] SizeY
-[90] SourceFile
-[91] SourceFileCRC
-[92] SourceFileTimestamp
-[93] SRGB
-[94] StandaloneSeekFreeReferencer
-[95] StrProperty
-[96] SwfMovie
-[97] TAGame
-[98] Texture2D
-[99] TextureFormat
-[100] TextureGroup
-[101] TEXTUREGROUP_UI
-[102] TextureMipGenSettings
-[103] TextureRescale
-[104] Thumb_Banner_Lightning
-[105] Thumbnail
-[106] TMGS_NoMipmaps
-[107] FloatProperty
-[108] ThumbnailKeyLightBrightnessScale
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] bAllowLicensedEquip
+[Name 2] [0x0007001000000000] Banner
+[Name 3] [0x0007001000000000] Banner_Lightning
+[Name 4] [0x0007001000000000] Base
+[Name 5] [0x0007001000000000] bIsSourceArtUncompressed
+[Name 6] [0x0007001000000000] bolt_1_01
+[Name 7] [0x0007001000000000] bolt_1_02
+[Name 8] [0x0007001000000000] bolt_1_03
+[Name 9] [0x0007001000000000] bolt_1_04
+[Name 10] [0x0007001000000000] bolt_1_05
+[Name 11] [0x0007001000000000] bolt_1_06
+[Name 12] [0x0007001000000000] bolt_2_01
+[Name 13] [0x0007001000000000] bolt_2_02
+[Name 14] [0x0007001000000000] bolt_2_03
+[Name 15] [0x0007001000000000] bolt_2_04
+[Name 16] [0x0007001000000000] bolt_3_01
+[Name 17] [0x0007001000000000] bolt_3_02
+[Name 18] [0x0007001000000000] bolt_3_03
+[Name 19] [0x0007001000000000] bolt_3_04
+[Name 20] [0x0007001000000000] bolt_3_05
+[Name 21] [0x0007001000000000] bolt_4_01
+[Name 22] [0x0007001000000000] bolt_4_02
+[Name 23] [0x0007001000000000] bolt_4_03
+[Name 24] [0x0007001000000000] bolt_4_04
+[Name 25] [0x0007001000000000] bolt_4_05
+[Name 26] [0x0007001000000000] bolt_5_01
+[Name 27] [0x0007001000000000] bolt_5_02
+[Name 28] [0x0007001000000000] bolt_5_03
+[Name 29] [0x0007001000000000] bolt_6_01
+[Name 30] [0x0007001000000000] bolt_6_02
+[Name 31] [0x0007001000000000] bolt_6_03
+[Name 32] [0x0007001000000000] bolt_6_04
+[Name 33] [0x0007001000000000] bolt_7_01
+[Name 34] [0x0007001000000000] bolt_7_02
+[Name 35] [0x0007001000000000] bolt_7_03
+[Name 36] [0x0007001000000000] bolt_7_04
+[Name 37] [0x0007001000000000] BoolProperty
+[Name 38] [0x0007001000000000] bReplicated
+[Name 39] [0x0007001000000000] ByteProperty
+[Name 40] [0x0007001000000000] Class
+[Name 41] [0x0007001000000000] CompressionNone
+[Name 42] [0x0007001000000000] Core
+[Name 43] [0x0007001000000000] DefaultProduct_New
+[Name 44] [0x0007001000000000] DeferCompression
+[Name 45] [0x0007001000000000] Editions
+[Name 46] [0x0007001000000000] Engine
+[Name 47] [0x0007001000000000] EPixelFormat
+[Name 48] [0x0007001000000000] flash_bg
+[Name 49] [0x0007001000000000] FlashTextureRescale
+[Name 50] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 51] [0x0007001000000000] Format
+[Name 52] [0x0007001000000000] GFxUI
+[Name 53] [0x0007001000000000] Icon
+[Name 54] [0x0007001000000000] IconLarge
+[Name 55] [0x0007001000000000] Icons
+[Name 56] [0x0007001000000000] IntProperty
+[Name 57] [0x0007001000000000] Label
+[Name 58] [0x0007001000000000] LODGroup
+[Name 59] [0x0007000000000000] MatchesRequiredToUnlock
+[Name 60] [0x0007001000000000] MipGenSettings
+[Name 61] [0x0007001000000000] MipTailBaseIdx
+[Name 62] [0x0007001000000000] MovieReference
+[Name 63] [0x0007001000000000] NeverStream
+[Name 64] [0x0007001000000000] None
+[Name 65] [0x0007001000000000] ObjectProperty
+[Name 66] [0x0007001000000000] ObjectReferencer
+[Name 67] [0x0007001000000000] OnlineLabel
+[Name 68] [0x0007001000000000] OriginalSizeX
+[Name 69] [0x0007001000000000] OriginalSizeY
+[Name 70] [0x0007001000000000] Package
+[Name 71] [0x0007001000000000] PackTextureSize
+[Name 72] [0x0007001000000000] PF_A8R8G8B8
+[Name 73] [0x0007001000000000] PF_DXT1
+[Name 74] [0x0007001000000000] PlayerBanner
+[Name 75] [0x0007001000000000] playerbanner_lightning
+[Name 76] [0x0007001000000000] playerbanner_lightning_SF
+[Name 77] [0x0007001000000000] playerBanner_RLShield
+[Name 78] [0x0007001000000000] PluralLabel
+[Name 79] [0x0007001000000000] Product_TA
+[Name 80] [0x0007001000000000] ProductAsset_PlayerBanner_TA
+[Name 81] [0x0007001000000000] Products
+[Name 82] [0x0007001000000000] ProductsDB
+[Name 83] [0x0007001000000000] ProductSlot_TA
+[Name 84] [0x0007001000000000] ProductSlots
+[Name 85] [0x0007001000000000] RawData
+[Name 86] [0x0007001000000000] ReferencedObjects
+[Name 87] [0x0007001000000000] References
+[Name 88] [0x0007001000000000] SizeX
+[Name 89] [0x0007001000000000] SizeY
+[Name 90] [0x0007001000000000] SourceFile
+[Name 91] [0x0007001000000000] SourceFileCRC
+[Name 92] [0x0007001000000000] SourceFileTimestamp
+[Name 93] [0x0007001000000000] SRGB
+[Name 94] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 95] [0x0007001000000000] StrProperty
+[Name 96] [0x0007001000000000] SwfMovie
+[Name 97] [0x0007001000000000] TAGame
+[Name 98] [0x0007001000000000] Texture2D
+[Name 99] [0x0007001000000000] TextureFormat
+[Name 100] [0x0007001000000000] TextureGroup
+[Name 101] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 102] [0x0007001000000000] TextureMipGenSettings
+[Name 103] [0x0007001000000000] TextureRescale
+[Name 104] [0x0007001000000000] Thumb_Banner_Lightning
+[Name 105] [0x0007001000000000] Thumbnail
+[Name 106] [0x0007001000000000] TMGS_NoMipmaps
+[Name 107] [0x0007001000000000] FloatProperty
+[Name 108] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UProductAsset_PlayerBanner_TA playerbanner_lightning.ProductSlots.PlayerBanner.ProductAsset_PlayerBanner_TA_0
 	Name: ProductAsset_PlayerBanner_TA_0
-	Class: ProductAsset_PlayerBanner_TA
-	Outer: ProductSlot_TA PlayerBanner
+	Class: UProductAsset_PlayerBanner_TA
+	Outer: PlayerBanner
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000019fa with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UObjectReferencer playerbanner_lightning.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000001a06 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[2]
+[Export 2]
+	Full Name: UPackage playerbanner_lightning.playerbanner_lightning
 	Name: playerbanner_lightning
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001a32 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[3]
+[Export 3]
+	Full Name: UPackage playerbanner_lightning.playerbanner_lightning_SF
 	Name: playerbanner_lightning_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001a3e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[4]
+[Export 4]
+	Full Name: UPackage playerbanner_lightning.ProductSlots
 	Name: ProductSlots
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001a4a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[5]
+[Export 5]
+	Full Name: UProductAsset_PlayerBanner_TA playerbanner_lightning.playerbanner_lightning.playerbanner_lightning
 	Name: playerbanner_lightning
-	Class: ProductAsset_PlayerBanner_TA
-	Outer: Package playerbanner_lightning
+	Class: UProductAsset_PlayerBanner_TA
+	Outer: playerbanner_lightning
 	Archetype: ProductAsset_PlayerBanner_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000276a0c with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UProductSlot_TA playerbanner_lightning.ProductSlots.PlayerBanner
 	Name: PlayerBanner
-	Class: ProductSlot_TA
-	Outer: Package ProductSlots
+	Class: UProductSlot_TA
+	Outer: ProductSlots
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x0000000000276a6c with 0x00000111 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: USwfMovie playerbanner_lightning.playerbanner_lightning.Banner_Lightning
 	Name: Banner_Lightning
-	Class: SwfMovie
-	Outer: Package playerbanner_lightning
+	Class: USwfMovie
+	Outer: playerbanner_lightning
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001bc7 with 0x00001fc3 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.Base
 	Name: Base
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003b8a with 0x00003ffe Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_1_01
 	Name: bolt_1_01
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000007b88 with 0x000122c9 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_1_02
 	Name: bolt_1_02
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000019e51 with 0x000122c9 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_1_03
 	Name: bolt_1_03
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000002c11a with 0x000122c9 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_1_04
 	Name: bolt_1_04
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000003e3e3 with 0x000122c9 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_1_05
 	Name: bolt_1_05
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000506ac with 0x000122c9 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_1_06
 	Name: bolt_1_06
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000062975 with 0x000122c9 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_2_01
 	Name: bolt_2_01
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000074c3e with 0x00009649 Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_2_02
 	Name: bolt_2_02
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000007e287 with 0x00009649 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_2_03
 	Name: bolt_2_03
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000878d0 with 0x00009649 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_2_04
 	Name: bolt_2_04
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000090f19 with 0x00009649 Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_3_01
 	Name: bolt_3_01
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000009a562 with 0x000094c9 Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_3_02
 	Name: bolt_3_02
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000a3a2b with 0x000094c9 Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_3_03
 	Name: bolt_3_03
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000acef4 with 0x000094c9 Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_3_04
 	Name: bolt_3_04
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000b63bd with 0x000094c9 Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_3_05
 	Name: bolt_3_05
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000bf886 with 0x000094c9 Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_4_01
 	Name: bolt_4_01
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000c8d4f with 0x00018b89 Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_4_02
 	Name: bolt_4_02
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000e18d8 with 0x00018b89 Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_4_03
 	Name: bolt_4_03
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000fa461 with 0x00018b89 Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_4_04
 	Name: bolt_4_04
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000112fea with 0x00018b89 Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_4_05
 	Name: bolt_4_05
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000012bb73 with 0x00018b89 Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_5_01
 	Name: bolt_5_01
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001446fc with 0x00004dc9 Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_5_02
 	Name: bolt_5_02
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001494c5 with 0x00004dc9 Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_5_03
 	Name: bolt_5_03
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000014e28e with 0x00004dc9 Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_6_01
 	Name: bolt_6_01
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000153057 with 0x0000ecc9 Bytes
 	Export Flags: 0x00000001
-[33]
+[Export 33]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_6_02
 	Name: bolt_6_02
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000161d20 with 0x0000ecc9 Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_6_03
 	Name: bolt_6_03
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001709e9 with 0x0000ecc9 Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_6_04
 	Name: bolt_6_04
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000017f6b2 with 0x0000ecc9 Bytes
 	Export Flags: 0x00000001
-[36]
+[Export 36]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_7_01
 	Name: bolt_7_01
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000018e37b with 0x000223c9 Bytes
 	Export Flags: 0x00000001
-[37]
+[Export 37]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_7_02
 	Name: bolt_7_02
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001b0744 with 0x000223c9 Bytes
 	Export Flags: 0x00000001
-[38]
+[Export 38]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_7_03
 	Name: bolt_7_03
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001d2b0d with 0x000223c9 Bytes
 	Export Flags: 0x00000001
-[39]
+[Export 39]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.bolt_7_04
 	Name: bolt_7_04
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001f4ed6 with 0x000223c9 Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.flash_bg
 	Name: flash_bg
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000021729f with 0x0001f5c9 Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UTexture2D playerbanner_lightning.playerbanner_lightning.Thumb_Banner_Lightning
 	Name: Thumb_Banner_Lightning
-	Class: Texture2D
-	Outer: Package playerbanner_lightning
+	Class: UTexture2D
+	Outer: playerbanner_lightning
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000236868 with 0x000401a4 Bytes
 	Export Flags: 0x00000001
@@ -567,73 +610,88 @@ AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[4]
+	Class Package: Core
+	Outer: GFxUI
+[Import 4]
+	Full Name: UClass TAGame.ProductAsset_PlayerBanner_TA
 	Name: ProductAsset_PlayerBanner_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UClass TAGame.ProductSlot_TA
 	Name: ProductSlot_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
+	Class Package: Core
+	Outer: TAGame
+[Import 6]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage ProductsDB
 	Name: ProductsDB
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage ProductsDB.Products
 	Name: Products
 	Class: Package
-	Package: Core
-	Outer: Package ProductsDB
-[11]
+	Class Package: Core
+	Outer: ProductsDB
+[Import 11]
+	Full Name: UPackage ProductSlots.Icons
 	Name: Icons
 	Class: Package
-	Package: Core
-	Outer: Package ProductSlots
-[12]
+	Class Package: Core
+	Outer: ProductSlots
+[Import 12]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[13]
+	Class Package: Core
+[Import 13]
+	Full Name: UProduct_TA ProductsDB.Products.playerBanner_RLShield
 	Name: playerBanner_RLShield
 	Class: Product_TA
-	Package: TAGame
-	Outer: Package Products
-[14]
+	Class Package: TAGame
+	Outer: Products
+[Import 14]
+	Full Name: UTexture2D ProductSlots.Icons.Banner
 	Name: Banner
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Icons
+	Class Package: Engine
+	Outer: Icons

@@ -49,6 +49,7 @@ Test Data Size: 0x00003fc4
 Compressed Chunk Info Offset: 0x00000f5c
 Last Block Size: 0x0000000c
 Base Header Size: 0x000000b1
+Encrypted Header Size: 0x00004f30
 
 AES: iKxkZ9HwK1dhuPsjKAwat7ZYphch8Zg3T3Leiwu+caQ=
 
@@ -56,183 +57,194 @@ AES: iKxkZ9HwK1dhuPsjKAwat7ZYphch8Zg3T3Leiwu+caQ=
     ~ Names ~ 
 
 
-[0] A
-[1] AnimationWarmupTime
-[2] Antenna
-[3] ArrayProperty
-[4] Attachments
-[5] Attributes
-[6] B
-[7] Behaviors
-[8] bHasStaticPermutationResource
-[9] BlackMetal_00
-[10] BoolProperty
-[11] ByteProperty
-[12] Class
-[13] ColorMaterialInput
-[14] Component
-[15] Core
-[16] CustomColor
-[17] DefaultValue
-[18] DiffuseColor
-[19] DiffusePower
-[20] EmissiveColor
-[21] Engine
-[22] EProductAttachmentSocket
-[23] Expression
-[24] ExpressionGUID
-[25] ExpressionInput
-[26] Expressions
-[27] FloatProperty
-[28] FXActor
-[29] GoldMetal_00
-[30] Guid
-[31] Hat
-[32] hat_fyre
-[33] hat_fyre_SF
-[34] Hat_Fyre_SM
-[35] InheritCarAttribute
-[36] IntProperty
-[37] IsPainted
-[38] LightMapCoordinateIndex
-[39] LightMapResolution
-[40] LinearColor
-[41] M_Hat_Fyre
-[42] M_Hat_Fyre_Painted_MIC
-[43] Mask
-[44] MaskA
-[45] Material
-[46] MaterialExpressionStaticSwitchParameter
-[47] MaterialExpressionVectorParameter
-[48] MaterialGroups
-[49] MaterialInstanceConstant
-[50] Materials
-[51] MIC_Hat_Fyre
-[52] NameProperty
-[53] None
-[54] ObjectProperty
-[55] ObjectReferencer
-[56] Opacity
-[57] OutputIndex
-[58] Package
-[59] PaintMaterialGroup
-[60] Paints
-[61] ParameterName
-[62] Parent
-[63] ParentLightingGuid
-[64] ParticleSystem
-[65] ParticleWarmupTime
-[66] PAS_Hat
-[67] PlatinumMetal_00
-[68] ProductAsset_Attachment_TA
-[69] ProductAttribute_PaintSettings_TA
-[70] ProductPaint
-[71] ProductPaint_TA
-[72] ProductSlot_TA
-[73] ProductSlots
-[74] ReferencedObjects
-[75] RoseGoldMetal_00
-[76] Rotation
-[77] Rotator
-[78] ScalarMaterialInput
-[79] Scale
-[80] SkeletalMesh
-[81] Socket
-[82] SpecularColor
-[83] SpecularPower
-[84] StandaloneSeekFreeReferencer
-[85] StaticMesh
-[86] StructProperty
-[87] TAGame
-[88] ThumbnailCameraRotationOffset
-[89] ThumbnailCameraTranslationOffset
-[90] Translation
-[91] UnsupportedPaints
-[92] Vector
-[93] VectorMaterialInput
-[94] WhiteGoldMetal_00
-[95] WorldPositionOffset
+[Name 0] [0x0007001000000000] A
+[Name 1] [0x0007001000000000] AnimationWarmupTime
+[Name 2] [0x0007001000000000] Antenna
+[Name 3] [0x0007001000000000] ArrayProperty
+[Name 4] [0x0007001000000000] Attachments
+[Name 5] [0x0007001000000000] Attributes
+[Name 6] [0x0007001000000000] B
+[Name 7] [0x0007001000000000] Behaviors
+[Name 8] [0x0007001000000000] bHasStaticPermutationResource
+[Name 9] [0x0007001000000000] BlackMetal_00
+[Name 10] [0x0007001000000000] BoolProperty
+[Name 11] [0x0007001000000000] ByteProperty
+[Name 12] [0x0007001000000000] Class
+[Name 13] [0x0007001000000000] ColorMaterialInput
+[Name 14] [0x0007001000000000] Component
+[Name 15] [0x0007001000000000] Core
+[Name 16] [0x0007001000000000] CustomColor
+[Name 17] [0x0007001000000000] DefaultValue
+[Name 18] [0x0007001000000000] DiffuseColor
+[Name 19] [0x0007001000000000] DiffusePower
+[Name 20] [0x0007001000000000] EmissiveColor
+[Name 21] [0x0007001000000000] Engine
+[Name 22] [0x0007001000000000] EProductAttachmentSocket
+[Name 23] [0x0007001000000000] Expression
+[Name 24] [0x0007001000000000] ExpressionGUID
+[Name 25] [0x0007001000000000] ExpressionInput
+[Name 26] [0x0007001000000000] Expressions
+[Name 27] [0x0007001000000000] FloatProperty
+[Name 28] [0x0007001000000000] FXActor
+[Name 29] [0x0007001000000000] GoldMetal_00
+[Name 30] [0x0007001000000000] Guid
+[Name 31] [0x0007001000000000] Hat
+[Name 32] [0x0007001000000000] hat_fyre
+[Name 33] [0x0007001000000000] hat_fyre_SF
+[Name 34] [0x0007001000000000] Hat_Fyre_SM
+[Name 35] [0x0007001000000000] InheritCarAttribute
+[Name 36] [0x0007001000000000] IntProperty
+[Name 37] [0x0007001000000000] IsPainted
+[Name 38] [0x0007001000000000] LightMapCoordinateIndex
+[Name 39] [0x0007001000000000] LightMapResolution
+[Name 40] [0x0007001000000000] LinearColor
+[Name 41] [0x0007001000000000] M_Hat_Fyre
+[Name 42] [0x0007001000000000] M_Hat_Fyre_Painted_MIC
+[Name 43] [0x0007001000000000] Mask
+[Name 44] [0x0007001000000000] MaskA
+[Name 45] [0x0007001000000000] Material
+[Name 46] [0x0007001000000000] MaterialExpressionStaticSwitchParameter
+[Name 47] [0x0007001000000000] MaterialExpressionVectorParameter
+[Name 48] [0x0007001000000000] MaterialGroups
+[Name 49] [0x0007001000000000] MaterialInstanceConstant
+[Name 50] [0x0007001000000000] Materials
+[Name 51] [0x0007001000000000] MIC_Hat_Fyre
+[Name 52] [0x0007001000000000] NameProperty
+[Name 53] [0x0007001000000000] None
+[Name 54] [0x0007001000000000] ObjectProperty
+[Name 55] [0x0007001000000000] ObjectReferencer
+[Name 56] [0x0007001000000000] Opacity
+[Name 57] [0x0007001000000000] OutputIndex
+[Name 58] [0x0007001000000000] Package
+[Name 59] [0x0007001000000000] PaintMaterialGroup
+[Name 60] [0x0007001000000000] Paints
+[Name 61] [0x0007001000000000] ParameterName
+[Name 62] [0x0007001000000000] Parent
+[Name 63] [0x0007001000000000] ParentLightingGuid
+[Name 64] [0x0007001000000000] ParticleSystem
+[Name 65] [0x0007001000000000] ParticleWarmupTime
+[Name 66] [0x0007001000000000] PAS_Hat
+[Name 67] [0x0007001000000000] PlatinumMetal_00
+[Name 68] [0x0007001000000000] ProductAsset_Attachment_TA
+[Name 69] [0x0007001000000000] ProductAttribute_PaintSettings_TA
+[Name 70] [0x0007001000000000] ProductPaint
+[Name 71] [0x0007001000000000] ProductPaint_TA
+[Name 72] [0x0007001000000000] ProductSlot_TA
+[Name 73] [0x0007001000000000] ProductSlots
+[Name 74] [0x0007001000000000] ReferencedObjects
+[Name 75] [0x0007001000000000] RoseGoldMetal_00
+[Name 76] [0x0007001000000000] Rotation
+[Name 77] [0x0007001000000000] Rotator
+[Name 78] [0x0007001000000000] ScalarMaterialInput
+[Name 79] [0x0007001000000000] Scale
+[Name 80] [0x0007001000000000] SkeletalMesh
+[Name 81] [0x0007001000000000] Socket
+[Name 82] [0x0007001000000000] SpecularColor
+[Name 83] [0x0007001000000000] SpecularPower
+[Name 84] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 85] [0x0007001000000000] StaticMesh
+[Name 86] [0x0007001000000000] StructProperty
+[Name 87] [0x0007001000000000] TAGame
+[Name 88] [0x0007001000000000] ThumbnailCameraRotationOffset
+[Name 89] [0x0007001000000000] ThumbnailCameraTranslationOffset
+[Name 90] [0x0007001000000000] Translation
+[Name 91] [0x0007001000000000] UnsupportedPaints
+[Name 92] [0x0007001000000000] Vector
+[Name 93] [0x0007001000000000] VectorMaterialInput
+[Name 94] [0x0007001000000000] WhiteGoldMetal_00
+[Name 95] [0x0007001000000000] WorldPositionOffset
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UMaterial hat_fyre.hat_fyre.M_Hat_Fyre
 	Name: M_Hat_Fyre
-	Class: Material
-	Outer: Package hat_fyre
+	Class: UMaterial
+	Outer: hat_fyre
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x000000000000100d with 0x000003dc Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_fyre.hat_fyre.M_Hat_Fyre.MaterialExpressionStaticSwitchParameter_0
 	Name: MaterialExpressionStaticSwitchParameter_0
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material M_Hat_Fyre
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: M_Hat_Fyre
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000013e9 with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterialExpressionVectorParameter hat_fyre.hat_fyre.M_Hat_Fyre.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material M_Hat_Fyre
+	Class: UMaterialExpressionVectorParameter
+	Outer: M_Hat_Fyre
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000014e9 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterialInstanceConstant hat_fyre.hat_fyre.M_Hat_Fyre_Painted_MIC
 	Name: M_Hat_Fyre_Painted_MIC
-	Class: MaterialInstanceConstant
-	Outer: Package hat_fyre
+	Class: UMaterialInstanceConstant
+	Outer: hat_fyre
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000001591 with 0x00000105 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UMaterialInstanceConstant hat_fyre.hat_fyre.MIC_Hat_Fyre
 	Name: MIC_Hat_Fyre
-	Class: MaterialInstanceConstant
-	Outer: Package hat_fyre
+	Class: UMaterialInstanceConstant
+	Outer: hat_fyre
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000001696 with 0x00000058 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UObjectReferencer hat_fyre.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x00000000000016ee with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[6]
+[Export 6]
+	Full Name: UPackage hat_fyre.hat_fyre
 	Name: hat_fyre
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000171a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[7]
+[Export 7]
+	Full Name: UPackage hat_fyre.hat_fyre_SF
 	Name: hat_fyre_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001726 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[8]
+[Export 8]
+	Full Name: UProductAsset_Attachment_TA hat_fyre.hat_fyre.hat_fyre
 	Name: hat_fyre
-	Class: ProductAsset_Attachment_TA
-	Outer: Package hat_fyre
+	Class: UProductAsset_Attachment_TA
+	Outer: hat_fyre
 	Archetype: ProductAsset_Attachment_TA_2
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001732 with 0x00000278 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UProductAttribute_PaintSettings_TA hat_fyre.hat_fyre.hat_fyre.ProductAttribute_PaintSettings_TA_0
 	Name: ProductAttribute_PaintSettings_TA_0
-	Class: ProductAttribute_PaintSettings_TA
-	Outer: ProductAsset_Attachment_TA hat_fyre
+	Class: UProductAttribute_PaintSettings_TA
+	Outer: hat_fyre
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000019aa with 0x00000084 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UStaticMesh hat_fyre.hat_fyre.Hat_Fyre_SM
 	Name: Hat_Fyre_SM
-	Class: StaticMesh
-	Outer: Package hat_fyre
+	Class: UStaticMesh
+	Outer: hat_fyre
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001a2e with 0x0001c099 Bytes
 	Export Flags: 0x00000001
@@ -241,108 +253,130 @@ AES: iKxkZ9HwK1dhuPsjKAwat7ZYphch8Zg3T3Leiwu+caQ=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.MaterialExpressionStaticSwitchParameter
 	Name: MaterialExpressionStaticSwitchParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialExpressionVectorParameter
 	Name: MaterialExpressionVectorParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.StaticMesh
 	Name: StaticMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass TAGame.ProductAsset_Attachment_TA
 	Name: ProductAsset_Attachment_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[8]
+	Class Package: Core
+	Outer: TAGame
+[Import 8]
+	Full Name: UClass TAGame.ProductAttribute_PaintSettings_TA
 	Name: ProductAttribute_PaintSettings_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[9]
+	Class Package: Core
+	Outer: TAGame
+[Import 9]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UPackage ProductPaint
 	Name: ProductPaint
 	Class: Package
-	Package: Core
-[12]
+	Class Package: Core
+[Import 12]
+	Full Name: UPackage ProductPaint.Paints
 	Name: Paints
 	Class: Package
-	Package: Core
-	Outer: Package ProductPaint
-[13]
+	Class Package: Core
+	Outer: ProductPaint
+[Import 13]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[14]
+	Class Package: Core
+[Import 14]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[15]
+	Class Package: Core
+[Import 15]
+	Full Name: UProductAsset_Attachment_TA ProductSlots.Hat.ProductAsset_Attachment_TA_2
 	Name: ProductAsset_Attachment_TA_2
 	Class: ProductAsset_Attachment_TA
-	Package: TAGame
-	Outer: ProductSlot_TA Hat
-[16]
+	Class Package: TAGame
+	Outer: Hat
+[Import 16]
+	Full Name: UProductPaint_TA ProductPaint.Paints.BlackMetal_00
 	Name: BlackMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[17]
+	Class Package: TAGame
+	Outer: Paints
+[Import 17]
+	Full Name: UProductPaint_TA ProductPaint.Paints.GoldMetal_00
 	Name: GoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[18]
+	Class Package: TAGame
+	Outer: Paints
+[Import 18]
+	Full Name: UProductPaint_TA ProductPaint.Paints.PlatinumMetal_00
 	Name: PlatinumMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[19]
+	Class Package: TAGame
+	Outer: Paints
+[Import 19]
+	Full Name: UProductPaint_TA ProductPaint.Paints.RoseGoldMetal_00
 	Name: RoseGoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[20]
+	Class Package: TAGame
+	Outer: Paints
+[Import 20]
+	Full Name: UProductPaint_TA ProductPaint.Paints.WhiteGoldMetal_00
 	Name: WhiteGoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[21]
+	Class Package: TAGame
+	Outer: Paints
+[Import 21]
+	Full Name: UProductSlot_TA ProductSlots.Hat
 	Name: Hat
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots

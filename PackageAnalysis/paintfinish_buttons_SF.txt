@@ -52,6 +52,7 @@ Test Data Size: 0x00003ed1
 Compressed Chunk Info Offset: 0x00000f2f
 Last Block Size: 0x00000004
 Base Header Size: 0x000000c1
+Encrypted Header Size: 0x00004e30
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -59,271 +60,237 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] bIsSourceArtUncompressed
-[2] BoolProperty
-[3] Buttons_N_v02
-[4] ByteProperty
-[5] Class
-[6] CompressionNoAlpha
-[7] CompressionNone
-[8] CompressionSettings
-[9] ControlA
-[10] ControlB
-[11] Core
-[12] DefaultProduct_New
-[13] DeferCompression
-[14] Detail_Buttons
-[15] DetailNormal
-[16] DiffuseDetailNormalStrength
-[17] Engine
-[18] EnvironmentStrength
-[19] EPixelFormat
-[20] ExpressionGUID
-[21] FirstResourceMemMip
-[22] FloatProperty
-[23] Format
-[24] Glossy
-[25] Guid
-[26] Icon
-[27] IconLarge
-[28] Icons
-[29] IntProperty
-[30] Label
-[31] LightCurveType
-[32] LightCurveType_TA
-[33] LightCurveTypes
-[34] LinearColor
-[35] LODGroup
-[36] MipGenSettings
-[37] MipTailBaseIdx
-[38] NameProperty
-[39] None
-[40] ObjectProperty
-[41] ObjectReferencer
-[42] OnlineLabel
-[43] OriginalSizeX
-[44] OriginalSizeY
-[45] Package
-[46] Paint
-[47] PaintFinish
-[48] paintfinish_buttons
-[49] paintfinish_buttons_SF
-[50] PaintFinish_Buttons_T
-[51] PaintFinish_Buttons_TThumbnail
-[52] PaintFinish_Default
-[53] ParameterName
-[54] ParameterValue
-[55] PF_A8R8G8B8
-[56] PluralLabel
-[57] Product_TA
-[58] ProductAsset_PaintFinish_TA
-[59] Products
-[60] ProductsDB
-[61] ProductSlot_TA
-[62] ProductSlots
-[63] ReferencedObjects
-[64] RimLightTint
-[65] ScalarParameterValues
-[66] SizeX
-[67] SizeY
-[68] SpecularDetailNormalStrength
-[69] SpecularStrength
-[70] SpecularTint
-[71] SRGB
-[72] StandaloneSeekFreeReferencer
-[73] StrProperty
-[74] StructProperty
-[75] TAGame
-[76] TC_VectorDisplacementmap
-[77] Texture2D
-[78] TextureCompressionSettings
-[79] TextureFileCacheName
-[80] TextureGroup
-[81] TEXTUREGROUP_UI
-[82] TEXTUREGROUP_WorldNormalMap
-[83] TextureMipGenSettings
-[84] TextureParameterValues
-[85] Textures6
-[86] Thumbnail
-[87] TMGS_Sharpen10
-[88] Type
-[89] UnpackMin
-[90] VectorParameterValues
-[91] Skin_Renderer
-[92] ThumbnailRenderer
-[93] ThumbnailRenderer_TA
-[94] ThumbnailRenderers
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007000000000000] bIsSourceArtUncompressed
+[Name 2] [0x0007001000000000] BoolProperty
+[Name 3] [0x0007001000000000] Buttons_N_v02
+[Name 4] [0x0007001000000000] ByteProperty
+[Name 5] [0x0007001000000000] Class
+[Name 6] [0x0007000000000000] CompressionNoAlpha
+[Name 7] [0x0007000000000000] CompressionNone
+[Name 8] [0x0007001000000000] CompressionSettings
+[Name 9] [0x0007001000000000] ControlA
+[Name 10] [0x0007001000000000] ControlB
+[Name 11] [0x0007001000000000] Core
+[Name 12] [0x0007000000000000] DefaultProduct_New
+[Name 13] [0x0007000000000000] DeferCompression
+[Name 14] [0x0007001000000000] Detail_Buttons
+[Name 15] [0x0007001000000000] DetailNormal
+[Name 16] [0x0007001000000000] DiffuseDetailNormalStrength
+[Name 17] [0x0007001000000000] Engine
+[Name 18] [0x0007001000000000] EnvironmentStrength
+[Name 19] [0x0007001000000000] EPixelFormat
+[Name 20] [0x0007001000000000] ExpressionGUID
+[Name 21] [0x0007001000000000] FirstResourceMemMip
+[Name 22] [0x0007001000000000] FloatProperty
+[Name 23] [0x0007001000000000] Format
+[Name 24] [0x0007001000000000] Glossy
+[Name 25] [0x0007001000000000] Guid
+[Name 26] [0x0007000000000000] Icon
+[Name 27] [0x0007000000000000] IconLarge
+[Name 28] [0x0007000000000000] Icons
+[Name 29] [0x0007001000000000] IntProperty
+[Name 30] [0x0007000000000000] Label
+[Name 31] [0x0007001000000000] LightCurveType
+[Name 32] [0x0007001000000000] LightCurveType_TA
+[Name 33] [0x0007001000000000] LightCurveTypes
+[Name 34] [0x0007001000000000] LinearColor
+[Name 35] [0x0007001000000000] LODGroup
+[Name 36] [0x0007000000000000] MipGenSettings
+[Name 37] [0x0007001000000000] MipTailBaseIdx
+[Name 38] [0x0007001000000000] NameProperty
+[Name 39] [0x0007001000000000] None
+[Name 40] [0x0007001000000000] ObjectProperty
+[Name 41] [0x0007001000000000] ObjectReferencer
+[Name 42] [0x0007000000000000] OnlineLabel
+[Name 43] [0x0007001000000000] OriginalSizeX
+[Name 44] [0x0007001000000000] OriginalSizeY
+[Name 45] [0x0007001000000000] Package
+[Name 46] [0x0007000000000000] Paint
+[Name 47] [0x0007001000000000] PaintFinish
+[Name 48] [0x0007001000000000] paintfinish_buttons
+[Name 49] [0x0007001000000000] paintfinish_buttons_SF
+[Name 50] [0x0007000000000000] PaintFinish_Buttons_T
+[Name 51] [0x0007000000000000] PaintFinish_Buttons_TThumbnail
+[Name 52] [0x0007000000000000] PaintFinish_Default
+[Name 53] [0x0007001000000000] ParameterName
+[Name 54] [0x0007001000000000] ParameterValue
+[Name 55] [0x0007001000000000] PF_A8R8G8B8
+[Name 56] [0x0007000000000000] PluralLabel
+[Name 57] [0x0007000000000000] Product_TA
+[Name 58] [0x0007001000000000] ProductAsset_PaintFinish_TA
+[Name 59] [0x0007000000000000] Products
+[Name 60] [0x0007000000000000] ProductsDB
+[Name 61] [0x0007001000000000] ProductSlot_TA
+[Name 62] [0x0007001000000000] ProductSlots
+[Name 63] [0x0007001000000000] ReferencedObjects
+[Name 64] [0x0007001000000000] RimLightTint
+[Name 65] [0x0007001000000000] ScalarParameterValues
+[Name 66] [0x0007001000000000] SizeX
+[Name 67] [0x0007001000000000] SizeY
+[Name 68] [0x0007001000000000] SpecularDetailNormalStrength
+[Name 69] [0x0007001000000000] SpecularStrength
+[Name 70] [0x0007001000000000] SpecularTint
+[Name 71] [0x0007001000000000] SRGB
+[Name 72] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 73] [0x0007000000000000] StrProperty
+[Name 74] [0x0007001000000000] StructProperty
+[Name 75] [0x0007001000000000] TAGame
+[Name 76] [0x0007001000000000] TC_VectorDisplacementmap
+[Name 77] [0x0007001000000000] Texture2D
+[Name 78] [0x0007001000000000] TextureCompressionSettings
+[Name 79] [0x0007001000000000] TextureFileCacheName
+[Name 80] [0x0007001000000000] TextureGroup
+[Name 81] [0x0007000000000000] TEXTUREGROUP_UI
+[Name 82] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 83] [0x0007000000000000] TextureMipGenSettings
+[Name 84] [0x0007001000000000] TextureParameterValues
+[Name 85] [0x0007001000000000] Textures6
+[Name 86] [0x0007000000000000] Thumbnail
+[Name 87] [0x0007000000000000] TMGS_Sharpen10
+[Name 88] [0x0007001000000000] Type
+[Name 89] [0x0007001000000000] UnpackMin
+[Name 90] [0x0007001000000000] VectorParameterValues
+[Name 91] [0x0007001000000000] Skin_Renderer
+[Name 92] [0x0007001000000000] ThumbnailRenderer
+[Name 93] [0x0007001000000000] ThumbnailRenderer_TA
+[Name 94] [0x0007001000000000] ThumbnailRenderers
 
 
     ~ Exports ~ 
 
 
-[0]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UObjectReferencer paintfinish_buttons.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000001128 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[2]
+[Export 2]
+	Full Name: UPackage paintfinish_buttons.Detail_Buttons
 	Name: Detail_Buttons
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001154 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[3]
+[Export 3]
+	Full Name: UPackage paintfinish_buttons.paintfinish_buttons
 	Name: paintfinish_buttons
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001160 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[4]
+[Export 4]
+	Full Name: UPackage paintfinish_buttons.paintfinish_buttons_SF
 	Name: paintfinish_buttons_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000116c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[5]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[6]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[7]
+[Export 7]
+	Full Name: UProductAsset_PaintFinish_TA paintfinish_buttons.paintfinish_buttons.paintfinish_buttons
 	Name: paintfinish_buttons
-	Class: ProductAsset_PaintFinish_TA
-	Outer: Package paintfinish_buttons
+	Class: UProductAsset_PaintFinish_TA
+	Outer: paintfinish_buttons
 	Archetype: ProductAsset_PaintFinish_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000004702f with 0x00000354 Bytes
 	Export Flags: 0x00000001
-[8]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[9]
+[Export 9]
+	Full Name: UTexture2D paintfinish_buttons.Detail_Buttons.Buttons_N_v02
 	Name: Buttons_N_v02
-	Class: Texture2D
-	Outer: Package Detail_Buttons
+	Class: UTexture2D
+	Outer: Detail_Buttons
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000047383 with 0x0000584d Bytes
 	Export Flags: 0x00000001
-[10]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
 
 
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass TAGame.ProductAsset_PaintFinish_TA
 	Name: ProductAsset_PaintFinish_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[4]
-	Name: None
-	Class: None
-	Package: None
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: ULightCurveType_TA LightCurveTypes.Glossy
 	Name: Glossy
 	Class: LightCurveType_TA
-	Package: TAGame
-	Outer: Package LightCurveTypes
-[6]
+	Class Package: TAGame
+	Outer: LightCurveTypes
+[Import 6]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage LightCurveTypes
 	Name: LightCurveTypes
 	Class: Package
-	Package: Core
-[9]
-	Name: None
-	Class: None
-	Package: None
-[10]
-	Name: None
-	Class: None
-	Package: None
-[11]
-	Name: None
-	Class: None
-	Package: None
-[12]
+	Class Package: Core
+[Import 12]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[13]
-	Name: None
-	Class: None
-	Package: None
-[14]
-	Name: None
-	Class: None
-	Package: None
-[15]
+	Class Package: Core
+[Import 15]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UPackage ThumbnailRenderers
 	Name: ThumbnailRenderers
 	Class: Package
-	Package: Core
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UProductAsset_PaintFinish_TA ProductSlots.PaintFinish.ProductAsset_PaintFinish_TA_0
 	Name: ProductAsset_PaintFinish_TA_0
 	Class: ProductAsset_PaintFinish_TA
-	Package: TAGame
-	Outer: ProductSlot_TA PaintFinish
-[18]
+	Class Package: TAGame
+	Outer: PaintFinish
+[Import 18]
+	Full Name: UProductSlot_TA ProductSlots.PaintFinish
 	Name: PaintFinish
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
-[19]
+	Class Package: TAGame
+	Outer: ProductSlots
+[Import 19]
+	Full Name: UThumbnailRenderer_TA ThumbnailRenderers.Skin_Renderer
 	Name: Skin_Renderer
 	Class: ThumbnailRenderer_TA
-	Package: TAGame
-	Outer: Package ThumbnailRenderers
+	Class Package: TAGame
+	Outer: ThumbnailRenderers

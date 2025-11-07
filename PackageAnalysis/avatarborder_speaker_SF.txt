@@ -60,6 +60,7 @@ Test Data Size: 0x00003fea
 Compressed Chunk Info Offset: 0x00000c3a
 Last Block Size: 0x00000000
 Base Header Size: 0x000000e1
+Encrypted Header Size: 0x00004c40
 
 AES: rR759b56+KjEkHVwMKcVNztmaJ4pL9qnLVe4DjLCAT8=
 
@@ -67,169 +68,181 @@ AES: rR759b56+KjEkHVwMKcVNztmaJ4pL9qnLVe4DjLCAT8=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] AvatarBorder
-[2] AvatarBorder_Default
-[3] avatarborder_speaker
-[4] avatarborder_speaker_SF
-[5] bAllowLicensedEquip
-[6] bIsSourceArtUncompressed
-[7] BoolProperty
-[8] bReplicated
-[9] ByteProperty
-[10] Class
-[11] CompressionNone
-[12] Core
-[13] DefaultProduct_New
-[14] DeferCompression
-[15] Editions
-[16] Engine
-[17] EPixelFormat
-[18] FlashTextureRescale
-[19] FlashTextureScale_Mult4
-[20] Format
-[21] GFxUI
-[22] Icon
-[23] IconLarge
-[24] IntProperty
-[25] Label
-[26] LODGroup
-[27] MipGenSettings
-[28] MipTailBaseIdx
-[29] MovieReference
-[30] NeverStream
-[31] None
-[32] ObjectProperty
-[33] ObjectReferencer
-[34] OnlineLabel
-[35] OriginalSizeX
-[36] OriginalSizeY
-[37] Package
-[38] PackTextureSize
-[39] PF_A8R8G8B8
-[40] PlayerAvatarBorder
-[41] PlayerAvatarBorder_Speaker
-[42] PluralLabel
-[43] Product_TA
-[44] ProductAsset_PlayerAvatarBorder_TA
-[45] Products
-[46] ProductsDB
-[47] ProductSlot_TA
-[48] ProductSlots
-[49] RawData
-[50] ReferencedObjects
-[51] References
-[52] SizeX
-[53] SizeY
-[54] SourceFile
-[55] SourceFileCRC
-[56] SourceFileTimestamp
-[57] SRGB
-[58] StandaloneSeekFreeReferencer
-[59] StaticBG
-[60] StrProperty
-[61] SwfMovie
-[62] TAGame
-[63] Texture2D
-[64] TextureFormat
-[65] TextureGroup
-[66] TEXTUREGROUP_UI
-[67] TextureMipGenSettings
-[68] TextureRescale
-[69] Thumb_Border_Speaker
-[70] Thumbnail
-[71] TMGS_NoMipmaps
-[72] tweeter
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] AvatarBorder
+[Name 2] [0x0007001000000000] AvatarBorder_Default
+[Name 3] [0x0007001000000000] avatarborder_speaker
+[Name 4] [0x0007001000000000] avatarborder_speaker_SF
+[Name 5] [0x0007001000000000] bAllowLicensedEquip
+[Name 6] [0x0007001000000000] bIsSourceArtUncompressed
+[Name 7] [0x0007001000000000] BoolProperty
+[Name 8] [0x0007001000000000] bReplicated
+[Name 9] [0x0007001000000000] ByteProperty
+[Name 10] [0x0007001000000000] Class
+[Name 11] [0x0007001000000000] CompressionNone
+[Name 12] [0x0007001000000000] Core
+[Name 13] [0x0007001000000000] DefaultProduct_New
+[Name 14] [0x0007001000000000] DeferCompression
+[Name 15] [0x0007001000000000] Editions
+[Name 16] [0x0007001000000000] Engine
+[Name 17] [0x0007001000000000] EPixelFormat
+[Name 18] [0x0007001000000000] FlashTextureRescale
+[Name 19] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 20] [0x0007001000000000] Format
+[Name 21] [0x0007001000000000] GFxUI
+[Name 22] [0x0007001000000000] Icon
+[Name 23] [0x0007001000000000] IconLarge
+[Name 24] [0x0007001000000000] IntProperty
+[Name 25] [0x0007001000000000] Label
+[Name 26] [0x0007001000000000] LODGroup
+[Name 27] [0x0007001000000000] MipGenSettings
+[Name 28] [0x0007001000000000] MipTailBaseIdx
+[Name 29] [0x0007001000000000] MovieReference
+[Name 30] [0x0007001000000000] NeverStream
+[Name 31] [0x0007001000000000] None
+[Name 32] [0x0007001000000000] ObjectProperty
+[Name 33] [0x0007001000000000] ObjectReferencer
+[Name 34] [0x0007001000000000] OnlineLabel
+[Name 35] [0x0007001000000000] OriginalSizeX
+[Name 36] [0x0007001000000000] OriginalSizeY
+[Name 37] [0x0007001000000000] Package
+[Name 38] [0x0007001000000000] PackTextureSize
+[Name 39] [0x0007001000000000] PF_A8R8G8B8
+[Name 40] [0x0007001000000000] PlayerAvatarBorder
+[Name 41] [0x0007001000000000] PlayerAvatarBorder_Speaker
+[Name 42] [0x0007001000000000] PluralLabel
+[Name 43] [0x0007001000000000] Product_TA
+[Name 44] [0x0007001000000000] ProductAsset_PlayerAvatarBorder_TA
+[Name 45] [0x0007001000000000] Products
+[Name 46] [0x0007001000000000] ProductsDB
+[Name 47] [0x0007001000000000] ProductSlot_TA
+[Name 48] [0x0007001000000000] ProductSlots
+[Name 49] [0x0007001000000000] RawData
+[Name 50] [0x0007001000000000] ReferencedObjects
+[Name 51] [0x0007001000000000] References
+[Name 52] [0x0007001000000000] SizeX
+[Name 53] [0x0007001000000000] SizeY
+[Name 54] [0x0007001000000000] SourceFile
+[Name 55] [0x0007001000000000] SourceFileCRC
+[Name 56] [0x0007001000000000] SourceFileTimestamp
+[Name 57] [0x0007001000000000] SRGB
+[Name 58] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 59] [0x0007001000000000] StaticBG
+[Name 60] [0x0007001000000000] StrProperty
+[Name 61] [0x0007001000000000] SwfMovie
+[Name 62] [0x0007001000000000] TAGame
+[Name 63] [0x0007001000000000] Texture2D
+[Name 64] [0x0007001000000000] TextureFormat
+[Name 65] [0x0007001000000000] TextureGroup
+[Name 66] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 67] [0x0007001000000000] TextureMipGenSettings
+[Name 68] [0x0007001000000000] TextureRescale
+[Name 69] [0x0007001000000000] Thumb_Border_Speaker
+[Name 70] [0x0007001000000000] Thumbnail
+[Name 71] [0x0007001000000000] TMGS_NoMipmaps
+[Name 72] [0x0007001000000000] tweeter
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UProductAsset_PlayerAvatarBorder_TA avatarborder_speaker.ProductSlots.PlayerAvatarBorder.ProductAsset_PlayerAvatarBorder_TA_0
 	Name: ProductAsset_PlayerAvatarBorder_TA_0
-	Class: ProductAsset_PlayerAvatarBorder_TA
-	Outer: ProductSlot_TA PlayerAvatarBorder
+	Class: UProductAsset_PlayerAvatarBorder_TA
+	Outer: PlayerAvatarBorder
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000d1b with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UObjectReferencer avatarborder_speaker.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000000d27 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[2]
+[Export 2]
+	Full Name: UPackage avatarborder_speaker.avatarborder_speaker
 	Name: avatarborder_speaker
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000d53 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[3]
+[Export 3]
+	Full Name: UPackage avatarborder_speaker.avatarborder_speaker_SF
 	Name: avatarborder_speaker_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000d5f with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[4]
+[Export 4]
+	Full Name: UPackage avatarborder_speaker.PlayerAvatarBorder_Speaker
 	Name: PlayerAvatarBorder_Speaker
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000d6b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[5]
+[Export 5]
+	Full Name: UPackage avatarborder_speaker.ProductSlots
 	Name: ProductSlots
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000d77 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[6]
+[Export 6]
+	Full Name: UProductAsset_PlayerAvatarBorder_TA avatarborder_speaker.avatarborder_speaker.avatarborder_speaker
 	Name: avatarborder_speaker
-	Class: ProductAsset_PlayerAvatarBorder_TA
-	Outer: Package avatarborder_speaker
+	Class: UProductAsset_PlayerAvatarBorder_TA
+	Outer: avatarborder_speaker
 	Archetype: ProductAsset_PlayerAvatarBorder_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000d83 with 0x00000044 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UProductSlot_TA avatarborder_speaker.ProductSlots.PlayerAvatarBorder
 	Name: PlayerAvatarBorder
-	Class: ProductSlot_TA
-	Outer: Package ProductSlots
+	Class: UProductSlot_TA
+	Outer: ProductSlots
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x0000000000000dc7 with 0x00000111 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: USwfMovie avatarborder_speaker.PlayerAvatarBorder_Speaker.avatarborder_speaker
 	Name: avatarborder_speaker
-	Class: SwfMovie
-	Outer: Package PlayerAvatarBorder_Speaker
+	Class: USwfMovie
+	Outer: PlayerAvatarBorder_Speaker
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000ed8 with 0x000004a2 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UTexture2D avatarborder_speaker.PlayerAvatarBorder_Speaker.StaticBG
 	Name: StaticBG
-	Class: Texture2D
-	Outer: Package PlayerAvatarBorder_Speaker
+	Class: UTexture2D
+	Outer: PlayerAvatarBorder_Speaker
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000137a with 0x0000e2c9 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UTexture2D avatarborder_speaker.PlayerAvatarBorder_Speaker.Thumb_Border_Speaker
 	Name: Thumb_Border_Speaker
-	Class: Texture2D
-	Outer: Package PlayerAvatarBorder_Speaker
+	Class: UTexture2D
+	Outer: PlayerAvatarBorder_Speaker
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000f643 with 0x0004018b Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UTexture2D avatarborder_speaker.PlayerAvatarBorder_Speaker.tweeter
 	Name: tweeter
-	Class: Texture2D
-	Outer: Package PlayerAvatarBorder_Speaker
+	Class: UTexture2D
+	Outer: PlayerAvatarBorder_Speaker
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000004f7ce with 0x00016ac9 Bytes
 	Export Flags: 0x00000001
@@ -238,68 +251,82 @@ AES: rR759b56+KjEkHVwMKcVNztmaJ4pL9qnLVe4DjLCAT8=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[4]
+	Class Package: Core
+	Outer: GFxUI
+[Import 4]
+	Full Name: UClass TAGame.ProductAsset_PlayerAvatarBorder_TA
 	Name: ProductAsset_PlayerAvatarBorder_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UClass TAGame.ProductSlot_TA
 	Name: ProductSlot_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
+	Class Package: Core
+	Outer: TAGame
+[Import 6]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage ProductsDB
 	Name: ProductsDB
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage ProductsDB.Products
 	Name: Products
 	Class: Package
-	Package: Core
-	Outer: Package ProductsDB
-[11]
+	Class Package: Core
+	Outer: ProductsDB
+[Import 11]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[12]
+	Class Package: Core
+[Import 12]
+	Full Name: UProduct_TA ProductsDB.Products.AvatarBorder_Default
 	Name: AvatarBorder_Default
 	Class: Product_TA
-	Package: TAGame
-	Outer: Package Products
-[13]
+	Class Package: TAGame
+	Outer: Products
+[Import 13]
+	Full Name: UTexture2D ProductSlots.AvatarBorder
 	Name: AvatarBorder
 	Class: Texture2D
-	Package: Engine
-	Outer: Package ProductSlots
+	Class Package: Engine
+	Outer: ProductSlots

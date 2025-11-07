@@ -66,6 +66,7 @@ Test Data Size: 0x00003fe2
 Compressed Chunk Info Offset: 0x00000ea6
 Last Block Size: 0x00000004
 Base Header Size: 0x000000fd
+Encrypted Header Size: 0x00004ea0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -73,242 +74,266 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] Banner_S8Platinum
-[2] BoolProperty
-[3] ByteProperty
-[4] Class
-[5] Core
-[6] Editions
-[7] Engine
-[8] EPixelFormat
-[9] FlashTextureRescale
-[10] FlashTextureScale_Mult4
-[11] Format
-[12] GFxUI
-[13] IntProperty
-[14] LODGroup
-[15] MipGenSettings
-[16] MovieReference
-[17] NeverStream
-[18] None
-[19] ObjectProperty
-[20] ObjectReferencer
-[21] OriginalSizeX
-[22] OriginalSizeY
-[23] Package
-[24] PackTextureSize
-[25] PF_DXT5
-[26] PlatinumSprite
-[27] PlatinumSprite_00
-[28] PlatinumSprite_01
-[29] PlatinumSprite_02
-[30] PlatinumSprite_03
-[31] PlatinumSprite_04
-[32] PlatinumSprite_05
-[33] PlatinumSprite_06
-[34] PlatinumSprite_07
-[35] PlatinumSprite_08
-[36] PlatinumSprite_09
-[37] PlayerBanner
-[38] playerbanner_s8rewardplatinum
-[39] playerbanner_s8rewardplatinum_SF
-[40] ProductAsset_PlayerBanner_TA
-[41] ProductSlot_TA
-[42] ProductSlots
-[43] RawData
-[44] ReferencedObjects
-[45] References
-[46] S8Platinum_bg
-[47] SizeX
-[48] SizeY
-[49] SourceFile
-[50] SourceFileCRC
-[51] SourceFileTimestamp
-[52] SRGB
-[53] StandaloneSeekFreeReferencer
-[54] StrProperty
-[55] SwfMovie
-[56] TAGame
-[57] Texture2D
-[58] TextureFormat
-[59] TextureGroup
-[60] TEXTUREGROUP_UI
-[61] TextureMipGenSettings
-[62] TextureRescale
-[63] TMGS_NoMipmaps
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] Banner_S8Platinum
+[Name 2] [0x0007001000000000] BoolProperty
+[Name 3] [0x0007001000000000] ByteProperty
+[Name 4] [0x0007001000000000] Class
+[Name 5] [0x0007001000000000] Core
+[Name 6] [0x0007001000000000] Editions
+[Name 7] [0x0007001000000000] Engine
+[Name 8] [0x0007001000000000] EPixelFormat
+[Name 9] [0x0007001000000000] FlashTextureRescale
+[Name 10] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 11] [0x0007001000000000] Format
+[Name 12] [0x0007001000000000] GFxUI
+[Name 13] [0x0007001000000000] IntProperty
+[Name 14] [0x0007001000000000] LODGroup
+[Name 15] [0x0007001000000000] MipGenSettings
+[Name 16] [0x0007001000000000] MovieReference
+[Name 17] [0x0007001000000000] NeverStream
+[Name 18] [0x0007001000000000] None
+[Name 19] [0x0007001000000000] ObjectProperty
+[Name 20] [0x0007001000000000] ObjectReferencer
+[Name 21] [0x0007001000000000] OriginalSizeX
+[Name 22] [0x0007001000000000] OriginalSizeY
+[Name 23] [0x0007001000000000] Package
+[Name 24] [0x0007001000000000] PackTextureSize
+[Name 25] [0x0007001000000000] PF_DXT5
+[Name 26] [0x0007001000000000] PlatinumSprite
+[Name 27] [0x0007001000000000] PlatinumSprite_00
+[Name 28] [0x0007001000000000] PlatinumSprite_01
+[Name 29] [0x0007001000000000] PlatinumSprite_02
+[Name 30] [0x0007001000000000] PlatinumSprite_03
+[Name 31] [0x0007001000000000] PlatinumSprite_04
+[Name 32] [0x0007001000000000] PlatinumSprite_05
+[Name 33] [0x0007001000000000] PlatinumSprite_06
+[Name 34] [0x0007001000000000] PlatinumSprite_07
+[Name 35] [0x0007001000000000] PlatinumSprite_08
+[Name 36] [0x0007001000000000] PlatinumSprite_09
+[Name 37] [0x0007001000000000] PlayerBanner
+[Name 38] [0x0007001000000000] playerbanner_s8rewardplatinum
+[Name 39] [0x0007001000000000] playerbanner_s8rewardplatinum_SF
+[Name 40] [0x0007001000000000] ProductAsset_PlayerBanner_TA
+[Name 41] [0x0007001000000000] ProductSlot_TA
+[Name 42] [0x0007001000000000] ProductSlots
+[Name 43] [0x0007001000000000] RawData
+[Name 44] [0x0007001000000000] ReferencedObjects
+[Name 45] [0x0007001000000000] References
+[Name 46] [0x0007001000000000] S8Platinum_bg
+[Name 47] [0x0007001000000000] SizeX
+[Name 48] [0x0007001000000000] SizeY
+[Name 49] [0x0007001000000000] SourceFile
+[Name 50] [0x0007001000000000] SourceFileCRC
+[Name 51] [0x0007001000000000] SourceFileTimestamp
+[Name 52] [0x0007001000000000] SRGB
+[Name 53] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 54] [0x0007001000000000] StrProperty
+[Name 55] [0x0007001000000000] SwfMovie
+[Name 56] [0x0007001000000000] TAGame
+[Name 57] [0x0007001000000000] Texture2D
+[Name 58] [0x0007001000000000] TextureFormat
+[Name 59] [0x0007001000000000] TextureGroup
+[Name 60] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 61] [0x0007001000000000] TextureMipGenSettings
+[Name 62] [0x0007001000000000] TextureRescale
+[Name 63] [0x0007001000000000] TMGS_NoMipmaps
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UObjectReferencer playerbanner_s8rewardplatinum.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000000fa3 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UPackage playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum
 	Name: playerbanner_s8rewardplatinum
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000fcf with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[2]
+[Export 2]
+	Full Name: UPackage playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum_SF
 	Name: playerbanner_s8rewardplatinum_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000fdb with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[3]
+[Export 3]
+	Full Name: UProductAsset_PlayerBanner_TA playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum
 	Name: playerbanner_s8rewardplatinum
-	Class: ProductAsset_PlayerBanner_TA
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UProductAsset_PlayerBanner_TA
+	Outer: playerbanner_s8rewardplatinum
 	Archetype: ProductAsset_PlayerBanner_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000fe7 with 0x00000028 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: USwfMovie playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.Banner_S8Platinum
 	Name: Banner_S8Platinum
-	Class: SwfMovie
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: USwfMovie
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000100f with 0x00001263 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.PlatinumSprite_00
 	Name: PlatinumSprite_00
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002272 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.PlatinumSprite_01
 	Name: PlatinumSprite_01
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000c800 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.PlatinumSprite_02
 	Name: PlatinumSprite_02
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000016d8e with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.PlatinumSprite_03
 	Name: PlatinumSprite_03
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000002131c with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.PlatinumSprite_04
 	Name: PlatinumSprite_04
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000002b8aa with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.PlatinumSprite_05
 	Name: PlatinumSprite_05
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000035e38 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.PlatinumSprite_06
 	Name: PlatinumSprite_06
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000403c6 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.PlatinumSprite_07
 	Name: PlatinumSprite_07
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000004a954 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.PlatinumSprite_08
 	Name: PlatinumSprite_08
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000054ee2 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.PlatinumSprite_09
 	Name: PlatinumSprite_09
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000005f470 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.PlatinumSprite_10
 	Name: PlatinumSprite_10
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000699fe with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.PlatinumSprite_11
 	Name: PlatinumSprite_11
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000073f8c with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.PlatinumSprite_12
 	Name: PlatinumSprite_12
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000007e51a with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.PlatinumSprite_13
 	Name: PlatinumSprite_13
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000088aa8 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.PlatinumSprite_14
 	Name: PlatinumSprite_14
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000093036 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.PlatinumSprite_15
 	Name: PlatinumSprite_15
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000009d5c4 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.PlatinumSprite_16
 	Name: PlatinumSprite_16
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000a7b52 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.PlatinumSprite_17
 	Name: PlatinumSprite_17
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000b20e0 with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UTexture2D playerbanner_s8rewardplatinum.playerbanner_s8rewardplatinum.S8Platinum_bg
 	Name: S8Platinum_bg
-	Class: Texture2D
-	Outer: Package playerbanner_s8rewardplatinum
+	Class: UTexture2D
+	Outer: playerbanner_s8rewardplatinum
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000bc66e with 0x0000a58e Bytes
 	Export Flags: 0x00000001
@@ -317,58 +342,70 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[4]
+	Class Package: Core
+	Outer: GFxUI
+[Import 4]
+	Full Name: UClass TAGame.ProductAsset_PlayerBanner_TA
 	Name: ProductAsset_PlayerBanner_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[6]
+	Class Package: Core
+[Import 6]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UProductAsset_PlayerBanner_TA ProductSlots.PlayerBanner.ProductAsset_PlayerBanner_TA_0
 	Name: ProductAsset_PlayerBanner_TA_0
 	Class: ProductAsset_PlayerBanner_TA
-	Package: TAGame
-	Outer: ProductSlot_TA PlayerBanner
-[11]
+	Class Package: TAGame
+	Outer: PlayerBanner
+[Import 11]
+	Full Name: UProductSlot_TA ProductSlots.PlayerBanner
 	Name: PlayerBanner
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots

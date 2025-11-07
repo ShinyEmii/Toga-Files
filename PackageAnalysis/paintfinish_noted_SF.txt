@@ -88,6 +88,7 @@ Test Data Size: 0x00003f62
 Compressed Chunk Info Offset: 0x00000a3e
 Last Block Size: 0x0000000c
 Base Header Size: 0x0000012d
+Encrypted Header Size: 0x000049b0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -95,115 +96,120 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] BoolProperty
-[2] ByteProperty
-[3] Class
-[4] CompressionSettings
-[5] ControlA
-[6] ControlB
-[7] Core
-[8] DetailNormal
-[9] DiffuseDetailNormalStrength
-[10] Engine
-[11] EnvironmentStrength
-[12] EPixelFormat
-[13] ExpressionGUID
-[14] FirstResourceMemMip
-[15] FloatProperty
-[16] Format
-[17] Guid
-[18] IntProperty
-[19] LightCurveType
-[20] LightCurveType_TA
-[21] LightCurveTypes
-[22] LinearColor
-[23] LODGroup
-[24] Matte
-[25] MipTailBaseIdx
-[26] NameProperty
-[27] None
-[28] Noted_N
-[29] ObjectProperty
-[30] ObjectReferencer
-[31] OriginalSizeX
-[32] OriginalSizeY
-[33] Package
-[34] PaintFinish
-[35] paintfinish_noted
-[36] paintfinish_noted_SF
-[37] PaintFinish_Renderer
-[38] ParameterName
-[39] ParameterValue
-[40] PF_DXT5
-[41] ProductAsset_PaintFinish_TA
-[42] ProductSlot_TA
-[43] ProductSlots
-[44] ReferencedObjects
-[45] Rotator
-[46] ScalarParameterValues
-[47] SizeX
-[48] SizeY
-[49] SpecularDetailNormalStrength
-[50] SpecularStrength
-[51] SRGB
-[52] StandaloneSeekFreeReferencer
-[53] StructProperty
-[54] TAGame
-[55] TC_NormalmapAlpha
-[56] Texture2D
-[57] TextureCompressionSettings
-[58] TextureFileCacheName
-[59] TextureGroup
-[60] TEXTUREGROUP_WorldNormalMap
-[61] TextureParameterValues
-[62] Textures6
-[63] ThumbnailCameraRotationOffset
-[64] ThumbnailRenderer
-[65] ThumbnailRenderer_TA
-[66] ThumbnailRenderers
-[67] Type
-[68] UnpackMin
-[69] VectorParameterValues
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] BoolProperty
+[Name 2] [0x0007001000000000] ByteProperty
+[Name 3] [0x0007001000000000] Class
+[Name 4] [0x0007001000000000] CompressionSettings
+[Name 5] [0x0007001000000000] ControlA
+[Name 6] [0x0007001000000000] ControlB
+[Name 7] [0x0007001000000000] Core
+[Name 8] [0x0007001000000000] DetailNormal
+[Name 9] [0x0007001000000000] DiffuseDetailNormalStrength
+[Name 10] [0x0007001000000000] Engine
+[Name 11] [0x0007001000000000] EnvironmentStrength
+[Name 12] [0x0007001000000000] EPixelFormat
+[Name 13] [0x0007001000000000] ExpressionGUID
+[Name 14] [0x0007001000000000] FirstResourceMemMip
+[Name 15] [0x0007001000000000] FloatProperty
+[Name 16] [0x0007001000000000] Format
+[Name 17] [0x0007001000000000] Guid
+[Name 18] [0x0007001000000000] IntProperty
+[Name 19] [0x0007001000000000] LightCurveType
+[Name 20] [0x0007001000000000] LightCurveType_TA
+[Name 21] [0x0007001000000000] LightCurveTypes
+[Name 22] [0x0007001000000000] LinearColor
+[Name 23] [0x0007001000000000] LODGroup
+[Name 24] [0x0007001000000000] Matte
+[Name 25] [0x0007001000000000] MipTailBaseIdx
+[Name 26] [0x0007001000000000] NameProperty
+[Name 27] [0x0007001000000000] None
+[Name 28] [0x0007001000000000] Noted_N
+[Name 29] [0x0007001000000000] ObjectProperty
+[Name 30] [0x0007001000000000] ObjectReferencer
+[Name 31] [0x0007001000000000] OriginalSizeX
+[Name 32] [0x0007001000000000] OriginalSizeY
+[Name 33] [0x0007001000000000] Package
+[Name 34] [0x0007001000000000] PaintFinish
+[Name 35] [0x0007001000000000] paintfinish_noted
+[Name 36] [0x0007001000000000] paintfinish_noted_SF
+[Name 37] [0x0007001000000000] PaintFinish_Renderer
+[Name 38] [0x0007001000000000] ParameterName
+[Name 39] [0x0007001000000000] ParameterValue
+[Name 40] [0x0007001000000000] PF_DXT5
+[Name 41] [0x0007001000000000] ProductAsset_PaintFinish_TA
+[Name 42] [0x0007001000000000] ProductSlot_TA
+[Name 43] [0x0007001000000000] ProductSlots
+[Name 44] [0x0007001000000000] ReferencedObjects
+[Name 45] [0x0007001000000000] Rotator
+[Name 46] [0x0007001000000000] ScalarParameterValues
+[Name 47] [0x0007001000000000] SizeX
+[Name 48] [0x0007001000000000] SizeY
+[Name 49] [0x0007001000000000] SpecularDetailNormalStrength
+[Name 50] [0x0007001000000000] SpecularStrength
+[Name 51] [0x0007001000000000] SRGB
+[Name 52] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 53] [0x0007001000000000] StructProperty
+[Name 54] [0x0007001000000000] TAGame
+[Name 55] [0x0007001000000000] TC_NormalmapAlpha
+[Name 56] [0x0007001000000000] Texture2D
+[Name 57] [0x0007001000000000] TextureCompressionSettings
+[Name 58] [0x0007001000000000] TextureFileCacheName
+[Name 59] [0x0007001000000000] TextureGroup
+[Name 60] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 61] [0x0007001000000000] TextureParameterValues
+[Name 62] [0x0007001000000000] Textures6
+[Name 63] [0x0007001000000000] ThumbnailCameraRotationOffset
+[Name 64] [0x0007001000000000] ThumbnailRenderer
+[Name 65] [0x0007001000000000] ThumbnailRenderer_TA
+[Name 66] [0x0007001000000000] ThumbnailRenderers
+[Name 67] [0x0007001000000000] Type
+[Name 68] [0x0007001000000000] UnpackMin
+[Name 69] [0x0007001000000000] VectorParameterValues
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UObjectReferencer paintfinish_noted.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000000b6b with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UPackage paintfinish_noted.paintfinish_noted
 	Name: paintfinish_noted
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000b97 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[2]
+[Export 2]
+	Full Name: UPackage paintfinish_noted.paintfinish_noted_SF
 	Name: paintfinish_noted_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000ba3 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[3]
+[Export 3]
+	Full Name: UProductAsset_PaintFinish_TA paintfinish_noted.paintfinish_noted.paintfinish_noted
 	Name: paintfinish_noted
-	Class: ProductAsset_PaintFinish_TA
-	Outer: Package paintfinish_noted
+	Class: UProductAsset_PaintFinish_TA
+	Outer: paintfinish_noted
 	Archetype: ProductAsset_PaintFinish_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000baf with 0x00000348 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UTexture2D paintfinish_noted.paintfinish_noted.Noted_N
 	Name: Noted_N
-	Class: Texture2D
-	Outer: Package paintfinish_noted
+	Class: UTexture2D
+	Outer: paintfinish_noted
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000ef7 with 0x00001869 Bytes
 	Export Flags: 0x00000001
@@ -212,67 +218,81 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass TAGame.ProductAsset_PaintFinish_TA
 	Name: ProductAsset_PaintFinish_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[4]
+	Class Package: Core
+	Outer: TAGame
+[Import 4]
+	Full Name: ULightCurveType_TA LightCurveTypes.Matte
 	Name: Matte
 	Class: LightCurveType_TA
-	Package: TAGame
-	Outer: Package LightCurveTypes
-[5]
+	Class Package: TAGame
+	Outer: LightCurveTypes
+[Import 5]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[6]
+	Class Package: Core
+[Import 6]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage LightCurveTypes
 	Name: LightCurveTypes
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage ThumbnailRenderers
 	Name: ThumbnailRenderers
 	Class: Package
-	Package: Core
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UProductAsset_PaintFinish_TA ProductSlots.PaintFinish.ProductAsset_PaintFinish_TA_0
 	Name: ProductAsset_PaintFinish_TA_0
 	Class: ProductAsset_PaintFinish_TA
-	Package: TAGame
-	Outer: ProductSlot_TA PaintFinish
-[12]
+	Class Package: TAGame
+	Outer: PaintFinish
+[Import 12]
+	Full Name: UProductSlot_TA ProductSlots.PaintFinish
 	Name: PaintFinish
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
-[13]
+	Class Package: TAGame
+	Outer: ProductSlots
+[Import 13]
+	Full Name: UThumbnailRenderer_TA ThumbnailRenderers.PaintFinish_Renderer
 	Name: PaintFinish_Renderer
 	Class: ThumbnailRenderer_TA
-	Package: TAGame
-	Outer: Package ThumbnailRenderers
+	Class Package: TAGame
+	Outer: ThumbnailRenderers

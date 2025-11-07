@@ -56,6 +56,7 @@ Test Data Size: 0x00003fe0
 Compressed Chunk Info Offset: 0x00000e48
 Last Block Size: 0x00000004
 Base Header Size: 0x000000d1
+Encrypted Header Size: 0x00004e40
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -63,182 +64,193 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] Antenna
-[1] ArrayProperty
-[2] Attachments
-[3] Behaviors
-[4] BoolProperty
-[5] ByteProperty
-[6] Class
-[7] ColorMaterialInput
-[8] Component
-[9] CompressionSettings
-[10] Core
-[11] DefaultValue
-[12] DiffuseColor
-[13] Engine
-[14] EPixelFormat
-[15] EProductAttachmentSocket
-[16] Expression
-[17] ExpressionGUID
-[18] Expressions
-[19] FirstResourceMemMip
-[20] FloatProperty
-[21] Format
-[22] FXActor
-[23] Guid
-[24] Hat
-[25] hat_fruitclock
-[26] hat_fruitclock_SF
-[27] InheritCarAttribute
-[28] IntProperty
-[29] LightMapCoordinateIndex
-[30] LightMapResolution
-[31] LODGroup
-[32] M_Hat_FruitClock
-[33] Mask
-[34] MaskB
-[35] MaskG
-[36] MaskR
-[37] Material
-[38] MaterialExpressionScalarParameter
-[39] MaterialInstanceConstant
-[40] MIC_Hat_FruitClock
-[41] MipTailBaseIdx
-[42] NameProperty
-[43] None
-[44] Normal
-[45] ObjectProperty
-[46] ObjectReferencer
-[47] OriginalSizeX
-[48] OriginalSizeY
-[49] Package
-[50] ParameterName
-[51] Parent
-[52] ParentLightingGuid
-[53] ParticleSystem
-[54] PAS_Hat
-[55] PF_DXT1
-[56] PF_DXT5
-[57] ProductAsset_Attachment_TA
-[58] ProductSlot_TA
-[59] ProductSlots
-[60] ReferencedObjects
-[61] Rotation
-[62] Rotator
-[63] ScalarMaterialInput
-[64] Scale
-[65] SizeX
-[66] SizeY
-[67] SkeletalMesh
-[68] SM_Hat_FruitClock
-[69] Socket
-[70] SpecularColor
-[71] SpecularPower
-[72] SRGB
-[73] StandaloneSeekFreeReferencer
-[74] StaticMesh
-[75] StructProperty
-[76] T_Hat_FruitClock_D
-[77] T_Hat_FruitClock_NS
-[78] TAGame
-[79] TC_NormalmapSwizzle
-[80] Texture2D
-[81] TextureCompressionSettings
-[82] TextureFileCacheName
-[83] TextureGroup
-[84] TEXTUREGROUP_WorldNormalMap
-[85] Textures2
-[86] Thumbnail Render Warmup Time
-[87] ThumbnailCameraTranslationOffset
-[88] ThumbnailKeyLightBrightnessScale
-[89] Translation
-[90] Turn Speed
-[91] UnpackMin
-[92] Vector
-[93] VectorMaterialInput
-[94] WorldPositionOffset
+[Name 0] [0x0007001000000000] Antenna
+[Name 1] [0x0007001000000000] ArrayProperty
+[Name 2] [0x0007001000000000] Attachments
+[Name 3] [0x0007001000000000] Behaviors
+[Name 4] [0x0007001000000000] BoolProperty
+[Name 5] [0x0007001000000000] ByteProperty
+[Name 6] [0x0007001000000000] Class
+[Name 7] [0x0007001000000000] ColorMaterialInput
+[Name 8] [0x0007001000000000] Component
+[Name 9] [0x0007001000000000] CompressionSettings
+[Name 10] [0x0007001000000000] Core
+[Name 11] [0x0007001000000000] DefaultValue
+[Name 12] [0x0007001000000000] DiffuseColor
+[Name 13] [0x0007001000000000] Engine
+[Name 14] [0x0007001000000000] EPixelFormat
+[Name 15] [0x0007001000000000] EProductAttachmentSocket
+[Name 16] [0x0007001000000000] Expression
+[Name 17] [0x0007001000000000] ExpressionGUID
+[Name 18] [0x0007001000000000] Expressions
+[Name 19] [0x0007001000000000] FirstResourceMemMip
+[Name 20] [0x0007001000000000] FloatProperty
+[Name 21] [0x0007001000000000] Format
+[Name 22] [0x0007001000000000] FXActor
+[Name 23] [0x0007001000000000] Guid
+[Name 24] [0x0007001000000000] Hat
+[Name 25] [0x0007001000000000] hat_fruitclock
+[Name 26] [0x0007001000000000] hat_fruitclock_SF
+[Name 27] [0x0007001000000000] InheritCarAttribute
+[Name 28] [0x0007001000000000] IntProperty
+[Name 29] [0x0007001000000000] LightMapCoordinateIndex
+[Name 30] [0x0007001000000000] LightMapResolution
+[Name 31] [0x0007001000000000] LODGroup
+[Name 32] [0x0007001000000000] M_Hat_FruitClock
+[Name 33] [0x0007001000000000] Mask
+[Name 34] [0x0007001000000000] MaskB
+[Name 35] [0x0007001000000000] MaskG
+[Name 36] [0x0007001000000000] MaskR
+[Name 37] [0x0007001000000000] Material
+[Name 38] [0x0007001000000000] MaterialExpressionScalarParameter
+[Name 39] [0x0007001000000000] MaterialInstanceConstant
+[Name 40] [0x0007001000000000] MIC_Hat_FruitClock
+[Name 41] [0x0007001000000000] MipTailBaseIdx
+[Name 42] [0x0007001000000000] NameProperty
+[Name 43] [0x0007001000000000] None
+[Name 44] [0x0007001000000000] Normal
+[Name 45] [0x0007001000000000] ObjectProperty
+[Name 46] [0x0007001000000000] ObjectReferencer
+[Name 47] [0x0007001000000000] OriginalSizeX
+[Name 48] [0x0007001000000000] OriginalSizeY
+[Name 49] [0x0007001000000000] Package
+[Name 50] [0x0007001000000000] ParameterName
+[Name 51] [0x0007001000000000] Parent
+[Name 52] [0x0007001000000000] ParentLightingGuid
+[Name 53] [0x0007001000000000] ParticleSystem
+[Name 54] [0x0007001000000000] PAS_Hat
+[Name 55] [0x0007001000000000] PF_DXT1
+[Name 56] [0x0007001000000000] PF_DXT5
+[Name 57] [0x0007001000000000] ProductAsset_Attachment_TA
+[Name 58] [0x0007001000000000] ProductSlot_TA
+[Name 59] [0x0007001000000000] ProductSlots
+[Name 60] [0x0007001000000000] ReferencedObjects
+[Name 61] [0x0007001000000000] Rotation
+[Name 62] [0x0007001000000000] Rotator
+[Name 63] [0x0007001000000000] ScalarMaterialInput
+[Name 64] [0x0007001000000000] Scale
+[Name 65] [0x0007001000000000] SizeX
+[Name 66] [0x0007001000000000] SizeY
+[Name 67] [0x0007001000000000] SkeletalMesh
+[Name 68] [0x0007001000000000] SM_Hat_FruitClock
+[Name 69] [0x0007001000000000] Socket
+[Name 70] [0x0007001000000000] SpecularColor
+[Name 71] [0x0007001000000000] SpecularPower
+[Name 72] [0x0007001000000000] SRGB
+[Name 73] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 74] [0x0007001000000000] StaticMesh
+[Name 75] [0x0007001000000000] StructProperty
+[Name 76] [0x0007001000000000] T_Hat_FruitClock_D
+[Name 77] [0x0007001000000000] T_Hat_FruitClock_NS
+[Name 78] [0x0007001000000000] TAGame
+[Name 79] [0x0007001000000000] TC_NormalmapSwizzle
+[Name 80] [0x0007001000000000] Texture2D
+[Name 81] [0x0007001000000000] TextureCompressionSettings
+[Name 82] [0x0007001000000000] TextureFileCacheName
+[Name 83] [0x0007001000000000] TextureGroup
+[Name 84] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 85] [0x0007001000000000] Textures2
+[Name 86] [0x0007001000000000] Thumbnail Render Warmup Time
+[Name 87] [0x0007001000000000] ThumbnailCameraTranslationOffset
+[Name 88] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
+[Name 89] [0x0007001000000000] Translation
+[Name 90] [0x0007001000000000] Turn Speed
+[Name 91] [0x0007001000000000] UnpackMin
+[Name 92] [0x0007001000000000] Vector
+[Name 93] [0x0007001000000000] VectorMaterialInput
+[Name 94] [0x0007001000000000] WorldPositionOffset
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UMaterial hat_fruitclock.hat_fruitclock.M_Hat_FruitClock
 	Name: M_Hat_FruitClock
-	Class: Material
-	Outer: Package hat_fruitclock
+	Class: UMaterial
+	Outer: hat_fruitclock
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000000f19 with 0x000002e8 Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterialExpressionScalarParameter hat_fruitclock.hat_fruitclock.M_Hat_FruitClock.MaterialExpressionScalarParameter_0
 	Name: MaterialExpressionScalarParameter_0
-	Class: MaterialExpressionScalarParameter
-	Outer: Material M_Hat_FruitClock
+	Class: UMaterialExpressionScalarParameter
+	Outer: M_Hat_FruitClock
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000001201 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterialExpressionScalarParameter hat_fruitclock.hat_fruitclock.M_Hat_FruitClock.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material M_Hat_FruitClock
+	Class: UMaterialExpressionScalarParameter
+	Outer: M_Hat_FruitClock
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000001295 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterialInstanceConstant hat_fruitclock.hat_fruitclock.MIC_Hat_FruitClock
 	Name: MIC_Hat_FruitClock
-	Class: MaterialInstanceConstant
-	Outer: Package hat_fruitclock
+	Class: UMaterialInstanceConstant
+	Outer: hat_fruitclock
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000001329 with 0x00000058 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UObjectReferencer hat_fruitclock.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000001381 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[5]
+[Export 5]
+	Full Name: UPackage hat_fruitclock.hat_fruitclock
 	Name: hat_fruitclock
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000013ad with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[6]
+[Export 6]
+	Full Name: UPackage hat_fruitclock.hat_fruitclock_SF
 	Name: hat_fruitclock_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000013b9 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[7]
+[Export 7]
+	Full Name: UProductAsset_Attachment_TA hat_fruitclock.hat_fruitclock.hat_fruitclock
 	Name: hat_fruitclock
-	Class: ProductAsset_Attachment_TA
-	Outer: Package hat_fruitclock
+	Class: UProductAsset_Attachment_TA
+	Outer: hat_fruitclock
 	Archetype: ProductAsset_Attachment_TA_2
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000013c5 with 0x00000210 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UStaticMesh hat_fruitclock.hat_fruitclock.SM_Hat_FruitClock
 	Name: SM_Hat_FruitClock
-	Class: StaticMesh
-	Outer: Package hat_fruitclock
+	Class: UStaticMesh
+	Outer: hat_fruitclock
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000015d5 with 0x00030e1b Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UTexture2D hat_fruitclock.hat_fruitclock.T_Hat_FruitClock_D
 	Name: T_Hat_FruitClock_D
-	Class: Texture2D
-	Outer: Package hat_fruitclock
+	Class: UTexture2D
+	Outer: hat_fruitclock
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000323f0 with 0x00000cf4 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UTexture2D hat_fruitclock.hat_fruitclock.T_Hat_FruitClock_NS
 	Name: T_Hat_FruitClock_NS
-	Class: Texture2D
-	Outer: Package hat_fruitclock
+	Class: UTexture2D
+	Outer: hat_fruitclock
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000330e4 with 0x00001869 Bytes
 	Export Flags: 0x00000001
@@ -247,69 +259,83 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.StaticMesh
 	Name: StaticMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass TAGame.ProductAsset_Attachment_TA
 	Name: ProductAsset_Attachment_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[8]
+	Class Package: Core
+	Outer: TAGame
+[Import 8]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[12]
+	Class Package: Core
+[Import 12]
+	Full Name: UProductAsset_Attachment_TA ProductSlots.Hat.ProductAsset_Attachment_TA_2
 	Name: ProductAsset_Attachment_TA_2
 	Class: ProductAsset_Attachment_TA
-	Package: TAGame
-	Outer: ProductSlot_TA Hat
-[13]
+	Class Package: TAGame
+	Outer: Hat
+[Import 13]
+	Full Name: UProductSlot_TA ProductSlots.Hat
 	Name: Hat
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots

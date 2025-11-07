@@ -52,6 +52,7 @@ Test Data Size: 0x00003f73
 Compressed Chunk Info Offset: 0x00000ce9
 Last Block Size: 0x00000008
 Base Header Size: 0x000000c1
+Encrypted Header Size: 0x00004ca0
 
 AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
 
@@ -59,183 +60,197 @@ AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
     ~ Names ~ 
 
 
-[0] AirMaxThrottleTime
-[1] AkAudio
-[2] AkBank
-[3] AkSoundCue
-[4] ArrayProperty
-[5] BoolProperty
-[6] bReplicated
-[7] ByteProperty
-[8] Class
-[9] CompressionNoAlpha
-[10] CompressionNone
-[11] Core
-[12] DeferCompression
-[13] Engine
-[14] Engine_Cloud
-[15] Engine_Cloud_ThrottleOff
-[16] Engine_Cloud_ThrottleOn
-[17] EngineAudio
-[18] engineaudio_Cloud
-[19] EngineAudio_Cloud_Profile
-[20] engineaudio_Cloud_SF
-[21] EngineAudio_Thumbnail
-[22] EngineAudioProfile_TA
-[23] EPixelFormat
-[24] ExhaustSound
-[25] FloatProperty
-[26] Format
-[27] Icon
-[28] IconLarge
-[29] Icons
-[30] IntProperty
-[31] Label
-[32] LODGroup
-[33] MatchesRequiredToUnlock
-[34] MipGenSettings
-[35] MipTailBaseIdx
-[36] NameProperty
-[37] None
-[38] ObjectProperty
-[39] ObjectReferencer
-[40] OnlineLabel
-[41] OriginalSizeX
-[42] OriginalSizeY
-[43] Package
-[44] PF_A8R8G8B8
-[45] PluralLabel
-[46] ProductAsset_EngineAudio_TA
-[47] ProductSlot_TA
-[48] ProductSlots
-[49] Profile
-[50] ReferencedObjects
-[51] RequiredBank
-[52] SFX_Motor_Cloud
-[53] SizeX
-[54] SizeY
-[55] SRGB
-[56] StandaloneSeekFreeReferencer
-[57] StartEvent
-[58] StopEvent
-[59] StrProperty
-[60] TAGame
-[61] Texture2D
-[62] TextureFileCacheName
-[63] TextureGroup
-[64] TEXTUREGROUP_UI
-[65] TextureMipGenSettings
-[66] Textures4
-[67] ThrottleEngageSound
-[68] ThrottleReleaseSound
-[69] Thumb_EngineAudio_D
-[70] Thumbnail
-[71] TMGS_Sharpen10
-[72] ThumbnailKeyLightBrightnessScale
+[Name 0] [0x0007001000000000] AirMaxThrottleTime
+[Name 1] [0x0007001000000000] AkAudio
+[Name 2] [0x0007001000000000] AkBank
+[Name 3] [0x0007001000000000] AkSoundCue
+[Name 4] [0x0007001000000000] ArrayProperty
+[Name 5] [0x0007001000000000] BoolProperty
+[Name 6] [0x0007001000000000] bReplicated
+[Name 7] [0x0007001000000000] ByteProperty
+[Name 8] [0x0007001000000000] Class
+[Name 9] [0x0007001000000000] CompressionNoAlpha
+[Name 10] [0x0007001000000000] CompressionNone
+[Name 11] [0x0007001000000000] Core
+[Name 12] [0x0007001000000000] DeferCompression
+[Name 13] [0x0007001000000000] Engine
+[Name 14] [0x0007001000000000] Engine_Cloud
+[Name 15] [0x0007001000000000] Engine_Cloud_ThrottleOff
+[Name 16] [0x0007001000000000] Engine_Cloud_ThrottleOn
+[Name 17] [0x0007001000000000] EngineAudio
+[Name 18] [0x0007001000000000] engineaudio_Cloud
+[Name 19] [0x0007001000000000] EngineAudio_Cloud_Profile
+[Name 20] [0x0007001000000000] engineaudio_Cloud_SF
+[Name 21] [0x0007001000000000] EngineAudio_Thumbnail
+[Name 22] [0x0007001000000000] EngineAudioProfile_TA
+[Name 23] [0x0007001000000000] EPixelFormat
+[Name 24] [0x0007001000000000] ExhaustSound
+[Name 25] [0x0007001000000000] FloatProperty
+[Name 26] [0x0007001000000000] Format
+[Name 27] [0x0007001000000000] Icon
+[Name 28] [0x0007001000000000] IconLarge
+[Name 29] [0x0007001000000000] Icons
+[Name 30] [0x0007001000000000] IntProperty
+[Name 31] [0x0007001000000000] Label
+[Name 32] [0x0007001000000000] LODGroup
+[Name 33] [0x0007000000000000] MatchesRequiredToUnlock
+[Name 34] [0x0007001000000000] MipGenSettings
+[Name 35] [0x0007001000000000] MipTailBaseIdx
+[Name 36] [0x0007001000000000] NameProperty
+[Name 37] [0x0007001000000000] None
+[Name 38] [0x0007001000000000] ObjectProperty
+[Name 39] [0x0007001000000000] ObjectReferencer
+[Name 40] [0x0007001000000000] OnlineLabel
+[Name 41] [0x0007001000000000] OriginalSizeX
+[Name 42] [0x0007001000000000] OriginalSizeY
+[Name 43] [0x0007001000000000] Package
+[Name 44] [0x0007001000000000] PF_A8R8G8B8
+[Name 45] [0x0007001000000000] PluralLabel
+[Name 46] [0x0007001000000000] ProductAsset_EngineAudio_TA
+[Name 47] [0x0007001000000000] ProductSlot_TA
+[Name 48] [0x0007001000000000] ProductSlots
+[Name 49] [0x0007001000000000] Profile
+[Name 50] [0x0007001000000000] ReferencedObjects
+[Name 51] [0x0007001000000000] RequiredBank
+[Name 52] [0x0007001000000000] SFX_Motor_Cloud
+[Name 53] [0x0007001000000000] SizeX
+[Name 54] [0x0007001000000000] SizeY
+[Name 55] [0x0007001000000000] SRGB
+[Name 56] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 57] [0x0007001000000000] StartEvent
+[Name 58] [0x0007001000000000] StopEvent
+[Name 59] [0x0007001000000000] StrProperty
+[Name 60] [0x0007001000000000] TAGame
+[Name 61] [0x0007001000000000] Texture2D
+[Name 62] [0x0007001000000000] TextureFileCacheName
+[Name 63] [0x0007001000000000] TextureGroup
+[Name 64] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 65] [0x0007001000000000] TextureMipGenSettings
+[Name 66] [0x0007001000000000] Textures4
+[Name 67] [0x0007001000000000] ThrottleEngageSound
+[Name 68] [0x0007001000000000] ThrottleReleaseSound
+[Name 69] [0x0007001000000000] Thumb_EngineAudio_D
+[Name 70] [0x0007001000000000] Thumbnail
+[Name 71] [0x0007001000000000] TMGS_Sharpen10
+[Name 72] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAkBank engineaudio_Cloud.engineaudio_Cloud.SFX_Motor_Cloud
 	Name: SFX_Motor_Cloud
-	Class: AkBank
-	Outer: Package engineaudio_Cloud
+	Class: UAkBank
+	Outer: engineaudio_Cloud
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000daa with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UAkSoundCue engineaudio_Cloud.engineaudio_Cloud.Engine_Cloud
 	Name: Engine_Cloud
-	Class: AkSoundCue
-	Outer: Package engineaudio_Cloud
+	Class: UAkSoundCue
+	Outer: engineaudio_Cloud
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000db6 with 0x00000084 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UAkSoundCue engineaudio_Cloud.engineaudio_Cloud.Engine_Cloud_ThrottleOff
 	Name: Engine_Cloud_ThrottleOff
-	Class: AkSoundCue
-	Outer: Package engineaudio_Cloud
+	Class: UAkSoundCue
+	Outer: engineaudio_Cloud
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000041459 with 0x00000062 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UAkSoundCue engineaudio_Cloud.engineaudio_Cloud.Engine_Cloud_ThrottleOn
 	Name: Engine_Cloud_ThrottleOn
-	Class: AkSoundCue
-	Outer: Package engineaudio_Cloud
+	Class: UAkSoundCue
+	Outer: engineaudio_Cloud
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000414bb with 0x00000061 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UEngineAudioProfile_TA engineaudio_Cloud.engineaudio_Cloud.EngineAudio_Cloud_Profile
 	Name: EngineAudio_Cloud_Profile
-	Class: EngineAudioProfile_TA
-	Outer: Package engineaudio_Cloud
+	Class: UEngineAudioProfile_TA
+	Outer: engineaudio_Cloud
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000ec5 with 0x00000028 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UProductAsset_EngineAudio_TA engineaudio_Cloud.ProductSlots.EngineAudio.ProductAsset_EngineAudio_TA_0
 	Name: ProductAsset_EngineAudio_TA_0
-	Class: ProductAsset_EngineAudio_TA
-	Outer: ProductSlot_TA EngineAudio
+	Class: UProductAsset_EngineAudio_TA
+	Outer: EngineAudio
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000eed with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UObjectReferencer engineaudio_Cloud.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000000ef9 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[7]
+[Export 7]
+	Full Name: UPackage engineaudio_Cloud.engineaudio_Cloud
 	Name: engineaudio_Cloud
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000f25 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[8]
+[Export 8]
+	Full Name: UPackage engineaudio_Cloud.engineaudio_Cloud_SF
 	Name: engineaudio_Cloud_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000f31 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[9]
+[Export 9]
+	Full Name: UPackage engineaudio_Cloud.EngineAudio_Thumbnail
 	Name: EngineAudio_Thumbnail
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000f3d with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[10]
+[Export 10]
+	Full Name: UPackage engineaudio_Cloud.ProductSlots
 	Name: ProductSlots
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000f49 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[11]
+[Export 11]
+	Full Name: UProductAsset_EngineAudio_TA engineaudio_Cloud.engineaudio_Cloud.engineaudio_Cloud
 	Name: engineaudio_Cloud
-	Class: ProductAsset_EngineAudio_TA
-	Outer: Package engineaudio_Cloud
+	Class: UProductAsset_EngineAudio_TA
+	Outer: engineaudio_Cloud
 	Archetype: ProductAsset_EngineAudio_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000412cd with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UProductSlot_TA engineaudio_Cloud.ProductSlots.EngineAudio
 	Name: EngineAudio
-	Class: ProductSlot_TA
-	Outer: Package ProductSlots
+	Class: UProductSlot_TA
+	Outer: ProductSlots
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x0000000000041381 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UTexture2D engineaudio_Cloud.EngineAudio_Thumbnail.Thumb_EngineAudio_D
 	Name: Thumb_EngineAudio_D
-	Class: Texture2D
-	Outer: Package EngineAudio_Thumbnail
+	Class: UTexture2D
+	Outer: EngineAudio_Thumbnail
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000010e1 with 0x000401ec Bytes
 	Export Flags: 0x00000001
@@ -244,69 +259,83 @@ AES: vBkKWo003HHekFFpwswkV4APKhxpDBExCPEqMyambaA=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass AkAudio.AkSoundCue
 	Name: AkSoundCue
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[1]
+	Class Package: Core
+	Outer: AkAudio
+[Import 1]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[2]
+	Class Package: Core
+	Outer: Core
+[Import 2]
+	Full Name: UClass Engine.AkBank
 	Name: AkBank
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass TAGame.EngineAudioProfile_TA
 	Name: EngineAudioProfile_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
+	Class Package: Core
+	Outer: TAGame
+[Import 6]
+	Full Name: UClass TAGame.ProductAsset_EngineAudio_TA
 	Name: ProductAsset_EngineAudio_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[7]
+	Class Package: Core
+	Outer: TAGame
+[Import 7]
+	Full Name: UClass TAGame.ProductSlot_TA
 	Name: ProductSlot_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[8]
+	Class Package: Core
+	Outer: TAGame
+[Import 8]
+	Full Name: UPackage AkAudio
 	Name: AkAudio
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UPackage ProductSlots.Icons
 	Name: Icons
 	Class: Package
-	Package: Core
-	Outer: Package ProductSlots
-[12]
+	Class Package: Core
+	Outer: ProductSlots
+[Import 12]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[13]
+	Class Package: Core
+[Import 13]
+	Full Name: UTexture2D ProductSlots.Icons.EngineAudio
 	Name: EngineAudio
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Icons
+	Class Package: Engine
+	Outer: Icons

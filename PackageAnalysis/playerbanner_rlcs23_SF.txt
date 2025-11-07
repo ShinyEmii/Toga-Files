@@ -106,6 +106,7 @@ Test Data Size: 0x00003fdc
 Compressed Chunk Info Offset: 0x0000195c
 Last Block Size: 0x00000004
 Base Header Size: 0x0000019d
+Encrypted Header Size: 0x00005950
 
 AES: cTJUUqsciPj6RMBPxyO7LFfn4KKqlkffM4vkZCaaBDg=
 
@@ -113,521 +114,585 @@ AES: cTJUUqsciPj6RMBPxyO7LFfn4KKqlkffM4vkZCaaBDg=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] Banner_RLCS23
-[2] BoolProperty
-[3] ByteProperty
-[4] Class
-[5] Core
-[6] Editions
-[7] Engine
-[8] EPixelFormat
-[9] FlashTextureRescale
-[10] FlashTextureScale_Mult4
-[11] Format
-[12] GFxUI
-[13] IntProperty
-[14] LODGroup
-[15] MipGenSettings
-[16] MovieReference
-[17] NeverStream
-[18] None
-[19] ObjectProperty
-[20] ObjectReferencer
-[21] OriginalSizeX
-[22] OriginalSizeY
-[23] Package
-[24] PackTextureSize
-[25] PF_DXT5
-[26] PlayerBanner
-[27] playerbanner_rlcs23
-[28] playerbanner_rlcs23_SF
-[29] ProductAsset_PlayerBanner_TA
-[30] ProductSlot_TA
-[31] ProductSlots
-[32] RawData
-[33] ReferencedObjects
-[34] References
-[35] RLCS23
-[36] RLCS23_00
-[37] RLCS23_01
-[38] RLCS23_02
-[39] RLCS23_03
-[40] RLCS23_04
-[41] RLCS23_05
-[42] RLCS23_06
-[43] RLCS23_07
-[44] RLCS23_08
-[45] RLCS23_09
-[46] SizeX
-[47] SizeY
-[48] SourceFile
-[49] SourceFileCRC
-[50] SourceFileTimestamp
-[51] SRGB
-[52] StandaloneSeekFreeReferencer
-[53] StrProperty
-[54] SwfMovie
-[55] TAGame
-[56] Texture2D
-[57] TextureFormat
-[58] TextureGroup
-[59] TEXTUREGROUP_UI
-[60] TextureMipGenSettings
-[61] TextureRescale
-[62] TMGS_NoMipmaps
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] Banner_RLCS23
+[Name 2] [0x0007001000000000] BoolProperty
+[Name 3] [0x0007001000000000] ByteProperty
+[Name 4] [0x0007001000000000] Class
+[Name 5] [0x0007001000000000] Core
+[Name 6] [0x0007001000000000] Editions
+[Name 7] [0x0007001000000000] Engine
+[Name 8] [0x0007001000000000] EPixelFormat
+[Name 9] [0x0007001000000000] FlashTextureRescale
+[Name 10] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 11] [0x0007001000000000] Format
+[Name 12] [0x0007001000000000] GFxUI
+[Name 13] [0x0007001000000000] IntProperty
+[Name 14] [0x0007001000000000] LODGroup
+[Name 15] [0x0007001000000000] MipGenSettings
+[Name 16] [0x0007001000000000] MovieReference
+[Name 17] [0x0007001000000000] NeverStream
+[Name 18] [0x0007001000000000] None
+[Name 19] [0x0007001000000000] ObjectProperty
+[Name 20] [0x0007001000000000] ObjectReferencer
+[Name 21] [0x0007001000000000] OriginalSizeX
+[Name 22] [0x0007001000000000] OriginalSizeY
+[Name 23] [0x0007001000000000] Package
+[Name 24] [0x0007001000000000] PackTextureSize
+[Name 25] [0x0007001000000000] PF_DXT5
+[Name 26] [0x0007001000000000] PlayerBanner
+[Name 27] [0x0007001000000000] playerbanner_rlcs23
+[Name 28] [0x0007001000000000] playerbanner_rlcs23_SF
+[Name 29] [0x0007001000000000] ProductAsset_PlayerBanner_TA
+[Name 30] [0x0007001000000000] ProductSlot_TA
+[Name 31] [0x0007001000000000] ProductSlots
+[Name 32] [0x0007001000000000] RawData
+[Name 33] [0x0007001000000000] ReferencedObjects
+[Name 34] [0x0007001000000000] References
+[Name 35] [0x0007001000000000] RLCS23
+[Name 36] [0x0007001000000000] RLCS23_00
+[Name 37] [0x0007001000000000] RLCS23_01
+[Name 38] [0x0007001000000000] RLCS23_02
+[Name 39] [0x0007001000000000] RLCS23_03
+[Name 40] [0x0007001000000000] RLCS23_04
+[Name 41] [0x0007001000000000] RLCS23_05
+[Name 42] [0x0007001000000000] RLCS23_06
+[Name 43] [0x0007001000000000] RLCS23_07
+[Name 44] [0x0007001000000000] RLCS23_08
+[Name 45] [0x0007001000000000] RLCS23_09
+[Name 46] [0x0007001000000000] SizeX
+[Name 47] [0x0007001000000000] SizeY
+[Name 48] [0x0007001000000000] SourceFile
+[Name 49] [0x0007001000000000] SourceFileCRC
+[Name 50] [0x0007001000000000] SourceFileTimestamp
+[Name 51] [0x0007001000000000] SRGB
+[Name 52] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 53] [0x0007001000000000] StrProperty
+[Name 54] [0x0007001000000000] SwfMovie
+[Name 55] [0x0007001000000000] TAGame
+[Name 56] [0x0007001000000000] Texture2D
+[Name 57] [0x0007001000000000] TextureFormat
+[Name 58] [0x0007001000000000] TextureGroup
+[Name 59] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 60] [0x0007001000000000] TextureMipGenSettings
+[Name 61] [0x0007001000000000] TextureRescale
+[Name 62] [0x0007001000000000] TMGS_NoMipmaps
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UObjectReferencer playerbanner_rlcs23.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000001af9 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UPackage playerbanner_rlcs23.playerbanner_rlcs23
 	Name: playerbanner_rlcs23
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001b25 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[2]
+[Export 2]
+	Full Name: UPackage playerbanner_rlcs23.playerbanner_rlcs23_SF
 	Name: playerbanner_rlcs23_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001b31 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[3]
+[Export 3]
+	Full Name: UProductAsset_PlayerBanner_TA playerbanner_rlcs23.playerbanner_rlcs23.playerbanner_rlcs23
 	Name: playerbanner_rlcs23
-	Class: ProductAsset_PlayerBanner_TA
-	Outer: Package playerbanner_rlcs23
+	Class: UProductAsset_PlayerBanner_TA
+	Outer: playerbanner_rlcs23
 	Archetype: ProductAsset_PlayerBanner_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001b3d with 0x00000028 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: USwfMovie playerbanner_rlcs23.playerbanner_rlcs23.Banner_RLCS23
 	Name: Banner_RLCS23
-	Class: SwfMovie
-	Outer: Package playerbanner_rlcs23
+	Class: USwfMovie
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001b65 with 0x00002b70 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_00
 	Name: RLCS23_00
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000046d5 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_01
 	Name: RLCS23_01
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000c693 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_02
 	Name: RLCS23_02
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000014651 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_03
 	Name: RLCS23_03
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000001c60f with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_04
 	Name: RLCS23_04
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000245cd with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_05
 	Name: RLCS23_05
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000002c58b with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_06
 	Name: RLCS23_06
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000034549 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_07
 	Name: RLCS23_07
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000003c507 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_08
 	Name: RLCS23_08
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000444c5 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_09
 	Name: RLCS23_09
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000004c483 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_10
 	Name: RLCS23_10
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000054441 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_11
 	Name: RLCS23_11
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000005c3ff with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_12
 	Name: RLCS23_12
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000643bd with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_13
 	Name: RLCS23_13
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000006c37b with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_14
 	Name: RLCS23_14
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000074339 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_15
 	Name: RLCS23_15
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000007c2f7 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_16
 	Name: RLCS23_16
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000842b5 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_17
 	Name: RLCS23_17
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000008c273 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_18
 	Name: RLCS23_18
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000094231 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_19
 	Name: RLCS23_19
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000009c1ef with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_20
 	Name: RLCS23_20
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000a41ad with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_21
 	Name: RLCS23_21
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000ac16b with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_22
 	Name: RLCS23_22
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000b4129 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_23
 	Name: RLCS23_23
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000bc0e7 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_24
 	Name: RLCS23_24
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000c40a5 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_25
 	Name: RLCS23_25
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000cc063 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_26
 	Name: RLCS23_26
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000d4021 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_27
 	Name: RLCS23_27
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000dbfdf with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[33]
+[Export 33]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_28
 	Name: RLCS23_28
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000e3f9d with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_29
 	Name: RLCS23_29
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000ebf5b with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_30
 	Name: RLCS23_30
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000f3f19 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[36]
+[Export 36]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_31
 	Name: RLCS23_31
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000fbed7 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[37]
+[Export 37]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_32
 	Name: RLCS23_32
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000103e95 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[38]
+[Export 38]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_33
 	Name: RLCS23_33
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000010be53 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[39]
+[Export 39]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_34
 	Name: RLCS23_34
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000113e11 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_35
 	Name: RLCS23_35
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000011bdcf with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_36
 	Name: RLCS23_36
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000123d8d with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[42]
+[Export 42]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_37
 	Name: RLCS23_37
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000012bd4b with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[43]
+[Export 43]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_38
 	Name: RLCS23_38
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000133d09 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[44]
+[Export 44]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_39
 	Name: RLCS23_39
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000013bcc7 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[45]
+[Export 45]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_40
 	Name: RLCS23_40
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000143c85 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[46]
+[Export 46]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_41
 	Name: RLCS23_41
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000014bc43 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[47]
+[Export 47]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_42
 	Name: RLCS23_42
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000153c01 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[48]
+[Export 48]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_43
 	Name: RLCS23_43
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000015bbbf with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[49]
+[Export 49]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_44
 	Name: RLCS23_44
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000163b7d with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[50]
+[Export 50]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_45
 	Name: RLCS23_45
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000016bb3b with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[51]
+[Export 51]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_46
 	Name: RLCS23_46
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000173af9 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[52]
+[Export 52]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_47
 	Name: RLCS23_47
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000017bab7 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[53]
+[Export 53]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_48
 	Name: RLCS23_48
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000183a75 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[54]
+[Export 54]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_49
 	Name: RLCS23_49
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000018ba33 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[55]
+[Export 55]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_50
 	Name: RLCS23_50
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001939f1 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[56]
+[Export 56]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_51
 	Name: RLCS23_51
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000019b9af with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[57]
+[Export 57]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_52
 	Name: RLCS23_52
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001a396d with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[58]
+[Export 58]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_53
 	Name: RLCS23_53
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001ab92b with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[59]
+[Export 59]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_54
 	Name: RLCS23_54
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001b38e9 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[60]
+[Export 60]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_55
 	Name: RLCS23_55
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001bb8a7 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[61]
+[Export 61]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_56
 	Name: RLCS23_56
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001c3865 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[62]
+[Export 62]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_57
 	Name: RLCS23_57
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001cb823 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
-[63]
+[Export 63]
+	Full Name: UTexture2D playerbanner_rlcs23.playerbanner_rlcs23.RLCS23_89
 	Name: RLCS23_89
-	Class: Texture2D
-	Outer: Package playerbanner_rlcs23
+	Class: UTexture2D
+	Outer: playerbanner_rlcs23
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001d37e1 with 0x00007fbe Bytes
 	Export Flags: 0x00000001
@@ -636,58 +701,70 @@ AES: cTJUUqsciPj6RMBPxyO7LFfn4KKqlkffM4vkZCaaBDg=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[4]
+	Class Package: Core
+	Outer: GFxUI
+[Import 4]
+	Full Name: UClass TAGame.ProductAsset_PlayerBanner_TA
 	Name: ProductAsset_PlayerBanner_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[6]
+	Class Package: Core
+[Import 6]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UProductAsset_PlayerBanner_TA ProductSlots.PlayerBanner.ProductAsset_PlayerBanner_TA_0
 	Name: ProductAsset_PlayerBanner_TA_0
 	Class: ProductAsset_PlayerBanner_TA
-	Package: TAGame
-	Outer: ProductSlot_TA PlayerBanner
-[11]
+	Class Package: TAGame
+	Outer: PlayerBanner
+[Import 11]
+	Full Name: UProductSlot_TA ProductSlots.PlayerBanner
 	Name: PlayerBanner
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots

@@ -48,6 +48,7 @@ Test Data Size: 0x00003fe4
 Compressed Chunk Info Offset: 0x000004d4
 Last Block Size: 0x00000004
 Base Header Size: 0x000000b5
+Encrypted Header Size: 0x000044d0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -55,70 +56,74 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] BoolProperty
-[2] ByteProperty
-[3] Class
-[4] Core
-[5] Engine
-[6] EPixelFormat
-[7] Format
-[8] IntProperty
-[9] LODGroup
-[10] MapImage
-[11] MipGenSettings
-[12] NameProperty
-[13] None
-[14] ObjectReferencer
-[15] OriginalSizeX
-[16] OriginalSizeY
-[17] Package
-[18] PF_DXT1
-[19] ReferencedObjects
-[20] SizeX
-[21] SizeY
-[22] SRGB
-[23] StandaloneSeekFreeReferencer
-[24] Texture2D
-[25] TextureFileCacheName
-[26] TextureGroup
-[27] TEXTUREGROUP_UI
-[28] TextureMipGenSettings
-[29] Textures3
-[30] TMGS_NoMipmaps
-[31] UF_Day_P_MapImage
-[32] UF_Day_P_MapImage_SF
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] BoolProperty
+[Name 2] [0x0007001000000000] ByteProperty
+[Name 3] [0x0007001000000000] Class
+[Name 4] [0x0007001000000000] Core
+[Name 5] [0x0007001000000000] Engine
+[Name 6] [0x0007001000000000] EPixelFormat
+[Name 7] [0x0007001000000000] Format
+[Name 8] [0x0007001000000000] IntProperty
+[Name 9] [0x0007001000000000] LODGroup
+[Name 10] [0x0007001000000000] MapImage
+[Name 11] [0x0007001000000000] MipGenSettings
+[Name 12] [0x0007001000000000] NameProperty
+[Name 13] [0x0007001000000000] None
+[Name 14] [0x0007001000000000] ObjectReferencer
+[Name 15] [0x0007001000000000] OriginalSizeX
+[Name 16] [0x0007001000000000] OriginalSizeY
+[Name 17] [0x0007001000000000] Package
+[Name 18] [0x0007001000000000] PF_DXT1
+[Name 19] [0x0007001000000000] ReferencedObjects
+[Name 20] [0x0007001000000000] SizeX
+[Name 21] [0x0007001000000000] SizeY
+[Name 22] [0x0007001000000000] SRGB
+[Name 23] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 24] [0x0007001000000000] Texture2D
+[Name 25] [0x0007001000000000] TextureFileCacheName
+[Name 26] [0x0007001000000000] TextureGroup
+[Name 27] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 28] [0x0007001000000000] TextureMipGenSettings
+[Name 29] [0x0007001000000000] Textures3
+[Name 30] [0x0007001000000000] TMGS_NoMipmaps
+[Name 31] [0x0007001000000000] UF_Day_P_MapImage
+[Name 32] [0x0007001000000000] UF_Day_P_MapImage_SF
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UObjectReferencer UF_Day_P_MapImage.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000000589 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UPackage UF_Day_P_MapImage.UF_Day_P_MapImage
 	Name: UF_Day_P_MapImage
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000005b5 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[2]
+[Export 2]
+	Full Name: UPackage UF_Day_P_MapImage.UF_Day_P_MapImage_SF
 	Name: UF_Day_P_MapImage_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000005c1 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[3]
+[Export 3]
+	Full Name: UTexture2D UF_Day_P_MapImage.UF_Day_P_MapImage.MapImage
 	Name: MapImage
-	Class: Texture2D
-	Outer: Package UF_Day_P_MapImage
+	Class: UTexture2D
+	Outer: UF_Day_P_MapImage
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000005cd with 0x00100185 Bytes
 	Export Flags: 0x00000001
@@ -127,26 +132,31 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[4]
+	Class Package: Core
+[Import 4]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
+	Class Package: Core

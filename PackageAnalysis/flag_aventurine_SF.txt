@@ -81,6 +81,7 @@ Test Data Size: 0x00003fe6
 Compressed Chunk Info Offset: 0x00001f72
 Last Block Size: 0x00000004
 Base Header Size: 0x00000129
+Encrypted Header Size: 0x00005f70
 
 AES: 7Q3vhXBcDVHUBA3dvDyb0JlrpKu6X/wA4+YMwRe6oTQ=
 
@@ -88,471 +89,512 @@ AES: 7Q3vhXBcDVHUBA3dvDyb0JlrpKu6X/wA4+YMwRe6oTQ=
     ~ Names ~ 
 
 
-[0] A
-[1] AddressX
-[2] AddressY
-[3] AdjustBrightness
-[4] animation
-[5] Antenna
-[6] AntennaComponent_TA
-[7] ArrayProperty
-[8] Attachments
-[9] B
-[10] bAllowLightmapSpecular
-[11] Banner_CrossoverDefault00
-[12] Banner_DungeonOfTheEndless00_D
-[13] Banner_DungeonOfTheEndless00_N
-[14] Behaviors
-[15] bExposeToLibrary
-[16] bHasStaticPermutationResource
-[17] bIsMasked
-[18] bIsSourceArtUncompressed
-[19] BLEND_Masked
-[20] BlendMode
-[21] BoolProperty
-[22] bUsedWithStaticLighting
-[23] ByteProperty
-[24] Class
-[25] ColorMaterialInput
-[26] Component
-[27] CompressionNone
-[28] CompressionSettings
-[29] Coordinates
-[30] Core
-[31] DefaultValue
-[32] Desc
-[33] Description
-[34] DiffuseColor
-[35] EBlendMode
-[36] EditorX
-[37] EditorY
-[38] Engine
-[39] Engine_MaterialFunctions03
-[40] EPixelFormat
-[41] EProductAttachmentSocket
-[42] Expression
-[43] ExpressionGUID
-[44] ExpressionInput
-[45] Expressions
-[46] FirstResourceMemMip
-[47] Flag
-[48] flag_aventurine
-[49] flag_aventurine_D
-[50] flag_aventurine_SF
-[51] Flag_Renderer
-[52] FloatProperty
-[53] Format
-[54] Function
-[55] FunctionExpressions
-[56] FXActor
-[57] General_FX
-[58] Group
-[59] Guid
-[60] InheritCarAttribute
-[61] InternalFormatLODBias
-[62] IntProperty
-[63] LibraryCategories
-[64] LightMapCoordinateIndex
-[65] LightMapResolution
-[66] LinearColor
-[67] LODBias
-[68] LODGroup
-[69] Mask
-[70] MaskA
-[71] MaskB
-[72] MaskG
-[73] MaskR
-[74] Mat
-[75] MAT_VertexFlagParent
-[76] MAT_VertexPennantParent
-[77] Material
-[78] MaterialExpressionScalarParameter
-[79] MaterialExpressionStaticSwitchParameter
-[80] MaterialExpressionTextureSampleParameter2D
-[81] MaterialExpressionVectorParameter
-[82] MaterialFunction
-[83] MaterialFunctionInfos
-[84] MaterialInstanceConstant
-[85] MIC_flag_aventurine
-[86] MipTailBaseIdx
-[87] NameProperty
-[88] None
-[89] Normal
-[90] ObjectProperty
-[91] ObjectReferencer
-[92] OpacityMask
-[93] OriginalSizeX
-[94] OriginalSizeY
-[95] OutputIndex
-[96] Package
-[97] ParameterName
-[98] ParameterValue
-[99] Parent
-[100] ParentLightingGuid
-[101] ParticleSystem
-[102] PAS_Antenna
-[103] Pennant
-[104] Pennant_BlueChecker
-[105] Pennant_BlueChecker_T
-[106] Pennant_N_T
-[107] PF_A8R8G8B8
-[108] PF_DXT1
-[109] PF_DXT5
-[110] PF_V8U8
-[111] ProductAsset_Attachment_TA
-[112] ProductSlot_TA
-[113] ProductSlots
-[114] ReferencedObjects
-[115] Rotation
-[116] Rotator
-[117] ScalarMaterialInput
-[118] Scale
-[119] SizeX
-[120] SizeY
-[121] SkeletalMesh
-[122] Socket
-[123] SpecularColor
-[124] SpecularPower
-[125] SRGB
-[126] StandaloneSeekFreeReferencer
-[127] StateId
-[128] StaticMesh
-[129] StrProperty
-[130] StructProperty
-[131] Swirls02_N
-[132] TA_Clamp
-[133] TAGame
-[134] TC_Normalmap
-[135] TC_NormalmapUncompressed
-[136] Texture
-[137] Texture2D
-[138] TextureAddress
-[139] TextureCompressionSettings
-[140] TextureDiffuse
-[141] TextureFileCacheName
-[142] TextureGroup
-[143] TEXTUREGROUP_EffectsNotFiltered
-[144] TEXTUREGROUP_WorldNormalMap
-[145] TextureNormal
-[146] TextureParameterValues
-[147] Textures
-[148] Textures6
-[149] Textures7
-[150] Texturing
-[151] ThumbnailKeyLightBrightnessScale
-[152] ThumbnailRenderer
-[153] ThumbnailRenderer_TA
-[154] ThumbnailRenderers
-[155] Translation
-[156] TwoSided
-[157] TwoSidedLightingMask
-[158] TwoSidedTexturing
-[159] UnpackMin
-[160] UseBackfaceImage
-[161] UseBackfaceImageNormal
-[162] Vector
-[163] VectorMaterialInput
-[164] WindDirectionXYZ-RGB
-[165] WindInt
-[166] WindSpeed
-[167] WorldPositionOffset
+[Name 0] [0x0007001000000000] A
+[Name 1] [0x0007001000000000] AddressX
+[Name 2] [0x0007001000000000] AddressY
+[Name 3] [0x0007001000000000] AdjustBrightness
+[Name 4] [0x0007001000000000] animation
+[Name 5] [0x0007001000000000] Antenna
+[Name 6] [0x0007001000000000] AntennaComponent_TA
+[Name 7] [0x0007001000000000] ArrayProperty
+[Name 8] [0x0007001000000000] Attachments
+[Name 9] [0x0007001000000000] B
+[Name 10] [0x0007001000000000] bAllowLightmapSpecular
+[Name 11] [0x0007001000000000] Banner_CrossoverDefault00
+[Name 12] [0x0007001000000000] Banner_DungeonOfTheEndless00_D
+[Name 13] [0x0007001000000000] Banner_DungeonOfTheEndless00_N
+[Name 14] [0x0007001000000000] Behaviors
+[Name 15] [0x0007001000000000] bExposeToLibrary
+[Name 16] [0x0007001000000000] bHasStaticPermutationResource
+[Name 17] [0x0007001000000000] bIsMasked
+[Name 18] [0x0007001000000000] bIsSourceArtUncompressed
+[Name 19] [0x0007001000000000] BLEND_Masked
+[Name 20] [0x0007001000000000] BlendMode
+[Name 21] [0x0007001000000000] BoolProperty
+[Name 22] [0x0007001000000000] bUsedWithStaticLighting
+[Name 23] [0x0007001000000000] ByteProperty
+[Name 24] [0x0007001000000000] Class
+[Name 25] [0x0007001000000000] ColorMaterialInput
+[Name 26] [0x0007001000000000] Component
+[Name 27] [0x0007001000000000] CompressionNone
+[Name 28] [0x0007001000000000] CompressionSettings
+[Name 29] [0x0007001000000000] Coordinates
+[Name 30] [0x0007001000000000] Core
+[Name 31] [0x0007001000000000] DefaultValue
+[Name 32] [0x0007001000000000] Desc
+[Name 33] [0x0007001000000000] Description
+[Name 34] [0x0007001000000000] DiffuseColor
+[Name 35] [0x0007001000000000] EBlendMode
+[Name 36] [0x0007001000000000] EditorX
+[Name 37] [0x0007001000000000] EditorY
+[Name 38] [0x0007001000000000] Engine
+[Name 39] [0x0007001000000000] Engine_MaterialFunctions03
+[Name 40] [0x0007001000000000] EPixelFormat
+[Name 41] [0x0007001000000000] EProductAttachmentSocket
+[Name 42] [0x0007001000000000] Expression
+[Name 43] [0x0007001000000000] ExpressionGUID
+[Name 44] [0x0007001000000000] ExpressionInput
+[Name 45] [0x0007001000000000] Expressions
+[Name 46] [0x0007001000000000] FirstResourceMemMip
+[Name 47] [0x0007001000000000] Flag
+[Name 48] [0x0007001000000000] flag_aventurine
+[Name 49] [0x0007001000000000] flag_aventurine_D
+[Name 50] [0x0007001000000000] flag_aventurine_SF
+[Name 51] [0x0007001000000000] Flag_Renderer
+[Name 52] [0x0007001000000000] FloatProperty
+[Name 53] [0x0007001000000000] Format
+[Name 54] [0x0007001000000000] Function
+[Name 55] [0x0007001000000000] FunctionExpressions
+[Name 56] [0x0007001000000000] FXActor
+[Name 57] [0x0007001000000000] General_FX
+[Name 58] [0x0007001000000000] Group
+[Name 59] [0x0007001000000000] Guid
+[Name 60] [0x0007001000000000] InheritCarAttribute
+[Name 61] [0x0007001000000000] InternalFormatLODBias
+[Name 62] [0x0007001000000000] IntProperty
+[Name 63] [0x0007001000000000] LibraryCategories
+[Name 64] [0x0007001000000000] LightMapCoordinateIndex
+[Name 65] [0x0007001000000000] LightMapResolution
+[Name 66] [0x0007001000000000] LinearColor
+[Name 67] [0x0007001000000000] LODBias
+[Name 68] [0x0007001000000000] LODGroup
+[Name 69] [0x0007001000000000] Mask
+[Name 70] [0x0007001000000000] MaskA
+[Name 71] [0x0007001000000000] MaskB
+[Name 72] [0x0007001000000000] MaskG
+[Name 73] [0x0007001000000000] MaskR
+[Name 74] [0x0007001000000000] Mat
+[Name 75] [0x0007001000000000] MAT_VertexFlagParent
+[Name 76] [0x0007001000000000] MAT_VertexPennantParent
+[Name 77] [0x0007001000000000] Material
+[Name 78] [0x0007001000000000] MaterialExpressionScalarParameter
+[Name 79] [0x0007001000000000] MaterialExpressionStaticSwitchParameter
+[Name 80] [0x0007001000000000] MaterialExpressionTextureSampleParameter2D
+[Name 81] [0x0007001000000000] MaterialExpressionVectorParameter
+[Name 82] [0x0007001000000000] MaterialFunction
+[Name 83] [0x0007001000000000] MaterialFunctionInfos
+[Name 84] [0x0007001000000000] MaterialInstanceConstant
+[Name 85] [0x0007001000000000] MIC_flag_aventurine
+[Name 86] [0x0007001000000000] MipTailBaseIdx
+[Name 87] [0x0007001000000000] NameProperty
+[Name 88] [0x0007001000000000] None
+[Name 89] [0x0007001000000000] Normal
+[Name 90] [0x0007001000000000] ObjectProperty
+[Name 91] [0x0007001000000000] ObjectReferencer
+[Name 92] [0x0007001000000000] OpacityMask
+[Name 93] [0x0007001000000000] OriginalSizeX
+[Name 94] [0x0007001000000000] OriginalSizeY
+[Name 95] [0x0007001000000000] OutputIndex
+[Name 96] [0x0007001000000000] Package
+[Name 97] [0x0007001000000000] ParameterName
+[Name 98] [0x0007001000000000] ParameterValue
+[Name 99] [0x0007001000000000] Parent
+[Name 100] [0x0007001000000000] ParentLightingGuid
+[Name 101] [0x0007001000000000] ParticleSystem
+[Name 102] [0x0007001000000000] PAS_Antenna
+[Name 103] [0x0007001000000000] Pennant
+[Name 104] [0x0007001000000000] Pennant_BlueChecker
+[Name 105] [0x0007001000000000] Pennant_BlueChecker_T
+[Name 106] [0x0007001000000000] Pennant_N_T
+[Name 107] [0x0007001000000000] PF_A8R8G8B8
+[Name 108] [0x0007001000000000] PF_DXT1
+[Name 109] [0x0007001000000000] PF_DXT5
+[Name 110] [0x0007001000000000] PF_V8U8
+[Name 111] [0x0007001000000000] ProductAsset_Attachment_TA
+[Name 112] [0x0007001000000000] ProductSlot_TA
+[Name 113] [0x0007001000000000] ProductSlots
+[Name 114] [0x0007001000000000] ReferencedObjects
+[Name 115] [0x0007001000000000] Rotation
+[Name 116] [0x0007001000000000] Rotator
+[Name 117] [0x0007001000000000] ScalarMaterialInput
+[Name 118] [0x0007001000000000] Scale
+[Name 119] [0x0007001000000000] SizeX
+[Name 120] [0x0007001000000000] SizeY
+[Name 121] [0x0007001000000000] SkeletalMesh
+[Name 122] [0x0007001000000000] Socket
+[Name 123] [0x0007001000000000] SpecularColor
+[Name 124] [0x0007001000000000] SpecularPower
+[Name 125] [0x0007001000000000] SRGB
+[Name 126] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 127] [0x0007001000000000] StateId
+[Name 128] [0x0007001000000000] StaticMesh
+[Name 129] [0x0007001000000000] StrProperty
+[Name 130] [0x0007001000000000] StructProperty
+[Name 131] [0x0007001000000000] Swirls02_N
+[Name 132] [0x0007001000000000] TA_Clamp
+[Name 133] [0x0007001000000000] TAGame
+[Name 134] [0x0007001000000000] TC_Normalmap
+[Name 135] [0x0007001000000000] TC_NormalmapUncompressed
+[Name 136] [0x0007001000000000] Texture
+[Name 137] [0x0007001000000000] Texture2D
+[Name 138] [0x0007001000000000] TextureAddress
+[Name 139] [0x0007001000000000] TextureCompressionSettings
+[Name 140] [0x0007001000000000] TextureDiffuse
+[Name 141] [0x0007001000000000] TextureFileCacheName
+[Name 142] [0x0007001000000000] TextureGroup
+[Name 143] [0x0007001000000000] TEXTUREGROUP_EffectsNotFiltered
+[Name 144] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 145] [0x0007001000000000] TextureNormal
+[Name 146] [0x0007001000000000] TextureParameterValues
+[Name 147] [0x0007001000000000] Textures
+[Name 148] [0x0007001000000000] Textures6
+[Name 149] [0x0007001000000000] Textures7
+[Name 150] [0x0007001000000000] Texturing
+[Name 151] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
+[Name 152] [0x0007001000000000] ThumbnailRenderer
+[Name 153] [0x0007001000000000] ThumbnailRenderer_TA
+[Name 154] [0x0007001000000000] ThumbnailRenderers
+[Name 155] [0x0007001000000000] Translation
+[Name 156] [0x0007001000000000] TwoSided
+[Name 157] [0x0007001000000000] TwoSidedLightingMask
+[Name 158] [0x0007001000000000] TwoSidedTexturing
+[Name 159] [0x0007001000000000] UnpackMin
+[Name 160] [0x0007001000000000] UseBackfaceImage
+[Name 161] [0x0007001000000000] UseBackfaceImageNormal
+[Name 162] [0x0007001000000000] Vector
+[Name 163] [0x0007001000000000] VectorMaterialInput
+[Name 164] [0x0007001000000000] WindDirectionXYZ-RGB
+[Name 165] [0x0007001000000000] WindInt
+[Name 166] [0x0007001000000000] WindSpeed
+[Name 167] [0x0007001000000000] WorldPositionOffset
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAntennaComponent_TA flag_aventurine.flag_aventurine.flag_aventurine.AntennaComponent_TA_32
 	Name: AntennaComponent_TA_32
-	Class: AntennaComponent_TA
-	Outer: ProductAsset_Attachment_TA flag_aventurine
+	Class: UAntennaComponent_TA
+	Outer: flag_aventurine
 	Archetype: AntennaComponent_TA_0
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x000000000000209b with 0x00000010 Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterial flag_aventurine.Flag.MAT_VertexFlagParent
 	Name: MAT_VertexFlagParent
-	Class: Material
-	Outer: Package Flag
+	Class: UMaterial
+	Outer: Flag
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000020ab with 0x0000034f Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterial flag_aventurine.Pennant.MAT_VertexPennantParent
 	Name: MAT_VertexPennantParent
-	Class: Material
-	Outer: Package Pennant
+	Class: UMaterial
+	Outer: Pennant
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000023fa with 0x000003ae Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterialExpressionScalarParameter flag_aventurine.Flag.MAT_VertexFlagParent.MaterialExpressionScalarParameter_0
 	Name: MaterialExpressionScalarParameter_0
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_VertexFlagParent
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_VertexFlagParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000027a8 with 0x000000b3 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UMaterialExpressionScalarParameter flag_aventurine.Flag.MAT_VertexFlagParent.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_VertexFlagParent
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_VertexFlagParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000285b with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UMaterialExpressionScalarParameter flag_aventurine.Flag.MAT_VertexFlagParent.MaterialExpressionScalarParameter_44
 	Name: MaterialExpressionScalarParameter_44
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_VertexFlagParent
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_VertexFlagParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000028ef with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UMaterialExpressionScalarParameter flag_aventurine.Pennant.MAT_VertexPennantParent.MaterialExpressionScalarParameter_0
 	Name: MaterialExpressionScalarParameter_0
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_VertexPennantParent
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_VertexPennantParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002983 with 0x000000b3 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UMaterialExpressionScalarParameter flag_aventurine.Pennant.MAT_VertexPennantParent.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_VertexPennantParent
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_VertexPennantParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002a36 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UMaterialExpressionStaticSwitchParameter flag_aventurine.Pennant.MAT_VertexPennantParent.MaterialExpressionStaticSwitchParameter_0
 	Name: MaterialExpressionStaticSwitchParameter_0
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material MAT_VertexPennantParent
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: MAT_VertexPennantParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002aca with 0x0000022b Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UMaterialExpressionStaticSwitchParameter flag_aventurine.Pennant.MAT_VertexPennantParent.MaterialExpressionStaticSwitchParameter_1
 	Name: MaterialExpressionStaticSwitchParameter_1
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material MAT_VertexPennantParent
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: MAT_VertexPennantParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002cf5 with 0x000001a7 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UMaterialExpressionStaticSwitchParameter flag_aventurine.Pennant.MAT_VertexPennantParent.MaterialExpressionStaticSwitchParameter_2
 	Name: MaterialExpressionStaticSwitchParameter_2
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material MAT_VertexPennantParent
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: MAT_VertexPennantParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002e9c with 0x0000020f Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UMaterialExpressionTextureSampleParameter2D flag_aventurine.Flag.MAT_VertexFlagParent.MaterialExpressionTextureSampleParameter2D_0
 	Name: MaterialExpressionTextureSampleParameter2D_0
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_VertexFlagParent
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_VertexFlagParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000030ab with 0x000000d8 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UMaterialExpressionTextureSampleParameter2D flag_aventurine.Flag.MAT_VertexFlagParent.MaterialExpressionTextureSampleParameter2D_1
 	Name: MaterialExpressionTextureSampleParameter2D_1
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_VertexFlagParent
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_VertexFlagParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003183 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UMaterialExpressionTextureSampleParameter2D flag_aventurine.Pennant.MAT_VertexPennantParent.MaterialExpressionTextureSampleParameter2D_0
 	Name: MaterialExpressionTextureSampleParameter2D_0
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_VertexPennantParent
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_VertexPennantParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000325b with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UMaterialExpressionTextureSampleParameter2D flag_aventurine.Pennant.MAT_VertexPennantParent.MaterialExpressionTextureSampleParameter2D_1
 	Name: MaterialExpressionTextureSampleParameter2D_1
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_VertexPennantParent
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_VertexPennantParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000032ef with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UMaterialExpressionTextureSampleParameter2D flag_aventurine.Pennant.MAT_VertexPennantParent.MaterialExpressionTextureSampleParameter2D_2
 	Name: MaterialExpressionTextureSampleParameter2D_2
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_VertexPennantParent
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_VertexPennantParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003383 with 0x000000fa Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UMaterialExpressionTextureSampleParameter2D flag_aventurine.Pennant.MAT_VertexPennantParent.MaterialExpressionTextureSampleParameter2D_3
 	Name: MaterialExpressionTextureSampleParameter2D_3
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_VertexPennantParent
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_VertexPennantParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000347d with 0x000000d8 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UMaterialExpressionTextureSampleParameter2D flag_aventurine.Pennant.MAT_VertexPennantParent.MaterialExpressionTextureSampleParameter2D_4
 	Name: MaterialExpressionTextureSampleParameter2D_4
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_VertexPennantParent
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_VertexPennantParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003555 with 0x000000f9 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UMaterialExpressionTextureSampleParameter2D flag_aventurine.Pennant.MAT_VertexPennantParent.MaterialExpressionTextureSampleParameter2D_5
 	Name: MaterialExpressionTextureSampleParameter2D_5
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_VertexPennantParent
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_VertexPennantParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000364e with 0x000000d8 Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UMaterialExpressionVectorParameter flag_aventurine.Flag.MAT_VertexFlagParent.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_VertexFlagParent
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_VertexFlagParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003726 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UMaterialExpressionVectorParameter flag_aventurine.Pennant.MAT_VertexPennantParent.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_VertexPennantParent
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_VertexPennantParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000037ce with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UMaterialFunction flag_aventurine.Engine_MaterialFunctions03.Texturing.TwoSidedTexturing
 	Name: TwoSidedTexturing
-	Class: MaterialFunction
-	Outer: Package Texturing
+	Class: UMaterialFunction
+	Outer: Texturing
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003876 with 0x0000017c Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UMaterialInstanceConstant flag_aventurine.flag_aventurine.MIC_flag_aventurine
 	Name: MIC_flag_aventurine
-	Class: MaterialInstanceConstant
-	Outer: Package flag_aventurine
+	Class: UMaterialInstanceConstant
+	Outer: flag_aventurine
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000039f2 with 0x00000201 Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UObjectReferencer flag_aventurine.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000003bf3 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[24]
+[Export 24]
+	Full Name: UPackage flag_aventurine.Engine_MaterialFunctions03
 	Name: Engine_MaterialFunctions03
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003c1f with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[25]
+[Export 25]
+	Full Name: UPackage flag_aventurine.Engine_MaterialFunctions03.Texturing
 	Name: Texturing
-	Class: Package
-	Outer: Package Engine_MaterialFunctions03
+	Class: UPackage
+	Outer: Engine_MaterialFunctions03
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003c2b with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UPackage flag_aventurine.Flag
 	Name: Flag
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003c37 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[27]
+[Export 27]
+	Full Name: UPackage flag_aventurine.flag_aventurine
 	Name: flag_aventurine
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003c43 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[28]
+[Export 28]
+	Full Name: UPackage flag_aventurine.flag_aventurine_SF
 	Name: flag_aventurine_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003c4f with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[29]
+[Export 29]
+	Full Name: UPackage flag_aventurine.General_FX
 	Name: General_FX
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003c5b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[30]
+[Export 30]
+	Full Name: UPackage flag_aventurine.General_FX.Mat
 	Name: Mat
-	Class: Package
-	Outer: Package General_FX
+	Class: UPackage
+	Outer: General_FX
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003c67 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UPackage flag_aventurine.Pennant
 	Name: Pennant
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003c73 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[32]
+[Export 32]
+	Full Name: UPackage flag_aventurine.Pennant_BlueChecker
 	Name: Pennant_BlueChecker
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003c7f with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[33]
+[Export 33]
+	Full Name: UProductAsset_Attachment_TA flag_aventurine.flag_aventurine.flag_aventurine
 	Name: flag_aventurine
-	Class: ProductAsset_Attachment_TA
-	Outer: Package flag_aventurine
+	Class: UProductAsset_Attachment_TA
+	Outer: flag_aventurine
 	Archetype: ProductAsset_Attachment_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003c8b with 0x00000200 Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UStaticMesh flag_aventurine.Flag.Banner_CrossoverDefault00
 	Name: Banner_CrossoverDefault00
-	Class: StaticMesh
-	Outer: Package Flag
+	Class: UStaticMesh
+	Outer: Flag
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003e8b with 0x00003329 Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: UTexture2D flag_aventurine.Flag.Banner_DungeonOfTheEndless00_D
 	Name: Banner_DungeonOfTheEndless00_D
-	Class: Texture2D
-	Outer: Package Flag
+	Class: UTexture2D
+	Outer: Flag
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000071b4 with 0x000007f8 Bytes
 	Export Flags: 0x00000001
-[36]
+[Export 36]
+	Full Name: UTexture2D flag_aventurine.Flag.Banner_DungeonOfTheEndless00_N
 	Name: Banner_DungeonOfTheEndless00_N
-	Class: Texture2D
-	Outer: Package Flag
+	Class: UTexture2D
+	Outer: Flag
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000079ac with 0x00001887 Bytes
 	Export Flags: 0x00000001
-[37]
+[Export 37]
+	Full Name: UTexture2D flag_aventurine.flag_aventurine.flag_aventurine_D
 	Name: flag_aventurine_D
-	Class: Texture2D
-	Outer: Package flag_aventurine
+	Class: UTexture2D
+	Outer: flag_aventurine
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000009233 with 0x000057de Bytes
 	Export Flags: 0x00000001
-[38]
+[Export 38]
+	Full Name: UTexture2D flag_aventurine.General_FX.Mat.Swirls02_N
 	Name: Swirls02_N
-	Class: Texture2D
-	Outer: Package Mat
+	Class: UTexture2D
+	Outer: Mat
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000ea11 with 0x00000d95 Bytes
 	Export Flags: 0x00000001
-[39]
+[Export 39]
+	Full Name: UTexture2D flag_aventurine.Pennant.Pennant_N_T
 	Name: Pennant_N_T
-	Class: Texture2D
-	Outer: Package Pennant
+	Class: UTexture2D
+	Outer: Pennant
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000f7a6 with 0x00000d28 Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UTexture2D flag_aventurine.Pennant_BlueChecker.Pennant_BlueChecker_T
 	Name: Pennant_BlueChecker_T
-	Class: Texture2D
-	Outer: Package Pennant_BlueChecker
+	Class: UTexture2D
+	Outer: Pennant_BlueChecker
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000104ce with 0x00000d78 Bytes
 	Export Flags: 0x00000001
@@ -561,108 +603,130 @@ AES: 7Q3vhXBcDVHUBA3dvDyb0JlrpKu6X/wA4+YMwRe6oTQ=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UAntennaComponent_TA ProductSlots.Antenna.ProductAsset_Attachment_TA_0.AntennaComponent_TA_0
 	Name: AntennaComponent_TA_0
 	Class: AntennaComponent_TA
-	Package: TAGame
-	Outer: ProductAsset_Attachment_TA ProductAsset_Attachment_TA_0
-[1]
+	Class Package: TAGame
+	Outer: ProductAsset_Attachment_TA_0
+[Import 1]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[2]
+	Class Package: Core
+	Outer: Core
+[Import 2]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.MaterialExpressionStaticSwitchParameter
 	Name: MaterialExpressionStaticSwitchParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.MaterialExpressionTextureSampleParameter2D
 	Name: MaterialExpressionTextureSampleParameter2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.MaterialExpressionVectorParameter
 	Name: MaterialExpressionVectorParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.MaterialFunction
 	Name: MaterialFunction
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[10]
+	Class Package: Core
+	Outer: Engine
+[Import 10]
+	Full Name: UClass Engine.StaticMesh
 	Name: StaticMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[11]
+	Class Package: Core
+	Outer: Engine
+[Import 11]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[12]
+	Class Package: Core
+	Outer: Engine
+[Import 12]
+	Full Name: UClass TAGame.AntennaComponent_TA
 	Name: AntennaComponent_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[13]
+	Class Package: Core
+	Outer: TAGame
+[Import 13]
+	Full Name: UClass TAGame.ProductAsset_Attachment_TA
 	Name: ProductAsset_Attachment_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[14]
+	Class Package: Core
+	Outer: TAGame
+[Import 14]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[15]
+	Class Package: Core
+[Import 15]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[18]
+	Class Package: Core
+[Import 18]
+	Full Name: UPackage ThumbnailRenderers
 	Name: ThumbnailRenderers
 	Class: Package
-	Package: Core
-[19]
+	Class Package: Core
+[Import 19]
+	Full Name: UProductAsset_Attachment_TA ProductSlots.Antenna.ProductAsset_Attachment_TA_0
 	Name: ProductAsset_Attachment_TA_0
 	Class: ProductAsset_Attachment_TA
-	Package: TAGame
-	Outer: ProductSlot_TA Antenna
-[20]
+	Class Package: TAGame
+	Outer: Antenna
+[Import 20]
+	Full Name: UProductSlot_TA ProductSlots.Antenna
 	Name: Antenna
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
-[21]
+	Class Package: TAGame
+	Outer: ProductSlots
+[Import 21]
+	Full Name: UThumbnailRenderer_TA ThumbnailRenderers.Flag_Renderer
 	Name: Flag_Renderer
 	Class: ThumbnailRenderer_TA
-	Package: TAGame
-	Outer: Package ThumbnailRenderers
+	Class Package: TAGame
+	Outer: ThumbnailRenderers

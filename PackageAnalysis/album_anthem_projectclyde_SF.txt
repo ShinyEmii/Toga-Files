@@ -41,6 +41,7 @@ Test Data Size: 0x00003fdd
 Compressed Chunk Info Offset: 0x0000036b
 Last Block Size: 0x00000004
 Base Header Size: 0x00000099
+Encrypted Header Size: 0x00004360
 
 AES: XwsG9IsfvFi3bTHUY//3Dnumv1NNfkXa6YaTaLNud3g=
 
@@ -48,52 +49,56 @@ AES: XwsG9IsfvFi3bTHUY//3Dnumv1NNfkXa6YaTaLNud3g=
     ~ Names ~ 
 
 
-[0] album_anthem_projectclyde
-[1] album_anthem_projectclyde_SF
-[2] ArrayProperty
-[3] Class
-[4] Core
-[5] Engine
-[6] FloatProperty
-[7] None
-[8] ObjectReferencer
-[9] Package
-[10] ProductAsset_Pack_TA
-[11] ReferencedObjects
-[12] StandaloneSeekFreeReferencer
-[13] TAGame
-[14] ThumbnailKeyLightBrightnessScale
+[Name 0] [0x0007001000000000] album_anthem_projectclyde
+[Name 1] [0x0007001000000000] album_anthem_projectclyde_SF
+[Name 2] [0x0007001000000000] ArrayProperty
+[Name 3] [0x0007001000000000] Class
+[Name 4] [0x0007001000000000] Core
+[Name 5] [0x0007001000000000] Engine
+[Name 6] [0x0007001000000000] FloatProperty
+[Name 7] [0x0007001000000000] None
+[Name 8] [0x0007001000000000] ObjectReferencer
+[Name 9] [0x0007001000000000] Package
+[Name 10] [0x0007001000000000] ProductAsset_Pack_TA
+[Name 11] [0x0007001000000000] ReferencedObjects
+[Name 12] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 13] [0x0007001000000000] TAGame
+[Name 14] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UObjectReferencer album_anthem_projectclyde.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000000404 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UPackage album_anthem_projectclyde.album_anthem_projectclyde
 	Name: album_anthem_projectclyde
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000430 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[2]
+[Export 2]
+	Full Name: UPackage album_anthem_projectclyde.album_anthem_projectclyde_SF
 	Name: album_anthem_projectclyde_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000043c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[3]
+[Export 3]
+	Full Name: UProductAsset_Pack_TA album_anthem_projectclyde.album_anthem_projectclyde.album_anthem_projectclyde
 	Name: album_anthem_projectclyde
-	Class: ProductAsset_Pack_TA
-	Outer: Package album_anthem_projectclyde
+	Class: UProductAsset_Pack_TA
+	Outer: album_anthem_projectclyde
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000448 with 0x00000028 Bytes
 	Export Flags: 0x00000001
@@ -102,30 +107,36 @@ AES: XwsG9IsfvFi3bTHUY//3Dnumv1NNfkXa6YaTaLNud3g=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass TAGame.ProductAsset_Pack_TA
 	Name: ProductAsset_Pack_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[3]
+	Class Package: Core
+	Outer: TAGame
+[Import 3]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[4]
+	Class Package: Core
+[Import 4]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[5]
+	Class Package: Core
+[Import 5]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
+	Class Package: Core

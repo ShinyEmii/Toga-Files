@@ -128,6 +128,7 @@ Test Data Size: 0x00003c8b
 Compressed Chunk Info Offset: 0x0000255d
 Last Block Size: 0x0000000c
 Base Header Size: 0x000001a9
+Encrypted Header Size: 0x00006210
 
 AES: VbhKIbyV0Y9BCx7kjd/6nG+k0Ls/4DOSrNI4VRr0XIE=
 
@@ -135,538 +136,588 @@ AES: VbhKIbyV0Y9BCx7kjd/6nG+k0Ls/4DOSrNI4VRr0XIE=
     ~ Names ~ 
 
 
-[0] A
-[1] AdditionalBodyParameters
-[2] anodizedHueShift
-[3] AnodizedMix
-[4] ArrayProperty
-[5] B
-[6] BaseTextures
-[7] bCustomFinishDisabled
-[8] bHasStaticPermutationResource
-[9] bIsSourceArtUncompressed
-[10] Body
-[11] Body_Octane
-[12] Body_Octane_Bevel_N
-[13] Body_Octane_Textures
-[14] body_ron
-[15] BodyEmissiveBrightness
-[16] BodyMasks
-[17] BodyNormalMap
-[18] BodySettings
-[19] BoolProperty
-[20] bTeamFinishDisabled
-[21] bUsedWithSkeletalMesh
-[22] bUsedWithStaticLighting
-[23] ByteProperty
-[24] CarbonFiber_Flipped_N
-[25] Class
-[26] ColorMaterialInput
-[27] Colors
-[28] CompressionNone
-[29] CompressionSettings
-[30] Coordinates
-[31] Core
-[32] DefaultValue
-[33] Desc
-[34] Diffuse
-[35] DiffuseColor
-[36] DistortIntensity
-[37] DistortMap
-[38] emissiveblend
-[39] EmissiveColor
-[40] EmissiveIntensity
-[41] EmissiveUsePaintColor
-[42] EmissiveUseTeamColor
-[43] Engine
-[44] ENV
-[45] env_hueshift
-[46] ENVBrightness
-[47] ENVMultiplyWithDiffuse
-[48] ENVMultiplyWithFX
-[49] ENVMultiplyWithSelf
-[50] ENVPack
-[51] EPixelFormat
-[52] Expression
-[53] ExpressionGUID
-[54] ExpressionInput
-[55] Expressions
-[56] FirstResourceMemMip
-[57] FloatProperty
-[58] ForcedCustomColor
-[59] ForcedTeamColors
-[60] Format
-[61] Function
-[62] FX_Textures
-[63] FXMasks
-[64] Grass_Textures
-[65] GrassCube
-[66] Group
-[67] Guid
-[68] Hue_Shift
-[69] Hueshift_DirectionInvert
-[70] Import_EdgeMasks
-[71] IntProperty
-[72] LightFalloffArray
-[73] LinearColor
-[74] LODGroup
-[75] Mask
-[76] MaskA
-[77] mat_campesino
-[78] Material
-[79] MaterialExpressionScalarParameter
-[80] MaterialExpressionStaticSwitchParameter
-[81] MaterialExpressionTextureObjectParameter
-[82] MaterialExpressionTextureSampleParameter2D
-[83] MaterialExpressionVectorParameter
-[84] MaterialFunction
-[85] MaterialFunctionInfos
-[86] MaterialInstanceConstant
-[87] MaterialParams
-[88] MIC_Warm
-[89] MipTailBaseIdx
-[90] NameProperty
-[91] Noise
-[92] Noise_Generic_02_Pack
-[93] Noise_Swirls_01_Pack
-[94] None
-[95] Normal
-[96] ObjectProperty
-[97] ObjectReferencer
-[98] OctaneChassis_MIC
-[99] OriginalSizeX
-[100] OriginalSizeY
-[101] OutputIndex
-[102] Package
-[103] ParameterName
-[104] Parameters
-[105] ParameterValue
-[106] Params
-[107] Parent
-[108] ParentLightingGuid
-[109] Pepe_Body_BlankSkin
-[110] Pepe_Body_D
-[111] PF_A8R8G8B8
-[112] PF_DXT5
-[113] ProductAsset_Skin_TA
-[114] ProductAssetReferenceBody_TA
-[115] ProductID
-[116] ProductSlot_TA
-[117] ProductSlots
-[118] Psy_MaterialFunctions
-[119] ReferencedObjects
-[120] ScalarParameters
-[121] ScalarParameterValues
-[122] SizeX
-[123] SizeY
-[124] Skin
-[125] skin_octane_campesino_warm
-[126] skin_octane_campesino_warm_SF
-[127] SpectrumRange
-[128] SpectrumShift
-[129] SpecularShift
-[130] SPMF_TertiaryMaterial
-[131] SPMF_TrimColorAndFinish
-[132] SRGB
-[133] StandaloneSeekFreeReferencer
-[134] StateId
-[135] StrProperty
-[136] StructProperty
-[137] TAGame
-[138] TC_NormalmapSwizzle
-[139] TeamColor
-[140] TeamColor_WorldSpace
-[141] TertiaryMaterial
-[142] TertiaryMaterial_Color
-[143] TertiaryMaterial_ControlA
-[144] TertiaryMaterial_ControlB
-[145] TertiaryMaterial_Normal
-[146] TertiaryMaterial_Type
-[147] TertiaryNormalTiling
-[148] Test_NewBodySkins
-[149] Texture
-[150] Texture2D
-[151] TextureCompressionSettings
-[152] TextureFileCacheName
-[153] TextureGroup
-[154] TEXTUREGROUP_WorldNormalMap
-[155] TextureParameters
-[156] TextureRenderTargetCube
-[157] Textures
-[158] Textures2
-[159] TrimColor
-[160] UnpackMin
-[161] UseDiffuse
-[162] VectorMaterialInput
-[163] VectorParameters
-[164] VectorParameterValues
-[165] Vehicle_Parent_MaterialFunctions
-[166] Vehicle_Parent_Textures
-[167] WorldENV
-[168] CustomColor
-[169] HueShiftColorization
-[170] Main Color
-[171] MaskB
-[172] MaskG
-[173] MaskR
-[174] PaintColor
-[175] Use Main Color
+[Name 0] [0x0007001000000000] A
+[Name 1] [0x0007001000000000] AdditionalBodyParameters
+[Name 2] [0x0007001000000000] anodizedHueShift
+[Name 3] [0x0007001000000000] AnodizedMix
+[Name 4] [0x0007001000000000] ArrayProperty
+[Name 5] [0x0007001000000000] B
+[Name 6] [0x0007001000000000] BaseTextures
+[Name 7] [0x0007001000000000] bCustomFinishDisabled
+[Name 8] [0x0007001000000000] bHasStaticPermutationResource
+[Name 9] [0x0007001000000000] bIsSourceArtUncompressed
+[Name 10] [0x0007001000000000] Body
+[Name 11] [0x0007001000000000] Body_Octane
+[Name 12] [0x0007001000000000] Body_Octane_Bevel_N
+[Name 13] [0x0007001000000000] Body_Octane_Textures
+[Name 14] [0x0007001000000000] body_ron
+[Name 15] [0x0007001000000000] BodyEmissiveBrightness
+[Name 16] [0x0007001000000000] BodyMasks
+[Name 17] [0x0007001000000000] BodyNormalMap
+[Name 18] [0x0007001000000000] BodySettings
+[Name 19] [0x0007001000000000] BoolProperty
+[Name 20] [0x0007001000000000] bTeamFinishDisabled
+[Name 21] [0x0007001000000000] bUsedWithSkeletalMesh
+[Name 22] [0x0007001000000000] bUsedWithStaticLighting
+[Name 23] [0x0007001000000000] ByteProperty
+[Name 24] [0x0007001000000000] CarbonFiber_Flipped_N
+[Name 25] [0x0007001000000000] Class
+[Name 26] [0x0007001000000000] ColorMaterialInput
+[Name 27] [0x0007001000000000] Colors
+[Name 28] [0x0007001000000000] CompressionNone
+[Name 29] [0x0007001000000000] CompressionSettings
+[Name 30] [0x0007001000000000] Coordinates
+[Name 31] [0x0007001000000000] Core
+[Name 32] [0x0007001000000000] DefaultValue
+[Name 33] [0x0007001000000000] Desc
+[Name 34] [0x0007001000000000] Diffuse
+[Name 35] [0x0007001000000000] DiffuseColor
+[Name 36] [0x0007001000000000] DistortIntensity
+[Name 37] [0x0007001000000000] DistortMap
+[Name 38] [0x0007001000000000] emissiveblend
+[Name 39] [0x0007001000000000] EmissiveColor
+[Name 40] [0x0007001000000000] EmissiveIntensity
+[Name 41] [0x0007001000000000] EmissiveUsePaintColor
+[Name 42] [0x0007001000000000] EmissiveUseTeamColor
+[Name 43] [0x0007001000000000] Engine
+[Name 44] [0x0007001000000000] ENV
+[Name 45] [0x0007001000000000] env_hueshift
+[Name 46] [0x0007001000000000] ENVBrightness
+[Name 47] [0x0007001000000000] ENVMultiplyWithDiffuse
+[Name 48] [0x0007001000000000] ENVMultiplyWithFX
+[Name 49] [0x0007001000000000] ENVMultiplyWithSelf
+[Name 50] [0x0007001000000000] ENVPack
+[Name 51] [0x0007001000000000] EPixelFormat
+[Name 52] [0x0007001000000000] Expression
+[Name 53] [0x0007001000000000] ExpressionGUID
+[Name 54] [0x0007001000000000] ExpressionInput
+[Name 55] [0x0007001000000000] Expressions
+[Name 56] [0x0007001000000000] FirstResourceMemMip
+[Name 57] [0x0007001000000000] FloatProperty
+[Name 58] [0x0007001000000000] ForcedCustomColor
+[Name 59] [0x0007001000000000] ForcedTeamColors
+[Name 60] [0x0007001000000000] Format
+[Name 61] [0x0007001000000000] Function
+[Name 62] [0x0007001000000000] FX_Textures
+[Name 63] [0x0007001000000000] FXMasks
+[Name 64] [0x0007001000000000] Grass_Textures
+[Name 65] [0x0007001000000000] GrassCube
+[Name 66] [0x0007001000000000] Group
+[Name 67] [0x0007001000000000] Guid
+[Name 68] [0x0007001000000000] Hue_Shift
+[Name 69] [0x0007001000000000] Hueshift_DirectionInvert
+[Name 70] [0x0007001000000000] Import_EdgeMasks
+[Name 71] [0x0007001000000000] IntProperty
+[Name 72] [0x0007001000000000] LightFalloffArray
+[Name 73] [0x0007001000000000] LinearColor
+[Name 74] [0x0007001000000000] LODGroup
+[Name 75] [0x0007001000000000] Mask
+[Name 76] [0x0007001000000000] MaskA
+[Name 77] [0x0007001000000000] mat_campesino
+[Name 78] [0x0007001000000000] Material
+[Name 79] [0x0007001000000000] MaterialExpressionScalarParameter
+[Name 80] [0x0007001000000000] MaterialExpressionStaticSwitchParameter
+[Name 81] [0x0007001000000000] MaterialExpressionTextureObjectParameter
+[Name 82] [0x0007001000000000] MaterialExpressionTextureSampleParameter2D
+[Name 83] [0x0007001000000000] MaterialExpressionVectorParameter
+[Name 84] [0x0007001000000000] MaterialFunction
+[Name 85] [0x0007001000000000] MaterialFunctionInfos
+[Name 86] [0x0007001000000000] MaterialInstanceConstant
+[Name 87] [0x0007001000000000] MaterialParams
+[Name 88] [0x0007001000000000] MIC_Warm
+[Name 89] [0x0007001000000000] MipTailBaseIdx
+[Name 90] [0x0007001000000000] NameProperty
+[Name 91] [0x0007001000000000] Noise
+[Name 92] [0x0007001000000000] Noise_Generic_02_Pack
+[Name 93] [0x0007001000000000] Noise_Swirls_01_Pack
+[Name 94] [0x0007001000000000] None
+[Name 95] [0x0007001000000000] Normal
+[Name 96] [0x0007001000000000] ObjectProperty
+[Name 97] [0x0007001000000000] ObjectReferencer
+[Name 98] [0x0007001000000000] OctaneChassis_MIC
+[Name 99] [0x0007001000000000] OriginalSizeX
+[Name 100] [0x0007001000000000] OriginalSizeY
+[Name 101] [0x0007001000000000] OutputIndex
+[Name 102] [0x0007001000000000] Package
+[Name 103] [0x0007001000000000] ParameterName
+[Name 104] [0x0007001000000000] Parameters
+[Name 105] [0x0007001000000000] ParameterValue
+[Name 106] [0x0007001000000000] Params
+[Name 107] [0x0007001000000000] Parent
+[Name 108] [0x0007001000000000] ParentLightingGuid
+[Name 109] [0x0007001000000000] Pepe_Body_BlankSkin
+[Name 110] [0x0007001000000000] Pepe_Body_D
+[Name 111] [0x0007001000000000] PF_A8R8G8B8
+[Name 112] [0x0007001000000000] PF_DXT5
+[Name 113] [0x0007001000000000] ProductAsset_Skin_TA
+[Name 114] [0x0007001000000000] ProductAssetReferenceBody_TA
+[Name 115] [0x0007001000000000] ProductID
+[Name 116] [0x0007001000000000] ProductSlot_TA
+[Name 117] [0x0007001000000000] ProductSlots
+[Name 118] [0x0007001000000000] Psy_MaterialFunctions
+[Name 119] [0x0007001000000000] ReferencedObjects
+[Name 120] [0x0007001000000000] ScalarParameters
+[Name 121] [0x0007001000000000] ScalarParameterValues
+[Name 122] [0x0007001000000000] SizeX
+[Name 123] [0x0007001000000000] SizeY
+[Name 124] [0x0007001000000000] Skin
+[Name 125] [0x0007001000000000] skin_octane_campesino_warm
+[Name 126] [0x0007001000000000] skin_octane_campesino_warm_SF
+[Name 127] [0x0007001000000000] SpectrumRange
+[Name 128] [0x0007001000000000] SpectrumShift
+[Name 129] [0x0007001000000000] SpecularShift
+[Name 130] [0x0007001000000000] SPMF_TertiaryMaterial
+[Name 131] [0x0007001000000000] SPMF_TrimColorAndFinish
+[Name 132] [0x0007001000000000] SRGB
+[Name 133] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 134] [0x0007001000000000] StateId
+[Name 135] [0x0007001000000000] StrProperty
+[Name 136] [0x0007001000000000] StructProperty
+[Name 137] [0x0007001000000000] TAGame
+[Name 138] [0x0007001000000000] TC_NormalmapSwizzle
+[Name 139] [0x0007001000000000] TeamColor
+[Name 140] [0x0007001000000000] TeamColor_WorldSpace
+[Name 141] [0x0007001000000000] TertiaryMaterial
+[Name 142] [0x0007001000000000] TertiaryMaterial_Color
+[Name 143] [0x0007001000000000] TertiaryMaterial_ControlA
+[Name 144] [0x0007001000000000] TertiaryMaterial_ControlB
+[Name 145] [0x0007001000000000] TertiaryMaterial_Normal
+[Name 146] [0x0007001000000000] TertiaryMaterial_Type
+[Name 147] [0x0007001000000000] TertiaryNormalTiling
+[Name 148] [0x0007001000000000] Test_NewBodySkins
+[Name 149] [0x0007001000000000] Texture
+[Name 150] [0x0007001000000000] Texture2D
+[Name 151] [0x0007001000000000] TextureCompressionSettings
+[Name 152] [0x0007001000000000] TextureFileCacheName
+[Name 153] [0x0007001000000000] TextureGroup
+[Name 154] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 155] [0x0007001000000000] TextureParameters
+[Name 156] [0x0007001000000000] TextureRenderTargetCube
+[Name 157] [0x0007001000000000] Textures
+[Name 158] [0x0007001000000000] Textures2
+[Name 159] [0x0007001000000000] TrimColor
+[Name 160] [0x0007001000000000] UnpackMin
+[Name 161] [0x0007001000000000] UseDiffuse
+[Name 162] [0x0007001000000000] VectorMaterialInput
+[Name 163] [0x0007001000000000] VectorParameters
+[Name 164] [0x0007001000000000] VectorParameterValues
+[Name 165] [0x0007001000000000] Vehicle_Parent_MaterialFunctions
+[Name 166] [0x0007001000000000] Vehicle_Parent_Textures
+[Name 167] [0x0007001000000000] WorldENV
+[Name 168] [0x0007001000000000] CustomColor
+[Name 169] [0x0007001000000000] HueShiftColorization
+[Name 170] [0x0007001000000000] Main Color
+[Name 171] [0x0007001000000000] MaskB
+[Name 172] [0x0007001000000000] MaskG
+[Name 173] [0x0007001000000000] MaskR
+[Name 174] [0x0007001000000000] PaintColor
+[Name 175] [0x0007001000000000] Use Main Color
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UMaterial skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino
 	Name: mat_campesino
-	Class: Material
-	Outer: Package skin_octane_campesino_warm
+	Class: UMaterial
+	Outer: skin_octane_campesino_warm
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x000000000000c3a9 with 0x0000090e Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterialExpressionScalarParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionScalarParameter_0
 	Name: MaterialExpressionScalarParameter_0
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002fac with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterialExpressionScalarParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003060 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterialExpressionScalarParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionScalarParameter_10
 	Name: MaterialExpressionScalarParameter_10
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003114 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UMaterialExpressionScalarParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionScalarParameter_11
 	Name: MaterialExpressionScalarParameter_11
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000031a8 with 0x00000098 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UMaterialExpressionScalarParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionScalarParameter_12
 	Name: MaterialExpressionScalarParameter_12
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003240 with 0x00000078 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UMaterialExpressionScalarParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionScalarParameter_13
 	Name: MaterialExpressionScalarParameter_13
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000032b8 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UMaterialExpressionScalarParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000334c with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UMaterialExpressionScalarParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionScalarParameter_3
 	Name: MaterialExpressionScalarParameter_3
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003400 with 0x00000098 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UMaterialExpressionScalarParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionScalarParameter_4
 	Name: MaterialExpressionScalarParameter_4
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003498 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UMaterialExpressionScalarParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionScalarParameter_5
 	Name: MaterialExpressionScalarParameter_5
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000354c with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UMaterialExpressionScalarParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionScalarParameter_6
 	Name: MaterialExpressionScalarParameter_6
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003600 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UMaterialExpressionScalarParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionScalarParameter_61
 	Name: MaterialExpressionScalarParameter_61
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003694 with 0x00000078 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UMaterialExpressionScalarParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionScalarParameter_62
 	Name: MaterialExpressionScalarParameter_62
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000370c with 0x00000078 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UMaterialExpressionScalarParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionScalarParameter_63
 	Name: MaterialExpressionScalarParameter_63
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003784 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UMaterialExpressionScalarParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionScalarParameter_7
 	Name: MaterialExpressionScalarParameter_7
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003818 with 0x000000db Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UMaterialExpressionScalarParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionScalarParameter_8
 	Name: MaterialExpressionScalarParameter_8
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000038f3 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UMaterialExpressionScalarParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionScalarParameter_9
 	Name: MaterialExpressionScalarParameter_9
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000039a7 with 0x00000098 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UMaterialExpressionStaticSwitchParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionStaticSwitchParameter_0
 	Name: MaterialExpressionStaticSwitchParameter_0
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003a3f with 0x00000120 Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UMaterialExpressionStaticSwitchParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionStaticSwitchParameter_1
 	Name: MaterialExpressionStaticSwitchParameter_1
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003b5f with 0x0000013c Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UMaterialExpressionStaticSwitchParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionStaticSwitchParameter_16
 	Name: MaterialExpressionStaticSwitchParameter_16
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003c9b with 0x0000018d Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UMaterialExpressionStaticSwitchParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionStaticSwitchParameter_2
 	Name: MaterialExpressionStaticSwitchParameter_2
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003e28 with 0x00000120 Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UMaterialExpressionTextureObjectParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionTextureObjectParameter_1
 	Name: MaterialExpressionTextureObjectParameter_1
-	Class: MaterialExpressionTextureObjectParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionTextureObjectParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003f48 with 0x00000135 Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UMaterialExpressionTextureSampleParameter2D skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionTextureSampleParameter2D_0
 	Name: MaterialExpressionTextureSampleParameter2D_0
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000407d with 0x000000d8 Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UMaterialExpressionTextureSampleParameter2D skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionTextureSampleParameter2D_1
 	Name: MaterialExpressionTextureSampleParameter2D_1
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004155 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UMaterialExpressionTextureSampleParameter2D skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionTextureSampleParameter2D_18
 	Name: MaterialExpressionTextureSampleParameter2D_18
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004209 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UMaterialExpressionTextureSampleParameter2D skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionTextureSampleParameter2D_2
 	Name: MaterialExpressionTextureSampleParameter2D_2
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000042bd with 0x000000f8 Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UMaterialExpressionTextureSampleParameter2D skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionTextureSampleParameter2D_3
 	Name: MaterialExpressionTextureSampleParameter2D_3
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000043b5 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UMaterialExpressionVectorParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004469 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UMaterialExpressionVectorParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionVectorParameter_10
 	Name: MaterialExpressionVectorParameter_10
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004531 with 0x00000145 Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UMaterialExpressionVectorParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionVectorParameter_11
 	Name: MaterialExpressionVectorParameter_11
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004676 with 0x0000012c Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UMaterialExpressionVectorParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionVectorParameter_12
 	Name: MaterialExpressionVectorParameter_12
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000047a2 with 0x00000114 Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: UMaterialExpressionVectorParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionVectorParameter_14
 	Name: MaterialExpressionVectorParameter_14
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000048b6 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
-[33]
+[Export 33]
+	Full Name: UMaterialInstanceConstant skin_octane_campesino_warm.skin_octane_campesino_warm.MIC_Warm
 	Name: MIC_Warm
-	Class: MaterialInstanceConstant
-	Outer: Package skin_octane_campesino_warm
+	Class: UMaterialInstanceConstant
+	Outer: skin_octane_campesino_warm
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x000000000000ccb7 with 0x000006cd Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UObjectReferencer skin_octane_campesino_warm.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x000000000000500b with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[35]
+[Export 35]
+	Full Name: UPackage skin_octane_campesino_warm.Body_Octane_Textures
 	Name: Body_Octane_Textures
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000005037 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[36]
+[Export 36]
+	Full Name: UPackage skin_octane_campesino_warm.skin_octane_campesino_warm
 	Name: skin_octane_campesino_warm
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000005043 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[37]
+[Export 37]
+	Full Name: UPackage skin_octane_campesino_warm.skin_octane_campesino_warm_SF
 	Name: skin_octane_campesino_warm_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000504f with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[38]
+[Export 38]
+	Full Name: UPackage skin_octane_campesino_warm.Test_NewBodySkins
 	Name: Test_NewBodySkins
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000505b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[39]
+[Export 39]
+	Full Name: UPackage skin_octane_campesino_warm.Test_NewBodySkins.Textures
 	Name: Textures
-	Class: Package
-	Outer: Package Test_NewBodySkins
+	Class: UPackage
+	Outer: Test_NewBodySkins
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000005067 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UProductAsset_Skin_TA skin_octane_campesino_warm.skin_octane_campesino_warm.skin_octane_campesino_warm
 	Name: skin_octane_campesino_warm
-	Class: ProductAsset_Skin_TA
-	Outer: Package skin_octane_campesino_warm
+	Class: UProductAsset_Skin_TA
+	Outer: skin_octane_campesino_warm
 	Archetype: ProductAsset_Skin_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000005073 with 0x00000292 Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UProductAssetReferenceBody_TA skin_octane_campesino_warm.skin_octane_campesino_warm.skin_octane_campesino_warm.ProductAssetReferenceBody_TA_0
 	Name: ProductAssetReferenceBody_TA_0
-	Class: ProductAssetReferenceBody_TA
-	Outer: ProductAsset_Skin_TA skin_octane_campesino_warm
+	Class: UProductAssetReferenceBody_TA
+	Outer: skin_octane_campesino_warm
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000005305 with 0x00000028 Bytes
 	Export Flags: 0x00000001
-[42]
+[Export 42]
+	Full Name: UTexture2D skin_octane_campesino_warm.Body_Octane_Textures.Body_Octane_Bevel_N
 	Name: Body_Octane_Bevel_N
-	Class: Texture2D
-	Outer: Package Body_Octane_Textures
+	Class: UTexture2D
+	Outer: Body_Octane_Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000532d with 0x00001885 Bytes
 	Export Flags: 0x00000001
-[43]
+[Export 43]
+	Full Name: UTexture2D skin_octane_campesino_warm.Test_NewBodySkins.Textures.Import_EdgeMasks
 	Name: Import_EdgeMasks
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000006bb2 with 0x000057f7 Bytes
 	Export Flags: 0x00000001
-[44]
+[Export 44]
+	Full Name: UMaterialExpressionStaticSwitchParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionStaticSwitchParameter_3
 	Name: MaterialExpressionStaticSwitchParameter_3
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000d384 with 0x00000139 Bytes
 	Export Flags: 0x00000001
-[45]
+[Export 45]
+	Full Name: UMaterialExpressionStaticSwitchParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionStaticSwitchParameter_4
 	Name: MaterialExpressionStaticSwitchParameter_4
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000d4bd with 0x0000029a Bytes
 	Export Flags: 0x00000001
-[46]
+[Export 46]
+	Full Name: UMaterialExpressionStaticSwitchParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionStaticSwitchParameter_5
 	Name: MaterialExpressionStaticSwitchParameter_5
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000d757 with 0x00000139 Bytes
 	Export Flags: 0x00000001
-[47]
+[Export 47]
+	Full Name: UMaterialExpressionVectorParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionVectorParameter_1
 	Name: MaterialExpressionVectorParameter_1
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000d890 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
-[48]
+[Export 48]
+	Full Name: UMaterialExpressionVectorParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionVectorParameter_2
 	Name: MaterialExpressionVectorParameter_2
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000d958 with 0x00000098 Bytes
 	Export Flags: 0x00000001
-[49]
+[Export 49]
+	Full Name: UMaterialExpressionVectorParameter skin_octane_campesino_warm.skin_octane_campesino_warm.mat_campesino.MaterialExpressionVectorParameter_3
 	Name: MaterialExpressionVectorParameter_3
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_campesino
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_campesino
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000d9f0 with 0x00000111 Bytes
 	Export Flags: 0x00000001
@@ -675,192 +726,232 @@ AES: VbhKIbyV0Y9BCx7kjd/6nG+k0Ls/4DOSrNI4VRr0XIE=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialExpressionStaticSwitchParameter
 	Name: MaterialExpressionStaticSwitchParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.MaterialExpressionTextureObjectParameter
 	Name: MaterialExpressionTextureObjectParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.MaterialExpressionTextureSampleParameter2D
 	Name: MaterialExpressionTextureSampleParameter2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.MaterialExpressionVectorParameter
 	Name: MaterialExpressionVectorParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[10]
+	Class Package: Core
+	Outer: Engine
+[Import 10]
+	Full Name: UClass TAGame.ProductAsset_Skin_TA
 	Name: ProductAsset_Skin_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[11]
+	Class Package: Core
+	Outer: TAGame
+[Import 11]
+	Full Name: UClass TAGame.ProductAssetReferenceBody_TA
 	Name: ProductAssetReferenceBody_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[12]
+	Class Package: Core
+	Outer: TAGame
+[Import 12]
+	Full Name: UMaterialFunction Psy_MaterialFunctions.Hue_Shift
 	Name: Hue_Shift
 	Class: MaterialFunction
-	Package: Engine
-	Outer: Package Psy_MaterialFunctions
-[13]
+	Class Package: Engine
+	Outer: Psy_MaterialFunctions
+[Import 13]
+	Full Name: UMaterialFunction Psy_MaterialFunctions.TeamColor_WorldSpace
 	Name: TeamColor_WorldSpace
 	Class: MaterialFunction
-	Package: Engine
-	Outer: Package Psy_MaterialFunctions
-[14]
+	Class Package: Engine
+	Outer: Psy_MaterialFunctions
+[Import 14]
+	Full Name: UMaterialFunction Psy_MaterialFunctions.WorldENV
 	Name: WorldENV
 	Class: MaterialFunction
-	Package: Engine
-	Outer: Package Psy_MaterialFunctions
-[15]
+	Class Package: Engine
+	Outer: Psy_MaterialFunctions
+[Import 15]
+	Full Name: UMaterialFunction Vehicle_Parent_MaterialFunctions.SPMF_TertiaryMaterial
 	Name: SPMF_TertiaryMaterial
 	Class: MaterialFunction
-	Package: Engine
-	Outer: Package Vehicle_Parent_MaterialFunctions
-[16]
+	Class Package: Engine
+	Outer: Vehicle_Parent_MaterialFunctions
+[Import 16]
+	Full Name: UMaterialFunction Vehicle_Parent_MaterialFunctions.SPMF_TrimColorAndFinish
 	Name: SPMF_TrimColorAndFinish
 	Class: MaterialFunction
-	Package: Engine
-	Outer: Package Vehicle_Parent_MaterialFunctions
-[17]
+	Class Package: Engine
+	Outer: Vehicle_Parent_MaterialFunctions
+[Import 17]
+	Full Name: UMaterialInstanceConstant Body_Octane.OctaneChassis_MIC
 	Name: OctaneChassis_MIC
 	Class: MaterialInstanceConstant
-	Package: Engine
-	Outer: Package Body_Octane
-[18]
+	Class Package: Engine
+	Outer: Body_Octane
+[Import 18]
+	Full Name: UPackage Body_Octane
 	Name: Body_Octane
 	Class: Package
-	Package: Core
-[19]
+	Class Package: Core
+[Import 19]
+	Full Name: UPackage body_ron
 	Name: body_ron
 	Class: Package
-	Package: Core
-[20]
+	Class Package: Core
+[Import 20]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[21]
+	Class Package: Core
+[Import 21]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[22]
+	Class Package: Core
+[Import 22]
+	Full Name: UPackage FX_Textures
 	Name: FX_Textures
 	Class: Package
-	Package: Core
-[23]
+	Class Package: Core
+[Import 23]
+	Full Name: UPackage FX_Textures.Noise
 	Name: Noise
 	Class: Package
-	Package: Core
-	Outer: Package FX_Textures
-[24]
+	Class Package: Core
+	Outer: FX_Textures
+[Import 24]
+	Full Name: UPackage Grass_Textures
 	Name: Grass_Textures
 	Class: Package
-	Package: Core
-[25]
+	Class Package: Core
+[Import 25]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[26]
+	Class Package: Core
+[Import 26]
+	Full Name: UPackage Psy_MaterialFunctions
 	Name: Psy_MaterialFunctions
 	Class: Package
-	Package: Core
-[27]
+	Class Package: Core
+[Import 27]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[28]
+	Class Package: Core
+[Import 28]
+	Full Name: UPackage Vehicle_Parent_MaterialFunctions
 	Name: Vehicle_Parent_MaterialFunctions
 	Class: Package
-	Package: Core
-[29]
+	Class Package: Core
+[Import 29]
+	Full Name: UPackage Vehicle_Parent_Textures
 	Name: Vehicle_Parent_Textures
 	Class: Package
-	Package: Core
-[30]
+	Class Package: Core
+[Import 30]
+	Full Name: UProductAsset_Skin_TA ProductSlots.Skin.ProductAsset_Skin_TA_0
 	Name: ProductAsset_Skin_TA_0
 	Class: ProductAsset_Skin_TA
-	Package: TAGame
-	Outer: ProductSlot_TA Skin
-[31]
+	Class Package: TAGame
+	Outer: Skin
+[Import 31]
+	Full Name: UProductSlot_TA ProductSlots.Skin
 	Name: Skin
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
-[32]
+	Class Package: TAGame
+	Outer: ProductSlots
+[Import 32]
+	Full Name: UTexture2D Body_Octane_Textures.Pepe_Body_BlankSkin
 	Name: Pepe_Body_BlankSkin
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Body_Octane_Textures
-[33]
+	Class Package: Engine
+	Outer: Body_Octane_Textures
+[Import 33]
+	Full Name: UTexture2D Body_Octane_Textures.Pepe_Body_D
 	Name: Pepe_Body_D
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Body_Octane_Textures
-[34]
+	Class Package: Engine
+	Outer: Body_Octane_Textures
+[Import 34]
+	Full Name: UTexture2D body_ron.CarbonFiber_Flipped_N
 	Name: CarbonFiber_Flipped_N
 	Class: Texture2D
-	Package: Engine
-	Outer: Package body_ron
-[35]
+	Class Package: Engine
+	Outer: body_ron
+[Import 35]
+	Full Name: UTexture2D FX_Textures.Noise.Noise_Generic_02_Pack
 	Name: Noise_Generic_02_Pack
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Noise
-[36]
+	Class Package: Engine
+	Outer: Noise
+[Import 36]
+	Full Name: UTexture2D FX_Textures.Noise.Noise_Swirls_01_Pack
 	Name: Noise_Swirls_01_Pack
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Noise
-[37]
+	Class Package: Engine
+	Outer: Noise
+[Import 37]
+	Full Name: UTexture2D Vehicle_Parent_Textures.ENVPack
 	Name: ENVPack
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Vehicle_Parent_Textures
-[38]
+	Class Package: Engine
+	Outer: Vehicle_Parent_Textures
+[Import 38]
+	Full Name: UTexture2D Vehicle_Parent_Textures.LightFalloffArray
 	Name: LightFalloffArray
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Vehicle_Parent_Textures
-[39]
+	Class Package: Engine
+	Outer: Vehicle_Parent_Textures
+[Import 39]
+	Full Name: UTextureRenderTargetCube Grass_Textures.GrassCube
 	Name: GrassCube
 	Class: TextureRenderTargetCube
-	Package: Engine
-	Outer: Package Grass_Textures
+	Class Package: Engine
+	Outer: Grass_Textures

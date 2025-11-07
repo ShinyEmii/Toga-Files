@@ -60,6 +60,7 @@ Test Data Size: 0x00003fba
 Compressed Chunk Info Offset: 0x0000177a
 Last Block Size: 0x00000008
 Base Header Size: 0x000000dd
+Encrypted Header Size: 0x00005760
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -67,310 +68,330 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] AnimTree
-[1] AnimTreeTemplate
-[2] Antenna
-[3] AntennaComponent_TA
-[4] AntennaMesh
-[5] ArrayProperty
-[6] Attachments
-[7] bAddRotation
-[8] bAddTranslation
-[9] bApplyRotation
-[10] BCS_ComponentSpace
-[11] bDisableCompressions
-[12] Behaviors
-[13] bEnableShadowCasting
-[14] Bend01
-[15] bHasBeenSimplified
-[16] bHasVertexColors
-[17] BoneName
-[18] BoneRotation
-[19] BoneRotationSpace
-[20] BoneTranslation
-[21] BoneTranslationSpace
-[22] BoolProperty
-[23] bUsedWithSkeletalMesh
-[24] ByteProperty
-[25] Class
-[26] ClothingAssets
-[27] ClothTearFactor
-[28] ColorMaterialInput
-[29] Component
-[30] ControlHead
-[31] ControlName
-[32] ControlStrength
-[33] Core
-[34] CustomColor
-[35] CustomLeftRightAxis
-[36] CustomLeftRightBoneName
-[37] Damping
-[38] Default__SkelControlRotationSpring_TA
-[39] DefaultSpring
-[40] DefaultValue
-[41] DiffuseColor
-[42] DisplayFactor
-[43] DrawY
-[44] EBoneControlSpace
-[45] EmissiveColor
-[46] Engine
-[47] EPixelFormat
-[48] EProductAttachmentSocket
-[49] Expression
-[50] ExpressionGUID
-[51] Expressions
-[52] FirstResourceMemMip
-[53] FloatProperty
-[54] Format
-[55] FXActor
-[56] Guid
-[57] Hat
-[58] hat_octo
-[59] Hat_Octo_NM
-[60] hat_octo_SF
-[61] Hat_Squid_Diff
-[62] Hat_Squid_SK
-[63] Hat_Squid_SK_gr
-[64] Hat_Squid_SM_obj
-[65] InheritCarAttribute
-[66] IntProperty
-[67] LinearColor
-[68] LODHysteresis
-[69] LODInfo
-[70] LODMaterialMap
-[71] Mask
-[72] MaskB
-[73] MaskG
-[74] MaskR
-[75] Mass
-[76] Material
-[77] MaterialExpressionVectorParameter
-[78] MinDisplacement
-[79] MipTailBaseIdx
-[80] NameProperty
-[81] None
-[82] Normal
-[83] ObjectProperty
-[84] ObjectReferencer
-[85] Octo_Hat_Mat
-[86] OriginalSizeX
-[87] OriginalSizeY
-[88] Package
-[89] ParameterName
-[90] ParticleSystem
-[91] PAS_Hat
-[92] PF_DXT1
-[93] PF_DXT5
-[94] ProductAsset_Attachment_TA
-[95] ProductSlot_TA
-[96] ProductSlots
-[97] ReferencedObjects
-[98] Root
-[99] Rotation
-[100] RotationMax
-[101] RotationMin
-[102] Rotator
-[103] ScalarMaterialInput
-[104] Scale
-[105] SimpleSpringComponent_TA
-[106] SimpleSpringSettings
-[107] SizeX
-[108] SizeY
-[109] SkelControlLists
-[110] SkelControlRotationSpring_TA
-[111] SkelControlSingleBone
-[112] SkeletalMesh
-[113] Socket
-[114] SpecularColor
-[115] SpecularPower
-[116] spine_01
-[117] spine_02
-[118] spine_03
-[119] Spring
-[120] SpringComponent
-[121] SpringToPitch
-[122] SpringToRoll
-[123] SpringToYaw
-[124] Squid_AT
-[125] StandaloneSeekFreeReferencer
-[126] StaticMesh
-[127] Strength
-[128] StrengthTarget
-[129] StructProperty
-[130] TAGame
-[131] tentacle_a_01
-[132] tentacle_a_02
-[133] tentacle_a_03
-[134] tentacle_a_04
-[135] tentacle_a_05
-[136] tentacle_b_01
-[137] tentacle_b_02
-[138] tentacle_b_03
-[139] tentacle_c_01
-[140] tentacle_c_02
-[141] tentacle_c_03
-[142] tentacle_c_04
-[143] Texture2D
-[144] TextureFileCacheName
-[145] Textures5
-[146] ThumbnailCameraTranslationOffset
-[147] Translation
-[148] TriangleSortAxis
-[149] TriangleSorting
-[150] TriangleSortOption
-[151] TriangleSortSettings
-[152] TRISORT_None
-[153] TSA_X_Axis
-[154] Vector
-[155] VectorMaterialInput
+[Name 0] [0x0007001000000000] AnimTree
+[Name 1] [0x0007001000000000] AnimTreeTemplate
+[Name 2] [0x0007001000000000] Antenna
+[Name 3] [0x0007001000000000] AntennaComponent_TA
+[Name 4] [0x0007001000000000] AntennaMesh
+[Name 5] [0x0007001000000000] ArrayProperty
+[Name 6] [0x0007001000000000] Attachments
+[Name 7] [0x0007001000000000] bAddRotation
+[Name 8] [0x0007001000000000] bAddTranslation
+[Name 9] [0x0007001000000000] bApplyRotation
+[Name 10] [0x0007001000000000] BCS_ComponentSpace
+[Name 11] [0x0007001000000000] bDisableCompressions
+[Name 12] [0x0007001000000000] Behaviors
+[Name 13] [0x0007001000000000] bEnableShadowCasting
+[Name 14] [0x0007001000000000] Bend01
+[Name 15] [0x0007001000000000] bHasBeenSimplified
+[Name 16] [0x0007001000000000] bHasVertexColors
+[Name 17] [0x0007001000000000] BoneName
+[Name 18] [0x0007001000000000] BoneRotation
+[Name 19] [0x0007001000000000] BoneRotationSpace
+[Name 20] [0x0007001000000000] BoneTranslation
+[Name 21] [0x0007001000000000] BoneTranslationSpace
+[Name 22] [0x0007001000000000] BoolProperty
+[Name 23] [0x0007001000000000] bUsedWithSkeletalMesh
+[Name 24] [0x0007001000000000] ByteProperty
+[Name 25] [0x0007001000000000] Class
+[Name 26] [0x0007001000000000] ClothingAssets
+[Name 27] [0x0007001000000000] ClothTearFactor
+[Name 28] [0x0007001000000000] ColorMaterialInput
+[Name 29] [0x0007001000000000] Component
+[Name 30] [0x0007001000000000] ControlHead
+[Name 31] [0x0007001000000000] ControlName
+[Name 32] [0x0007001000000000] ControlStrength
+[Name 33] [0x0007001000000000] Core
+[Name 34] [0x0007001000000000] CustomColor
+[Name 35] [0x0007001000000000] CustomLeftRightAxis
+[Name 36] [0x0007001000000000] CustomLeftRightBoneName
+[Name 37] [0x0007001000000000] Damping
+[Name 38] [0x0007001000000000] Default__SkelControlRotationSpring_TA
+[Name 39] [0x0007001000000000] DefaultSpring
+[Name 40] [0x0007001000000000] DefaultValue
+[Name 41] [0x0007001000000000] DiffuseColor
+[Name 42] [0x0007001000000000] DisplayFactor
+[Name 43] [0x0007001000000000] DrawY
+[Name 44] [0x0007001000000000] EBoneControlSpace
+[Name 45] [0x0007001000000000] EmissiveColor
+[Name 46] [0x0007001000000000] Engine
+[Name 47] [0x0007001000000000] EPixelFormat
+[Name 48] [0x0007001000000000] EProductAttachmentSocket
+[Name 49] [0x0007001000000000] Expression
+[Name 50] [0x0007001000000000] ExpressionGUID
+[Name 51] [0x0007001000000000] Expressions
+[Name 52] [0x0007001000000000] FirstResourceMemMip
+[Name 53] [0x0007001000000000] FloatProperty
+[Name 54] [0x0007001000000000] Format
+[Name 55] [0x0007001000000000] FXActor
+[Name 56] [0x0007001000000000] Guid
+[Name 57] [0x0007001000000000] Hat
+[Name 58] [0x0007001000000000] hat_octo
+[Name 59] [0x0007001000000000] Hat_Octo_NM
+[Name 60] [0x0007001000000000] hat_octo_SF
+[Name 61] [0x0007001000000000] Hat_Squid_Diff
+[Name 62] [0x0007001000000000] Hat_Squid_SK
+[Name 63] [0x0007001000000000] Hat_Squid_SK_gr
+[Name 64] [0x0007001000000000] Hat_Squid_SM_obj
+[Name 65] [0x0007001000000000] InheritCarAttribute
+[Name 66] [0x0007001000000000] IntProperty
+[Name 67] [0x0007001000000000] LinearColor
+[Name 68] [0x0007001000000000] LODHysteresis
+[Name 69] [0x0007001000000000] LODInfo
+[Name 70] [0x0007001000000000] LODMaterialMap
+[Name 71] [0x0007001000000000] Mask
+[Name 72] [0x0007001000000000] MaskB
+[Name 73] [0x0007001000000000] MaskG
+[Name 74] [0x0007001000000000] MaskR
+[Name 75] [0x0007001000000000] Mass
+[Name 76] [0x0007001000000000] Material
+[Name 77] [0x0007001000000000] MaterialExpressionVectorParameter
+[Name 78] [0x0007001000000000] MinDisplacement
+[Name 79] [0x0007001000000000] MipTailBaseIdx
+[Name 80] [0x0007001000000000] NameProperty
+[Name 81] [0x0007001000000000] None
+[Name 82] [0x0007001000000000] Normal
+[Name 83] [0x0007001000000000] ObjectProperty
+[Name 84] [0x0007001000000000] ObjectReferencer
+[Name 85] [0x0007001000000000] Octo_Hat_Mat
+[Name 86] [0x0007001000000000] OriginalSizeX
+[Name 87] [0x0007001000000000] OriginalSizeY
+[Name 88] [0x0007001000000000] Package
+[Name 89] [0x0007001000000000] ParameterName
+[Name 90] [0x0007001000000000] ParticleSystem
+[Name 91] [0x0007001000000000] PAS_Hat
+[Name 92] [0x0007001000000000] PF_DXT1
+[Name 93] [0x0007001000000000] PF_DXT5
+[Name 94] [0x0007001000000000] ProductAsset_Attachment_TA
+[Name 95] [0x0007001000000000] ProductSlot_TA
+[Name 96] [0x0007001000000000] ProductSlots
+[Name 97] [0x0007001000000000] ReferencedObjects
+[Name 98] [0x0007001000000000] Root
+[Name 99] [0x0007001000000000] Rotation
+[Name 100] [0x0007001000000000] RotationMax
+[Name 101] [0x0007001000000000] RotationMin
+[Name 102] [0x0007001000000000] Rotator
+[Name 103] [0x0007001000000000] ScalarMaterialInput
+[Name 104] [0x0007001000000000] Scale
+[Name 105] [0x0007001000000000] SimpleSpringComponent_TA
+[Name 106] [0x0007001000000000] SimpleSpringSettings
+[Name 107] [0x0007001000000000] SizeX
+[Name 108] [0x0007001000000000] SizeY
+[Name 109] [0x0007001000000000] SkelControlLists
+[Name 110] [0x0007001000000000] SkelControlRotationSpring_TA
+[Name 111] [0x0007001000000000] SkelControlSingleBone
+[Name 112] [0x0007001000000000] SkeletalMesh
+[Name 113] [0x0007001000000000] Socket
+[Name 114] [0x0007001000000000] SpecularColor
+[Name 115] [0x0007001000000000] SpecularPower
+[Name 116] [0x0007001000000000] spine_01
+[Name 117] [0x0007001000000000] spine_02
+[Name 118] [0x0007001000000000] spine_03
+[Name 119] [0x0007001000000000] Spring
+[Name 120] [0x0007001000000000] SpringComponent
+[Name 121] [0x0007001000000000] SpringToPitch
+[Name 122] [0x0007001000000000] SpringToRoll
+[Name 123] [0x0007001000000000] SpringToYaw
+[Name 124] [0x0007001000000000] Squid_AT
+[Name 125] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 126] [0x0007001000000000] StaticMesh
+[Name 127] [0x0007001000000000] Strength
+[Name 128] [0x0007001000000000] StrengthTarget
+[Name 129] [0x0007001000000000] StructProperty
+[Name 130] [0x0007001000000000] TAGame
+[Name 131] [0x0007001000000000] tentacle_a_01
+[Name 132] [0x0007001000000000] tentacle_a_02
+[Name 133] [0x0007001000000000] tentacle_a_03
+[Name 134] [0x0007001000000000] tentacle_a_04
+[Name 135] [0x0007001000000000] tentacle_a_05
+[Name 136] [0x0007001000000000] tentacle_b_01
+[Name 137] [0x0007001000000000] tentacle_b_02
+[Name 138] [0x0007001000000000] tentacle_b_03
+[Name 139] [0x0007001000000000] tentacle_c_01
+[Name 140] [0x0007001000000000] tentacle_c_02
+[Name 141] [0x0007001000000000] tentacle_c_03
+[Name 142] [0x0007001000000000] tentacle_c_04
+[Name 143] [0x0007001000000000] Texture2D
+[Name 144] [0x0007001000000000] TextureFileCacheName
+[Name 145] [0x0007001000000000] Textures5
+[Name 146] [0x0007001000000000] ThumbnailCameraTranslationOffset
+[Name 147] [0x0007001000000000] Translation
+[Name 148] [0x0007001000000000] TriangleSortAxis
+[Name 149] [0x0007001000000000] TriangleSorting
+[Name 150] [0x0007001000000000] TriangleSortOption
+[Name 151] [0x0007001000000000] TriangleSortSettings
+[Name 152] [0x0007001000000000] TRISORT_None
+[Name 153] [0x0007001000000000] TSA_X_Axis
+[Name 154] [0x0007001000000000] Vector
+[Name 155] [0x0007001000000000] VectorMaterialInput
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAnimTree hat_octo.hat_octo.Squid_AT
 	Name: Squid_AT
-	Class: AnimTree
-	Outer: Package hat_octo
+	Class: UAnimTree
+	Outer: hat_octo
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001857 with 0x00000628 Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UAntennaComponent_TA hat_octo.hat_octo.hat_octo.AntennaComponent_TA_0
 	Name: AntennaComponent_TA_0
-	Class: AntennaComponent_TA
-	Outer: ProductAsset_Attachment_TA hat_octo
+	Class: UAntennaComponent_TA
+	Outer: hat_octo
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001e7f with 0x00000048 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterial hat_octo.hat_octo.Octo_Hat_Mat
 	Name: Octo_Hat_Mat
-	Class: Material
-	Outer: Package hat_octo
+	Class: UMaterial
+	Outer: hat_octo
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000001ec7 with 0x00000375 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterialExpressionVectorParameter hat_octo.hat_octo.Octo_Hat_Mat.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Octo_Hat_Mat
+	Class: UMaterialExpressionVectorParameter
+	Outer: Octo_Hat_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000223c with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UObjectReferencer hat_octo.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x00000000000022e4 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[5]
+[Export 5]
+	Full Name: UPackage hat_octo.hat_octo
 	Name: hat_octo
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002310 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[6]
+[Export 6]
+	Full Name: UPackage hat_octo.hat_octo_SF
 	Name: hat_octo_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000231c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[7]
+[Export 7]
+	Full Name: UProductAsset_Attachment_TA hat_octo.hat_octo.hat_octo
 	Name: hat_octo
-	Class: ProductAsset_Attachment_TA
-	Outer: Package hat_octo
+	Class: UProductAsset_Attachment_TA
+	Outer: hat_octo
 	Archetype: ProductAsset_Attachment_TA_2
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002328 with 0x000001f4 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: USimpleSpringComponent_TA hat_octo.hat_octo.Squid_AT.SkelControlRotationSpring_TA_0.SimpleSpringComponent_TA_0
 	Name: SimpleSpringComponent_TA_0
-	Class: SimpleSpringComponent_TA
-	Outer: SkelControlRotationSpring_TA SkelControlRotationSpring_TA_0
+	Class: USimpleSpringComponent_TA
+	Outer: SkelControlRotationSpring_TA_0
 	Archetype: DefaultSpring
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x000000000000251c with 0x000000d8 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: USimpleSpringComponent_TA hat_octo.hat_octo.Squid_AT.SkelControlRotationSpring_TA_1.SimpleSpringComponent_TA_0
 	Name: SimpleSpringComponent_TA_0
-	Class: SimpleSpringComponent_TA
-	Outer: SkelControlRotationSpring_TA SkelControlRotationSpring_TA_1
+	Class: USimpleSpringComponent_TA
+	Outer: SkelControlRotationSpring_TA_1
 	Archetype: DefaultSpring
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x00000000000025f4 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: USimpleSpringComponent_TA hat_octo.hat_octo.Squid_AT.SkelControlRotationSpring_TA_2.SimpleSpringComponent_TA_0
 	Name: SimpleSpringComponent_TA_0
-	Class: SimpleSpringComponent_TA
-	Outer: SkelControlRotationSpring_TA SkelControlRotationSpring_TA_2
+	Class: USimpleSpringComponent_TA
+	Outer: SkelControlRotationSpring_TA_2
 	Archetype: DefaultSpring
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x00000000000026cc with 0x000000d8 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: USimpleSpringComponent_TA hat_octo.hat_octo.Squid_AT.SkelControlRotationSpring_TA_3.SimpleSpringComponent_TA_0
 	Name: SimpleSpringComponent_TA_0
-	Class: SimpleSpringComponent_TA
-	Outer: SkelControlRotationSpring_TA SkelControlRotationSpring_TA_3
+	Class: USimpleSpringComponent_TA
+	Outer: SkelControlRotationSpring_TA_3
 	Archetype: DefaultSpring
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x00000000000027a4 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: USkelControlRotationSpring_TA hat_octo.hat_octo.Squid_AT.SkelControlRotationSpring_TA_0
 	Name: SkelControlRotationSpring_TA_0
-	Class: SkelControlRotationSpring_TA
-	Outer: AnimTree Squid_AT
+	Class: USkelControlRotationSpring_TA
+	Outer: Squid_AT
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x000000000000287c with 0x000001b0 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: USkelControlRotationSpring_TA hat_octo.hat_octo.Squid_AT.SkelControlRotationSpring_TA_1
 	Name: SkelControlRotationSpring_TA_1
-	Class: SkelControlRotationSpring_TA
-	Outer: AnimTree Squid_AT
+	Class: USkelControlRotationSpring_TA
+	Outer: Squid_AT
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000002a2c with 0x000001b0 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: USkelControlRotationSpring_TA hat_octo.hat_octo.Squid_AT.SkelControlRotationSpring_TA_2
 	Name: SkelControlRotationSpring_TA_2
-	Class: SkelControlRotationSpring_TA
-	Outer: AnimTree Squid_AT
+	Class: USkelControlRotationSpring_TA
+	Outer: Squid_AT
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000002bdc with 0x000001b0 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: USkelControlRotationSpring_TA hat_octo.hat_octo.Squid_AT.SkelControlRotationSpring_TA_3
 	Name: SkelControlRotationSpring_TA_3
-	Class: SkelControlRotationSpring_TA
-	Outer: AnimTree Squid_AT
+	Class: USkelControlRotationSpring_TA
+	Outer: Squid_AT
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000002d8c with 0x000001b0 Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: USkelControlSingleBone hat_octo.hat_octo.Squid_AT.SkelControlSingleBone_8
 	Name: SkelControlSingleBone_8
-	Class: SkelControlSingleBone
-	Outer: AnimTree Squid_AT
+	Class: USkelControlSingleBone
+	Outer: Squid_AT
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000002f3c with 0x000000ff Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: USkeletalMesh hat_octo.hat_octo.Hat_Squid_SK
 	Name: Hat_Squid_SK
-	Class: SkeletalMesh
-	Outer: Package hat_octo
+	Class: USkeletalMesh
+	Outer: hat_octo
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x000000000000303b with 0x000480e3 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UTexture2D hat_octo.hat_octo.Hat_Octo_NM
 	Name: Hat_Octo_NM
-	Class: Texture2D
-	Outer: Package hat_octo
+	Class: UTexture2D
+	Outer: hat_octo
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000004d5f6 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UTexture2D hat_octo.hat_octo.Hat_Squid_Diff
 	Name: Hat_Squid_Diff
-	Class: Texture2D
-	Outer: Package hat_octo
+	Class: UTexture2D
+	Outer: hat_octo
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000004be2e with 0x000017c8 Bytes
 	Export Flags: 0x00000001
@@ -379,99 +400,119 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.AnimTree
 	Name: AnimTree
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialExpressionVectorParameter
 	Name: MaterialExpressionVectorParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.SkelControlSingleBone
 	Name: SkelControlSingleBone
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.SkeletalMesh
 	Name: SkeletalMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass TAGame.AntennaComponent_TA
 	Name: AntennaComponent_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[9]
+	Class Package: Core
+	Outer: TAGame
+[Import 9]
+	Full Name: UClass TAGame.ProductAsset_Attachment_TA
 	Name: ProductAsset_Attachment_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[10]
+	Class Package: Core
+	Outer: TAGame
+[Import 10]
+	Full Name: UClass TAGame.SimpleSpringComponent_TA
 	Name: SimpleSpringComponent_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[11]
+	Class Package: Core
+	Outer: TAGame
+[Import 11]
+	Full Name: UClass TAGame.SkelControlRotationSpring_TA
 	Name: SkelControlRotationSpring_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[12]
+	Class Package: Core
+	Outer: TAGame
+[Import 12]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[13]
+	Class Package: Core
+[Import 13]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[14]
+	Class Package: Core
+[Import 14]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[15]
+	Class Package: Core
+[Import 15]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UProductAsset_Attachment_TA ProductSlots.Hat.ProductAsset_Attachment_TA_2
 	Name: ProductAsset_Attachment_TA_2
 	Class: ProductAsset_Attachment_TA
-	Package: TAGame
-	Outer: ProductSlot_TA Hat
-[17]
+	Class Package: TAGame
+	Outer: Hat
+[Import 17]
+	Full Name: UProductSlot_TA ProductSlots.Hat
 	Name: Hat
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
-[18]
+	Class Package: TAGame
+	Outer: ProductSlots
+[Import 18]
+	Full Name: USimpleSpringComponent_TA TAGame.Default__SkelControlRotationSpring_TA.DefaultSpring
 	Name: DefaultSpring
 	Class: SimpleSpringComponent_TA
-	Package: TAGame
-	Outer: SkelControlRotationSpring_TA Default__SkelControlRotationSpring_TA
-[19]
+	Class Package: TAGame
+	Outer: Default__SkelControlRotationSpring_TA
+[Import 19]
+	Full Name: USkelControlRotationSpring_TA TAGame.Default__SkelControlRotationSpring_TA
 	Name: Default__SkelControlRotationSpring_TA
 	Class: SkelControlRotationSpring_TA
-	Package: TAGame
-	Outer: Package TAGame
+	Class Package: TAGame
+	Outer: TAGame

@@ -68,6 +68,7 @@ Test Data Size: 0x00003798
 Compressed Chunk Info Offset: 0x00001594
 Last Block Size: 0x00000000
 Base Header Size: 0x000000f5
+Encrypted Header Size: 0x000050f0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -75,392 +76,190 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] BoolProperty
-[2] ByteProperty
-[3] Class
-[4] Core
-[5] Engine
-[6] EPixelFormat
-[7] FlashTextureRescale
-[8] FlashTextureScale_Mult4
-[9] Format
-[10] GFX_Shared_Logos
-[11] GFX_Shared_Logos_SF
-[12] GFxUI
-[13] IntProperty
-[14] LODGroup
-[15] Logo_PsyonixSmall
-[16] Logo_RocketLeague
-[17] Logo_RocketLeague_JPN
-[18] Logo_Season_10_DEU
-[19] Logo_Season_10_DUT
-[20] Logo_Season_10_ESN
-[21] Logo_Season_10_FRA
-[22] Logo_Season_10_INT
-[23] Logo_Season_10_ITA
-[24] Logo_Season_10_JPN
-[25] Logo_Season_10_KOR
-[26] Logo_Season_10_POL
-[27] Logo_Season_10_PTB
-[28] Logo_Season_10_RUS
-[29] Logo_Season_10_TRK
-[30] Logo_Season_9_DEU
-[31] Logo_Season_9_DUT
-[32] Logo_Season_9_ESN
-[33] Logo_Season_9_FRA
-[34] Logo_Season_9_INT
-[35] Logo_Season_9_ITA
-[36] Logo_Season_9_JPN
-[37] Logo_Season_9_KOR
-[38] Logo_Season_9_POL
-[39] Logo_Season_9_PTB
-[40] Logo_Season_9_RUS
-[41] Logo_Season_9_TRK
-[42] Logos
-[43] MipTailBaseIdx
-[44] NameProperty
-[45] None
-[46] ObjectReferencer
-[47] OriginalSizeX
-[48] OriginalSizeY
-[49] Package
-[50] PackTextureSize
-[51] PF_DXT5
-[52] RawData
-[53] ReferencedObjects
-[54] References
-[55] SizeX
-[56] SizeY
-[57] SourceFile
-[58] SourceFileCRC
-[59] SourceFileTimestamp
-[60] SRGB
-[61] StandaloneSeekFreeReferencer
-[62] StrProperty
-[63] SwfMovie
-[64] Texture2D
-[65] TextureFileCacheName
-[66] TextureFormat
-[67] TextureGroup
-[68] TEXTUREGROUP_UI
-[69] TextureRescale
-[70] Textures6
-[71] Logo_Season_11_DEU
-[72] Logo_Season_11_DUT
-[73] Logo_Season_11_ESN
-[74] Logo_Season_11_FRA
-[75] Logo_Season_11_INT
-[76] Logo_Season_11_ITA
-[77] Logo_Season_11_JPN
-[78] Logo_Season_11_KOR
-[79] Logo_Season_11_POL
-[80] Logo_Season_11_PTB
-[81] Logo_Season_11_RUS
-[82] Logo_Season_11_TRK
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] BoolProperty
+[Name 2] [0x0007001000000000] ByteProperty
+[Name 3] [0x0007001000000000] Class
+[Name 4] [0x0007001000000000] Core
+[Name 5] [0x0007001000000000] Engine
+[Name 6] [0x0007001000000000] EPixelFormat
+[Name 7] [0x0007001000000000] FlashTextureRescale
+[Name 8] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 9] [0x0007001000000000] Format
+[Name 10] [0x0007001000000000] GFX_Shared_Logos
+[Name 11] [0x0007001000000000] GFX_Shared_Logos_SF
+[Name 12] [0x0007001000000000] GFxUI
+[Name 13] [0x0007001000000000] IntProperty
+[Name 14] [0x0007001000000000] LODGroup
+[Name 15] [0x0007001000000000] Logo_PsyonixSmall
+[Name 16] [0x0007001000000000] Logo_RocketLeague
+[Name 17] [0x0007001000000000] Logo_RocketLeague_JPN
+[Name 18] [0x0007000000000000] Logo_Season_10_DEU
+[Name 19] [0x0007000000000000] Logo_Season_10_DUT
+[Name 20] [0x0007000000000000] Logo_Season_10_ESN
+[Name 21] [0x0007000000000000] Logo_Season_10_FRA
+[Name 22] [0x0007000000000000] Logo_Season_10_INT
+[Name 23] [0x0007000000000000] Logo_Season_10_ITA
+[Name 24] [0x0007000000000000] Logo_Season_10_JPN
+[Name 25] [0x0007000000000000] Logo_Season_10_KOR
+[Name 26] [0x0007000000000000] Logo_Season_10_POL
+[Name 27] [0x0007000000000000] Logo_Season_10_PTB
+[Name 28] [0x0007000000000000] Logo_Season_10_RUS
+[Name 29] [0x0007000000000000] Logo_Season_10_TRK
+[Name 30] [0x0007000000000000] Logo_Season_9_DEU
+[Name 31] [0x0007000000000000] Logo_Season_9_DUT
+[Name 32] [0x0007000000000000] Logo_Season_9_ESN
+[Name 33] [0x0007000000000000] Logo_Season_9_FRA
+[Name 34] [0x0007000000000000] Logo_Season_9_INT
+[Name 35] [0x0007000000000000] Logo_Season_9_ITA
+[Name 36] [0x0007000000000000] Logo_Season_9_JPN
+[Name 37] [0x0007000000000000] Logo_Season_9_KOR
+[Name 38] [0x0007000000000000] Logo_Season_9_POL
+[Name 39] [0x0007000000000000] Logo_Season_9_PTB
+[Name 40] [0x0007000000000000] Logo_Season_9_RUS
+[Name 41] [0x0007000000000000] Logo_Season_9_TRK
+[Name 42] [0x0007001000000000] Logos
+[Name 43] [0x0007001000000000] MipTailBaseIdx
+[Name 44] [0x0007001000000000] NameProperty
+[Name 45] [0x0007001000000000] None
+[Name 46] [0x0007001000000000] ObjectReferencer
+[Name 47] [0x0007001000000000] OriginalSizeX
+[Name 48] [0x0007001000000000] OriginalSizeY
+[Name 49] [0x0007001000000000] Package
+[Name 50] [0x0007001000000000] PackTextureSize
+[Name 51] [0x0007001000000000] PF_DXT5
+[Name 52] [0x0007001000000000] RawData
+[Name 53] [0x0007001000000000] ReferencedObjects
+[Name 54] [0x0007001000000000] References
+[Name 55] [0x0007001000000000] SizeX
+[Name 56] [0x0007001000000000] SizeY
+[Name 57] [0x0007001000000000] SourceFile
+[Name 58] [0x0007001000000000] SourceFileCRC
+[Name 59] [0x0007001000000000] SourceFileTimestamp
+[Name 60] [0x0007001000000000] SRGB
+[Name 61] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 62] [0x0007001000000000] StrProperty
+[Name 63] [0x0007001000000000] SwfMovie
+[Name 64] [0x0007001000000000] Texture2D
+[Name 65] [0x0007001000000000] TextureFileCacheName
+[Name 66] [0x0007001000000000] TextureFormat
+[Name 67] [0x0007001000000000] TextureGroup
+[Name 68] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 69] [0x0007001000000000] TextureRescale
+[Name 70] [0x0007001000000000] Textures6
+[Name 71] [0x0007000000000000] Logo_Season_11_DEU
+[Name 72] [0x0007000000000000] Logo_Season_11_DUT
+[Name 73] [0x0007000000000000] Logo_Season_11_ESN
+[Name 74] [0x0007000000000000] Logo_Season_11_FRA
+[Name 75] [0x0007000000000000] Logo_Season_11_INT
+[Name 76] [0x0007000000000000] Logo_Season_11_ITA
+[Name 77] [0x0007000000000000] Logo_Season_11_JPN
+[Name 78] [0x0007000000000000] Logo_Season_11_KOR
+[Name 79] [0x0007000000000000] Logo_Season_11_POL
+[Name 80] [0x0007000000000000] Logo_Season_11_PTB
+[Name 81] [0x0007000000000000] Logo_Season_11_RUS
+[Name 82] [0x0007000000000000] Logo_Season_11_TRK
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UObjectReferencer GFX_Shared_Logos.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x000000000250c78b with 0x00000038 Bytes
 	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UPackage GFX_Shared_Logos.GFX_Shared_Logos
 	Name: GFX_Shared_Logos
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001721 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[2]
+[Export 2]
+	Full Name: UPackage GFX_Shared_Logos.GFX_Shared_Logos_SF
 	Name: GFX_Shared_Logos_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000172d with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[3]
+[Export 3]
+	Full Name: USwfMovie GFX_Shared_Logos.GFX_Shared_Logos.Logos
 	Name: Logos
-	Class: SwfMovie
-	Outer: Package GFX_Shared_Logos
+	Class: USwfMovie
+	Outer: GFX_Shared_Logos
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000250c7c3 with 0x00000421 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UTexture2D GFX_Shared_Logos.GFX_Shared_Logos.Logo_PsyonixSmall
 	Name: Logo_PsyonixSmall
-	Class: Texture2D
-	Outer: Package GFX_Shared_Logos
+	Class: UTexture2D
+	Outer: GFX_Shared_Logos
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002d12 with 0x00002179 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UTexture2D GFX_Shared_Logos.GFX_Shared_Logos.Logo_RocketLeague_JPN
 	Name: Logo_RocketLeague_JPN
-	Class: Texture2D
-	Outer: Package GFX_Shared_Logos
+	Class: UTexture2D
+	Outer: GFX_Shared_Logos
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000250cbe4 with 0x00100179 Bytes
 	Export Flags: 0x00000001
-[6]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[7]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[8]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[9]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[10]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[11]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[12]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[13]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[14]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[15]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[16]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[17]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[18]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[19]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[20]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[21]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[22]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[23]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[24]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[25]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[26]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[27]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[28]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[29]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[30]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[31]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[32]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[33]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[34]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[35]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[36]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[37]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[38]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[39]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[40]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[41]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
 
 
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[4]
+	Class Package: Core
+	Outer: GFxUI
+[Import 4]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[5]
+	Class Package: Core
+[Import 5]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[6]
+	Class Package: Core
+[Import 6]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UTexture2D GFX_Shared_Logos.Logo_RocketLeague
 	Name: Logo_RocketLeague
 	Class: Texture2D
-	Package: Engine
-	Outer: Package GFX_Shared_Logos
+	Class Package: Engine
+	Outer: GFX_Shared_Logos

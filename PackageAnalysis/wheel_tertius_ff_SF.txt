@@ -80,6 +80,7 @@ Test Data Size: 0x00003fd8
 Compressed Chunk Info Offset: 0x000022d4
 Last Block Size: 0x00000008
 Base Header Size: 0x00000125
+Encrypted Header Size: 0x000062c0
 
 AES: bxCTHVIp6JhS3Ax+EO+UUStLRKBQgxDE/Nn3gYRpnjg=
 
@@ -87,538 +88,589 @@ AES: bxCTHVIp6JhS3Ax+EO+UUStLRKBQgxDE/Nn3gYRpnjg=
     ~ Names ~ 
 
 
-[0] A
-[1] AOLightBoost
-[2] AOPower
-[3] AOStrength
-[4] ArrayProperty
-[5] B
-[6] bHasQualitySwitch
-[7] bHasStaticPermutationResource
-[8] Black_Diffuse
-[9] BoolProperty
-[10] bPerPixelCameraVector
-[11] bReplicated
-[12] bUsedWithSkeletalMesh
-[13] bUsedWithStaticLighting
-[14] ByteProperty
-[15] Class
-[16] ColorMaterialInput
-[17] CompressionSettings
-[18] Core
-[19] Default__ProductAsset_Wheel_TA
-[20] DefaultGenerator
-[21] DefaultProduct_New
-[22] DefaultValue
-[23] Description
-[24] Detail_Matte
-[25] DetailScale
-[26] DiffuseColor
-[27] DiffusePower
-[28] Emissive
-[29] EmissiveColor
-[30] Engine
-[31] ENV_Brightness
-[32] EPixelFormat
-[33] Expression
-[34] ExpressionGUID
-[35] ExpressionInput
-[36] Expressions
-[37] FirstResourceMemMip
-[38] FloatProperty
-[39] Format
-[40] FrontRight
-[41] Generator
-[42] Grass_Textures
-[43] GrassCube
-[44] Group
-[45] Guid
-[46] Icon
-[47] IconLarge
-[48] Icons
-[49] IntProperty
-[50] Label
-[51] LightMapCoordinateIndex
-[52] LightMapResolution
-[53] LinearColor
-[54] LODGroup
-[55] Mask
-[56] MaskB
-[57] MaskG
-[58] MaskR
-[59] MAT_Wheel_TertiusMaster
-[60] Material
-[61] MaterialExpressionScalarParameter
-[62] MaterialExpressionStaticSwitchParameter
-[63] MaterialExpressionTextureSampleParameter2D
-[64] MaterialExpressionVectorParameter
-[65] MaterialInstanceConstant
-[66] Materials
-[67] Matte_N
-[68] MIC_wheel_tertius_ff
-[69] MipTailBaseIdx
-[70] NameProperty
-[71] None
-[72] Normal
-[73] ObjectProperty
-[74] ObjectReferencer
-[75] OnlineLabel
-[76] OriginalSizeX
-[77] OriginalSizeY
-[78] OutputIndex
-[79] Package
-[80] Paint
-[81] Paint Boost
-[82] PaintColor
-[83] Painted
-[84] PaintSpecIntensity
-[85] ParameterName
-[86] ParameterValue
-[87] Parent
-[88] ParentLightingGuid
-[89] PF_DXT1
-[90] PF_DXT5
-[91] PluralLabel
-[92] PrevGenerator
-[93] Product_TA
-[94] ProductAsset_Wheel_TA
-[95] Products
-[96] ProductsDB
-[97] ProductSlot_TA
-[98] ProductSlots
-[99] ReferencedObjects
-[100] ReflectionBrightness
-[101] Rim_Emissive
-[102] Rim_Paint_RGB
-[103] RimColor
-[104] RimDiffuse
-[105] RimNormal
-[106] Rotator
-[107] ScalarMaterialInput
-[108] ScalarParameterValues
-[109] Scale3D
-[110] SizeX
-[111] SizeY
-[112] SpecIntensity
-[113] SpecPower
-[114] SpecularColor
-[115] SpecularPower
-[116] SRGB
-[117] StandaloneSeekFreeReferencer
-[118] StaticMesh
-[119] StrProperty
-[120] StructProperty
-[121] TAGame
-[122] TC_NormalmapSwizzle
-[123] Texture
-[124] Texture2D
-[125] TextureCompressionSettings
-[126] TextureFileCacheName
-[127] TextureGroup
-[128] TEXTUREGROUP_WorldNormalMap
-[129] TextureParameterValues
-[130] TextureRenderTargetCube
-[131] Textures
-[132] Textures2
-[133] Textures5
-[134] ThumbnailCameraRotationOffset
-[135] ThumbnailProductRotation
-[136] ThumbnailRenderer
-[137] ThumbnailRenderer_TA
-[138] ThumbnailRenderers
-[139] Tire_Emissive
-[140] Tire_Paint_RGB
-[141] TireColor
-[142] TireDiffuse
-[143] TireNormal
-[144] UnpackMin
-[145] UseTireColor
-[146] Vector
-[147] VectorMaterialInput
-[148] VectorParameterValues
-[149] wheel_Ferris
-[150] Wheel_Renderer
-[151] WHEEL_Star
-[152] wheel_tertius
-[153] Wheel_Tertius_2_N
-[154] Wheel_Tertius_D
-[155] Wheel_Tertius_E
-[156] wheel_tertius_ff
-[157] Wheel_Tertius_ff_D
-[158] wheel_tertius_ff_SF
-[159] Wheel_Tertius_ff_SM
-[160] Wheel_Tertius_N
-[161] Wheel_Tertius_Painted_D
-[162] Wheel_Tertius_Painted_RGB
-[163] WheelAssetGenerator_1Wheel_TA
-[164] WheelAssetSettings_TA
-[165] Wheels
+[Name 0] [0x0007001000000000] A
+[Name 1] [0x0007001000000000] AOLightBoost
+[Name 2] [0x0007001000000000] AOPower
+[Name 3] [0x0007001000000000] AOStrength
+[Name 4] [0x0007001000000000] ArrayProperty
+[Name 5] [0x0007001000000000] B
+[Name 6] [0x0007001000000000] bHasQualitySwitch
+[Name 7] [0x0007001000000000] bHasStaticPermutationResource
+[Name 8] [0x0007001000000000] Black_Diffuse
+[Name 9] [0x0007001000000000] BoolProperty
+[Name 10] [0x0007001000000000] bPerPixelCameraVector
+[Name 11] [0x0007001000000000] bReplicated
+[Name 12] [0x0007001000000000] bUsedWithSkeletalMesh
+[Name 13] [0x0007001000000000] bUsedWithStaticLighting
+[Name 14] [0x0007001000000000] ByteProperty
+[Name 15] [0x0007001000000000] Class
+[Name 16] [0x0007001000000000] ColorMaterialInput
+[Name 17] [0x0007001000000000] CompressionSettings
+[Name 18] [0x0007001000000000] Core
+[Name 19] [0x0007001000000000] Default__ProductAsset_Wheel_TA
+[Name 20] [0x0007001000000000] DefaultGenerator
+[Name 21] [0x0007001000000000] DefaultProduct_New
+[Name 22] [0x0007001000000000] DefaultValue
+[Name 23] [0x0007001000000000] Description
+[Name 24] [0x0007001000000000] Detail_Matte
+[Name 25] [0x0007001000000000] DetailScale
+[Name 26] [0x0007001000000000] DiffuseColor
+[Name 27] [0x0007001000000000] DiffusePower
+[Name 28] [0x0007001000000000] Emissive
+[Name 29] [0x0007001000000000] EmissiveColor
+[Name 30] [0x0007001000000000] Engine
+[Name 31] [0x0007001000000000] ENV_Brightness
+[Name 32] [0x0007001000000000] EPixelFormat
+[Name 33] [0x0007001000000000] Expression
+[Name 34] [0x0007001000000000] ExpressionGUID
+[Name 35] [0x0007001000000000] ExpressionInput
+[Name 36] [0x0007001000000000] Expressions
+[Name 37] [0x0007001000000000] FirstResourceMemMip
+[Name 38] [0x0007001000000000] FloatProperty
+[Name 39] [0x0007001000000000] Format
+[Name 40] [0x0007001000000000] FrontRight
+[Name 41] [0x0007001000000000] Generator
+[Name 42] [0x0007001000000000] Grass_Textures
+[Name 43] [0x0007001000000000] GrassCube
+[Name 44] [0x0007001000000000] Group
+[Name 45] [0x0007001000000000] Guid
+[Name 46] [0x0007001000000000] Icon
+[Name 47] [0x0007001000000000] IconLarge
+[Name 48] [0x0007001000000000] Icons
+[Name 49] [0x0007001000000000] IntProperty
+[Name 50] [0x0007001000000000] Label
+[Name 51] [0x0007001000000000] LightMapCoordinateIndex
+[Name 52] [0x0007001000000000] LightMapResolution
+[Name 53] [0x0007001000000000] LinearColor
+[Name 54] [0x0007001000000000] LODGroup
+[Name 55] [0x0007001000000000] Mask
+[Name 56] [0x0007001000000000] MaskB
+[Name 57] [0x0007001000000000] MaskG
+[Name 58] [0x0007001000000000] MaskR
+[Name 59] [0x0007001000000000] MAT_Wheel_TertiusMaster
+[Name 60] [0x0007001000000000] Material
+[Name 61] [0x0007001000000000] MaterialExpressionScalarParameter
+[Name 62] [0x0007001000000000] MaterialExpressionStaticSwitchParameter
+[Name 63] [0x0007001000000000] MaterialExpressionTextureSampleParameter2D
+[Name 64] [0x0007001000000000] MaterialExpressionVectorParameter
+[Name 65] [0x0007001000000000] MaterialInstanceConstant
+[Name 66] [0x0007001000000000] Materials
+[Name 67] [0x0007001000000000] Matte_N
+[Name 68] [0x0007001000000000] MIC_wheel_tertius_ff
+[Name 69] [0x0007001000000000] MipTailBaseIdx
+[Name 70] [0x0007001000000000] NameProperty
+[Name 71] [0x0007001000000000] None
+[Name 72] [0x0007001000000000] Normal
+[Name 73] [0x0007001000000000] ObjectProperty
+[Name 74] [0x0007001000000000] ObjectReferencer
+[Name 75] [0x0007001000000000] OnlineLabel
+[Name 76] [0x0007001000000000] OriginalSizeX
+[Name 77] [0x0007001000000000] OriginalSizeY
+[Name 78] [0x0007001000000000] OutputIndex
+[Name 79] [0x0007001000000000] Package
+[Name 80] [0x0007001000000000] Paint
+[Name 81] [0x0007001000000000] Paint Boost
+[Name 82] [0x0007001000000000] PaintColor
+[Name 83] [0x0007001000000000] Painted
+[Name 84] [0x0007001000000000] PaintSpecIntensity
+[Name 85] [0x0007001000000000] ParameterName
+[Name 86] [0x0007001000000000] ParameterValue
+[Name 87] [0x0007001000000000] Parent
+[Name 88] [0x0007001000000000] ParentLightingGuid
+[Name 89] [0x0007001000000000] PF_DXT1
+[Name 90] [0x0007001000000000] PF_DXT5
+[Name 91] [0x0007001000000000] PluralLabel
+[Name 92] [0x0007001000000000] PrevGenerator
+[Name 93] [0x0007001000000000] Product_TA
+[Name 94] [0x0007001000000000] ProductAsset_Wheel_TA
+[Name 95] [0x0007001000000000] Products
+[Name 96] [0x0007001000000000] ProductsDB
+[Name 97] [0x0007001000000000] ProductSlot_TA
+[Name 98] [0x0007001000000000] ProductSlots
+[Name 99] [0x0007001000000000] ReferencedObjects
+[Name 100] [0x0007001000000000] ReflectionBrightness
+[Name 101] [0x0007001000000000] Rim_Emissive
+[Name 102] [0x0007001000000000] Rim_Paint_RGB
+[Name 103] [0x0007001000000000] RimColor
+[Name 104] [0x0007001000000000] RimDiffuse
+[Name 105] [0x0007001000000000] RimNormal
+[Name 106] [0x0007001000000000] Rotator
+[Name 107] [0x0007001000000000] ScalarMaterialInput
+[Name 108] [0x0007001000000000] ScalarParameterValues
+[Name 109] [0x0007001000000000] Scale3D
+[Name 110] [0x0007001000000000] SizeX
+[Name 111] [0x0007001000000000] SizeY
+[Name 112] [0x0007001000000000] SpecIntensity
+[Name 113] [0x0007001000000000] SpecPower
+[Name 114] [0x0007001000000000] SpecularColor
+[Name 115] [0x0007001000000000] SpecularPower
+[Name 116] [0x0007001000000000] SRGB
+[Name 117] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 118] [0x0007001000000000] StaticMesh
+[Name 119] [0x0007001000000000] StrProperty
+[Name 120] [0x0007001000000000] StructProperty
+[Name 121] [0x0007001000000000] TAGame
+[Name 122] [0x0007001000000000] TC_NormalmapSwizzle
+[Name 123] [0x0007001000000000] Texture
+[Name 124] [0x0007001000000000] Texture2D
+[Name 125] [0x0007001000000000] TextureCompressionSettings
+[Name 126] [0x0007001000000000] TextureFileCacheName
+[Name 127] [0x0007001000000000] TextureGroup
+[Name 128] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 129] [0x0007001000000000] TextureParameterValues
+[Name 130] [0x0007001000000000] TextureRenderTargetCube
+[Name 131] [0x0007001000000000] Textures
+[Name 132] [0x0007001000000000] Textures2
+[Name 133] [0x0007001000000000] Textures5
+[Name 134] [0x0007001000000000] ThumbnailCameraRotationOffset
+[Name 135] [0x0007001000000000] ThumbnailProductRotation
+[Name 136] [0x0007001000000000] ThumbnailRenderer
+[Name 137] [0x0007001000000000] ThumbnailRenderer_TA
+[Name 138] [0x0007001000000000] ThumbnailRenderers
+[Name 139] [0x0007001000000000] Tire_Emissive
+[Name 140] [0x0007001000000000] Tire_Paint_RGB
+[Name 141] [0x0007001000000000] TireColor
+[Name 142] [0x0007001000000000] TireDiffuse
+[Name 143] [0x0007001000000000] TireNormal
+[Name 144] [0x0007001000000000] UnpackMin
+[Name 145] [0x0007001000000000] UseTireColor
+[Name 146] [0x0007001000000000] Vector
+[Name 147] [0x0007001000000000] VectorMaterialInput
+[Name 148] [0x0007001000000000] VectorParameterValues
+[Name 149] [0x0007001000000000] wheel_Ferris
+[Name 150] [0x0007001000000000] Wheel_Renderer
+[Name 151] [0x0007001000000000] WHEEL_Star
+[Name 152] [0x0007001000000000] wheel_tertius
+[Name 153] [0x0007001000000000] Wheel_Tertius_2_N
+[Name 154] [0x0007001000000000] Wheel_Tertius_D
+[Name 155] [0x0007001000000000] Wheel_Tertius_E
+[Name 156] [0x0007001000000000] wheel_tertius_ff
+[Name 157] [0x0007001000000000] Wheel_Tertius_ff_D
+[Name 158] [0x0007001000000000] wheel_tertius_ff_SF
+[Name 159] [0x0007001000000000] Wheel_Tertius_ff_SM
+[Name 160] [0x0007001000000000] Wheel_Tertius_N
+[Name 161] [0x0007001000000000] Wheel_Tertius_Painted_D
+[Name 162] [0x0007001000000000] Wheel_Tertius_Painted_RGB
+[Name 163] [0x0007001000000000] WheelAssetGenerator_1Wheel_TA
+[Name 164] [0x0007001000000000] WheelAssetSettings_TA
+[Name 165] [0x0007001000000000] Wheels
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UMaterial wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster
 	Name: MAT_Wheel_TertiusMaster
-	Class: Material
-	Outer: Package Materials
+	Class: UMaterial
+	Outer: Materials
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000023f9 with 0x0000059c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterialExpressionScalarParameter wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionScalarParameter_0
 	Name: MaterialExpressionScalarParameter_0
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002995 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterialExpressionScalarParameter wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002a29 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterialExpressionScalarParameter wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionScalarParameter_11
 	Name: MaterialExpressionScalarParameter_11
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002abd with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UMaterialExpressionScalarParameter wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionScalarParameter_12
 	Name: MaterialExpressionScalarParameter_12
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002b51 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UMaterialExpressionScalarParameter wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionScalarParameter_14
 	Name: MaterialExpressionScalarParameter_14
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002be5 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UMaterialExpressionScalarParameter wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002c79 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UMaterialExpressionScalarParameter wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionScalarParameter_3
 	Name: MaterialExpressionScalarParameter_3
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002d0d with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UMaterialExpressionScalarParameter wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionScalarParameter_4
 	Name: MaterialExpressionScalarParameter_4
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002dc1 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UMaterialExpressionScalarParameter wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionScalarParameter_5
 	Name: MaterialExpressionScalarParameter_5
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002e55 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UMaterialExpressionScalarParameter wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionScalarParameter_6
 	Name: MaterialExpressionScalarParameter_6
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002f09 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UMaterialExpressionScalarParameter wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionScalarParameter_7
 	Name: MaterialExpressionScalarParameter_7
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002fbd with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UMaterialExpressionScalarParameter wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionScalarParameter_8
 	Name: MaterialExpressionScalarParameter_8
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003071 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UMaterialExpressionScalarParameter wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionScalarParameter_9
 	Name: MaterialExpressionScalarParameter_9
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003105 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UMaterialExpressionStaticSwitchParameter wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionStaticSwitchParameter_0
 	Name: MaterialExpressionStaticSwitchParameter_0
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003199 with 0x00000119 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UMaterialExpressionStaticSwitchParameter wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionStaticSwitchParameter_1
 	Name: MaterialExpressionStaticSwitchParameter_1
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000032b2 with 0x000001e0 Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UMaterialExpressionTextureSampleParameter2D wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionTextureSampleParameter2D_0
 	Name: MaterialExpressionTextureSampleParameter2D_0
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003492 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UMaterialExpressionTextureSampleParameter2D wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionTextureSampleParameter2D_1
 	Name: MaterialExpressionTextureSampleParameter2D_1
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003526 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UMaterialExpressionTextureSampleParameter2D wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionTextureSampleParameter2D_2
 	Name: MaterialExpressionTextureSampleParameter2D_2
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000035ba with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UMaterialExpressionTextureSampleParameter2D wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionTextureSampleParameter2D_4
 	Name: MaterialExpressionTextureSampleParameter2D_4
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000364e with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UMaterialExpressionTextureSampleParameter2D wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionTextureSampleParameter2D_5
 	Name: MaterialExpressionTextureSampleParameter2D_5
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003702 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UMaterialExpressionTextureSampleParameter2D wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionTextureSampleParameter2D_6
 	Name: MaterialExpressionTextureSampleParameter2D_6
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003796 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UMaterialExpressionTextureSampleParameter2D wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionTextureSampleParameter2D_7
 	Name: MaterialExpressionTextureSampleParameter2D_7
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000384a with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UMaterialExpressionVectorParameter wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000038de with 0x000000c8 Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UMaterialExpressionVectorParameter wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionVectorParameter_2
 	Name: MaterialExpressionVectorParameter_2
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000039a6 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UMaterialExpressionVectorParameter wheel_tertius_ff.wheel_tertius.Materials.MAT_Wheel_TertiusMaster.MaterialExpressionVectorParameter_6
 	Name: MaterialExpressionVectorParameter_6
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Wheel_TertiusMaster
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Wheel_TertiusMaster
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003a4e with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UMaterialInstanceConstant wheel_tertius_ff.wheel_tertius_ff.MIC_wheel_tertius_ff
 	Name: MIC_wheel_tertius_ff
-	Class: MaterialInstanceConstant
-	Outer: Package wheel_tertius_ff
+	Class: UMaterialInstanceConstant
+	Outer: wheel_tertius_ff
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000003af6 with 0x00000ac2 Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UProductAsset_Wheel_TA wheel_tertius_ff.ProductSlots.Wheels.ProductAsset_Wheel_TA_0
 	Name: ProductAsset_Wheel_TA_0
-	Class: ProductAsset_Wheel_TA
-	Outer: ProductSlot_TA Wheels
+	Class: UProductAsset_Wheel_TA
+	Outer: Wheels
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000045b8 with 0x0000009c Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UObjectReferencer wheel_tertius_ff.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000004654 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[29]
+[Export 29]
+	Full Name: UPackage wheel_tertius_ff.ProductSlots
 	Name: ProductSlots
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004680 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[30]
+[Export 30]
+	Full Name: UPackage wheel_tertius_ff.wheel_Ferris
 	Name: wheel_Ferris
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000468c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[31]
+[Export 31]
+	Full Name: UPackage wheel_tertius_ff.wheel_Ferris.Textures
 	Name: Textures
-	Class: Package
-	Outer: Package wheel_Ferris
+	Class: UPackage
+	Outer: wheel_Ferris
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004698 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: UPackage wheel_tertius_ff.wheel_tertius
 	Name: wheel_tertius
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000046a4 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[33]
+[Export 33]
+	Full Name: UPackage wheel_tertius_ff.wheel_tertius.Materials
 	Name: Materials
-	Class: Package
-	Outer: Package wheel_tertius
+	Class: UPackage
+	Outer: wheel_tertius
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000046b0 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UPackage wheel_tertius_ff.wheel_tertius_ff
 	Name: wheel_tertius_ff
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000046bc with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[35]
+[Export 35]
+	Full Name: UPackage wheel_tertius_ff.wheel_tertius_ff_SF
 	Name: wheel_tertius_ff_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000046c8 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[36]
+[Export 36]
+	Full Name: UWheelAssetGenerator_1Wheel_TA wheel_tertius_ff.ProductSlots.Wheels.ProductAsset_Wheel_TA_0.WheelAssetGenerator_1Wheel_TA_1
 	Name: WheelAssetGenerator_1Wheel_TA_1
-	Class: WheelAssetGenerator_1Wheel_TA
-	Outer: ProductAsset_Wheel_TA ProductAsset_Wheel_TA_0
+	Class: UWheelAssetGenerator_1Wheel_TA
+	Outer: ProductAsset_Wheel_TA_0
 	Archetype: DefaultGenerator
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000046d4 with 0x00000010 Bytes
 	Export Flags: 0x00000001
-[37]
+[Export 37]
+	Full Name: UProductAsset_Wheel_TA wheel_tertius_ff.wheel_tertius_ff.wheel_tertius_ff
 	Name: wheel_tertius_ff
-	Class: ProductAsset_Wheel_TA
-	Outer: Package wheel_tertius_ff
+	Class: UProductAsset_Wheel_TA
+	Outer: wheel_tertius_ff
 	Archetype: ProductAsset_Wheel_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000046e4 with 0x00000044 Bytes
 	Export Flags: 0x00000001
-[38]
+[Export 38]
+	Full Name: UProductSlot_TA wheel_tertius_ff.ProductSlots.Wheels
 	Name: Wheels
-	Class: ProductSlot_TA
-	Outer: Package ProductSlots
+	Class: UProductSlot_TA
+	Outer: ProductSlots
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x0000000000004728 with 0x0000012b Bytes
 	Export Flags: 0x00000001
-[39]
+[Export 39]
+	Full Name: UStaticMesh wheel_tertius_ff.wheel_tertius_ff.Wheel_Tertius_ff_SM
 	Name: Wheel_Tertius_ff_SM
-	Class: StaticMesh
-	Outer: Package wheel_tertius_ff
+	Class: UStaticMesh
+	Outer: wheel_tertius_ff
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000004853 with 0x000443fd Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UTexture2D wheel_tertius_ff.wheel_Ferris.Textures.Black_Diffuse
 	Name: Black_Diffuse
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000048c50 with 0x0000070c Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UTexture2D wheel_tertius_ff.wheel_tertius.Wheel_Tertius_2_N
 	Name: Wheel_Tertius_2_N
-	Class: Texture2D
-	Outer: Package wheel_tertius
+	Class: UTexture2D
+	Outer: wheel_tertius
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000004935c with 0x00001885 Bytes
 	Export Flags: 0x00000001
-[42]
+[Export 42]
+	Full Name: UTexture2D wheel_tertius_ff.wheel_tertius.Wheel_Tertius_D
 	Name: Wheel_Tertius_D
-	Class: Texture2D
-	Outer: Package wheel_tertius
+	Class: UTexture2D
+	Outer: wheel_tertius
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000004abe1 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
-[43]
+[Export 43]
+	Full Name: UTexture2D wheel_tertius_ff.wheel_tertius.Wheel_Tertius_E
 	Name: Wheel_Tertius_E
-	Class: Texture2D
-	Outer: Package wheel_tertius
+	Class: UTexture2D
+	Outer: wheel_tertius
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000004c3a9 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
-[44]
+[Export 44]
+	Full Name: UTexture2D wheel_tertius_ff.wheel_tertius.Wheel_Tertius_N
 	Name: Wheel_Tertius_N
-	Class: Texture2D
-	Outer: Package wheel_tertius
+	Class: UTexture2D
+	Outer: wheel_tertius
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000004d0b9 with 0x00001885 Bytes
 	Export Flags: 0x00000001
-[45]
+[Export 45]
+	Full Name: UTexture2D wheel_tertius_ff.wheel_tertius.Wheel_Tertius_Painted_D
 	Name: Wheel_Tertius_Painted_D
-	Class: Texture2D
-	Outer: Package wheel_tertius
+	Class: UTexture2D
+	Outer: wheel_tertius
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000004e93e with 0x000017c8 Bytes
 	Export Flags: 0x00000001
-[46]
+[Export 46]
+	Full Name: UTexture2D wheel_tertius_ff.wheel_tertius.Wheel_Tertius_Painted_RGB
 	Name: Wheel_Tertius_Painted_RGB
-	Class: Texture2D
-	Outer: Package wheel_tertius
+	Class: UTexture2D
+	Outer: wheel_tertius
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000050106 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
-[47]
+[Export 47]
+	Full Name: UTexture2D wheel_tertius_ff.wheel_tertius_ff.Wheel_Tertius_ff_D
 	Name: Wheel_Tertius_ff_D
-	Class: Texture2D
-	Outer: Package wheel_tertius_ff
+	Class: UTexture2D
+	Outer: wheel_tertius_ff
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000518ce with 0x000017c8 Bytes
 	Export Flags: 0x00000001
-[48]
+[Export 48]
+	Full Name: UWheelAssetGenerator_1Wheel_TA wheel_tertius_ff.wheel_tertius_ff.wheel_tertius_ff.WheelAssetGenerator_1Wheel_TA_0
 	Name: WheelAssetGenerator_1Wheel_TA_0
-	Class: WheelAssetGenerator_1Wheel_TA
-	Outer: ProductAsset_Wheel_TA wheel_tertius_ff
+	Class: UWheelAssetGenerator_1Wheel_TA
+	Outer: wheel_tertius_ff
 	Archetype: WheelAssetGenerator_1Wheel_TA_1
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000053096 with 0x00000058 Bytes
 	Export Flags: 0x00000001
-[49]
+[Export 49]
+	Full Name: UWheelAssetSettings_TA wheel_tertius_ff.wheel_tertius_ff.wheel_tertius_ff.WheelAssetGenerator_1Wheel_TA_0.WheelAssetSettings_TA_1
 	Name: WheelAssetSettings_TA_1
-	Class: WheelAssetSettings_TA
-	Outer: WheelAssetGenerator_1Wheel_TA WheelAssetGenerator_1Wheel_TA_0
+	Class: UWheelAssetSettings_TA
+	Outer: WheelAssetGenerator_1Wheel_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000530ee with 0x0000002c Bytes
 	Export Flags: 0x00000001
-[50]
+[Export 50]
+	Full Name: UWheelAssetSettings_TA wheel_tertius_ff.wheel_tertius_ff.wheel_tertius_ff.WheelAssetGenerator_1Wheel_TA_0.WheelAssetSettings_TA_2
 	Name: WheelAssetSettings_TA_2
-	Class: WheelAssetSettings_TA
-	Outer: WheelAssetGenerator_1Wheel_TA WheelAssetGenerator_1Wheel_TA_0
+	Class: UWheelAssetSettings_TA
+	Outer: WheelAssetGenerator_1Wheel_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000005311a with 0x00000058 Bytes
 	Export Flags: 0x00000001
@@ -627,146 +679,176 @@ AES: bxCTHVIp6JhS3Ax+EO+UUStLRKBQgxDE/Nn3gYRpnjg=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialExpressionStaticSwitchParameter
 	Name: MaterialExpressionStaticSwitchParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.MaterialExpressionTextureSampleParameter2D
 	Name: MaterialExpressionTextureSampleParameter2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.MaterialExpressionVectorParameter
 	Name: MaterialExpressionVectorParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.StaticMesh
 	Name: StaticMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[10]
+	Class Package: Core
+	Outer: Engine
+[Import 10]
+	Full Name: UClass TAGame.ProductAsset_Wheel_TA
 	Name: ProductAsset_Wheel_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[11]
+	Class Package: Core
+	Outer: TAGame
+[Import 11]
+	Full Name: UClass TAGame.ProductSlot_TA
 	Name: ProductSlot_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[12]
+	Class Package: Core
+	Outer: TAGame
+[Import 12]
+	Full Name: UClass TAGame.WheelAssetGenerator_1Wheel_TA
 	Name: WheelAssetGenerator_1Wheel_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[13]
+	Class Package: Core
+	Outer: TAGame
+[Import 13]
+	Full Name: UClass TAGame.WheelAssetSettings_TA
 	Name: WheelAssetSettings_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[14]
+	Class Package: Core
+	Outer: TAGame
+[Import 14]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[15]
+	Class Package: Core
+[Import 15]
+	Full Name: UPackage Detail_Matte
 	Name: Detail_Matte
 	Class: Package
-	Package: Core
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UPackage Grass_Textures
 	Name: Grass_Textures
 	Class: Package
-	Package: Core
-[18]
+	Class Package: Core
+[Import 18]
+	Full Name: UPackage ProductsDB
 	Name: ProductsDB
 	Class: Package
-	Package: Core
-[19]
+	Class Package: Core
+[Import 19]
+	Full Name: UPackage ProductsDB.Products
 	Name: Products
 	Class: Package
-	Package: Core
-	Outer: Package ProductsDB
-[20]
+	Class Package: Core
+	Outer: ProductsDB
+[Import 20]
+	Full Name: UPackage ProductSlots.Icons
 	Name: Icons
 	Class: Package
-	Package: Core
-	Outer: Package ProductSlots
-[21]
+	Class Package: Core
+	Outer: ProductSlots
+[Import 21]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[22]
+	Class Package: Core
+[Import 22]
+	Full Name: UPackage ThumbnailRenderers
 	Name: ThumbnailRenderers
 	Class: Package
-	Package: Core
-[23]
+	Class Package: Core
+[Import 23]
+	Full Name: UProduct_TA ProductsDB.Products.WHEEL_Star
 	Name: WHEEL_Star
 	Class: Product_TA
-	Package: TAGame
-	Outer: Package Products
-[24]
+	Class Package: TAGame
+	Outer: Products
+[Import 24]
+	Full Name: UProductAsset_Wheel_TA TAGame.Default__ProductAsset_Wheel_TA
 	Name: Default__ProductAsset_Wheel_TA
 	Class: ProductAsset_Wheel_TA
-	Package: TAGame
-	Outer: Package TAGame
-[25]
+	Class Package: TAGame
+	Outer: TAGame
+[Import 25]
+	Full Name: UTexture2D Detail_Matte.Matte_N
 	Name: Matte_N
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Detail_Matte
-[26]
+	Class Package: Engine
+	Outer: Detail_Matte
+[Import 26]
+	Full Name: UTexture2D ProductSlots.Icons.Wheels
 	Name: Wheels
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Icons
-[27]
+	Class Package: Engine
+	Outer: Icons
+[Import 27]
+	Full Name: UTextureRenderTargetCube Grass_Textures.GrassCube
 	Name: GrassCube
 	Class: TextureRenderTargetCube
-	Package: Engine
-	Outer: Package Grass_Textures
-[28]
+	Class Package: Engine
+	Outer: Grass_Textures
+[Import 28]
+	Full Name: UThumbnailRenderer_TA ThumbnailRenderers.Wheel_Renderer
 	Name: Wheel_Renderer
 	Class: ThumbnailRenderer_TA
-	Package: TAGame
-	Outer: Package ThumbnailRenderers
-[29]
+	Class Package: TAGame
+	Outer: ThumbnailRenderers
+[Import 29]
+	Full Name: UWheelAssetGenerator_1Wheel_TA TAGame.Default__ProductAsset_Wheel_TA.DefaultGenerator
 	Name: DefaultGenerator
 	Class: WheelAssetGenerator_1Wheel_TA
-	Package: TAGame
-	Outer: ProductAsset_Wheel_TA Default__ProductAsset_Wheel_TA
+	Class Package: TAGame
+	Outer: Default__ProductAsset_Wheel_TA

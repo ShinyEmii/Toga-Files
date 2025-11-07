@@ -90,6 +90,7 @@ Test Data Size: 0x00003ed3
 Compressed Chunk Info Offset: 0x000010a1
 Last Block Size: 0x00000000
 Base Header Size: 0x0000013d
+Encrypted Header Size: 0x00004fc0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -97,329 +98,312 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] Attributes
-[2] bAllowLicensedEquip
-[3] Banner
-[4] Banner_Pony
-[5] bIsSourceArtUncompressed
-[6] BlackMetal_00
-[7] BoolProperty
-[8] bReplicated
-[9] ByteProperty
-[10] Class
-[11] CompressionNone
-[12] Core
-[13] DefaultPaintColor
-[14] DefaultProduct_New
-[15] DeferCompression
-[16] Engine
-[17] EPixelFormat
-[18] FlashTextureRescale
-[19] FlashTextureScale_Mult4
-[20] Format
-[21] GFxUI
-[22] GoldMetal_00
-[23] Icon
-[24] IconLarge
-[25] Icons
-[26] IntProperty
-[27] Label
-[28] LinearColor
-[29] LODGroup
-[30] MatchesRequiredToUnlock
-[31] MaterialGroups
-[32] Materials
-[33] MipGenSettings
-[34] MovieReference
-[35] NeverStream
-[36] None
-[37] ObjectProperty
-[38] ObjectReferencer
-[39] OnlineLabel
-[40] OriginalSizeX
-[41] OriginalSizeY
-[42] Package
-[43] PackTextureSize
-[44] PaintMaterialGroup
-[45] Paints
-[46] PF_A8R8G8B8
-[47] PlatinumMetal_00
-[48] PlayerBanner
-[49] playerBanner_Pony
-[50] playerBanner_Pony_SF
-[51] playerBanner_RLShield
-[52] PluralLabel
-[53] PonyBG
-[54] PonyOutline
-[55] PonyPainted
-[56] Product_TA
-[57] ProductAsset_PlayerBanner_TA
-[58] ProductAttribute_PaintSettings_TA
-[59] ProductPaint
-[60] ProductPaint_TA
-[61] Products
-[62] ProductsDB
-[63] ProductSlot_TA
-[64] ProductSlots
-[65] RawData
-[66] ReferencedObjects
-[67] References
-[68] RoseGoldMetal_00
-[69] SizeX
-[70] SizeY
-[71] SourceFile
-[72] SourceFileCRC
-[73] SourceFileTimestamp
-[74] spinner1
-[75] spinner2
-[76] SRGB
-[77] StandaloneSeekFreeReferencer
-[78] StrProperty
-[79] StructProperty
-[80] SwfMovie
-[81] TAGame
-[82] Texture2D
-[83] TextureFormat
-[84] TextureGroup
-[85] TEXTUREGROUP_UI
-[86] TextureMipGenSettings
-[87] TextureRescale
-[88] Thumb_Banner_Pony
-[89] Thumbnail
-[90] TMGS_NoMipmaps
-[91] UnsupportedPaints
-[92] WhiteGoldMetal_00
-[93] FloatProperty
-[94] ThumbnailKeyLightBrightnessScale
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] Attributes
+[Name 2] [0x0007000000000000] bAllowLicensedEquip
+[Name 3] [0x0007000000000000] Banner
+[Name 4] [0x0007001000000000] Banner_Pony
+[Name 5] [0x0007001000000000] bIsSourceArtUncompressed
+[Name 6] [0x0007001000000000] BlackMetal_00
+[Name 7] [0x0007001000000000] BoolProperty
+[Name 8] [0x0007000000000000] bReplicated
+[Name 9] [0x0007001000000000] ByteProperty
+[Name 10] [0x0007001000000000] Class
+[Name 11] [0x0007001000000000] CompressionNone
+[Name 12] [0x0007001000000000] Core
+[Name 13] [0x0007001000000000] DefaultPaintColor
+[Name 14] [0x0007000000000000] DefaultProduct_New
+[Name 15] [0x0007001000000000] DeferCompression
+[Name 16] [0x0007001000000000] Engine
+[Name 17] [0x0007001000000000] EPixelFormat
+[Name 18] [0x0007001000000000] FlashTextureRescale
+[Name 19] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 20] [0x0007001000000000] Format
+[Name 21] [0x0007001000000000] GFxUI
+[Name 22] [0x0007001000000000] GoldMetal_00
+[Name 23] [0x0007000000000000] Icon
+[Name 24] [0x0007000000000000] IconLarge
+[Name 25] [0x0007000000000000] Icons
+[Name 26] [0x0007001000000000] IntProperty
+[Name 27] [0x0007000000000000] Label
+[Name 28] [0x0007001000000000] LinearColor
+[Name 29] [0x0007001000000000] LODGroup
+[Name 30] [0x0007000000000000] MatchesRequiredToUnlock
+[Name 31] [0x0007001000000000] MaterialGroups
+[Name 32] [0x0007001000000000] Materials
+[Name 33] [0x0007001000000000] MipGenSettings
+[Name 34] [0x0007001000000000] MovieReference
+[Name 35] [0x0007001000000000] NeverStream
+[Name 36] [0x0007001000000000] None
+[Name 37] [0x0007001000000000] ObjectProperty
+[Name 38] [0x0007001000000000] ObjectReferencer
+[Name 39] [0x0007000000000000] OnlineLabel
+[Name 40] [0x0007001000000000] OriginalSizeX
+[Name 41] [0x0007001000000000] OriginalSizeY
+[Name 42] [0x0007001000000000] Package
+[Name 43] [0x0007001000000000] PackTextureSize
+[Name 44] [0x0007001000000000] PaintMaterialGroup
+[Name 45] [0x0007001000000000] Paints
+[Name 46] [0x0007001000000000] PF_A8R8G8B8
+[Name 47] [0x0007001000000000] PlatinumMetal_00
+[Name 48] [0x0007001000000000] PlayerBanner
+[Name 49] [0x0007001000000000] playerBanner_Pony
+[Name 50] [0x0007001000000000] playerBanner_Pony_SF
+[Name 51] [0x0007000000000000] playerBanner_RLShield
+[Name 52] [0x0007000000000000] PluralLabel
+[Name 53] [0x0007001000000000] PonyBG
+[Name 54] [0x0007001000000000] PonyOutline
+[Name 55] [0x0007001000000000] PonyPainted
+[Name 56] [0x0007000000000000] Product_TA
+[Name 57] [0x0007001000000000] ProductAsset_PlayerBanner_TA
+[Name 58] [0x0007001000000000] ProductAttribute_PaintSettings_TA
+[Name 59] [0x0007001000000000] ProductPaint
+[Name 60] [0x0007001000000000] ProductPaint_TA
+[Name 61] [0x0007000000000000] Products
+[Name 62] [0x0007000000000000] ProductsDB
+[Name 63] [0x0007001000000000] ProductSlot_TA
+[Name 64] [0x0007001000000000] ProductSlots
+[Name 65] [0x0007001000000000] RawData
+[Name 66] [0x0007001000000000] ReferencedObjects
+[Name 67] [0x0007001000000000] References
+[Name 68] [0x0007001000000000] RoseGoldMetal_00
+[Name 69] [0x0007001000000000] SizeX
+[Name 70] [0x0007001000000000] SizeY
+[Name 71] [0x0007001000000000] SourceFile
+[Name 72] [0x0007001000000000] SourceFileCRC
+[Name 73] [0x0007001000000000] SourceFileTimestamp
+[Name 74] [0x0007001000000000] spinner1
+[Name 75] [0x0007001000000000] spinner2
+[Name 76] [0x0007001000000000] SRGB
+[Name 77] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 78] [0x0007001000000000] StrProperty
+[Name 79] [0x0007001000000000] StructProperty
+[Name 80] [0x0007001000000000] SwfMovie
+[Name 81] [0x0007001000000000] TAGame
+[Name 82] [0x0007001000000000] Texture2D
+[Name 83] [0x0007001000000000] TextureFormat
+[Name 84] [0x0007001000000000] TextureGroup
+[Name 85] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 86] [0x0007001000000000] TextureMipGenSettings
+[Name 87] [0x0007001000000000] TextureRescale
+[Name 88] [0x0007000000000000] Thumb_Banner_Pony
+[Name 89] [0x0007000000000000] Thumbnail
+[Name 90] [0x0007001000000000] TMGS_NoMipmaps
+[Name 91] [0x0007001000000000] UnsupportedPaints
+[Name 92] [0x0007001000000000] WhiteGoldMetal_00
+[Name 93] [0x0007001000000000] FloatProperty
+[Name 94] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
 
 
     ~ Exports ~ 
 
 
-[0]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UObjectReferencer playerBanner_Pony.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x00000000000011ea with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[2]
+[Export 2]
+	Full Name: UPackage playerBanner_Pony.playerBanner_Pony
 	Name: playerBanner_Pony
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001216 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[3]
+[Export 3]
+	Full Name: UPackage playerBanner_Pony.playerBanner_Pony_SF
 	Name: playerBanner_Pony_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001222 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[4]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[5]
+[Export 5]
+	Full Name: UProductAsset_PlayerBanner_TA playerBanner_Pony.playerBanner_Pony.playerBanner_Pony
 	Name: playerBanner_Pony
-	Class: ProductAsset_PlayerBanner_TA
-	Outer: Package playerBanner_Pony
+	Class: UProductAsset_PlayerBanner_TA
+	Outer: playerBanner_Pony
 	Archetype: ProductAsset_PlayerBanner_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000101e1e with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UProductAttribute_PaintSettings_TA playerBanner_Pony.playerBanner_Pony.playerBanner_Pony.ProductAttribute_PaintSettings_TA_113
 	Name: ProductAttribute_PaintSettings_TA_113
-	Class: ProductAttribute_PaintSettings_TA
-	Outer: ProductAsset_PlayerBanner_TA playerBanner_Pony
+	Class: UProductAttribute_PaintSettings_TA
+	Outer: playerBanner_Pony
 	Object Flags: 0x0007010000000000
 	Serialized data: at 0x00000000000012ce with 0x00000084 Bytes
 	Export Flags: 0x00000001
-[7]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[8]
+[Export 8]
+	Full Name: USwfMovie playerBanner_Pony.playerBanner_Pony.Banner_Pony
 	Name: Banner_Pony
-	Class: SwfMovie
-	Outer: Package playerBanner_Pony
+	Class: USwfMovie
+	Outer: playerBanner_Pony
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000147f with 0x00001b01 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UTexture2D playerBanner_Pony.playerBanner_Pony.PonyBG
 	Name: PonyBG
-	Class: Texture2D
-	Outer: Package playerBanner_Pony
+	Class: UTexture2D
+	Outer: playerBanner_Pony
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002f80 with 0x00029209 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UTexture2D playerBanner_Pony.playerBanner_Pony.PonyOutline
 	Name: PonyOutline
-	Class: Texture2D
-	Outer: Package playerBanner_Pony
+	Class: UTexture2D
+	Outer: playerBanner_Pony
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000002c189 with 0x0000aac9 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UTexture2D playerBanner_Pony.playerBanner_Pony.PonyPainted
 	Name: PonyPainted
-	Class: Texture2D
-	Outer: Package playerBanner_Pony
+	Class: UTexture2D
+	Outer: playerBanner_Pony
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000036c52 with 0x0000aac9 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UTexture2D playerBanner_Pony.playerBanner_Pony.spinner1
 	Name: spinner1
-	Class: Texture2D
-	Outer: Package playerBanner_Pony
+	Class: UTexture2D
+	Outer: playerBanner_Pony
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000004171b with 0x000401c9 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UTexture2D playerBanner_Pony.playerBanner_Pony.spinner2
 	Name: spinner2
-	Class: Texture2D
-	Outer: Package playerBanner_Pony
+	Class: UTexture2D
+	Outer: playerBanner_Pony
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000818e4 with 0x000401c9 Bytes
 	Export Flags: 0x00000001
-[14]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
 
 
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[4]
+	Class Package: Core
+	Outer: GFxUI
+[Import 4]
+	Full Name: UClass TAGame.ProductAsset_PlayerBanner_TA
 	Name: ProductAsset_PlayerBanner_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UClass TAGame.ProductAttribute_PaintSettings_TA
 	Name: ProductAttribute_PaintSettings_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
-	Name: None
-	Class: None
-	Package: None
-[7]
+	Class Package: Core
+	Outer: TAGame
+[Import 7]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage ProductPaint
 	Name: ProductPaint
 	Class: Package
-	Package: Core
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UPackage ProductPaint.Paints
 	Name: Paints
 	Class: Package
-	Package: Core
-	Outer: Package ProductPaint
-[12]
-	Name: None
-	Class: None
-	Package: None
-[13]
-	Name: None
-	Class: None
-	Package: None
-[14]
-	Name: None
-	Class: None
-	Package: None
-[15]
+	Class Package: Core
+	Outer: ProductPaint
+[Import 15]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[16]
-	Name: None
-	Class: None
-	Package: None
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UProductPaint_TA ProductPaint.Paints.BlackMetal_00
 	Name: BlackMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[18]
+	Class Package: TAGame
+	Outer: Paints
+[Import 18]
+	Full Name: UProductPaint_TA ProductPaint.Paints.GoldMetal_00
 	Name: GoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[19]
+	Class Package: TAGame
+	Outer: Paints
+[Import 19]
+	Full Name: UProductPaint_TA ProductPaint.Paints.PlatinumMetal_00
 	Name: PlatinumMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[20]
+	Class Package: TAGame
+	Outer: Paints
+[Import 20]
+	Full Name: UProductPaint_TA ProductPaint.Paints.RoseGoldMetal_00
 	Name: RoseGoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[21]
+	Class Package: TAGame
+	Outer: Paints
+[Import 21]
+	Full Name: UProductPaint_TA ProductPaint.Paints.WhiteGoldMetal_00
 	Name: WhiteGoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[22]
-	Name: None
-	Class: None
-	Package: None
-[23]
+	Class Package: TAGame
+	Outer: Paints
+[Import 23]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[24]
+	Class Package: Core
+[Import 24]
+	Full Name: UProductAsset_PlayerBanner_TA ProductSlots.PlayerBanner.ProductAsset_PlayerBanner_TA_0
 	Name: ProductAsset_PlayerBanner_TA_0
 	Class: ProductAsset_PlayerBanner_TA
-	Package: TAGame
-	Outer: ProductSlot_TA PlayerBanner
-[25]
+	Class Package: TAGame
+	Outer: PlayerBanner
+[Import 25]
+	Full Name: UProductSlot_TA ProductSlots.PlayerBanner
 	Name: PlayerBanner
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots

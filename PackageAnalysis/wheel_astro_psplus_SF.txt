@@ -81,6 +81,7 @@ Test Data Size: 0x00003ef9
 Compressed Chunk Info Offset: 0x000023c3
 Last Block Size: 0x00000000
 Base Header Size: 0x00000125
+Encrypted Header Size: 0x00006320
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -88,555 +89,609 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] A
-[1] ArrayProperty
-[2] Astro_SE_Tire_Curvature
-[3] Astro_SE_Tire_RGBA
-[4] Astro_SE_Wheel_Fresnel_Mask
-[5] Astro_SE_Wheel_RGBA
-[6] B
-[7] bHasStaticPermutationResource
-[8] BLEND_Additive
-[9] BlendMode
-[10] BoolProperty
-[11] bReplicated
-[12] ByteProperty
-[13] Class
-[14] Color3
-[15] ColorMaterialInput
-[16] CompressionNone
-[17] CompressionSettings
-[18] Core
-[19] Default__ProductAsset_Wheel_TA
-[20] DefaultGenerator
-[21] DefaultProduct_New
-[22] DefaultValue
-[23] Description
-[24] DiffuseColor
-[25] EBlendMode
-[26] Emissive*AllZonesIntensity
-[27] Emissive*LabelIntensity
-[28] Emissive*TreadBChan_Intensity
-[29] Emissive*TreadGChan_Intensity
-[30] Emissive*TreadRChan_Intensity
-[31] Emissive*WheelBChan_Intensity
-[32] Emissive*WheelGChan_Intensity
-[33] Emissive*WheelRChan_Intensity
-[34] EmissiveColor
-[35] Engine
-[36] EPixelFormat
-[37] Expression
-[38] ExpressionGUID
-[39] ExpressionInput
-[40] Expressions
-[41] FirstResourceMemMip
-[42] FloatProperty
-[43] Format
-[44] Fresnel*Intensity
-[45] FrontLeft
-[46] FrontRight
-[47] Generator
-[48] Green
-[49] Guid
-[50] Icon
-[51] IconLarge
-[52] Icons
-[53] IntProperty
-[54] Label
-[55] LightMapCoordinateIndex
-[56] LightMapResolution
-[57] LinearColor
-[58] LODGroup
-[59] Mask
-[60] Mask1_Transforms
-[61] Mask2_Transforms
-[62] Mask3_Transforms
-[63] Mask4_Transforms
-[64] Mask5_Transforms
-[65] Mask6_Transforms
-[66] MaskB
-[67] MaskG
-[68] MaskR
-[69] mat_wheel_astro_psplus
-[70] mat_Wheel_Astro_SE_Label
-[71] Material
-[72] MaterialExpressionScalarParameter
-[73] MaterialExpressionStaticSwitchParameter
-[74] MaterialExpressionVectorParameter
-[75] MaterialInstanceConstant
-[76] MIC_Wheel_Astro_SE_DriverSide
-[77] MIC_Wheel_Astro_SE_Label
-[78] MipGenSettings
-[79] MipTailBaseIdx
-[80] NameProperty
-[81] None
-[82] Normal
-[83] ObjectProperty
-[84] ObjectReferencer
-[85] OnlineLabel
-[86] OpacityMask
-[87] OpacityMaskClipValue
-[88] OriginalSizeX
-[89] OriginalSizeY
-[90] OutputIndex
-[91] Package
-[92] Painted
-[93] ParameterName
-[94] ParameterValue
-[95] Parent
-[96] ParentLightingGuid
-[97] PF_A8R8G8B8
-[98] PF_DXT5
-[99] PluralLabel
-[100] PrevGenerator
-[101] Product_TA
-[102] ProductAsset_Wheel_TA
-[103] Products
-[104] ProductsDB
-[105] ProductSlot_TA
-[106] ProductSlots
-[107] Purple
-[108] ReferencedObjects
-[109] Rotator
-[110] ScalarMaterialInput
-[111] ScalarParameterValues
-[112] Scale3D
-[113] SizeX
-[114] SizeY
-[115] Skin_Universal02_Parent
-[116] Skin_Universal_Parent
-[117] SRGB
-[118] StandaloneSeekFreeReferencer
-[119] StaticMesh
-[120] StrProperty
-[121] StructProperty
-[122] TAGame
-[123] TC_NormalmapSwizzle
-[124] TC_VectorDisplacementmap
-[125] Texture2D
-[126] TextureCompressionSettings
-[127] TextureFileCacheName
-[128] TextureGroup
-[129] TEXTUREGROUP_UI
-[130] TEXTUREGROUP_WorldNormalMap
-[131] TextureMipGenSettings
-[132] Textures
-[133] Textures7
-[134] ThumbnailCameraRotationOffset
-[135] ThumbnailProductRotation
-[136] ThumbnailRenderer
-[137] ThumbnailRenderer_TA
-[138] ThumbnailRenderers
-[139] Tire_SE_Normal
-[140] TMGS_NoMipmaps
-[141] Tread_Astro_RGB
-[142] TwoSided
-[143] Universal_Noise_21_RGB
-[144] Universal_Noise_66_RGB
-[145] UnpackMin
-[146] Vector
-[147] VectorMaterialInput
-[148] VectorParameterValues
-[149] wheel_astro
-[150] Wheel_Astro2_SE_Smooth_SM
-[151] wheel_astro_inverted
-[152] wheel_astro_psplus
-[153] wheel_astro_psplus_SF
-[154] Wheel_Renderer
-[155] WHEEL_Star
-[156] WheelAssetGenerator_1Wheel_TA
-[157] WheelAssetGenerator_FrontWheels_TA
-[158] WheelAssetSettings_TA
-[159] Wheels
-[160] Wheel_Astro2_SE_Smooth_DriverSide02_SM
+[Name 0] [0x0007001000000000] A
+[Name 1] [0x0007001000000000] ArrayProperty
+[Name 2] [0x0007001000000000] Astro_SE_Tire_Curvature
+[Name 3] [0x0007001000000000] Astro_SE_Tire_RGBA
+[Name 4] [0x0007001000000000] Astro_SE_Wheel_Fresnel_Mask
+[Name 5] [0x0007001000000000] Astro_SE_Wheel_RGBA
+[Name 6] [0x0007001000000000] B
+[Name 7] [0x0007001000000000] bHasStaticPermutationResource
+[Name 8] [0x0007001000000000] BLEND_Additive
+[Name 9] [0x0007001000000000] BlendMode
+[Name 10] [0x0007001000000000] BoolProperty
+[Name 11] [0x0007001000000000] bReplicated
+[Name 12] [0x0007001000000000] ByteProperty
+[Name 13] [0x0007001000000000] Class
+[Name 14] [0x0007001000000000] Color3
+[Name 15] [0x0007001000000000] ColorMaterialInput
+[Name 16] [0x0007001000000000] CompressionNone
+[Name 17] [0x0007001000000000] CompressionSettings
+[Name 18] [0x0007001000000000] Core
+[Name 19] [0x0007001000000000] Default__ProductAsset_Wheel_TA
+[Name 20] [0x0007001000000000] DefaultGenerator
+[Name 21] [0x0007001000000000] DefaultProduct_New
+[Name 22] [0x0007001000000000] DefaultValue
+[Name 23] [0x0007001000000000] Description
+[Name 24] [0x0007001000000000] DiffuseColor
+[Name 25] [0x0007001000000000] EBlendMode
+[Name 26] [0x0007001000000000] Emissive*AllZonesIntensity
+[Name 27] [0x0007001000000000] Emissive*LabelIntensity
+[Name 28] [0x0007001000000000] Emissive*TreadBChan_Intensity
+[Name 29] [0x0007001000000000] Emissive*TreadGChan_Intensity
+[Name 30] [0x0007001000000000] Emissive*TreadRChan_Intensity
+[Name 31] [0x0007001000000000] Emissive*WheelBChan_Intensity
+[Name 32] [0x0007001000000000] Emissive*WheelGChan_Intensity
+[Name 33] [0x0007001000000000] Emissive*WheelRChan_Intensity
+[Name 34] [0x0007001000000000] EmissiveColor
+[Name 35] [0x0007001000000000] Engine
+[Name 36] [0x0007001000000000] EPixelFormat
+[Name 37] [0x0007001000000000] Expression
+[Name 38] [0x0007001000000000] ExpressionGUID
+[Name 39] [0x0007001000000000] ExpressionInput
+[Name 40] [0x0007001000000000] Expressions
+[Name 41] [0x0007001000000000] FirstResourceMemMip
+[Name 42] [0x0007001000000000] FloatProperty
+[Name 43] [0x0007001000000000] Format
+[Name 44] [0x0007001000000000] Fresnel*Intensity
+[Name 45] [0x0007001000000000] FrontLeft
+[Name 46] [0x0007001000000000] FrontRight
+[Name 47] [0x0007001000000000] Generator
+[Name 48] [0x0007001000000000] Green
+[Name 49] [0x0007001000000000] Guid
+[Name 50] [0x0007001000000000] Icon
+[Name 51] [0x0007001000000000] IconLarge
+[Name 52] [0x0007001000000000] Icons
+[Name 53] [0x0007001000000000] IntProperty
+[Name 54] [0x0007001000000000] Label
+[Name 55] [0x0007001000000000] LightMapCoordinateIndex
+[Name 56] [0x0007001000000000] LightMapResolution
+[Name 57] [0x0007001000000000] LinearColor
+[Name 58] [0x0007001000000000] LODGroup
+[Name 59] [0x0007001000000000] Mask
+[Name 60] [0x0007001000000000] Mask1_Transforms
+[Name 61] [0x0007001000000000] Mask2_Transforms
+[Name 62] [0x0007001000000000] Mask3_Transforms
+[Name 63] [0x0007001000000000] Mask4_Transforms
+[Name 64] [0x0007001000000000] Mask5_Transforms
+[Name 65] [0x0007001000000000] Mask6_Transforms
+[Name 66] [0x0007001000000000] MaskB
+[Name 67] [0x0007001000000000] MaskG
+[Name 68] [0x0007001000000000] MaskR
+[Name 69] [0x0007001000000000] mat_wheel_astro_psplus
+[Name 70] [0x0007001000000000] mat_Wheel_Astro_SE_Label
+[Name 71] [0x0007001000000000] Material
+[Name 72] [0x0007001000000000] MaterialExpressionScalarParameter
+[Name 73] [0x0007001000000000] MaterialExpressionStaticSwitchParameter
+[Name 74] [0x0007001000000000] MaterialExpressionVectorParameter
+[Name 75] [0x0007001000000000] MaterialInstanceConstant
+[Name 76] [0x0007001000000000] MIC_Wheel_Astro_SE_DriverSide
+[Name 77] [0x0007001000000000] MIC_Wheel_Astro_SE_Label
+[Name 78] [0x0007001000000000] MipGenSettings
+[Name 79] [0x0007001000000000] MipTailBaseIdx
+[Name 80] [0x0007001000000000] NameProperty
+[Name 81] [0x0007001000000000] None
+[Name 82] [0x0007001000000000] Normal
+[Name 83] [0x0007001000000000] ObjectProperty
+[Name 84] [0x0007001000000000] ObjectReferencer
+[Name 85] [0x0007001000000000] OnlineLabel
+[Name 86] [0x0007001000000000] OpacityMask
+[Name 87] [0x0007001000000000] OpacityMaskClipValue
+[Name 88] [0x0007001000000000] OriginalSizeX
+[Name 89] [0x0007001000000000] OriginalSizeY
+[Name 90] [0x0007001000000000] OutputIndex
+[Name 91] [0x0007001000000000] Package
+[Name 92] [0x0007001000000000] Painted
+[Name 93] [0x0007001000000000] ParameterName
+[Name 94] [0x0007001000000000] ParameterValue
+[Name 95] [0x0007001000000000] Parent
+[Name 96] [0x0007001000000000] ParentLightingGuid
+[Name 97] [0x0007001000000000] PF_A8R8G8B8
+[Name 98] [0x0007001000000000] PF_DXT5
+[Name 99] [0x0007001000000000] PluralLabel
+[Name 100] [0x0007001000000000] PrevGenerator
+[Name 101] [0x0007001000000000] Product_TA
+[Name 102] [0x0007001000000000] ProductAsset_Wheel_TA
+[Name 103] [0x0007001000000000] Products
+[Name 104] [0x0007001000000000] ProductsDB
+[Name 105] [0x0007001000000000] ProductSlot_TA
+[Name 106] [0x0007001000000000] ProductSlots
+[Name 107] [0x0007001000000000] Purple
+[Name 108] [0x0007001000000000] ReferencedObjects
+[Name 109] [0x0007001000000000] Rotator
+[Name 110] [0x0007001000000000] ScalarMaterialInput
+[Name 111] [0x0007001000000000] ScalarParameterValues
+[Name 112] [0x0007001000000000] Scale3D
+[Name 113] [0x0007001000000000] SizeX
+[Name 114] [0x0007001000000000] SizeY
+[Name 115] [0x0007001000000000] Skin_Universal02_Parent
+[Name 116] [0x0007001000000000] Skin_Universal_Parent
+[Name 117] [0x0007001000000000] SRGB
+[Name 118] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 119] [0x0007001000000000] StaticMesh
+[Name 120] [0x0007001000000000] StrProperty
+[Name 121] [0x0007001000000000] StructProperty
+[Name 122] [0x0007001000000000] TAGame
+[Name 123] [0x0007001000000000] TC_NormalmapSwizzle
+[Name 124] [0x0007001000000000] TC_VectorDisplacementmap
+[Name 125] [0x0007001000000000] Texture2D
+[Name 126] [0x0007001000000000] TextureCompressionSettings
+[Name 127] [0x0007001000000000] TextureFileCacheName
+[Name 128] [0x0007001000000000] TextureGroup
+[Name 129] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 130] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 131] [0x0007001000000000] TextureMipGenSettings
+[Name 132] [0x0007001000000000] Textures
+[Name 133] [0x0007001000000000] Textures7
+[Name 134] [0x0007001000000000] ThumbnailCameraRotationOffset
+[Name 135] [0x0007001000000000] ThumbnailProductRotation
+[Name 136] [0x0007001000000000] ThumbnailRenderer
+[Name 137] [0x0007001000000000] ThumbnailRenderer_TA
+[Name 138] [0x0007001000000000] ThumbnailRenderers
+[Name 139] [0x0007001000000000] Tire_SE_Normal
+[Name 140] [0x0007001000000000] TMGS_NoMipmaps
+[Name 141] [0x0007001000000000] Tread_Astro_RGB
+[Name 142] [0x0007001000000000] TwoSided
+[Name 143] [0x0007001000000000] Universal_Noise_21_RGB
+[Name 144] [0x0007001000000000] Universal_Noise_66_RGB
+[Name 145] [0x0007001000000000] UnpackMin
+[Name 146] [0x0007001000000000] Vector
+[Name 147] [0x0007001000000000] VectorMaterialInput
+[Name 148] [0x0007001000000000] VectorParameterValues
+[Name 149] [0x0007001000000000] wheel_astro
+[Name 150] [0x0007001000000000] Wheel_Astro2_SE_Smooth_SM
+[Name 151] [0x0007001000000000] wheel_astro_inverted
+[Name 152] [0x0007001000000000] wheel_astro_psplus
+[Name 153] [0x0007001000000000] wheel_astro_psplus_SF
+[Name 154] [0x0007001000000000] Wheel_Renderer
+[Name 155] [0x0007001000000000] WHEEL_Star
+[Name 156] [0x0007001000000000] WheelAssetGenerator_1Wheel_TA
+[Name 157] [0x0007001000000000] WheelAssetGenerator_FrontWheels_TA
+[Name 158] [0x0007001000000000] WheelAssetSettings_TA
+[Name 159] [0x0007001000000000] Wheels
+[Name 160] [0x0007001000000000] Wheel_Astro2_SE_Smooth_DriverSide02_SM
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UMaterial wheel_astro_psplus.wheel_astro_inverted.mat_Wheel_Astro_SE_Label
 	Name: mat_Wheel_Astro_SE_Label
-	Class: Material
-	Outer: Package wheel_astro_inverted
+	Class: UMaterial
+	Outer: wheel_astro_inverted
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000024e8 with 0x00000209 Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterial wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus
 	Name: mat_wheel_astro_psplus
-	Class: Material
-	Outer: Package wheel_astro_psplus
+	Class: UMaterial
+	Outer: wheel_astro_psplus
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000026f1 with 0x000004d9 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterialExpressionScalarParameter wheel_astro_psplus.wheel_astro_inverted.mat_Wheel_Astro_SE_Label.MaterialExpressionScalarParameter_8
 	Name: MaterialExpressionScalarParameter_8
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_Wheel_Astro_SE_Label
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_Wheel_Astro_SE_Label
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002bca with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterialExpressionScalarParameter wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus.MaterialExpressionScalarParameter_0
 	Name: MaterialExpressionScalarParameter_0
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_wheel_astro_psplus
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_wheel_astro_psplus
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002c5e with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UMaterialExpressionScalarParameter wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_wheel_astro_psplus
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_wheel_astro_psplus
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002cf2 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UMaterialExpressionScalarParameter wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_wheel_astro_psplus
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_wheel_astro_psplus
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002d86 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UMaterialExpressionScalarParameter wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus.MaterialExpressionScalarParameter_3
 	Name: MaterialExpressionScalarParameter_3
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_wheel_astro_psplus
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_wheel_astro_psplus
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002e1a with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UMaterialExpressionScalarParameter wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus.MaterialExpressionScalarParameter_4
 	Name: MaterialExpressionScalarParameter_4
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_wheel_astro_psplus
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_wheel_astro_psplus
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002eae with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UMaterialExpressionScalarParameter wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus.MaterialExpressionScalarParameter_5
 	Name: MaterialExpressionScalarParameter_5
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_wheel_astro_psplus
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_wheel_astro_psplus
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002f42 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UMaterialExpressionScalarParameter wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus.MaterialExpressionScalarParameter_6
 	Name: MaterialExpressionScalarParameter_6
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_wheel_astro_psplus
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_wheel_astro_psplus
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002fd6 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UMaterialExpressionScalarParameter wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus.MaterialExpressionScalarParameter_7
 	Name: MaterialExpressionScalarParameter_7
-	Class: MaterialExpressionScalarParameter
-	Outer: Material mat_wheel_astro_psplus
+	Class: UMaterialExpressionScalarParameter
+	Outer: mat_wheel_astro_psplus
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000306a with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UMaterialExpressionStaticSwitchParameter wheel_astro_psplus.wheel_astro_inverted.mat_Wheel_Astro_SE_Label.MaterialExpressionStaticSwitchParameter_6
 	Name: MaterialExpressionStaticSwitchParameter_6
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material mat_Wheel_Astro_SE_Label
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: mat_Wheel_Astro_SE_Label
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000030fe with 0x00000189 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UMaterialExpressionStaticSwitchParameter wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus.MaterialExpressionStaticSwitchParameter_4
 	Name: MaterialExpressionStaticSwitchParameter_4
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material mat_wheel_astro_psplus
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: mat_wheel_astro_psplus
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003287 with 0x00000189 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UMaterialExpressionVectorParameter wheel_astro_psplus.wheel_astro_inverted.mat_Wheel_Astro_SE_Label.MaterialExpressionVectorParameter_22
 	Name: MaterialExpressionVectorParameter_22
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_Wheel_Astro_SE_Label
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_Wheel_Astro_SE_Label
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003410 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UMaterialExpressionVectorParameter wheel_astro_psplus.wheel_astro_inverted.mat_Wheel_Astro_SE_Label.MaterialExpressionVectorParameter_23
 	Name: MaterialExpressionVectorParameter_23
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_Wheel_Astro_SE_Label
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_Wheel_Astro_SE_Label
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000034b8 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UMaterialExpressionVectorParameter wheel_astro_psplus.wheel_astro_inverted.mat_Wheel_Astro_SE_Label.MaterialExpressionVectorParameter_24
 	Name: MaterialExpressionVectorParameter_24
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_Wheel_Astro_SE_Label
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_Wheel_Astro_SE_Label
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003560 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UMaterialExpressionVectorParameter wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus.MaterialExpressionVectorParameter_1
 	Name: MaterialExpressionVectorParameter_1
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_wheel_astro_psplus
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_wheel_astro_psplus
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003608 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UMaterialExpressionVectorParameter wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus.MaterialExpressionVectorParameter_11
 	Name: MaterialExpressionVectorParameter_11
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_wheel_astro_psplus
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_wheel_astro_psplus
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000036b0 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UMaterialExpressionVectorParameter wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus.MaterialExpressionVectorParameter_12
 	Name: MaterialExpressionVectorParameter_12
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_wheel_astro_psplus
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_wheel_astro_psplus
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003758 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UMaterialExpressionVectorParameter wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus.MaterialExpressionVectorParameter_14
 	Name: MaterialExpressionVectorParameter_14
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_wheel_astro_psplus
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_wheel_astro_psplus
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003800 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UMaterialExpressionVectorParameter wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus.MaterialExpressionVectorParameter_15
 	Name: MaterialExpressionVectorParameter_15
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_wheel_astro_psplus
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_wheel_astro_psplus
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000038a8 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UMaterialExpressionVectorParameter wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus.MaterialExpressionVectorParameter_17
 	Name: MaterialExpressionVectorParameter_17
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_wheel_astro_psplus
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_wheel_astro_psplus
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003950 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UMaterialExpressionVectorParameter wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus.MaterialExpressionVectorParameter_3
 	Name: MaterialExpressionVectorParameter_3
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_wheel_astro_psplus
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_wheel_astro_psplus
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000039f8 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UMaterialExpressionVectorParameter wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus.MaterialExpressionVectorParameter_4
 	Name: MaterialExpressionVectorParameter_4
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_wheel_astro_psplus
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_wheel_astro_psplus
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003aa0 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UMaterialExpressionVectorParameter wheel_astro_psplus.wheel_astro_psplus.mat_wheel_astro_psplus.MaterialExpressionVectorParameter_9
 	Name: MaterialExpressionVectorParameter_9
-	Class: MaterialExpressionVectorParameter
-	Outer: Material mat_wheel_astro_psplus
+	Class: UMaterialExpressionVectorParameter
+	Outer: mat_wheel_astro_psplus
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003b48 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UMaterialInstanceConstant wheel_astro_psplus.wheel_astro_psplus.MIC_Wheel_Astro_SE_DriverSide
 	Name: MIC_Wheel_Astro_SE_DriverSide
-	Class: MaterialInstanceConstant
-	Outer: Package wheel_astro_psplus
+	Class: UMaterialInstanceConstant
+	Outer: wheel_astro_psplus
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000003bf0 with 0x000005bd Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UMaterialInstanceConstant wheel_astro_psplus.wheel_astro_psplus.MIC_Wheel_Astro_SE_Label
 	Name: MIC_Wheel_Astro_SE_Label
-	Class: MaterialInstanceConstant
-	Outer: Package wheel_astro_psplus
+	Class: UMaterialInstanceConstant
+	Outer: wheel_astro_psplus
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000041ad with 0x00000255 Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UProductAsset_Wheel_TA wheel_astro_psplus.ProductSlots.Wheels.ProductAsset_Wheel_TA_0
 	Name: ProductAsset_Wheel_TA_0
-	Class: ProductAsset_Wheel_TA
-	Outer: ProductSlot_TA Wheels
+	Class: UProductAsset_Wheel_TA
+	Outer: Wheels
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004402 with 0x0000009c Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UObjectReferencer wheel_astro_psplus.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x000000000000449e with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[29]
+[Export 29]
+	Full Name: UPackage wheel_astro_psplus.ProductSlots
 	Name: ProductSlots
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000044ca with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[30]
+[Export 30]
+	Full Name: UPackage wheel_astro_psplus.Skin_Universal02_Parent
 	Name: Skin_Universal02_Parent
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000044d6 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[31]
+[Export 31]
+	Full Name: UPackage wheel_astro_psplus.Skin_Universal02_Parent.Textures
 	Name: Textures
-	Class: Package
-	Outer: Package Skin_Universal02_Parent
+	Class: UPackage
+	Outer: Skin_Universal02_Parent
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000044e2 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: UPackage wheel_astro_psplus.Skin_Universal_Parent
 	Name: Skin_Universal_Parent
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000044ee with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[33]
+[Export 33]
+	Full Name: UPackage wheel_astro_psplus.Skin_Universal_Parent.Textures
 	Name: Textures
-	Class: Package
-	Outer: Package Skin_Universal_Parent
+	Class: UPackage
+	Outer: Skin_Universal_Parent
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000044fa with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UPackage wheel_astro_psplus.wheel_astro
 	Name: wheel_astro
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004506 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[35]
+[Export 35]
+	Full Name: UPackage wheel_astro_psplus.wheel_astro_inverted
 	Name: wheel_astro_inverted
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004512 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[36]
+[Export 36]
+	Full Name: UPackage wheel_astro_psplus.wheel_astro_psplus
 	Name: wheel_astro_psplus
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000451e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[37]
+[Export 37]
+	Full Name: UPackage wheel_astro_psplus.wheel_astro_psplus_SF
 	Name: wheel_astro_psplus_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000452a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[38]
+[Export 38]
+	Full Name: UProductAsset_Wheel_TA wheel_astro_psplus.wheel_astro_psplus.wheel_astro_psplus
 	Name: wheel_astro_psplus
-	Class: ProductAsset_Wheel_TA
-	Outer: Package wheel_astro_psplus
+	Class: UProductAsset_Wheel_TA
+	Outer: wheel_astro_psplus
 	Archetype: ProductAsset_Wheel_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000004536 with 0x00000044 Bytes
 	Export Flags: 0x00000001
-[39]
+[Export 39]
+	Full Name: UProductSlot_TA wheel_astro_psplus.ProductSlots.Wheels
 	Name: Wheels
-	Class: ProductSlot_TA
-	Outer: Package ProductSlots
+	Class: UProductSlot_TA
+	Outer: ProductSlots
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x000000000000457a with 0x0000012b Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UStaticMesh wheel_astro_psplus.wheel_astro_psplus.Wheel_Astro2_SE_Smooth_SM
 	Name: Wheel_Astro2_SE_Smooth_SM
-	Class: StaticMesh
-	Outer: Package wheel_astro_psplus
+	Class: UStaticMesh
+	Outer: wheel_astro_psplus
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000046a5 with 0x00082456 Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UTexture2D wheel_astro_psplus.Skin_Universal02_Parent.Textures.Universal_Noise_66_RGB
 	Name: Universal_Noise_66_RGB
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000086afb with 0x0000579c Bytes
 	Export Flags: 0x00000001
-[42]
+[Export 42]
+	Full Name: UTexture2D wheel_astro_psplus.Skin_Universal_Parent.Textures.Universal_Noise_21_RGB
 	Name: Universal_Noise_21_RGB
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000008c297 with 0x0000579c Bytes
 	Export Flags: 0x00000001
-[43]
+[Export 43]
+	Full Name: UTexture2D wheel_astro_psplus.wheel_astro.Tire_SE_Normal
 	Name: Tire_SE_Normal
-	Class: Texture2D
-	Outer: Package wheel_astro
+	Class: UTexture2D
+	Outer: wheel_astro
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000091a33 with 0x00001885 Bytes
 	Export Flags: 0x00000001
-[44]
+[Export 44]
+	Full Name: UTexture2D wheel_astro_psplus.wheel_astro.Tread_Astro_RGB
 	Name: Tread_Astro_RGB
-	Class: Texture2D
-	Outer: Package wheel_astro
+	Class: UTexture2D
+	Outer: wheel_astro
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000932b8 with 0x01000185 Bytes
 	Export Flags: 0x00000001
-[45]
+[Export 45]
+	Full Name: UTexture2D wheel_astro_psplus.wheel_astro_inverted.Astro_SE_Tire_Curvature
 	Name: Astro_SE_Tire_Curvature
-	Class: Texture2D
-	Outer: Package wheel_astro_inverted
+	Class: UTexture2D
+	Outer: wheel_astro_inverted
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000109343d with 0x000057d4 Bytes
 	Export Flags: 0x00000001
-[46]
+[Export 46]
+	Full Name: UTexture2D wheel_astro_psplus.wheel_astro_inverted.Astro_SE_Tire_RGBA
 	Name: Astro_SE_Tire_RGBA
-	Class: Texture2D
-	Outer: Package wheel_astro_inverted
+	Class: UTexture2D
+	Outer: wheel_astro_inverted
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000001098c11 with 0x000057d4 Bytes
 	Export Flags: 0x00000001
-[47]
+[Export 47]
+	Full Name: UTexture2D wheel_astro_psplus.wheel_astro_inverted.Astro_SE_Wheel_Fresnel_Mask
 	Name: Astro_SE_Wheel_Fresnel_Mask
-	Class: Texture2D
-	Outer: Package wheel_astro_inverted
+	Class: UTexture2D
+	Outer: wheel_astro_inverted
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000109e3e5 with 0x000057d4 Bytes
 	Export Flags: 0x00000001
-[48]
+[Export 48]
+	Full Name: UTexture2D wheel_astro_psplus.wheel_astro_inverted.Astro_SE_Wheel_RGBA
 	Name: Astro_SE_Wheel_RGBA
-	Class: Texture2D
-	Outer: Package wheel_astro_inverted
+	Class: UTexture2D
+	Outer: wheel_astro_inverted
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000010a3bb9 with 0x000057d4 Bytes
 	Export Flags: 0x00000001
-[49]
+[Export 49]
+	Full Name: UWheelAssetGenerator_1Wheel_TA wheel_astro_psplus.ProductSlots.Wheels.ProductAsset_Wheel_TA_0.WheelAssetGenerator_1Wheel_TA_1
 	Name: WheelAssetGenerator_1Wheel_TA_1
-	Class: WheelAssetGenerator_1Wheel_TA
-	Outer: ProductAsset_Wheel_TA ProductAsset_Wheel_TA_0
+	Class: UWheelAssetGenerator_1Wheel_TA
+	Outer: ProductAsset_Wheel_TA_0
 	Archetype: DefaultGenerator
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000010a938d with 0x00000010 Bytes
 	Export Flags: 0x00000001
-[50]
+[Export 50]
+	Full Name: UWheelAssetGenerator_FrontWheels_TA wheel_astro_psplus.wheel_astro_psplus.wheel_astro_psplus.WheelAssetGenerator_FrontWheels_TA_0
 	Name: WheelAssetGenerator_FrontWheels_TA_0
-	Class: WheelAssetGenerator_FrontWheels_TA
-	Outer: ProductAsset_Wheel_TA wheel_astro_psplus
+	Class: UWheelAssetGenerator_FrontWheels_TA
+	Outer: wheel_astro_psplus
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000010a939d with 0x00000074 Bytes
 	Export Flags: 0x00000001
-[51]
+[Export 51]
+	Full Name: UWheelAssetSettings_TA wheel_astro_psplus.wheel_astro_psplus.wheel_astro_psplus.WheelAssetGenerator_FrontWheels_TA_0.WheelAssetSettings_TA_3
 	Name: WheelAssetSettings_TA_3
-	Class: WheelAssetSettings_TA
-	Outer: WheelAssetGenerator_FrontWheels_TA WheelAssetGenerator_FrontWheels_TA_0
+	Class: UWheelAssetSettings_TA
+	Outer: WheelAssetGenerator_FrontWheels_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000010a9411 with 0x0000002c Bytes
 	Export Flags: 0x00000001
-[52]
+[Export 52]
+	Full Name: UWheelAssetSettings_TA wheel_astro_psplus.wheel_astro_psplus.wheel_astro_psplus.WheelAssetGenerator_FrontWheels_TA_0.WheelAssetSettings_TA_4
 	Name: WheelAssetSettings_TA_4
-	Class: WheelAssetSettings_TA
-	Outer: WheelAssetGenerator_FrontWheels_TA WheelAssetGenerator_FrontWheels_TA_0
+	Class: UWheelAssetSettings_TA
+	Outer: WheelAssetGenerator_FrontWheels_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000010a9495 with 0x00000058 Bytes
 	Export Flags: 0x00000001
-[53]
+[Export 53]
+	Full Name: UStaticMesh wheel_astro_psplus.wheel_astro_psplus.Wheel_Astro2_SE_Smooth_DriverSide02_SM
 	Name: Wheel_Astro2_SE_Smooth_DriverSide02_SM
-	Class: StaticMesh
-	Outer: Package wheel_astro_psplus
+	Class: UStaticMesh
+	Outer: wheel_astro_psplus
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000010a94ed with 0x00083c12 Bytes
 	Export Flags: 0x00000001
@@ -645,128 +700,154 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialExpressionStaticSwitchParameter
 	Name: MaterialExpressionStaticSwitchParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.MaterialExpressionVectorParameter
 	Name: MaterialExpressionVectorParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.StaticMesh
 	Name: StaticMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass TAGame.ProductAsset_Wheel_TA
 	Name: ProductAsset_Wheel_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[10]
+	Class Package: Core
+	Outer: TAGame
+[Import 10]
+	Full Name: UClass TAGame.ProductSlot_TA
 	Name: ProductSlot_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[11]
+	Class Package: Core
+	Outer: TAGame
+[Import 11]
+	Full Name: UClass TAGame.WheelAssetGenerator_1Wheel_TA
 	Name: WheelAssetGenerator_1Wheel_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[12]
+	Class Package: Core
+	Outer: TAGame
+[Import 12]
+	Full Name: UClass TAGame.WheelAssetGenerator_FrontWheels_TA
 	Name: WheelAssetGenerator_FrontWheels_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[13]
+	Class Package: Core
+	Outer: TAGame
+[Import 13]
+	Full Name: UClass TAGame.WheelAssetSettings_TA
 	Name: WheelAssetSettings_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[14]
+	Class Package: Core
+	Outer: TAGame
+[Import 14]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[15]
+	Class Package: Core
+[Import 15]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UPackage ProductsDB
 	Name: ProductsDB
 	Class: Package
-	Package: Core
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UPackage ProductsDB.Products
 	Name: Products
 	Class: Package
-	Package: Core
-	Outer: Package ProductsDB
-[18]
+	Class Package: Core
+	Outer: ProductsDB
+[Import 18]
+	Full Name: UPackage ProductSlots.Icons
 	Name: Icons
 	Class: Package
-	Package: Core
-	Outer: Package ProductSlots
-[19]
+	Class Package: Core
+	Outer: ProductSlots
+[Import 19]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[20]
+	Class Package: Core
+[Import 20]
+	Full Name: UPackage ThumbnailRenderers
 	Name: ThumbnailRenderers
 	Class: Package
-	Package: Core
-[21]
+	Class Package: Core
+[Import 21]
+	Full Name: UProduct_TA ProductsDB.Products.WHEEL_Star
 	Name: WHEEL_Star
 	Class: Product_TA
-	Package: TAGame
-	Outer: Package Products
-[22]
+	Class Package: TAGame
+	Outer: Products
+[Import 22]
+	Full Name: UProductAsset_Wheel_TA TAGame.Default__ProductAsset_Wheel_TA
 	Name: Default__ProductAsset_Wheel_TA
 	Class: ProductAsset_Wheel_TA
-	Package: TAGame
-	Outer: Package TAGame
-[23]
+	Class Package: TAGame
+	Outer: TAGame
+[Import 23]
+	Full Name: UTexture2D ProductSlots.Icons.Wheels
 	Name: Wheels
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Icons
-[24]
+	Class Package: Engine
+	Outer: Icons
+[Import 24]
+	Full Name: UThumbnailRenderer_TA ThumbnailRenderers.Wheel_Renderer
 	Name: Wheel_Renderer
 	Class: ThumbnailRenderer_TA
-	Package: TAGame
-	Outer: Package ThumbnailRenderers
-[25]
+	Class Package: TAGame
+	Outer: ThumbnailRenderers
+[Import 25]
+	Full Name: UWheelAssetGenerator_1Wheel_TA TAGame.Default__ProductAsset_Wheel_TA.DefaultGenerator
 	Name: DefaultGenerator
 	Class: WheelAssetGenerator_1Wheel_TA
-	Package: TAGame
-	Outer: ProductAsset_Wheel_TA Default__ProductAsset_Wheel_TA
+	Class Package: TAGame
+	Outer: Default__ProductAsset_Wheel_TA

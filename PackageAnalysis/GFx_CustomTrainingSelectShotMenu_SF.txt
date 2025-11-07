@@ -65,6 +65,7 @@ Test Data Size: 0x00003f9e
 Compressed Chunk Info Offset: 0x00000592
 Last Block Size: 0x0000000c
 Base Header Size: 0x000000e1
+Encrypted Header Size: 0x00004570
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -72,71 +73,75 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] BoolProperty
-[2] bUsesFontlib
-[3] ByteProperty
-[4] Class
-[5] Core
-[6] CustomTrainingSelectShotMenu
-[7] Edition_Default
-[8] Editions
-[9] Engine
-[10] FlashTextureRescale
-[11] FlashTextureScale_Mult4
-[12] GFx_CustomTrainingSelectShotMenu
-[13] GFx_CustomTrainingSelectShotMenu_SF
-[14] GFX_Shared
-[15] GFxUI
-[16] IntProperty
-[17] None
-[18] ObjectReferencer
-[19] Package
-[20] PackTextureSize
-[21] RawData
-[22] ReferencedObjects
-[23] ReferencedSwfs
-[24] References
-[25] SharedComponents
-[26] SourceFile
-[27] SourceFileCRC
-[28] SourceFileTimestamp
-[29] StandaloneSeekFreeReferencer
-[30] StrProperty
-[31] SwfMovie
-[32] TextureFormat
-[33] TextureRescale
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] BoolProperty
+[Name 2] [0x0007001000000000] bUsesFontlib
+[Name 3] [0x0007001000000000] ByteProperty
+[Name 4] [0x0007001000000000] Class
+[Name 5] [0x0007001000000000] Core
+[Name 6] [0x0007001000000000] CustomTrainingSelectShotMenu
+[Name 7] [0x0007000000000000] Edition_Default
+[Name 8] [0x0007000000000000] Editions
+[Name 9] [0x0007001000000000] Engine
+[Name 10] [0x0007001000000000] FlashTextureRescale
+[Name 11] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 12] [0x0007001000000000] GFx_CustomTrainingSelectShotMenu
+[Name 13] [0x0007001000000000] GFx_CustomTrainingSelectShotMenu_SF
+[Name 14] [0x0007001000000000] GFX_Shared
+[Name 15] [0x0007001000000000] GFxUI
+[Name 16] [0x0007001000000000] IntProperty
+[Name 17] [0x0007001000000000] None
+[Name 18] [0x0007001000000000] ObjectReferencer
+[Name 19] [0x0007001000000000] Package
+[Name 20] [0x0007001000000000] PackTextureSize
+[Name 21] [0x0007001000000000] RawData
+[Name 22] [0x0007001000000000] ReferencedObjects
+[Name 23] [0x0007001000000000] ReferencedSwfs
+[Name 24] [0x0007001000000000] References
+[Name 25] [0x0007001000000000] SharedComponents
+[Name 26] [0x0007001000000000] SourceFile
+[Name 27] [0x0007001000000000] SourceFileCRC
+[Name 28] [0x0007001000000000] SourceFileTimestamp
+[Name 29] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 30] [0x0007001000000000] StrProperty
+[Name 31] [0x0007001000000000] SwfMovie
+[Name 32] [0x0007001000000000] TextureFormat
+[Name 33] [0x0007001000000000] TextureRescale
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UObjectReferencer GFx_CustomTrainingSelectShotMenu.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000000673 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UPackage GFx_CustomTrainingSelectShotMenu.GFx_CustomTrainingSelectShotMenu
 	Name: GFx_CustomTrainingSelectShotMenu
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000069f with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[2]
+[Export 2]
+	Full Name: UPackage GFx_CustomTrainingSelectShotMenu.GFx_CustomTrainingSelectShotMenu_SF
 	Name: GFx_CustomTrainingSelectShotMenu_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000006ab with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[3]
+[Export 3]
+	Full Name: USwfMovie GFx_CustomTrainingSelectShotMenu.GFx_CustomTrainingSelectShotMenu.CustomTrainingSelectShotMenu
 	Name: CustomTrainingSelectShotMenu
-	Class: SwfMovie
-	Outer: Package GFx_CustomTrainingSelectShotMenu
+	Class: USwfMovie
+	Outer: GFx_CustomTrainingSelectShotMenu
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000001ba9fc with 0x000ee4ac Bytes
 	Export Flags: 0x00000001
@@ -145,39 +150,47 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[3]
+	Class Package: Core
+	Outer: GFxUI
+[Import 3]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[4]
+	Class Package: Core
+[Import 4]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[5]
+	Class Package: Core
+[Import 5]
+	Full Name: UPackage GFX_Shared
 	Name: GFX_Shared
 	Class: Package
-	Package: Core
-[6]
+	Class Package: Core
+[Import 6]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: USwfMovie GFX_Shared.SharedComponents
 	Name: SharedComponents
 	Class: SwfMovie
-	Package: GFxUI
-	Outer: Package GFX_Shared
+	Class Package: GFxUI
+	Outer: GFX_Shared

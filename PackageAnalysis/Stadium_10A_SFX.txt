@@ -61,6 +61,7 @@ Test Data Size: 0x00003f49
 Compressed Chunk Info Offset: 0x00000f3b
 Last Block Size: 0x00000008
 Base Header Size: 0x000000d5
+Encrypted Header Size: 0x00004eb0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -68,278 +69,299 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] bHasLightEverBeenBuiltIntoLightMap
-[2] bMapNeedsLightingFullyRebuilt
-[3] BoolProperty
-[4] Brightness
-[5] ByteProperty
-[6] CachedParentToWorld
-[7] Cinematic
-[8] Class
-[9] ClientDestroyedActorContent
-[10] Color
-[11] Core
-[12] Default__GroupActor
-[13] Default__SpotLight
-[14] ELightingBuildQuality
-[15] Engine
-[16] FloatProperty
-[17] GroupActor
-[18] Guid
-[19] InnerConeAngle
-[20] Level
-[21] LevelLightingQuality
-[22] LightCollector0
-[23] LightColor
-[24] LightComponents
-[25] LightGuid
-[26] LightingChannelContainer
-[27] LightingChannels
-[28] LightmapGuid
-[29] LightmassPointLightSettings
-[30] LightmassSettings
-[31] LightSourceRadius
-[32] Main_Sequence
-[33] Matrix
-[34] Model
-[35] NameProperty
-[36] None
-[37] OuterConeAngle
-[38] Package
-[39] PersistentLevel
-[40] Polys
-[41] Quality_Production
-[42] Radius
-[43] Sequence
-[44] SpotLight
-[45] SpotLight__LC
-[46] SpotLightComponent
-[47] SpotLightComponent0
-[48] stadium_10a_sfx
-[49] StaticLightCollectionActor
-[50] StructProperty
-[51] Tag
-[52] TheWorld
-[53] UnrealEd
-[54] World
-[55] WorldInfo
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] bHasLightEverBeenBuiltIntoLightMap
+[Name 2] [0x0007001000000000] bMapNeedsLightingFullyRebuilt
+[Name 3] [0x0007001000000000] BoolProperty
+[Name 4] [0x0007001000000000] Brightness
+[Name 5] [0x0007001000000000] ByteProperty
+[Name 6] [0x0007001000000000] CachedParentToWorld
+[Name 7] [0x0007001000000000] Cinematic
+[Name 8] [0x0007001000000000] Class
+[Name 9] [0x0007001000000000] ClientDestroyedActorContent
+[Name 10] [0x0007001000000000] Color
+[Name 11] [0x0007001000000000] Core
+[Name 12] [0x0007001000000000] Default__GroupActor
+[Name 13] [0x0007001000000000] Default__SpotLight
+[Name 14] [0x0007001000000000] ELightingBuildQuality
+[Name 15] [0x0007001000000000] Engine
+[Name 16] [0x0007001000000000] FloatProperty
+[Name 17] [0x0007001000000000] GroupActor
+[Name 18] [0x0007001000000000] Guid
+[Name 19] [0x0007001000000000] InnerConeAngle
+[Name 20] [0x0007001000000000] Level
+[Name 21] [0x0007001000000000] LevelLightingQuality
+[Name 22] [0x0007001000000000] LightCollector0
+[Name 23] [0x0007001000000000] LightColor
+[Name 24] [0x0007001000000000] LightComponents
+[Name 25] [0x0007001000000000] LightGuid
+[Name 26] [0x0007001000000000] LightingChannelContainer
+[Name 27] [0x0007001000000000] LightingChannels
+[Name 28] [0x0007001000000000] LightmapGuid
+[Name 29] [0x0007001000000000] LightmassPointLightSettings
+[Name 30] [0x0007001000000000] LightmassSettings
+[Name 31] [0x0007001000000000] LightSourceRadius
+[Name 32] [0x0007001000000000] Main_Sequence
+[Name 33] [0x0007001000000000] Matrix
+[Name 34] [0x0007001000000000] Model
+[Name 35] [0x0007001000000000] NameProperty
+[Name 36] [0x0007001000000000] None
+[Name 37] [0x0007001000000000] OuterConeAngle
+[Name 38] [0x0007001000000000] Package
+[Name 39] [0x0007001000000000] PersistentLevel
+[Name 40] [0x0007001000000000] Polys
+[Name 41] [0x0007001000000000] Quality_Production
+[Name 42] [0x0007001000000000] Radius
+[Name 43] [0x0007001000000000] Sequence
+[Name 44] [0x0007001000000000] SpotLight
+[Name 45] [0x0007001000000000] SpotLight__LC
+[Name 46] [0x0007001000000000] SpotLightComponent
+[Name 47] [0x0007001000000000] SpotLightComponent0
+[Name 48] [0x0007001000000000] stadium_10a_sfx
+[Name 49] [0x0007001000000000] StaticLightCollectionActor
+[Name 50] [0x0007001000000000] StructProperty
+[Name 51] [0x0007001000000000] Tag
+[Name 52] [0x0007001000000000] TheWorld
+[Name 53] [0x0007001000000000] UnrealEd
+[Name 54] [0x0007001000000000] World
+[Name 55] [0x0007001000000000] WorldInfo
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: ULevel Stadium_10A_SFX.TheWorld.PersistentLevel
 	Name: PersistentLevel
-	Class: Level
-	Outer: World TheWorld
+	Class: ULevel
+	Outer: TheWorld
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000001010 with 0x00000110 Bytes
 	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UModel Stadium_10A_SFX.TheWorld.PersistentLevel.Model_7
 	Name: Model_7
-	Class: Model
-	Outer: Level PersistentLevel
+	Class: UModel
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003e95 with 0x0000009c Bytes
 	Export Flags: 0x00000000
-[2]
+[Export 2]
+	Full Name: UPackage Stadium_10A_SFX.stadium_10a_sfx
 	Name: stadium_10a_sfx
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000011bc with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x05df1f84 0x467242e4 0xd9e01498 0x3d1a50e2
 	Package Flags: 0x228a0009
-[3]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[4]
+[Export 4]
+	Full Name: USequence Stadium_10A_SFX.TheWorld.PersistentLevel.Main_Sequence
 	Name: Main_Sequence
-	Class: Sequence
-	Outer: Level PersistentLevel
+	Class: USequence
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000011e0 with 0x0000000c Bytes
 	Export Flags: 0x00000000
-[5]
+[Export 5]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_0
 	Name: SpotLight__LC_0
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000011ec with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[6]
+[Export 6]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_1
 	Name: SpotLight__LC_1
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000013ee with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[7]
+[Export 7]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_2
 	Name: SpotLight__LC_2
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000015f0 with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[8]
+[Export 8]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_3
 	Name: SpotLight__LC_3
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000017f2 with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[9]
+[Export 9]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_4
 	Name: SpotLight__LC_4
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000019f4 with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[10]
+[Export 10]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_48
 	Name: SpotLight__LC_48
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000001bf6 with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[11]
+[Export 11]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_49
 	Name: SpotLight__LC_49
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000001df8 with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[12]
+[Export 12]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_5
 	Name: SpotLight__LC_5
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000001ffa with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[13]
+[Export 13]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_50
 	Name: SpotLight__LC_50
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000021fc with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[14]
+[Export 14]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_6
 	Name: SpotLight__LC_6
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000023fe with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[15]
+[Export 15]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_64
 	Name: SpotLight__LC_64
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002600 with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[16]
+[Export 16]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_66
 	Name: SpotLight__LC_66
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002802 with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[17]
+[Export 17]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_67
 	Name: SpotLight__LC_67
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002a04 with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[18]
+[Export 18]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_68
 	Name: SpotLight__LC_68
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002c06 with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[19]
+[Export 19]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_70
 	Name: SpotLight__LC_70
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002e08 with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[20]
+[Export 20]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_71
 	Name: SpotLight__LC_71
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000300a with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[21]
+[Export 21]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_72
 	Name: SpotLight__LC_72
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000320c with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[22]
+[Export 22]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_73
 	Name: SpotLight__LC_73
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000340e with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[23]
+[Export 23]
+	Full Name: USpotLightComponent Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0.SpotLight__LC_74
 	Name: SpotLight__LC_74
-	Class: SpotLightComponent
-	Outer: StaticLightCollectionActor LightCollector0
+	Class: USpotLightComponent
+	Outer: LightCollector0
 	Archetype: SpotLightComponent0
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003610 with 0x00000202 Bytes
 	Export Flags: 0x00000000
-[24]
+[Export 24]
+	Full Name: UStaticLightCollectionActor Stadium_10A_SFX.TheWorld.PersistentLevel.LightCollector0
 	Name: LightCollector0
-	Class: StaticLightCollectionActor
-	Outer: Level PersistentLevel
+	Class: UStaticLightCollectionActor
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003812 with 0x00000554 Bytes
 	Export Flags: 0x00000000
-[25]
+[Export 25]
+	Full Name: UWorld Stadium_10A_SFX.TheWorld
 	Name: TheWorld
-	Class: World
+	Class: UWorld
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003d66 with 0x0000008c Bytes
 	Export Flags: 0x00000000
-[26]
+[Export 26]
+	Full Name: UWorldInfo Stadium_10A_SFX.TheWorld.PersistentLevel.WorldInfo_5
 	Name: WorldInfo_5
-	Class: WorldInfo
-	Outer: Level PersistentLevel
+	Class: UWorldInfo
+	Outer: PersistentLevel
 	Object Flags: 0x0207000100000000
 	Serialized data: at 0x0000000000003df2 with 0x000000a3 Bytes
 	Export Flags: 0x00000000
-[27]
+[Export 27]
+	Full Name: UPolys Stadium_10A_SFX.TheWorld.PersistentLevel.Polys_12
 	Name: Polys_12
-	Class: Polys
-	Outer: Level PersistentLevel
+	Class: UPolys
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003f31 with 0x00000018 Bytes
 	Export Flags: 0x00000000
@@ -348,75 +370,90 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.Level
 	Name: Level
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Model
 	Name: Model
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.Polys
 	Name: Polys
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.Sequence
 	Name: Sequence
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.SpotLightComponent
 	Name: SpotLightComponent
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.StaticLightCollectionActor
 	Name: StaticLightCollectionActor
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.World
 	Name: World
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.WorldInfo
 	Name: WorldInfo
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UGroupActor UnrealEd.Default__GroupActor
 	Name: Default__GroupActor
 	Class: GroupActor
-	Package: UnrealEd
-	Outer: Package UnrealEd
-[10]
+	Class Package: UnrealEd
+	Outer: UnrealEd
+[Import 10]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[12]
+	Class Package: Core
+[Import 12]
+	Full Name: UPackage UnrealEd
 	Name: UnrealEd
 	Class: Package
-	Package: Core
-[13]
+	Class Package: Core
+[Import 13]
+	Full Name: USpotLight Engine.Default__SpotLight
 	Name: Default__SpotLight
 	Class: SpotLight
-	Package: Engine
-	Outer: Package Engine
-[14]
+	Class Package: Engine
+	Outer: Engine
+[Import 14]
+	Full Name: USpotLightComponent Engine.Default__SpotLight.SpotLightComponent0
 	Name: SpotLightComponent0
 	Class: SpotLightComponent
-	Package: Engine
-	Outer: SpotLight Default__SpotLight
+	Class Package: Engine
+	Outer: Default__SpotLight

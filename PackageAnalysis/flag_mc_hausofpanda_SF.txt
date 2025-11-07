@@ -77,6 +77,7 @@ Test Data Size: 0x00003fd8
 Compressed Chunk Info Offset: 0x00001c54
 Last Block Size: 0x00000008
 Base Header Size: 0x00000119
+Encrypted Header Size: 0x00005c40
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -84,419 +85,456 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] AdjustBrightness
-[1] animation
-[2] Antenna
-[3] AntennaComponent_TA
-[4] ArrayProperty
-[5] Attachments
-[6] bAllowLightmapSpecular
-[7] Banner_CrossoverDefault00
-[8] Banner_DungeonOfTheEndless00_D
-[9] Banner_DungeonOfTheEndless00_N
-[10] Behaviors
-[11] bExposeToLibrary
-[12] bIsSourceArtUncompressed
-[13] BoolProperty
-[14] bRealtimePreview
-[15] bUsedWithStaticLighting
-[16] ByteProperty
-[17] Class
-[18] ColorMaterialInput
-[19] Component
-[20] CompressionNone
-[21] CompressionSettings
-[22] Coordinates
-[23] Core
-[24] DefaultValue
-[25] Desc
-[26] Description
-[27] Diffuse Multiply (Lighten/Darken)
-[28] DiffuseColor
-[29] Engine
-[30] Engine_MaterialFunctions03
-[31] EPixelFormat
-[32] EProductAttachmentSocket
-[33] Expression
-[34] ExpressionGUID
-[35] ExpressionInput
-[36] Expressions
-[37] FirstResourceMemMip
-[38] Flag
-[39] flag_mc_hausofpanda
-[40] flag_mc_HausofPanda_D
-[41] flag_mc_hausofpanda_SF
-[42] Flag_Renderer
-[43] Flag_Twitch
-[44] Flag_Twitch_T
-[45] FloatProperty
-[46] Format
-[47] Function
-[48] FunctionExpressions
-[49] FXActor
-[50] General_FX
-[51] Guid
-[52] InheritCarAttribute
-[53] InternalFormatLODBias
-[54] IntProperty
-[55] LibraryCategories
-[56] LightMapCoordinateIndex
-[57] LightMapResolution
-[58] LinearColor
-[59] LODBias
-[60] LODGroup
-[61] Mat
-[62] MAT_VertexFlagParent
-[63] MAT_VertexFlagParentMirror
-[64] Material
-[65] MaterialExpressionScalarParameter
-[66] MaterialExpressionTextureSampleParameter2D
-[67] MaterialExpressionVectorParameter
-[68] MaterialFunction
-[69] MaterialFunctionInfos
-[70] MaterialInstanceConstant
-[71] mic_flag_mc_HausofPanda
-[72] MipTailBaseIdx
-[73] MirrorTranslation
-[74] NameProperty
-[75] None
-[76] Normal
-[77] ObjectProperty
-[78] ObjectReferencer
-[79] OriginalSizeX
-[80] OriginalSizeY
-[81] OutputIndex
-[82] Package
-[83] ParameterName
-[84] ParameterValue
-[85] Parent
-[86] ParentLightingGuid
-[87] ParticleSystem
-[88] PAS_Antenna
-[89] PF_A8R8G8B8
-[90] PF_DXT1
-[91] PF_V8U8
-[92] ProductAsset_Attachment_TA
-[93] ProductSlot_TA
-[94] ProductSlots
-[95] ReferencedObjects
-[96] Rotation
-[97] Rotator
-[98] ScalarMaterialInput
-[99] ScalarParameterValues
-[100] Scale
-[101] SizeX
-[102] SizeY
-[103] SkeletalMesh
-[104] Socket
-[105] SpecularColor
-[106] SpecularPower
-[107] SRGB
-[108] StandaloneSeekFreeReferencer
-[109] StateId
-[110] StaticMesh
-[111] StrProperty
-[112] StructProperty
-[113] Swirls02_N
-[114] TAGame
-[115] TC_Normalmap
-[116] TC_NormalmapUncompressed
-[117] Texture
-[118] Texture2D
-[119] TextureCompressionSettings
-[120] TextureDiffuse
-[121] TextureFileCacheName
-[122] TextureGroup
-[123] TEXTUREGROUP_EffectsNotFiltered
-[124] TEXTUREGROUP_WorldNormalMap
-[125] TextureNormal
-[126] TextureParameterValues
-[127] Textures2
-[128] Textures6
-[129] Texturing
-[130] ThumbnailKeyLightBrightnessScale
-[131] ThumbnailRenderer
-[132] ThumbnailRenderer_TA
-[133] ThumbnailRenderers
-[134] Translation
-[135] TwoSided
-[136] TwoSidedLightingMask
-[137] TwoSidedTexturing
-[138] UnpackMin
-[139] Vector
-[140] VectorMaterialInput
-[141] WindDirectionXYZ-RGB
-[142] WindInt
-[143] WindSpeed
-[144] WorldPositionOffset
+[Name 0] [0x0007001000000000] AdjustBrightness
+[Name 1] [0x0007001000000000] animation
+[Name 2] [0x0007001000000000] Antenna
+[Name 3] [0x0007001000000000] AntennaComponent_TA
+[Name 4] [0x0007001000000000] ArrayProperty
+[Name 5] [0x0007001000000000] Attachments
+[Name 6] [0x0007001000000000] bAllowLightmapSpecular
+[Name 7] [0x0007001000000000] Banner_CrossoverDefault00
+[Name 8] [0x0007001000000000] Banner_DungeonOfTheEndless00_D
+[Name 9] [0x0007001000000000] Banner_DungeonOfTheEndless00_N
+[Name 10] [0x0007001000000000] Behaviors
+[Name 11] [0x0007001000000000] bExposeToLibrary
+[Name 12] [0x0007001000000000] bIsSourceArtUncompressed
+[Name 13] [0x0007001000000000] BoolProperty
+[Name 14] [0x0007001000000000] bRealtimePreview
+[Name 15] [0x0007001000000000] bUsedWithStaticLighting
+[Name 16] [0x0007001000000000] ByteProperty
+[Name 17] [0x0007001000000000] Class
+[Name 18] [0x0007001000000000] ColorMaterialInput
+[Name 19] [0x0007001000000000] Component
+[Name 20] [0x0007001000000000] CompressionNone
+[Name 21] [0x0007001000000000] CompressionSettings
+[Name 22] [0x0007001000000000] Coordinates
+[Name 23] [0x0007001000000000] Core
+[Name 24] [0x0007001000000000] DefaultValue
+[Name 25] [0x0007001000000000] Desc
+[Name 26] [0x0007001000000000] Description
+[Name 27] [0x0007001000000000] Diffuse Multiply (Lighten/Darken)
+[Name 28] [0x0007001000000000] DiffuseColor
+[Name 29] [0x0007001000000000] Engine
+[Name 30] [0x0007001000000000] Engine_MaterialFunctions03
+[Name 31] [0x0007001000000000] EPixelFormat
+[Name 32] [0x0007001000000000] EProductAttachmentSocket
+[Name 33] [0x0007001000000000] Expression
+[Name 34] [0x0007001000000000] ExpressionGUID
+[Name 35] [0x0007001000000000] ExpressionInput
+[Name 36] [0x0007001000000000] Expressions
+[Name 37] [0x0007001000000000] FirstResourceMemMip
+[Name 38] [0x0007001000000000] Flag
+[Name 39] [0x0007001000000000] flag_mc_hausofpanda
+[Name 40] [0x0007001000000000] flag_mc_HausofPanda_D
+[Name 41] [0x0007001000000000] flag_mc_hausofpanda_SF
+[Name 42] [0x0007001000000000] Flag_Renderer
+[Name 43] [0x0007001000000000] Flag_Twitch
+[Name 44] [0x0007001000000000] Flag_Twitch_T
+[Name 45] [0x0007001000000000] FloatProperty
+[Name 46] [0x0007001000000000] Format
+[Name 47] [0x0007001000000000] Function
+[Name 48] [0x0007001000000000] FunctionExpressions
+[Name 49] [0x0007001000000000] FXActor
+[Name 50] [0x0007001000000000] General_FX
+[Name 51] [0x0007001000000000] Guid
+[Name 52] [0x0007001000000000] InheritCarAttribute
+[Name 53] [0x0007001000000000] InternalFormatLODBias
+[Name 54] [0x0007001000000000] IntProperty
+[Name 55] [0x0007001000000000] LibraryCategories
+[Name 56] [0x0007001000000000] LightMapCoordinateIndex
+[Name 57] [0x0007001000000000] LightMapResolution
+[Name 58] [0x0007001000000000] LinearColor
+[Name 59] [0x0007001000000000] LODBias
+[Name 60] [0x0007001000000000] LODGroup
+[Name 61] [0x0007001000000000] Mat
+[Name 62] [0x0007001000000000] MAT_VertexFlagParent
+[Name 63] [0x0007001000000000] MAT_VertexFlagParentMirror
+[Name 64] [0x0007001000000000] Material
+[Name 65] [0x0007001000000000] MaterialExpressionScalarParameter
+[Name 66] [0x0007001000000000] MaterialExpressionTextureSampleParameter2D
+[Name 67] [0x0007001000000000] MaterialExpressionVectorParameter
+[Name 68] [0x0007001000000000] MaterialFunction
+[Name 69] [0x0007001000000000] MaterialFunctionInfos
+[Name 70] [0x0007001000000000] MaterialInstanceConstant
+[Name 71] [0x0007001000000000] mic_flag_mc_HausofPanda
+[Name 72] [0x0007001000000000] MipTailBaseIdx
+[Name 73] [0x0007001000000000] MirrorTranslation
+[Name 74] [0x0007001000000000] NameProperty
+[Name 75] [0x0007001000000000] None
+[Name 76] [0x0007001000000000] Normal
+[Name 77] [0x0007001000000000] ObjectProperty
+[Name 78] [0x0007001000000000] ObjectReferencer
+[Name 79] [0x0007001000000000] OriginalSizeX
+[Name 80] [0x0007001000000000] OriginalSizeY
+[Name 81] [0x0007001000000000] OutputIndex
+[Name 82] [0x0007001000000000] Package
+[Name 83] [0x0007001000000000] ParameterName
+[Name 84] [0x0007001000000000] ParameterValue
+[Name 85] [0x0007001000000000] Parent
+[Name 86] [0x0007001000000000] ParentLightingGuid
+[Name 87] [0x0007001000000000] ParticleSystem
+[Name 88] [0x0007001000000000] PAS_Antenna
+[Name 89] [0x0007001000000000] PF_A8R8G8B8
+[Name 90] [0x0007001000000000] PF_DXT1
+[Name 91] [0x0007001000000000] PF_V8U8
+[Name 92] [0x0007001000000000] ProductAsset_Attachment_TA
+[Name 93] [0x0007001000000000] ProductSlot_TA
+[Name 94] [0x0007001000000000] ProductSlots
+[Name 95] [0x0007001000000000] ReferencedObjects
+[Name 96] [0x0007001000000000] Rotation
+[Name 97] [0x0007001000000000] Rotator
+[Name 98] [0x0007001000000000] ScalarMaterialInput
+[Name 99] [0x0007001000000000] ScalarParameterValues
+[Name 100] [0x0007001000000000] Scale
+[Name 101] [0x0007001000000000] SizeX
+[Name 102] [0x0007001000000000] SizeY
+[Name 103] [0x0007001000000000] SkeletalMesh
+[Name 104] [0x0007001000000000] Socket
+[Name 105] [0x0007001000000000] SpecularColor
+[Name 106] [0x0007001000000000] SpecularPower
+[Name 107] [0x0007001000000000] SRGB
+[Name 108] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 109] [0x0007001000000000] StateId
+[Name 110] [0x0007001000000000] StaticMesh
+[Name 111] [0x0007001000000000] StrProperty
+[Name 112] [0x0007001000000000] StructProperty
+[Name 113] [0x0007001000000000] Swirls02_N
+[Name 114] [0x0007001000000000] TAGame
+[Name 115] [0x0007001000000000] TC_Normalmap
+[Name 116] [0x0007001000000000] TC_NormalmapUncompressed
+[Name 117] [0x0007001000000000] Texture
+[Name 118] [0x0007001000000000] Texture2D
+[Name 119] [0x0007001000000000] TextureCompressionSettings
+[Name 120] [0x0007001000000000] TextureDiffuse
+[Name 121] [0x0007001000000000] TextureFileCacheName
+[Name 122] [0x0007001000000000] TextureGroup
+[Name 123] [0x0007001000000000] TEXTUREGROUP_EffectsNotFiltered
+[Name 124] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 125] [0x0007001000000000] TextureNormal
+[Name 126] [0x0007001000000000] TextureParameterValues
+[Name 127] [0x0007001000000000] Textures2
+[Name 128] [0x0007001000000000] Textures6
+[Name 129] [0x0007001000000000] Texturing
+[Name 130] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
+[Name 131] [0x0007001000000000] ThumbnailRenderer
+[Name 132] [0x0007001000000000] ThumbnailRenderer_TA
+[Name 133] [0x0007001000000000] ThumbnailRenderers
+[Name 134] [0x0007001000000000] Translation
+[Name 135] [0x0007001000000000] TwoSided
+[Name 136] [0x0007001000000000] TwoSidedLightingMask
+[Name 137] [0x0007001000000000] TwoSidedTexturing
+[Name 138] [0x0007001000000000] UnpackMin
+[Name 139] [0x0007001000000000] Vector
+[Name 140] [0x0007001000000000] VectorMaterialInput
+[Name 141] [0x0007001000000000] WindDirectionXYZ-RGB
+[Name 142] [0x0007001000000000] WindInt
+[Name 143] [0x0007001000000000] WindSpeed
+[Name 144] [0x0007001000000000] WorldPositionOffset
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAntennaComponent_TA flag_mc_hausofpanda.flag_mc_hausofpanda.flag_mc_hausofpanda.AntennaComponent_TA_1
 	Name: AntennaComponent_TA_1
-	Class: AntennaComponent_TA
-	Outer: ProductAsset_Attachment_TA flag_mc_hausofpanda
+	Class: UAntennaComponent_TA
+	Outer: flag_mc_hausofpanda
 	Archetype: AntennaComponent_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001d6d with 0x00000010 Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterial flag_mc_hausofpanda.Flag.MAT_VertexFlagParent
 	Name: MAT_VertexFlagParent
-	Class: Material
-	Outer: Package Flag
+	Class: UMaterial
+	Outer: Flag
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000001d7d with 0x0000034f Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterial flag_mc_hausofpanda.Flag_Twitch.MAT_VertexFlagParentMirror
 	Name: MAT_VertexFlagParentMirror
-	Class: Material
-	Outer: Package Flag_Twitch
+	Class: UMaterial
+	Outer: Flag_Twitch
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000020cc with 0x00000403 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterialExpressionScalarParameter flag_mc_hausofpanda.Flag.MAT_VertexFlagParent.MaterialExpressionScalarParameter_0
 	Name: MaterialExpressionScalarParameter_0
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_VertexFlagParent
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_VertexFlagParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000024cf with 0x000000b3 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UMaterialExpressionScalarParameter flag_mc_hausofpanda.Flag.MAT_VertexFlagParent.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_VertexFlagParent
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_VertexFlagParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002582 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UMaterialExpressionScalarParameter flag_mc_hausofpanda.Flag.MAT_VertexFlagParent.MaterialExpressionScalarParameter_44
 	Name: MaterialExpressionScalarParameter_44
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_VertexFlagParent
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_VertexFlagParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002616 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UMaterialExpressionScalarParameter flag_mc_hausofpanda.Flag_Twitch.MAT_VertexFlagParentMirror.MaterialExpressionScalarParameter_0
 	Name: MaterialExpressionScalarParameter_0
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_VertexFlagParentMirror
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_VertexFlagParentMirror
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000026aa with 0x000000b3 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UMaterialExpressionScalarParameter flag_mc_hausofpanda.Flag_Twitch.MAT_VertexFlagParentMirror.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_VertexFlagParentMirror
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_VertexFlagParentMirror
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000275d with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UMaterialExpressionScalarParameter flag_mc_hausofpanda.Flag_Twitch.MAT_VertexFlagParentMirror.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_VertexFlagParentMirror
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_VertexFlagParentMirror
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000027f1 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UMaterialExpressionScalarParameter flag_mc_hausofpanda.Flag_Twitch.MAT_VertexFlagParentMirror.MaterialExpressionScalarParameter_3
 	Name: MaterialExpressionScalarParameter_3
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_VertexFlagParentMirror
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_VertexFlagParentMirror
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002885 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UMaterialExpressionScalarParameter flag_mc_hausofpanda.Flag_Twitch.MAT_VertexFlagParentMirror.MaterialExpressionScalarParameter_42
 	Name: MaterialExpressionScalarParameter_42
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_VertexFlagParentMirror
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_VertexFlagParentMirror
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002919 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UMaterialExpressionTextureSampleParameter2D flag_mc_hausofpanda.Flag.MAT_VertexFlagParent.MaterialExpressionTextureSampleParameter2D_0
 	Name: MaterialExpressionTextureSampleParameter2D_0
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_VertexFlagParent
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_VertexFlagParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000029ad with 0x000000d8 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UMaterialExpressionTextureSampleParameter2D flag_mc_hausofpanda.Flag.MAT_VertexFlagParent.MaterialExpressionTextureSampleParameter2D_1
 	Name: MaterialExpressionTextureSampleParameter2D_1
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_VertexFlagParent
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_VertexFlagParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002a85 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UMaterialExpressionTextureSampleParameter2D flag_mc_hausofpanda.Flag_Twitch.MAT_VertexFlagParentMirror.MaterialExpressionTextureSampleParameter2D_0
 	Name: MaterialExpressionTextureSampleParameter2D_0
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_VertexFlagParentMirror
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_VertexFlagParentMirror
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002b5d with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UMaterialExpressionTextureSampleParameter2D flag_mc_hausofpanda.Flag_Twitch.MAT_VertexFlagParentMirror.MaterialExpressionTextureSampleParameter2D_1
 	Name: MaterialExpressionTextureSampleParameter2D_1
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_VertexFlagParentMirror
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_VertexFlagParentMirror
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002bf1 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UMaterialExpressionTextureSampleParameter2D flag_mc_hausofpanda.Flag_Twitch.MAT_VertexFlagParentMirror.MaterialExpressionTextureSampleParameter2D_2
 	Name: MaterialExpressionTextureSampleParameter2D_2
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_VertexFlagParentMirror
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_VertexFlagParentMirror
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002cc9 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UMaterialExpressionTextureSampleParameter2D flag_mc_hausofpanda.Flag_Twitch.MAT_VertexFlagParentMirror.MaterialExpressionTextureSampleParameter2D_4
 	Name: MaterialExpressionTextureSampleParameter2D_4
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material MAT_VertexFlagParentMirror
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: MAT_VertexFlagParentMirror
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002da1 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UMaterialExpressionVectorParameter flag_mc_hausofpanda.Flag.MAT_VertexFlagParent.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_VertexFlagParent
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_VertexFlagParent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002e92 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UMaterialExpressionVectorParameter flag_mc_hausofpanda.Flag_Twitch.MAT_VertexFlagParentMirror.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_VertexFlagParentMirror
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_VertexFlagParentMirror
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002f3a with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UMaterialFunction flag_mc_hausofpanda.Engine_MaterialFunctions03.Texturing.TwoSidedTexturing
 	Name: TwoSidedTexturing
-	Class: MaterialFunction
-	Outer: Package Texturing
+	Class: UMaterialFunction
+	Outer: Texturing
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002fe2 with 0x0000017c Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UMaterialInstanceConstant flag_mc_hausofpanda.flag_mc_hausofpanda.mic_flag_mc_HausofPanda
 	Name: mic_flag_mc_HausofPanda
-	Class: MaterialInstanceConstant
-	Outer: Package flag_mc_hausofpanda
+	Class: UMaterialInstanceConstant
+	Outer: flag_mc_hausofpanda
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x000000000000315e with 0x000001ec Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UObjectReferencer flag_mc_hausofpanda.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x000000000000334a with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[22]
+[Export 22]
+	Full Name: UPackage flag_mc_hausofpanda.Engine_MaterialFunctions03
 	Name: Engine_MaterialFunctions03
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003376 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[23]
+[Export 23]
+	Full Name: UPackage flag_mc_hausofpanda.Engine_MaterialFunctions03.Texturing
 	Name: Texturing
-	Class: Package
-	Outer: Package Engine_MaterialFunctions03
+	Class: UPackage
+	Outer: Engine_MaterialFunctions03
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003382 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UPackage flag_mc_hausofpanda.Flag
 	Name: Flag
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000338e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[25]
+[Export 25]
+	Full Name: UPackage flag_mc_hausofpanda.flag_mc_hausofpanda
 	Name: flag_mc_hausofpanda
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000339a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[26]
+[Export 26]
+	Full Name: UPackage flag_mc_hausofpanda.flag_mc_hausofpanda_SF
 	Name: flag_mc_hausofpanda_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000033a6 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[27]
+[Export 27]
+	Full Name: UPackage flag_mc_hausofpanda.Flag_Twitch
 	Name: Flag_Twitch
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000033b2 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[28]
+[Export 28]
+	Full Name: UPackage flag_mc_hausofpanda.General_FX
 	Name: General_FX
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000033be with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[29]
+[Export 29]
+	Full Name: UPackage flag_mc_hausofpanda.General_FX.Mat
 	Name: Mat
-	Class: Package
-	Outer: Package General_FX
+	Class: UPackage
+	Outer: General_FX
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000033ca with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UProductAsset_Attachment_TA flag_mc_hausofpanda.flag_mc_hausofpanda.flag_mc_hausofpanda
 	Name: flag_mc_hausofpanda
-	Class: ProductAsset_Attachment_TA
-	Outer: Package flag_mc_hausofpanda
+	Class: UProductAsset_Attachment_TA
+	Outer: flag_mc_hausofpanda
 	Archetype: ProductAsset_Attachment_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000033d6 with 0x00000200 Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UStaticMesh flag_mc_hausofpanda.Flag.Banner_CrossoverDefault00
 	Name: Banner_CrossoverDefault00
-	Class: StaticMesh
-	Outer: Package Flag
+	Class: UStaticMesh
+	Outer: Flag
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000035d6 with 0x00003329 Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: UTexture2D flag_mc_hausofpanda.Flag.Banner_DungeonOfTheEndless00_D
 	Name: Banner_DungeonOfTheEndless00_D
-	Class: Texture2D
-	Outer: Package Flag
+	Class: UTexture2D
+	Outer: Flag
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000068ff with 0x000007f8 Bytes
 	Export Flags: 0x00000001
-[33]
+[Export 33]
+	Full Name: UTexture2D flag_mc_hausofpanda.Flag.Banner_DungeonOfTheEndless00_N
 	Name: Banner_DungeonOfTheEndless00_N
-	Class: Texture2D
-	Outer: Package Flag
+	Class: UTexture2D
+	Outer: Flag
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000070f7 with 0x00001887 Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UTexture2D flag_mc_hausofpanda.flag_mc_hausofpanda.flag_mc_HausofPanda_D
 	Name: flag_mc_HausofPanda_D
-	Class: Texture2D
-	Outer: Package flag_mc_hausofpanda
+	Class: UTexture2D
+	Outer: flag_mc_hausofpanda
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000897e with 0x00002d36 Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: UTexture2D flag_mc_hausofpanda.Flag_Twitch.Flag_Twitch_T
 	Name: Flag_Twitch_T
-	Class: Texture2D
-	Outer: Package Flag_Twitch
+	Class: UTexture2D
+	Outer: Flag_Twitch
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000b6b4 with 0x000007dc Bytes
 	Export Flags: 0x00000001
-[36]
+[Export 36]
+	Full Name: UTexture2D flag_mc_hausofpanda.General_FX.Mat.Swirls02_N
 	Name: Swirls02_N
-	Class: Texture2D
-	Outer: Package Mat
+	Class: UTexture2D
+	Outer: Mat
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000be90 with 0x00000d95 Bytes
 	Export Flags: 0x00000001
@@ -505,103 +543,124 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UAntennaComponent_TA ProductSlots.Antenna.ProductAsset_Attachment_TA_0.AntennaComponent_TA_0
 	Name: AntennaComponent_TA_0
 	Class: AntennaComponent_TA
-	Package: TAGame
-	Outer: ProductAsset_Attachment_TA ProductAsset_Attachment_TA_0
-[1]
+	Class Package: TAGame
+	Outer: ProductAsset_Attachment_TA_0
+[Import 1]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[2]
+	Class Package: Core
+	Outer: Core
+[Import 2]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.MaterialExpressionTextureSampleParameter2D
 	Name: MaterialExpressionTextureSampleParameter2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.MaterialExpressionVectorParameter
 	Name: MaterialExpressionVectorParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.MaterialFunction
 	Name: MaterialFunction
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass Engine.StaticMesh
 	Name: StaticMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[10]
+	Class Package: Core
+	Outer: Engine
+[Import 10]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[11]
+	Class Package: Core
+	Outer: Engine
+[Import 11]
+	Full Name: UClass TAGame.AntennaComponent_TA
 	Name: AntennaComponent_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[12]
+	Class Package: Core
+	Outer: TAGame
+[Import 12]
+	Full Name: UClass TAGame.ProductAsset_Attachment_TA
 	Name: ProductAsset_Attachment_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[13]
+	Class Package: Core
+	Outer: TAGame
+[Import 13]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[14]
+	Class Package: Core
+[Import 14]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[15]
+	Class Package: Core
+[Import 15]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UPackage ThumbnailRenderers
 	Name: ThumbnailRenderers
 	Class: Package
-	Package: Core
-[18]
+	Class Package: Core
+[Import 18]
+	Full Name: UProductAsset_Attachment_TA ProductSlots.Antenna.ProductAsset_Attachment_TA_0
 	Name: ProductAsset_Attachment_TA_0
 	Class: ProductAsset_Attachment_TA
-	Package: TAGame
-	Outer: ProductSlot_TA Antenna
-[19]
+	Class Package: TAGame
+	Outer: Antenna
+[Import 19]
+	Full Name: UProductSlot_TA ProductSlots.Antenna
 	Name: Antenna
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
-[20]
+	Class Package: TAGame
+	Outer: ProductSlots
+[Import 20]
+	Full Name: UThumbnailRenderer_TA ThumbnailRenderers.Flag_Renderer
 	Name: Flag_Renderer
 	Class: ThumbnailRenderer_TA
-	Package: TAGame
-	Outer: Package ThumbnailRenderers
+	Class Package: TAGame
+	Outer: ThumbnailRenderers

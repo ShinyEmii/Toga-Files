@@ -56,6 +56,7 @@ Test Data Size: 0x00003fd8
 Compressed Chunk Info Offset: 0x00001050
 Last Block Size: 0x00000004
 Base Header Size: 0x000000d1
+Encrypted Header Size: 0x00005040
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -63,209 +64,223 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] Antenna
-[1] antenna_badbeats
-[2] Antenna_Badbeats_MAT
-[3] Antenna_Badbeats_MIC
-[4] antenna_badbeats_SF
-[5] Antenna_Badbeats_SM
-[6] AntennaComponent_TA
-[7] ArrayProperty
-[8] Attachments
-[9] Behaviors
-[10] bHasStaticPermutationResource
-[11] BLEND_Masked
-[12] BlendMode
-[13] BoolProperty
-[14] bRealtimePreview
-[15] bUsedWithSkeletalMesh
-[16] ByteProperty
-[17] Class
-[18] ColorMaterialInput
-[19] Component
-[20] CompressionSettings
-[21] Core
-[22] DefaultValue
-[23] Diffuse
-[24] EBlendMode
-[25] EMaterialLightingModel
-[26] EmissiveColor
-[27] Engine
-[28] EPixelFormat
-[29] EProductAttachmentSocket
-[30] Expression
-[31] ExpressionGUID
-[32] Expressions
-[33] FirstResourceMemMip
-[34] FloatProperty
-[35] Format
-[36] FXActor
-[37] Guid
-[38] InheritCarAttribute
-[39] IntProperty
-[40] LightingModel
-[41] LightMapCoordinateIndex
-[42] LightMapResolution
-[43] LODGroup
-[44] Material
-[45] MaterialExpressionScalarParameter
-[46] MaterialExpressionTextureSampleParameter2D
-[47] MaterialInstanceConstant
-[48] MipTailBaseIdx
-[49] MLM_Unlit
-[50] NameProperty
-[51] None
-[52] Normal
-[53] ObjectProperty
-[54] ObjectReferencer
-[55] OriginalSizeX
-[56] OriginalSizeY
-[57] Package
-[58] ParameterName
-[59] ParameterValue
-[60] Parent
-[61] ParentLightingGuid
-[62] ParticleSystem
-[63] PAS_Antenna
-[64] PF_DXT5
-[65] ProductAsset_Attachment_TA
-[66] ProductSlot_TA
-[67] ProductSlots
-[68] ReferencedObjects
-[69] Rotation
-[70] Rotator
-[71] ScalarParameterValues
-[72] Scale
-[73] SizeX
-[74] SizeY
-[75] SkeletalMesh
-[76] Socket
-[77] SRGB
-[78] StandaloneSeekFreeReferencer
-[79] StaticMesh
-[80] stepAmount
-[81] stepcount
-[82] StructProperty
-[83] T_Antenna_Badbeats_DE
-[84] T_Antenna_Badbeats_N
-[85] TAGame
-[86] TC_NormalmapSwizzle
-[87] Texture
-[88] Texture2D
-[89] TextureCompressionSettings
-[90] TextureFileCacheName
-[91] TextureGroup
-[92] TEXTUREGROUP_WorldNormalMap
-[93] TextureParameterValues
-[94] Textures4
-[95] ThumbnailCameraTranslationOffset
-[96] ThumbnailProductRotation
-[97] Translation
-[98] UnpackMin
-[99] Vector
+[Name 0] [0x0007001000000000] Antenna
+[Name 1] [0x0007001000000000] antenna_badbeats
+[Name 2] [0x0007001000000000] Antenna_Badbeats_MAT
+[Name 3] [0x0007001000000000] Antenna_Badbeats_MIC
+[Name 4] [0x0007001000000000] antenna_badbeats_SF
+[Name 5] [0x0007001000000000] Antenna_Badbeats_SM
+[Name 6] [0x0007001000000000] AntennaComponent_TA
+[Name 7] [0x0007001000000000] ArrayProperty
+[Name 8] [0x0007001000000000] Attachments
+[Name 9] [0x0007001000000000] Behaviors
+[Name 10] [0x0007001000000000] bHasStaticPermutationResource
+[Name 11] [0x0007001000000000] BLEND_Masked
+[Name 12] [0x0007001000000000] BlendMode
+[Name 13] [0x0007001000000000] BoolProperty
+[Name 14] [0x0007001000000000] bRealtimePreview
+[Name 15] [0x0007001000000000] bUsedWithSkeletalMesh
+[Name 16] [0x0007001000000000] ByteProperty
+[Name 17] [0x0007001000000000] Class
+[Name 18] [0x0007001000000000] ColorMaterialInput
+[Name 19] [0x0007001000000000] Component
+[Name 20] [0x0007001000000000] CompressionSettings
+[Name 21] [0x0007001000000000] Core
+[Name 22] [0x0007001000000000] DefaultValue
+[Name 23] [0x0007001000000000] Diffuse
+[Name 24] [0x0007001000000000] EBlendMode
+[Name 25] [0x0007001000000000] EMaterialLightingModel
+[Name 26] [0x0007001000000000] EmissiveColor
+[Name 27] [0x0007001000000000] Engine
+[Name 28] [0x0007001000000000] EPixelFormat
+[Name 29] [0x0007001000000000] EProductAttachmentSocket
+[Name 30] [0x0007001000000000] Expression
+[Name 31] [0x0007001000000000] ExpressionGUID
+[Name 32] [0x0007001000000000] Expressions
+[Name 33] [0x0007001000000000] FirstResourceMemMip
+[Name 34] [0x0007001000000000] FloatProperty
+[Name 35] [0x0007001000000000] Format
+[Name 36] [0x0007001000000000] FXActor
+[Name 37] [0x0007001000000000] Guid
+[Name 38] [0x0007001000000000] InheritCarAttribute
+[Name 39] [0x0007001000000000] IntProperty
+[Name 40] [0x0007001000000000] LightingModel
+[Name 41] [0x0007001000000000] LightMapCoordinateIndex
+[Name 42] [0x0007001000000000] LightMapResolution
+[Name 43] [0x0007001000000000] LODGroup
+[Name 44] [0x0007001000000000] Material
+[Name 45] [0x0007001000000000] MaterialExpressionScalarParameter
+[Name 46] [0x0007001000000000] MaterialExpressionTextureSampleParameter2D
+[Name 47] [0x0007001000000000] MaterialInstanceConstant
+[Name 48] [0x0007001000000000] MipTailBaseIdx
+[Name 49] [0x0007001000000000] MLM_Unlit
+[Name 50] [0x0007001000000000] NameProperty
+[Name 51] [0x0007001000000000] None
+[Name 52] [0x0007001000000000] Normal
+[Name 53] [0x0007001000000000] ObjectProperty
+[Name 54] [0x0007001000000000] ObjectReferencer
+[Name 55] [0x0007001000000000] OriginalSizeX
+[Name 56] [0x0007001000000000] OriginalSizeY
+[Name 57] [0x0007001000000000] Package
+[Name 58] [0x0007001000000000] ParameterName
+[Name 59] [0x0007001000000000] ParameterValue
+[Name 60] [0x0007001000000000] Parent
+[Name 61] [0x0007001000000000] ParentLightingGuid
+[Name 62] [0x0007001000000000] ParticleSystem
+[Name 63] [0x0007001000000000] PAS_Antenna
+[Name 64] [0x0007001000000000] PF_DXT5
+[Name 65] [0x0007001000000000] ProductAsset_Attachment_TA
+[Name 66] [0x0007001000000000] ProductSlot_TA
+[Name 67] [0x0007001000000000] ProductSlots
+[Name 68] [0x0007001000000000] ReferencedObjects
+[Name 69] [0x0007001000000000] Rotation
+[Name 70] [0x0007001000000000] Rotator
+[Name 71] [0x0007001000000000] ScalarParameterValues
+[Name 72] [0x0007001000000000] Scale
+[Name 73] [0x0007001000000000] SizeX
+[Name 74] [0x0007001000000000] SizeY
+[Name 75] [0x0007001000000000] SkeletalMesh
+[Name 76] [0x0007001000000000] Socket
+[Name 77] [0x0007001000000000] SRGB
+[Name 78] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 79] [0x0007001000000000] StaticMesh
+[Name 80] [0x0007001000000000] stepAmount
+[Name 81] [0x0007001000000000] stepcount
+[Name 82] [0x0007001000000000] StructProperty
+[Name 83] [0x0007001000000000] T_Antenna_Badbeats_DE
+[Name 84] [0x0007001000000000] T_Antenna_Badbeats_N
+[Name 85] [0x0007001000000000] TAGame
+[Name 86] [0x0007001000000000] TC_NormalmapSwizzle
+[Name 87] [0x0007001000000000] Texture
+[Name 88] [0x0007001000000000] Texture2D
+[Name 89] [0x0007001000000000] TextureCompressionSettings
+[Name 90] [0x0007001000000000] TextureFileCacheName
+[Name 91] [0x0007001000000000] TextureGroup
+[Name 92] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 93] [0x0007001000000000] TextureParameterValues
+[Name 94] [0x0007001000000000] Textures4
+[Name 95] [0x0007001000000000] ThumbnailCameraTranslationOffset
+[Name 96] [0x0007001000000000] ThumbnailProductRotation
+[Name 97] [0x0007001000000000] Translation
+[Name 98] [0x0007001000000000] UnpackMin
+[Name 99] [0x0007001000000000] Vector
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAntennaComponent_TA antenna_badbeats.antenna_badbeats.antenna_badbeats.AntennaComponent_TA_0
 	Name: AntennaComponent_TA_0
-	Class: AntennaComponent_TA
-	Outer: ProductAsset_Attachment_TA antenna_badbeats
+	Class: UAntennaComponent_TA
+	Outer: antenna_badbeats
 	Archetype: AntennaComponent_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001121 with 0x00000010 Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterial antenna_badbeats.antenna_badbeats.Antenna_Badbeats_MAT
 	Name: Antenna_Badbeats_MAT
-	Class: Material
-	Outer: Package antenna_badbeats
+	Class: UMaterial
+	Outer: antenna_badbeats
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000001131 with 0x00000195 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterialExpressionScalarParameter antenna_badbeats.antenna_badbeats.Antenna_Badbeats_MAT.MaterialExpressionScalarParameter_0
 	Name: MaterialExpressionScalarParameter_0
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Antenna_Badbeats_MAT
+	Class: UMaterialExpressionScalarParameter
+	Outer: Antenna_Badbeats_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000012c6 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterialExpressionScalarParameter antenna_badbeats.antenna_badbeats.Antenna_Badbeats_MAT.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Antenna_Badbeats_MAT
+	Class: UMaterialExpressionScalarParameter
+	Outer: Antenna_Badbeats_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000135a with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UMaterialExpressionTextureSampleParameter2D antenna_badbeats.antenna_badbeats.Antenna_Badbeats_MAT.MaterialExpressionTextureSampleParameter2D_0
 	Name: MaterialExpressionTextureSampleParameter2D_0
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material Antenna_Badbeats_MAT
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: Antenna_Badbeats_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000013ee with 0x000000ad Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UMaterialExpressionTextureSampleParameter2D antenna_badbeats.antenna_badbeats.Antenna_Badbeats_MAT.MaterialExpressionTextureSampleParameter2D_2
 	Name: MaterialExpressionTextureSampleParameter2D_2
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material Antenna_Badbeats_MAT
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: Antenna_Badbeats_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000149b with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UMaterialInstanceConstant antenna_badbeats.antenna_badbeats.Antenna_Badbeats_MIC
 	Name: Antenna_Badbeats_MIC
-	Class: MaterialInstanceConstant
-	Outer: Package antenna_badbeats
+	Class: UMaterialInstanceConstant
+	Outer: antenna_badbeats
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x000000000000152f with 0x00000315 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UObjectReferencer antenna_badbeats.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000001844 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[8]
+[Export 8]
+	Full Name: UPackage antenna_badbeats.antenna_badbeats
 	Name: antenna_badbeats
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001870 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[9]
+[Export 9]
+	Full Name: UPackage antenna_badbeats.antenna_badbeats_SF
 	Name: antenna_badbeats_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000187c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[10]
+[Export 10]
+	Full Name: UProductAsset_Attachment_TA antenna_badbeats.antenna_badbeats.antenna_badbeats
 	Name: antenna_badbeats
-	Class: ProductAsset_Attachment_TA
-	Outer: Package antenna_badbeats
+	Class: UProductAsset_Attachment_TA
+	Outer: antenna_badbeats
 	Archetype: ProductAsset_Attachment_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001888 with 0x00000220 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UStaticMesh antenna_badbeats.antenna_badbeats.Antenna_Badbeats_SM
 	Name: Antenna_Badbeats_SM
-	Class: StaticMesh
-	Outer: Package antenna_badbeats
+	Class: UStaticMesh
+	Outer: antenna_badbeats
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001aa8 with 0x0006cdb5 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UTexture2D antenna_badbeats.antenna_badbeats.T_Antenna_Badbeats_DE
 	Name: T_Antenna_Badbeats_DE
-	Class: Texture2D
-	Outer: Package antenna_badbeats
+	Class: UTexture2D
+	Outer: antenna_badbeats
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000006e85d with 0x000017ac Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UTexture2D antenna_badbeats.antenna_badbeats.T_Antenna_Badbeats_N
 	Name: T_Antenna_Badbeats_N
-	Class: Texture2D
-	Outer: Package antenna_badbeats
+	Class: UTexture2D
+	Outer: antenna_badbeats
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000070009 with 0x00001869 Bytes
 	Export Flags: 0x00000001
@@ -274,84 +289,101 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UAntennaComponent_TA ProductSlots.Antenna.ProductAsset_Attachment_TA_0.AntennaComponent_TA_0
 	Name: AntennaComponent_TA_0
 	Class: AntennaComponent_TA
-	Package: TAGame
-	Outer: ProductAsset_Attachment_TA ProductAsset_Attachment_TA_0
-[1]
+	Class Package: TAGame
+	Outer: ProductAsset_Attachment_TA_0
+[Import 1]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[2]
+	Class Package: Core
+	Outer: Core
+[Import 2]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.MaterialExpressionTextureSampleParameter2D
 	Name: MaterialExpressionTextureSampleParameter2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.StaticMesh
 	Name: StaticMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass TAGame.AntennaComponent_TA
 	Name: AntennaComponent_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[10]
+	Class Package: Core
+	Outer: TAGame
+[Import 10]
+	Full Name: UClass TAGame.ProductAsset_Attachment_TA
 	Name: ProductAsset_Attachment_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[11]
+	Class Package: Core
+	Outer: TAGame
+[Import 11]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[12]
+	Class Package: Core
+[Import 12]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[13]
+	Class Package: Core
+[Import 13]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[14]
+	Class Package: Core
+[Import 14]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[15]
+	Class Package: Core
+[Import 15]
+	Full Name: UProductAsset_Attachment_TA ProductSlots.Antenna.ProductAsset_Attachment_TA_0
 	Name: ProductAsset_Attachment_TA_0
 	Class: ProductAsset_Attachment_TA
-	Package: TAGame
-	Outer: ProductSlot_TA Antenna
-[16]
+	Class Package: TAGame
+	Outer: Antenna
+[Import 16]
+	Full Name: UProductSlot_TA ProductSlots.Antenna
 	Name: Antenna
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots

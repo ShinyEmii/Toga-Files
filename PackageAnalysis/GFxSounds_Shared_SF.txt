@@ -81,6 +81,7 @@ Test Data Size: 0x00003d62
 Compressed Chunk Info Offset: 0x00000f06
 Last Block Size: 0x0000000c
 Base Header Size: 0x00000111
+Encrypted Header Size: 0x00004cc0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -88,262 +89,282 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] AkAudio
-[1] AkBank
-[2] AkSoundCue
-[3] ArrayProperty
-[4] Cancel
-[5] Class
-[6] Confirm
-[7] Core
-[8] Countdown1
-[9] Countdown2
-[10] Countdown3
-[11] CountdownGo
-[12] Engine
-[13] ExportClassName
-[14] GFxSoundPack_X
-[15] GFxSounds_Shared
-[16] GFxSounds_Shared_SF
-[17] Name
-[18] NameProperty
-[19] None
-[20] ObjectProperty
-[21] ObjectReferencer
-[22] Package
-[23] Party_Invite
-[24] PartyJoin
-[25] ProjectX
-[26] ReferencedObjects
-[27] RequiredBank
-[28] rollOver
-[29] Select
-[30] SFX_UI_Countdown
-[31] SFX_UI_Countdown_01
-[32] SFX_UI_Countdown_02
-[33] SFX_UI_Countdown_03
-[34] SFX_UI_Countdown_Go
-[35] SFX_UI_InGame
-[36] SFX_UI_MainMenu
-[37] Sound
-[38] Sounds
-[39] StandaloneSeekFreeReferencer
-[40] StartEvent
-[41] StrProperty
-[42] switchTabs
-[43] UI_Basic_Cancel
-[44] UI_Basic_Confirm
-[45] UI_Basic_Hover
-[46] UI_Basic_NextTab
-[47] UI_Basic_Select
-[48] UI_Notification_PartyInvite
-[49] UI_Notification_PartyJoined
-[50] UI_XP_LevelDown
-[51] UI_XP_LevelUp
-[52] UI_XP_TickUp
-[53] XP_LevelDown
-[54] XP_LevelUp
-[55] XP_TickUp
-[56] START_MATCH_SEARCH
-[57] UI_StartMatchSearch
-[58] UI_Notification_VoiceChat_Join
-[59] UI_Notification_VoiceChat_Leave
-[60] VoiceChat_Join
-[61] VoiceChat_Leave
+[Name 0] [0x0007001000000000] AkAudio
+[Name 1] [0x0007001000000000] AkBank
+[Name 2] [0x0007001000000000] AkSoundCue
+[Name 3] [0x0007001000000000] ArrayProperty
+[Name 4] [0x0007001000000000] Cancel
+[Name 5] [0x0007001000000000] Class
+[Name 6] [0x0007001000000000] Confirm
+[Name 7] [0x0007001000000000] Core
+[Name 8] [0x0007001000000000] Countdown1
+[Name 9] [0x0007001000000000] Countdown2
+[Name 10] [0x0007001000000000] Countdown3
+[Name 11] [0x0007001000000000] CountdownGo
+[Name 12] [0x0007001000000000] Engine
+[Name 13] [0x0007001000000000] ExportClassName
+[Name 14] [0x0007001000000000] GFxSoundPack_X
+[Name 15] [0x0007001000000000] GFxSounds_Shared
+[Name 16] [0x0007001000000000] GFxSounds_Shared_SF
+[Name 17] [0x0007001000000000] Name
+[Name 18] [0x0007001000000000] NameProperty
+[Name 19] [0x0007001000000000] None
+[Name 20] [0x0007001000000000] ObjectProperty
+[Name 21] [0x0007001000000000] ObjectReferencer
+[Name 22] [0x0007001000000000] Package
+[Name 23] [0x0007001000000000] Party_Invite
+[Name 24] [0x0007001000000000] PartyJoin
+[Name 25] [0x0007001000000000] ProjectX
+[Name 26] [0x0007001000000000] ReferencedObjects
+[Name 27] [0x0007001000000000] RequiredBank
+[Name 28] [0x0007001000000000] rollOver
+[Name 29] [0x0007001000000000] Select
+[Name 30] [0x0007001000000000] SFX_UI_Countdown
+[Name 31] [0x0007001000000000] SFX_UI_Countdown_01
+[Name 32] [0x0007001000000000] SFX_UI_Countdown_02
+[Name 33] [0x0007001000000000] SFX_UI_Countdown_03
+[Name 34] [0x0007001000000000] SFX_UI_Countdown_Go
+[Name 35] [0x0007001000000000] SFX_UI_InGame
+[Name 36] [0x0007001000000000] SFX_UI_MainMenu
+[Name 37] [0x0007001000000000] Sound
+[Name 38] [0x0007001000000000] Sounds
+[Name 39] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 40] [0x0007001000000000] StartEvent
+[Name 41] [0x0007001000000000] StrProperty
+[Name 42] [0x0007001000000000] switchTabs
+[Name 43] [0x0007001000000000] UI_Basic_Cancel
+[Name 44] [0x0007001000000000] UI_Basic_Confirm
+[Name 45] [0x0007001000000000] UI_Basic_Hover
+[Name 46] [0x0007001000000000] UI_Basic_NextTab
+[Name 47] [0x0007001000000000] UI_Basic_Select
+[Name 48] [0x0007001000000000] UI_Notification_PartyInvite
+[Name 49] [0x0007001000000000] UI_Notification_PartyJoined
+[Name 50] [0x0007001000000000] UI_XP_LevelDown
+[Name 51] [0x0007001000000000] UI_XP_LevelUp
+[Name 52] [0x0007001000000000] UI_XP_TickUp
+[Name 53] [0x0007001000000000] XP_LevelDown
+[Name 54] [0x0007001000000000] XP_LevelUp
+[Name 55] [0x0007001000000000] XP_TickUp
+[Name 56] [0x0007001000000000] START_MATCH_SEARCH
+[Name 57] [0x0007001000000000] UI_StartMatchSearch
+[Name 58] [0x0007001000000000] UI_Notification_VoiceChat_Join
+[Name 59] [0x0007001000000000] UI_Notification_VoiceChat_Leave
+[Name 60] [0x0007001000000000] VoiceChat_Join
+[Name 61] [0x0007001000000000] VoiceChat_Leave
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAkBank GFxSounds_Shared.SFX_UI_Countdown.SFX_UI_Countdown
 	Name: SFX_UI_Countdown
-	Class: AkBank
-	Outer: Package SFX_UI_Countdown
+	Class: UAkBank
+	Outer: SFX_UI_Countdown
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001017 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[2]
+[Export 2]
+	Full Name: UAkBank GFxSounds_Shared.SFX_UI_MainMenu.SFX_UI_MainMenu
 	Name: SFX_UI_MainMenu
-	Class: AkBank
-	Outer: Package SFX_UI_MainMenu
+	Class: UAkBank
+	Outer: SFX_UI_MainMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000102f with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UAkSoundCue GFxSounds_Shared.SFX_UI_Countdown.SFX_UI_Countdown_01
 	Name: SFX_UI_Countdown_01
-	Class: AkSoundCue
-	Outer: Package SFX_UI_Countdown
+	Class: UAkSoundCue
+	Outer: SFX_UI_Countdown
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000103b with 0x0000005d Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UAkSoundCue GFxSounds_Shared.SFX_UI_Countdown.SFX_UI_Countdown_02
 	Name: SFX_UI_Countdown_02
-	Class: AkSoundCue
-	Outer: Package SFX_UI_Countdown
+	Class: UAkSoundCue
+	Outer: SFX_UI_Countdown
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001098 with 0x0000005d Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UAkSoundCue GFxSounds_Shared.SFX_UI_Countdown.SFX_UI_Countdown_03
 	Name: SFX_UI_Countdown_03
-	Class: AkSoundCue
-	Outer: Package SFX_UI_Countdown
+	Class: UAkSoundCue
+	Outer: SFX_UI_Countdown
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000010f5 with 0x0000005d Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UAkSoundCue GFxSounds_Shared.SFX_UI_Countdown.SFX_UI_Countdown_Go
 	Name: SFX_UI_Countdown_Go
-	Class: AkSoundCue
-	Outer: Package SFX_UI_Countdown
+	Class: UAkSoundCue
+	Outer: SFX_UI_Countdown
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001152 with 0x0000005d Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UAkSoundCue GFxSounds_Shared.SFX_UI_InGame.UI_Notification_PartyInvite
 	Name: UI_Notification_PartyInvite
-	Class: AkSoundCue
-	Outer: Package SFX_UI_InGame
+	Class: UAkSoundCue
+	Outer: SFX_UI_InGame
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000023fe with 0x00000065 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UAkSoundCue GFxSounds_Shared.SFX_UI_InGame.UI_Notification_PartyJoined
 	Name: UI_Notification_PartyJoined
-	Class: AkSoundCue
-	Outer: Package SFX_UI_InGame
+	Class: UAkSoundCue
+	Outer: SFX_UI_InGame
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002463 with 0x00000065 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UAkSoundCue GFxSounds_Shared.SFX_UI_InGame.UI_XP_LevelDown
 	Name: UI_XP_LevelDown
-	Class: AkSoundCue
-	Outer: Package SFX_UI_InGame
+	Class: UAkSoundCue
+	Outer: SFX_UI_InGame
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000024c8 with 0x00000059 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UAkSoundCue GFxSounds_Shared.SFX_UI_InGame.UI_XP_LevelUp
 	Name: UI_XP_LevelUp
-	Class: AkSoundCue
-	Outer: Package SFX_UI_InGame
+	Class: UAkSoundCue
+	Outer: SFX_UI_InGame
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002521 with 0x00000057 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UAkSoundCue GFxSounds_Shared.SFX_UI_InGame.UI_XP_TickUp
 	Name: UI_XP_TickUp
-	Class: AkSoundCue
-	Outer: Package SFX_UI_InGame
+	Class: UAkSoundCue
+	Outer: SFX_UI_InGame
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002578 with 0x00000056 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UAkSoundCue GFxSounds_Shared.SFX_UI_MainMenu.UI_Basic_Cancel
 	Name: UI_Basic_Cancel
-	Class: AkSoundCue
-	Outer: Package SFX_UI_MainMenu
+	Class: UAkSoundCue
+	Outer: SFX_UI_MainMenu
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000137f with 0x00000059 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UAkSoundCue GFxSounds_Shared.SFX_UI_MainMenu.UI_Basic_Confirm
 	Name: UI_Basic_Confirm
-	Class: AkSoundCue
-	Outer: Package SFX_UI_MainMenu
+	Class: UAkSoundCue
+	Outer: SFX_UI_MainMenu
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000013d8 with 0x0000005a Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UAkSoundCue GFxSounds_Shared.SFX_UI_MainMenu.UI_Basic_Hover
 	Name: UI_Basic_Hover
-	Class: AkSoundCue
-	Outer: Package SFX_UI_MainMenu
+	Class: UAkSoundCue
+	Outer: SFX_UI_MainMenu
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001432 with 0x00000058 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UAkSoundCue GFxSounds_Shared.SFX_UI_MainMenu.UI_Basic_NextTab
 	Name: UI_Basic_NextTab
-	Class: AkSoundCue
-	Outer: Package SFX_UI_MainMenu
+	Class: UAkSoundCue
+	Outer: SFX_UI_MainMenu
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000148a with 0x0000005a Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UAkSoundCue GFxSounds_Shared.SFX_UI_MainMenu.UI_Basic_Select
 	Name: UI_Basic_Select
-	Class: AkSoundCue
-	Outer: Package SFX_UI_MainMenu
+	Class: UAkSoundCue
+	Outer: SFX_UI_MainMenu
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000014e4 with 0x00000059 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UGFxSoundPack_X GFxSounds_Shared.GFxSounds_Shared.GFxSounds_Shared
 	Name: GFxSounds_Shared
-	Class: GFxSoundPack_X
-	Outer: Package GFxSounds_Shared
+	Class: UGFxSoundPack_X
+	Outer: GFxSounds_Shared
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001e58 with 0x000004d5 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UObjectReferencer GFxSounds_Shared.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000001946 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[19]
+[Export 19]
+	Full Name: UPackage GFxSounds_Shared.GFxSounds_Shared
 	Name: GFxSounds_Shared
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001972 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[20]
+[Export 20]
+	Full Name: UPackage GFxSounds_Shared.GFxSounds_Shared_SF
 	Name: GFxSounds_Shared_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000197e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[21]
+[Export 21]
+	Full Name: UPackage GFxSounds_Shared.SFX_UI_Countdown
 	Name: SFX_UI_Countdown
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000198a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[22]
+[Export 22]
+	Full Name: UPackage GFxSounds_Shared.SFX_UI_InGame
 	Name: SFX_UI_InGame
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001996 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[23]
+[Export 23]
+	Full Name: UPackage GFxSounds_Shared.SFX_UI_MainMenu
 	Name: SFX_UI_MainMenu
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000019a2 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[24]
+[Export 24]
+	Full Name: UAkSoundCue GFxSounds_Shared.SFX_UI_MainMenu.UI_StartMatchSearch
 	Name: UI_StartMatchSearch
-	Class: AkSoundCue
-	Outer: Package SFX_UI_MainMenu
+	Class: UAkSoundCue
+	Outer: SFX_UI_MainMenu
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001dfb with 0x0000005d Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UAkSoundCue GFxSounds_Shared.SFX_UI_InGame.UI_Notification_VoiceChat_Join
 	Name: UI_Notification_VoiceChat_Join
-	Class: AkSoundCue
-	Outer: Package SFX_UI_InGame
+	Class: UAkSoundCue
+	Outer: SFX_UI_InGame
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000025ce with 0x00000068 Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UAkSoundCue GFxSounds_Shared.SFX_UI_InGame.UI_Notification_VoiceChat_Leave
 	Name: UI_Notification_VoiceChat_Leave
-	Class: AkSoundCue
-	Outer: Package SFX_UI_InGame
+	Class: UAkSoundCue
+	Outer: SFX_UI_InGame
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002636 with 0x00000069 Bytes
 	Export Flags: 0x00000001
@@ -352,49 +373,59 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass AkAudio.AkSoundCue
 	Name: AkSoundCue
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[1]
+	Class Package: Core
+	Outer: AkAudio
+[Import 1]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[2]
+	Class Package: Core
+	Outer: Core
+[Import 2]
+	Full Name: UClass Engine.AkBank
 	Name: AkBank
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass ProjectX.GFxSoundPack_X
 	Name: GFxSoundPack_X
 	Class: Class
-	Package: Core
-	Outer: Package ProjectX
-[5]
+	Class Package: Core
+	Outer: ProjectX
+[Import 5]
+	Full Name: UPackage AkAudio
 	Name: AkAudio
 	Class: Package
-	Package: Core
-[6]
+	Class Package: Core
+[Import 6]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage ProjectX
 	Name: ProjectX
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UAkBank SFX_UI_InGame.SFX_UI_InGame
 	Name: SFX_UI_InGame
 	Class: AkBank
-	Package: Engine
-	Outer: Package SFX_UI_InGame
+	Class Package: Engine
+	Outer: SFX_UI_InGame

@@ -116,6 +116,7 @@ Test Data Size: 0x00003ff1
 Compressed Chunk Info Offset: 0x00000c73
 Last Block Size: 0x00000000
 Base Header Size: 0x00000189
+Encrypted Header Size: 0x00004c80
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -123,198 +124,121 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] BoolProperty
-[2] bUsesFontlib
-[3] BuyKeysUpsell
-[4] ByteProperty
-[5] Class
-[6] Core
-[7] CreditBG
-[8] CreditBundle
-[9] Engine
-[10] EPixelFormat
-[11] ESportsTokenBG
-[12] ESportsTokenBundle
-[13] FlashTextureRescale
-[14] FlashTextureScale_Mult4
-[15] Format
-[16] GFX_PurchaseBundlesMenu
-[17] GFX_PurchaseBundlesMenu_SF
-[18] GFX_Shared
-[19] GFxUI
-[20] IntProperty
-[21] KeyBundle
-[22] LODGroup
-[23] MipTailBaseIdx
-[24] NameProperty
-[25] None
-[26] ObjectReferencer
-[27] OriginalSizeX
-[28] OriginalSizeY
-[29] Package
-[30] PackTextureSize
-[31] PF_DXT5
-[32] PurchaseBundlesMenu
-[33] PurchaseKeyBackground
-[34] RawData
-[35] ReferencedObjects
-[36] ReferencedSwfs
-[37] References
-[38] SharedComponents
-[39] SizeX
-[40] SizeY
-[41] SourceFile
-[42] SourceFileCRC
-[43] SourceFileTimestamp
-[44] SRGB
-[45] StandaloneSeekFreeReferencer
-[46] StrProperty
-[47] SwfMovie
-[48] Texture2D
-[49] TextureFileCacheName
-[50] TextureFormat
-[51] TextureGroup
-[52] TEXTUREGROUP_UI
-[53] TextureRescale
-[54] Textures5
-[55] BundleButtonBG
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] BoolProperty
+[Name 2] [0x0007001000000000] bUsesFontlib
+[Name 3] [0x0007000000000000] BuyKeysUpsell
+[Name 4] [0x0007001000000000] ByteProperty
+[Name 5] [0x0007001000000000] Class
+[Name 6] [0x0007001000000000] Core
+[Name 7] [0x0007001000000000] CreditBG
+[Name 8] [0x0007000000000000] CreditBundle
+[Name 9] [0x0007001000000000] Engine
+[Name 10] [0x0007001000000000] EPixelFormat
+[Name 11] [0x0007000000000000] ESportsTokenBG
+[Name 12] [0x0007000000000000] ESportsTokenBundle
+[Name 13] [0x0007001000000000] FlashTextureRescale
+[Name 14] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 15] [0x0007001000000000] Format
+[Name 16] [0x0007001000000000] GFX_PurchaseBundlesMenu
+[Name 17] [0x0007001000000000] GFX_PurchaseBundlesMenu_SF
+[Name 18] [0x0007001000000000] GFX_Shared
+[Name 19] [0x0007001000000000] GFxUI
+[Name 20] [0x0007001000000000] IntProperty
+[Name 21] [0x0007000000000000] KeyBundle
+[Name 22] [0x0007001000000000] LODGroup
+[Name 23] [0x0007001000000000] MipTailBaseIdx
+[Name 24] [0x0007001000000000] NameProperty
+[Name 25] [0x0007001000000000] None
+[Name 26] [0x0007001000000000] ObjectReferencer
+[Name 27] [0x0007001000000000] OriginalSizeX
+[Name 28] [0x0007001000000000] OriginalSizeY
+[Name 29] [0x0007001000000000] Package
+[Name 30] [0x0007001000000000] PackTextureSize
+[Name 31] [0x0007001000000000] PF_DXT5
+[Name 32] [0x0007001000000000] PurchaseBundlesMenu
+[Name 33] [0x0007001000000000] PurchaseKeyBackground
+[Name 34] [0x0007001000000000] RawData
+[Name 35] [0x0007001000000000] ReferencedObjects
+[Name 36] [0x0007001000000000] ReferencedSwfs
+[Name 37] [0x0007001000000000] References
+[Name 38] [0x0007001000000000] SharedComponents
+[Name 39] [0x0007001000000000] SizeX
+[Name 40] [0x0007001000000000] SizeY
+[Name 41] [0x0007001000000000] SourceFile
+[Name 42] [0x0007001000000000] SourceFileCRC
+[Name 43] [0x0007001000000000] SourceFileTimestamp
+[Name 44] [0x0007001000000000] SRGB
+[Name 45] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 46] [0x0007001000000000] StrProperty
+[Name 47] [0x0007001000000000] SwfMovie
+[Name 48] [0x0007001000000000] Texture2D
+[Name 49] [0x0007001000000000] TextureFileCacheName
+[Name 50] [0x0007001000000000] TextureFormat
+[Name 51] [0x0007001000000000] TextureGroup
+[Name 52] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 53] [0x0007001000000000] TextureRescale
+[Name 54] [0x0007001000000000] Textures5
+[Name 55] [0x0007001000000000] BundleButtonBG
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UObjectReferencer GFX_PurchaseBundlesMenu.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000000dfc with 0x00000038 Bytes
 	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UPackage GFX_PurchaseBundlesMenu.GFX_PurchaseBundlesMenu
 	Name: GFX_PurchaseBundlesMenu
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000e34 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[2]
+[Export 2]
+	Full Name: UPackage GFX_PurchaseBundlesMenu.GFX_PurchaseBundlesMenu_SF
 	Name: GFX_PurchaseBundlesMenu_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000e40 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[3]
+[Export 3]
+	Full Name: USwfMovie GFX_PurchaseBundlesMenu.GFX_PurchaseBundlesMenu.PurchaseBundlesMenu
 	Name: PurchaseBundlesMenu
-	Class: SwfMovie
-	Outer: Package GFX_PurchaseBundlesMenu
+	Class: USwfMovie
+	Outer: GFX_PurchaseBundlesMenu
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000e4c with 0x000f1fb2 Bytes
 	Export Flags: 0x00000001
-[4]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[5]
+[Export 5]
+	Full Name: UTexture2D GFX_PurchaseBundlesMenu.GFX_PurchaseBundlesMenu.CreditBG
 	Name: CreditBG
-	Class: Texture2D
-	Outer: Package GFX_PurchaseBundlesMenu
+	Class: UTexture2D
+	Outer: GFX_PurchaseBundlesMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000f2dfe with 0x00080179 Bytes
 	Export Flags: 0x00000001
-[6]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[7]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[8]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[9]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[10]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[11]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[12]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[13]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[14]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[15]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[16]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[17]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[18]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[19]
+[Export 19]
+	Full Name: UTexture2D GFX_PurchaseBundlesMenu.GFX_PurchaseBundlesMenu.PurchaseKeyBackground
 	Name: PurchaseKeyBackground
-	Class: Texture2D
-	Outer: Package GFX_PurchaseBundlesMenu
+	Class: UTexture2D
+	Outer: GFX_PurchaseBundlesMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000172f77 with 0x00020179 Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UTexture2D GFX_PurchaseBundlesMenu.GFX_PurchaseBundlesMenu.BundleButtonBG
 	Name: BundleButtonBG
-	Class: Texture2D
-	Outer: Package GFX_PurchaseBundlesMenu
+	Class: UTexture2D
+	Outer: GFX_PurchaseBundlesMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001930f0 with 0x00010179 Bytes
 	Export Flags: 0x00000001
@@ -323,44 +247,53 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[4]
+	Class Package: Core
+	Outer: GFxUI
+[Import 4]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[5]
+	Class Package: Core
+[Import 5]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[6]
+	Class Package: Core
+[Import 6]
+	Full Name: UPackage GFX_Shared
 	Name: GFX_Shared
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: USwfMovie GFX_Shared.SharedComponents
 	Name: SharedComponents
 	Class: SwfMovie
-	Package: GFxUI
-	Outer: Package GFX_Shared
+	Class Package: GFxUI
+	Outer: GFX_Shared

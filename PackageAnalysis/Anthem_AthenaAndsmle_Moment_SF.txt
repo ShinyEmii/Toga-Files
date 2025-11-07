@@ -48,6 +48,7 @@ Test Data Size: 0x00003fe4
 Compressed Chunk Info Offset: 0x00000ae4
 Last Block Size: 0x00000004
 Base Header Size: 0x000000b5
+Encrypted Header Size: 0x00004ae0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -55,155 +56,167 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] AkAudio
-[1] AkBank
-[2] AkSoundCue
-[3] Anthem_AthenaAndsmle_Moment
-[4] Anthem_AthenaAndsmle_Moment_SF
-[5] ArrayProperty
-[6] AthenaAndsmle_Moment_EpicSave
-[7] AthenaAndsmle_Moment_Goal
-[8] AthenaAndsmle_Moment_MVP
-[9] AthenaAndsmle_Moment_WithEdgeFade
-[10] bIsSourceArtUncompressed
-[11] BoolProperty
-[12] bReplicated
-[13] ByteProperty
-[14] Class
-[15] CompressionNone
-[16] Core
-[17] Engine
-[18] EpicSaveStinger
-[19] EPixelFormat
-[20] Format
-[21] GoalScoredStinger
-[22] GoalStinger
-[23] Icon
-[24] IconLarge
-[25] Icons
-[26] IntProperty
-[27] Label
-[28] LODGroup
-[29] MipTailBaseIdx
-[30] MusicStingers
-[31] MVPAnthem
-[32] MX_Anthem_AthenaAndsmle_Moment
-[33] NeverStream
-[34] None
-[35] ObjectProperty
-[36] ObjectReferencer
-[37] OnlineLabel
-[38] OriginalSizeX
-[39] OriginalSizeY
-[40] Package
-[41] PF_A8R8G8B8
-[42] PluralLabel
-[43] ProductAsset_MusicStingers_TA
-[44] ProductSlot_TA
-[45] ProductSlots
-[46] ReferencedObjects
-[47] RequiredBank
-[48] SizeX
-[49] SizeY
-[50] SRGB
-[51] StandaloneSeekFreeReferencer
-[52] StartEvent
-[53] StopEvent
-[54] StrProperty
-[55] TAGame
-[56] Texture2D
-[57] TextureGroup
-[58] TEXTUREGROUP_UI
-[59] Thumbnail
+[Name 0] [0x0007001000000000] AkAudio
+[Name 1] [0x0007001000000000] AkBank
+[Name 2] [0x0007001000000000] AkSoundCue
+[Name 3] [0x0007001000000000] Anthem_AthenaAndsmle_Moment
+[Name 4] [0x0007001000000000] Anthem_AthenaAndsmle_Moment_SF
+[Name 5] [0x0007001000000000] ArrayProperty
+[Name 6] [0x0007001000000000] AthenaAndsmle_Moment_EpicSave
+[Name 7] [0x0007001000000000] AthenaAndsmle_Moment_Goal
+[Name 8] [0x0007001000000000] AthenaAndsmle_Moment_MVP
+[Name 9] [0x0007001000000000] AthenaAndsmle_Moment_WithEdgeFade
+[Name 10] [0x0007001000000000] bIsSourceArtUncompressed
+[Name 11] [0x0007001000000000] BoolProperty
+[Name 12] [0x0007001000000000] bReplicated
+[Name 13] [0x0007001000000000] ByteProperty
+[Name 14] [0x0007001000000000] Class
+[Name 15] [0x0007001000000000] CompressionNone
+[Name 16] [0x0007001000000000] Core
+[Name 17] [0x0007001000000000] Engine
+[Name 18] [0x0007001000000000] EpicSaveStinger
+[Name 19] [0x0007001000000000] EPixelFormat
+[Name 20] [0x0007001000000000] Format
+[Name 21] [0x0007001000000000] GoalScoredStinger
+[Name 22] [0x0007001000000000] GoalStinger
+[Name 23] [0x0007001000000000] Icon
+[Name 24] [0x0007001000000000] IconLarge
+[Name 25] [0x0007001000000000] Icons
+[Name 26] [0x0007001000000000] IntProperty
+[Name 27] [0x0007001000000000] Label
+[Name 28] [0x0007001000000000] LODGroup
+[Name 29] [0x0007001000000000] MipTailBaseIdx
+[Name 30] [0x0007001000000000] MusicStingers
+[Name 31] [0x0007001000000000] MVPAnthem
+[Name 32] [0x0007001000000000] MX_Anthem_AthenaAndsmle_Moment
+[Name 33] [0x0007001000000000] NeverStream
+[Name 34] [0x0007001000000000] None
+[Name 35] [0x0007001000000000] ObjectProperty
+[Name 36] [0x0007001000000000] ObjectReferencer
+[Name 37] [0x0007001000000000] OnlineLabel
+[Name 38] [0x0007001000000000] OriginalSizeX
+[Name 39] [0x0007001000000000] OriginalSizeY
+[Name 40] [0x0007001000000000] Package
+[Name 41] [0x0007001000000000] PF_A8R8G8B8
+[Name 42] [0x0007001000000000] PluralLabel
+[Name 43] [0x0007001000000000] ProductAsset_MusicStingers_TA
+[Name 44] [0x0007001000000000] ProductSlot_TA
+[Name 45] [0x0007001000000000] ProductSlots
+[Name 46] [0x0007001000000000] ReferencedObjects
+[Name 47] [0x0007001000000000] RequiredBank
+[Name 48] [0x0007001000000000] SizeX
+[Name 49] [0x0007001000000000] SizeY
+[Name 50] [0x0007001000000000] SRGB
+[Name 51] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 52] [0x0007001000000000] StartEvent
+[Name 53] [0x0007001000000000] StopEvent
+[Name 54] [0x0007001000000000] StrProperty
+[Name 55] [0x0007001000000000] TAGame
+[Name 56] [0x0007001000000000] Texture2D
+[Name 57] [0x0007001000000000] TextureGroup
+[Name 58] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 59] [0x0007001000000000] Thumbnail
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAkBank Anthem_AthenaAndsmle_Moment.Anthem_AthenaAndsmle_Moment.MX_Anthem_AthenaAndsmle_Moment
 	Name: MX_Anthem_AthenaAndsmle_Moment
-	Class: AkBank
-	Outer: Package Anthem_AthenaAndsmle_Moment
+	Class: UAkBank
+	Outer: Anthem_AthenaAndsmle_Moment
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000b99 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UAkSoundCue Anthem_AthenaAndsmle_Moment.Anthem_AthenaAndsmle_Moment.AthenaAndsmle_Moment_EpicSave
 	Name: AthenaAndsmle_Moment_EpicSave
-	Class: AkSoundCue
-	Outer: Package Anthem_AthenaAndsmle_Moment
+	Class: UAkSoundCue
+	Outer: Anthem_AthenaAndsmle_Moment
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000ba5 with 0x000000a4 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UAkSoundCue Anthem_AthenaAndsmle_Moment.Anthem_AthenaAndsmle_Moment.AthenaAndsmle_Moment_Goal
 	Name: AthenaAndsmle_Moment_Goal
-	Class: AkSoundCue
-	Outer: Package Anthem_AthenaAndsmle_Moment
+	Class: UAkSoundCue
+	Outer: Anthem_AthenaAndsmle_Moment
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000c49 with 0x000000a0 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UAkSoundCue Anthem_AthenaAndsmle_Moment.Anthem_AthenaAndsmle_Moment.AthenaAndsmle_Moment_MVP
 	Name: AthenaAndsmle_Moment_MVP
-	Class: AkSoundCue
-	Outer: Package Anthem_AthenaAndsmle_Moment
+	Class: UAkSoundCue
+	Outer: Anthem_AthenaAndsmle_Moment
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000ce9 with 0x0000009f Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UProductAsset_MusicStingers_TA Anthem_AthenaAndsmle_Moment.ProductSlots.MusicStingers.ProductAsset_MusicStingers_TA_0
 	Name: ProductAsset_MusicStingers_TA_0
-	Class: ProductAsset_MusicStingers_TA
-	Outer: ProductSlot_TA MusicStingers
+	Class: UProductAsset_MusicStingers_TA
+	Outer: MusicStingers
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000d88 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UObjectReferencer Anthem_AthenaAndsmle_Moment.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000000d94 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[6]
+[Export 6]
+	Full Name: UPackage Anthem_AthenaAndsmle_Moment.Anthem_AthenaAndsmle_Moment
 	Name: Anthem_AthenaAndsmle_Moment
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000dc0 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[7]
+[Export 7]
+	Full Name: UPackage Anthem_AthenaAndsmle_Moment.Anthem_AthenaAndsmle_Moment_SF
 	Name: Anthem_AthenaAndsmle_Moment_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000dcc with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[8]
+[Export 8]
+	Full Name: UPackage Anthem_AthenaAndsmle_Moment.ProductSlots
 	Name: ProductSlots
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000dd8 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[9]
+[Export 9]
+	Full Name: UProductAsset_MusicStingers_TA Anthem_AthenaAndsmle_Moment.Anthem_AthenaAndsmle_Moment.Anthem_AthenaAndsmle_Moment
 	Name: Anthem_AthenaAndsmle_Moment
-	Class: ProductAsset_MusicStingers_TA
-	Outer: Package Anthem_AthenaAndsmle_Moment
+	Class: UProductAsset_MusicStingers_TA
+	Outer: Anthem_AthenaAndsmle_Moment
 	Archetype: ProductAsset_MusicStingers_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000de4 with 0x0000007c Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UProductSlot_TA Anthem_AthenaAndsmle_Moment.ProductSlots.MusicStingers
 	Name: MusicStingers
-	Class: ProductSlot_TA
-	Outer: Package ProductSlots
+	Class: UProductSlot_TA
+	Outer: ProductSlots
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x0000000000000e60 with 0x000000db Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UTexture2D Anthem_AthenaAndsmle_Moment.Anthem_AthenaAndsmle_Moment.AthenaAndsmle_Moment_WithEdgeFade
 	Name: AthenaAndsmle_Moment_WithEdgeFade
-	Class: Texture2D
-	Outer: Package Anthem_AthenaAndsmle_Moment
+	Class: UTexture2D
+	Outer: Anthem_AthenaAndsmle_Moment
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000f3b with 0x000401a4 Bytes
 	Export Flags: 0x00000001
@@ -212,64 +225,77 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass AkAudio.AkSoundCue
 	Name: AkSoundCue
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[1]
+	Class Package: Core
+	Outer: AkAudio
+[Import 1]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[2]
+	Class Package: Core
+	Outer: Core
+[Import 2]
+	Full Name: UClass Engine.AkBank
 	Name: AkBank
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass TAGame.ProductAsset_MusicStingers_TA
 	Name: ProductAsset_MusicStingers_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
+	Class Package: Core
+	Outer: TAGame
+[Import 6]
+	Full Name: UClass TAGame.ProductSlot_TA
 	Name: ProductSlot_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[7]
+	Class Package: Core
+	Outer: TAGame
+[Import 7]
+	Full Name: UPackage AkAudio
 	Name: AkAudio
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage ProductSlots.Icons
 	Name: Icons
 	Class: Package
-	Package: Core
-	Outer: Package ProductSlots
-[11]
+	Class Package: Core
+	Outer: ProductSlots
+[Import 11]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[12]
+	Class Package: Core
+[Import 12]
+	Full Name: UTexture2D ProductSlots.Icons.GoalStinger
 	Name: GoalStinger
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Icons
+	Class Package: Engine
+	Outer: Icons

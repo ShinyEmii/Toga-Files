@@ -41,6 +41,7 @@ Test Data Size: 0x00003fe5
 Compressed Chunk Info Offset: 0x000006e3
 Last Block Size: 0x00000004
 Base Header Size: 0x00000099
+Encrypted Header Size: 0x000046e0
 
 AES: qirRyUwIJ5mOBp/AeWM3+jKvjLmD8jJlm2BPFE04SNY=
 
@@ -48,97 +49,105 @@ AES: qirRyUwIJ5mOBp/AeWM3+jKvjLmD8jJlm2BPFE04SNY=
     ~ Names ~ 
 
 
-[0] AkAudio
-[1] AkBank
-[2] AkSoundCue
-[3] ArrayProperty
-[4] Class
-[5] Core
-[6] Engine
-[7] EngineAudio
-[8] engineaudio_rebar
-[9] EngineAudio_Rebar_Profile
-[10] engineaudio_rebar_SF
-[11] EngineAudioProfileREV_TA
-[12] ExhaustSound
-[13] IgnitionSound
-[14] None
-[15] ObjectProperty
-[16] ObjectReferencer
-[17] Package
-[18] ProductAsset_EngineAudio_TA
-[19] ProductSlot_TA
-[20] ProductSlots
-[21] Profile
-[22] ReferencedObjects
-[23] RequiredBank
-[24] REV_Rebar
-[25] REV_Rebar_Ignition
-[26] SFX_REV_Rebar
-[27] StandaloneSeekFreeReferencer
-[28] StartEvent
-[29] StopEvent
-[30] StrProperty
-[31] TAGame
+[Name 0] [0x0007001000000000] AkAudio
+[Name 1] [0x0007001000000000] AkBank
+[Name 2] [0x0007001000000000] AkSoundCue
+[Name 3] [0x0007001000000000] ArrayProperty
+[Name 4] [0x0007001000000000] Class
+[Name 5] [0x0007001000000000] Core
+[Name 6] [0x0007001000000000] Engine
+[Name 7] [0x0007001000000000] EngineAudio
+[Name 8] [0x0007001000000000] engineaudio_rebar
+[Name 9] [0x0007001000000000] EngineAudio_Rebar_Profile
+[Name 10] [0x0007001000000000] engineaudio_rebar_SF
+[Name 11] [0x0007001000000000] EngineAudioProfileREV_TA
+[Name 12] [0x0007001000000000] ExhaustSound
+[Name 13] [0x0007001000000000] IgnitionSound
+[Name 14] [0x0007001000000000] None
+[Name 15] [0x0007001000000000] ObjectProperty
+[Name 16] [0x0007001000000000] ObjectReferencer
+[Name 17] [0x0007001000000000] Package
+[Name 18] [0x0007001000000000] ProductAsset_EngineAudio_TA
+[Name 19] [0x0007001000000000] ProductSlot_TA
+[Name 20] [0x0007001000000000] ProductSlots
+[Name 21] [0x0007001000000000] Profile
+[Name 22] [0x0007001000000000] ReferencedObjects
+[Name 23] [0x0007001000000000] RequiredBank
+[Name 24] [0x0007001000000000] REV_Rebar
+[Name 25] [0x0007001000000000] REV_Rebar_Ignition
+[Name 26] [0x0007001000000000] SFX_REV_Rebar
+[Name 27] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 28] [0x0007001000000000] StartEvent
+[Name 29] [0x0007001000000000] StopEvent
+[Name 30] [0x0007001000000000] StrProperty
+[Name 31] [0x0007001000000000] TAGame
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAkBank engineaudio_rebar.engineaudio_rebar.SFX_REV_Rebar
 	Name: SFX_REV_Rebar
-	Class: AkBank
-	Outer: Package engineaudio_rebar
+	Class: UAkBank
+	Outer: engineaudio_rebar
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000077c with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UAkSoundCue engineaudio_rebar.engineaudio_rebar.REV_Rebar
 	Name: REV_Rebar
-	Class: AkSoundCue
-	Outer: Package engineaudio_rebar
+	Class: UAkSoundCue
+	Outer: engineaudio_rebar
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000788 with 0x0000007e Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UAkSoundCue engineaudio_rebar.engineaudio_rebar.REV_Rebar_Ignition
 	Name: REV_Rebar_Ignition
-	Class: AkSoundCue
-	Outer: Package engineaudio_rebar
+	Class: UAkSoundCue
+	Outer: engineaudio_rebar
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000806 with 0x0000005c Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UEngineAudioProfileREV_TA engineaudio_rebar.engineaudio_rebar.EngineAudio_Rebar_Profile
 	Name: EngineAudio_Rebar_Profile
-	Class: EngineAudioProfileREV_TA
-	Outer: Package engineaudio_rebar
+	Class: UEngineAudioProfileREV_TA
+	Outer: engineaudio_rebar
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000862 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UObjectReferencer engineaudio_rebar.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x000000000000086e with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[5]
+[Export 5]
+	Full Name: UPackage engineaudio_rebar.engineaudio_rebar
 	Name: engineaudio_rebar
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000089a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[6]
+[Export 6]
+	Full Name: UPackage engineaudio_rebar.engineaudio_rebar_SF
 	Name: engineaudio_rebar_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000008a6 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[7]
+[Export 7]
+	Full Name: UProductAsset_EngineAudio_TA engineaudio_rebar.engineaudio_rebar.engineaudio_rebar
 	Name: engineaudio_rebar
-	Class: ProductAsset_EngineAudio_TA
-	Outer: Package engineaudio_rebar
+	Class: UProductAsset_EngineAudio_TA
+	Outer: engineaudio_rebar
 	Archetype: ProductAsset_EngineAudio_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000008b2 with 0x00000060 Bytes
@@ -148,63 +157,76 @@ AES: qirRyUwIJ5mOBp/AeWM3+jKvjLmD8jJlm2BPFE04SNY=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass AkAudio.AkSoundCue
 	Name: AkSoundCue
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[1]
+	Class Package: Core
+	Outer: AkAudio
+[Import 1]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[2]
+	Class Package: Core
+	Outer: Core
+[Import 2]
+	Full Name: UClass Engine.AkBank
 	Name: AkBank
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass TAGame.EngineAudioProfileREV_TA
 	Name: EngineAudioProfileREV_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UClass TAGame.ProductAsset_EngineAudio_TA
 	Name: ProductAsset_EngineAudio_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
+	Class Package: Core
+	Outer: TAGame
+[Import 6]
+	Full Name: UPackage AkAudio
 	Name: AkAudio
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UProductAsset_EngineAudio_TA ProductSlots.EngineAudio.ProductAsset_EngineAudio_TA_0
 	Name: ProductAsset_EngineAudio_TA_0
 	Class: ProductAsset_EngineAudio_TA
-	Package: TAGame
-	Outer: ProductSlot_TA EngineAudio
-[12]
+	Class Package: TAGame
+	Outer: EngineAudio
+[Import 12]
+	Full Name: UProductSlot_TA ProductSlots.EngineAudio
 	Name: EngineAudio
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots

@@ -79,6 +79,7 @@ Test Data Size: 0x00003eb1
 Compressed Chunk Info Offset: 0x0000091f
 Last Block Size: 0x00000004
 Base Header Size: 0x00000119
+Encrypted Header Size: 0x00004800
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -86,138 +87,149 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] bIsSourceArtUncompressed
-[2] BoolProperty
-[3] ByteProperty
-[4] Class
-[5] ColorMaskBackground
-[6] CompressionNoAlpha
-[7] CompressionNone
-[8] Core
-[9] DeferCompression
-[10] Engine
-[11] EPixelFormat
-[12] Format
-[13] IntProperty
-[14] LODGroup
-[15] MipGenSettings
-[16] MipTailBaseIdx
-[17] NameProperty
-[18] None
-[19] ObjectProperty
-[20] ObjectReferencer
-[21] OriginalSizeX
-[22] OriginalSizeY
-[23] Package
-[24] PaintedThumbnail
-[25] PF_A8R8G8B8
-[26] PF_DXT5
-[27] Product_Thumbnail_ColorMask
-[28] ProductThumbnailAsset_TA
-[29] ReferencedObjects
-[30] SizeX
-[31] SizeY
-[32] SRGB
-[33] StandaloneSeekFreeReferencer
-[34] TAGame
-[35] Texture2D
-[36] TextureFileCacheName
-[37] TextureGroup
-[38] TEXTUREGROUP_UI
-[39] TextureMipGenSettings
-[40] Textures2
-[41] Textures4
-[42] Thumbnail
-[43] ThumbnailColorMask
-[44] TMGS_Sharpen10
-[45] WHEEL_Caliber
-[46] WHEEL_Caliber_T
-[47] WHEEL_Caliber_T_SF
-[48] WHEEL_Caliber_Thumbnail
-[49] wheel_dieci_wg_T
-[50] WHEEL_Dieci_WG_TThumbnail
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] bIsSourceArtUncompressed
+[Name 2] [0x0007001000000000] BoolProperty
+[Name 3] [0x0007001000000000] ByteProperty
+[Name 4] [0x0007001000000000] Class
+[Name 5] [0x0007001000000000] ColorMaskBackground
+[Name 6] [0x0007001000000000] CompressionNoAlpha
+[Name 7] [0x0007001000000000] CompressionNone
+[Name 8] [0x0007001000000000] Core
+[Name 9] [0x0007001000000000] DeferCompression
+[Name 10] [0x0007001000000000] Engine
+[Name 11] [0x0007001000000000] EPixelFormat
+[Name 12] [0x0007001000000000] Format
+[Name 13] [0x0007001000000000] IntProperty
+[Name 14] [0x0007001000000000] LODGroup
+[Name 15] [0x0007001000000000] MipGenSettings
+[Name 16] [0x0007001000000000] MipTailBaseIdx
+[Name 17] [0x0007001000000000] NameProperty
+[Name 18] [0x0007001000000000] None
+[Name 19] [0x0007001000000000] ObjectProperty
+[Name 20] [0x0007001000000000] ObjectReferencer
+[Name 21] [0x0007001000000000] OriginalSizeX
+[Name 22] [0x0007001000000000] OriginalSizeY
+[Name 23] [0x0007001000000000] Package
+[Name 24] [0x0007001000000000] PaintedThumbnail
+[Name 25] [0x0007001000000000] PF_A8R8G8B8
+[Name 26] [0x0007001000000000] PF_DXT5
+[Name 27] [0x0007001000000000] Product_Thumbnail_ColorMask
+[Name 28] [0x0007001000000000] ProductThumbnailAsset_TA
+[Name 29] [0x0007001000000000] ReferencedObjects
+[Name 30] [0x0007001000000000] SizeX
+[Name 31] [0x0007001000000000] SizeY
+[Name 32] [0x0007001000000000] SRGB
+[Name 33] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 34] [0x0007001000000000] TAGame
+[Name 35] [0x0007001000000000] Texture2D
+[Name 36] [0x0007001000000000] TextureFileCacheName
+[Name 37] [0x0007001000000000] TextureGroup
+[Name 38] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 39] [0x0007001000000000] TextureMipGenSettings
+[Name 40] [0x0007001000000000] Textures2
+[Name 41] [0x0007001000000000] Textures4
+[Name 42] [0x0007001000000000] Thumbnail
+[Name 43] [0x0007001000000000] ThumbnailColorMask
+[Name 44] [0x0007001000000000] TMGS_Sharpen10
+[Name 45] [0x0007001000000000] WHEEL_Caliber
+[Name 46] [0x0007001000000000] WHEEL_Caliber_T
+[Name 47] [0x0007001000000000] WHEEL_Caliber_T_SF
+[Name 48] [0x0007001000000000] WHEEL_Caliber_Thumbnail
+[Name 49] [0x0007001000000000] wheel_dieci_wg_T
+[Name 50] [0x0007001000000000] WHEEL_Dieci_WG_TThumbnail
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UObjectReferencer WHEEL_Caliber_T.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x00000000000d1231 with 0x00000040 Bytes
 	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UPackage WHEEL_Caliber_T.WHEEL_Caliber
 	Name: WHEEL_Caliber
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000a70 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[2]
+[Export 2]
+	Full Name: UPackage WHEEL_Caliber_T.WHEEL_Caliber_T
 	Name: WHEEL_Caliber_T
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000a7c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[3]
+[Export 3]
+	Full Name: UPackage WHEEL_Caliber_T.WHEEL_Caliber_T_SF
 	Name: WHEEL_Caliber_T_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000a88 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[4]
+[Export 4]
+	Full Name: UProductThumbnailAsset_TA WHEEL_Caliber_T.WHEEL_Caliber_T.WHEEL_Caliber_T
 	Name: WHEEL_Caliber_T
-	Class: ProductThumbnailAsset_TA
-	Outer: Package WHEEL_Caliber_T
+	Class: UProductThumbnailAsset_TA
+	Outer: WHEEL_Caliber_T
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000a94 with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UTexture2D WHEEL_Caliber_T.WHEEL_Caliber.WHEEL_Caliber_Thumbnail
 	Name: WHEEL_Caliber_Thumbnail
-	Class: Texture2D
-	Outer: Package WHEEL_Caliber
+	Class: UTexture2D
+	Outer: WHEEL_Caliber
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000af4 with 0x00040205 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UTexture2D WHEEL_Caliber_T.WHEEL_Caliber_T.ColorMaskBackground
 	Name: ColorMaskBackground
-	Class: Texture2D
-	Outer: Package WHEEL_Caliber_T
+	Class: UTexture2D
+	Outer: WHEEL_Caliber_T
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000040cf9 with 0x000401ec Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UTexture2D WHEEL_Caliber_T.WHEEL_Caliber_T.PaintedThumbnail
 	Name: PaintedThumbnail
-	Class: Texture2D
-	Outer: Package WHEEL_Caliber_T
+	Class: UTexture2D
+	Outer: WHEEL_Caliber_T
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000080ee5 with 0x000401ec Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UTexture2D WHEEL_Caliber_T.WHEEL_Caliber_T.Product_Thumbnail_ColorMask
 	Name: Product_Thumbnail_ColorMask
-	Class: Texture2D
-	Outer: Package WHEEL_Caliber_T
+	Class: UTexture2D
+	Outer: WHEEL_Caliber_T
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000c10d1 with 0x00010160 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UProductThumbnailAsset_TA WHEEL_Caliber_T.WHEEL_Caliber_T.wheel_dieci_wg_T
 	Name: wheel_dieci_wg_T
-	Class: ProductThumbnailAsset_TA
-	Outer: Package WHEEL_Caliber_T
+	Class: UProductThumbnailAsset_TA
+	Outer: WHEEL_Caliber_T
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000d1271 with 0x00000028 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UTexture2D WHEEL_Caliber_T.WHEEL_Caliber_T.WHEEL_Dieci_WG_TThumbnail
 	Name: WHEEL_Dieci_WG_TThumbnail
-	Class: Texture2D
-	Outer: Package WHEEL_Caliber_T
+	Class: UTexture2D
+	Outer: WHEEL_Caliber_T
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000d1299 with 0x000401ec Bytes
 	Export Flags: 0x00000001
@@ -226,35 +238,42 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass TAGame.ProductThumbnailAsset_TA
 	Name: ProductThumbnailAsset_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[4]
+	Class Package: Core
+	Outer: TAGame
+[Import 4]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[5]
+	Class Package: Core
+[Import 5]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[6]
+	Class Package: Core
+[Import 6]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
+	Class Package: Core

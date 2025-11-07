@@ -45,6 +45,7 @@ Test Data Size: 0x00003f19
 Compressed Chunk Info Offset: 0x00001ad3
 Last Block Size: 0x00000008
 Base Header Size: 0x000000a5
+Encrypted Header Size: 0x00005a30
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -52,470 +53,506 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ActivateDelay
-[1] AkAmbientSoundActor
-[2] AkAudio
-[3] AkBank
-[4] AkPlaySoundComponent
-[5] AkSoundCue
-[6] AMB_Bed_FireAndIce_Creatures_Distant_Loop
-[7] AMB_Bed_FireAndIce_Fire_Loop
-[8] AMB_Bed_FireAndIce_Global_Loop
-[9] AMB_Bed_FireAndIce_Ice_Loop
-[10] AMB_CHN_Gong
-[11] AMB_PS_Fire_Building_Loop
-[12] AMB_PS_LavaPour_Loop
-[13] AMB_PS_Wind_Flag_Flapping_Loop
-[14] AMB_PS_Wind_Windchime_Loop
-[15] ArrayProperty
-[16] bAllowAnyType
-[17] Bank
-[18] bClampedMax
-[19] bClampedMin
-[20] bClientSideOnly
-[21] bDisabled
-[22] bDisabledPIE
-[23] bHasImpulse
-[24] bHidden
-[25] bModifiesLinkedObject
-[26] BoolProperty
-[27] bSequenceNeverReadsOnlyWritesToThisVar
-[28] bWriteable
-[29] ByteProperty
-[30] Class
-[31] Components
-[32] Core
-[33] Default__AkAmbientSoundActor
-[34] DefaultPlaySoundComponent
-[35] DefaultViewX
-[36] DefaultViewY
-[37] DefaultViewZoom
-[38] DrawHeight
-[39] DrawWidth
-[40] DrawX
-[41] DrawY
-[42] ELightingBuildQuality
-[43] Engine
-[44] ExpectedType
-[45] FloatProperty
-[46] fni_stadium_sfx
-[47] InputLinkIdx
-[48] InputLinks
-[49] IntProperty
-[50] Level
-[51] LevelLightingQuality
-[52] LinkDesc
-[53] LinkedOp
-[54] LinkedVariables
-[55] Links
-[56] LinkVar
-[57] Location
-[58] Main_Sequence
-[59] MaxVars
-[60] MaxWidth
-[61] MinVars
-[62] Model
-[63] NameProperty
-[64] None
-[65] ObjectProperty
-[66] ObjInstanceVersion
-[67] OutputLinks
-[68] OverrideDelta
-[69] Package
-[70] ParentSequence
-[71] PersistentLevel
-[72] PlaySoundComponent
-[73] Polys
-[74] PropertyName
-[75] Quality_Production
-[76] QueuedActivations
-[77] RequiredBank
-[78] SeqAct_AkLoadBank
-[79] SeqAct_AkPlaySound
-[80] SeqEvent_CountDownCompleted_TA
-[81] SeqEvent_LevelLoaded
-[82] Sequence
-[83] SequenceObjects
-[84] SeqVar_Object
-[85] SFX_AMB_CHN
-[86] SFX_AMB_FireAndIce
-[87] SFX_AMB_FNI
-[88] SFX_AMB_Reverb
-[89] SoundCue
-[90] StartEvent
-[91] StrProperty
-[92] StructProperty
-[93] Tag
-[94] TAGame
-[95] Targets
-[96] TheWorld
-[97] VariableLinks
-[98] Vector
-[99] World
-[100] WorldInfo
+[Name 0] [0x0007001000000000] ActivateDelay
+[Name 1] [0x0007001000000000] AkAmbientSoundActor
+[Name 2] [0x0007001000000000] AkAudio
+[Name 3] [0x0007001000000000] AkBank
+[Name 4] [0x0007001000000000] AkPlaySoundComponent
+[Name 5] [0x0007001000000000] AkSoundCue
+[Name 6] [0x0007001000000000] AMB_Bed_FireAndIce_Creatures_Distant_Loop
+[Name 7] [0x0007001000000000] AMB_Bed_FireAndIce_Fire_Loop
+[Name 8] [0x0007001000000000] AMB_Bed_FireAndIce_Global_Loop
+[Name 9] [0x0007001000000000] AMB_Bed_FireAndIce_Ice_Loop
+[Name 10] [0x0007001000000000] AMB_CHN_Gong
+[Name 11] [0x0007001000000000] AMB_PS_Fire_Building_Loop
+[Name 12] [0x0007001000000000] AMB_PS_LavaPour_Loop
+[Name 13] [0x0007001000000000] AMB_PS_Wind_Flag_Flapping_Loop
+[Name 14] [0x0007001000000000] AMB_PS_Wind_Windchime_Loop
+[Name 15] [0x0007001000000000] ArrayProperty
+[Name 16] [0x0007001000000000] bAllowAnyType
+[Name 17] [0x0007001000000000] Bank
+[Name 18] [0x0007001000000000] bClampedMax
+[Name 19] [0x0007001000000000] bClampedMin
+[Name 20] [0x0007001000000000] bClientSideOnly
+[Name 21] [0x0007001000000000] bDisabled
+[Name 22] [0x0007001000000000] bDisabledPIE
+[Name 23] [0x0007001000000000] bHasImpulse
+[Name 24] [0x0007001000000000] bHidden
+[Name 25] [0x0007001000000000] bModifiesLinkedObject
+[Name 26] [0x0007001000000000] BoolProperty
+[Name 27] [0x0007001000000000] bSequenceNeverReadsOnlyWritesToThisVar
+[Name 28] [0x0007001000000000] bWriteable
+[Name 29] [0x0007001000000000] ByteProperty
+[Name 30] [0x0007001000000000] Class
+[Name 31] [0x0007001000000000] Components
+[Name 32] [0x0007001000000000] Core
+[Name 33] [0x0007001000000000] Default__AkAmbientSoundActor
+[Name 34] [0x0007001000000000] DefaultPlaySoundComponent
+[Name 35] [0x0007001000000000] DefaultViewX
+[Name 36] [0x0007001000000000] DefaultViewY
+[Name 37] [0x0007001000000000] DefaultViewZoom
+[Name 38] [0x0007001000000000] DrawHeight
+[Name 39] [0x0007001000000000] DrawWidth
+[Name 40] [0x0007001000000000] DrawX
+[Name 41] [0x0007001000000000] DrawY
+[Name 42] [0x0007001000000000] ELightingBuildQuality
+[Name 43] [0x0007001000000000] Engine
+[Name 44] [0x0007001000000000] ExpectedType
+[Name 45] [0x0007001000000000] FloatProperty
+[Name 46] [0x0007001000000000] fni_stadium_sfx
+[Name 47] [0x0007001000000000] InputLinkIdx
+[Name 48] [0x0007001000000000] InputLinks
+[Name 49] [0x0007001000000000] IntProperty
+[Name 50] [0x0007001000000000] Level
+[Name 51] [0x0007001000000000] LevelLightingQuality
+[Name 52] [0x0007001000000000] LinkDesc
+[Name 53] [0x0007001000000000] LinkedOp
+[Name 54] [0x0007001000000000] LinkedVariables
+[Name 55] [0x0007001000000000] Links
+[Name 56] [0x0007001000000000] LinkVar
+[Name 57] [0x0007001000000000] Location
+[Name 58] [0x0007001000000000] Main_Sequence
+[Name 59] [0x0007001000000000] MaxVars
+[Name 60] [0x0007001000000000] MaxWidth
+[Name 61] [0x0007001000000000] MinVars
+[Name 62] [0x0007001000000000] Model
+[Name 63] [0x0007001000000000] NameProperty
+[Name 64] [0x0007001000000000] None
+[Name 65] [0x0007001000000000] ObjectProperty
+[Name 66] [0x0007001000000000] ObjInstanceVersion
+[Name 67] [0x0007001000000000] OutputLinks
+[Name 68] [0x0007001000000000] OverrideDelta
+[Name 69] [0x0007001000000000] Package
+[Name 70] [0x0007001000000000] ParentSequence
+[Name 71] [0x0007001000000000] PersistentLevel
+[Name 72] [0x0007001000000000] PlaySoundComponent
+[Name 73] [0x0007001000000000] Polys
+[Name 74] [0x0007001000000000] PropertyName
+[Name 75] [0x0007001000000000] Quality_Production
+[Name 76] [0x0007001000000000] QueuedActivations
+[Name 77] [0x0007001000000000] RequiredBank
+[Name 78] [0x0007001000000000] SeqAct_AkLoadBank
+[Name 79] [0x0007001000000000] SeqAct_AkPlaySound
+[Name 80] [0x0007001000000000] SeqEvent_CountDownCompleted_TA
+[Name 81] [0x0007001000000000] SeqEvent_LevelLoaded
+[Name 82] [0x0007001000000000] Sequence
+[Name 83] [0x0007001000000000] SequenceObjects
+[Name 84] [0x0007001000000000] SeqVar_Object
+[Name 85] [0x0007001000000000] SFX_AMB_CHN
+[Name 86] [0x0007001000000000] SFX_AMB_FireAndIce
+[Name 87] [0x0007001000000000] SFX_AMB_FNI
+[Name 88] [0x0007001000000000] SFX_AMB_Reverb
+[Name 89] [0x0007001000000000] SoundCue
+[Name 90] [0x0007001000000000] StartEvent
+[Name 91] [0x0007001000000000] StrProperty
+[Name 92] [0x0007001000000000] StructProperty
+[Name 93] [0x0007001000000000] Tag
+[Name 94] [0x0007001000000000] TAGame
+[Name 95] [0x0007001000000000] Targets
+[Name 96] [0x0007001000000000] TheWorld
+[Name 97] [0x0007001000000000] VariableLinks
+[Name 98] [0x0007001000000000] Vector
+[Name 99] [0x0007001000000000] World
+[Name 100] [0x0007001000000000] WorldInfo
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAkAmbientSoundActor FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_0
 	Name: AkAmbientSoundActor_0
-	Class: AkAmbientSoundActor
-	Outer: Level PersistentLevel
+	Class: UAkAmbientSoundActor
+	Outer: PersistentLevel
 	Object Flags: 0x0207000100000000
 	Serialized data: at 0x0000000000001b78 with 0x000000ae Bytes
 	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UAkAmbientSoundActor FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_1
 	Name: AkAmbientSoundActor_1
-	Class: AkAmbientSoundActor
-	Outer: Level PersistentLevel
+	Class: UAkAmbientSoundActor
+	Outer: PersistentLevel
 	Object Flags: 0x0207000100000000
 	Serialized data: at 0x0000000000001c26 with 0x000000ae Bytes
 	Export Flags: 0x00000000
-[2]
+[Export 2]
+	Full Name: UAkAmbientSoundActor FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_10
 	Name: AkAmbientSoundActor_10
-	Class: AkAmbientSoundActor
-	Outer: Level PersistentLevel
+	Class: UAkAmbientSoundActor
+	Outer: PersistentLevel
 	Object Flags: 0x0207000100000000
 	Serialized data: at 0x0000000000001cd4 with 0x000000ae Bytes
 	Export Flags: 0x00000000
-[3]
+[Export 3]
+	Full Name: UAkAmbientSoundActor FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_11
 	Name: AkAmbientSoundActor_11
-	Class: AkAmbientSoundActor
-	Outer: Level PersistentLevel
+	Class: UAkAmbientSoundActor
+	Outer: PersistentLevel
 	Object Flags: 0x0207000100000000
 	Serialized data: at 0x0000000000001d82 with 0x000000ae Bytes
 	Export Flags: 0x00000000
-[4]
+[Export 4]
+	Full Name: UAkAmbientSoundActor FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_2
 	Name: AkAmbientSoundActor_2
-	Class: AkAmbientSoundActor
-	Outer: Level PersistentLevel
+	Class: UAkAmbientSoundActor
+	Outer: PersistentLevel
 	Object Flags: 0x0207000100000000
 	Serialized data: at 0x0000000000001e30 with 0x000000ae Bytes
 	Export Flags: 0x00000000
-[5]
+[Export 5]
+	Full Name: UAkAmbientSoundActor FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_4
 	Name: AkAmbientSoundActor_4
-	Class: AkAmbientSoundActor
-	Outer: Level PersistentLevel
+	Class: UAkAmbientSoundActor
+	Outer: PersistentLevel
 	Object Flags: 0x0207000100000000
 	Serialized data: at 0x0000000000001ede with 0x000000ae Bytes
 	Export Flags: 0x00000000
-[6]
+[Export 6]
+	Full Name: UAkAmbientSoundActor FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_5
 	Name: AkAmbientSoundActor_5
-	Class: AkAmbientSoundActor
-	Outer: Level PersistentLevel
+	Class: UAkAmbientSoundActor
+	Outer: PersistentLevel
 	Object Flags: 0x0207000100000000
 	Serialized data: at 0x0000000000001f8c with 0x000000ae Bytes
 	Export Flags: 0x00000000
-[7]
+[Export 7]
+	Full Name: UAkAmbientSoundActor FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_6
 	Name: AkAmbientSoundActor_6
-	Class: AkAmbientSoundActor
-	Outer: Level PersistentLevel
+	Class: UAkAmbientSoundActor
+	Outer: PersistentLevel
 	Object Flags: 0x0207000100000000
 	Serialized data: at 0x000000000000203a with 0x000000ae Bytes
 	Export Flags: 0x00000000
-[8]
+[Export 8]
+	Full Name: UAkAmbientSoundActor FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_7
 	Name: AkAmbientSoundActor_7
-	Class: AkAmbientSoundActor
-	Outer: Level PersistentLevel
+	Class: UAkAmbientSoundActor
+	Outer: PersistentLevel
 	Object Flags: 0x0207000100000000
 	Serialized data: at 0x00000000000020e8 with 0x000000ae Bytes
 	Export Flags: 0x00000000
-[9]
+[Export 9]
+	Full Name: UAkAmbientSoundActor FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_9
 	Name: AkAmbientSoundActor_9
-	Class: AkAmbientSoundActor
-	Outer: Level PersistentLevel
+	Class: UAkAmbientSoundActor
+	Outer: PersistentLevel
 	Object Flags: 0x0207000100000000
 	Serialized data: at 0x0000000000002196 with 0x000000ae Bytes
 	Export Flags: 0x00000000
-[10]
+[Export 10]
+	Full Name: UAkBank FNI_Stadium_SFX.SFX_AMB_CHN.SFX_AMB_CHN
 	Name: SFX_AMB_CHN
-	Class: AkBank
-	Outer: Package SFX_AMB_CHN
+	Class: UAkBank
+	Outer: SFX_AMB_CHN
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002244 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UAkBank FNI_Stadium_SFX.SFX_AMB_FNI.SFX_AMB_FireAndIce
 	Name: SFX_AMB_FireAndIce
-	Class: AkBank
-	Outer: Package SFX_AMB_FNI
+	Class: UAkBank
+	Outer: SFX_AMB_FNI
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002250 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UAkBank FNI_Stadium_SFX.SFX_AMB_Reverb.SFX_AMB_Reverb
 	Name: SFX_AMB_Reverb
-	Class: AkBank
-	Outer: Package SFX_AMB_Reverb
+	Class: UAkBank
+	Outer: SFX_AMB_Reverb
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000225c with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UAkPlaySoundComponent FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_0.AkPlaySoundComponent_0
 	Name: AkPlaySoundComponent_0
-	Class: AkPlaySoundComponent
-	Outer: AkAmbientSoundActor AkAmbientSoundActor_0
+	Class: UAkPlaySoundComponent
+	Outer: AkAmbientSoundActor_0
 	Archetype: DefaultPlaySoundComponent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002268 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[14]
+[Export 14]
+	Full Name: UAkPlaySoundComponent FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_1.AkPlaySoundComponent_0
 	Name: AkPlaySoundComponent_0
-	Class: AkPlaySoundComponent
-	Outer: AkAmbientSoundActor AkAmbientSoundActor_1
+	Class: UAkPlaySoundComponent
+	Outer: AkAmbientSoundActor_1
 	Archetype: DefaultPlaySoundComponent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002294 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[15]
+[Export 15]
+	Full Name: UAkPlaySoundComponent FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_10.AkPlaySoundComponent_0
 	Name: AkPlaySoundComponent_0
-	Class: AkPlaySoundComponent
-	Outer: AkAmbientSoundActor AkAmbientSoundActor_10
+	Class: UAkPlaySoundComponent
+	Outer: AkAmbientSoundActor_10
 	Archetype: DefaultPlaySoundComponent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000022c0 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[16]
+[Export 16]
+	Full Name: UAkPlaySoundComponent FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_11.AkPlaySoundComponent_0
 	Name: AkPlaySoundComponent_0
-	Class: AkPlaySoundComponent
-	Outer: AkAmbientSoundActor AkAmbientSoundActor_11
+	Class: UAkPlaySoundComponent
+	Outer: AkAmbientSoundActor_11
 	Archetype: DefaultPlaySoundComponent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000022ec with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[17]
+[Export 17]
+	Full Name: UAkPlaySoundComponent FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_2.AkPlaySoundComponent_0
 	Name: AkPlaySoundComponent_0
-	Class: AkPlaySoundComponent
-	Outer: AkAmbientSoundActor AkAmbientSoundActor_2
+	Class: UAkPlaySoundComponent
+	Outer: AkAmbientSoundActor_2
 	Archetype: DefaultPlaySoundComponent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002318 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[18]
+[Export 18]
+	Full Name: UAkPlaySoundComponent FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_4.AkPlaySoundComponent_0
 	Name: AkPlaySoundComponent_0
-	Class: AkPlaySoundComponent
-	Outer: AkAmbientSoundActor AkAmbientSoundActor_4
+	Class: UAkPlaySoundComponent
+	Outer: AkAmbientSoundActor_4
 	Archetype: DefaultPlaySoundComponent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002344 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[19]
+[Export 19]
+	Full Name: UAkPlaySoundComponent FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_5.AkPlaySoundComponent_0
 	Name: AkPlaySoundComponent_0
-	Class: AkPlaySoundComponent
-	Outer: AkAmbientSoundActor AkAmbientSoundActor_5
+	Class: UAkPlaySoundComponent
+	Outer: AkAmbientSoundActor_5
 	Archetype: DefaultPlaySoundComponent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002370 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[20]
+[Export 20]
+	Full Name: UAkPlaySoundComponent FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_6.AkPlaySoundComponent_0
 	Name: AkPlaySoundComponent_0
-	Class: AkPlaySoundComponent
-	Outer: AkAmbientSoundActor AkAmbientSoundActor_6
+	Class: UAkPlaySoundComponent
+	Outer: AkAmbientSoundActor_6
 	Archetype: DefaultPlaySoundComponent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000239c with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[21]
+[Export 21]
+	Full Name: UAkPlaySoundComponent FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_7.AkPlaySoundComponent_0
 	Name: AkPlaySoundComponent_0
-	Class: AkPlaySoundComponent
-	Outer: AkAmbientSoundActor AkAmbientSoundActor_7
+	Class: UAkPlaySoundComponent
+	Outer: AkAmbientSoundActor_7
 	Archetype: DefaultPlaySoundComponent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000023c8 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[22]
+[Export 22]
+	Full Name: UAkPlaySoundComponent FNI_Stadium_SFX.TheWorld.PersistentLevel.AkAmbientSoundActor_9.AkPlaySoundComponent_0
 	Name: AkPlaySoundComponent_0
-	Class: AkPlaySoundComponent
-	Outer: AkAmbientSoundActor AkAmbientSoundActor_9
+	Class: UAkPlaySoundComponent
+	Outer: AkAmbientSoundActor_9
 	Archetype: DefaultPlaySoundComponent
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000023f4 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[23]
+[Export 23]
+	Full Name: UAkSoundCue FNI_Stadium_SFX.SFX_AMB_CHN.AMB_CHN_Gong
 	Name: AMB_CHN_Gong
-	Class: AkSoundCue
-	Outer: Package SFX_AMB_CHN
+	Class: UAkSoundCue
+	Outer: SFX_AMB_CHN
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002420 with 0x00000056 Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UAkSoundCue FNI_Stadium_SFX.SFX_AMB_FNI.AMB_Bed_FireAndIce_Creatures_Distant_Loop
 	Name: AMB_Bed_FireAndIce_Creatures_Distant_Loop
-	Class: AkSoundCue
-	Outer: Package SFX_AMB_FNI
+	Class: UAkSoundCue
+	Outer: SFX_AMB_FNI
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002476 with 0x00000073 Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UAkSoundCue FNI_Stadium_SFX.SFX_AMB_FNI.AMB_Bed_FireAndIce_Fire_Loop
 	Name: AMB_Bed_FireAndIce_Fire_Loop
-	Class: AkSoundCue
-	Outer: Package SFX_AMB_FNI
+	Class: UAkSoundCue
+	Outer: SFX_AMB_FNI
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000024e9 with 0x00000066 Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UAkSoundCue FNI_Stadium_SFX.SFX_AMB_FNI.AMB_Bed_FireAndIce_Global_Loop
 	Name: AMB_Bed_FireAndIce_Global_Loop
-	Class: AkSoundCue
-	Outer: Package SFX_AMB_FNI
+	Class: UAkSoundCue
+	Outer: SFX_AMB_FNI
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000254f with 0x00000068 Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UAkSoundCue FNI_Stadium_SFX.SFX_AMB_FNI.AMB_Bed_FireAndIce_Ice_Loop
 	Name: AMB_Bed_FireAndIce_Ice_Loop
-	Class: AkSoundCue
-	Outer: Package SFX_AMB_FNI
+	Class: UAkSoundCue
+	Outer: SFX_AMB_FNI
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000025b7 with 0x00000065 Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UAkSoundCue FNI_Stadium_SFX.SFX_AMB_FNI.AMB_PS_Fire_Building_Loop
 	Name: AMB_PS_Fire_Building_Loop
-	Class: AkSoundCue
-	Outer: Package SFX_AMB_FNI
+	Class: UAkSoundCue
+	Outer: SFX_AMB_FNI
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000261c with 0x00000063 Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UAkSoundCue FNI_Stadium_SFX.SFX_AMB_FNI.AMB_PS_LavaPour_Loop
 	Name: AMB_PS_LavaPour_Loop
-	Class: AkSoundCue
-	Outer: Package SFX_AMB_FNI
+	Class: UAkSoundCue
+	Outer: SFX_AMB_FNI
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000267f with 0x0000005e Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UAkSoundCue FNI_Stadium_SFX.SFX_AMB_FNI.AMB_PS_Wind_Flag_Flapping_Loop
 	Name: AMB_PS_Wind_Flag_Flapping_Loop
-	Class: AkSoundCue
-	Outer: Package SFX_AMB_FNI
+	Class: UAkSoundCue
+	Outer: SFX_AMB_FNI
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000026dd with 0x00000068 Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UAkSoundCue FNI_Stadium_SFX.SFX_AMB_FNI.AMB_PS_Wind_Windchime_Loop
 	Name: AMB_PS_Wind_Windchime_Loop
-	Class: AkSoundCue
-	Outer: Package SFX_AMB_FNI
+	Class: UAkSoundCue
+	Outer: SFX_AMB_FNI
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002745 with 0x00000064 Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: ULevel FNI_Stadium_SFX.TheWorld.PersistentLevel
 	Name: PersistentLevel
-	Class: Level
-	Outer: World TheWorld
+	Class: ULevel
+	Outer: TheWorld
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000027a9 with 0x00000130 Bytes
 	Export Flags: 0x00000000
-[33]
+[Export 33]
+	Full Name: UModel FNI_Stadium_SFX.TheWorld.PersistentLevel.Model_4
 	Name: Model_4
-	Class: Model
-	Outer: Level PersistentLevel
+	Class: UModel
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004dfb with 0x0000009c Bytes
 	Export Flags: 0x00000000
-[34]
+[Export 34]
+	Full Name: UPackage FNI_Stadium_SFX.fni_stadium_sfx
 	Name: fni_stadium_sfx
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002975 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x3ecbc7e8 0x449cc440 0x4068ce86 0x97a9c594
 	Package Flags: 0x228a0009
-[35]
+[Export 35]
+	Full Name: UPackage FNI_Stadium_SFX.SFX_AMB_CHN
 	Name: SFX_AMB_CHN
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002981 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[36]
+[Export 36]
+	Full Name: UPackage FNI_Stadium_SFX.SFX_AMB_FNI
 	Name: SFX_AMB_FNI
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000298d with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[37]
+[Export 37]
+	Full Name: UPackage FNI_Stadium_SFX.SFX_AMB_Reverb
 	Name: SFX_AMB_Reverb
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002999 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[38]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[39]
+[Export 39]
+	Full Name: USeqAct_AkLoadBank FNI_Stadium_SFX.TheWorld.PersistentLevel.Main_Sequence.SeqAct_AkLoadBank_0
 	Name: SeqAct_AkLoadBank_0
-	Class: SeqAct_AkLoadBank
-	Outer: Sequence Main_Sequence
+	Class: USeqAct_AkLoadBank
+	Outer: Main_Sequence
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000029bd with 0x000004b7 Bytes
 	Export Flags: 0x00000000
-[40]
+[Export 40]
+	Full Name: USeqAct_AkPlaySound FNI_Stadium_SFX.TheWorld.PersistentLevel.Main_Sequence.SeqAct_AkPlaySound_0
 	Name: SeqAct_AkPlaySound_0
-	Class: SeqAct_AkPlaySound
-	Outer: Sequence Main_Sequence
+	Class: USeqAct_AkPlaySound
+	Outer: Main_Sequence
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002e74 with 0x0000068e Bytes
 	Export Flags: 0x00000000
-[41]
+[Export 41]
+	Full Name: USeqAct_AkPlaySound FNI_Stadium_SFX.TheWorld.PersistentLevel.Main_Sequence.SeqAct_AkPlaySound_1
 	Name: SeqAct_AkPlaySound_1
-	Class: SeqAct_AkPlaySound
-	Outer: Sequence Main_Sequence
+	Class: USeqAct_AkPlaySound
+	Outer: Main_Sequence
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003502 with 0x0000068e Bytes
 	Export Flags: 0x00000000
-[42]
+[Export 42]
+	Full Name: USeqAct_AkPlaySound FNI_Stadium_SFX.TheWorld.PersistentLevel.Main_Sequence.SeqAct_AkPlaySound_2
 	Name: SeqAct_AkPlaySound_2
-	Class: SeqAct_AkPlaySound
-	Outer: Sequence Main_Sequence
+	Class: USeqAct_AkPlaySound
+	Outer: Main_Sequence
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003b90 with 0x0000068e Bytes
 	Export Flags: 0x00000000
-[43]
+[Export 43]
+	Full Name: USeqEvent_CountDownCompleted_TA FNI_Stadium_SFX.TheWorld.PersistentLevel.Main_Sequence.SeqEvent_CountDownCompleted_TA_0
 	Name: SeqEvent_CountDownCompleted_TA_0
-	Class: SeqEvent_CountDownCompleted_TA
-	Outer: Sequence Main_Sequence
+	Class: USeqEvent_CountDownCompleted_TA
+	Outer: Main_Sequence
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000421e with 0x0000042a Bytes
 	Export Flags: 0x00000000
-[44]
+[Export 44]
+	Full Name: USeqEvent_LevelLoaded FNI_Stadium_SFX.TheWorld.PersistentLevel.Main_Sequence.SeqEvent_LevelLoaded_0
 	Name: SeqEvent_LevelLoaded_0
-	Class: SeqEvent_LevelLoaded
-	Outer: Sequence Main_Sequence
+	Class: USeqEvent_LevelLoaded
+	Outer: Main_Sequence
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004648 with 0x00000575 Bytes
 	Export Flags: 0x00000000
-[45]
+[Export 45]
+	Full Name: USequence FNI_Stadium_SFX.TheWorld.PersistentLevel.Main_Sequence
 	Name: Main_Sequence
-	Class: Sequence
-	Outer: Level PersistentLevel
+	Class: USequence
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004bbd with 0x00000094 Bytes
 	Export Flags: 0x00000000
-[46]
+[Export 46]
+	Full Name: UWorld FNI_Stadium_SFX.TheWorld
 	Name: TheWorld
-	Class: World
+	Class: UWorld
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004c51 with 0x0000008c Bytes
 	Export Flags: 0x00000000
-[47]
+[Export 47]
+	Full Name: UWorldInfo FNI_Stadium_SFX.TheWorld.PersistentLevel.WorldInfo_2
 	Name: WorldInfo_2
-	Class: WorldInfo
-	Outer: Level PersistentLevel
+	Class: UWorldInfo
+	Outer: PersistentLevel
 	Object Flags: 0x0207000100000000
 	Serialized data: at 0x0000000000004cdd with 0x0000006a Bytes
 	Export Flags: 0x00000000
-[48]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[49]
+[Export 49]
+	Full Name: UPolys FNI_Stadium_SFX.TheWorld.PersistentLevel.Polys_30
 	Name: Polys_30
-	Class: Polys
-	Outer: Level PersistentLevel
+	Class: UPolys
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004e97 with 0x00000018 Bytes
 	Export Flags: 0x00000000
@@ -524,109 +561,131 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UAkAmbientSoundActor AkAudio.Default__AkAmbientSoundActor
 	Name: Default__AkAmbientSoundActor
 	Class: AkAmbientSoundActor
-	Package: AkAudio
-	Outer: Package AkAudio
-[1]
+	Class Package: AkAudio
+	Outer: AkAudio
+[Import 1]
+	Full Name: UAkPlaySoundComponent AkAudio.Default__AkAmbientSoundActor.DefaultPlaySoundComponent
 	Name: DefaultPlaySoundComponent
 	Class: AkPlaySoundComponent
-	Package: AkAudio
-	Outer: AkAmbientSoundActor Default__AkAmbientSoundActor
-[2]
+	Class Package: AkAudio
+	Outer: Default__AkAmbientSoundActor
+[Import 2]
+	Full Name: UClass AkAudio.AkAmbientSoundActor
 	Name: AkAmbientSoundActor
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[3]
+	Class Package: Core
+	Outer: AkAudio
+[Import 3]
+	Full Name: UClass AkAudio.AkPlaySoundComponent
 	Name: AkPlaySoundComponent
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[4]
+	Class Package: Core
+	Outer: AkAudio
+[Import 4]
+	Full Name: UClass AkAudio.AkSoundCue
 	Name: AkSoundCue
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[5]
+	Class Package: Core
+	Outer: AkAudio
+[Import 5]
+	Full Name: UClass AkAudio.SeqAct_AkLoadBank
 	Name: SeqAct_AkLoadBank
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[6]
+	Class Package: Core
+	Outer: AkAudio
+[Import 6]
+	Full Name: UClass AkAudio.SeqAct_AkPlaySound
 	Name: SeqAct_AkPlaySound
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[7]
+	Class Package: Core
+	Outer: AkAudio
+[Import 7]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[8]
+	Class Package: Core
+	Outer: Core
+[Import 8]
+	Full Name: UClass Engine.AkBank
 	Name: AkBank
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass Engine.Level
 	Name: Level
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[10]
+	Class Package: Core
+	Outer: Engine
+[Import 10]
+	Full Name: UClass Engine.Model
 	Name: Model
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[11]
+	Class Package: Core
+	Outer: Engine
+[Import 11]
+	Full Name: UClass Engine.Polys
 	Name: Polys
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[12]
+	Class Package: Core
+	Outer: Engine
+[Import 12]
+	Full Name: UClass Engine.SeqEvent_LevelLoaded
 	Name: SeqEvent_LevelLoaded
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[13]
+	Class Package: Core
+	Outer: Engine
+[Import 13]
+	Full Name: UClass Engine.Sequence
 	Name: Sequence
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[14]
+	Class Package: Core
+	Outer: Engine
+[Import 14]
+	Full Name: UClass Engine.SeqVar_Object
 	Name: SeqVar_Object
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[15]
+	Class Package: Core
+	Outer: Engine
+[Import 15]
+	Full Name: UClass Engine.World
 	Name: World
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[16]
+	Class Package: Core
+	Outer: Engine
+[Import 16]
+	Full Name: UClass Engine.WorldInfo
 	Name: WorldInfo
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[17]
+	Class Package: Core
+	Outer: Engine
+[Import 17]
+	Full Name: UClass TAGame.SeqEvent_CountDownCompleted_TA
 	Name: SeqEvent_CountDownCompleted_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[18]
+	Class Package: Core
+	Outer: TAGame
+[Import 18]
+	Full Name: UPackage AkAudio
 	Name: AkAudio
 	Class: Package
-	Package: Core
-[19]
+	Class Package: Core
+[Import 19]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[20]
+	Class Package: Core
+[Import 20]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[21]
+	Class Package: Core
+[Import 21]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
+	Class Package: Core

@@ -346,6 +346,7 @@ Test Data Size: 0x0000283b
 Compressed Chunk Info Offset: 0x00001c81
 Last Block Size: 0x00000000
 Base Header Size: 0x000004a5
+Encrypted Header Size: 0x00004640
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -353,501 +354,529 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] BoolProperty
-[2] bUsesFontlib
-[3] ByteProperty
-[4] Class
-[5] Clubs
-[6] ClubsMenu
-[7] Core
-[8] Engine
-[9] EPixelFormat
-[10] Features
-[11] FlashTextureRescale
-[12] FlashTextureScale_Mult4
-[13] Format
-[14] GFX_ClubsMenu
-[15] GFX_ClubsMenu_SF
-[16] GFX_Shared
-[17] GFxUI
-[18] IntProperty
-[19] LODGroup
-[20] MipTailBaseIdx
-[21] NameProperty
-[22] None
-[23] ObjectReferencer
-[24] OriginalSizeX
-[25] OriginalSizeY
-[26] Package
-[27] PackTextureSize
-[28] PartybarUnderglow
-[29] PF_DXT1
-[30] PF_DXT5
-[31] RawData
-[32] ReferencedObjects
-[33] ReferencedSwfs
-[34] References
-[35] SharedComponents
-[36] SizeX
-[37] SizeY
-[38] SourceFile
-[39] SourceFileCRC
-[40] SourceFileTimestamp
-[41] SRGB
-[42] StandaloneSeekFreeReferencer
-[43] StrProperty
-[44] SwfMovie
-[45] Texture2D
-[46] TextureFileCacheName
-[47] TextureFormat
-[48] TextureGroup
-[49] TEXTUREGROUP_UI
-[50] TextureRescale
-[51] Textures
-[52] TintableBackground
-[53] TintableTagFrame_Bottom
-[54] TintableTagFrame_Top
-[55] TintableTitleDiv
-[56] Badge__SocketLarge
-[57] Badge__Tier1Assists
-[58] Badge__Tier1Goals
-[59] Badge__Tier1Saves
-[60] Badge__Tier2Assists
-[61] Badge__Tier2Goals
-[62] Badge__Tier2Saves
-[63] Badge__Tier3Assists
-[64] Badge__Tier3Goals
-[65] Badge__Tier3Saves
-[66] ChallengeLargeBasicBackground
-[67] ChallengeLargeBucketButtonBackground
-[68] ChallengeLargeComplete
-[69] ChallengeLargePremiumBackground
-[70] ChallengeLargePremiumLockIcon
-[71] ChallengeLargeTitleDivider
-[72] ChallengeListBackdrop
-[73] ChallengeRendererNormalBG
-[74] ChallengeRendererPremiumBG
-[75] ChallengeScreen_BG
-[76] ChallengeSmallBasicBackground
-[77] ChallengeSmallPremiumBackground
-[78] ChallengeSmallProgressBarBackground
-[79] ChallengeSmallProgressBarForeground
-[80] ChallengeSmallProgressBarGlow
-[81] ChallengesPrimeMenu
-[82] ChallengeStageButtonProgressBackground
-[83] ChallengeStageButtonProgressFill
-[84] FeaturedHeader
-[85] GFX_ChallengesPrimeMenu
-[86] HeaderDiv
-[87] Icon_ClubMenu_Manager
-[88] Icon_ClubMenu_Owner
-[89] MipGenSettings
-[90] NeverStream
-[91] RewardContainerBackground
-[92] SecondaryTab_Selected
-[93] SecondaryTab_Selection
-[94] SecondaryTab_Up
-[95] StaticBackground
-[96] subNavButton_Default
-[97] subNavButton_Hover
-[98] subNavButton_Selected
-[99] TextureMipGenSettings
-[100] TMGS_NoMipmaps
-[101] Vignette_BG
-[102] XP
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] BoolProperty
+[Name 2] [0x0007001000000000] bUsesFontlib
+[Name 3] [0x0007001000000000] ByteProperty
+[Name 4] [0x0007001000000000] Class
+[Name 5] [0x0007101000000000] Clubs
+[Name 6] [0x0007001000000000] ClubsMenu
+[Name 7] [0x0007001000000000] Core
+[Name 8] [0x0007001000000000] Engine
+[Name 9] [0x0007001000000000] EPixelFormat
+[Name 10] [0x0007001000000000] Features
+[Name 11] [0x0007001000000000] FlashTextureRescale
+[Name 12] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 13] [0x0007001000000000] Format
+[Name 14] [0x0007001000000000] GFX_ClubsMenu
+[Name 15] [0x0007001000000000] GFX_ClubsMenu_SF
+[Name 16] [0x0007001000000000] GFX_Shared
+[Name 17] [0x0007001000000000] GFxUI
+[Name 18] [0x0007001000000000] IntProperty
+[Name 19] [0x0007001000000000] LODGroup
+[Name 20] [0x0007001000000000] MipTailBaseIdx
+[Name 21] [0x0007001000000000] NameProperty
+[Name 22] [0x0007001000000000] None
+[Name 23] [0x0007001000000000] ObjectReferencer
+[Name 24] [0x0007001000000000] OriginalSizeX
+[Name 25] [0x0007001000000000] OriginalSizeY
+[Name 26] [0x0007001000000000] Package
+[Name 27] [0x0007001000000000] PackTextureSize
+[Name 28] [0x0007001000000000] PartybarUnderglow
+[Name 29] [0x0007001000000000] PF_DXT1
+[Name 30] [0x0007001000000000] PF_DXT5
+[Name 31] [0x0007001000000000] RawData
+[Name 32] [0x0007001000000000] ReferencedObjects
+[Name 33] [0x0007001000000000] ReferencedSwfs
+[Name 34] [0x0007001000000000] References
+[Name 35] [0x0007001000000000] SharedComponents
+[Name 36] [0x0007001000000000] SizeX
+[Name 37] [0x0007001000000000] SizeY
+[Name 38] [0x0007001000000000] SourceFile
+[Name 39] [0x0007001000000000] SourceFileCRC
+[Name 40] [0x0007001000000000] SourceFileTimestamp
+[Name 41] [0x0007001000000000] SRGB
+[Name 42] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 43] [0x0007001000000000] StrProperty
+[Name 44] [0x0007001000000000] SwfMovie
+[Name 45] [0x0007001000000000] Texture2D
+[Name 46] [0x0007001000000000] TextureFileCacheName
+[Name 47] [0x0007001000000000] TextureFormat
+[Name 48] [0x0007001000000000] TextureGroup
+[Name 49] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 50] [0x0007001000000000] TextureRescale
+[Name 51] [0x0007001000000000] Textures
+[Name 52] [0x0007000000000000] TintableBackground
+[Name 53] [0x0007000000000000] TintableTagFrame_Bottom
+[Name 54] [0x0007000000000000] TintableTagFrame_Top
+[Name 55] [0x0007001000000000] TintableTitleDiv
+[Name 56] [0x0007001000000000] Badge__SocketLarge
+[Name 57] [0x0007001000000000] Badge__Tier1Assists
+[Name 58] [0x0007001000000000] Badge__Tier1Goals
+[Name 59] [0x0007001000000000] Badge__Tier1Saves
+[Name 60] [0x0007001000000000] Badge__Tier2Assists
+[Name 61] [0x0007001000000000] Badge__Tier2Goals
+[Name 62] [0x0007001000000000] Badge__Tier2Saves
+[Name 63] [0x0007001000000000] Badge__Tier3Assists
+[Name 64] [0x0007001000000000] Badge__Tier3Goals
+[Name 65] [0x0007001000000000] Badge__Tier3Saves
+[Name 66] [0x0007001000000000] ChallengeLargeBasicBackground
+[Name 67] [0x0007001000000000] ChallengeLargeBucketButtonBackground
+[Name 68] [0x0007001000000000] ChallengeLargeComplete
+[Name 69] [0x0007001000000000] ChallengeLargePremiumBackground
+[Name 70] [0x0007001000000000] ChallengeLargePremiumLockIcon
+[Name 71] [0x0007001000000000] ChallengeLargeTitleDivider
+[Name 72] [0x0007001000000000] ChallengeListBackdrop
+[Name 73] [0x0007001000000000] ChallengeRendererNormalBG
+[Name 74] [0x0007001000000000] ChallengeRendererPremiumBG
+[Name 75] [0x0007001000000000] ChallengeScreen_BG
+[Name 76] [0x0007001000000000] ChallengeSmallBasicBackground
+[Name 77] [0x0007001000000000] ChallengeSmallPremiumBackground
+[Name 78] [0x0007001000000000] ChallengeSmallProgressBarBackground
+[Name 79] [0x0007001000000000] ChallengeSmallProgressBarForeground
+[Name 80] [0x0007001000000000] ChallengeSmallProgressBarGlow
+[Name 81] [0x0007001000000000] ChallengesPrimeMenu
+[Name 82] [0x0007001000000000] ChallengeStageButtonProgressBackground
+[Name 83] [0x0007001000000000] ChallengeStageButtonProgressFill
+[Name 84] [0x0007001000000000] FeaturedHeader
+[Name 85] [0x0007001000000000] GFX_ChallengesPrimeMenu
+[Name 86] [0x0007001000000000] HeaderDiv
+[Name 87] [0x0007001000000000] Icon_ClubMenu_Manager
+[Name 88] [0x0007001000000000] Icon_ClubMenu_Owner
+[Name 89] [0x0007001000000000] MipGenSettings
+[Name 90] [0x0007001000000000] NeverStream
+[Name 91] [0x0007001000000000] RewardContainerBackground
+[Name 92] [0x0007001000000000] SecondaryTab_Selected
+[Name 93] [0x0007001000000000] SecondaryTab_Selection
+[Name 94] [0x0007001000000000] SecondaryTab_Up
+[Name 95] [0x0007001000000000] StaticBackground
+[Name 96] [0x0007001000000000] subNavButton_Default
+[Name 97] [0x0007001000000000] subNavButton_Hover
+[Name 98] [0x0007001000000000] subNavButton_Selected
+[Name 99] [0x0007001000000000] TextureMipGenSettings
+[Name 100] [0x0007001000000000] TMGS_NoMipmaps
+[Name 101] [0x0007001000000000] Vignette_BG
+[Name 102] [0x0007001000000000] XP
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UObjectReferencer GFX_ClubsMenu.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x00000000010456c6 with 0x00000064 Bytes
 	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UPackage GFX_ClubsMenu.GFX_ClubsMenu
 	Name: GFX_ClubsMenu
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002166 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[2]
+[Export 2]
+	Full Name: UPackage GFX_ClubsMenu.GFX_ClubsMenu_SF
 	Name: GFX_ClubsMenu_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002172 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[3]
+[Export 3]
+	Full Name: USwfMovie GFX_ClubsMenu.GFX_ClubsMenu.ClubsMenu
 	Name: ClubsMenu
-	Class: SwfMovie
-	Outer: Package GFX_ClubsMenu
+	Class: USwfMovie
+	Outer: GFX_ClubsMenu
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000104572a with 0x000fb248 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ClubsMenu.PartybarUnderglow
 	Name: PartybarUnderglow
-	Class: Texture2D
-	Outer: Package GFX_ClubsMenu
+	Class: UTexture2D
+	Outer: GFX_ClubsMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000f656a with 0x00020179 Bytes
 	Export Flags: 0x00000001
-[5]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[6]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[7]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[8]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[9]
+[Export 9]
+	Full Name: UPackage GFX_ClubsMenu.GFX_ChallengesPrimeMenu
 	Name: GFX_ChallengesPrimeMenu
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000040f47d with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[10]
+[Export 10]
+	Full Name: USwfMovie GFX_ClubsMenu.GFX_ChallengesPrimeMenu.ChallengesPrimeMenu
 	Name: ChallengesPrimeMenu
-	Class: SwfMovie
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: USwfMovie
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000001140972 with 0x0011b28e Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.ChallengeLargeBasicBackground
 	Name: ChallengeLargeBasicBackground
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000521ab6 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.ChallengeLargeBucketButtonBackground
 	Name: ChallengeLargeBucketButtonBackground
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000125bc00 with 0x000ba6be Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.ChallengeLargeComplete
 	Name: ChallengeLargeComplete
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000005ec2ed with 0x00004a7e Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.ChallengeLargePremiumBackground
 	Name: ChallengeLargePremiumBackground
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000005f0d6b with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.ChallengeLargePremiumLockIcon
 	Name: ChallengeLargePremiumLockIcon
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000600ee4 with 0x0000030e Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.ChallengeLargeTitleDivider
 	Name: ChallengeLargeTitleDivider
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000001044c9f with 0x00000579 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.ChallengeListBackdrop
 	Name: ChallengeListBackdrop
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000060176b with 0x00100179 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.ChallengeRendererNormalBG
 	Name: ChallengeRendererNormalBG
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000007018e4 with 0x0001077e Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.ChallengeRendererPremiumBG
 	Name: ChallengeRendererPremiumBG
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000712062 with 0x00013d5e Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.ChallengeScreen_BG
 	Name: ChallengeScreen_BG
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000013162be with 0x000fd37e Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.ChallengeSmallBasicBackground
 	Name: ChallengeSmallBasicBackground
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000082313e with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.ChallengeSmallPremiumBackground
 	Name: ChallengeSmallPremiumBackground
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000008332b7 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.ChallengeSmallProgressBarBackground
 	Name: ChallengeSmallProgressBarBackground
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000843430 with 0x00000fb6 Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.ChallengeSmallProgressBarForeground
 	Name: ChallengeSmallProgressBarForeground
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000008443e6 with 0x000003fe Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.ChallengeSmallProgressBarGlow
 	Name: ChallengeSmallProgressBarGlow
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000008447e4 with 0x0000442e Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.ChallengeStageButtonProgressBackground
 	Name: ChallengeStageButtonProgressBackground
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000848c12 with 0x00000579 Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.ChallengeStageButtonProgressFill
 	Name: ChallengeStageButtonProgressFill
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000084918b with 0x00000379 Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.FeaturedHeader
 	Name: FeaturedHeader
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000141363c with 0x00009f9e Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.HeaderDiv
 	Name: HeaderDiv
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000141d5da with 0x000004ae Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.RewardContainerBackground
 	Name: RewardContainerBackground
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000853950 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.SecondaryTab_Selected
 	Name: SecondaryTab_Selected
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000863ac9 with 0x00001179 Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.SecondaryTab_Selection
 	Name: SecondaryTab_Selection
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000864c42 with 0x0000107e Bytes
 	Export Flags: 0x00000001
-[33]
+[Export 33]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.SecondaryTab_Up
 	Name: SecondaryTab_Up
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000865cc0 with 0x00001179 Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.subNavButton_Default
 	Name: subNavButton_Default
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000866e39 with 0x0000424e Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.subNavButton_Hover
 	Name: subNavButton_Hover
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000086b087 with 0x0000424e Bytes
 	Export Flags: 0x00000001
-[36]
+[Export 36]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.subNavButton_Selected
 	Name: subNavButton_Selected
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000086f2d5 with 0x0000424e Bytes
 	Export Flags: 0x00000001
-[37]
+[Export 37]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.TintableTitleDiv
 	Name: TintableTitleDiv
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000e36817 with 0x00000379 Bytes
 	Export Flags: 0x00000001
-[38]
+[Export 38]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.Vignette_BG
 	Name: Vignette_BG
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000087389c with 0x00020179 Bytes
 	Export Flags: 0x00000001
-[39]
+[Export 39]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.XP_1
 	Name: XP_1
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000141da88 with 0x00004179 Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.XP_2
 	Name: XP_2
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000001421c01 with 0x00004179 Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.XP_3
 	Name: XP_3
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000001425d7a with 0x00004179 Bytes
 	Export Flags: 0x00000001
-[42]
+[Export 42]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ChallengesPrimeMenu.XP_4
 	Name: XP_4
-	Class: Texture2D
-	Outer: Package GFX_ChallengesPrimeMenu
+	Class: UTexture2D
+	Outer: GFX_ChallengesPrimeMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000089fe80 with 0x00004179 Bytes
 	Export Flags: 0x00000001
-[43]
+[Export 43]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ClubsMenu.Badge__SocketLarge
 	Name: Badge__SocketLarge
-	Class: Texture2D
-	Outer: Package GFX_ClubsMenu
+	Class: UTexture2D
+	Outer: GFX_ClubsMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000008a3ff9 with 0x00040179 Bytes
 	Export Flags: 0x00000001
-[44]
+[Export 44]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ClubsMenu.Badge__Tier1Assists
 	Name: Badge__Tier1Assists
-	Class: Texture2D
-	Outer: Package GFX_ClubsMenu
+	Class: UTexture2D
+	Outer: GFX_ClubsMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000008e4172 with 0x00040179 Bytes
 	Export Flags: 0x00000001
-[45]
+[Export 45]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ClubsMenu.Badge__Tier1Goals
 	Name: Badge__Tier1Goals
-	Class: Texture2D
-	Outer: Package GFX_ClubsMenu
+	Class: UTexture2D
+	Outer: GFX_ClubsMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000009242eb with 0x00040179 Bytes
 	Export Flags: 0x00000001
-[46]
+[Export 46]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ClubsMenu.Badge__Tier1Saves
 	Name: Badge__Tier1Saves
-	Class: Texture2D
-	Outer: Package GFX_ClubsMenu
+	Class: UTexture2D
+	Outer: GFX_ClubsMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000964464 with 0x00040179 Bytes
 	Export Flags: 0x00000001
-[47]
+[Export 47]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ClubsMenu.Badge__Tier2Assists
 	Name: Badge__Tier2Assists
-	Class: Texture2D
-	Outer: Package GFX_ClubsMenu
+	Class: UTexture2D
+	Outer: GFX_ClubsMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000009a45dd with 0x00040179 Bytes
 	Export Flags: 0x00000001
-[48]
+[Export 48]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ClubsMenu.Badge__Tier2Goals
 	Name: Badge__Tier2Goals
-	Class: Texture2D
-	Outer: Package GFX_ClubsMenu
+	Class: UTexture2D
+	Outer: GFX_ClubsMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000009e4756 with 0x00040179 Bytes
 	Export Flags: 0x00000001
-[49]
+[Export 49]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ClubsMenu.Badge__Tier2Saves
 	Name: Badge__Tier2Saves
-	Class: Texture2D
-	Outer: Package GFX_ClubsMenu
+	Class: UTexture2D
+	Outer: GFX_ClubsMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000a248cf with 0x00040179 Bytes
 	Export Flags: 0x00000001
-[50]
+[Export 50]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ClubsMenu.Badge__Tier3Assists
 	Name: Badge__Tier3Assists
-	Class: Texture2D
-	Outer: Package GFX_ClubsMenu
+	Class: UTexture2D
+	Outer: GFX_ClubsMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000a64a48 with 0x00040179 Bytes
 	Export Flags: 0x00000001
-[51]
+[Export 51]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ClubsMenu.Badge__Tier3Goals
 	Name: Badge__Tier3Goals
-	Class: Texture2D
-	Outer: Package GFX_ClubsMenu
+	Class: UTexture2D
+	Outer: GFX_ClubsMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000aa4bc1 with 0x00040179 Bytes
 	Export Flags: 0x00000001
-[52]
+[Export 52]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ClubsMenu.Badge__Tier3Saves
 	Name: Badge__Tier3Saves
-	Class: Texture2D
-	Outer: Package GFX_ClubsMenu
+	Class: UTexture2D
+	Outer: GFX_ClubsMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000ae4d3a with 0x00040179 Bytes
 	Export Flags: 0x00000001
-[53]
+[Export 53]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ClubsMenu.Icon_ClubMenu_Manager
 	Name: Icon_ClubMenu_Manager
-	Class: Texture2D
-	Outer: Package GFX_ClubsMenu
+	Class: UTexture2D
+	Outer: GFX_ClubsMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000b24eb3 with 0x00004179 Bytes
 	Export Flags: 0x00000001
-[54]
+[Export 54]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ClubsMenu.Icon_ClubMenu_Owner
 	Name: Icon_ClubMenu_Owner
-	Class: Texture2D
-	Outer: Package GFX_ClubsMenu
+	Class: UTexture2D
+	Outer: GFX_ClubsMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000b2902c with 0x0000417e Bytes
 	Export Flags: 0x00000001
-[55]
+[Export 55]
+	Full Name: UTexture2D GFX_ClubsMenu.GFX_ClubsMenu.StaticBackground
 	Name: StaticBackground
-	Class: Texture2D
-	Outer: Package GFX_ClubsMenu
+	Class: UTexture2D
+	Outer: GFX_ClubsMenu
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000b2d1aa with 0x000fd37e Bytes
 	Export Flags: 0x00000001
@@ -856,44 +885,53 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[4]
+	Class Package: Core
+	Outer: GFxUI
+[Import 4]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[5]
+	Class Package: Core
+[Import 5]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[6]
+	Class Package: Core
+[Import 6]
+	Full Name: UPackage GFX_Shared
 	Name: GFX_Shared
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: USwfMovie GFX_Shared.SharedComponents
 	Name: SharedComponents
 	Class: SwfMovie
-	Package: GFxUI
-	Outer: Package GFX_Shared
+	Class Package: GFxUI
+	Outer: GFX_Shared

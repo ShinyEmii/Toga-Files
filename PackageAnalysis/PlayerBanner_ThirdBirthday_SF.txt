@@ -57,6 +57,7 @@ Test Data Size: 0x00003f7a
 Compressed Chunk Info Offset: 0x00000be6
 Last Block Size: 0x00000004
 Base Header Size: 0x000000d5
+Encrypted Header Size: 0x00004b90
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -64,160 +65,171 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] Background
-[2] bAllowLicensedEquip
-[3] Banner
-[4] Banner_ThirdBirthday
-[5] BoolProperty
-[6] bReplicated
-[7] ByteProperty
-[8] Class
-[9] confetti
-[10] Core
-[11] DefaultProduct_New
-[12] Editions
-[13] Engine
-[14] EPixelFormat
-[15] FlashTextureRescale
-[16] FlashTextureScale_Mult4
-[17] Foreground
-[18] Format
-[19] GFxUI
-[20] Icon
-[21] IconLarge
-[22] Icons
-[23] IntProperty
-[24] Label
-[25] LODGroup
-[26] MatchesRequiredToUnlock
-[27] MipGenSettings
-[28] MovieReference
-[29] NeverStream
-[30] None
-[31] ObjectProperty
-[32] ObjectReferencer
-[33] OnlineLabel
-[34] OriginalSizeX
-[35] OriginalSizeY
-[36] Package
-[37] PackTextureSize
-[38] PF_DXT5
-[39] PlayerBanner
-[40] playerBanner_RLShield
-[41] PlayerBanner_ThirdBirthday
-[42] PlayerBanner_ThirdBirthday_SF
-[43] PluralLabel
-[44] Product_TA
-[45] ProductAsset_PlayerBanner_TA
-[46] Products
-[47] ProductsDB
-[48] ProductSlot_TA
-[49] ProductSlots
-[50] RawData
-[51] ReferencedObjects
-[52] References
-[53] SizeX
-[54] SizeY
-[55] SourceFile
-[56] SourceFileCRC
-[57] SourceFileTimestamp
-[58] SRGB
-[59] StandaloneSeekFreeReferencer
-[60] StrProperty
-[61] SwfMovie
-[62] TAGame
-[63] Texture2D
-[64] TextureFormat
-[65] TextureGroup
-[66] TEXTUREGROUP_UI
-[67] TextureMipGenSettings
-[68] TextureRescale
-[69] TMGS_NoMipmaps
-[70] FloatProperty
-[71] ThumbnailKeyLightBrightnessScale
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] Background
+[Name 2] [0x0007001000000000] bAllowLicensedEquip
+[Name 3] [0x0007001000000000] Banner
+[Name 4] [0x0007001000000000] Banner_ThirdBirthday
+[Name 5] [0x0007001000000000] BoolProperty
+[Name 6] [0x0007001000000000] bReplicated
+[Name 7] [0x0007001000000000] ByteProperty
+[Name 8] [0x0007001000000000] Class
+[Name 9] [0x0007001000000000] confetti
+[Name 10] [0x0007001000000000] Core
+[Name 11] [0x0007001000000000] DefaultProduct_New
+[Name 12] [0x0007001000000000] Editions
+[Name 13] [0x0007001000000000] Engine
+[Name 14] [0x0007001000000000] EPixelFormat
+[Name 15] [0x0007001000000000] FlashTextureRescale
+[Name 16] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 17] [0x0007001000000000] Foreground
+[Name 18] [0x0007001000000000] Format
+[Name 19] [0x0007001000000000] GFxUI
+[Name 20] [0x0007001000000000] Icon
+[Name 21] [0x0007001000000000] IconLarge
+[Name 22] [0x0007001000000000] Icons
+[Name 23] [0x0007001000000000] IntProperty
+[Name 24] [0x0007001000000000] Label
+[Name 25] [0x0007001000000000] LODGroup
+[Name 26] [0x0007000000000000] MatchesRequiredToUnlock
+[Name 27] [0x0007001000000000] MipGenSettings
+[Name 28] [0x0007001000000000] MovieReference
+[Name 29] [0x0007001000000000] NeverStream
+[Name 30] [0x0007001000000000] None
+[Name 31] [0x0007001000000000] ObjectProperty
+[Name 32] [0x0007001000000000] ObjectReferencer
+[Name 33] [0x0007001000000000] OnlineLabel
+[Name 34] [0x0007001000000000] OriginalSizeX
+[Name 35] [0x0007001000000000] OriginalSizeY
+[Name 36] [0x0007001000000000] Package
+[Name 37] [0x0007001000000000] PackTextureSize
+[Name 38] [0x0007001000000000] PF_DXT5
+[Name 39] [0x0007001000000000] PlayerBanner
+[Name 40] [0x0007001000000000] playerBanner_RLShield
+[Name 41] [0x0007001000000000] PlayerBanner_ThirdBirthday
+[Name 42] [0x0007001000000000] PlayerBanner_ThirdBirthday_SF
+[Name 43] [0x0007001000000000] PluralLabel
+[Name 44] [0x0007001000000000] Product_TA
+[Name 45] [0x0007001000000000] ProductAsset_PlayerBanner_TA
+[Name 46] [0x0007001000000000] Products
+[Name 47] [0x0007001000000000] ProductsDB
+[Name 48] [0x0007001000000000] ProductSlot_TA
+[Name 49] [0x0007001000000000] ProductSlots
+[Name 50] [0x0007001000000000] RawData
+[Name 51] [0x0007001000000000] ReferencedObjects
+[Name 52] [0x0007001000000000] References
+[Name 53] [0x0007001000000000] SizeX
+[Name 54] [0x0007001000000000] SizeY
+[Name 55] [0x0007001000000000] SourceFile
+[Name 56] [0x0007001000000000] SourceFileCRC
+[Name 57] [0x0007001000000000] SourceFileTimestamp
+[Name 58] [0x0007001000000000] SRGB
+[Name 59] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 60] [0x0007001000000000] StrProperty
+[Name 61] [0x0007001000000000] SwfMovie
+[Name 62] [0x0007001000000000] TAGame
+[Name 63] [0x0007001000000000] Texture2D
+[Name 64] [0x0007001000000000] TextureFormat
+[Name 65] [0x0007001000000000] TextureGroup
+[Name 66] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 67] [0x0007001000000000] TextureMipGenSettings
+[Name 68] [0x0007001000000000] TextureRescale
+[Name 69] [0x0007001000000000] TMGS_NoMipmaps
+[Name 70] [0x0007001000000000] FloatProperty
+[Name 71] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UProductAsset_PlayerBanner_TA PlayerBanner_ThirdBirthday.ProductSlots.PlayerBanner.ProductAsset_PlayerBanner_TA_0
 	Name: ProductAsset_PlayerBanner_TA_0
-	Class: ProductAsset_PlayerBanner_TA
-	Outer: ProductSlot_TA PlayerBanner
+	Class: UProductAsset_PlayerBanner_TA
+	Outer: PlayerBanner
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000cbb with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UObjectReferencer PlayerBanner_ThirdBirthday.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000000cc7 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[2]
+[Export 2]
+	Full Name: UPackage PlayerBanner_ThirdBirthday.PlayerBanner_ThirdBirthday
 	Name: PlayerBanner_ThirdBirthday
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000cf3 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[3]
+[Export 3]
+	Full Name: UPackage PlayerBanner_ThirdBirthday.PlayerBanner_ThirdBirthday_SF
 	Name: PlayerBanner_ThirdBirthday_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000cff with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[4]
+[Export 4]
+	Full Name: UPackage PlayerBanner_ThirdBirthday.ProductSlots
 	Name: ProductSlots
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000d0b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[5]
+[Export 5]
+	Full Name: UProductAsset_PlayerBanner_TA PlayerBanner_ThirdBirthday.PlayerBanner_ThirdBirthday.PlayerBanner_ThirdBirthday
 	Name: PlayerBanner_ThirdBirthday
-	Class: ProductAsset_PlayerBanner_TA
-	Outer: Package PlayerBanner_ThirdBirthday
+	Class: UProductAsset_PlayerBanner_TA
+	Outer: PlayerBanner_ThirdBirthday
 	Archetype: ProductAsset_PlayerBanner_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000034329 with 0x00000044 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UProductSlot_TA PlayerBanner_ThirdBirthday.ProductSlots.PlayerBanner
 	Name: PlayerBanner
-	Class: ProductSlot_TA
-	Outer: Package ProductSlots
+	Class: UProductSlot_TA
+	Outer: ProductSlots
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x000000000003436d with 0x00000111 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: USwfMovie PlayerBanner_ThirdBirthday.PlayerBanner_ThirdBirthday.Banner_ThirdBirthday
 	Name: Banner_ThirdBirthday
-	Class: SwfMovie
-	Outer: Package PlayerBanner_ThirdBirthday
+	Class: USwfMovie
+	Outer: PlayerBanner_ThirdBirthday
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000e6c with 0x00001363 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UTexture2D PlayerBanner_ThirdBirthday.PlayerBanner_ThirdBirthday.Background
 	Name: Background
-	Class: Texture2D
-	Outer: Package PlayerBanner_ThirdBirthday
+	Class: UTexture2D
+	Outer: PlayerBanner_ThirdBirthday
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000021cf with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UTexture2D PlayerBanner_ThirdBirthday.PlayerBanner_ThirdBirthday.confetti
 	Name: confetti
-	Class: Texture2D
-	Outer: Package PlayerBanner_ThirdBirthday
+	Class: UTexture2D
+	Outer: PlayerBanner_ThirdBirthday
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000c75d with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UTexture2D PlayerBanner_ThirdBirthday.PlayerBanner_ThirdBirthday.Foreground
 	Name: Foreground
-	Class: Texture2D
-	Outer: Package PlayerBanner_ThirdBirthday
+	Class: UTexture2D
+	Outer: PlayerBanner_ThirdBirthday
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000029d9b with 0x0000a58e Bytes
 	Export Flags: 0x00000001
@@ -226,73 +238,88 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[4]
+	Class Package: Core
+	Outer: GFxUI
+[Import 4]
+	Full Name: UClass TAGame.ProductAsset_PlayerBanner_TA
 	Name: ProductAsset_PlayerBanner_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UClass TAGame.ProductSlot_TA
 	Name: ProductSlot_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
+	Class Package: Core
+	Outer: TAGame
+[Import 6]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage ProductsDB
 	Name: ProductsDB
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage ProductsDB.Products
 	Name: Products
 	Class: Package
-	Package: Core
-	Outer: Package ProductsDB
-[11]
+	Class Package: Core
+	Outer: ProductsDB
+[Import 11]
+	Full Name: UPackage ProductSlots.Icons
 	Name: Icons
 	Class: Package
-	Package: Core
-	Outer: Package ProductSlots
-[12]
+	Class Package: Core
+	Outer: ProductSlots
+[Import 12]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[13]
+	Class Package: Core
+[Import 13]
+	Full Name: UProduct_TA ProductsDB.Products.playerBanner_RLShield
 	Name: playerBanner_RLShield
 	Class: Product_TA
-	Package: TAGame
-	Outer: Package Products
-[14]
+	Class Package: TAGame
+	Outer: Products
+[Import 14]
+	Full Name: UTexture2D ProductSlots.Icons.Banner
 	Name: Banner
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Icons
+	Class Package: Engine
+	Outer: Icons

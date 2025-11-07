@@ -103,6 +103,7 @@ Test Data Size: 0x00003fbe
 Compressed Chunk Info Offset: 0x00002176
 Last Block Size: 0x00000000
 Base Header Size: 0x00000171
+Encrypted Header Size: 0x00006150
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -110,527 +111,576 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] 3D_ENV_VerticalStreaks_skin
-[1] Antenna
-[2] ArrayProperty
-[3] Attachments
-[4] Behaviors
-[5] bExposeToLibrary
-[6] BLEND_Translucent
-[7] BlendMode
-[8] BoolProperty
-[9] bUseLitTranslucencyDepthPass
-[10] bUseLitTranslucencyPostRenderDepthPass
-[11] ByteProperty
-[12] Class
-[13] CloudNoise_01
-[14] ColorMaterialInput
-[15] Component
-[16] CompressionNone
-[17] CompressionSettings
-[18] Core
-[19] Curve_Shockwaves_Pack
-[20] CustomColor
-[21] CustomRotator
-[22] DefaultValue
-[23] Description
-[24] DiffuseColor
-[25] EBlendMode
-[26] EditorX
-[27] EditorY
-[28] EMaterialLightingModel
-[29] Emissive_Intensity
-[30] EmissiveColor
-[31] EmissiveIntensity
-[32] Engine
-[33] Engine_MaterialFunctions02
-[34] EPixelFormat
-[35] EProductAttachmentSocket
-[36] Error_404_01
-[37] Expression
-[38] ExpressionGUID
-[39] Expressions
-[40] FirstResourceMemMip
-[41] flicker_speed
-[42] FloatProperty
-[43] Format
-[44] Fresnel
-[45] Fresnel_AddToOpacity
-[46] Fresnel_Advanced
-[47] Fresnel_Color
-[48] Fresnel_Emissive_Intensity
-[49] Fresnel_Sharpness
-[50] Function
-[51] FunctionExpressions
-[52] FX_Textures
-[53] FXActor
-[54] Glitch_Speed
-[55] Gradients
-[56] Group
-[57] Guid
-[58] HackedHalo_RGB01
-[59] Hat
-[60] hat_hackedhalo
-[61] hat_hackedhalo_SF
-[62] Hat_HackedHalo_SM
-[63] InheritCarAttribute
-[64] IntProperty
-[65] LibraryCategories
-[66] LightingModel
-[67] LightMapCoordinateIndex
-[68] LightMapResolution
-[69] LinearColor
-[70] LinearGradient_RGB
-[71] LODGroup
-[72] Mask
-[73] MaskB
-[74] MaskG
-[75] MaskR
-[76] MAT_HackedHalo_Projector
-[77] MAT_Hat_HackedHalo
-[78] MAT_Projector_Puck
-[79] Material
-[80] MaterialExpressionScalarParameter
-[81] MaterialExpressionVectorParameter
-[82] MaterialFunction
-[83] MaterialFunctionInfos
-[84] MaterialInstanceConstant
-[85] MIC_HackedHalo_Projector
-[86] MIC_Hat_HackedHalo
-[87] MIC_Projector_Puck_INST
-[88] MipGenSettings
-[89] MipTailBaseIdx
-[90] MLM_Unlit
-[91] NameProperty
-[92] Noise_1D
-[93] None
-[94] Normal
-[95] ObjectProperty
-[96] ObjectReferencer
-[97] Opacity
-[98] OriginalSizeX
-[99] OriginalSizeY
-[100] Package
-[101] ParameterName
-[102] ParameterValue
-[103] Parent
-[104] ParentLightingGuid
-[105] ParticleSystem
-[106] PAS_Hat
-[107] PF_A8R8G8B8
-[108] PF_DXT1
-[109] PF_DXT5
-[110] ProductAsset_Attachment_TA
-[111] ProductSlot_TA
-[112] ProductSlots
-[113] Psy_MaterialFunctions_02
-[114] Psy_MaterialFunctions_03
-[115] ReferencedObjects
-[116] Rotation
-[117] Rotator
-[118] ScalarMaterialInput
-[119] ScalarParameterValues
-[120] Scale
-[121] Scanline Tiling
-[122] ScanLine_Color
-[123] SizeX
-[124] SizeY
-[125] SkeletalMesh
-[126] skin_ochazuke
-[127] Skin_Universal02_Parent
-[128] Skin_Universal03_Parent
-[129] Skin_Universal_Parent
-[130] Socket
-[131] SpecularColor
-[132] SpecularPower
-[133] SRGB
-[134] StandaloneSeekFreeReferencer
-[135] StateId
-[136] StaticMesh
-[137] StrProperty
-[138] StructProperty
-[139] T_projector_Puck_D
-[140] T_projector_Puck_N
-[141] TAGame
-[142] TC_NormalmapSwizzle
-[143] TC_VectorDisplacementmap
-[144] Text_Color
-[145] Text_Color2
-[146] Texture2D
-[147] TextureCompressionSettings
-[148] TextureFileCacheName
-[149] TextureGroup
-[150] TEXTUREGROUP_Effects
-[151] TEXTUREGROUP_WorldNormalMap
-[152] TextureMipGenSettings
-[153] Textures
-[154] Textures2
-[155] Textures3
-[156] Textures6
-[157] Textures7
-[158] Texturing
-[159] TMGS_NoMipmaps
-[160] Translation
-[161] TwoSided
-[162] Universal_Noise_Heightmap
-[163] UnpackMin
-[164] Vector
-[165] VectorMaterialInput
-[166] VectorParameterValues
+[Name 0] [0x0007001000000000] 3D_ENV_VerticalStreaks_skin
+[Name 1] [0x0007001000000000] Antenna
+[Name 2] [0x0007001000000000] ArrayProperty
+[Name 3] [0x0007001000000000] Attachments
+[Name 4] [0x0007001000000000] Behaviors
+[Name 5] [0x0007001000000000] bExposeToLibrary
+[Name 6] [0x0007001000000000] BLEND_Translucent
+[Name 7] [0x0007001000000000] BlendMode
+[Name 8] [0x0007001000000000] BoolProperty
+[Name 9] [0x0007001000000000] bUseLitTranslucencyDepthPass
+[Name 10] [0x0007001000000000] bUseLitTranslucencyPostRenderDepthPass
+[Name 11] [0x0007001000000000] ByteProperty
+[Name 12] [0x0007001000000000] Class
+[Name 13] [0x0007001000000000] CloudNoise_01
+[Name 14] [0x0007001000000000] ColorMaterialInput
+[Name 15] [0x0007001000000000] Component
+[Name 16] [0x0007001000000000] CompressionNone
+[Name 17] [0x0007001000000000] CompressionSettings
+[Name 18] [0x0007001000000000] Core
+[Name 19] [0x0007001000000000] Curve_Shockwaves_Pack
+[Name 20] [0x0007001000000000] CustomColor
+[Name 21] [0x0007001000000000] CustomRotator
+[Name 22] [0x0007001000000000] DefaultValue
+[Name 23] [0x0007001000000000] Description
+[Name 24] [0x0007001000000000] DiffuseColor
+[Name 25] [0x0007001000000000] EBlendMode
+[Name 26] [0x0007001000000000] EditorX
+[Name 27] [0x0007001000000000] EditorY
+[Name 28] [0x0007001000000000] EMaterialLightingModel
+[Name 29] [0x0007001000000000] Emissive_Intensity
+[Name 30] [0x0007001000000000] EmissiveColor
+[Name 31] [0x0007001000000000] EmissiveIntensity
+[Name 32] [0x0007001000000000] Engine
+[Name 33] [0x0007001000000000] Engine_MaterialFunctions02
+[Name 34] [0x0007001000000000] EPixelFormat
+[Name 35] [0x0007001000000000] EProductAttachmentSocket
+[Name 36] [0x0007001000000000] Error_404_01
+[Name 37] [0x0007001000000000] Expression
+[Name 38] [0x0007001000000000] ExpressionGUID
+[Name 39] [0x0007001000000000] Expressions
+[Name 40] [0x0007001000000000] FirstResourceMemMip
+[Name 41] [0x0007001000000000] flicker_speed
+[Name 42] [0x0007001000000000] FloatProperty
+[Name 43] [0x0007001000000000] Format
+[Name 44] [0x0007001000000000] Fresnel
+[Name 45] [0x0007001000000000] Fresnel_AddToOpacity
+[Name 46] [0x0007001000000000] Fresnel_Advanced
+[Name 47] [0x0007001000000000] Fresnel_Color
+[Name 48] [0x0007001000000000] Fresnel_Emissive_Intensity
+[Name 49] [0x0007001000000000] Fresnel_Sharpness
+[Name 50] [0x0007001000000000] Function
+[Name 51] [0x0007001000000000] FunctionExpressions
+[Name 52] [0x0007001000000000] FX_Textures
+[Name 53] [0x0007001000000000] FXActor
+[Name 54] [0x0007001000000000] Glitch_Speed
+[Name 55] [0x0007001000000000] Gradients
+[Name 56] [0x0007001000000000] Group
+[Name 57] [0x0007001000000000] Guid
+[Name 58] [0x0007001000000000] HackedHalo_RGB01
+[Name 59] [0x0007001000000000] Hat
+[Name 60] [0x0007001000000000] hat_hackedhalo
+[Name 61] [0x0007001000000000] hat_hackedhalo_SF
+[Name 62] [0x0007001000000000] Hat_HackedHalo_SM
+[Name 63] [0x0007001000000000] InheritCarAttribute
+[Name 64] [0x0007001000000000] IntProperty
+[Name 65] [0x0007001000000000] LibraryCategories
+[Name 66] [0x0007001000000000] LightingModel
+[Name 67] [0x0007001000000000] LightMapCoordinateIndex
+[Name 68] [0x0007001000000000] LightMapResolution
+[Name 69] [0x0007001000000000] LinearColor
+[Name 70] [0x0007001000000000] LinearGradient_RGB
+[Name 71] [0x0007001000000000] LODGroup
+[Name 72] [0x0007001000000000] Mask
+[Name 73] [0x0007001000000000] MaskB
+[Name 74] [0x0007001000000000] MaskG
+[Name 75] [0x0007001000000000] MaskR
+[Name 76] [0x0007001000000000] MAT_HackedHalo_Projector
+[Name 77] [0x0007001000000000] MAT_Hat_HackedHalo
+[Name 78] [0x0007001000000000] MAT_Projector_Puck
+[Name 79] [0x0007001000000000] Material
+[Name 80] [0x0007001000000000] MaterialExpressionScalarParameter
+[Name 81] [0x0007001000000000] MaterialExpressionVectorParameter
+[Name 82] [0x0007001000000000] MaterialFunction
+[Name 83] [0x0007001000000000] MaterialFunctionInfos
+[Name 84] [0x0007001000000000] MaterialInstanceConstant
+[Name 85] [0x0007001000000000] MIC_HackedHalo_Projector
+[Name 86] [0x0007001000000000] MIC_Hat_HackedHalo
+[Name 87] [0x0007001000000000] MIC_Projector_Puck_INST
+[Name 88] [0x0007001000000000] MipGenSettings
+[Name 89] [0x0007001000000000] MipTailBaseIdx
+[Name 90] [0x0007001000000000] MLM_Unlit
+[Name 91] [0x0007001000000000] NameProperty
+[Name 92] [0x0007001000000000] Noise_1D
+[Name 93] [0x0007001000000000] None
+[Name 94] [0x0007001000000000] Normal
+[Name 95] [0x0007001000000000] ObjectProperty
+[Name 96] [0x0007001000000000] ObjectReferencer
+[Name 97] [0x0007001000000000] Opacity
+[Name 98] [0x0007001000000000] OriginalSizeX
+[Name 99] [0x0007001000000000] OriginalSizeY
+[Name 100] [0x0007001000000000] Package
+[Name 101] [0x0007001000000000] ParameterName
+[Name 102] [0x0007001000000000] ParameterValue
+[Name 103] [0x0007001000000000] Parent
+[Name 104] [0x0007001000000000] ParentLightingGuid
+[Name 105] [0x0007001000000000] ParticleSystem
+[Name 106] [0x0007001000000000] PAS_Hat
+[Name 107] [0x0007001000000000] PF_A8R8G8B8
+[Name 108] [0x0007001000000000] PF_DXT1
+[Name 109] [0x0007001000000000] PF_DXT5
+[Name 110] [0x0007001000000000] ProductAsset_Attachment_TA
+[Name 111] [0x0007001000000000] ProductSlot_TA
+[Name 112] [0x0007001000000000] ProductSlots
+[Name 113] [0x0007001000000000] Psy_MaterialFunctions_02
+[Name 114] [0x0007001000000000] Psy_MaterialFunctions_03
+[Name 115] [0x0007001000000000] ReferencedObjects
+[Name 116] [0x0007001000000000] Rotation
+[Name 117] [0x0007001000000000] Rotator
+[Name 118] [0x0007001000000000] ScalarMaterialInput
+[Name 119] [0x0007001000000000] ScalarParameterValues
+[Name 120] [0x0007001000000000] Scale
+[Name 121] [0x0007001000000000] Scanline Tiling
+[Name 122] [0x0007001000000000] ScanLine_Color
+[Name 123] [0x0007001000000000] SizeX
+[Name 124] [0x0007001000000000] SizeY
+[Name 125] [0x0007001000000000] SkeletalMesh
+[Name 126] [0x0007001000000000] skin_ochazuke
+[Name 127] [0x0007001000000000] Skin_Universal02_Parent
+[Name 128] [0x0007001000000000] Skin_Universal03_Parent
+[Name 129] [0x0007001000000000] Skin_Universal_Parent
+[Name 130] [0x0007001000000000] Socket
+[Name 131] [0x0007001000000000] SpecularColor
+[Name 132] [0x0007001000000000] SpecularPower
+[Name 133] [0x0007001000000000] SRGB
+[Name 134] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 135] [0x0007001000000000] StateId
+[Name 136] [0x0007001000000000] StaticMesh
+[Name 137] [0x0007001000000000] StrProperty
+[Name 138] [0x0007001000000000] StructProperty
+[Name 139] [0x0007001000000000] T_projector_Puck_D
+[Name 140] [0x0007001000000000] T_projector_Puck_N
+[Name 141] [0x0007001000000000] TAGame
+[Name 142] [0x0007001000000000] TC_NormalmapSwizzle
+[Name 143] [0x0007001000000000] TC_VectorDisplacementmap
+[Name 144] [0x0007001000000000] Text_Color
+[Name 145] [0x0007001000000000] Text_Color2
+[Name 146] [0x0007001000000000] Texture2D
+[Name 147] [0x0007001000000000] TextureCompressionSettings
+[Name 148] [0x0007001000000000] TextureFileCacheName
+[Name 149] [0x0007001000000000] TextureGroup
+[Name 150] [0x0007001000000000] TEXTUREGROUP_Effects
+[Name 151] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 152] [0x0007001000000000] TextureMipGenSettings
+[Name 153] [0x0007001000000000] Textures
+[Name 154] [0x0007001000000000] Textures2
+[Name 155] [0x0007001000000000] Textures3
+[Name 156] [0x0007001000000000] Textures6
+[Name 157] [0x0007001000000000] Textures7
+[Name 158] [0x0007001000000000] Texturing
+[Name 159] [0x0007001000000000] TMGS_NoMipmaps
+[Name 160] [0x0007001000000000] Translation
+[Name 161] [0x0007001000000000] TwoSided
+[Name 162] [0x0007001000000000] Universal_Noise_Heightmap
+[Name 163] [0x0007001000000000] UnpackMin
+[Name 164] [0x0007001000000000] Vector
+[Name 165] [0x0007001000000000] VectorMaterialInput
+[Name 166] [0x0007001000000000] VectorParameterValues
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UMaterial hat_hackedhalo.hat_hackedhalo.MAT_HackedHalo_Projector
 	Name: MAT_HackedHalo_Projector
-	Class: Material
-	Outer: Package hat_hackedhalo
+	Class: UMaterial
+	Outer: hat_hackedhalo
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000022e7 with 0x000002f5 Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterial hat_hackedhalo.hat_hackedhalo.MAT_Hat_HackedHalo
 	Name: MAT_Hat_HackedHalo
-	Class: Material
-	Outer: Package hat_hackedhalo
+	Class: UMaterial
+	Outer: hat_hackedhalo
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000025dc with 0x00000853 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterial hat_hackedhalo.hat_hackedhalo.MAT_Projector_Puck
 	Name: MAT_Projector_Puck
-	Class: Material
-	Outer: Package hat_hackedhalo
+	Class: UMaterial
+	Outer: hat_hackedhalo
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000002e2f with 0x0000039c Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterialExpressionScalarParameter hat_hackedhalo.hat_hackedhalo.MAT_HackedHalo_Projector.MaterialExpressionScalarParameter_0
 	Name: MaterialExpressionScalarParameter_0
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_HackedHalo_Projector
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_HackedHalo_Projector
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000031cb with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UMaterialExpressionScalarParameter hat_hackedhalo.hat_hackedhalo.MAT_HackedHalo_Projector.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_HackedHalo_Projector
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_HackedHalo_Projector
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000325f with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UMaterialExpressionScalarParameter hat_hackedhalo.hat_hackedhalo.MAT_Hat_HackedHalo.MaterialExpressionScalarParameter_0
 	Name: MaterialExpressionScalarParameter_0
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Hat_HackedHalo
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Hat_HackedHalo
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000032f3 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UMaterialExpressionScalarParameter hat_hackedhalo.hat_hackedhalo.MAT_Hat_HackedHalo.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Hat_HackedHalo
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Hat_HackedHalo
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003387 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UMaterialExpressionScalarParameter hat_hackedhalo.hat_hackedhalo.MAT_Hat_HackedHalo.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Hat_HackedHalo
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Hat_HackedHalo
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000341b with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UMaterialExpressionScalarParameter hat_hackedhalo.hat_hackedhalo.MAT_Hat_HackedHalo.MaterialExpressionScalarParameter_3
 	Name: MaterialExpressionScalarParameter_3
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Hat_HackedHalo
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Hat_HackedHalo
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000034cf with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UMaterialExpressionScalarParameter hat_hackedhalo.hat_hackedhalo.MAT_Hat_HackedHalo.MaterialExpressionScalarParameter_4
 	Name: MaterialExpressionScalarParameter_4
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Hat_HackedHalo
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Hat_HackedHalo
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003583 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UMaterialExpressionScalarParameter hat_hackedhalo.hat_hackedhalo.MAT_Hat_HackedHalo.MaterialExpressionScalarParameter_5
 	Name: MaterialExpressionScalarParameter_5
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Hat_HackedHalo
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Hat_HackedHalo
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003617 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UMaterialExpressionScalarParameter hat_hackedhalo.hat_hackedhalo.MAT_Projector_Puck.MaterialExpressionScalarParameter_0
 	Name: MaterialExpressionScalarParameter_0
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Projector_Puck
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Projector_Puck
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000036cb with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UMaterialExpressionScalarParameter hat_hackedhalo.hat_hackedhalo.MAT_Projector_Puck.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Projector_Puck
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Projector_Puck
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000375f with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UMaterialExpressionVectorParameter hat_hackedhalo.hat_hackedhalo.MAT_HackedHalo_Projector.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_HackedHalo_Projector
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_HackedHalo_Projector
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000037f3 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UMaterialExpressionVectorParameter hat_hackedhalo.hat_hackedhalo.MAT_Hat_HackedHalo.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Hat_HackedHalo
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Hat_HackedHalo
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000389b with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UMaterialExpressionVectorParameter hat_hackedhalo.hat_hackedhalo.MAT_Hat_HackedHalo.MaterialExpressionVectorParameter_1
 	Name: MaterialExpressionVectorParameter_1
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Hat_HackedHalo
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Hat_HackedHalo
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003943 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UMaterialExpressionVectorParameter hat_hackedhalo.hat_hackedhalo.MAT_Hat_HackedHalo.MaterialExpressionVectorParameter_2
 	Name: MaterialExpressionVectorParameter_2
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Hat_HackedHalo
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Hat_HackedHalo
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000039eb with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UMaterialExpressionVectorParameter hat_hackedhalo.hat_hackedhalo.MAT_Hat_HackedHalo.MaterialExpressionVectorParameter_3
 	Name: MaterialExpressionVectorParameter_3
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Hat_HackedHalo
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Hat_HackedHalo
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003a93 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UMaterialExpressionVectorParameter hat_hackedhalo.hat_hackedhalo.MAT_Projector_Puck.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Projector_Puck
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Projector_Puck
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003b3b with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UMaterialFunction hat_hackedhalo.Engine_MaterialFunctions02.Texturing.CustomRotator
 	Name: CustomRotator
-	Class: MaterialFunction
-	Outer: Package Texturing
+	Class: UMaterialFunction
+	Outer: Texturing
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003be3 with 0x0000017e Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UMaterialFunction hat_hackedhalo.Psy_MaterialFunctions_02.Fresnel_Advanced
 	Name: Fresnel_Advanced
-	Class: MaterialFunction
-	Outer: Package Psy_MaterialFunctions_02
+	Class: UMaterialFunction
+	Outer: Psy_MaterialFunctions_02
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003d61 with 0x000000e5 Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UMaterialFunction hat_hackedhalo.Psy_MaterialFunctions_03.Noise_1D
 	Name: Noise_1D
-	Class: MaterialFunction
-	Outer: Package Psy_MaterialFunctions_03
+	Class: UMaterialFunction
+	Outer: Psy_MaterialFunctions_03
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003e46 with 0x00000122 Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UMaterialInstanceConstant hat_hackedhalo.hat_hackedhalo.MIC_HackedHalo_Projector
 	Name: MIC_HackedHalo_Projector
-	Class: MaterialInstanceConstant
-	Outer: Package hat_hackedhalo
+	Class: UMaterialInstanceConstant
+	Outer: hat_hackedhalo
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000003f68 with 0x00000200 Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UMaterialInstanceConstant hat_hackedhalo.hat_hackedhalo.MIC_Hat_HackedHalo
 	Name: MIC_Hat_HackedHalo
-	Class: MaterialInstanceConstant
-	Outer: Package hat_hackedhalo
+	Class: UMaterialInstanceConstant
+	Outer: hat_hackedhalo
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000004168 with 0x00000370 Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UMaterialInstanceConstant hat_hackedhalo.hat_hackedhalo.MIC_Projector_Puck_INST
 	Name: MIC_Projector_Puck_INST
-	Class: MaterialInstanceConstant
-	Outer: Package hat_hackedhalo
+	Class: UMaterialInstanceConstant
+	Outer: hat_hackedhalo
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000044d8 with 0x00000200 Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UObjectReferencer hat_hackedhalo.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x00000000000046d8 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[26]
+[Export 26]
+	Full Name: UPackage hat_hackedhalo.Engine_MaterialFunctions02
 	Name: Engine_MaterialFunctions02
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004704 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[27]
+[Export 27]
+	Full Name: UPackage hat_hackedhalo.Engine_MaterialFunctions02.Texturing
 	Name: Texturing
-	Class: Package
-	Outer: Package Engine_MaterialFunctions02
+	Class: UPackage
+	Outer: Engine_MaterialFunctions02
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004710 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UPackage hat_hackedhalo.hat_hackedhalo
 	Name: hat_hackedhalo
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000471c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[29]
+[Export 29]
+	Full Name: UPackage hat_hackedhalo.hat_hackedhalo_SF
 	Name: hat_hackedhalo_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004728 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[30]
+[Export 30]
+	Full Name: UPackage hat_hackedhalo.Psy_MaterialFunctions_02
 	Name: Psy_MaterialFunctions_02
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004734 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[31]
+[Export 31]
+	Full Name: UPackage hat_hackedhalo.Psy_MaterialFunctions_03
 	Name: Psy_MaterialFunctions_03
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004740 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[32]
+[Export 32]
+	Full Name: UPackage hat_hackedhalo.skin_ochazuke
 	Name: skin_ochazuke
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000474c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[33]
+[Export 33]
+	Full Name: UPackage hat_hackedhalo.Skin_Universal02_Parent
 	Name: Skin_Universal02_Parent
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004758 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[34]
+[Export 34]
+	Full Name: UPackage hat_hackedhalo.Skin_Universal02_Parent.Textures
 	Name: Textures
-	Class: Package
-	Outer: Package Skin_Universal02_Parent
+	Class: UPackage
+	Outer: Skin_Universal02_Parent
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004764 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: UPackage hat_hackedhalo.Skin_Universal03_Parent
 	Name: Skin_Universal03_Parent
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004770 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[36]
+[Export 36]
+	Full Name: UPackage hat_hackedhalo.Skin_Universal_Parent
 	Name: Skin_Universal_Parent
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000477c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[37]
+[Export 37]
+	Full Name: UPackage hat_hackedhalo.Skin_Universal_Parent.Textures
 	Name: Textures
-	Class: Package
-	Outer: Package Skin_Universal_Parent
+	Class: UPackage
+	Outer: Skin_Universal_Parent
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004788 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[38]
+[Export 38]
+	Full Name: UProductAsset_Attachment_TA hat_hackedhalo.hat_hackedhalo.hat_hackedhalo
 	Name: hat_hackedhalo
-	Class: ProductAsset_Attachment_TA
-	Outer: Package hat_hackedhalo
+	Class: UProductAsset_Attachment_TA
+	Outer: hat_hackedhalo
 	Archetype: ProductAsset_Attachment_TA_2
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000004794 with 0x000001c8 Bytes
 	Export Flags: 0x00000001
-[39]
+[Export 39]
+	Full Name: UStaticMesh hat_hackedhalo.hat_hackedhalo.Hat_HackedHalo_SM
 	Name: Hat_HackedHalo_SM
-	Class: StaticMesh
-	Outer: Package hat_hackedhalo
+	Class: UStaticMesh
+	Outer: hat_hackedhalo
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000495c with 0x0001cd9b Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UTexture2D hat_hackedhalo.hat_hackedhalo.Error_404_01
 	Name: Error_404_01
-	Class: Texture2D
-	Outer: Package hat_hackedhalo
+	Class: UTexture2D
+	Outer: hat_hackedhalo
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000216f7 with 0x00000504 Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UTexture2D hat_hackedhalo.hat_hackedhalo.HackedHalo_RGB01
 	Name: HackedHalo_RGB01
-	Class: Texture2D
-	Outer: Package hat_hackedhalo
+	Class: UTexture2D
+	Outer: hat_hackedhalo
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000021bfb with 0x00000cd8 Bytes
 	Export Flags: 0x00000001
-[42]
+[Export 42]
+	Full Name: UTexture2D hat_hackedhalo.hat_hackedhalo.T_projector_Puck_D
 	Name: T_projector_Puck_D
-	Class: Texture2D
-	Outer: Package hat_hackedhalo
+	Class: UTexture2D
+	Outer: hat_hackedhalo
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000228d3 with 0x00001790 Bytes
 	Export Flags: 0x00000001
-[43]
+[Export 43]
+	Full Name: UTexture2D hat_hackedhalo.hat_hackedhalo.T_projector_Puck_N
 	Name: T_projector_Puck_N
-	Class: Texture2D
-	Outer: Package hat_hackedhalo
+	Class: UTexture2D
+	Outer: hat_hackedhalo
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000024063 with 0x0000184d Bytes
 	Export Flags: 0x00000001
-[44]
+[Export 44]
+	Full Name: UTexture2D hat_hackedhalo.skin_ochazuke.CloudNoise_01
 	Name: CloudNoise_01
-	Class: Texture2D
-	Outer: Package skin_ochazuke
+	Class: UTexture2D
+	Outer: skin_ochazuke
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000258b0 with 0x0000578d Bytes
 	Export Flags: 0x00000001
-[45]
+[Export 45]
+	Full Name: UTexture2D hat_hackedhalo.Skin_Universal02_Parent.Textures.Universal_Noise_Heightmap_47
 	Name: Universal_Noise_Heightmap_47
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000002b03d with 0x0000579c Bytes
 	Export Flags: 0x00000001
-[46]
+[Export 46]
+	Full Name: UTexture2D hat_hackedhalo.Skin_Universal03_Parent.Universal_Noise_Heightmap_78
 	Name: Universal_Noise_Heightmap_78
-	Class: Texture2D
-	Outer: Package Skin_Universal03_Parent
+	Class: UTexture2D
+	Outer: Skin_Universal03_Parent
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000307d9 with 0x000057b8 Bytes
 	Export Flags: 0x00000001
-[47]
+[Export 47]
+	Full Name: UTexture2D hat_hackedhalo.Skin_Universal_Parent.Textures.3D_ENV_VerticalStreaks_skin
 	Name: 3D_ENV_VerticalStreaks_skin
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000035f91 with 0x00040194 Bytes
 	Export Flags: 0x00000001
-[48]
+[Export 48]
+	Full Name: UTexture2D hat_hackedhalo.Skin_Universal_Parent.Textures.LinearGradient_RGB
 	Name: LinearGradient_RGB
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000076125 with 0x00005780 Bytes
 	Export Flags: 0x00000001
@@ -639,93 +689,112 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialExpressionVectorParameter
 	Name: MaterialExpressionVectorParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.MaterialFunction
 	Name: MaterialFunction
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.StaticMesh
 	Name: StaticMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass TAGame.ProductAsset_Attachment_TA
 	Name: ProductAsset_Attachment_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[10]
+	Class Package: Core
+	Outer: TAGame
+[Import 10]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[12]
+	Class Package: Core
+[Import 12]
+	Full Name: UPackage FX_Textures
 	Name: FX_Textures
 	Class: Package
-	Package: Core
-[13]
+	Class Package: Core
+[Import 13]
+	Full Name: UPackage FX_Textures.Gradients
 	Name: Gradients
 	Class: Package
-	Package: Core
-	Outer: Package FX_Textures
-[14]
+	Class Package: Core
+	Outer: FX_Textures
+[Import 14]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[15]
+	Class Package: Core
+[Import 15]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UProductAsset_Attachment_TA ProductSlots.Hat.ProductAsset_Attachment_TA_2
 	Name: ProductAsset_Attachment_TA_2
 	Class: ProductAsset_Attachment_TA
-	Package: TAGame
-	Outer: ProductSlot_TA Hat
-[17]
+	Class Package: TAGame
+	Outer: Hat
+[Import 17]
+	Full Name: UProductSlot_TA ProductSlots.Hat
 	Name: Hat
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
-[18]
+	Class Package: TAGame
+	Outer: ProductSlots
+[Import 18]
+	Full Name: UTexture2D FX_Textures.Gradients.Curve_Shockwaves_Pack
 	Name: Curve_Shockwaves_Pack
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Gradients
+	Class Package: Engine
+	Outer: Gradients

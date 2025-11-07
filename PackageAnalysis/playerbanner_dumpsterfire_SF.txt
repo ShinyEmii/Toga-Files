@@ -94,6 +94,7 @@ Test Data Size: 0x00003fa9
 Compressed Chunk Info Offset: 0x0000154f
 Last Block Size: 0x00000004
 Base Header Size: 0x00000165
+Encrypted Header Size: 0x00005540
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -101,382 +102,423 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] bAllowLicensedEquip
-[2] Banner
-[3] Banner_DumpsterFire
-[4] bIsSourceArtUncompressed
-[5] BoolProperty
-[6] bReplicated
-[7] ByteProperty
-[8] Class
-[9] CompressionNone
-[10] Core
-[11] DefaultProduct_New
-[12] DumpsterFireBG
-[13] DumpsterFront
-[14] Editions
-[15] Engine
-[16] EPixelFormat
-[17] Fire
-[18] fire_01
-[19] fire_02
-[20] fire_03
-[21] fire_04
-[22] fire_05
-[23] fire_06
-[24] fire_07
-[25] fire_08
-[26] fire_09
-[27] FlashTextureRescale
-[28] FlashTextureScale_Mult4
-[29] Format
-[30] GFxUI
-[31] Icon
-[32] IconLarge
-[33] Icons
-[34] IntProperty
-[35] Label
-[36] LODGroup
-[37] MipGenSettings
-[38] MipTailBaseIdx
-[39] MovieReference
-[40] NeverStream
-[41] None
-[42] ObjectProperty
-[43] ObjectReferencer
-[44] OnlineLabel
-[45] OriginalSizeX
-[46] OriginalSizeY
-[47] Package
-[48] PackTextureSize
-[49] PF_A8R8G8B8
-[50] PF_DXT5
-[51] PlayerBanner
-[52] playerbanner_dumpsterfire
-[53] playerbanner_dumpsterfire_SF
-[54] playerBanner_RLShield
-[55] PluralLabel
-[56] Product_TA
-[57] ProductAsset_PlayerBanner_TA
-[58] Products
-[59] ProductsDB
-[60] ProductSlot_TA
-[61] ProductSlots
-[62] RawData
-[63] ReferencedObjects
-[64] References
-[65] SizeX
-[66] SizeY
-[67] SourceFile
-[68] SourceFileCRC
-[69] SourceFileTimestamp
-[70] SRGB
-[71] StandaloneSeekFreeReferencer
-[72] StrProperty
-[73] SwfMovie
-[74] TAGame
-[75] Texture2D
-[76] TextureFormat
-[77] TextureGroup
-[78] TEXTUREGROUP_UI
-[79] TextureMipGenSettings
-[80] TextureRescale
-[81] Thumb_Banner_DumpsterFire
-[82] Thumbnail
-[83] TMGS_NoMipmaps
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] bAllowLicensedEquip
+[Name 2] [0x0007001000000000] Banner
+[Name 3] [0x0007001000000000] Banner_DumpsterFire
+[Name 4] [0x0007001000000000] bIsSourceArtUncompressed
+[Name 5] [0x0007001000000000] BoolProperty
+[Name 6] [0x0007001000000000] bReplicated
+[Name 7] [0x0007001000000000] ByteProperty
+[Name 8] [0x0007001000000000] Class
+[Name 9] [0x0007001000000000] CompressionNone
+[Name 10] [0x0007001000000000] Core
+[Name 11] [0x0007001000000000] DefaultProduct_New
+[Name 12] [0x0007001000000000] DumpsterFireBG
+[Name 13] [0x0007001000000000] DumpsterFront
+[Name 14] [0x0007001000000000] Editions
+[Name 15] [0x0007001000000000] Engine
+[Name 16] [0x0007001000000000] EPixelFormat
+[Name 17] [0x0007001000000000] Fire
+[Name 18] [0x0007001000000000] fire_01
+[Name 19] [0x0007001000000000] fire_02
+[Name 20] [0x0007001000000000] fire_03
+[Name 21] [0x0007001000000000] fire_04
+[Name 22] [0x0007001000000000] fire_05
+[Name 23] [0x0007001000000000] fire_06
+[Name 24] [0x0007001000000000] fire_07
+[Name 25] [0x0007001000000000] fire_08
+[Name 26] [0x0007001000000000] fire_09
+[Name 27] [0x0007001000000000] FlashTextureRescale
+[Name 28] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 29] [0x0007001000000000] Format
+[Name 30] [0x0007001000000000] GFxUI
+[Name 31] [0x0007001000000000] Icon
+[Name 32] [0x0007001000000000] IconLarge
+[Name 33] [0x0007001000000000] Icons
+[Name 34] [0x0007001000000000] IntProperty
+[Name 35] [0x0007001000000000] Label
+[Name 36] [0x0007001000000000] LODGroup
+[Name 37] [0x0007001000000000] MipGenSettings
+[Name 38] [0x0007001000000000] MipTailBaseIdx
+[Name 39] [0x0007001000000000] MovieReference
+[Name 40] [0x0007001000000000] NeverStream
+[Name 41] [0x0007001000000000] None
+[Name 42] [0x0007001000000000] ObjectProperty
+[Name 43] [0x0007001000000000] ObjectReferencer
+[Name 44] [0x0007001000000000] OnlineLabel
+[Name 45] [0x0007001000000000] OriginalSizeX
+[Name 46] [0x0007001000000000] OriginalSizeY
+[Name 47] [0x0007001000000000] Package
+[Name 48] [0x0007001000000000] PackTextureSize
+[Name 49] [0x0007001000000000] PF_A8R8G8B8
+[Name 50] [0x0007001000000000] PF_DXT5
+[Name 51] [0x0007001000000000] PlayerBanner
+[Name 52] [0x0007001000000000] playerbanner_dumpsterfire
+[Name 53] [0x0007001000000000] playerbanner_dumpsterfire_SF
+[Name 54] [0x0007001000000000] playerBanner_RLShield
+[Name 55] [0x0007001000000000] PluralLabel
+[Name 56] [0x0007001000000000] Product_TA
+[Name 57] [0x0007001000000000] ProductAsset_PlayerBanner_TA
+[Name 58] [0x0007001000000000] Products
+[Name 59] [0x0007001000000000] ProductsDB
+[Name 60] [0x0007001000000000] ProductSlot_TA
+[Name 61] [0x0007001000000000] ProductSlots
+[Name 62] [0x0007001000000000] RawData
+[Name 63] [0x0007001000000000] ReferencedObjects
+[Name 64] [0x0007001000000000] References
+[Name 65] [0x0007001000000000] SizeX
+[Name 66] [0x0007001000000000] SizeY
+[Name 67] [0x0007001000000000] SourceFile
+[Name 68] [0x0007001000000000] SourceFileCRC
+[Name 69] [0x0007001000000000] SourceFileTimestamp
+[Name 70] [0x0007001000000000] SRGB
+[Name 71] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 72] [0x0007001000000000] StrProperty
+[Name 73] [0x0007001000000000] SwfMovie
+[Name 74] [0x0007001000000000] TAGame
+[Name 75] [0x0007001000000000] Texture2D
+[Name 76] [0x0007001000000000] TextureFormat
+[Name 77] [0x0007001000000000] TextureGroup
+[Name 78] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 79] [0x0007001000000000] TextureMipGenSettings
+[Name 80] [0x0007001000000000] TextureRescale
+[Name 81] [0x0007001000000000] Thumb_Banner_DumpsterFire
+[Name 82] [0x0007001000000000] Thumbnail
+[Name 83] [0x0007001000000000] TMGS_NoMipmaps
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UProductAsset_PlayerBanner_TA playerbanner_dumpsterfire.ProductSlots.PlayerBanner.ProductAsset_PlayerBanner_TA_0
 	Name: ProductAsset_PlayerBanner_TA_0
-	Class: ProductAsset_PlayerBanner_TA
-	Outer: ProductSlot_TA PlayerBanner
+	Class: UProductAsset_PlayerBanner_TA
+	Outer: PlayerBanner
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000016b4 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UObjectReferencer playerbanner_dumpsterfire.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x00000000000016c0 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[2]
+[Export 2]
+	Full Name: UPackage playerbanner_dumpsterfire.playerbanner_dumpsterfire
 	Name: playerbanner_dumpsterfire
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000016ec with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[3]
+[Export 3]
+	Full Name: UPackage playerbanner_dumpsterfire.playerbanner_dumpsterfire_SF
 	Name: playerbanner_dumpsterfire_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000016f8 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[4]
+[Export 4]
+	Full Name: UPackage playerbanner_dumpsterfire.ProductSlots
 	Name: ProductSlots
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001704 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[5]
+[Export 5]
+	Full Name: UProductAsset_PlayerBanner_TA playerbanner_dumpsterfire.playerbanner_dumpsterfire.playerbanner_dumpsterfire
 	Name: playerbanner_dumpsterfire
-	Class: ProductAsset_PlayerBanner_TA
-	Outer: Package playerbanner_dumpsterfire
+	Class: UProductAsset_PlayerBanner_TA
+	Outer: playerbanner_dumpsterfire
 	Archetype: ProductAsset_PlayerBanner_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001710 with 0x00000044 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UProductSlot_TA playerbanner_dumpsterfire.ProductSlots.PlayerBanner
 	Name: PlayerBanner
-	Class: ProductSlot_TA
-	Outer: Package ProductSlots
+	Class: UProductSlot_TA
+	Outer: ProductSlots
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x0000000000001754 with 0x00000111 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: USwfMovie playerbanner_dumpsterfire.playerbanner_dumpsterfire.Banner_DumpsterFire
 	Name: Banner_DumpsterFire
-	Class: SwfMovie
-	Outer: Package playerbanner_dumpsterfire
+	Class: USwfMovie
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001865 with 0x000017a9 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.DumpsterFireBG
 	Name: DumpsterFireBG
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000300e with 0x000291be Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.DumpsterFront
 	Name: DumpsterFront
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000002c1cc with 0x000291be Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.fire_01
 	Name: fire_01
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000005538a with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.fire_02
 	Name: fire_02
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000729c8 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.fire_03
 	Name: fire_03
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000090006 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.fire_04
 	Name: fire_04
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000ad644 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.fire_05
 	Name: fire_05
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000cac82 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.fire_06
 	Name: fire_06
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000e82c0 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.fire_07
 	Name: fire_07
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001058fe with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.fire_08
 	Name: fire_08
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000122f3c with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.fire_09
 	Name: fire_09
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000014057a with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_10
 	Name: Fire_10
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000015dbb8 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_11
 	Name: Fire_11
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000017b1f6 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_12
 	Name: Fire_12
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000198834 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_13
 	Name: Fire_13
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001b5e72 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_14
 	Name: Fire_14
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001d34b0 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_15
 	Name: Fire_15
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001f0aee with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_16
 	Name: Fire_16
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000020e12c with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_17
 	Name: Fire_17
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000022b76a with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_18
 	Name: Fire_18
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000248da8 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_19
 	Name: Fire_19
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002663e6 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_20
 	Name: Fire_20
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000283a24 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_21
 	Name: Fire_21
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002a1062 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_22
 	Name: Fire_22
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002be6a0 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_23
 	Name: Fire_23
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002dbcde with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[33]
+[Export 33]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_24
 	Name: Fire_24
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002f931c with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_25
 	Name: Fire_25
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000031695a with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_26
 	Name: Fire_26
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000333f98 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[36]
+[Export 36]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_27
 	Name: Fire_27
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000003515d6 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[37]
+[Export 37]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_28
 	Name: Fire_28
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000036ec14 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[38]
+[Export 38]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_29
 	Name: Fire_29
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000038c252 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[39]
+[Export 39]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Fire_30
 	Name: Fire_30
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000003a9890 with 0x0001d63e Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UTexture2D playerbanner_dumpsterfire.playerbanner_dumpsterfire.Thumb_Banner_DumpsterFire
 	Name: Thumb_Banner_DumpsterFire
-	Class: Texture2D
-	Outer: Package playerbanner_dumpsterfire
+	Class: UTexture2D
+	Outer: playerbanner_dumpsterfire
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000003c6ece with 0x000401a4 Bytes
 	Export Flags: 0x00000001
@@ -485,73 +527,88 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[4]
+	Class Package: Core
+	Outer: GFxUI
+[Import 4]
+	Full Name: UClass TAGame.ProductAsset_PlayerBanner_TA
 	Name: ProductAsset_PlayerBanner_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UClass TAGame.ProductSlot_TA
 	Name: ProductSlot_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
+	Class Package: Core
+	Outer: TAGame
+[Import 6]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage ProductsDB
 	Name: ProductsDB
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage ProductsDB.Products
 	Name: Products
 	Class: Package
-	Package: Core
-	Outer: Package ProductsDB
-[11]
+	Class Package: Core
+	Outer: ProductsDB
+[Import 11]
+	Full Name: UPackage ProductSlots.Icons
 	Name: Icons
 	Class: Package
-	Package: Core
-	Outer: Package ProductSlots
-[12]
+	Class Package: Core
+	Outer: ProductSlots
+[Import 12]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[13]
+	Class Package: Core
+[Import 13]
+	Full Name: UProduct_TA ProductsDB.Products.playerBanner_RLShield
 	Name: playerBanner_RLShield
 	Class: Product_TA
-	Package: TAGame
-	Outer: Package Products
-[14]
+	Class Package: TAGame
+	Outer: Products
+[Import 14]
+	Full Name: UTexture2D ProductSlots.Icons.Banner
 	Name: Banner
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Icons
+	Class Package: Engine
+	Outer: Icons

@@ -72,6 +72,7 @@ Test Data Size: 0x00003f98
 Compressed Chunk Info Offset: 0x00001d68
 Last Block Size: 0x0000000c
 Base Header Size: 0x00000105
+Encrypted Header Size: 0x00005d40
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -79,416 +80,452 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] Attributes
-[2] BlackMetal_00
-[3] BLEND_Translucent
-[4] BlendMode
-[5] BoolProperty
-[6] bReplicated
-[7] ByteProperty
-[8] Class
-[9] ColorMaterialInput
-[10] CompressionSettings
-[11] Core
-[12] Default__ProductAsset_Wheel_TA
-[13] DefaultGenerator
-[14] DefaultProduct_New
-[15] DefaultValue
-[16] Desc
-[17] Description
-[18] DiffuseColor
-[19] EBlendMode
-[20] EditorX
-[21] EditorY
-[22] Engine
-[23] EPixelFormat
-[24] Expression
-[25] ExpressionGUID
-[26] Expressions
-[27] Filter
-[28] FirstResourceMemMip
-[29] FloatProperty
-[30] Format
-[31] FrontRight
-[32] Generator
-[33] glitterdensity
-[34] Glittermap
-[35] GoldMetal_00
-[36] Grass_Textures
-[37] GrassCube
-[38] Group
-[39] Guid
-[40] Icon
-[41] IconLarge
-[42] Icons
-[43] IntProperty
-[44] Label
-[45] LightMapCoordinateIndex
-[46] LightMapResolution
-[47] LinearColor
-[48] LODGroup
-[49] Mask
-[50] MaskA
-[51] MAT_Fakemetal
-[52] MAT_glitter_sparkles
-[53] MAT_sidewall
-[54] MAT_wheel_glitter_tire
-[55] Material
-[56] MaterialExpressionScalarParameter
-[57] MaterialExpressionVectorParameter
-[58] MaterialGroups
-[59] MaterialInstanceConstant
-[60] Materials
-[61] MaxParameterValue
-[62] MIC_wheel_glitter_sidewall
-[63] MIC_wheel_glitter_tire
-[64] MipGenSettings
-[65] MipTailBaseIdx
-[66] NameProperty
-[67] None
-[68] Normal
-[69] ObjectProperty
-[70] ObjectReferencer
-[71] OnlineLabel
-[72] Opacity
-[73] OpacityMask
-[74] OriginalSizeX
-[75] OriginalSizeY
-[76] OutputIndex
-[77] Package
-[78] PaintColor
-[79] paintfinish_glitter
-[80] PaintMaterialGroup
-[81] PaintParameterName
-[82] Paints
-[83] ParameterName
-[84] Parent
-[85] ParentLightingGuid
-[86] PF_DXT5
-[87] PlatinumMetal_00
-[88] PluralLabel
-[89] PrevGenerator
-[90] Product_TA
-[91] ProductAsset_Wheel_TA
-[92] ProductAttribute_PaintSettings_TA
-[93] ProductPaint
-[94] ProductPaint_TA
-[95] Products
-[96] ProductsDB
-[97] ProductSlot_TA
-[98] ProductSlots
-[99] ReferencedObjects
-[100] rim
-[101] RoseGoldMetal_00
-[102] Rotator
-[103] ScalarMaterialInput
-[104] Scale3D
-[105] SizeX
-[106] SizeY
-[107] SpecularColor
-[108] SRGB
-[109] StandaloneSeekFreeReferencer
-[110] StaticMesh
-[111] StrProperty
-[112] StructProperty
-[113] TAGame
-[114] TC_NormalmapAlpha
-[115] TC_NormalmapSwizzle
-[116] Texture2D
-[117] TextureCompressionSettings
-[118] TextureFileCacheName
-[119] TextureFilter
-[120] TextureGroup
-[121] TEXTUREGROUP_WorldNormalMap
-[122] TextureMipGenSettings
-[123] TextureRenderTargetCube
-[124] Textures
-[125] Textures3
-[126] TF_Nearest
-[127] ThumbnailCameraRotationOffset
-[128] ThumbnailProductRotation
-[129] ThumbnailRenderer
-[130] ThumbnailRenderer_TA
-[131] ThumbnailRenderers
-[132] TMGS_NoMipmaps
-[133] TwoSided
-[134] UnpackMin
-[135] UnsupportedPaints
-[136] Vector
-[137] VectorMaterialInput
-[138] Wheel_Fresnel_Intensity
-[139] Wheel_Fresnel_Power
-[140] wheel_glitter
-[141] wheel_glitter_SF
-[142] wheel_glitter_sidewall_stripes
-[143] wheel_glitter_test_1_SM
-[144] Wheel_Renderer
-[145] WHEEL_Star
-[146] WheelAssetGenerator_1Wheel_TA
-[147] WheelAssetSettings_TA
-[148] Wheels
-[149] WhiteGoldMetal_00
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] Attributes
+[Name 2] [0x0007001000000000] BlackMetal_00
+[Name 3] [0x0007001000000000] BLEND_Translucent
+[Name 4] [0x0007001000000000] BlendMode
+[Name 5] [0x0007001000000000] BoolProperty
+[Name 6] [0x0007001000000000] bReplicated
+[Name 7] [0x0007001000000000] ByteProperty
+[Name 8] [0x0007001000000000] Class
+[Name 9] [0x0007001000000000] ColorMaterialInput
+[Name 10] [0x0007001000000000] CompressionSettings
+[Name 11] [0x0007001000000000] Core
+[Name 12] [0x0007001000000000] Default__ProductAsset_Wheel_TA
+[Name 13] [0x0007001000000000] DefaultGenerator
+[Name 14] [0x0007001000000000] DefaultProduct_New
+[Name 15] [0x0007001000000000] DefaultValue
+[Name 16] [0x0007001000000000] Desc
+[Name 17] [0x0007001000000000] Description
+[Name 18] [0x0007001000000000] DiffuseColor
+[Name 19] [0x0007001000000000] EBlendMode
+[Name 20] [0x0007001000000000] EditorX
+[Name 21] [0x0007001000000000] EditorY
+[Name 22] [0x0007001000000000] Engine
+[Name 23] [0x0007001000000000] EPixelFormat
+[Name 24] [0x0007001000000000] Expression
+[Name 25] [0x0007001000000000] ExpressionGUID
+[Name 26] [0x0007001000000000] Expressions
+[Name 27] [0x0007001000000000] Filter
+[Name 28] [0x0007001000000000] FirstResourceMemMip
+[Name 29] [0x0007001000000000] FloatProperty
+[Name 30] [0x0007001000000000] Format
+[Name 31] [0x0007001000000000] FrontRight
+[Name 32] [0x0007001000000000] Generator
+[Name 33] [0x0007001000000000] glitterdensity
+[Name 34] [0x0007001000000000] Glittermap
+[Name 35] [0x0007001000000000] GoldMetal_00
+[Name 36] [0x0007001000000000] Grass_Textures
+[Name 37] [0x0007001000000000] GrassCube
+[Name 38] [0x0007001000000000] Group
+[Name 39] [0x0007001000000000] Guid
+[Name 40] [0x0007001000000000] Icon
+[Name 41] [0x0007001000000000] IconLarge
+[Name 42] [0x0007001000000000] Icons
+[Name 43] [0x0007001000000000] IntProperty
+[Name 44] [0x0007001000000000] Label
+[Name 45] [0x0007001000000000] LightMapCoordinateIndex
+[Name 46] [0x0007001000000000] LightMapResolution
+[Name 47] [0x0007001000000000] LinearColor
+[Name 48] [0x0007001000000000] LODGroup
+[Name 49] [0x0007001000000000] Mask
+[Name 50] [0x0007001000000000] MaskA
+[Name 51] [0x0007001000000000] MAT_Fakemetal
+[Name 52] [0x0007001000000000] MAT_glitter_sparkles
+[Name 53] [0x0007001000000000] MAT_sidewall
+[Name 54] [0x0007001000000000] MAT_wheel_glitter_tire
+[Name 55] [0x0007001000000000] Material
+[Name 56] [0x0007001000000000] MaterialExpressionScalarParameter
+[Name 57] [0x0007001000000000] MaterialExpressionVectorParameter
+[Name 58] [0x0007001000000000] MaterialGroups
+[Name 59] [0x0007001000000000] MaterialInstanceConstant
+[Name 60] [0x0007001000000000] Materials
+[Name 61] [0x0007001000000000] MaxParameterValue
+[Name 62] [0x0007001000000000] MIC_wheel_glitter_sidewall
+[Name 63] [0x0007001000000000] MIC_wheel_glitter_tire
+[Name 64] [0x0007001000000000] MipGenSettings
+[Name 65] [0x0007001000000000] MipTailBaseIdx
+[Name 66] [0x0007001000000000] NameProperty
+[Name 67] [0x0007001000000000] None
+[Name 68] [0x0007001000000000] Normal
+[Name 69] [0x0007001000000000] ObjectProperty
+[Name 70] [0x0007001000000000] ObjectReferencer
+[Name 71] [0x0007001000000000] OnlineLabel
+[Name 72] [0x0007001000000000] Opacity
+[Name 73] [0x0007001000000000] OpacityMask
+[Name 74] [0x0007001000000000] OriginalSizeX
+[Name 75] [0x0007001000000000] OriginalSizeY
+[Name 76] [0x0007001000000000] OutputIndex
+[Name 77] [0x0007001000000000] Package
+[Name 78] [0x0007001000000000] PaintColor
+[Name 79] [0x0007001000000000] paintfinish_glitter
+[Name 80] [0x0007001000000000] PaintMaterialGroup
+[Name 81] [0x0007001000000000] PaintParameterName
+[Name 82] [0x0007001000000000] Paints
+[Name 83] [0x0007001000000000] ParameterName
+[Name 84] [0x0007001000000000] Parent
+[Name 85] [0x0007001000000000] ParentLightingGuid
+[Name 86] [0x0007001000000000] PF_DXT5
+[Name 87] [0x0007001000000000] PlatinumMetal_00
+[Name 88] [0x0007001000000000] PluralLabel
+[Name 89] [0x0007001000000000] PrevGenerator
+[Name 90] [0x0007001000000000] Product_TA
+[Name 91] [0x0007001000000000] ProductAsset_Wheel_TA
+[Name 92] [0x0007001000000000] ProductAttribute_PaintSettings_TA
+[Name 93] [0x0007001000000000] ProductPaint
+[Name 94] [0x0007001000000000] ProductPaint_TA
+[Name 95] [0x0007001000000000] Products
+[Name 96] [0x0007001000000000] ProductsDB
+[Name 97] [0x0007001000000000] ProductSlot_TA
+[Name 98] [0x0007001000000000] ProductSlots
+[Name 99] [0x0007001000000000] ReferencedObjects
+[Name 100] [0x0007001000000000] rim
+[Name 101] [0x0007001000000000] RoseGoldMetal_00
+[Name 102] [0x0007001000000000] Rotator
+[Name 103] [0x0007001000000000] ScalarMaterialInput
+[Name 104] [0x0007001000000000] Scale3D
+[Name 105] [0x0007001000000000] SizeX
+[Name 106] [0x0007001000000000] SizeY
+[Name 107] [0x0007001000000000] SpecularColor
+[Name 108] [0x0007001000000000] SRGB
+[Name 109] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 110] [0x0007001000000000] StaticMesh
+[Name 111] [0x0007001000000000] StrProperty
+[Name 112] [0x0007001000000000] StructProperty
+[Name 113] [0x0007001000000000] TAGame
+[Name 114] [0x0007001000000000] TC_NormalmapAlpha
+[Name 115] [0x0007001000000000] TC_NormalmapSwizzle
+[Name 116] [0x0007001000000000] Texture2D
+[Name 117] [0x0007001000000000] TextureCompressionSettings
+[Name 118] [0x0007001000000000] TextureFileCacheName
+[Name 119] [0x0007001000000000] TextureFilter
+[Name 120] [0x0007001000000000] TextureGroup
+[Name 121] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 122] [0x0007001000000000] TextureMipGenSettings
+[Name 123] [0x0007001000000000] TextureRenderTargetCube
+[Name 124] [0x0007001000000000] Textures
+[Name 125] [0x0007001000000000] Textures3
+[Name 126] [0x0007001000000000] TF_Nearest
+[Name 127] [0x0007001000000000] ThumbnailCameraRotationOffset
+[Name 128] [0x0007001000000000] ThumbnailProductRotation
+[Name 129] [0x0007001000000000] ThumbnailRenderer
+[Name 130] [0x0007001000000000] ThumbnailRenderer_TA
+[Name 131] [0x0007001000000000] ThumbnailRenderers
+[Name 132] [0x0007001000000000] TMGS_NoMipmaps
+[Name 133] [0x0007001000000000] TwoSided
+[Name 134] [0x0007001000000000] UnpackMin
+[Name 135] [0x0007001000000000] UnsupportedPaints
+[Name 136] [0x0007001000000000] Vector
+[Name 137] [0x0007001000000000] VectorMaterialInput
+[Name 138] [0x0007001000000000] Wheel_Fresnel_Intensity
+[Name 139] [0x0007001000000000] Wheel_Fresnel_Power
+[Name 140] [0x0007001000000000] wheel_glitter
+[Name 141] [0x0007001000000000] wheel_glitter_SF
+[Name 142] [0x0007001000000000] wheel_glitter_sidewall_stripes
+[Name 143] [0x0007001000000000] wheel_glitter_test_1_SM
+[Name 144] [0x0007001000000000] Wheel_Renderer
+[Name 145] [0x0007001000000000] WHEEL_Star
+[Name 146] [0x0007001000000000] WheelAssetGenerator_1Wheel_TA
+[Name 147] [0x0007001000000000] WheelAssetSettings_TA
+[Name 148] [0x0007001000000000] Wheels
+[Name 149] [0x0007001000000000] WhiteGoldMetal_00
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UMaterial wheel_glitter.wheel_glitter.MAT_Fakemetal
 	Name: MAT_Fakemetal
-	Class: Material
-	Outer: Package wheel_glitter
+	Class: UMaterial
+	Outer: wheel_glitter
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000001e6d with 0x00000184 Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterial wheel_glitter.wheel_glitter.MAT_glitter_sparkles
 	Name: MAT_glitter_sparkles
-	Class: Material
-	Outer: Package wheel_glitter
+	Class: UMaterial
+	Outer: wheel_glitter
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000001ff1 with 0x000002f1 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterial wheel_glitter.wheel_glitter.MAT_sidewall
 	Name: MAT_sidewall
-	Class: Material
-	Outer: Package wheel_glitter
+	Class: UMaterial
+	Outer: wheel_glitter
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000022e2 with 0x00000298 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterial wheel_glitter.wheel_glitter.MAT_wheel_glitter_tire
 	Name: MAT_wheel_glitter_tire
-	Class: Material
-	Outer: Package wheel_glitter
+	Class: UMaterial
+	Outer: wheel_glitter
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x000000000000257a with 0x000002c4 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UMaterialExpressionScalarParameter wheel_glitter.wheel_glitter.MAT_Fakemetal.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Fakemetal
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Fakemetal
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000283e with 0x000000e0 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UMaterialExpressionScalarParameter wheel_glitter.wheel_glitter.MAT_Fakemetal.MaterialExpressionScalarParameter_3
 	Name: MaterialExpressionScalarParameter_3
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Fakemetal
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Fakemetal
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000291e with 0x000000d0 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UMaterialExpressionScalarParameter wheel_glitter.wheel_glitter.MAT_Fakemetal.MaterialExpressionScalarParameter_6
 	Name: MaterialExpressionScalarParameter_6
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Fakemetal
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Fakemetal
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000029ee with 0x000000e0 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UMaterialExpressionScalarParameter wheel_glitter.wheel_glitter.MAT_Fakemetal.MaterialExpressionScalarParameter_7
 	Name: MaterialExpressionScalarParameter_7
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Fakemetal
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Fakemetal
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002ace with 0x000000d0 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UMaterialExpressionScalarParameter wheel_glitter.wheel_glitter.MAT_sidewall.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_sidewall
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_sidewall
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002b9e with 0x000000e0 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UMaterialExpressionScalarParameter wheel_glitter.wheel_glitter.MAT_sidewall.MaterialExpressionScalarParameter_3
 	Name: MaterialExpressionScalarParameter_3
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_sidewall
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_sidewall
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002c7e with 0x000000d0 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UMaterialExpressionScalarParameter wheel_glitter.wheel_glitter.MAT_sidewall.MaterialExpressionScalarParameter_6
 	Name: MaterialExpressionScalarParameter_6
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_sidewall
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_sidewall
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002d4e with 0x000000e0 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UMaterialExpressionScalarParameter wheel_glitter.wheel_glitter.MAT_sidewall.MaterialExpressionScalarParameter_7
 	Name: MaterialExpressionScalarParameter_7
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_sidewall
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_sidewall
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002e2e with 0x000000d0 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UMaterialExpressionScalarParameter wheel_glitter.wheel_glitter.MAT_wheel_glitter_tire.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_wheel_glitter_tire
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_wheel_glitter_tire
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002efe with 0x000000b0 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UMaterialExpressionVectorParameter wheel_glitter.wheel_glitter.MAT_Fakemetal.MaterialExpressionVectorParameter_2
 	Name: MaterialExpressionVectorParameter_2
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Fakemetal
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Fakemetal
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002fae with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UMaterialExpressionVectorParameter wheel_glitter.wheel_glitter.MAT_glitter_sparkles.MaterialExpressionVectorParameter_1
 	Name: MaterialExpressionVectorParameter_1
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_glitter_sparkles
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_glitter_sparkles
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003056 with 0x00000088 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UMaterialExpressionVectorParameter wheel_glitter.wheel_glitter.MAT_sidewall.MaterialExpressionVectorParameter_3
 	Name: MaterialExpressionVectorParameter_3
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_sidewall
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_sidewall
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000030de with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UMaterialExpressionVectorParameter wheel_glitter.wheel_glitter.MAT_wheel_glitter_tire.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_wheel_glitter_tire
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_wheel_glitter_tire
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003186 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UMaterialInstanceConstant wheel_glitter.wheel_glitter.MIC_wheel_glitter_sidewall
 	Name: MIC_wheel_glitter_sidewall
-	Class: MaterialInstanceConstant
-	Outer: Package wheel_glitter
+	Class: UMaterialInstanceConstant
+	Outer: wheel_glitter
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x000000000000322e with 0x00000058 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UMaterialInstanceConstant wheel_glitter.wheel_glitter.MIC_wheel_glitter_tire
 	Name: MIC_wheel_glitter_tire
-	Class: MaterialInstanceConstant
-	Outer: Package wheel_glitter
+	Class: UMaterialInstanceConstant
+	Outer: wheel_glitter
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000003286 with 0x00000058 Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UProductAsset_Wheel_TA wheel_glitter.ProductSlots.Wheels.ProductAsset_Wheel_TA_0
 	Name: ProductAsset_Wheel_TA_0
-	Class: ProductAsset_Wheel_TA
-	Outer: ProductSlot_TA Wheels
+	Class: UProductAsset_Wheel_TA
+	Outer: Wheels
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000032de with 0x0000009c Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UObjectReferencer wheel_glitter.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x000000000000337a with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[21]
+[Export 21]
+	Full Name: UPackage wheel_glitter.paintfinish_glitter
 	Name: paintfinish_glitter
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000033a6 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[22]
+[Export 22]
+	Full Name: UPackage wheel_glitter.ProductSlots
 	Name: ProductSlots
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000033b2 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[23]
+[Export 23]
+	Full Name: UPackage wheel_glitter.wheel_glitter
 	Name: wheel_glitter
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000033be with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[24]
+[Export 24]
+	Full Name: UPackage wheel_glitter.wheel_glitter_SF
 	Name: wheel_glitter_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000033ca with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[25]
+[Export 25]
+	Full Name: UWheelAssetGenerator_1Wheel_TA wheel_glitter.ProductSlots.Wheels.ProductAsset_Wheel_TA_0.WheelAssetGenerator_1Wheel_TA_1
 	Name: WheelAssetGenerator_1Wheel_TA_1
-	Class: WheelAssetGenerator_1Wheel_TA
-	Outer: ProductAsset_Wheel_TA ProductAsset_Wheel_TA_0
+	Class: UWheelAssetGenerator_1Wheel_TA
+	Outer: ProductAsset_Wheel_TA_0
 	Archetype: DefaultGenerator
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000033d6 with 0x00000010 Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UProductAsset_Wheel_TA wheel_glitter.wheel_glitter.wheel_glitter
 	Name: wheel_glitter
-	Class: ProductAsset_Wheel_TA
-	Outer: Package wheel_glitter
+	Class: UProductAsset_Wheel_TA
+	Outer: wheel_glitter
 	Archetype: ProductAsset_Wheel_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000033e6 with 0x00000064 Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UProductAttribute_PaintSettings_TA wheel_glitter.wheel_glitter.wheel_glitter.ProductAttribute_PaintSettings_TA_2
 	Name: ProductAttribute_PaintSettings_TA_2
-	Class: ProductAttribute_PaintSettings_TA
-	Outer: ProductAsset_Wheel_TA wheel_glitter
+	Class: UProductAttribute_PaintSettings_TA
+	Outer: wheel_glitter
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000344a with 0x000000b0 Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UProductSlot_TA wheel_glitter.ProductSlots.Wheels
 	Name: Wheels
-	Class: ProductSlot_TA
-	Outer: Package ProductSlots
+	Class: UProductSlot_TA
+	Outer: ProductSlots
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x00000000000034fa with 0x0000012b Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UStaticMesh wheel_glitter.wheel_glitter.wheel_glitter_test_1_SM
 	Name: wheel_glitter_test_1_SM
-	Class: StaticMesh
-	Outer: Package wheel_glitter
+	Class: UStaticMesh
+	Outer: wheel_glitter
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003625 with 0x00093f2c Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UTexture2D wheel_glitter.paintfinish_glitter.paintfinish_glitter
 	Name: paintfinish_glitter
-	Class: Texture2D
-	Outer: Package paintfinish_glitter
+	Class: UTexture2D
+	Outer: paintfinish_glitter
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000097551 with 0x004001d5 Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UTexture2D wheel_glitter.wheel_glitter.Glittermap
 	Name: Glittermap
-	Class: Texture2D
-	Outer: Package wheel_glitter
+	Class: UTexture2D
+	Outer: wheel_glitter
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000497726 with 0x0000184d Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: UTexture2D wheel_glitter.wheel_glitter.wheel_glitter_sidewall_stripes
 	Name: wheel_glitter_sidewall_stripes
-	Class: Texture2D
-	Outer: Package wheel_glitter
+	Class: UTexture2D
+	Outer: wheel_glitter
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000498f73 with 0x0000054c Bytes
 	Export Flags: 0x00000001
-[33]
+[Export 33]
+	Full Name: UWheelAssetGenerator_1Wheel_TA wheel_glitter.wheel_glitter.wheel_glitter.WheelAssetGenerator_1Wheel_TA_0
 	Name: WheelAssetGenerator_1Wheel_TA_0
-	Class: WheelAssetGenerator_1Wheel_TA
-	Outer: ProductAsset_Wheel_TA wheel_glitter
+	Class: UWheelAssetGenerator_1Wheel_TA
+	Outer: wheel_glitter
 	Archetype: WheelAssetGenerator_1Wheel_TA_1
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000004994bf with 0x00000058 Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UWheelAssetSettings_TA wheel_glitter.wheel_glitter.wheel_glitter.WheelAssetGenerator_1Wheel_TA_0.WheelAssetSettings_TA_1
 	Name: WheelAssetSettings_TA_1
-	Class: WheelAssetSettings_TA
-	Outer: WheelAssetGenerator_1Wheel_TA WheelAssetGenerator_1Wheel_TA_0
+	Class: UWheelAssetSettings_TA
+	Outer: WheelAssetGenerator_1Wheel_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000499517 with 0x0000002c Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: UWheelAssetSettings_TA wheel_glitter.wheel_glitter.wheel_glitter.WheelAssetGenerator_1Wheel_TA_0.WheelAssetSettings_TA_2
 	Name: WheelAssetSettings_TA_2
-	Class: WheelAssetSettings_TA
-	Outer: WheelAssetGenerator_1Wheel_TA WheelAssetGenerator_1Wheel_TA_0
+	Class: UWheelAssetSettings_TA
+	Outer: WheelAssetGenerator_1Wheel_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000499543 with 0x00000058 Bytes
 	Export Flags: 0x00000001
@@ -497,166 +534,200 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialExpressionVectorParameter
 	Name: MaterialExpressionVectorParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.StaticMesh
 	Name: StaticMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass TAGame.ProductAsset_Wheel_TA
 	Name: ProductAsset_Wheel_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[9]
+	Class Package: Core
+	Outer: TAGame
+[Import 9]
+	Full Name: UClass TAGame.ProductAttribute_PaintSettings_TA
 	Name: ProductAttribute_PaintSettings_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[10]
+	Class Package: Core
+	Outer: TAGame
+[Import 10]
+	Full Name: UClass TAGame.ProductSlot_TA
 	Name: ProductSlot_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[11]
+	Class Package: Core
+	Outer: TAGame
+[Import 11]
+	Full Name: UClass TAGame.WheelAssetGenerator_1Wheel_TA
 	Name: WheelAssetGenerator_1Wheel_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[12]
+	Class Package: Core
+	Outer: TAGame
+[Import 12]
+	Full Name: UClass TAGame.WheelAssetSettings_TA
 	Name: WheelAssetSettings_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[13]
+	Class Package: Core
+	Outer: TAGame
+[Import 13]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[14]
+	Class Package: Core
+[Import 14]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[15]
+	Class Package: Core
+[Import 15]
+	Full Name: UPackage Grass_Textures
 	Name: Grass_Textures
 	Class: Package
-	Package: Core
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UPackage ProductPaint
 	Name: ProductPaint
 	Class: Package
-	Package: Core
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UPackage ProductPaint.Paints
 	Name: Paints
 	Class: Package
-	Package: Core
-	Outer: Package ProductPaint
-[18]
+	Class Package: Core
+	Outer: ProductPaint
+[Import 18]
+	Full Name: UPackage ProductsDB
 	Name: ProductsDB
 	Class: Package
-	Package: Core
-[19]
+	Class Package: Core
+[Import 19]
+	Full Name: UPackage ProductsDB.Products
 	Name: Products
 	Class: Package
-	Package: Core
-	Outer: Package ProductsDB
-[20]
+	Class Package: Core
+	Outer: ProductsDB
+[Import 20]
+	Full Name: UPackage ProductSlots.Icons
 	Name: Icons
 	Class: Package
-	Package: Core
-	Outer: Package ProductSlots
-[21]
+	Class Package: Core
+	Outer: ProductSlots
+[Import 21]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[22]
+	Class Package: Core
+[Import 22]
+	Full Name: UPackage ThumbnailRenderers
 	Name: ThumbnailRenderers
 	Class: Package
-	Package: Core
-[23]
+	Class Package: Core
+[Import 23]
+	Full Name: UProduct_TA ProductsDB.Products.WHEEL_Star
 	Name: WHEEL_Star
 	Class: Product_TA
-	Package: TAGame
-	Outer: Package Products
-[24]
+	Class Package: TAGame
+	Outer: Products
+[Import 24]
+	Full Name: UProductAsset_Wheel_TA TAGame.Default__ProductAsset_Wheel_TA
 	Name: Default__ProductAsset_Wheel_TA
 	Class: ProductAsset_Wheel_TA
-	Package: TAGame
-	Outer: Package TAGame
-[25]
+	Class Package: TAGame
+	Outer: TAGame
+[Import 25]
+	Full Name: UProductPaint_TA ProductPaint.Paints.BlackMetal_00
 	Name: BlackMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[26]
+	Class Package: TAGame
+	Outer: Paints
+[Import 26]
+	Full Name: UProductPaint_TA ProductPaint.Paints.GoldMetal_00
 	Name: GoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[27]
+	Class Package: TAGame
+	Outer: Paints
+[Import 27]
+	Full Name: UProductPaint_TA ProductPaint.Paints.PlatinumMetal_00
 	Name: PlatinumMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[28]
+	Class Package: TAGame
+	Outer: Paints
+[Import 28]
+	Full Name: UProductPaint_TA ProductPaint.Paints.RoseGoldMetal_00
 	Name: RoseGoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[29]
+	Class Package: TAGame
+	Outer: Paints
+[Import 29]
+	Full Name: UProductPaint_TA ProductPaint.Paints.WhiteGoldMetal_00
 	Name: WhiteGoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[30]
+	Class Package: TAGame
+	Outer: Paints
+[Import 30]
+	Full Name: UTexture2D ProductSlots.Icons.Wheels
 	Name: Wheels
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Icons
-[31]
+	Class Package: Engine
+	Outer: Icons
+[Import 31]
+	Full Name: UTextureRenderTargetCube Grass_Textures.GrassCube
 	Name: GrassCube
 	Class: TextureRenderTargetCube
-	Package: Engine
-	Outer: Package Grass_Textures
-[32]
+	Class Package: Engine
+	Outer: Grass_Textures
+[Import 32]
+	Full Name: UThumbnailRenderer_TA ThumbnailRenderers.Wheel_Renderer
 	Name: Wheel_Renderer
 	Class: ThumbnailRenderer_TA
-	Package: TAGame
-	Outer: Package ThumbnailRenderers
-[33]
+	Class Package: TAGame
+	Outer: ThumbnailRenderers
+[Import 33]
+	Full Name: UWheelAssetGenerator_1Wheel_TA TAGame.Default__ProductAsset_Wheel_TA.DefaultGenerator
 	Name: DefaultGenerator
 	Class: WheelAssetGenerator_1Wheel_TA
-	Package: TAGame
-	Outer: ProductAsset_Wheel_TA Default__ProductAsset_Wheel_TA
+	Class Package: TAGame
+	Outer: Default__ProductAsset_Wheel_TA

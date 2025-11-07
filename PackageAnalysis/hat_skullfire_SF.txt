@@ -76,6 +76,7 @@ Test Data Size: 0x00003fbb
 Compressed Chunk Info Offset: 0x00002119
 Last Block Size: 0x00000000
 Base Header Size: 0x00000111
+Encrypted Header Size: 0x000060f0
 
 AES: iKxkZ9HwK1dhuPsjKAwat7ZYphch8Zg3T3Leiwu+caQ=
 
@@ -83,482 +84,524 @@ AES: iKxkZ9HwK1dhuPsjKAwat7ZYphch8Zg3T3Leiwu+caQ=
     ~ Names ~ 
 
 
-[0] A
-[1] animation
-[2] Antenna
-[3] ArrayProperty
-[4] Attachments
-[5] Attributes
-[6] B
-[7] Behaviors
-[8] bExposeToLibrary
-[9] bHasStaticPermutationResource
-[10] bIsMasked
-[11] BlackMetal_00
-[12] BLEND_Masked
-[13] BlendMode
-[14] BoolProperty
-[15] Boost_Tests
-[16] bRealtimePreview
-[17] Brightness
-[18] ByteProperty
-[19] Car_Speed
-[20] Class
-[21] ColorMaterialInput
-[22] Component
-[23] CompressionSettings
-[24] Core
-[25] CustomColor
-[26] DefaultValue
-[27] Desc
-[28] Description
-[29] Details
-[30] DiffuseColor
-[31] EBlendMode
-[32] EdgeFade
-[33] EMaterialLightingModel
-[34] EmissiveColor
-[35] Engine
-[36] Engine_MaterialFunctions02
-[37] EPixelFormat
-[38] EProductAttachmentSocket
-[39] Expression
-[40] ExpressionGUID
-[41] ExpressionInput
-[42] Expressions
-[43] Fire and Skull Same Color
-[44] FireColor
-[45] FireEyesBrightness
-[46] FirstResourceMemMip
-[47] FloatProperty
-[48] Flow_03
-[49] Format
-[50] Function
-[51] FunctionExpressions
-[52] FXActor
-[53] GoldMetal_00
-[54] Group
-[55] Guid
-[56] Hat
-[57] hat_skullfire
-[58] Hat_Skullfire_Fire_MIC
-[59] hat_skullfire_SF
-[60] Hat_Skullfire_SM
-[61] InheritCarAttribute
-[62] IntProperty
-[63] IsPainted
-[64] LibraryCategories
-[65] LightingModel
-[66] LightMapCoordinateIndex
-[67] LightMapResolution
-[68] LightnessShift
-[69] LinearColor
-[70] LODGroup
-[71] Logo_Speed
-[72] M_Hat_Skullfire_Fire
-[73] M_Hat_Skullfire_Skull
-[74] M_Hat_Skullfire_Skull_MIC
-[75] M_Hat_Skullfire_Skull_Painted_MIC
-[76] Mask
-[77] MaskB
-[78] MaskG
-[79] MaskR
-[80] Material
-[81] MaterialExpressionScalarParameter
-[82] MaterialExpressionStaticSwitchParameter
-[83] MaterialExpressionVectorParameter
-[84] MaterialFunction
-[85] MaterialFunctionInfos
-[86] MaterialGroups
-[87] MaterialInstanceConstant
-[88] Materials
-[89] MipTailBaseIdx
-[90] MLM_Unlit
-[91] NameProperty
-[92] None
-[93] Normal
-[94] ObjectLocalToWorldData
-[95] ObjectPivotPoint
-[96] ObjectProperty
-[97] ObjectReferencer
-[98] Opacity
-[99] OpacityMask
-[100] OriginalSizeX
-[101] OriginalSizeY
-[102] OutputIndex
-[103] Package
-[104] PaintMaterialGroup
-[105] Paints
-[106] ParameterName
-[107] ParameterValue
-[108] Parent
-[109] ParentLightingGuid
-[110] ParticleSystem
-[111] PAS_Hat
-[112] PF_A8R8G8B8
-[113] PF_DXT1
-[114] PF_DXT5
-[115] PivotPainter
-[116] PivotPainter_PerObjectData
-[117] PlatinumMetal_00
-[118] ProductAsset_Attachment_TA
-[119] ProductAttribute_PaintSettings_TA
-[120] ProductPaint
-[121] ProductPaint_TA
-[122] ProductSlot_TA
-[123] ProductSlots
-[124] Psy_MaterialFunctions
-[125] ReferencedObjects
-[126] RoseGoldMetal_00
-[127] Rotation
-[128] Rotator
-[129] ScalarMaterialInput
-[130] ScalarParameterValues
-[131] Scale
-[132] SizeX
-[133] SizeY
-[134] SkeletalMesh
-[135] SkullPaintedTextureLightness
-[136] Socket
-[137] Spec
-[138] spec power
-[139] SpecularColor
-[140] SpecularPower
-[141] Spinner_Speed
-[142] SRGB
-[143] StandaloneSeekFreeReferencer
-[144] StateId
-[145] StaticMesh
-[146] StrProperty
-[147] StructProperty
-[148] T_Hat_Skullfire_D
-[149] T_Hat_Skullfire_N
-[150] TAGame
-[151] TC_NormalmapSwizzle
-[152] TC_VectorDisplacementmap
-[153] Texture2D
-[154] TextureCompressionSettings
-[155] TextureFileCacheName
-[156] TextureGroup
-[157] TEXTUREGROUP_WorldNormalMap
-[158] Textures
-[159] Textures3
-[160] ThumbnailCameraRotationOffset
-[161] ThumbnailCameraTranslationOffset
-[162] ThumbnailKeyLightBrightnessScale
-[163] tile
-[164] Translation
-[165] TwoSided
-[166] UnpackMin
-[167] UnsupportedPaints
-[168] Vector
-[169] VectorMaterialInput
-[170] VectorParameterValues
-[171] WhiteGoldMetal_00
-[172] WindDirectionXYZ-RGB
-[173] WindInt
-[174] WindSpeed
-[175] WorldPositionOffset
+[Name 0] [0x0007001000000000] A
+[Name 1] [0x0007001000000000] animation
+[Name 2] [0x0007001000000000] Antenna
+[Name 3] [0x0007001000000000] ArrayProperty
+[Name 4] [0x0007001000000000] Attachments
+[Name 5] [0x0007001000000000] Attributes
+[Name 6] [0x0007001000000000] B
+[Name 7] [0x0007001000000000] Behaviors
+[Name 8] [0x0007001000000000] bExposeToLibrary
+[Name 9] [0x0007001000000000] bHasStaticPermutationResource
+[Name 10] [0x0007001000000000] bIsMasked
+[Name 11] [0x0007001000000000] BlackMetal_00
+[Name 12] [0x0007001000000000] BLEND_Masked
+[Name 13] [0x0007001000000000] BlendMode
+[Name 14] [0x0007001000000000] BoolProperty
+[Name 15] [0x0007001000000000] Boost_Tests
+[Name 16] [0x0007001000000000] bRealtimePreview
+[Name 17] [0x0007001000000000] Brightness
+[Name 18] [0x0007001000000000] ByteProperty
+[Name 19] [0x0007001000000000] Car_Speed
+[Name 20] [0x0007001000000000] Class
+[Name 21] [0x0007001000000000] ColorMaterialInput
+[Name 22] [0x0007001000000000] Component
+[Name 23] [0x0007001000000000] CompressionSettings
+[Name 24] [0x0007001000000000] Core
+[Name 25] [0x0007001000000000] CustomColor
+[Name 26] [0x0007001000000000] DefaultValue
+[Name 27] [0x0007001000000000] Desc
+[Name 28] [0x0007001000000000] Description
+[Name 29] [0x0007001000000000] Details
+[Name 30] [0x0007001000000000] DiffuseColor
+[Name 31] [0x0007001000000000] EBlendMode
+[Name 32] [0x0007001000000000] EdgeFade
+[Name 33] [0x0007001000000000] EMaterialLightingModel
+[Name 34] [0x0007001000000000] EmissiveColor
+[Name 35] [0x0007001000000000] Engine
+[Name 36] [0x0007001000000000] Engine_MaterialFunctions02
+[Name 37] [0x0007001000000000] EPixelFormat
+[Name 38] [0x0007001000000000] EProductAttachmentSocket
+[Name 39] [0x0007001000000000] Expression
+[Name 40] [0x0007001000000000] ExpressionGUID
+[Name 41] [0x0007001000000000] ExpressionInput
+[Name 42] [0x0007001000000000] Expressions
+[Name 43] [0x0007001000000000] Fire and Skull Same Color
+[Name 44] [0x0007001000000000] FireColor
+[Name 45] [0x0007001000000000] FireEyesBrightness
+[Name 46] [0x0007001000000000] FirstResourceMemMip
+[Name 47] [0x0007001000000000] FloatProperty
+[Name 48] [0x0007001000000000] Flow_03
+[Name 49] [0x0007001000000000] Format
+[Name 50] [0x0007001000000000] Function
+[Name 51] [0x0007001000000000] FunctionExpressions
+[Name 52] [0x0007001000000000] FXActor
+[Name 53] [0x0007001000000000] GoldMetal_00
+[Name 54] [0x0007001000000000] Group
+[Name 55] [0x0007001000000000] Guid
+[Name 56] [0x0007001000000000] Hat
+[Name 57] [0x0007001000000000] hat_skullfire
+[Name 58] [0x0007001000000000] Hat_Skullfire_Fire_MIC
+[Name 59] [0x0007001000000000] hat_skullfire_SF
+[Name 60] [0x0007001000000000] Hat_Skullfire_SM
+[Name 61] [0x0007001000000000] InheritCarAttribute
+[Name 62] [0x0007001000000000] IntProperty
+[Name 63] [0x0007001000000000] IsPainted
+[Name 64] [0x0007001000000000] LibraryCategories
+[Name 65] [0x0007001000000000] LightingModel
+[Name 66] [0x0007001000000000] LightMapCoordinateIndex
+[Name 67] [0x0007001000000000] LightMapResolution
+[Name 68] [0x0007001000000000] LightnessShift
+[Name 69] [0x0007001000000000] LinearColor
+[Name 70] [0x0007001000000000] LODGroup
+[Name 71] [0x0007001000000000] Logo_Speed
+[Name 72] [0x0007001000000000] M_Hat_Skullfire_Fire
+[Name 73] [0x0007001000000000] M_Hat_Skullfire_Skull
+[Name 74] [0x0007001000000000] M_Hat_Skullfire_Skull_MIC
+[Name 75] [0x0007001000000000] M_Hat_Skullfire_Skull_Painted_MIC
+[Name 76] [0x0007001000000000] Mask
+[Name 77] [0x0007001000000000] MaskB
+[Name 78] [0x0007001000000000] MaskG
+[Name 79] [0x0007001000000000] MaskR
+[Name 80] [0x0007001000000000] Material
+[Name 81] [0x0007001000000000] MaterialExpressionScalarParameter
+[Name 82] [0x0007001000000000] MaterialExpressionStaticSwitchParameter
+[Name 83] [0x0007001000000000] MaterialExpressionVectorParameter
+[Name 84] [0x0007001000000000] MaterialFunction
+[Name 85] [0x0007001000000000] MaterialFunctionInfos
+[Name 86] [0x0007001000000000] MaterialGroups
+[Name 87] [0x0007001000000000] MaterialInstanceConstant
+[Name 88] [0x0007001000000000] Materials
+[Name 89] [0x0007001000000000] MipTailBaseIdx
+[Name 90] [0x0007001000000000] MLM_Unlit
+[Name 91] [0x0007001000000000] NameProperty
+[Name 92] [0x0007001000000000] None
+[Name 93] [0x0007001000000000] Normal
+[Name 94] [0x0007001000000000] ObjectLocalToWorldData
+[Name 95] [0x0007001000000000] ObjectPivotPoint
+[Name 96] [0x0007001000000000] ObjectProperty
+[Name 97] [0x0007001000000000] ObjectReferencer
+[Name 98] [0x0007001000000000] Opacity
+[Name 99] [0x0007001000000000] OpacityMask
+[Name 100] [0x0007001000000000] OriginalSizeX
+[Name 101] [0x0007001000000000] OriginalSizeY
+[Name 102] [0x0007001000000000] OutputIndex
+[Name 103] [0x0007001000000000] Package
+[Name 104] [0x0007001000000000] PaintMaterialGroup
+[Name 105] [0x0007001000000000] Paints
+[Name 106] [0x0007001000000000] ParameterName
+[Name 107] [0x0007001000000000] ParameterValue
+[Name 108] [0x0007001000000000] Parent
+[Name 109] [0x0007001000000000] ParentLightingGuid
+[Name 110] [0x0007001000000000] ParticleSystem
+[Name 111] [0x0007001000000000] PAS_Hat
+[Name 112] [0x0007001000000000] PF_A8R8G8B8
+[Name 113] [0x0007001000000000] PF_DXT1
+[Name 114] [0x0007001000000000] PF_DXT5
+[Name 115] [0x0007001000000000] PivotPainter
+[Name 116] [0x0007001000000000] PivotPainter_PerObjectData
+[Name 117] [0x0007001000000000] PlatinumMetal_00
+[Name 118] [0x0007001000000000] ProductAsset_Attachment_TA
+[Name 119] [0x0007001000000000] ProductAttribute_PaintSettings_TA
+[Name 120] [0x0007001000000000] ProductPaint
+[Name 121] [0x0007001000000000] ProductPaint_TA
+[Name 122] [0x0007001000000000] ProductSlot_TA
+[Name 123] [0x0007001000000000] ProductSlots
+[Name 124] [0x0007001000000000] Psy_MaterialFunctions
+[Name 125] [0x0007001000000000] ReferencedObjects
+[Name 126] [0x0007001000000000] RoseGoldMetal_00
+[Name 127] [0x0007001000000000] Rotation
+[Name 128] [0x0007001000000000] Rotator
+[Name 129] [0x0007001000000000] ScalarMaterialInput
+[Name 130] [0x0007001000000000] ScalarParameterValues
+[Name 131] [0x0007001000000000] Scale
+[Name 132] [0x0007001000000000] SizeX
+[Name 133] [0x0007001000000000] SizeY
+[Name 134] [0x0007001000000000] SkeletalMesh
+[Name 135] [0x0007001000000000] SkullPaintedTextureLightness
+[Name 136] [0x0007001000000000] Socket
+[Name 137] [0x0007001000000000] Spec
+[Name 138] [0x0007001000000000] spec power
+[Name 139] [0x0007001000000000] SpecularColor
+[Name 140] [0x0007001000000000] SpecularPower
+[Name 141] [0x0007001000000000] Spinner_Speed
+[Name 142] [0x0007001000000000] SRGB
+[Name 143] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 144] [0x0007001000000000] StateId
+[Name 145] [0x0007001000000000] StaticMesh
+[Name 146] [0x0007001000000000] StrProperty
+[Name 147] [0x0007001000000000] StructProperty
+[Name 148] [0x0007001000000000] T_Hat_Skullfire_D
+[Name 149] [0x0007001000000000] T_Hat_Skullfire_N
+[Name 150] [0x0007001000000000] TAGame
+[Name 151] [0x0007001000000000] TC_NormalmapSwizzle
+[Name 152] [0x0007001000000000] TC_VectorDisplacementmap
+[Name 153] [0x0007001000000000] Texture2D
+[Name 154] [0x0007001000000000] TextureCompressionSettings
+[Name 155] [0x0007001000000000] TextureFileCacheName
+[Name 156] [0x0007001000000000] TextureGroup
+[Name 157] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 158] [0x0007001000000000] Textures
+[Name 159] [0x0007001000000000] Textures3
+[Name 160] [0x0007001000000000] ThumbnailCameraRotationOffset
+[Name 161] [0x0007001000000000] ThumbnailCameraTranslationOffset
+[Name 162] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
+[Name 163] [0x0007001000000000] tile
+[Name 164] [0x0007001000000000] Translation
+[Name 165] [0x0007001000000000] TwoSided
+[Name 166] [0x0007001000000000] UnpackMin
+[Name 167] [0x0007001000000000] UnsupportedPaints
+[Name 168] [0x0007001000000000] Vector
+[Name 169] [0x0007001000000000] VectorMaterialInput
+[Name 170] [0x0007001000000000] VectorParameterValues
+[Name 171] [0x0007001000000000] WhiteGoldMetal_00
+[Name 172] [0x0007001000000000] WindDirectionXYZ-RGB
+[Name 173] [0x0007001000000000] WindInt
+[Name 174] [0x0007001000000000] WindSpeed
+[Name 175] [0x0007001000000000] WorldPositionOffset
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UMaterial hat_skullfire.hat_skullfire.M_Hat_Skullfire_Fire
 	Name: M_Hat_Skullfire_Fire
-	Class: Material
-	Outer: Package hat_skullfire
+	Class: UMaterial
+	Outer: hat_skullfire
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x000000000000222a with 0x00000656 Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterial hat_skullfire.hat_skullfire.M_Hat_Skullfire_Skull
 	Name: M_Hat_Skullfire_Skull
-	Class: Material
-	Outer: Package hat_skullfire
+	Class: UMaterial
+	Outer: hat_skullfire
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000002880 with 0x0000060c Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterialExpressionScalarParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Fire.MaterialExpressionScalarParameter_3
 	Name: MaterialExpressionScalarParameter_3
-	Class: MaterialExpressionScalarParameter
-	Outer: Material M_Hat_Skullfire_Fire
+	Class: UMaterialExpressionScalarParameter
+	Outer: M_Hat_Skullfire_Fire
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002e8c with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterialExpressionScalarParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Fire.MaterialExpressionScalarParameter_4
 	Name: MaterialExpressionScalarParameter_4
-	Class: MaterialExpressionScalarParameter
-	Outer: Material M_Hat_Skullfire_Fire
+	Class: UMaterialExpressionScalarParameter
+	Outer: M_Hat_Skullfire_Fire
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002f20 with 0x000000b3 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UMaterialExpressionScalarParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Fire.MaterialExpressionScalarParameter_5
 	Name: MaterialExpressionScalarParameter_5
-	Class: MaterialExpressionScalarParameter
-	Outer: Material M_Hat_Skullfire_Fire
+	Class: UMaterialExpressionScalarParameter
+	Outer: M_Hat_Skullfire_Fire
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002fd3 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UMaterialExpressionScalarParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Fire.MaterialExpressionScalarParameter_6
 	Name: MaterialExpressionScalarParameter_6
-	Class: MaterialExpressionScalarParameter
-	Outer: Material M_Hat_Skullfire_Fire
+	Class: UMaterialExpressionScalarParameter
+	Outer: M_Hat_Skullfire_Fire
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003067 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UMaterialExpressionScalarParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Fire.MaterialExpressionScalarParameter_8
 	Name: MaterialExpressionScalarParameter_8
-	Class: MaterialExpressionScalarParameter
-	Outer: Material M_Hat_Skullfire_Fire
+	Class: UMaterialExpressionScalarParameter
+	Outer: M_Hat_Skullfire_Fire
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000030fb with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UMaterialExpressionScalarParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Fire.MaterialExpressionScalarParameter_9
 	Name: MaterialExpressionScalarParameter_9
-	Class: MaterialExpressionScalarParameter
-	Outer: Material M_Hat_Skullfire_Fire
+	Class: UMaterialExpressionScalarParameter
+	Outer: M_Hat_Skullfire_Fire
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000031af with 0x000000ad Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UMaterialExpressionScalarParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Skull.MaterialExpressionScalarParameter_0
 	Name: MaterialExpressionScalarParameter_0
-	Class: MaterialExpressionScalarParameter
-	Outer: Material M_Hat_Skullfire_Skull
+	Class: UMaterialExpressionScalarParameter
+	Outer: M_Hat_Skullfire_Skull
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000325c with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UMaterialExpressionScalarParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Skull.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material M_Hat_Skullfire_Skull
+	Class: UMaterialExpressionScalarParameter
+	Outer: M_Hat_Skullfire_Skull
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000032f0 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UMaterialExpressionScalarParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Skull.MaterialExpressionScalarParameter_11
 	Name: MaterialExpressionScalarParameter_11
-	Class: MaterialExpressionScalarParameter
-	Outer: Material M_Hat_Skullfire_Skull
+	Class: UMaterialExpressionScalarParameter
+	Outer: M_Hat_Skullfire_Skull
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003384 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UMaterialExpressionScalarParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Skull.MaterialExpressionScalarParameter_14
 	Name: MaterialExpressionScalarParameter_14
-	Class: MaterialExpressionScalarParameter
-	Outer: Material M_Hat_Skullfire_Skull
+	Class: UMaterialExpressionScalarParameter
+	Outer: M_Hat_Skullfire_Skull
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003418 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UMaterialExpressionScalarParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Skull.MaterialExpressionScalarParameter_15
 	Name: MaterialExpressionScalarParameter_15
-	Class: MaterialExpressionScalarParameter
-	Outer: Material M_Hat_Skullfire_Skull
+	Class: UMaterialExpressionScalarParameter
+	Outer: M_Hat_Skullfire_Skull
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000034ac with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UMaterialExpressionScalarParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Skull.MaterialExpressionScalarParameter_17
 	Name: MaterialExpressionScalarParameter_17
-	Class: MaterialExpressionScalarParameter
-	Outer: Material M_Hat_Skullfire_Skull
+	Class: UMaterialExpressionScalarParameter
+	Outer: M_Hat_Skullfire_Skull
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003540 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UMaterialExpressionScalarParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Skull.MaterialExpressionScalarParameter_18
 	Name: MaterialExpressionScalarParameter_18
-	Class: MaterialExpressionScalarParameter
-	Outer: Material M_Hat_Skullfire_Skull
+	Class: UMaterialExpressionScalarParameter
+	Outer: M_Hat_Skullfire_Skull
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000035d4 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UMaterialExpressionScalarParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Skull.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material M_Hat_Skullfire_Skull
+	Class: UMaterialExpressionScalarParameter
+	Outer: M_Hat_Skullfire_Skull
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003668 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Skull.MaterialExpressionStaticSwitchParameter_0
 	Name: MaterialExpressionStaticSwitchParameter_0
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material M_Hat_Skullfire_Skull
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: M_Hat_Skullfire_Skull
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000036fc with 0x00000170 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Skull.MaterialExpressionStaticSwitchParameter_1
 	Name: MaterialExpressionStaticSwitchParameter_1
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material M_Hat_Skullfire_Skull
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: M_Hat_Skullfire_Skull
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000386c with 0x000001e0 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UMaterialExpressionVectorParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Fire.MaterialExpressionVectorParameter_1
 	Name: MaterialExpressionVectorParameter_1
-	Class: MaterialExpressionVectorParameter
-	Outer: Material M_Hat_Skullfire_Fire
+	Class: UMaterialExpressionVectorParameter
+	Outer: M_Hat_Skullfire_Fire
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003a4c with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UMaterialExpressionVectorParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Fire.MaterialExpressionVectorParameter_4
 	Name: MaterialExpressionVectorParameter_4
-	Class: MaterialExpressionVectorParameter
-	Outer: Material M_Hat_Skullfire_Fire
+	Class: UMaterialExpressionVectorParameter
+	Outer: M_Hat_Skullfire_Fire
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003af4 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UMaterialExpressionVectorParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Skull.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material M_Hat_Skullfire_Skull
+	Class: UMaterialExpressionVectorParameter
+	Outer: M_Hat_Skullfire_Skull
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003b9c with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UMaterialExpressionVectorParameter hat_skullfire.hat_skullfire.M_Hat_Skullfire_Skull.MaterialExpressionVectorParameter_8
 	Name: MaterialExpressionVectorParameter_8
-	Class: MaterialExpressionVectorParameter
-	Outer: Material M_Hat_Skullfire_Skull
+	Class: UMaterialExpressionVectorParameter
+	Outer: M_Hat_Skullfire_Skull
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003c44 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UMaterialFunction hat_skullfire.Engine_MaterialFunctions02.ObjectLocalToWorldData
 	Name: ObjectLocalToWorldData
-	Class: MaterialFunction
-	Outer: Package Engine_MaterialFunctions02
+	Class: UMaterialFunction
+	Outer: Engine_MaterialFunctions02
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003cec with 0x00000106 Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UMaterialFunction hat_skullfire.Engine_MaterialFunctions02.PivotPainter.PivotPainter_PerObjectData
 	Name: PivotPainter_PerObjectData
-	Class: MaterialFunction
-	Outer: Package PivotPainter
+	Class: UMaterialFunction
+	Outer: PivotPainter
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003df2 with 0x0000018f Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UMaterialFunction hat_skullfire.Engine_MaterialFunctions02.WorldPositionOffset.ObjectPivotPoint
 	Name: ObjectPivotPoint
-	Class: MaterialFunction
-	Outer: Package WorldPositionOffset
+	Class: UMaterialFunction
+	Outer: WorldPositionOffset
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003f81 with 0x00000132 Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UMaterialInstanceConstant hat_skullfire.hat_skullfire.Hat_Skullfire_Fire_MIC
 	Name: Hat_Skullfire_Fire_MIC
-	Class: MaterialInstanceConstant
-	Outer: Package hat_skullfire
+	Class: UMaterialInstanceConstant
+	Outer: hat_skullfire
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000040b3 with 0x000003d0 Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UMaterialInstanceConstant hat_skullfire.hat_skullfire.M_Hat_Skullfire_Skull_MIC
 	Name: M_Hat_Skullfire_Skull_MIC
-	Class: MaterialInstanceConstant
-	Outer: Package hat_skullfire
+	Class: UMaterialInstanceConstant
+	Outer: hat_skullfire
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000004483 with 0x00000058 Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UMaterialInstanceConstant hat_skullfire.hat_skullfire.M_Hat_Skullfire_Skull_Painted_MIC
 	Name: M_Hat_Skullfire_Skull_Painted_MIC
-	Class: MaterialInstanceConstant
-	Outer: Package hat_skullfire
+	Class: UMaterialInstanceConstant
+	Outer: hat_skullfire
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000044db with 0x000001f1 Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UObjectReferencer hat_skullfire.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x00000000000046cc with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[29]
+[Export 29]
+	Full Name: UPackage hat_skullfire.Boost_Tests
 	Name: Boost_Tests
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000046f8 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[30]
+[Export 30]
+	Full Name: UPackage hat_skullfire.Boost_Tests.Textures
 	Name: Textures
-	Class: Package
-	Outer: Package Boost_Tests
+	Class: UPackage
+	Outer: Boost_Tests
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004704 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UPackage hat_skullfire.Engine_MaterialFunctions02
 	Name: Engine_MaterialFunctions02
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004710 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[32]
+[Export 32]
+	Full Name: UPackage hat_skullfire.Engine_MaterialFunctions02.PivotPainter
 	Name: PivotPainter
-	Class: Package
-	Outer: Package Engine_MaterialFunctions02
+	Class: UPackage
+	Outer: Engine_MaterialFunctions02
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000471c with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[33]
+[Export 33]
+	Full Name: UPackage hat_skullfire.Engine_MaterialFunctions02.WorldPositionOffset
 	Name: WorldPositionOffset
-	Class: Package
-	Outer: Package Engine_MaterialFunctions02
+	Class: UPackage
+	Outer: Engine_MaterialFunctions02
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004728 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UPackage hat_skullfire.hat_skullfire
 	Name: hat_skullfire
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004734 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[35]
+[Export 35]
+	Full Name: UPackage hat_skullfire.hat_skullfire_SF
 	Name: hat_skullfire_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004740 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[36]
+[Export 36]
+	Full Name: UProductAsset_Attachment_TA hat_skullfire.hat_skullfire.hat_skullfire
 	Name: hat_skullfire
-	Class: ProductAsset_Attachment_TA
-	Outer: Package hat_skullfire
+	Class: UProductAsset_Attachment_TA
+	Outer: hat_skullfire
 	Archetype: ProductAsset_Attachment_TA_2
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000474c with 0x0000025c Bytes
 	Export Flags: 0x00000001
-[37]
+[Export 37]
+	Full Name: UProductAttribute_PaintSettings_TA hat_skullfire.hat_skullfire.hat_skullfire.ProductAttribute_PaintSettings_TA_0
 	Name: ProductAttribute_PaintSettings_TA_0
-	Class: ProductAttribute_PaintSettings_TA
-	Outer: ProductAsset_Attachment_TA hat_skullfire
+	Class: UProductAttribute_PaintSettings_TA
+	Outer: hat_skullfire
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000049a8 with 0x00000088 Bytes
 	Export Flags: 0x00000001
-[38]
+[Export 38]
+	Full Name: UStaticMesh hat_skullfire.hat_skullfire.Hat_Skullfire_SM
 	Name: Hat_Skullfire_SM
-	Class: StaticMesh
-	Outer: Package hat_skullfire
+	Class: UStaticMesh
+	Outer: hat_skullfire
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000004a30 with 0x0003eb42 Bytes
 	Export Flags: 0x00000001
-[39]
+[Export 39]
+	Full Name: UTexture2D hat_skullfire.Boost_Tests.Textures.Flow_03
 	Name: Flow_03
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000043572 with 0x0000584d Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UTexture2D hat_skullfire.hat_skullfire.T_Hat_Skullfire_D
 	Name: T_Hat_Skullfire_D
-	Class: Texture2D
-	Outer: Package hat_skullfire
+	Class: UTexture2D
+	Outer: hat_skullfire
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000048dbf with 0x00000d10 Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UTexture2D hat_skullfire.hat_skullfire.T_Hat_Skullfire_N
 	Name: T_Hat_Skullfire_N
-	Class: Texture2D
-	Outer: Package hat_skullfire
+	Class: UTexture2D
+	Outer: hat_skullfire
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000049acf with 0x00001885 Bytes
 	Export Flags: 0x00000001
@@ -567,132 +610,159 @@ AES: iKxkZ9HwK1dhuPsjKAwat7ZYphch8Zg3T3Leiwu+caQ=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialExpressionStaticSwitchParameter
 	Name: MaterialExpressionStaticSwitchParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.MaterialExpressionVectorParameter
 	Name: MaterialExpressionVectorParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.MaterialFunction
 	Name: MaterialFunction
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.StaticMesh
 	Name: StaticMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[10]
+	Class Package: Core
+	Outer: Engine
+[Import 10]
+	Full Name: UClass TAGame.ProductAsset_Attachment_TA
 	Name: ProductAsset_Attachment_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[11]
+	Class Package: Core
+	Outer: TAGame
+[Import 11]
+	Full Name: UClass TAGame.ProductAttribute_PaintSettings_TA
 	Name: ProductAttribute_PaintSettings_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[12]
+	Class Package: Core
+	Outer: TAGame
+[Import 12]
+	Full Name: UMaterialFunction Psy_MaterialFunctions.LightnessShift
 	Name: LightnessShift
 	Class: MaterialFunction
-	Package: Engine
-	Outer: Package Psy_MaterialFunctions
-[13]
+	Class Package: Engine
+	Outer: Psy_MaterialFunctions
+[Import 13]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[14]
+	Class Package: Core
+[Import 14]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[15]
+	Class Package: Core
+[Import 15]
+	Full Name: UPackage ProductPaint
 	Name: ProductPaint
 	Class: Package
-	Package: Core
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UPackage ProductPaint.Paints
 	Name: Paints
 	Class: Package
-	Package: Core
-	Outer: Package ProductPaint
-[17]
+	Class Package: Core
+	Outer: ProductPaint
+[Import 17]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[18]
+	Class Package: Core
+[Import 18]
+	Full Name: UPackage Psy_MaterialFunctions
 	Name: Psy_MaterialFunctions
 	Class: Package
-	Package: Core
-[19]
+	Class Package: Core
+[Import 19]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[20]
+	Class Package: Core
+[Import 20]
+	Full Name: UProductAsset_Attachment_TA ProductSlots.Hat.ProductAsset_Attachment_TA_2
 	Name: ProductAsset_Attachment_TA_2
 	Class: ProductAsset_Attachment_TA
-	Package: TAGame
-	Outer: ProductSlot_TA Hat
-[21]
+	Class Package: TAGame
+	Outer: Hat
+[Import 21]
+	Full Name: UProductPaint_TA ProductPaint.Paints.BlackMetal_00
 	Name: BlackMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[22]
+	Class Package: TAGame
+	Outer: Paints
+[Import 22]
+	Full Name: UProductPaint_TA ProductPaint.Paints.GoldMetal_00
 	Name: GoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[23]
+	Class Package: TAGame
+	Outer: Paints
+[Import 23]
+	Full Name: UProductPaint_TA ProductPaint.Paints.PlatinumMetal_00
 	Name: PlatinumMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[24]
+	Class Package: TAGame
+	Outer: Paints
+[Import 24]
+	Full Name: UProductPaint_TA ProductPaint.Paints.RoseGoldMetal_00
 	Name: RoseGoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[25]
+	Class Package: TAGame
+	Outer: Paints
+[Import 25]
+	Full Name: UProductPaint_TA ProductPaint.Paints.WhiteGoldMetal_00
 	Name: WhiteGoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[26]
+	Class Package: TAGame
+	Outer: Paints
+[Import 26]
+	Full Name: UProductSlot_TA ProductSlots.Hat
 	Name: Hat
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots

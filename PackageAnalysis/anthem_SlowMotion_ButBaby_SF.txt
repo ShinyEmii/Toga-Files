@@ -69,6 +69,7 @@ Test Data Size: 0x00003f3c
 Compressed Chunk Info Offset: 0x00000b9c
 Last Block Size: 0x0000000c
 Base Header Size: 0x000000ed
+Encrypted Header Size: 0x00004b00
 
 AES: NgmeBKxfWlmlDqeKJwNval63Voy6kjrgWybg/o0jmXE=
 
@@ -76,233 +77,207 @@ AES: NgmeBKxfWlmlDqeKJwNval63Voy6kjrgWybg/o0jmXE=
     ~ Names ~ 
 
 
-[0] AkAudio
-[1] AkBank
-[2] AkSoundCue
-[3] Album_Anthem_Fiesta_Latina2022
-[4] anthem_SlowMotion_ButBaby
-[5] anthem_SlowMotion_ButBaby_SF
-[6] ArrayProperty
-[7] bIsSourceArtUncompressed
-[8] BoolProperty
-[9] bReplicated
-[10] ByteProperty
-[11] Class
-[12] CompressionNone
-[13] Core
-[14] Engine
-[15] EpicSaveStinger
-[16] EPixelFormat
-[17] FiestaLatina_2022_WithEdgeFade
-[18] Format
-[19] GoalScoredStinger
-[20] GoalStinger
-[21] Icon
-[22] IconLarge
-[23] Icons
-[24] IntProperty
-[25] Label
-[26] LODGroup
-[27] MipTailBaseIdx
-[28] MusicStingers
-[29] MVPAnthem
-[30] MX_Anthem_SlowMotion_ButBaby
-[31] NeverStream
-[32] None
-[33] ObjectProperty
-[34] ObjectReferencer
-[35] OnlineLabel
-[36] OriginalSizeX
-[37] OriginalSizeY
-[38] Package
-[39] PF_A8R8G8B8
-[40] PluralLabel
-[41] ProductAsset_MusicStingers_TA
-[42] ProductSlot_TA
-[43] ProductSlots
-[44] ReferencedObjects
-[45] RequiredBank
-[46] SizeX
-[47] SizeY
-[48] SlowMotion_ButBaby_EpicSave
-[49] SlowMotion_ButBaby_Goal
-[50] SlowMotion_ButBaby_MVP
-[51] SRGB
-[52] StandaloneSeekFreeReferencer
-[53] StartEvent
-[54] StopEvent
-[55] StrProperty
-[56] TAGame
-[57] Texture2D
-[58] TextureGroup
-[59] TEXTUREGROUP_UI
-[60] Thumbnail
+[Name 0] [0x0007001000000000] AkAudio
+[Name 1] [0x0007001000000000] AkBank
+[Name 2] [0x0007001000000000] AkSoundCue
+[Name 3] [0x0007000000000000] Album_Anthem_Fiesta_Latina2022
+[Name 4] [0x0007001000000000] anthem_SlowMotion_ButBaby
+[Name 5] [0x0007001000000000] anthem_SlowMotion_ButBaby_SF
+[Name 6] [0x0007001000000000] ArrayProperty
+[Name 7] [0x0007000000000000] bIsSourceArtUncompressed
+[Name 8] [0x0007000000000000] BoolProperty
+[Name 9] [0x0007000000000000] bReplicated
+[Name 10] [0x0007000000000000] ByteProperty
+[Name 11] [0x0007001000000000] Class
+[Name 12] [0x0007000000000000] CompressionNone
+[Name 13] [0x0007001000000000] Core
+[Name 14] [0x0007001000000000] Engine
+[Name 15] [0x0007001000000000] EpicSaveStinger
+[Name 16] [0x0007000000000000] EPixelFormat
+[Name 17] [0x0007000000000000] FiestaLatina_2022_WithEdgeFade
+[Name 18] [0x0007000000000000] Format
+[Name 19] [0x0007001000000000] GoalScoredStinger
+[Name 20] [0x0007000000000000] GoalStinger
+[Name 21] [0x0007000000000000] Icon
+[Name 22] [0x0007000000000000] IconLarge
+[Name 23] [0x0007000000000000] Icons
+[Name 24] [0x0007000000000000] IntProperty
+[Name 25] [0x0007000000000000] Label
+[Name 26] [0x0007000000000000] LODGroup
+[Name 27] [0x0007000000000000] MipTailBaseIdx
+[Name 28] [0x0007001000000000] MusicStingers
+[Name 29] [0x0007001000000000] MVPAnthem
+[Name 30] [0x0007001000000000] MX_Anthem_SlowMotion_ButBaby
+[Name 31] [0x0007000000000000] NeverStream
+[Name 32] [0x0007001000000000] None
+[Name 33] [0x0007001000000000] ObjectProperty
+[Name 34] [0x0007001000000000] ObjectReferencer
+[Name 35] [0x0007000000000000] OnlineLabel
+[Name 36] [0x0007000000000000] OriginalSizeX
+[Name 37] [0x0007000000000000] OriginalSizeY
+[Name 38] [0x0007001000000000] Package
+[Name 39] [0x0007000000000000] PF_A8R8G8B8
+[Name 40] [0x0007000000000000] PluralLabel
+[Name 41] [0x0007001000000000] ProductAsset_MusicStingers_TA
+[Name 42] [0x0007001000000000] ProductSlot_TA
+[Name 43] [0x0007001000000000] ProductSlots
+[Name 44] [0x0007001000000000] ReferencedObjects
+[Name 45] [0x0007001000000000] RequiredBank
+[Name 46] [0x0007000000000000] SizeX
+[Name 47] [0x0007000000000000] SizeY
+[Name 48] [0x0007001000000000] SlowMotion_ButBaby_EpicSave
+[Name 49] [0x0007001000000000] SlowMotion_ButBaby_Goal
+[Name 50] [0x0007001000000000] SlowMotion_ButBaby_MVP
+[Name 51] [0x0007000000000000] SRGB
+[Name 52] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 53] [0x0007001000000000] StartEvent
+[Name 54] [0x0007001000000000] StopEvent
+[Name 55] [0x0007001000000000] StrProperty
+[Name 56] [0x0007001000000000] TAGame
+[Name 57] [0x0007000000000000] Texture2D
+[Name 58] [0x0007000000000000] TextureGroup
+[Name 59] [0x0007000000000000] TEXTUREGROUP_UI
+[Name 60] [0x0007000000000000] Thumbnail
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAkBank anthem_SlowMotion_ButBaby.anthem_SlowMotion_ButBaby.MX_Anthem_SlowMotion_ButBaby
 	Name: MX_Anthem_SlowMotion_ButBaby
-	Class: AkBank
-	Outer: Package anthem_SlowMotion_ButBaby
+	Class: UAkBank
+	Outer: anthem_SlowMotion_ButBaby
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000c89 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UAkSoundCue anthem_SlowMotion_ButBaby.anthem_SlowMotion_ButBaby.SlowMotion_ButBaby_EpicSave
 	Name: SlowMotion_ButBaby_EpicSave
-	Class: AkSoundCue
-	Outer: Package anthem_SlowMotion_ButBaby
+	Class: UAkSoundCue
+	Outer: anthem_SlowMotion_ButBaby
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000c95 with 0x000000a0 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UAkSoundCue anthem_SlowMotion_ButBaby.anthem_SlowMotion_ButBaby.SlowMotion_ButBaby_Goal
 	Name: SlowMotion_ButBaby_Goal
-	Class: AkSoundCue
-	Outer: Package anthem_SlowMotion_ButBaby
+	Class: UAkSoundCue
+	Outer: anthem_SlowMotion_ButBaby
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000d35 with 0x0000009c Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UAkSoundCue anthem_SlowMotion_ButBaby.anthem_SlowMotion_ButBaby.SlowMotion_ButBaby_MVP
 	Name: SlowMotion_ButBaby_MVP
-	Class: AkSoundCue
-	Outer: Package anthem_SlowMotion_ButBaby
+	Class: UAkSoundCue
+	Outer: anthem_SlowMotion_ButBaby
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000dd1 with 0x0000009b Bytes
 	Export Flags: 0x00000001
-[4]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[5]
+[Export 5]
+	Full Name: UObjectReferencer anthem_SlowMotion_ButBaby.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000000e78 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[6]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[7]
+[Export 7]
+	Full Name: UPackage anthem_SlowMotion_ButBaby.anthem_SlowMotion_ButBaby
 	Name: anthem_SlowMotion_ButBaby
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000eb0 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[8]
+[Export 8]
+	Full Name: UPackage anthem_SlowMotion_ButBaby.anthem_SlowMotion_ButBaby_SF
 	Name: anthem_SlowMotion_ButBaby_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000ebc with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[9]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[10]
+[Export 10]
+	Full Name: UProductAsset_MusicStingers_TA anthem_SlowMotion_ButBaby.anthem_SlowMotion_ButBaby.anthem_SlowMotion_ButBaby
 	Name: anthem_SlowMotion_ButBaby
-	Class: ProductAsset_MusicStingers_TA
-	Outer: Package anthem_SlowMotion_ButBaby
+	Class: UProductAsset_MusicStingers_TA
+	Outer: anthem_SlowMotion_ButBaby
 	Archetype: ProductAsset_MusicStingers_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000411cf with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[11]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[12]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
 
 
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass AkAudio.AkSoundCue
 	Name: AkSoundCue
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[1]
+	Class Package: Core
+	Outer: AkAudio
+[Import 1]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[2]
+	Class Package: Core
+	Outer: Core
+[Import 2]
+	Full Name: UClass Engine.AkBank
 	Name: AkBank
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
-	Name: None
-	Class: None
-	Package: None
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass TAGame.ProductAsset_MusicStingers_TA
 	Name: ProductAsset_MusicStingers_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
-	Name: None
-	Class: None
-	Package: None
-[7]
+	Class Package: Core
+	Outer: TAGame
+[Import 7]
+	Full Name: UPackage AkAudio
 	Name: AkAudio
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[10]
-	Name: None
-	Class: None
-	Package: None
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[12]
-	Name: None
-	Class: None
-	Package: None
-[13]
+	Class Package: Core
+[Import 13]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[14]
+	Class Package: Core
+[Import 14]
+	Full Name: UProductAsset_MusicStingers_TA ProductSlots.MusicStingers.ProductAsset_MusicStingers_TA_0
 	Name: ProductAsset_MusicStingers_TA_0
 	Class: ProductAsset_MusicStingers_TA
-	Package: TAGame
-	Outer: ProductSlot_TA MusicStingers
-[15]
+	Class Package: TAGame
+	Outer: MusicStingers
+[Import 15]
+	Full Name: UProductSlot_TA ProductSlots.MusicStingers
 	Name: MusicStingers
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots

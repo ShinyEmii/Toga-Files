@@ -95,6 +95,7 @@ Test Data Size: 0x00003fa5
 Compressed Chunk Info Offset: 0x00002437
 Last Block Size: 0x00000008
 Base Header Size: 0x00000151
+Encrypted Header Size: 0x000063f0
 
 AES: VbhKIbyV0Y9BCx7kjd/6nG+k0Ls/4DOSrNI4VRr0XIE=
 
@@ -102,516 +103,564 @@ AES: VbhKIbyV0Y9BCx7kjd/6nG+k0Ls/4DOSrNI4VRr0XIE=
     ~ Names ~ 
 
 
-[0] AddressX
-[1] AddressY
-[2] ArrayProperty
-[3] Attributes
-[4] bIsSourceArtUncompressed
-[5] Black_00
-[6] BlackMetal_00
-[7] BLEND_Translucent
-[8] BlendMode
-[9] Blue_01
-[10] BoolProperty
-[11] bReplicated
-[12] ByteProperty
-[13] Class
-[14] ColorMaterialInput
-[15] CompressionNone
-[16] Core
-[17] CustomColor
-[18] Default__ProductAsset_Wheel_TA
-[19] DefaultGenerator
-[20] DefaultProduct_New
-[21] DefaultValue
-[22] Description
-[23] Diffuse_Intensity
-[24] DiffuseColor
-[25] EBlendMode
-[26] Emissive_Intensity
-[27] EmissiveColor
-[28] Engine
-[29] EPixelFormat
-[30] Expression
-[31] ExpressionGUID
-[32] Expressions
-[33] FirstResourceMemMip
-[34] FloatProperty
-[35] Flowerdog_infinity_Gradient
-[36] Format
-[37] FrontRight
-[38] Function
-[39] Generator
-[40] GoldMetal_00
-[41] Grass_Textures
-[42] GrassCube
-[43] Green_01
-[44] Grey_00
-[45] Group
-[46] Guid
-[47] Icon
-[48] IconLarge
-[49] Icons
-[50] Infinite_Intensity
-[51] Infinity
-[52] Infinity_Depth
-[53] Infinity_PanSpeed
-[54] IntProperty
-[55] Label
-[56] LightMapCoordinateIndex
-[57] LightMapResolution
-[58] LinearColor
-[59] MAT_Star_Infinity
-[60] MAT_Star_Infinity_InnerRim
-[61] Material
-[62] MaterialExpressionScalarParameter
-[63] MaterialExpressionVectorParameter
-[64] MaterialFunction
-[65] MaterialFunctionInfos
-[66] MaterialGroups
-[67] MaterialInstanceConstant
-[68] MaterialName
-[69] Materials
-[70] MIC_Star_Infinity
-[71] MIC_Star_Infinity_InnerRim
-[72] MipTailBaseIdx
-[73] NameProperty
-[74] None
-[75] Normal
-[76] ObjectProperty
-[77] ObjectReferencer
-[78] OEM_D
-[79] OEM_N
-[80] OEM_RGB
-[81] OnlineLabel
-[82] Opacity
-[83] OriginalSizeX
-[84] OriginalSizeY
-[85] OutputIndex
-[86] Overrides
-[87] Package
-[88] PaintMaterialGroup
-[89] Paints
-[90] PaintsToOverride
-[91] PaintToOverride
-[92] ParameterName
-[93] ParameterValue
-[94] Parent
-[95] ParentLightingGuid
-[96] PF_A8R8G8B8
-[97] PF_DXT1
-[98] PF_DXT5
-[99] PlatinumMetal_00
-[100] PluralLabel
-[101] PrevGenerator
-[102] Product_TA
-[103] ProductAsset_Wheel_TA
-[104] ProductAttribute_PaintSettings_TA
-[105] ProductOverride_MaterialParameter_TA
-[106] ProductPaint
-[107] ProductPaint_TA
-[108] Products
-[109] ProductsDB
-[110] ProductSlot_TA
-[111] ProductSlots
-[112] Psy_MaterialFunctions
-[113] ReferencedObjects
-[114] RoseGoldMetal_00
-[115] Rotator
-[116] ScalarMaterialInput
-[117] ScalarParameterValues
-[118] Scale3D
-[119] SizeX
-[120] SizeY
-[121] Specular
-[122] SpecularColor
-[123] SpecularPower
-[124] SRGB
-[125] StandaloneSeekFreeReferencer
-[126] StateId
-[127] StaticMesh
-[128] StrProperty
-[129] StructProperty
-[130] TA_Clamp
-[131] TAGame
-[132] Texture2D
-[133] TextureAddress
-[134] TextureFileCacheName
-[135] TextureRenderTargetCube
-[136] Textures
-[137] Textures5
-[138] ThumbnailCameraRotationOffset
-[139] ThumbnailProductRotation
-[140] ThumbnailRenderer
-[141] ThumbnailRenderer_TA
-[142] ThumbnailRenderers
-[143] UnsupportedPaints
-[144] Vector
-[145] VectorMaterialInput
-[146] wheel_flowerdog_infinity
-[147] Wheel_Renderer
-[148] WHEEL_Star
-[149] wheel_star_infinity
-[150] Wheel_Star_Infinity_GradiantDrop
-[151] Wheel_Star_Infinity_Rim_RGB
-[152] wheel_star_infinity_SF
-[153] Wheel_Star_Infinity_SM
-[154] Wheel_Star_Infinity_Stripes_01
-[155] Wheel_Star_Infinity_Stripes_02
-[156] Wheel_Star_Infinity_Tread_Infinite2
-[157] Wheel_Star_Infinity_Tread_RGB
-[158] WheelAssetGenerator_1Wheel_TA
-[159] WheelAssetSettings_TA
-[160] Wheels
-[161] White_00
-[162] WhiteGoldMetal_00
-[163] WorldENV
-[164] WorldENV_Amount
-[165] Yellow_00
+[Name 0] [0x0007001000000000] AddressX
+[Name 1] [0x0007001000000000] AddressY
+[Name 2] [0x0007001000000000] ArrayProperty
+[Name 3] [0x0007001000000000] Attributes
+[Name 4] [0x0007001000000000] bIsSourceArtUncompressed
+[Name 5] [0x0007001000000000] Black_00
+[Name 6] [0x0007001000000000] BlackMetal_00
+[Name 7] [0x0007001000000000] BLEND_Translucent
+[Name 8] [0x0007001000000000] BlendMode
+[Name 9] [0x0007001000000000] Blue_01
+[Name 10] [0x0007001000000000] BoolProperty
+[Name 11] [0x0007001000000000] bReplicated
+[Name 12] [0x0007001000000000] ByteProperty
+[Name 13] [0x0007001000000000] Class
+[Name 14] [0x0007001000000000] ColorMaterialInput
+[Name 15] [0x0007001000000000] CompressionNone
+[Name 16] [0x0007001000000000] Core
+[Name 17] [0x0007001000000000] CustomColor
+[Name 18] [0x0007001000000000] Default__ProductAsset_Wheel_TA
+[Name 19] [0x0007001000000000] DefaultGenerator
+[Name 20] [0x0007001000000000] DefaultProduct_New
+[Name 21] [0x0007001000000000] DefaultValue
+[Name 22] [0x0007001000000000] Description
+[Name 23] [0x0007001000000000] Diffuse_Intensity
+[Name 24] [0x0007001000000000] DiffuseColor
+[Name 25] [0x0007001000000000] EBlendMode
+[Name 26] [0x0007001000000000] Emissive_Intensity
+[Name 27] [0x0007001000000000] EmissiveColor
+[Name 28] [0x0007001000000000] Engine
+[Name 29] [0x0007001000000000] EPixelFormat
+[Name 30] [0x0007001000000000] Expression
+[Name 31] [0x0007001000000000] ExpressionGUID
+[Name 32] [0x0007001000000000] Expressions
+[Name 33] [0x0007001000000000] FirstResourceMemMip
+[Name 34] [0x0007001000000000] FloatProperty
+[Name 35] [0x0007001000000000] Flowerdog_infinity_Gradient
+[Name 36] [0x0007001000000000] Format
+[Name 37] [0x0007001000000000] FrontRight
+[Name 38] [0x0007001000000000] Function
+[Name 39] [0x0007001000000000] Generator
+[Name 40] [0x0007001000000000] GoldMetal_00
+[Name 41] [0x0007001000000000] Grass_Textures
+[Name 42] [0x0007001000000000] GrassCube
+[Name 43] [0x0007001000000000] Green_01
+[Name 44] [0x0007001000000000] Grey_00
+[Name 45] [0x0007001000000000] Group
+[Name 46] [0x0007001000000000] Guid
+[Name 47] [0x0007001000000000] Icon
+[Name 48] [0x0007001000000000] IconLarge
+[Name 49] [0x0007001000000000] Icons
+[Name 50] [0x0007001000000000] Infinite_Intensity
+[Name 51] [0x0007001000000000] Infinity
+[Name 52] [0x0007001000000000] Infinity_Depth
+[Name 53] [0x0007001000000000] Infinity_PanSpeed
+[Name 54] [0x0007001000000000] IntProperty
+[Name 55] [0x0007001000000000] Label
+[Name 56] [0x0007001000000000] LightMapCoordinateIndex
+[Name 57] [0x0007001000000000] LightMapResolution
+[Name 58] [0x0007001000000000] LinearColor
+[Name 59] [0x0007001000000000] MAT_Star_Infinity
+[Name 60] [0x0007001000000000] MAT_Star_Infinity_InnerRim
+[Name 61] [0x0007001000000000] Material
+[Name 62] [0x0007001000000000] MaterialExpressionScalarParameter
+[Name 63] [0x0007001000000000] MaterialExpressionVectorParameter
+[Name 64] [0x0007001000000000] MaterialFunction
+[Name 65] [0x0007001000000000] MaterialFunctionInfos
+[Name 66] [0x0007001000000000] MaterialGroups
+[Name 67] [0x0007001000000000] MaterialInstanceConstant
+[Name 68] [0x0007001000000000] MaterialName
+[Name 69] [0x0007001000000000] Materials
+[Name 70] [0x0007001000000000] MIC_Star_Infinity
+[Name 71] [0x0007001000000000] MIC_Star_Infinity_InnerRim
+[Name 72] [0x0007001000000000] MipTailBaseIdx
+[Name 73] [0x0007001000000000] NameProperty
+[Name 74] [0x0007001000000000] None
+[Name 75] [0x0007001000000000] Normal
+[Name 76] [0x0007001000000000] ObjectProperty
+[Name 77] [0x0007001000000000] ObjectReferencer
+[Name 78] [0x0007001000000000] OEM_D
+[Name 79] [0x0007001000000000] OEM_N
+[Name 80] [0x0007001000000000] OEM_RGB
+[Name 81] [0x0007001000000000] OnlineLabel
+[Name 82] [0x0007001000000000] Opacity
+[Name 83] [0x0007001000000000] OriginalSizeX
+[Name 84] [0x0007001000000000] OriginalSizeY
+[Name 85] [0x0007001000000000] OutputIndex
+[Name 86] [0x0007001000000000] Overrides
+[Name 87] [0x0007001000000000] Package
+[Name 88] [0x0007001000000000] PaintMaterialGroup
+[Name 89] [0x0007001000000000] Paints
+[Name 90] [0x0007001000000000] PaintsToOverride
+[Name 91] [0x0007001000000000] PaintToOverride
+[Name 92] [0x0007001000000000] ParameterName
+[Name 93] [0x0007001000000000] ParameterValue
+[Name 94] [0x0007001000000000] Parent
+[Name 95] [0x0007001000000000] ParentLightingGuid
+[Name 96] [0x0007001000000000] PF_A8R8G8B8
+[Name 97] [0x0007001000000000] PF_DXT1
+[Name 98] [0x0007001000000000] PF_DXT5
+[Name 99] [0x0007001000000000] PlatinumMetal_00
+[Name 100] [0x0007001000000000] PluralLabel
+[Name 101] [0x0007001000000000] PrevGenerator
+[Name 102] [0x0007001000000000] Product_TA
+[Name 103] [0x0007001000000000] ProductAsset_Wheel_TA
+[Name 104] [0x0007001000000000] ProductAttribute_PaintSettings_TA
+[Name 105] [0x0007001000000000] ProductOverride_MaterialParameter_TA
+[Name 106] [0x0007001000000000] ProductPaint
+[Name 107] [0x0007001000000000] ProductPaint_TA
+[Name 108] [0x0007001000000000] Products
+[Name 109] [0x0007001000000000] ProductsDB
+[Name 110] [0x0007001000000000] ProductSlot_TA
+[Name 111] [0x0007001000000000] ProductSlots
+[Name 112] [0x0007001000000000] Psy_MaterialFunctions
+[Name 113] [0x0007001000000000] ReferencedObjects
+[Name 114] [0x0007001000000000] RoseGoldMetal_00
+[Name 115] [0x0007001000000000] Rotator
+[Name 116] [0x0007001000000000] ScalarMaterialInput
+[Name 117] [0x0007001000000000] ScalarParameterValues
+[Name 118] [0x0007001000000000] Scale3D
+[Name 119] [0x0007001000000000] SizeX
+[Name 120] [0x0007001000000000] SizeY
+[Name 121] [0x0007001000000000] Specular
+[Name 122] [0x0007001000000000] SpecularColor
+[Name 123] [0x0007001000000000] SpecularPower
+[Name 124] [0x0007001000000000] SRGB
+[Name 125] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 126] [0x0007001000000000] StateId
+[Name 127] [0x0007001000000000] StaticMesh
+[Name 128] [0x0007001000000000] StrProperty
+[Name 129] [0x0007001000000000] StructProperty
+[Name 130] [0x0007001000000000] TA_Clamp
+[Name 131] [0x0007001000000000] TAGame
+[Name 132] [0x0007001000000000] Texture2D
+[Name 133] [0x0007001000000000] TextureAddress
+[Name 134] [0x0007001000000000] TextureFileCacheName
+[Name 135] [0x0007001000000000] TextureRenderTargetCube
+[Name 136] [0x0007001000000000] Textures
+[Name 137] [0x0007001000000000] Textures5
+[Name 138] [0x0007001000000000] ThumbnailCameraRotationOffset
+[Name 139] [0x0007001000000000] ThumbnailProductRotation
+[Name 140] [0x0007001000000000] ThumbnailRenderer
+[Name 141] [0x0007001000000000] ThumbnailRenderer_TA
+[Name 142] [0x0007001000000000] ThumbnailRenderers
+[Name 143] [0x0007001000000000] UnsupportedPaints
+[Name 144] [0x0007001000000000] Vector
+[Name 145] [0x0007001000000000] VectorMaterialInput
+[Name 146] [0x0007001000000000] wheel_flowerdog_infinity
+[Name 147] [0x0007001000000000] Wheel_Renderer
+[Name 148] [0x0007001000000000] WHEEL_Star
+[Name 149] [0x0007001000000000] wheel_star_infinity
+[Name 150] [0x0007001000000000] Wheel_Star_Infinity_GradiantDrop
+[Name 151] [0x0007001000000000] Wheel_Star_Infinity_Rim_RGB
+[Name 152] [0x0007001000000000] wheel_star_infinity_SF
+[Name 153] [0x0007001000000000] Wheel_Star_Infinity_SM
+[Name 154] [0x0007001000000000] Wheel_Star_Infinity_Stripes_01
+[Name 155] [0x0007001000000000] Wheel_Star_Infinity_Stripes_02
+[Name 156] [0x0007001000000000] Wheel_Star_Infinity_Tread_Infinite2
+[Name 157] [0x0007001000000000] Wheel_Star_Infinity_Tread_RGB
+[Name 158] [0x0007001000000000] WheelAssetGenerator_1Wheel_TA
+[Name 159] [0x0007001000000000] WheelAssetSettings_TA
+[Name 160] [0x0007001000000000] Wheels
+[Name 161] [0x0007001000000000] White_00
+[Name 162] [0x0007001000000000] WhiteGoldMetal_00
+[Name 163] [0x0007001000000000] WorldENV
+[Name 164] [0x0007001000000000] WorldENV_Amount
+[Name 165] [0x0007001000000000] Yellow_00
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UMaterial wheel_star_infinity.wheel_star_infinity.MAT_Star_Infinity
 	Name: MAT_Star_Infinity
-	Class: Material
-	Outer: Package wheel_star_infinity
+	Class: UMaterial
+	Outer: wheel_star_infinity
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000002588 with 0x00000534 Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterial wheel_star_infinity.wheel_star_infinity.MAT_Star_Infinity_InnerRim
 	Name: MAT_Star_Infinity_InnerRim
-	Class: Material
-	Outer: Package wheel_star_infinity
+	Class: UMaterial
+	Outer: wheel_star_infinity
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000002abc with 0x00000168 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterialExpressionScalarParameter wheel_star_infinity.wheel_star_infinity.MAT_Star_Infinity.MaterialExpressionScalarParameter_0
 	Name: MaterialExpressionScalarParameter_0
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Star_Infinity
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Star_Infinity
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002c24 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterialExpressionScalarParameter wheel_star_infinity.wheel_star_infinity.MAT_Star_Infinity.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Star_Infinity
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Star_Infinity
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002cd8 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UMaterialExpressionScalarParameter wheel_star_infinity.wheel_star_infinity.MAT_Star_Infinity.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Star_Infinity
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Star_Infinity
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002d8c with 0x00000078 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UMaterialExpressionScalarParameter wheel_star_infinity.wheel_star_infinity.MAT_Star_Infinity.MaterialExpressionScalarParameter_3
 	Name: MaterialExpressionScalarParameter_3
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Star_Infinity
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Star_Infinity
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002e04 with 0x00000078 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UMaterialExpressionScalarParameter wheel_star_infinity.wheel_star_infinity.MAT_Star_Infinity.MaterialExpressionScalarParameter_4
 	Name: MaterialExpressionScalarParameter_4
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Star_Infinity
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Star_Infinity
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002e7c with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UMaterialExpressionScalarParameter wheel_star_infinity.wheel_star_infinity.MAT_Star_Infinity.MaterialExpressionScalarParameter_5
 	Name: MaterialExpressionScalarParameter_5
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Star_Infinity
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Star_Infinity
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002f10 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UMaterialExpressionScalarParameter wheel_star_infinity.wheel_star_infinity.MAT_Star_Infinity.MaterialExpressionScalarParameter_6
 	Name: MaterialExpressionScalarParameter_6
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Star_Infinity
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Star_Infinity
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002fa4 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UMaterialExpressionScalarParameter wheel_star_infinity.wheel_star_infinity.MAT_Star_Infinity.MaterialExpressionScalarParameter_8
 	Name: MaterialExpressionScalarParameter_8
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Star_Infinity
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Star_Infinity
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003038 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UMaterialExpressionScalarParameter wheel_star_infinity.wheel_star_infinity.MAT_Star_Infinity_InnerRim.MaterialExpressionScalarParameter_7
 	Name: MaterialExpressionScalarParameter_7
-	Class: MaterialExpressionScalarParameter
-	Outer: Material MAT_Star_Infinity_InnerRim
+	Class: UMaterialExpressionScalarParameter
+	Outer: MAT_Star_Infinity_InnerRim
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000030cc with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UMaterialExpressionVectorParameter wheel_star_infinity.wheel_star_infinity.MAT_Star_Infinity.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Star_Infinity
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Star_Infinity
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003160 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UMaterialExpressionVectorParameter wheel_star_infinity.wheel_star_infinity.MAT_Star_Infinity_InnerRim.MaterialExpressionVectorParameter_1
 	Name: MaterialExpressionVectorParameter_1
-	Class: MaterialExpressionVectorParameter
-	Outer: Material MAT_Star_Infinity_InnerRim
+	Class: UMaterialExpressionVectorParameter
+	Outer: MAT_Star_Infinity_InnerRim
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003208 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UMaterialInstanceConstant wheel_star_infinity.wheel_star_infinity.MIC_Star_Infinity
 	Name: MIC_Star_Infinity
-	Class: MaterialInstanceConstant
-	Outer: Package wheel_star_infinity
+	Class: UMaterialInstanceConstant
+	Outer: wheel_star_infinity
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000032b0 with 0x0000032c Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UMaterialInstanceConstant wheel_star_infinity.wheel_star_infinity.MIC_Star_Infinity_InnerRim
 	Name: MIC_Star_Infinity_InnerRim
-	Class: MaterialInstanceConstant
-	Outer: Package wheel_star_infinity
+	Class: UMaterialInstanceConstant
+	Outer: wheel_star_infinity
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000035dc with 0x00000058 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UProductAsset_Wheel_TA wheel_star_infinity.ProductSlots.Wheels.ProductAsset_Wheel_TA_0
 	Name: ProductAsset_Wheel_TA_0
-	Class: ProductAsset_Wheel_TA
-	Outer: ProductSlot_TA Wheels
+	Class: UProductAsset_Wheel_TA
+	Outer: Wheels
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003634 with 0x0000009c Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UObjectReferencer wheel_star_infinity.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x00000000000036d0 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[17]
+[Export 17]
+	Full Name: UPackage wheel_star_infinity.ProductSlots
 	Name: ProductSlots
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000036fc with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[18]
+[Export 18]
+	Full Name: UPackage wheel_star_infinity.wheel_flowerdog_infinity
 	Name: wheel_flowerdog_infinity
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003708 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[19]
+[Export 19]
+	Full Name: UPackage wheel_star_infinity.wheel_star_infinity
 	Name: wheel_star_infinity
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003714 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[20]
+[Export 20]
+	Full Name: UPackage wheel_star_infinity.wheel_star_infinity_SF
 	Name: wheel_star_infinity_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003720 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[21]
+[Export 21]
+	Full Name: UWheelAssetGenerator_1Wheel_TA wheel_star_infinity.ProductSlots.Wheels.ProductAsset_Wheel_TA_0.WheelAssetGenerator_1Wheel_TA_1
 	Name: WheelAssetGenerator_1Wheel_TA_1
-	Class: WheelAssetGenerator_1Wheel_TA
-	Outer: ProductAsset_Wheel_TA ProductAsset_Wheel_TA_0
+	Class: UWheelAssetGenerator_1Wheel_TA
+	Outer: ProductAsset_Wheel_TA_0
 	Archetype: DefaultGenerator
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000372c with 0x00000010 Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UProductAsset_Wheel_TA wheel_star_infinity.wheel_star_infinity.wheel_star_infinity
 	Name: wheel_star_infinity
-	Class: ProductAsset_Wheel_TA
-	Outer: Package wheel_star_infinity
+	Class: UProductAsset_Wheel_TA
+	Outer: wheel_star_infinity
 	Archetype: ProductAsset_Wheel_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000373c with 0x00000064 Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UProductAttribute_PaintSettings_TA wheel_star_infinity.wheel_star_infinity.wheel_star_infinity.ProductAttribute_PaintSettings_TA_0
 	Name: ProductAttribute_PaintSettings_TA_0
-	Class: ProductAttribute_PaintSettings_TA
-	Outer: ProductAsset_Wheel_TA wheel_star_infinity
+	Class: UProductAttribute_PaintSettings_TA
+	Outer: wheel_star_infinity
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000037a0 with 0x00000254 Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UProductOverride_MaterialParameter_TA wheel_star_infinity.wheel_star_infinity.wheel_star_infinity.ProductAttribute_PaintSettings_TA_0.ProductOverride_MaterialParameter_TA_0
 	Name: ProductOverride_MaterialParameter_TA_0
-	Class: ProductOverride_MaterialParameter_TA
-	Outer: ProductAttribute_PaintSettings_TA ProductAttribute_PaintSettings_TA_0
+	Class: UProductOverride_MaterialParameter_TA
+	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000039f4 with 0x00000130 Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UProductOverride_MaterialParameter_TA wheel_star_infinity.wheel_star_infinity.wheel_star_infinity.ProductAttribute_PaintSettings_TA_0.ProductOverride_MaterialParameter_TA_1
 	Name: ProductOverride_MaterialParameter_TA_1
-	Class: ProductOverride_MaterialParameter_TA
-	Outer: ProductAttribute_PaintSettings_TA ProductAttribute_PaintSettings_TA_0
+	Class: UProductOverride_MaterialParameter_TA
+	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003b24 with 0x000000bc Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UProductOverride_MaterialParameter_TA wheel_star_infinity.wheel_star_infinity.wheel_star_infinity.ProductAttribute_PaintSettings_TA_0.ProductOverride_MaterialParameter_TA_10
 	Name: ProductOverride_MaterialParameter_TA_10
-	Class: ProductOverride_MaterialParameter_TA
-	Outer: ProductAttribute_PaintSettings_TA ProductAttribute_PaintSettings_TA_0
+	Class: UProductOverride_MaterialParameter_TA
+	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003be0 with 0x000000bc Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UProductOverride_MaterialParameter_TA wheel_star_infinity.wheel_star_infinity.wheel_star_infinity.ProductAttribute_PaintSettings_TA_0.ProductOverride_MaterialParameter_TA_11
 	Name: ProductOverride_MaterialParameter_TA_11
-	Class: ProductOverride_MaterialParameter_TA
-	Outer: ProductAttribute_PaintSettings_TA ProductAttribute_PaintSettings_TA_0
+	Class: UProductOverride_MaterialParameter_TA
+	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003c9c with 0x000000bc Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UProductOverride_MaterialParameter_TA wheel_star_infinity.wheel_star_infinity.wheel_star_infinity.ProductAttribute_PaintSettings_TA_0.ProductOverride_MaterialParameter_TA_12
 	Name: ProductOverride_MaterialParameter_TA_12
-	Class: ProductOverride_MaterialParameter_TA
-	Outer: ProductAttribute_PaintSettings_TA ProductAttribute_PaintSettings_TA_0
+	Class: UProductOverride_MaterialParameter_TA
+	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003d58 with 0x000000bc Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UProductOverride_MaterialParameter_TA wheel_star_infinity.wheel_star_infinity.wheel_star_infinity.ProductAttribute_PaintSettings_TA_0.ProductOverride_MaterialParameter_TA_2
 	Name: ProductOverride_MaterialParameter_TA_2
-	Class: ProductOverride_MaterialParameter_TA
-	Outer: ProductAttribute_PaintSettings_TA ProductAttribute_PaintSettings_TA_0
+	Class: UProductOverride_MaterialParameter_TA
+	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003e14 with 0x000000bc Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UProductOverride_MaterialParameter_TA wheel_star_infinity.wheel_star_infinity.wheel_star_infinity.ProductAttribute_PaintSettings_TA_0.ProductOverride_MaterialParameter_TA_3
 	Name: ProductOverride_MaterialParameter_TA_3
-	Class: ProductOverride_MaterialParameter_TA
-	Outer: ProductAttribute_PaintSettings_TA ProductAttribute_PaintSettings_TA_0
+	Class: UProductOverride_MaterialParameter_TA
+	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003ed0 with 0x000000bc Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UProductOverride_MaterialParameter_TA wheel_star_infinity.wheel_star_infinity.wheel_star_infinity.ProductAttribute_PaintSettings_TA_0.ProductOverride_MaterialParameter_TA_4
 	Name: ProductOverride_MaterialParameter_TA_4
-	Class: ProductOverride_MaterialParameter_TA
-	Outer: ProductAttribute_PaintSettings_TA ProductAttribute_PaintSettings_TA_0
+	Class: UProductOverride_MaterialParameter_TA
+	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003f8c with 0x000000bc Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: UProductOverride_MaterialParameter_TA wheel_star_infinity.wheel_star_infinity.wheel_star_infinity.ProductAttribute_PaintSettings_TA_0.ProductOverride_MaterialParameter_TA_6
 	Name: ProductOverride_MaterialParameter_TA_6
-	Class: ProductOverride_MaterialParameter_TA
-	Outer: ProductAttribute_PaintSettings_TA ProductAttribute_PaintSettings_TA_0
+	Class: UProductOverride_MaterialParameter_TA
+	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004048 with 0x000000bc Bytes
 	Export Flags: 0x00000001
-[33]
+[Export 33]
+	Full Name: UProductOverride_MaterialParameter_TA wheel_star_infinity.wheel_star_infinity.wheel_star_infinity.ProductAttribute_PaintSettings_TA_0.ProductOverride_MaterialParameter_TA_7
 	Name: ProductOverride_MaterialParameter_TA_7
-	Class: ProductOverride_MaterialParameter_TA
-	Outer: ProductAttribute_PaintSettings_TA ProductAttribute_PaintSettings_TA_0
+	Class: UProductOverride_MaterialParameter_TA
+	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004104 with 0x00000130 Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UProductOverride_MaterialParameter_TA wheel_star_infinity.wheel_star_infinity.wheel_star_infinity.ProductAttribute_PaintSettings_TA_0.ProductOverride_MaterialParameter_TA_8
 	Name: ProductOverride_MaterialParameter_TA_8
-	Class: ProductOverride_MaterialParameter_TA
-	Outer: ProductAttribute_PaintSettings_TA ProductAttribute_PaintSettings_TA_0
+	Class: UProductOverride_MaterialParameter_TA
+	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004234 with 0x000000bc Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: UProductOverride_MaterialParameter_TA wheel_star_infinity.wheel_star_infinity.wheel_star_infinity.ProductAttribute_PaintSettings_TA_0.ProductOverride_MaterialParameter_TA_9
 	Name: ProductOverride_MaterialParameter_TA_9
-	Class: ProductOverride_MaterialParameter_TA
-	Outer: ProductAttribute_PaintSettings_TA ProductAttribute_PaintSettings_TA_0
+	Class: UProductOverride_MaterialParameter_TA
+	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000042f0 with 0x000000bc Bytes
 	Export Flags: 0x00000001
-[36]
+[Export 36]
+	Full Name: UProductSlot_TA wheel_star_infinity.ProductSlots.Wheels
 	Name: Wheels
-	Class: ProductSlot_TA
-	Outer: Package ProductSlots
+	Class: UProductSlot_TA
+	Outer: ProductSlots
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x00000000000043ac with 0x0000012b Bytes
 	Export Flags: 0x00000001
-[37]
+[Export 37]
+	Full Name: UStaticMesh wheel_star_infinity.wheel_star_infinity.Wheel_Star_Infinity_SM
 	Name: Wheel_Star_Infinity_SM
-	Class: StaticMesh
-	Outer: Package wheel_star_infinity
+	Class: UStaticMesh
+	Outer: wheel_star_infinity
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000044d7 with 0x000397cd Bytes
 	Export Flags: 0x00000001
-[38]
+[Export 38]
+	Full Name: UTexture2D wheel_star_infinity.wheel_flowerdog_infinity.Flowerdog_infinity_Gradient
 	Name: Flowerdog_infinity_Gradient
-	Class: Texture2D
-	Outer: Package wheel_flowerdog_infinity
+	Class: UTexture2D
+	Outer: wheel_flowerdog_infinity
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000003dca4 with 0x00000d28 Bytes
 	Export Flags: 0x00000001
-[39]
+[Export 39]
+	Full Name: UTexture2D wheel_star_infinity.wheel_star_infinity.Wheel_Star_Infinity_GradiantDrop
 	Name: Wheel_Star_Infinity_GradiantDrop
-	Class: Texture2D
-	Outer: Package wheel_star_infinity
+	Class: UTexture2D
+	Outer: wheel_star_infinity
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000003e9cc with 0x00000d0d Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UTexture2D wheel_star_infinity.wheel_star_infinity.Wheel_Star_Infinity_Rim_RGB
 	Name: Wheel_Star_Infinity_Rim_RGB
-	Class: Texture2D
-	Outer: Package wheel_star_infinity
+	Class: UTexture2D
+	Outer: wheel_star_infinity
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000003f6d9 with 0x000017ac Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UTexture2D wheel_star_infinity.wheel_star_infinity.Wheel_Star_Infinity_Stripes_01
 	Name: Wheel_Star_Infinity_Stripes_01
-	Class: Texture2D
-	Outer: Package wheel_star_infinity
+	Class: UTexture2D
+	Outer: wheel_star_infinity
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000040e85 with 0x00000cbc Bytes
 	Export Flags: 0x00000001
-[42]
+[Export 42]
+	Full Name: UTexture2D wheel_star_infinity.wheel_star_infinity.Wheel_Star_Infinity_Stripes_02
 	Name: Wheel_Star_Infinity_Stripes_02
-	Class: Texture2D
-	Outer: Package wheel_star_infinity
+	Class: UTexture2D
+	Outer: wheel_star_infinity
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000041b41 with 0x00000cbc Bytes
 	Export Flags: 0x00000001
-[43]
+[Export 43]
+	Full Name: UTexture2D wheel_star_infinity.wheel_star_infinity.Wheel_Star_Infinity_Tread_Infinite2
 	Name: Wheel_Star_Infinity_Tread_Infinite2
-	Class: Texture2D
-	Outer: Package wheel_star_infinity
+	Class: UTexture2D
+	Outer: wheel_star_infinity
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000427fd with 0x00000cd8 Bytes
 	Export Flags: 0x00000001
-[44]
+[Export 44]
+	Full Name: UTexture2D wheel_star_infinity.wheel_star_infinity.Wheel_Star_Infinity_Tread_RGB
 	Name: Wheel_Star_Infinity_Tread_RGB
-	Class: Texture2D
-	Outer: Package wheel_star_infinity
+	Class: UTexture2D
+	Outer: wheel_star_infinity
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000434d5 with 0x000057c2 Bytes
 	Export Flags: 0x00000001
-[45]
+[Export 45]
+	Full Name: UWheelAssetGenerator_1Wheel_TA wheel_star_infinity.wheel_star_infinity.wheel_star_infinity.WheelAssetGenerator_1Wheel_TA_0
 	Name: WheelAssetGenerator_1Wheel_TA_0
-	Class: WheelAssetGenerator_1Wheel_TA
-	Outer: ProductAsset_Wheel_TA wheel_star_infinity
+	Class: UWheelAssetGenerator_1Wheel_TA
+	Outer: wheel_star_infinity
 	Archetype: WheelAssetGenerator_1Wheel_TA_1
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000048c97 with 0x00000058 Bytes
 	Export Flags: 0x00000001
-[46]
+[Export 46]
+	Full Name: UWheelAssetSettings_TA wheel_star_infinity.wheel_star_infinity.wheel_star_infinity.WheelAssetGenerator_1Wheel_TA_0.WheelAssetSettings_TA_1
 	Name: WheelAssetSettings_TA_1
-	Class: WheelAssetSettings_TA
-	Outer: WheelAssetGenerator_1Wheel_TA WheelAssetGenerator_1Wheel_TA_0
+	Class: UWheelAssetSettings_TA
+	Outer: WheelAssetGenerator_1Wheel_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000048cef with 0x0000002c Bytes
 	Export Flags: 0x00000001
-[47]
+[Export 47]
+	Full Name: UWheelAssetSettings_TA wheel_star_infinity.wheel_star_infinity.wheel_star_infinity.WheelAssetGenerator_1Wheel_TA_0.WheelAssetSettings_TA_2
 	Name: WheelAssetSettings_TA_2
-	Class: WheelAssetSettings_TA
-	Outer: WheelAssetGenerator_1Wheel_TA WheelAssetGenerator_1Wheel_TA_0
+	Class: UWheelAssetSettings_TA
+	Outer: WheelAssetGenerator_1Wheel_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000048d1b with 0x00000058 Bytes
 	Export Flags: 0x00000001
@@ -620,229 +669,276 @@ AES: VbhKIbyV0Y9BCx7kjd/6nG+k0Ls/4DOSrNI4VRr0XIE=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialExpressionVectorParameter
 	Name: MaterialExpressionVectorParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.StaticMesh
 	Name: StaticMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass TAGame.ProductAsset_Wheel_TA
 	Name: ProductAsset_Wheel_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[9]
+	Class Package: Core
+	Outer: TAGame
+[Import 9]
+	Full Name: UClass TAGame.ProductAttribute_PaintSettings_TA
 	Name: ProductAttribute_PaintSettings_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[10]
+	Class Package: Core
+	Outer: TAGame
+[Import 10]
+	Full Name: UClass TAGame.ProductOverride_MaterialParameter_TA
 	Name: ProductOverride_MaterialParameter_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[11]
+	Class Package: Core
+	Outer: TAGame
+[Import 11]
+	Full Name: UClass TAGame.ProductSlot_TA
 	Name: ProductSlot_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[12]
+	Class Package: Core
+	Outer: TAGame
+[Import 12]
+	Full Name: UClass TAGame.WheelAssetGenerator_1Wheel_TA
 	Name: WheelAssetGenerator_1Wheel_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[13]
+	Class Package: Core
+	Outer: TAGame
+[Import 13]
+	Full Name: UClass TAGame.WheelAssetSettings_TA
 	Name: WheelAssetSettings_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[14]
+	Class Package: Core
+	Outer: TAGame
+[Import 14]
+	Full Name: UMaterialFunction Psy_MaterialFunctions.WorldENV
 	Name: WorldENV
 	Class: MaterialFunction
-	Package: Engine
-	Outer: Package Psy_MaterialFunctions
-[15]
+	Class Package: Engine
+	Outer: Psy_MaterialFunctions
+[Import 15]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UPackage Grass_Textures
 	Name: Grass_Textures
 	Class: Package
-	Package: Core
-[18]
+	Class Package: Core
+[Import 18]
+	Full Name: UPackage ProductPaint
 	Name: ProductPaint
 	Class: Package
-	Package: Core
-[19]
+	Class Package: Core
+[Import 19]
+	Full Name: UPackage ProductPaint.Paints
 	Name: Paints
 	Class: Package
-	Package: Core
-	Outer: Package ProductPaint
-[20]
+	Class Package: Core
+	Outer: ProductPaint
+[Import 20]
+	Full Name: UPackage ProductsDB
 	Name: ProductsDB
 	Class: Package
-	Package: Core
-[21]
+	Class Package: Core
+[Import 21]
+	Full Name: UPackage ProductsDB.Products
 	Name: Products
 	Class: Package
-	Package: Core
-	Outer: Package ProductsDB
-[22]
+	Class Package: Core
+	Outer: ProductsDB
+[Import 22]
+	Full Name: UPackage ProductSlots.Icons
 	Name: Icons
 	Class: Package
-	Package: Core
-	Outer: Package ProductSlots
-[23]
+	Class Package: Core
+	Outer: ProductSlots
+[Import 23]
+	Full Name: UPackage Psy_MaterialFunctions
 	Name: Psy_MaterialFunctions
 	Class: Package
-	Package: Core
-[24]
+	Class Package: Core
+[Import 24]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[25]
+	Class Package: Core
+[Import 25]
+	Full Name: UPackage ThumbnailRenderers
 	Name: ThumbnailRenderers
 	Class: Package
-	Package: Core
-[26]
+	Class Package: Core
+[Import 26]
+	Full Name: UPackage WHEEL_Star
 	Name: WHEEL_Star
 	Class: Package
-	Package: Core
-[27]
+	Class Package: Core
+[Import 27]
+	Full Name: UProduct_TA ProductsDB.Products.WHEEL_Star
 	Name: WHEEL_Star
 	Class: Product_TA
-	Package: TAGame
-	Outer: Package Products
-[28]
+	Class Package: TAGame
+	Outer: Products
+[Import 28]
+	Full Name: UProductAsset_Wheel_TA TAGame.Default__ProductAsset_Wheel_TA
 	Name: Default__ProductAsset_Wheel_TA
 	Class: ProductAsset_Wheel_TA
-	Package: TAGame
-	Outer: Package TAGame
-[29]
+	Class Package: TAGame
+	Outer: TAGame
+[Import 29]
+	Full Name: UProductPaint_TA ProductPaint.Paints.Black_00
 	Name: Black_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[30]
+	Class Package: TAGame
+	Outer: Paints
+[Import 30]
+	Full Name: UProductPaint_TA ProductPaint.Paints.BlackMetal_00
 	Name: BlackMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[31]
+	Class Package: TAGame
+	Outer: Paints
+[Import 31]
+	Full Name: UProductPaint_TA ProductPaint.Paints.Blue_01
 	Name: Blue_01
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[32]
+	Class Package: TAGame
+	Outer: Paints
+[Import 32]
+	Full Name: UProductPaint_TA ProductPaint.Paints.GoldMetal_00
 	Name: GoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[33]
+	Class Package: TAGame
+	Outer: Paints
+[Import 33]
+	Full Name: UProductPaint_TA ProductPaint.Paints.Green_01
 	Name: Green_01
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[34]
+	Class Package: TAGame
+	Outer: Paints
+[Import 34]
+	Full Name: UProductPaint_TA ProductPaint.Paints.Grey_00
 	Name: Grey_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[35]
+	Class Package: TAGame
+	Outer: Paints
+[Import 35]
+	Full Name: UProductPaint_TA ProductPaint.Paints.PlatinumMetal_00
 	Name: PlatinumMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[36]
+	Class Package: TAGame
+	Outer: Paints
+[Import 36]
+	Full Name: UProductPaint_TA ProductPaint.Paints.RoseGoldMetal_00
 	Name: RoseGoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[37]
+	Class Package: TAGame
+	Outer: Paints
+[Import 37]
+	Full Name: UProductPaint_TA ProductPaint.Paints.White_00
 	Name: White_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[38]
+	Class Package: TAGame
+	Outer: Paints
+[Import 38]
+	Full Name: UProductPaint_TA ProductPaint.Paints.WhiteGoldMetal_00
 	Name: WhiteGoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[39]
+	Class Package: TAGame
+	Outer: Paints
+[Import 39]
+	Full Name: UProductPaint_TA ProductPaint.Paints.Yellow_00
 	Name: Yellow_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[40]
+	Class Package: TAGame
+	Outer: Paints
+[Import 40]
+	Full Name: UTexture2D ProductSlots.Icons.Wheels
 	Name: Wheels
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Icons
-[41]
+	Class Package: Engine
+	Outer: Icons
+[Import 41]
+	Full Name: UTexture2D WHEEL_Star.OEM_D
 	Name: OEM_D
 	Class: Texture2D
-	Package: Engine
-	Outer: Package WHEEL_Star
-[42]
+	Class Package: Engine
+	Outer: WHEEL_Star
+[Import 42]
+	Full Name: UTexture2D WHEEL_Star.OEM_N
 	Name: OEM_N
 	Class: Texture2D
-	Package: Engine
-	Outer: Package WHEEL_Star
-[43]
+	Class Package: Engine
+	Outer: WHEEL_Star
+[Import 43]
+	Full Name: UTexture2D WHEEL_Star.OEM_RGB
 	Name: OEM_RGB
 	Class: Texture2D
-	Package: Engine
-	Outer: Package WHEEL_Star
-[44]
+	Class Package: Engine
+	Outer: WHEEL_Star
+[Import 44]
+	Full Name: UTextureRenderTargetCube Grass_Textures.GrassCube
 	Name: GrassCube
 	Class: TextureRenderTargetCube
-	Package: Engine
-	Outer: Package Grass_Textures
-[45]
+	Class Package: Engine
+	Outer: Grass_Textures
+[Import 45]
+	Full Name: UThumbnailRenderer_TA ThumbnailRenderers.Wheel_Renderer
 	Name: Wheel_Renderer
 	Class: ThumbnailRenderer_TA
-	Package: TAGame
-	Outer: Package ThumbnailRenderers
-[46]
+	Class Package: TAGame
+	Outer: ThumbnailRenderers
+[Import 46]
+	Full Name: UWheelAssetGenerator_1Wheel_TA TAGame.Default__ProductAsset_Wheel_TA.DefaultGenerator
 	Name: DefaultGenerator
 	Class: WheelAssetGenerator_1Wheel_TA
-	Package: TAGame
-	Outer: ProductAsset_Wheel_TA Default__ProductAsset_Wheel_TA
+	Class Package: TAGame
+	Outer: Default__ProductAsset_Wheel_TA

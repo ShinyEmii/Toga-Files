@@ -133,6 +133,7 @@ Test Data Size: 0x00003f27
 Compressed Chunk Info Offset: 0x00002361
 Last Block Size: 0x0000000c
 Base Header Size: 0x000001c5
+Encrypted Header Size: 0x000062b0
 
 AES: iKxkZ9HwK1dhuPsjKAwat7ZYphch8Zg3T3Leiwu+caQ=
 
@@ -140,522 +141,567 @@ AES: iKxkZ9HwK1dhuPsjKAwat7ZYphch8Zg3T3Leiwu+caQ=
     ~ Names ~ 
 
 
-[0] AddressX
-[1] AddressY
-[2] AnimTickArray
-[3] AnimTree
-[4] ArrayProperty
-[5] bAllowLightmapSpecular
-[6] bApplyRotation
-[7] BCS_BoneSpace
-[8] bDisableCompressions
-[9] Behaviors
-[10] bEnableShadowCasting
-[11] bHasBeenSimplified
-[12] bIsSourceArtUncompressed
-[13] BoneName
-[14] BoneRotationSpace
-[15] BoolProperty
-[16] bParentNodeArrayBuilt
-[17] bReplicated
-[18] bUsedWithSkeletalMesh
-[19] ByteProperty
-[20] Car
-[21] Class
-[22] ClothingAssets
-[23] ClothTearFactor
-[24] Cloud_T
-[25] ColorMaterialInput
-[26] CompressionNone
-[27] CompressionSettings
-[28] ControlHead
-[29] ControlName
-[30] Core
-[31] CustomColor
-[32] CustomLeftRightAxis
-[33] CustomLeftRightBoneName
-[34] Default__ProductAsset_Wheel_TA
-[35] DefaultGenerator
-[36] DefaultProduct_New
-[37] DefaultValue
-[38] DemonEye_Rot_D
-[39] Description
-[40] DiffuseColor
-[41] DisplayFactor
-[42] Dots_Emis_01
-[43] Dots_Emis_02
-[44] Dots_RGB_Med_T
-[45] DrawY
-[46] EBoneControlSpace
-[47] EMaterialLightingModel
-[48] EmissiveColor
-[49] Engine
-[50] EPixelFormat
-[51] explosion_Portal
-[52] Expression
-[53] ExpressionGUID
-[54] Expressions
-[55] FirstResourceMemMip
-[56] FloatProperty
-[57] Format
-[58] FrontRight
-[59] FX
-[60] FX_Textures
-[61] FX_Water_Tex
-[62] General_FX
-[63] Generator
-[64] Grass_Textures
-[65] GrassCube
-[66] Guid
-[67] Icon
-[68] IconLarge
-[69] Icons
-[70] IntProperty
-[71] ItemsMode
-[72] Label
-[73] Lerp_Particles_Eye
-[74] LightingModel
-[75] LinearColor
-[76] LODGroup
-[77] LODHysteresis
-[78] LODInfo
-[79] LODMaterialMap
-[80] Mask
-[81] MaskB
-[82] MaskG
-[83] MaskR
-[84] Material
-[85] MaterialExpressionScalarParameter
-[86] MaterialExpressionVectorParameter
-[87] MeshRadius
-[88] MipTailBaseIdx
-[89] MLM_Unlit
-[90] MowGradient01
-[91] NameProperty
-[92] NodeTotalWeight
-[93] Noise
-[94] NoiseClouds
-[95] None
-[96] Normal
-[97] ObjectProperty
-[98] ObjectReferencer
-[99] OnlineLabel
-[100] OriginalSizeX
-[101] OriginalSizeY
-[102] Package
-[103] ParameterName
-[104] Particle_Emis
-[105] PF_A8R8G8B8
-[106] PF_DXT1
-[107] PF_DXT5
-[108] PluralLabel
-[109] PrevGenerator
-[110] Product_TA
-[111] ProductAsset_Wheel_TA
-[112] Products
-[113] ProductsDB
-[114] ProductSlot_TA
-[115] ProductSlots
-[116] Radial_Coords01_D
-[117] ReferencedObjects
-[118] ReflectionBrightness
-[119] RimSpinner_TA
-[120] root_jnt
-[121] Rotator
-[122] ScalarMaterialInput
-[123] Scale3D
-[124] SET_Stadium
-[125] SizeX
-[126] SizeY
-[127] SkelControlLists
-[128] SkelControlSingleBone
-[129] SkeletalMesh
-[130] SkeletalMeshSocket
-[131] SocketName
-[132] Sockets
-[133] SpecularColor
-[134] SpecularPower
-[135] SpinControl
-[136] spinner_jnt
-[137] SRGB
-[138] StandaloneSeekFreeReferencer
-[139] StrProperty
-[140] StructProperty
-[141] TA_Clamp
-[142] TAGame
-[143] TC_NormalmapSwizzle
-[144] Texture2D
-[145] TextureAddress
-[146] TextureCompressionSettings
-[147] TextureFileCacheName
-[148] TextureGroup
-[149] TEXTUREGROUP_Effects
-[150] TEXTUREGROUP_WorldNormalMap
-[151] TextureRenderTargetCube
-[152] Textures
-[153] Textures2
-[154] Textures3
-[155] Textures5
-[156] Textures6
-[157] ThumbnailCameraRotationOffset
-[158] ThumbnailProductRotation
-[159] ThumbnailRenderer
-[160] ThumbnailRenderer_TA
-[161] ThumbnailRenderers
-[162] TriangleSortAxis
-[163] TriangleSorting
-[164] TriangleSortOption
-[165] TriangleSortSettings
-[166] TRISORT_None
-[167] TSA_X_Axis
-[168] UnpackMin
-[169] Vector
-[170] VectorMaterialInput
-[171] Waterfall_01_H
-[172] wheel_demoneyes
-[173] Wheel_DemonEyes_D
-[174] Wheel_DemonEyes_M
-[175] Wheel_DemonEyes_MAT
-[176] Wheel_DemonEyes_N
-[177] Wheel_DemonEyes_Portal_MAT
-[178] wheel_demoneyes_SF
-[179] Wheel_DemonEyes_SK
-[180] wheel_jnt
-[181] Wheel_Renderer
-[182] Wheel_Spinner
-[183] Wheel_Spinner_AT
-[184] WHEEL_Star
-[185] WheelAssetGenerator_1Wheel_TA
-[186] WheelAssetSettings_TA
-[187] Wheels
+[Name 0] [0x0007001000000000] AddressX
+[Name 1] [0x0007001000000000] AddressY
+[Name 2] [0x0007001000000000] AnimTickArray
+[Name 3] [0x0007001000000000] AnimTree
+[Name 4] [0x0007001000000000] ArrayProperty
+[Name 5] [0x0007001000000000] bAllowLightmapSpecular
+[Name 6] [0x0007001000000000] bApplyRotation
+[Name 7] [0x0007001000000000] BCS_BoneSpace
+[Name 8] [0x0007001000000000] bDisableCompressions
+[Name 9] [0x0007001000000000] Behaviors
+[Name 10] [0x0007001000000000] bEnableShadowCasting
+[Name 11] [0x0007001000000000] bHasBeenSimplified
+[Name 12] [0x0007001000000000] bIsSourceArtUncompressed
+[Name 13] [0x0007001000000000] BoneName
+[Name 14] [0x0007001000000000] BoneRotationSpace
+[Name 15] [0x0007001000000000] BoolProperty
+[Name 16] [0x0007001000000000] bParentNodeArrayBuilt
+[Name 17] [0x0007001000000000] bReplicated
+[Name 18] [0x0007001000000000] bUsedWithSkeletalMesh
+[Name 19] [0x0007001000000000] ByteProperty
+[Name 20] [0x0007001000000000] Car
+[Name 21] [0x0007001000000000] Class
+[Name 22] [0x0007001000000000] ClothingAssets
+[Name 23] [0x0007001000000000] ClothTearFactor
+[Name 24] [0x0007001000000000] Cloud_T
+[Name 25] [0x0007001000000000] ColorMaterialInput
+[Name 26] [0x0007001000000000] CompressionNone
+[Name 27] [0x0007001000000000] CompressionSettings
+[Name 28] [0x0007001000000000] ControlHead
+[Name 29] [0x0007001000000000] ControlName
+[Name 30] [0x0007001000000000] Core
+[Name 31] [0x0007001000000000] CustomColor
+[Name 32] [0x0007001000000000] CustomLeftRightAxis
+[Name 33] [0x0007001000000000] CustomLeftRightBoneName
+[Name 34] [0x0007001000000000] Default__ProductAsset_Wheel_TA
+[Name 35] [0x0007001000000000] DefaultGenerator
+[Name 36] [0x0007001000000000] DefaultProduct_New
+[Name 37] [0x0007001000000000] DefaultValue
+[Name 38] [0x0007001000000000] DemonEye_Rot_D
+[Name 39] [0x0007001000000000] Description
+[Name 40] [0x0007001000000000] DiffuseColor
+[Name 41] [0x0007001000000000] DisplayFactor
+[Name 42] [0x0007001000000000] Dots_Emis_01
+[Name 43] [0x0007001000000000] Dots_Emis_02
+[Name 44] [0x0007001000000000] Dots_RGB_Med_T
+[Name 45] [0x0007001000000000] DrawY
+[Name 46] [0x0007001000000000] EBoneControlSpace
+[Name 47] [0x0007001000000000] EMaterialLightingModel
+[Name 48] [0x0007001000000000] EmissiveColor
+[Name 49] [0x0007001000000000] Engine
+[Name 50] [0x0007001000000000] EPixelFormat
+[Name 51] [0x0007001000000000] explosion_Portal
+[Name 52] [0x0007001000000000] Expression
+[Name 53] [0x0007001000000000] ExpressionGUID
+[Name 54] [0x0007001000000000] Expressions
+[Name 55] [0x0007001000000000] FirstResourceMemMip
+[Name 56] [0x0007001000000000] FloatProperty
+[Name 57] [0x0007001000000000] Format
+[Name 58] [0x0007001000000000] FrontRight
+[Name 59] [0x0007001000000000] FX
+[Name 60] [0x0007001000000000] FX_Textures
+[Name 61] [0x0007001000000000] FX_Water_Tex
+[Name 62] [0x0007001000000000] General_FX
+[Name 63] [0x0007001000000000] Generator
+[Name 64] [0x0007001000000000] Grass_Textures
+[Name 65] [0x0007001000000000] GrassCube
+[Name 66] [0x0007001000000000] Guid
+[Name 67] [0x0007001000000000] Icon
+[Name 68] [0x0007001000000000] IconLarge
+[Name 69] [0x0007001000000000] Icons
+[Name 70] [0x0007001000000000] IntProperty
+[Name 71] [0x0007001000000000] ItemsMode
+[Name 72] [0x0007001000000000] Label
+[Name 73] [0x0007001000000000] Lerp_Particles_Eye
+[Name 74] [0x0007001000000000] LightingModel
+[Name 75] [0x0007001000000000] LinearColor
+[Name 76] [0x0007001000000000] LODGroup
+[Name 77] [0x0007001000000000] LODHysteresis
+[Name 78] [0x0007001000000000] LODInfo
+[Name 79] [0x0007001000000000] LODMaterialMap
+[Name 80] [0x0007001000000000] Mask
+[Name 81] [0x0007001000000000] MaskB
+[Name 82] [0x0007001000000000] MaskG
+[Name 83] [0x0007001000000000] MaskR
+[Name 84] [0x0007001000000000] Material
+[Name 85] [0x0007001000000000] MaterialExpressionScalarParameter
+[Name 86] [0x0007001000000000] MaterialExpressionVectorParameter
+[Name 87] [0x0007001000000000] MeshRadius
+[Name 88] [0x0007001000000000] MipTailBaseIdx
+[Name 89] [0x0007001000000000] MLM_Unlit
+[Name 90] [0x0007001000000000] MowGradient01
+[Name 91] [0x0007001000000000] NameProperty
+[Name 92] [0x0007001000000000] NodeTotalWeight
+[Name 93] [0x0007001000000000] Noise
+[Name 94] [0x0007001000000000] NoiseClouds
+[Name 95] [0x0007001000000000] None
+[Name 96] [0x0007001000000000] Normal
+[Name 97] [0x0007001000000000] ObjectProperty
+[Name 98] [0x0007001000000000] ObjectReferencer
+[Name 99] [0x0007001000000000] OnlineLabel
+[Name 100] [0x0007001000000000] OriginalSizeX
+[Name 101] [0x0007001000000000] OriginalSizeY
+[Name 102] [0x0007001000000000] Package
+[Name 103] [0x0007001000000000] ParameterName
+[Name 104] [0x0007001000000000] Particle_Emis
+[Name 105] [0x0007001000000000] PF_A8R8G8B8
+[Name 106] [0x0007001000000000] PF_DXT1
+[Name 107] [0x0007001000000000] PF_DXT5
+[Name 108] [0x0007001000000000] PluralLabel
+[Name 109] [0x0007001000000000] PrevGenerator
+[Name 110] [0x0007001000000000] Product_TA
+[Name 111] [0x0007001000000000] ProductAsset_Wheel_TA
+[Name 112] [0x0007001000000000] Products
+[Name 113] [0x0007001000000000] ProductsDB
+[Name 114] [0x0007001000000000] ProductSlot_TA
+[Name 115] [0x0007001000000000] ProductSlots
+[Name 116] [0x0007001000000000] Radial_Coords01_D
+[Name 117] [0x0007001000000000] ReferencedObjects
+[Name 118] [0x0007001000000000] ReflectionBrightness
+[Name 119] [0x0007001000000000] RimSpinner_TA
+[Name 120] [0x0007001000000000] root_jnt
+[Name 121] [0x0007001000000000] Rotator
+[Name 122] [0x0007001000000000] ScalarMaterialInput
+[Name 123] [0x0007001000000000] Scale3D
+[Name 124] [0x0007001000000000] SET_Stadium
+[Name 125] [0x0007001000000000] SizeX
+[Name 126] [0x0007001000000000] SizeY
+[Name 127] [0x0007001000000000] SkelControlLists
+[Name 128] [0x0007001000000000] SkelControlSingleBone
+[Name 129] [0x0007001000000000] SkeletalMesh
+[Name 130] [0x0007001000000000] SkeletalMeshSocket
+[Name 131] [0x0007001000000000] SocketName
+[Name 132] [0x0007001000000000] Sockets
+[Name 133] [0x0007001000000000] SpecularColor
+[Name 134] [0x0007001000000000] SpecularPower
+[Name 135] [0x0007001000000000] SpinControl
+[Name 136] [0x0007001000000000] spinner_jnt
+[Name 137] [0x0007001000000000] SRGB
+[Name 138] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 139] [0x0007001000000000] StrProperty
+[Name 140] [0x0007001000000000] StructProperty
+[Name 141] [0x0007001000000000] TA_Clamp
+[Name 142] [0x0007001000000000] TAGame
+[Name 143] [0x0007001000000000] TC_NormalmapSwizzle
+[Name 144] [0x0007001000000000] Texture2D
+[Name 145] [0x0007001000000000] TextureAddress
+[Name 146] [0x0007001000000000] TextureCompressionSettings
+[Name 147] [0x0007001000000000] TextureFileCacheName
+[Name 148] [0x0007001000000000] TextureGroup
+[Name 149] [0x0007001000000000] TEXTUREGROUP_Effects
+[Name 150] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 151] [0x0007001000000000] TextureRenderTargetCube
+[Name 152] [0x0007001000000000] Textures
+[Name 153] [0x0007001000000000] Textures2
+[Name 154] [0x0007001000000000] Textures3
+[Name 155] [0x0007001000000000] Textures5
+[Name 156] [0x0007001000000000] Textures6
+[Name 157] [0x0007001000000000] ThumbnailCameraRotationOffset
+[Name 158] [0x0007001000000000] ThumbnailProductRotation
+[Name 159] [0x0007001000000000] ThumbnailRenderer
+[Name 160] [0x0007001000000000] ThumbnailRenderer_TA
+[Name 161] [0x0007001000000000] ThumbnailRenderers
+[Name 162] [0x0007001000000000] TriangleSortAxis
+[Name 163] [0x0007001000000000] TriangleSorting
+[Name 164] [0x0007001000000000] TriangleSortOption
+[Name 165] [0x0007001000000000] TriangleSortSettings
+[Name 166] [0x0007001000000000] TRISORT_None
+[Name 167] [0x0007001000000000] TSA_X_Axis
+[Name 168] [0x0007001000000000] UnpackMin
+[Name 169] [0x0007001000000000] Vector
+[Name 170] [0x0007001000000000] VectorMaterialInput
+[Name 171] [0x0007001000000000] Waterfall_01_H
+[Name 172] [0x0007001000000000] wheel_demoneyes
+[Name 173] [0x0007001000000000] Wheel_DemonEyes_D
+[Name 174] [0x0007001000000000] Wheel_DemonEyes_M
+[Name 175] [0x0007001000000000] Wheel_DemonEyes_MAT
+[Name 176] [0x0007001000000000] Wheel_DemonEyes_N
+[Name 177] [0x0007001000000000] Wheel_DemonEyes_Portal_MAT
+[Name 178] [0x0007001000000000] wheel_demoneyes_SF
+[Name 179] [0x0007001000000000] Wheel_DemonEyes_SK
+[Name 180] [0x0007001000000000] wheel_jnt
+[Name 181] [0x0007001000000000] Wheel_Renderer
+[Name 182] [0x0007001000000000] Wheel_Spinner
+[Name 183] [0x0007001000000000] Wheel_Spinner_AT
+[Name 184] [0x0007001000000000] WHEEL_Star
+[Name 185] [0x0007001000000000] WheelAssetGenerator_1Wheel_TA
+[Name 186] [0x0007001000000000] WheelAssetSettings_TA
+[Name 187] [0x0007001000000000] Wheels
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAnimTree wheel_demoneyes.Wheel_Spinner.Wheel_Spinner_AT
 	Name: Wheel_Spinner_AT
-	Class: AnimTree
-	Outer: Package Wheel_Spinner
+	Class: UAnimTree
+	Outer: Wheel_Spinner
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002526 with 0x000000dd Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterial wheel_demoneyes.wheel_demoneyes.Wheel_DemonEyes_MAT
 	Name: Wheel_DemonEyes_MAT
-	Class: Material
-	Outer: Package wheel_demoneyes
+	Class: UMaterial
+	Outer: wheel_demoneyes
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000002603 with 0x00000341 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterial wheel_demoneyes.wheel_demoneyes.Wheel_DemonEyes_Portal_MAT
 	Name: Wheel_DemonEyes_Portal_MAT
-	Class: Material
-	Outer: Package wheel_demoneyes
+	Class: UMaterial
+	Outer: wheel_demoneyes
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000002944 with 0x0000026e Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterialExpressionScalarParameter wheel_demoneyes.wheel_demoneyes.Wheel_DemonEyes_MAT.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Wheel_DemonEyes_MAT
+	Class: UMaterialExpressionScalarParameter
+	Outer: Wheel_DemonEyes_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002bb2 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UMaterialExpressionScalarParameter wheel_demoneyes.wheel_demoneyes.Wheel_DemonEyes_Portal_MAT.MaterialExpressionScalarParameter_0
 	Name: MaterialExpressionScalarParameter_0
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Wheel_DemonEyes_Portal_MAT
+	Class: UMaterialExpressionScalarParameter
+	Outer: Wheel_DemonEyes_Portal_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002c46 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UMaterialExpressionScalarParameter wheel_demoneyes.wheel_demoneyes.Wheel_DemonEyes_Portal_MAT.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Wheel_DemonEyes_Portal_MAT
+	Class: UMaterialExpressionScalarParameter
+	Outer: Wheel_DemonEyes_Portal_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002cda with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UMaterialExpressionScalarParameter wheel_demoneyes.wheel_demoneyes.Wheel_DemonEyes_Portal_MAT.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Wheel_DemonEyes_Portal_MAT
+	Class: UMaterialExpressionScalarParameter
+	Outer: Wheel_DemonEyes_Portal_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002d6e with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UMaterialExpressionScalarParameter wheel_demoneyes.wheel_demoneyes.Wheel_DemonEyes_Portal_MAT.MaterialExpressionScalarParameter_4
 	Name: MaterialExpressionScalarParameter_4
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Wheel_DemonEyes_Portal_MAT
+	Class: UMaterialExpressionScalarParameter
+	Outer: Wheel_DemonEyes_Portal_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002e02 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UMaterialExpressionVectorParameter wheel_demoneyes.wheel_demoneyes.Wheel_DemonEyes_MAT.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Wheel_DemonEyes_MAT
+	Class: UMaterialExpressionVectorParameter
+	Outer: Wheel_DemonEyes_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002e96 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UMaterialExpressionVectorParameter wheel_demoneyes.wheel_demoneyes.Wheel_DemonEyes_Portal_MAT.MaterialExpressionVectorParameter_1
 	Name: MaterialExpressionVectorParameter_1
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Wheel_DemonEyes_Portal_MAT
+	Class: UMaterialExpressionVectorParameter
+	Outer: Wheel_DemonEyes_Portal_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002f3e with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UProductAsset_Wheel_TA wheel_demoneyes.ProductSlots.Wheels.ProductAsset_Wheel_TA_0
 	Name: ProductAsset_Wheel_TA_0
-	Class: ProductAsset_Wheel_TA
-	Outer: ProductSlot_TA Wheels
+	Class: UProductAsset_Wheel_TA
+	Outer: Wheels
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002fe6 with 0x0000009c Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UObjectReferencer wheel_demoneyes.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000003082 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[12]
+[Export 12]
+	Full Name: UPackage wheel_demoneyes.explosion_Portal
 	Name: explosion_Portal
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000030ae with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[13]
+[Export 13]
+	Full Name: UPackage wheel_demoneyes.explosion_Portal.Textures
 	Name: Textures
-	Class: Package
-	Outer: Package explosion_Portal
+	Class: UPackage
+	Outer: explosion_Portal
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000030ba with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UPackage wheel_demoneyes.FX_Water_Tex
 	Name: FX_Water_Tex
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000030c6 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[15]
+[Export 15]
+	Full Name: UPackage wheel_demoneyes.General_FX
 	Name: General_FX
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000030d2 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[16]
+[Export 16]
+	Full Name: UPackage wheel_demoneyes.General_FX.Textures
 	Name: Textures
-	Class: Package
-	Outer: Package General_FX
+	Class: UPackage
+	Outer: General_FX
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000030de with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UPackage wheel_demoneyes.ItemsMode
 	Name: ItemsMode
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000030ea with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[18]
+[Export 18]
+	Full Name: UPackage wheel_demoneyes.ItemsMode.Car
 	Name: Car
-	Class: Package
-	Outer: Package ItemsMode
+	Class: UPackage
+	Outer: ItemsMode
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000030f6 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UPackage wheel_demoneyes.ItemsMode.Car.Textures
 	Name: Textures
-	Class: Package
-	Outer: Package Car
+	Class: UPackage
+	Outer: Car
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003102 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UPackage wheel_demoneyes.ProductSlots
 	Name: ProductSlots
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000310e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[21]
+[Export 21]
+	Full Name: UPackage wheel_demoneyes.SET_Stadium
 	Name: SET_Stadium
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000311a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[22]
+[Export 22]
+	Full Name: UPackage wheel_demoneyes.wheel_demoneyes
 	Name: wheel_demoneyes
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003126 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[23]
+[Export 23]
+	Full Name: UPackage wheel_demoneyes.wheel_demoneyes_SF
 	Name: wheel_demoneyes_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003132 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[24]
+[Export 24]
+	Full Name: UPackage wheel_demoneyes.Wheel_Spinner
 	Name: Wheel_Spinner
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000313e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[25]
+[Export 25]
+	Full Name: UWheelAssetGenerator_1Wheel_TA wheel_demoneyes.ProductSlots.Wheels.ProductAsset_Wheel_TA_0.WheelAssetGenerator_1Wheel_TA_1
 	Name: WheelAssetGenerator_1Wheel_TA_1
-	Class: WheelAssetGenerator_1Wheel_TA
-	Outer: ProductAsset_Wheel_TA ProductAsset_Wheel_TA_0
+	Class: UWheelAssetGenerator_1Wheel_TA
+	Outer: ProductAsset_Wheel_TA_0
 	Archetype: DefaultGenerator
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000314a with 0x00000010 Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UProductAsset_Wheel_TA wheel_demoneyes.wheel_demoneyes.wheel_demoneyes
 	Name: wheel_demoneyes
-	Class: ProductAsset_Wheel_TA
-	Outer: Package wheel_demoneyes
+	Class: UProductAsset_Wheel_TA
+	Outer: wheel_demoneyes
 	Archetype: ProductAsset_Wheel_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000315a with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UProductSlot_TA wheel_demoneyes.ProductSlots.Wheels
 	Name: Wheels
-	Class: ProductSlot_TA
-	Outer: Package ProductSlots
+	Class: UProductSlot_TA
+	Outer: ProductSlots
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x00000000000031ba with 0x0000012b Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: URimSpinner_TA wheel_demoneyes.wheel_demoneyes.wheel_demoneyes.WheelAssetGenerator_1Wheel_TA_1.WheelAssetSettings_TA_10.RimSpinner_TA_0
 	Name: RimSpinner_TA_0
-	Class: RimSpinner_TA
-	Outer: WheelAssetSettings_TA WheelAssetSettings_TA_10
+	Class: URimSpinner_TA
+	Outer: WheelAssetSettings_TA_10
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000032e5 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: URimSpinner_TA wheel_demoneyes.wheel_demoneyes.wheel_demoneyes.WheelAssetGenerator_1Wheel_TA_1.WheelAssetSettings_TA_3.RimSpinner_TA_0
 	Name: RimSpinner_TA_0
-	Class: RimSpinner_TA
-	Outer: WheelAssetSettings_TA WheelAssetSettings_TA_3
+	Class: URimSpinner_TA
+	Outer: WheelAssetSettings_TA_3
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000032f1 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: USkelControlSingleBone wheel_demoneyes.Wheel_Spinner.Wheel_Spinner_AT.SkelControlSingleBone_0
 	Name: SkelControlSingleBone_0
-	Class: SkelControlSingleBone
-	Outer: AnimTree Wheel_Spinner_AT
+	Class: USkelControlSingleBone
+	Outer: Wheel_Spinner_AT
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x00000000000032fd with 0x0000006d Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: USkeletalMesh wheel_demoneyes.wheel_demoneyes.Wheel_DemonEyes_SK
 	Name: Wheel_DemonEyes_SK
-	Class: SkeletalMesh
-	Outer: Package wheel_demoneyes
+	Class: USkeletalMesh
+	Outer: wheel_demoneyes
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000042147 with 0x00030c29 Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: USkeletalMeshSocket wheel_demoneyes.wheel_demoneyes.Wheel_DemonEyes_SK.SkeletalMeshSocket_0
 	Name: SkeletalMeshSocket_0
-	Class: SkeletalMeshSocket
-	Outer: SkeletalMesh Wheel_DemonEyes_SK
+	Class: USkeletalMeshSocket
+	Outer: Wheel_DemonEyes_SK
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000033f93 with 0x0000004c Bytes
 	Export Flags: 0x00000001
-[33]
+[Export 33]
+	Full Name: UTexture2D wheel_demoneyes.explosion_Portal.Textures.Dots_RGB_Med_T
 	Name: Dots_RGB_Med_T
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000033fdf with 0x00000cf4 Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UTexture2D wheel_demoneyes.FX_Water_Tex.Waterfall_01_H
 	Name: Waterfall_01_H
-	Class: Texture2D
-	Outer: Package FX_Water_Tex
+	Class: UTexture2D
+	Outer: FX_Water_Tex
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000034cd3 with 0x00000d00 Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: UTexture2D wheel_demoneyes.General_FX.Textures.Radial_Coords01_D
 	Name: Radial_Coords01_D
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000359d3 with 0x000057a3 Bytes
 	Export Flags: 0x00000001
-[36]
+[Export 36]
+	Full Name: UTexture2D wheel_demoneyes.ItemsMode.Car.Textures.Cloud_T
 	Name: Cloud_T
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000003b176 with 0x00000cd8 Bytes
 	Export Flags: 0x00000001
-[37]
+[Export 37]
+	Full Name: UTexture2D wheel_demoneyes.SET_Stadium.MowGradient01
 	Name: MowGradient01
-	Class: Texture2D
-	Outer: Package SET_Stadium
+	Class: UTexture2D
+	Outer: SET_Stadium
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000003be4e with 0x00000cd8 Bytes
 	Export Flags: 0x00000001
-[38]
+[Export 38]
+	Full Name: UTexture2D wheel_demoneyes.wheel_demoneyes.DemonEye_Rot_D
 	Name: DemonEye_Rot_D
-	Class: Texture2D
-	Outer: Package wheel_demoneyes
+	Class: UTexture2D
+	Outer: wheel_demoneyes
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000003cb26 with 0x000017a8 Bytes
 	Export Flags: 0x00000001
-[39]
+[Export 39]
+	Full Name: UTexture2D wheel_demoneyes.wheel_demoneyes.Wheel_DemonEyes_D
 	Name: Wheel_DemonEyes_D
-	Class: Texture2D
-	Outer: Package wheel_demoneyes
+	Class: UTexture2D
+	Outer: wheel_demoneyes
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000003e2ce with 0x000017c8 Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UTexture2D wheel_demoneyes.wheel_demoneyes.Wheel_DemonEyes_M
 	Name: Wheel_DemonEyes_M
-	Class: Texture2D
-	Outer: Package wheel_demoneyes
+	Class: UTexture2D
+	Outer: wheel_demoneyes
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000003fa96 with 0x00000cf4 Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UTexture2D wheel_demoneyes.wheel_demoneyes.Wheel_DemonEyes_N
 	Name: Wheel_DemonEyes_N
-	Class: Texture2D
-	Outer: Package wheel_demoneyes
+	Class: UTexture2D
+	Outer: wheel_demoneyes
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000004078a with 0x00001869 Bytes
 	Export Flags: 0x00000001
-[42]
+[Export 42]
+	Full Name: UWheelAssetGenerator_1Wheel_TA wheel_demoneyes.wheel_demoneyes.wheel_demoneyes.WheelAssetGenerator_1Wheel_TA_1
 	Name: WheelAssetGenerator_1Wheel_TA_1
-	Class: WheelAssetGenerator_1Wheel_TA
-	Outer: ProductAsset_Wheel_TA wheel_demoneyes
+	Class: UWheelAssetGenerator_1Wheel_TA
+	Outer: wheel_demoneyes
 	Archetype: WheelAssetGenerator_1Wheel_TA_1
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000041ff3 with 0x00000058 Bytes
 	Export Flags: 0x00000001
-[43]
+[Export 43]
+	Full Name: UWheelAssetSettings_TA wheel_demoneyes.wheel_demoneyes.wheel_demoneyes.WheelAssetGenerator_1Wheel_TA_1.WheelAssetSettings_TA_10
 	Name: WheelAssetSettings_TA_10
-	Class: WheelAssetSettings_TA
-	Outer: WheelAssetGenerator_1Wheel_TA WheelAssetGenerator_1Wheel_TA_1
+	Class: UWheelAssetSettings_TA
+	Outer: WheelAssetGenerator_1Wheel_TA_1
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000004204b with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[44]
+[Export 44]
+	Full Name: UWheelAssetSettings_TA wheel_demoneyes.wheel_demoneyes.wheel_demoneyes.WheelAssetGenerator_1Wheel_TA_1.WheelAssetSettings_TA_3
 	Name: WheelAssetSettings_TA_3
-	Class: WheelAssetSettings_TA
-	Outer: WheelAssetGenerator_1Wheel_TA WheelAssetGenerator_1Wheel_TA_1
+	Class: UWheelAssetSettings_TA
+	Outer: WheelAssetGenerator_1Wheel_TA_1
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000420df with 0x00000068 Bytes
 	Export Flags: 0x00000001
@@ -664,156 +710,188 @@ AES: iKxkZ9HwK1dhuPsjKAwat7ZYphch8Zg3T3Leiwu+caQ=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.AnimTree
 	Name: AnimTree
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.MaterialExpressionVectorParameter
 	Name: MaterialExpressionVectorParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.SkelControlSingleBone
 	Name: SkelControlSingleBone
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.SkeletalMesh
 	Name: SkeletalMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.SkeletalMeshSocket
 	Name: SkeletalMeshSocket
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[10]
+	Class Package: Core
+	Outer: Engine
+[Import 10]
+	Full Name: UClass TAGame.ProductAsset_Wheel_TA
 	Name: ProductAsset_Wheel_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[11]
+	Class Package: Core
+	Outer: TAGame
+[Import 11]
+	Full Name: UClass TAGame.ProductSlot_TA
 	Name: ProductSlot_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[12]
+	Class Package: Core
+	Outer: TAGame
+[Import 12]
+	Full Name: UClass TAGame.RimSpinner_TA
 	Name: RimSpinner_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[13]
+	Class Package: Core
+	Outer: TAGame
+[Import 13]
+	Full Name: UClass TAGame.WheelAssetGenerator_1Wheel_TA
 	Name: WheelAssetGenerator_1Wheel_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[14]
+	Class Package: Core
+	Outer: TAGame
+[Import 14]
+	Full Name: UClass TAGame.WheelAssetSettings_TA
 	Name: WheelAssetSettings_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[15]
+	Class Package: Core
+	Outer: TAGame
+[Import 15]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UPackage FX_Textures
 	Name: FX_Textures
 	Class: Package
-	Package: Core
-[18]
+	Class Package: Core
+[Import 18]
+	Full Name: UPackage FX_Textures.Noise
 	Name: Noise
 	Class: Package
-	Package: Core
-	Outer: Package FX_Textures
-[19]
+	Class Package: Core
+	Outer: FX_Textures
+[Import 19]
+	Full Name: UPackage Grass_Textures
 	Name: Grass_Textures
 	Class: Package
-	Package: Core
-[20]
+	Class Package: Core
+[Import 20]
+	Full Name: UPackage ProductsDB
 	Name: ProductsDB
 	Class: Package
-	Package: Core
-[21]
+	Class Package: Core
+[Import 21]
+	Full Name: UPackage ProductsDB.Products
 	Name: Products
 	Class: Package
-	Package: Core
-	Outer: Package ProductsDB
-[22]
+	Class Package: Core
+	Outer: ProductsDB
+[Import 22]
+	Full Name: UPackage ProductSlots.Icons
 	Name: Icons
 	Class: Package
-	Package: Core
-	Outer: Package ProductSlots
-[23]
+	Class Package: Core
+	Outer: ProductSlots
+[Import 23]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[24]
+	Class Package: Core
+[Import 24]
+	Full Name: UPackage ThumbnailRenderers
 	Name: ThumbnailRenderers
 	Class: Package
-	Package: Core
-[25]
+	Class Package: Core
+[Import 25]
+	Full Name: UProduct_TA ProductsDB.Products.WHEEL_Star
 	Name: WHEEL_Star
 	Class: Product_TA
-	Package: TAGame
-	Outer: Package Products
-[26]
+	Class Package: TAGame
+	Outer: Products
+[Import 26]
+	Full Name: UProductAsset_Wheel_TA TAGame.Default__ProductAsset_Wheel_TA
 	Name: Default__ProductAsset_Wheel_TA
 	Class: ProductAsset_Wheel_TA
-	Package: TAGame
-	Outer: Package TAGame
-[27]
+	Class Package: TAGame
+	Outer: TAGame
+[Import 27]
+	Full Name: UTexture2D FX_Textures.Noise.NoiseClouds
 	Name: NoiseClouds
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Noise
-[28]
+	Class Package: Engine
+	Outer: Noise
+[Import 28]
+	Full Name: UTexture2D ProductSlots.Icons.Wheels
 	Name: Wheels
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Icons
-[29]
+	Class Package: Engine
+	Outer: Icons
+[Import 29]
+	Full Name: UTextureRenderTargetCube Grass_Textures.GrassCube
 	Name: GrassCube
 	Class: TextureRenderTargetCube
-	Package: Engine
-	Outer: Package Grass_Textures
-[30]
+	Class Package: Engine
+	Outer: Grass_Textures
+[Import 30]
+	Full Name: UThumbnailRenderer_TA ThumbnailRenderers.Wheel_Renderer
 	Name: Wheel_Renderer
 	Class: ThumbnailRenderer_TA
-	Package: TAGame
-	Outer: Package ThumbnailRenderers
-[31]
+	Class Package: TAGame
+	Outer: ThumbnailRenderers
+[Import 31]
+	Full Name: UWheelAssetGenerator_1Wheel_TA TAGame.Default__ProductAsset_Wheel_TA.DefaultGenerator
 	Name: DefaultGenerator
 	Class: WheelAssetGenerator_1Wheel_TA
-	Package: TAGame
-	Outer: ProductAsset_Wheel_TA Default__ProductAsset_Wheel_TA
+	Class Package: TAGame
+	Outer: Default__ProductAsset_Wheel_TA

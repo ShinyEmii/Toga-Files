@@ -84,6 +84,7 @@ Test Data Size: 0x00003fe4
 Compressed Chunk Info Offset: 0x000028b4
 Last Block Size: 0x00000004
 Base Header Size: 0x00000135
+Encrypted Header Size: 0x000068b0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -91,673 +92,740 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] A
-[1] animation
-[2] Animation*Distance+Direction
-[3] Animation*Pulse
-[4] Animation*Pulse_A
-[5] Animation*Pulse_B
-[6] Animation*PulseAMT
-[7] Animation*PulseSpeed
-[8] Animation*Time
-[9] Animation_Intensity
-[10] Antenna
-[11] Antenna_WakeupShip
-[12] ArrayProperty
-[13] AT_WakeupShip_E
-[14] Attachment_Parent_Materials
-[15] Attachments
-[16] B
-[17] Basic_V2_Mat
-[18] Behaviors
-[19] bHasStaticPermutationResource
-[20] BLEND_Translucent
-[21] BlendMode
-[22] BoolProperty
-[23] Boost_Champion
-[24] Brightness
-[25] bUsedWithParticleSprites
-[26] bUsedWithSkeletalMesh
-[27] ByteProperty
-[28] Class
-[29] Color
-[30] ColorMaterialInput
-[31] Component
-[32] CompressionNoAlpha
-[33] CompressionNone
-[34] CompressionSettings
-[35] Core
-[36] Curve_Shockwaves_Pack
-[37] CustomColor
-[38] DarkAccentColor
-[39] DefaultValue
-[40] Desc
-[41] Diffuse
-[42] DiffuseColor
-[43] DiffuseRim
-[44] DiffuseSpec
-[45] EBlendMode
-[46] EMaterialLightingModel
-[47] Emissive_Glow_Mask
-[48] Emissive_Mask
-[49] Emissive_mask_color
-[50] EmissiveColor
-[51] Engine
-[52] EPixelFormat
-[53] EProductAttachmentSocket
-[54] Expression
-[55] ExpressionGUID
-[56] ExpressionInput
-[57] Expressions
-[58] FirstResourceMemMip
-[59] flashlight_MAT
-[60] flashlight_particles_MAT
-[61] FloatProperty
-[62] Force_Skulls_D
-[63] Format
-[64] FresnelColor
-[65] FresnelDarken
-[66] FX_Textures
-[67] FXActor
-[68] Gradient_FX
-[69] Gradients
-[70] Group
-[71] Guid
-[72] Hat
-[73] hat_flashlight
-[74] Hat_Flashlight_D
-[75] Hat_Flashlight_Mask
-[76] Hat_Flashlight_N
-[77] hat_flashlight_SF
-[78] Hat_Flashlight_SM
-[79] Hat_Viking_Helmet_Diffuse
-[80] Hat_Viking_Helmet_Normal
-[81] Hat_Viking_Helmet_Textures
-[82] InheritCarAttribute
-[83] IntProperty
-[84] LightAccentColor
-[85] LightingModel
-[86] LightMapCoordinateIndex
-[87] LightMapResolution
-[88] LinearColor
-[89] LODGroup
-[90] Mask
-[91] MaskA
-[92] MaskB
-[93] MaskG
-[94] MaskR
-[95] Masks
-[96] Mat
-[97] Material
-[98] MaterialExpressionScalarParameter
-[99] MaterialExpressionStaticSwitchParameter
-[100] MaterialExpressionTextureSampleParameter2D
-[101] MaterialExpressionVectorParameter
-[102] MaterialInstanceConstant
-[103] MIC_Hat_Flashlight
-[104] MipGenSettings
-[105] MipTailBaseIdx
-[106] MLM_Unlit
-[107] NameProperty
-[108] NeverStream
-[109] Noise_Pack
-[110] None
-[111] Normal
-[112] ObjectProperty
-[113] ObjectReferencer
-[114] Opacity
-[115] OriginalSizeX
-[116] OriginalSizeY
-[117] OutputIndex
-[118] Package
-[119] ParameterName
-[120] ParameterValue
-[121] Parent
-[122] ParentLightingGuid
-[123] ParticleSystem
-[124] PAS_Hat
-[125] PF_A8R8G8B8
-[126] PF_DXT1
-[127] PF_DXT5
-[128] PF_G8
-[129] ProductAsset_Attachment_TA
-[130] ProductSlot_TA
-[131] ProductSlots
-[132] ReferencedObjects
-[133] Reflections
-[134] RGB Mask
-[135] RimSharpness
-[136] RimValue
-[137] Rotation
-[138] Rotator
-[139] ScalarMaterialInput
-[140] ScalarParameterValues
-[141] Scale
-[142] SeparateFresnelColor
-[143] SharpReflections
-[144] SizeX
-[145] SizeY
-[146] SkeletalMesh
-[147] Skin_Force_Skulls
-[148] Socket
-[149] Sparkles
-[150] SpecInDiffuseAlpha
-[151] SpecPower
-[152] Specular
-[153] SRGB
-[154] StandaloneSeekFreeReferencer
-[155] StaticMesh
-[156] StrProperty
-[157] StructProperty
-[158] TAGame
-[159] TC_Grayscale
-[160] TC_NormalmapSwizzle
-[161] Texture
-[162] Texture2D
-[163] TextureCompressionSettings
-[164] TextureFileCacheName
-[165] TextureGroup
-[166] TEXTUREGROUP_CharacterNormalMap
-[167] TEXTUREGROUP_Effects
-[168] TEXTUREGROUP_Weapon
-[169] TEXTUREGROUP_WorldNormalMap
-[170] TextureMipGenSettings
-[171] TextureParameterValues
-[172] Textures
-[173] Textures4
-[174] Textures5
-[175] Textures7
-[176] ThumbnailCameraTranslationOffset
-[177] ThumbnailProductRotation
-[178] TMGS_NoMipmaps
-[179] TMGS_Sharpen10
-[180] Translation
-[181] UnpackMin
-[182] UseRGB Mask
-[183] Vector
-[184] VectorMaterialInput
-[185] VectorParameterValues
-[186] Vert_Linear02_D
-[187] WorldPositionOffset
+[Name 0] [0x0007001000000000] A
+[Name 1] [0x0007001000000000] animation
+[Name 2] [0x0007001000000000] Animation*Distance+Direction
+[Name 3] [0x0007001000000000] Animation*Pulse
+[Name 4] [0x0007001000000000] Animation*Pulse_A
+[Name 5] [0x0007001000000000] Animation*Pulse_B
+[Name 6] [0x0007001000000000] Animation*PulseAMT
+[Name 7] [0x0007001000000000] Animation*PulseSpeed
+[Name 8] [0x0007001000000000] Animation*Time
+[Name 9] [0x0007001000000000] Animation_Intensity
+[Name 10] [0x0007001000000000] Antenna
+[Name 11] [0x0007001000000000] Antenna_WakeupShip
+[Name 12] [0x0007001000000000] ArrayProperty
+[Name 13] [0x0007001000000000] AT_WakeupShip_E
+[Name 14] [0x0007001000000000] Attachment_Parent_Materials
+[Name 15] [0x0007001000000000] Attachments
+[Name 16] [0x0007001000000000] B
+[Name 17] [0x0007001000000000] Basic_V2_Mat
+[Name 18] [0x0007001000000000] Behaviors
+[Name 19] [0x0007001000000000] bHasStaticPermutationResource
+[Name 20] [0x0007001000000000] BLEND_Translucent
+[Name 21] [0x0007001000000000] BlendMode
+[Name 22] [0x0007001000000000] BoolProperty
+[Name 23] [0x0007001000000000] Boost_Champion
+[Name 24] [0x0007001000000000] Brightness
+[Name 25] [0x0007001000000000] bUsedWithParticleSprites
+[Name 26] [0x0007001000000000] bUsedWithSkeletalMesh
+[Name 27] [0x0007001000000000] ByteProperty
+[Name 28] [0x0007001000000000] Class
+[Name 29] [0x0007001000000000] Color
+[Name 30] [0x0007001000000000] ColorMaterialInput
+[Name 31] [0x0007001000000000] Component
+[Name 32] [0x0007001000000000] CompressionNoAlpha
+[Name 33] [0x0007001000000000] CompressionNone
+[Name 34] [0x0007001000000000] CompressionSettings
+[Name 35] [0x0007001000000000] Core
+[Name 36] [0x0007001000000000] Curve_Shockwaves_Pack
+[Name 37] [0x0007001000000000] CustomColor
+[Name 38] [0x0007001000000000] DarkAccentColor
+[Name 39] [0x0007001000000000] DefaultValue
+[Name 40] [0x0007001000000000] Desc
+[Name 41] [0x0007001000000000] Diffuse
+[Name 42] [0x0007001000000000] DiffuseColor
+[Name 43] [0x0007001000000000] DiffuseRim
+[Name 44] [0x0007001000000000] DiffuseSpec
+[Name 45] [0x0007001000000000] EBlendMode
+[Name 46] [0x0007001000000000] EMaterialLightingModel
+[Name 47] [0x0007001000000000] Emissive_Glow_Mask
+[Name 48] [0x0007001000000000] Emissive_Mask
+[Name 49] [0x0007001000000000] Emissive_mask_color
+[Name 50] [0x0007001000000000] EmissiveColor
+[Name 51] [0x0007001000000000] Engine
+[Name 52] [0x0007001000000000] EPixelFormat
+[Name 53] [0x0007001000000000] EProductAttachmentSocket
+[Name 54] [0x0007001000000000] Expression
+[Name 55] [0x0007001000000000] ExpressionGUID
+[Name 56] [0x0007001000000000] ExpressionInput
+[Name 57] [0x0007001000000000] Expressions
+[Name 58] [0x0007001000000000] FirstResourceMemMip
+[Name 59] [0x0007001000000000] flashlight_MAT
+[Name 60] [0x0007001000000000] flashlight_particles_MAT
+[Name 61] [0x0007001000000000] FloatProperty
+[Name 62] [0x0007001000000000] Force_Skulls_D
+[Name 63] [0x0007001000000000] Format
+[Name 64] [0x0007001000000000] FresnelColor
+[Name 65] [0x0007001000000000] FresnelDarken
+[Name 66] [0x0007001000000000] FX_Textures
+[Name 67] [0x0007001000000000] FXActor
+[Name 68] [0x0007001000000000] Gradient_FX
+[Name 69] [0x0007001000000000] Gradients
+[Name 70] [0x0007001000000000] Group
+[Name 71] [0x0007001000000000] Guid
+[Name 72] [0x0007001000000000] Hat
+[Name 73] [0x0007001000000000] hat_flashlight
+[Name 74] [0x0007001000000000] Hat_Flashlight_D
+[Name 75] [0x0007001000000000] Hat_Flashlight_Mask
+[Name 76] [0x0007001000000000] Hat_Flashlight_N
+[Name 77] [0x0007001000000000] hat_flashlight_SF
+[Name 78] [0x0007001000000000] Hat_Flashlight_SM
+[Name 79] [0x0007001000000000] Hat_Viking_Helmet_Diffuse
+[Name 80] [0x0007001000000000] Hat_Viking_Helmet_Normal
+[Name 81] [0x0007001000000000] Hat_Viking_Helmet_Textures
+[Name 82] [0x0007001000000000] InheritCarAttribute
+[Name 83] [0x0007001000000000] IntProperty
+[Name 84] [0x0007001000000000] LightAccentColor
+[Name 85] [0x0007001000000000] LightingModel
+[Name 86] [0x0007001000000000] LightMapCoordinateIndex
+[Name 87] [0x0007001000000000] LightMapResolution
+[Name 88] [0x0007001000000000] LinearColor
+[Name 89] [0x0007001000000000] LODGroup
+[Name 90] [0x0007001000000000] Mask
+[Name 91] [0x0007001000000000] MaskA
+[Name 92] [0x0007001000000000] MaskB
+[Name 93] [0x0007001000000000] MaskG
+[Name 94] [0x0007001000000000] MaskR
+[Name 95] [0x0007001000000000] Masks
+[Name 96] [0x0007001000000000] Mat
+[Name 97] [0x0007001000000000] Material
+[Name 98] [0x0007001000000000] MaterialExpressionScalarParameter
+[Name 99] [0x0007001000000000] MaterialExpressionStaticSwitchParameter
+[Name 100] [0x0007001000000000] MaterialExpressionTextureSampleParameter2D
+[Name 101] [0x0007001000000000] MaterialExpressionVectorParameter
+[Name 102] [0x0007001000000000] MaterialInstanceConstant
+[Name 103] [0x0007001000000000] MIC_Hat_Flashlight
+[Name 104] [0x0007001000000000] MipGenSettings
+[Name 105] [0x0007001000000000] MipTailBaseIdx
+[Name 106] [0x0007001000000000] MLM_Unlit
+[Name 107] [0x0007001000000000] NameProperty
+[Name 108] [0x0007001000000000] NeverStream
+[Name 109] [0x0007001000000000] Noise_Pack
+[Name 110] [0x0007001000000000] None
+[Name 111] [0x0007001000000000] Normal
+[Name 112] [0x0007001000000000] ObjectProperty
+[Name 113] [0x0007001000000000] ObjectReferencer
+[Name 114] [0x0007001000000000] Opacity
+[Name 115] [0x0007001000000000] OriginalSizeX
+[Name 116] [0x0007001000000000] OriginalSizeY
+[Name 117] [0x0007001000000000] OutputIndex
+[Name 118] [0x0007001000000000] Package
+[Name 119] [0x0007001000000000] ParameterName
+[Name 120] [0x0007001000000000] ParameterValue
+[Name 121] [0x0007001000000000] Parent
+[Name 122] [0x0007001000000000] ParentLightingGuid
+[Name 123] [0x0007001000000000] ParticleSystem
+[Name 124] [0x0007001000000000] PAS_Hat
+[Name 125] [0x0007001000000000] PF_A8R8G8B8
+[Name 126] [0x0007001000000000] PF_DXT1
+[Name 127] [0x0007001000000000] PF_DXT5
+[Name 128] [0x0007001000000000] PF_G8
+[Name 129] [0x0007001000000000] ProductAsset_Attachment_TA
+[Name 130] [0x0007001000000000] ProductSlot_TA
+[Name 131] [0x0007001000000000] ProductSlots
+[Name 132] [0x0007001000000000] ReferencedObjects
+[Name 133] [0x0007001000000000] Reflections
+[Name 134] [0x0007001000000000] RGB Mask
+[Name 135] [0x0007001000000000] RimSharpness
+[Name 136] [0x0007001000000000] RimValue
+[Name 137] [0x0007001000000000] Rotation
+[Name 138] [0x0007001000000000] Rotator
+[Name 139] [0x0007001000000000] ScalarMaterialInput
+[Name 140] [0x0007001000000000] ScalarParameterValues
+[Name 141] [0x0007001000000000] Scale
+[Name 142] [0x0007001000000000] SeparateFresnelColor
+[Name 143] [0x0007001000000000] SharpReflections
+[Name 144] [0x0007001000000000] SizeX
+[Name 145] [0x0007001000000000] SizeY
+[Name 146] [0x0007001000000000] SkeletalMesh
+[Name 147] [0x0007001000000000] Skin_Force_Skulls
+[Name 148] [0x0007001000000000] Socket
+[Name 149] [0x0007001000000000] Sparkles
+[Name 150] [0x0007001000000000] SpecInDiffuseAlpha
+[Name 151] [0x0007001000000000] SpecPower
+[Name 152] [0x0007001000000000] Specular
+[Name 153] [0x0007001000000000] SRGB
+[Name 154] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 155] [0x0007001000000000] StaticMesh
+[Name 156] [0x0007001000000000] StrProperty
+[Name 157] [0x0007001000000000] StructProperty
+[Name 158] [0x0007001000000000] TAGame
+[Name 159] [0x0007001000000000] TC_Grayscale
+[Name 160] [0x0007001000000000] TC_NormalmapSwizzle
+[Name 161] [0x0007001000000000] Texture
+[Name 162] [0x0007001000000000] Texture2D
+[Name 163] [0x0007001000000000] TextureCompressionSettings
+[Name 164] [0x0007001000000000] TextureFileCacheName
+[Name 165] [0x0007001000000000] TextureGroup
+[Name 166] [0x0007001000000000] TEXTUREGROUP_CharacterNormalMap
+[Name 167] [0x0007001000000000] TEXTUREGROUP_Effects
+[Name 168] [0x0007001000000000] TEXTUREGROUP_Weapon
+[Name 169] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 170] [0x0007001000000000] TextureMipGenSettings
+[Name 171] [0x0007001000000000] TextureParameterValues
+[Name 172] [0x0007001000000000] Textures
+[Name 173] [0x0007001000000000] Textures4
+[Name 174] [0x0007001000000000] Textures5
+[Name 175] [0x0007001000000000] Textures7
+[Name 176] [0x0007001000000000] ThumbnailCameraTranslationOffset
+[Name 177] [0x0007001000000000] ThumbnailProductRotation
+[Name 178] [0x0007001000000000] TMGS_NoMipmaps
+[Name 179] [0x0007001000000000] TMGS_Sharpen10
+[Name 180] [0x0007001000000000] Translation
+[Name 181] [0x0007001000000000] UnpackMin
+[Name 182] [0x0007001000000000] UseRGB Mask
+[Name 183] [0x0007001000000000] Vector
+[Name 184] [0x0007001000000000] VectorMaterialInput
+[Name 185] [0x0007001000000000] VectorParameterValues
+[Name 186] [0x0007001000000000] Vert_Linear02_D
+[Name 187] [0x0007001000000000] WorldPositionOffset
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UMaterial hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat
 	Name: Basic_V2_Mat
-	Class: Material
-	Outer: Package Attachment_Parent_Materials
+	Class: UMaterial
+	Outer: Attachment_Parent_Materials
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x00000000000029e9 with 0x00000489 Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterial hat_flashlight.hat_flashlight.flashlight_MAT
 	Name: flashlight_MAT
-	Class: Material
-	Outer: Package hat_flashlight
+	Class: UMaterial
+	Outer: hat_flashlight
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000002e72 with 0x000002b5 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterial hat_flashlight.hat_flashlight.flashlight_particles_MAT
 	Name: flashlight_particles_MAT
-	Class: Material
-	Outer: Package hat_flashlight
+	Class: UMaterial
+	Outer: hat_flashlight
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000003127 with 0x000002c9 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterialExpressionScalarParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionScalarParameter_10
 	Name: MaterialExpressionScalarParameter_10
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000033f0 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UMaterialExpressionScalarParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionScalarParameter_11
 	Name: MaterialExpressionScalarParameter_11
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003484 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UMaterialExpressionScalarParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionScalarParameter_12
 	Name: MaterialExpressionScalarParameter_12
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003518 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UMaterialExpressionScalarParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionScalarParameter_13
 	Name: MaterialExpressionScalarParameter_13
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000035ac with 0x000000e9 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UMaterialExpressionScalarParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionScalarParameter_14
 	Name: MaterialExpressionScalarParameter_14
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003695 with 0x000000fd Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UMaterialExpressionScalarParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003792 with 0x000000ea Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UMaterialExpressionScalarParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionScalarParameter_3
 	Name: MaterialExpressionScalarParameter_3
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000387c with 0x000000ea Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UMaterialExpressionScalarParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionScalarParameter_5
 	Name: MaterialExpressionScalarParameter_5
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003966 with 0x0000012f Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UMaterialExpressionScalarParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionScalarParameter_6
 	Name: MaterialExpressionScalarParameter_6
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003a95 with 0x00000131 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UMaterialExpressionScalarParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionScalarParameter_7
 	Name: MaterialExpressionScalarParameter_7
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003bc6 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UMaterialExpressionScalarParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionScalarParameter_9
 	Name: MaterialExpressionScalarParameter_9
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003c5a with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UMaterialExpressionScalarParameter hat_flashlight.hat_flashlight.flashlight_MAT.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material flashlight_MAT
+	Class: UMaterialExpressionScalarParameter
+	Outer: flashlight_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003cee with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UMaterialExpressionScalarParameter hat_flashlight.hat_flashlight.flashlight_particles_MAT.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material flashlight_particles_MAT
+	Class: UMaterialExpressionScalarParameter
+	Outer: flashlight_particles_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003d82 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionStaticSwitchParameter_1
 	Name: MaterialExpressionStaticSwitchParameter_1
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003e16 with 0x00000198 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionStaticSwitchParameter_10
 	Name: MaterialExpressionStaticSwitchParameter_10
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003fae with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionStaticSwitchParameter_11
 	Name: MaterialExpressionStaticSwitchParameter_11
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000040ae with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionStaticSwitchParameter_12
 	Name: MaterialExpressionStaticSwitchParameter_12
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000041ae with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionStaticSwitchParameter_13
 	Name: MaterialExpressionStaticSwitchParameter_13
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000042ae with 0x00000180 Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionStaticSwitchParameter_14
 	Name: MaterialExpressionStaticSwitchParameter_14
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000442e with 0x000001c4 Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionStaticSwitchParameter_16
 	Name: MaterialExpressionStaticSwitchParameter_16
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000045f2 with 0x00000170 Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionStaticSwitchParameter_17
 	Name: MaterialExpressionStaticSwitchParameter_17
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004762 with 0x00000120 Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionStaticSwitchParameter_2
 	Name: MaterialExpressionStaticSwitchParameter_2
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004882 with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionStaticSwitchParameter_9
 	Name: MaterialExpressionStaticSwitchParameter_9
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004982 with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UMaterialExpressionTextureSampleParameter2D hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionTextureSampleParameter2D_2
 	Name: MaterialExpressionTextureSampleParameter2D_2
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004a82 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UMaterialExpressionTextureSampleParameter2D hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionTextureSampleParameter2D_4
 	Name: MaterialExpressionTextureSampleParameter2D_4
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004b16 with 0x000000ee Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UMaterialExpressionTextureSampleParameter2D hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionTextureSampleParameter2D_5
 	Name: MaterialExpressionTextureSampleParameter2D_5
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004c04 with 0x000000b8 Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UMaterialExpressionTextureSampleParameter2D hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionTextureSampleParameter2D_6
 	Name: MaterialExpressionTextureSampleParameter2D_6
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004cbc with 0x000000b9 Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UMaterialExpressionTextureSampleParameter2D hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionTextureSampleParameter2D_7
 	Name: MaterialExpressionTextureSampleParameter2D_7
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004d75 with 0x000000b7 Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UMaterialExpressionTextureSampleParameter2D hat_flashlight.hat_flashlight.flashlight_MAT.MaterialExpressionTextureSampleParameter2D_3
 	Name: MaterialExpressionTextureSampleParameter2D_3
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material flashlight_MAT
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: flashlight_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004e2c with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: UMaterialExpressionTextureSampleParameter2D hat_flashlight.hat_flashlight.flashlight_particles_MAT.MaterialExpressionTextureSampleParameter2D_3
 	Name: MaterialExpressionTextureSampleParameter2D_3
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material flashlight_particles_MAT
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: flashlight_particles_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004ec0 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[33]
+[Export 33]
+	Full Name: UMaterialExpressionVectorParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionVectorParameter_10
 	Name: MaterialExpressionVectorParameter_10
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionVectorParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000004f54 with 0x000000f2 Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UMaterialExpressionVectorParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionVectorParameter_2
 	Name: MaterialExpressionVectorParameter_2
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionVectorParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000005046 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: UMaterialExpressionVectorParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionVectorParameter_5
 	Name: MaterialExpressionVectorParameter_5
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionVectorParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000050ee with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[36]
+[Export 36]
+	Full Name: UMaterialExpressionVectorParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionVectorParameter_6
 	Name: MaterialExpressionVectorParameter_6
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionVectorParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000005196 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[37]
+[Export 37]
+	Full Name: UMaterialExpressionVectorParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionVectorParameter_7
 	Name: MaterialExpressionVectorParameter_7
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionVectorParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000523e with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[38]
+[Export 38]
+	Full Name: UMaterialExpressionVectorParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionVectorParameter_8
 	Name: MaterialExpressionVectorParameter_8
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionVectorParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000052e6 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[39]
+[Export 39]
+	Full Name: UMaterialExpressionVectorParameter hat_flashlight.Attachment_Parent_Materials.Basic_V2_Mat.MaterialExpressionVectorParameter_9
 	Name: MaterialExpressionVectorParameter_9
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Basic_V2_Mat
+	Class: UMaterialExpressionVectorParameter
+	Outer: Basic_V2_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000538e with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UMaterialExpressionVectorParameter hat_flashlight.hat_flashlight.flashlight_MAT.MaterialExpressionVectorParameter_1
 	Name: MaterialExpressionVectorParameter_1
-	Class: MaterialExpressionVectorParameter
-	Outer: Material flashlight_MAT
+	Class: UMaterialExpressionVectorParameter
+	Outer: flashlight_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000005436 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UMaterialExpressionVectorParameter hat_flashlight.hat_flashlight.flashlight_MAT.MaterialExpressionVectorParameter_4
 	Name: MaterialExpressionVectorParameter_4
-	Class: MaterialExpressionVectorParameter
-	Outer: Material flashlight_MAT
+	Class: UMaterialExpressionVectorParameter
+	Outer: flashlight_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000054de with 0x000000c8 Bytes
 	Export Flags: 0x00000001
-[42]
+[Export 42]
+	Full Name: UMaterialExpressionVectorParameter hat_flashlight.hat_flashlight.flashlight_particles_MAT.MaterialExpressionVectorParameter_1
 	Name: MaterialExpressionVectorParameter_1
-	Class: MaterialExpressionVectorParameter
-	Outer: Material flashlight_particles_MAT
+	Class: UMaterialExpressionVectorParameter
+	Outer: flashlight_particles_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000055a6 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[43]
+[Export 43]
+	Full Name: UMaterialExpressionVectorParameter hat_flashlight.hat_flashlight.flashlight_particles_MAT.MaterialExpressionVectorParameter_4
 	Name: MaterialExpressionVectorParameter_4
-	Class: MaterialExpressionVectorParameter
-	Outer: Material flashlight_particles_MAT
+	Class: UMaterialExpressionVectorParameter
+	Outer: flashlight_particles_MAT
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000564e with 0x000000c8 Bytes
 	Export Flags: 0x00000001
-[44]
+[Export 44]
+	Full Name: UMaterialInstanceConstant hat_flashlight.hat_flashlight.MIC_Hat_Flashlight
 	Name: MIC_Hat_Flashlight
-	Class: MaterialInstanceConstant
-	Outer: Package hat_flashlight
+	Class: UMaterialInstanceConstant
+	Outer: hat_flashlight
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000005716 with 0x00000711 Bytes
 	Export Flags: 0x00000001
-[45]
+[Export 45]
+	Full Name: UObjectReferencer hat_flashlight.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000005e27 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[46]
+[Export 46]
+	Full Name: UPackage hat_flashlight.Antenna_WakeupShip
 	Name: Antenna_WakeupShip
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000005e53 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[47]
+[Export 47]
+	Full Name: UPackage hat_flashlight.Attachment_Parent_Materials
 	Name: Attachment_Parent_Materials
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000005e5f with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[48]
+[Export 48]
+	Full Name: UPackage hat_flashlight.Boost_Champion
 	Name: Boost_Champion
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000005e6b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[49]
+[Export 49]
+	Full Name: UPackage hat_flashlight.Boost_Champion.Textures
 	Name: Textures
-	Class: Package
-	Outer: Package Boost_Champion
+	Class: UPackage
+	Outer: Boost_Champion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000005e77 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[50]
+[Export 50]
+	Full Name: UPackage hat_flashlight.Gradient_FX
 	Name: Gradient_FX
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000005e83 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[51]
+[Export 51]
+	Full Name: UPackage hat_flashlight.Gradient_FX.Mat
 	Name: Mat
-	Class: Package
-	Outer: Package Gradient_FX
+	Class: UPackage
+	Outer: Gradient_FX
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000005e8f with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[52]
+[Export 52]
+	Full Name: UPackage hat_flashlight.hat_flashlight
 	Name: hat_flashlight
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000005e9b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[53]
+[Export 53]
+	Full Name: UPackage hat_flashlight.hat_flashlight_SF
 	Name: hat_flashlight_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000005ea7 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[54]
+[Export 54]
+	Full Name: UPackage hat_flashlight.Hat_Viking_Helmet_Textures
 	Name: Hat_Viking_Helmet_Textures
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000005eb3 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[55]
+[Export 55]
+	Full Name: UPackage hat_flashlight.Skin_Force_Skulls
 	Name: Skin_Force_Skulls
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000005ebf with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[56]
+[Export 56]
+	Full Name: UProductAsset_Attachment_TA hat_flashlight.hat_flashlight.hat_flashlight
 	Name: hat_flashlight
-	Class: ProductAsset_Attachment_TA
-	Outer: Package hat_flashlight
+	Class: UProductAsset_Attachment_TA
+	Outer: hat_flashlight
 	Archetype: ProductAsset_Attachment_TA_2
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000005ecb with 0x00000220 Bytes
 	Export Flags: 0x00000001
-[57]
+[Export 57]
+	Full Name: UStaticMesh hat_flashlight.hat_flashlight.Hat_Flashlight_SM
 	Name: Hat_Flashlight_SM
-	Class: StaticMesh
-	Outer: Package hat_flashlight
+	Class: UStaticMesh
+	Outer: hat_flashlight
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000060eb with 0x0001d7e7 Bytes
 	Export Flags: 0x00000001
-[58]
+[Export 58]
+	Full Name: UTexture2D hat_flashlight.Antenna_WakeupShip.AT_WakeupShip_E
 	Name: AT_WakeupShip_E
-	Class: Texture2D
-	Outer: Package Antenna_WakeupShip
+	Class: UTexture2D
+	Outer: Antenna_WakeupShip
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000238d2 with 0x00000cd5 Bytes
 	Export Flags: 0x00000001
-[59]
+[Export 59]
+	Full Name: UTexture2D hat_flashlight.Boost_Champion.Textures.Noise_Pack
 	Name: Noise_Pack
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000245a7 with 0x000057f6 Bytes
 	Export Flags: 0x00000001
-[60]
+[Export 60]
+	Full Name: UTexture2D hat_flashlight.Gradient_FX.Mat.Vert_Linear02_D
 	Name: Vert_Linear02_D
-	Class: Texture2D
-	Outer: Package Mat
+	Class: UTexture2D
+	Outer: Mat
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000029d9d with 0x0000037e Bytes
 	Export Flags: 0x00000001
-[61]
+[Export 61]
+	Full Name: UTexture2D hat_flashlight.hat_flashlight.Hat_Flashlight_D
 	Name: Hat_Flashlight_D
-	Class: Texture2D
-	Outer: Package hat_flashlight
+	Class: UTexture2D
+	Outer: hat_flashlight
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000002a11b with 0x000017c8 Bytes
 	Export Flags: 0x00000001
-[62]
+[Export 62]
+	Full Name: UTexture2D hat_flashlight.hat_flashlight.Hat_Flashlight_Mask
 	Name: Hat_Flashlight_Mask
-	Class: Texture2D
-	Outer: Package hat_flashlight
+	Class: UTexture2D
+	Outer: hat_flashlight
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000002b8e3 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
-[63]
+[Export 63]
+	Full Name: UTexture2D hat_flashlight.hat_flashlight.Hat_Flashlight_N
 	Name: Hat_Flashlight_N
-	Class: Texture2D
-	Outer: Package hat_flashlight
+	Class: UTexture2D
+	Outer: hat_flashlight
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000002c5f3 with 0x00001818 Bytes
 	Export Flags: 0x00000001
-[64]
+[Export 64]
+	Full Name: UTexture2D hat_flashlight.Hat_Viking_Helmet_Textures.Hat_Viking_Helmet_Diffuse
 	Name: Hat_Viking_Helmet_Diffuse
-	Class: Texture2D
-	Outer: Package Hat_Viking_Helmet_Textures
+	Class: UTexture2D
+	Outer: Hat_Viking_Helmet_Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000002de0b with 0x00000d00 Bytes
 	Export Flags: 0x00000001
-[65]
+[Export 65]
+	Full Name: UTexture2D hat_flashlight.Hat_Viking_Helmet_Textures.Hat_Viking_Helmet_Normal
 	Name: Hat_Viking_Helmet_Normal
-	Class: Texture2D
-	Outer: Package Hat_Viking_Helmet_Textures
+	Class: UTexture2D
+	Outer: Hat_Viking_Helmet_Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000002eb0b with 0x0000184d Bytes
 	Export Flags: 0x00000001
-[66]
+[Export 66]
+	Full Name: UTexture2D hat_flashlight.Skin_Force_Skulls.Force_Skulls_D
 	Name: Force_Skulls_D
-	Class: Texture2D
-	Outer: Package Skin_Force_Skulls
+	Class: UTexture2D
+	Outer: Skin_Force_Skulls
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000030358 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
@@ -766,98 +834,118 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialExpressionStaticSwitchParameter
 	Name: MaterialExpressionStaticSwitchParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.MaterialExpressionTextureSampleParameter2D
 	Name: MaterialExpressionTextureSampleParameter2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.MaterialExpressionVectorParameter
 	Name: MaterialExpressionVectorParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.StaticMesh
 	Name: StaticMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[10]
+	Class Package: Core
+	Outer: Engine
+[Import 10]
+	Full Name: UClass TAGame.ProductAsset_Attachment_TA
 	Name: ProductAsset_Attachment_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[11]
+	Class Package: Core
+	Outer: TAGame
+[Import 11]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[12]
+	Class Package: Core
+[Import 12]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[13]
+	Class Package: Core
+[Import 13]
+	Full Name: UPackage FX_Textures
 	Name: FX_Textures
 	Class: Package
-	Package: Core
-[14]
+	Class Package: Core
+[Import 14]
+	Full Name: UPackage FX_Textures.Gradients
 	Name: Gradients
 	Class: Package
-	Package: Core
-	Outer: Package FX_Textures
-[15]
+	Class Package: Core
+	Outer: FX_Textures
+[Import 15]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UProductAsset_Attachment_TA ProductSlots.Hat.ProductAsset_Attachment_TA_2
 	Name: ProductAsset_Attachment_TA_2
 	Class: ProductAsset_Attachment_TA
-	Package: TAGame
-	Outer: ProductSlot_TA Hat
-[18]
+	Class Package: TAGame
+	Outer: Hat
+[Import 18]
+	Full Name: UProductSlot_TA ProductSlots.Hat
 	Name: Hat
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
-[19]
+	Class Package: TAGame
+	Outer: ProductSlots
+[Import 19]
+	Full Name: UTexture2D FX_Textures.Gradients.Curve_Shockwaves_Pack
 	Name: Curve_Shockwaves_Pack
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Gradients
+	Class Package: Engine
+	Outer: Gradients

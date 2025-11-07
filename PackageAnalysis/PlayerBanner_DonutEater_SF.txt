@@ -128,6 +128,7 @@ Test Data Size: 0x00003ee2
 Compressed Chunk Info Offset: 0x000011ca
 Last Block Size: 0x00000008
 Base Header Size: 0x000001c1
+Encrypted Header Size: 0x000050f0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -135,352 +136,338 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] Attributes
-[2] BackgroundGradient
-[3] bAllowLicensedEquip
-[4] Banner
-[5] Banner_DonutEater
-[6] BlackMetal_00
-[7] BoolProperty
-[8] bReplicated
-[9] ByteProperty
-[10] Class
-[11] CompressionNone
-[12] Core
-[13] CreatureChewBulge
-[14] CreatureDimples
-[15] CreatureEyes
-[16] CreatureFace
-[17] CreatureHand
-[18] CreatureOpenMouth
-[19] DefaultPaintColor
-[20] DefaultProduct_New
-[21] Donut
-[22] Engine
-[23] EPixelFormat
-[24] FlashTextureRescale
-[25] FlashTextureScale_Mult4
-[26] Format
-[27] GFxUI
-[28] GoldMetal_00
-[29] Icon
-[30] IconLarge
-[31] Icons
-[32] IntProperty
-[33] Label
-[34] LinearColor
-[35] LODGroup
-[36] MatchesRequiredToUnlock
-[37] MaterialGroups
-[38] Materials
-[39] MipGenSettings
-[40] MovieReference
-[41] NeverStream
-[42] None
-[43] ObjectProperty
-[44] ObjectReferencer
-[45] OnlineLabel
-[46] OriginalSizeX
-[47] OriginalSizeY
-[48] Package
-[49] PackTextureSize
-[50] PaintMaterialGroup
-[51] Paints
-[52] PF_A8R8G8B8
-[53] PF_DXT5
-[54] PlatinumMetal_00
-[55] PlayerBanner
-[56] PlayerBanner_DonutEater
-[57] PlayerBanner_DonutEater_SF
-[58] playerBanner_RLShield
-[59] PluralLabel
-[60] Product_TA
-[61] ProductAsset_PlayerBanner_TA
-[62] ProductAttribute_PaintSettings_TA
-[63] ProductPaint
-[64] ProductPaint_TA
-[65] Products
-[66] ProductsDB
-[67] ProductSlot_TA
-[68] ProductSlots
-[69] RawData
-[70] ReferencedObjects
-[71] References
-[72] RoseGoldMetal_00
-[73] SizeX
-[74] SizeY
-[75] SourceFile
-[76] SourceFileCRC
-[77] SourceFileTimestamp
-[78] SRGB
-[79] StandaloneSeekFreeReferencer
-[80] StrProperty
-[81] StructProperty
-[82] SwfMovie
-[83] TAGame
-[84] Texture2D
-[85] TextureFormat
-[86] TextureGroup
-[87] TEXTUREGROUP_UI
-[88] TextureMipGenSettings
-[89] TextureRescale
-[90] Thumb_Banner_DonutEater
-[91] Thumbnail
-[92] TMGS_NoMipmaps
-[93] UnsupportedPaints
-[94] WhiteGoldMetal_00
-[95] FloatProperty
-[96] ThumbnailKeyLightBrightnessScale
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] Attributes
+[Name 2] [0x0007001000000000] BackgroundGradient
+[Name 3] [0x0007000000000000] bAllowLicensedEquip
+[Name 4] [0x0007000000000000] Banner
+[Name 5] [0x0007001000000000] Banner_DonutEater
+[Name 6] [0x0007001000000000] BlackMetal_00
+[Name 7] [0x0007001000000000] BoolProperty
+[Name 8] [0x0007000000000000] bReplicated
+[Name 9] [0x0007001000000000] ByteProperty
+[Name 10] [0x0007001000000000] Class
+[Name 11] [0x0007000000000000] CompressionNone
+[Name 12] [0x0007001000000000] Core
+[Name 13] [0x0007001000000000] CreatureChewBulge
+[Name 14] [0x0007001000000000] CreatureDimples
+[Name 15] [0x0007001000000000] CreatureEyes
+[Name 16] [0x0007001000000000] CreatureFace
+[Name 17] [0x0007001000000000] CreatureHand
+[Name 18] [0x0007001000000000] CreatureOpenMouth
+[Name 19] [0x0007001000000000] DefaultPaintColor
+[Name 20] [0x0007000000000000] DefaultProduct_New
+[Name 21] [0x0007001000000000] Donut
+[Name 22] [0x0007001000000000] Engine
+[Name 23] [0x0007001000000000] EPixelFormat
+[Name 24] [0x0007001000000000] FlashTextureRescale
+[Name 25] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 26] [0x0007001000000000] Format
+[Name 27] [0x0007001000000000] GFxUI
+[Name 28] [0x0007001000000000] GoldMetal_00
+[Name 29] [0x0007000000000000] Icon
+[Name 30] [0x0007000000000000] IconLarge
+[Name 31] [0x0007000000000000] Icons
+[Name 32] [0x0007001000000000] IntProperty
+[Name 33] [0x0007000000000000] Label
+[Name 34] [0x0007001000000000] LinearColor
+[Name 35] [0x0007001000000000] LODGroup
+[Name 36] [0x0007000000000000] MatchesRequiredToUnlock
+[Name 37] [0x0007001000000000] MaterialGroups
+[Name 38] [0x0007001000000000] Materials
+[Name 39] [0x0007001000000000] MipGenSettings
+[Name 40] [0x0007001000000000] MovieReference
+[Name 41] [0x0007001000000000] NeverStream
+[Name 42] [0x0007001000000000] None
+[Name 43] [0x0007001000000000] ObjectProperty
+[Name 44] [0x0007001000000000] ObjectReferencer
+[Name 45] [0x0007000000000000] OnlineLabel
+[Name 46] [0x0007001000000000] OriginalSizeX
+[Name 47] [0x0007001000000000] OriginalSizeY
+[Name 48] [0x0007001000000000] Package
+[Name 49] [0x0007001000000000] PackTextureSize
+[Name 50] [0x0007001000000000] PaintMaterialGroup
+[Name 51] [0x0007001000000000] Paints
+[Name 52] [0x0007000000000000] PF_A8R8G8B8
+[Name 53] [0x0007001000000000] PF_DXT5
+[Name 54] [0x0007001000000000] PlatinumMetal_00
+[Name 55] [0x0007001000000000] PlayerBanner
+[Name 56] [0x0007001000000000] PlayerBanner_DonutEater
+[Name 57] [0x0007001000000000] PlayerBanner_DonutEater_SF
+[Name 58] [0x0007000000000000] playerBanner_RLShield
+[Name 59] [0x0007000000000000] PluralLabel
+[Name 60] [0x0007000000000000] Product_TA
+[Name 61] [0x0007001000000000] ProductAsset_PlayerBanner_TA
+[Name 62] [0x0007001000000000] ProductAttribute_PaintSettings_TA
+[Name 63] [0x0007001000000000] ProductPaint
+[Name 64] [0x0007001000000000] ProductPaint_TA
+[Name 65] [0x0007000000000000] Products
+[Name 66] [0x0007000000000000] ProductsDB
+[Name 67] [0x0007001000000000] ProductSlot_TA
+[Name 68] [0x0007001000000000] ProductSlots
+[Name 69] [0x0007001000000000] RawData
+[Name 70] [0x0007001000000000] ReferencedObjects
+[Name 71] [0x0007001000000000] References
+[Name 72] [0x0007001000000000] RoseGoldMetal_00
+[Name 73] [0x0007001000000000] SizeX
+[Name 74] [0x0007001000000000] SizeY
+[Name 75] [0x0007001000000000] SourceFile
+[Name 76] [0x0007001000000000] SourceFileCRC
+[Name 77] [0x0007001000000000] SourceFileTimestamp
+[Name 78] [0x0007001000000000] SRGB
+[Name 79] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 80] [0x0007001000000000] StrProperty
+[Name 81] [0x0007001000000000] StructProperty
+[Name 82] [0x0007001000000000] SwfMovie
+[Name 83] [0x0007001000000000] TAGame
+[Name 84] [0x0007001000000000] Texture2D
+[Name 85] [0x0007001000000000] TextureFormat
+[Name 86] [0x0007001000000000] TextureGroup
+[Name 87] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 88] [0x0007001000000000] TextureMipGenSettings
+[Name 89] [0x0007001000000000] TextureRescale
+[Name 90] [0x0007000000000000] Thumb_Banner_DonutEater
+[Name 91] [0x0007000000000000] Thumbnail
+[Name 92] [0x0007001000000000] TMGS_NoMipmaps
+[Name 93] [0x0007001000000000] UnsupportedPaints
+[Name 94] [0x0007001000000000] WhiteGoldMetal_00
+[Name 95] [0x0007001000000000] FloatProperty
+[Name 96] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
 
 
     ~ Exports ~ 
 
 
-[0]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UObjectReferencer PlayerBanner_DonutEater.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000001397 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[2]
+[Export 2]
+	Full Name: UPackage PlayerBanner_DonutEater.PlayerBanner_DonutEater
 	Name: PlayerBanner_DonutEater
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000013c3 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[3]
+[Export 3]
+	Full Name: UPackage PlayerBanner_DonutEater.PlayerBanner_DonutEater_SF
 	Name: PlayerBanner_DonutEater_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000013cf with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[4]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[5]
+[Export 5]
+	Full Name: UProductAsset_PlayerBanner_TA PlayerBanner_DonutEater.PlayerBanner_DonutEater.PlayerBanner_DonutEater
 	Name: PlayerBanner_DonutEater
-	Class: ProductAsset_PlayerBanner_TA
-	Outer: Package PlayerBanner_DonutEater
+	Class: UProductAsset_PlayerBanner_TA
+	Outer: PlayerBanner_DonutEater
 	Archetype: ProductAsset_PlayerBanner_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000055a84 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UProductAttribute_PaintSettings_TA PlayerBanner_DonutEater.PlayerBanner_DonutEater.PlayerBanner_DonutEater.ProductAttribute_PaintSettings_TA_109
 	Name: ProductAttribute_PaintSettings_TA_109
-	Class: ProductAttribute_PaintSettings_TA
-	Outer: ProductAsset_PlayerBanner_TA PlayerBanner_DonutEater
+	Class: UProductAttribute_PaintSettings_TA
+	Outer: PlayerBanner_DonutEater
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x000000000000147b with 0x00000084 Bytes
 	Export Flags: 0x00000001
-[7]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[8]
+[Export 8]
+	Full Name: USwfMovie PlayerBanner_DonutEater.PlayerBanner_DonutEater.Banner_DonutEater
 	Name: Banner_DonutEater
-	Class: SwfMovie
-	Outer: Package PlayerBanner_DonutEater
+	Class: USwfMovie
+	Outer: PlayerBanner_DonutEater
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000162c with 0x00001870 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UTexture2D PlayerBanner_DonutEater.PlayerBanner_DonutEater.BackgroundGradient
 	Name: BackgroundGradient
-	Class: Texture2D
-	Outer: Package PlayerBanner_DonutEater
+	Class: UTexture2D
+	Outer: PlayerBanner_DonutEater
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002e9c with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UTexture2D PlayerBanner_DonutEater.PlayerBanner_DonutEater.CreatureChewBulge
 	Name: CreatureChewBulge
-	Class: Texture2D
-	Outer: Package PlayerBanner_DonutEater
+	Class: UTexture2D
+	Outer: PlayerBanner_DonutEater
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000d42a with 0x0000048e Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UTexture2D PlayerBanner_DonutEater.PlayerBanner_DonutEater.CreatureDimples
 	Name: CreatureDimples
-	Class: Texture2D
-	Outer: Package PlayerBanner_DonutEater
+	Class: UTexture2D
+	Outer: PlayerBanner_DonutEater
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000d8b8 with 0x000012ae Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UTexture2D PlayerBanner_DonutEater.PlayerBanner_DonutEater.CreatureEyes
 	Name: CreatureEyes
-	Class: Texture2D
-	Outer: Package PlayerBanner_DonutEater
+	Class: UTexture2D
+	Outer: PlayerBanner_DonutEater
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000eb66 with 0x00000e9e Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UTexture2D PlayerBanner_DonutEater.PlayerBanner_DonutEater.CreatureFace
 	Name: CreatureFace
-	Class: Texture2D
-	Outer: Package PlayerBanner_DonutEater
+	Class: UTexture2D
+	Outer: PlayerBanner_DonutEater
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000fa04 with 0x000039ee Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UTexture2D PlayerBanner_DonutEater.PlayerBanner_DonutEater.CreatureHand
 	Name: CreatureHand
-	Class: Texture2D
-	Outer: Package PlayerBanner_DonutEater
+	Class: UTexture2D
+	Outer: PlayerBanner_DonutEater
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000133f2 with 0x000005fe Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UTexture2D PlayerBanner_DonutEater.PlayerBanner_DonutEater.CreatureOpenMouth
 	Name: CreatureOpenMouth
-	Class: Texture2D
-	Outer: Package PlayerBanner_DonutEater
+	Class: UTexture2D
+	Outer: PlayerBanner_DonutEater
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000139f0 with 0x00000bce Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UTexture2D PlayerBanner_DonutEater.PlayerBanner_DonutEater.Donut
 	Name: Donut
-	Class: Texture2D
-	Outer: Package PlayerBanner_DonutEater
+	Class: UTexture2D
+	Outer: PlayerBanner_DonutEater
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000145be with 0x0000116e Bytes
 	Export Flags: 0x00000001
-[17]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
 
 
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[4]
+	Class Package: Core
+	Outer: GFxUI
+[Import 4]
+	Full Name: UClass TAGame.ProductAsset_PlayerBanner_TA
 	Name: ProductAsset_PlayerBanner_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UClass TAGame.ProductAttribute_PaintSettings_TA
 	Name: ProductAttribute_PaintSettings_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
-	Name: None
-	Class: None
-	Package: None
-[7]
+	Class Package: Core
+	Outer: TAGame
+[Import 7]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage ProductPaint
 	Name: ProductPaint
 	Class: Package
-	Package: Core
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UPackage ProductPaint.Paints
 	Name: Paints
 	Class: Package
-	Package: Core
-	Outer: Package ProductPaint
-[12]
-	Name: None
-	Class: None
-	Package: None
-[13]
-	Name: None
-	Class: None
-	Package: None
-[14]
-	Name: None
-	Class: None
-	Package: None
-[15]
+	Class Package: Core
+	Outer: ProductPaint
+[Import 15]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[16]
-	Name: None
-	Class: None
-	Package: None
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UProductPaint_TA ProductPaint.Paints.BlackMetal_00
 	Name: BlackMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[18]
+	Class Package: TAGame
+	Outer: Paints
+[Import 18]
+	Full Name: UProductPaint_TA ProductPaint.Paints.GoldMetal_00
 	Name: GoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[19]
+	Class Package: TAGame
+	Outer: Paints
+[Import 19]
+	Full Name: UProductPaint_TA ProductPaint.Paints.PlatinumMetal_00
 	Name: PlatinumMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[20]
+	Class Package: TAGame
+	Outer: Paints
+[Import 20]
+	Full Name: UProductPaint_TA ProductPaint.Paints.RoseGoldMetal_00
 	Name: RoseGoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[21]
+	Class Package: TAGame
+	Outer: Paints
+[Import 21]
+	Full Name: UProductPaint_TA ProductPaint.Paints.WhiteGoldMetal_00
 	Name: WhiteGoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[22]
-	Name: None
-	Class: None
-	Package: None
-[23]
+	Class Package: TAGame
+	Outer: Paints
+[Import 23]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[24]
+	Class Package: Core
+[Import 24]
+	Full Name: UProductAsset_PlayerBanner_TA ProductSlots.PlayerBanner.ProductAsset_PlayerBanner_TA_0
 	Name: ProductAsset_PlayerBanner_TA_0
 	Class: ProductAsset_PlayerBanner_TA
-	Package: TAGame
-	Outer: ProductSlot_TA PlayerBanner
-[25]
+	Class Package: TAGame
+	Outer: PlayerBanner
+[Import 25]
+	Full Name: UProductSlot_TA ProductSlots.PlayerBanner
 	Name: PlayerBanner
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots

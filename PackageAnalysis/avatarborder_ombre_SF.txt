@@ -53,6 +53,7 @@ Test Data Size: 0x00003feb
 Compressed Chunk Info Offset: 0x00000a89
 Last Block Size: 0x00000000
 Base Header Size: 0x000000c9
+Encrypted Header Size: 0x00004a90
 
 AES: ZZ7iUkBMEQmGRgJSzgtd5PpHuDei4+39bd5YuDTFVsw=
 
@@ -60,145 +61,155 @@ AES: ZZ7iUkBMEQmGRgJSzgtd5PpHuDei4+39bd5YuDTFVsw=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] AvatarBorder
-[2] AvatarBorder_Default
-[3] avatarborder_ombre
-[4] AvatarBorder_Ombre_BG
-[5] avatarborder_ombre_SF
-[6] bAllowLicensedEquip
-[7] bIsSourceArtUncompressed
-[8] BoolProperty
-[9] bReplicated
-[10] ByteProperty
-[11] Class
-[12] CompressionNone
-[13] Core
-[14] DefaultPaintColor
-[15] DefaultProduct_New
-[16] Engine
-[17] EPixelFormat
-[18] Format
-[19] Icon
-[20] IconLarge
-[21] IntProperty
-[22] Label
-[23] LinearColor
-[24] LODGroup
-[25] MipGenSettings
-[26] MipTailBaseIdx
-[27] NameProperty
-[28] NeverStream
-[29] None
-[30] ObjectProperty
-[31] ObjectReferencer
-[32] OnlineLabel
-[33] OriginalSizeX
-[34] OriginalSizeY
-[35] Package
-[36] PF_A8R8G8B8
-[37] PlayerAvatarBorder
-[38] PluralLabel
-[39] Product_TA
-[40] ProductAsset_PlayerAvatarBorder_TA
-[41] Products
-[42] ProductsDB
-[43] ProductSlot_TA
-[44] ProductSlots
-[45] ReferencedObjects
-[46] SizeX
-[47] SizeY
-[48] SRGB
-[49] StandaloneSeekFreeReferencer
-[50] StrProperty
-[51] StructProperty
-[52] TAGame
-[53] Texture2D
-[54] TextureFileCacheName
-[55] TextureGroup
-[56] TEXTUREGROUP_UI
-[57] TextureMipGenSettings
-[58] Textures4
-[59] Thumb_Border_Ombre
-[60] Thumbnail
-[61] TintableLayer
-[62] TMGS_NoMipmaps
-[63] ToPlayer
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] AvatarBorder
+[Name 2] [0x0007001000000000] AvatarBorder_Default
+[Name 3] [0x0007001000000000] avatarborder_ombre
+[Name 4] [0x0007001000000000] AvatarBorder_Ombre_BG
+[Name 5] [0x0007001000000000] avatarborder_ombre_SF
+[Name 6] [0x0007001000000000] bAllowLicensedEquip
+[Name 7] [0x0007001000000000] bIsSourceArtUncompressed
+[Name 8] [0x0007001000000000] BoolProperty
+[Name 9] [0x0007001000000000] bReplicated
+[Name 10] [0x0007001000000000] ByteProperty
+[Name 11] [0x0007001000000000] Class
+[Name 12] [0x0007001000000000] CompressionNone
+[Name 13] [0x0007001000000000] Core
+[Name 14] [0x0007001000000000] DefaultPaintColor
+[Name 15] [0x0007001000000000] DefaultProduct_New
+[Name 16] [0x0007001000000000] Engine
+[Name 17] [0x0007001000000000] EPixelFormat
+[Name 18] [0x0007001000000000] Format
+[Name 19] [0x0007001000000000] Icon
+[Name 20] [0x0007001000000000] IconLarge
+[Name 21] [0x0007001000000000] IntProperty
+[Name 22] [0x0007001000000000] Label
+[Name 23] [0x0007001000000000] LinearColor
+[Name 24] [0x0007001000000000] LODGroup
+[Name 25] [0x0007001000000000] MipGenSettings
+[Name 26] [0x0007001000000000] MipTailBaseIdx
+[Name 27] [0x0007001000000000] NameProperty
+[Name 28] [0x0007001000000000] NeverStream
+[Name 29] [0x0007001000000000] None
+[Name 30] [0x0007001000000000] ObjectProperty
+[Name 31] [0x0007001000000000] ObjectReferencer
+[Name 32] [0x0007001000000000] OnlineLabel
+[Name 33] [0x0007001000000000] OriginalSizeX
+[Name 34] [0x0007001000000000] OriginalSizeY
+[Name 35] [0x0007001000000000] Package
+[Name 36] [0x0007001000000000] PF_A8R8G8B8
+[Name 37] [0x0007001000000000] PlayerAvatarBorder
+[Name 38] [0x0007001000000000] PluralLabel
+[Name 39] [0x0007001000000000] Product_TA
+[Name 40] [0x0007001000000000] ProductAsset_PlayerAvatarBorder_TA
+[Name 41] [0x0007001000000000] Products
+[Name 42] [0x0007001000000000] ProductsDB
+[Name 43] [0x0007001000000000] ProductSlot_TA
+[Name 44] [0x0007001000000000] ProductSlots
+[Name 45] [0x0007001000000000] ReferencedObjects
+[Name 46] [0x0007001000000000] SizeX
+[Name 47] [0x0007001000000000] SizeY
+[Name 48] [0x0007001000000000] SRGB
+[Name 49] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 50] [0x0007001000000000] StrProperty
+[Name 51] [0x0007001000000000] StructProperty
+[Name 52] [0x0007001000000000] TAGame
+[Name 53] [0x0007001000000000] Texture2D
+[Name 54] [0x0007001000000000] TextureFileCacheName
+[Name 55] [0x0007001000000000] TextureGroup
+[Name 56] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 57] [0x0007001000000000] TextureMipGenSettings
+[Name 58] [0x0007001000000000] Textures4
+[Name 59] [0x0007001000000000] Thumb_Border_Ombre
+[Name 60] [0x0007001000000000] Thumbnail
+[Name 61] [0x0007001000000000] TintableLayer
+[Name 62] [0x0007001000000000] TMGS_NoMipmaps
+[Name 63] [0x0007001000000000] ToPlayer
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UProductAsset_PlayerAvatarBorder_TA avatarborder_ombre.ProductSlots.PlayerAvatarBorder.ProductAsset_PlayerAvatarBorder_TA_0
 	Name: ProductAsset_PlayerAvatarBorder_TA_0
-	Class: ProductAsset_PlayerAvatarBorder_TA
-	Outer: ProductSlot_TA PlayerAvatarBorder
+	Class: UProductAsset_PlayerAvatarBorder_TA
+	Outer: PlayerAvatarBorder
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000b52 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UObjectReferencer avatarborder_ombre.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000000b5e with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[2]
+[Export 2]
+	Full Name: UPackage avatarborder_ombre.avatarborder_ombre
 	Name: avatarborder_ombre
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000b8a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[3]
+[Export 3]
+	Full Name: UPackage avatarborder_ombre.avatarborder_ombre_SF
 	Name: avatarborder_ombre_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000b96 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[4]
+[Export 4]
+	Full Name: UPackage avatarborder_ombre.ProductSlots
 	Name: ProductSlots
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000ba2 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[5]
+[Export 5]
+	Full Name: UProductAsset_PlayerAvatarBorder_TA avatarborder_ombre.avatarborder_ombre.avatarborder_ombre
 	Name: avatarborder_ombre
-	Class: ProductAsset_PlayerAvatarBorder_TA
-	Outer: Package avatarborder_ombre
+	Class: UProductAsset_PlayerAvatarBorder_TA
+	Outer: avatarborder_ombre
 	Archetype: ProductAsset_PlayerAvatarBorder_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000bae with 0x00000090 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UProductSlot_TA avatarborder_ombre.ProductSlots.PlayerAvatarBorder
 	Name: PlayerAvatarBorder
-	Class: ProductSlot_TA
-	Outer: Package ProductSlots
+	Class: UProductSlot_TA
+	Outer: ProductSlots
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x0000000000000c3e with 0x00000111 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UTexture2D avatarborder_ombre.avatarborder_ombre.avatarborder_ombre
 	Name: avatarborder_ombre
-	Class: Texture2D
-	Outer: Package avatarborder_ombre
+	Class: UTexture2D
+	Outer: avatarborder_ombre
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000d4f with 0x0000e2b0 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UTexture2D avatarborder_ombre.avatarborder_ombre.AvatarBorder_Ombre_BG
 	Name: AvatarBorder_Ombre_BG
-	Class: Texture2D
-	Outer: Package avatarborder_ombre
+	Class: UTexture2D
+	Outer: avatarborder_ombre
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000efff with 0x0000e2b7 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UTexture2D avatarborder_ombre.avatarborder_ombre.Thumb_Border_Ombre
 	Name: Thumb_Border_Ombre
-	Class: Texture2D
-	Outer: Package avatarborder_ombre
+	Class: UTexture2D
+	Outer: avatarborder_ombre
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000001d2b6 with 0x000401a4 Bytes
 	Export Flags: 0x00000001
@@ -207,59 +218,71 @@ AES: ZZ7iUkBMEQmGRgJSzgtd5PpHuDei4+39bd5YuDTFVsw=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass TAGame.ProductAsset_PlayerAvatarBorder_TA
 	Name: ProductAsset_PlayerAvatarBorder_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[4]
+	Class Package: Core
+	Outer: TAGame
+[Import 4]
+	Full Name: UClass TAGame.ProductSlot_TA
 	Name: ProductSlot_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[6]
+	Class Package: Core
+[Import 6]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage ProductsDB
 	Name: ProductsDB
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage ProductsDB.Products
 	Name: Products
 	Class: Package
-	Package: Core
-	Outer: Package ProductsDB
-[9]
+	Class Package: Core
+	Outer: ProductsDB
+[Import 9]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UProduct_TA ProductsDB.Products.AvatarBorder_Default
 	Name: AvatarBorder_Default
 	Class: Product_TA
-	Package: TAGame
-	Outer: Package Products
-[11]
+	Class Package: TAGame
+	Outer: Products
+[Import 11]
+	Full Name: UTexture2D ProductSlots.AvatarBorder
 	Name: AvatarBorder
 	Class: Texture2D
-	Package: Engine
-	Outer: Package ProductSlots
+	Class Package: Engine
+	Outer: ProductSlots

@@ -41,6 +41,7 @@ Test Data Size: 0x00003fdc
 Compressed Chunk Info Offset: 0x00000a0c
 Last Block Size: 0x00000004
 Base Header Size: 0x00000099
+Encrypted Header Size: 0x00004a00
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -48,146 +49,159 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] AirMaxThrottleTime
-[1] AkAudio
-[2] AkBank
-[3] AkSoundCue
-[4] ArrayProperty
-[5] AssetAttribute_SoundOverrides_TA
-[6] Attributes
-[7] Class
-[8] Core
-[9] Engine
-[10] Engine_Skateboard_Ignition
-[11] Engine_Skateboard_Loops
-[12] Engine_Skateboard_OnThrottle_Push
-[13] EngineAudio
-[14] engineaudio_skateboard
-[15] EngineAudio_Skateboard_Profile
-[16] engineaudio_skateboard_SF
-[17] EngineAudioProfile_TA
-[18] ExhaustSound
-[19] FloatProperty
-[20] FXName
-[21] IgnitionSound
-[22] JumpSound
-[23] NameProperty
-[24] None
-[25] ObjectProperty
-[26] ObjectReferencer
-[27] Package
-[28] ProductAsset_EngineAudio_TA
-[29] ProductSlot_TA
-[30] ProductSlots
-[31] Profile
-[32] ReferencedObjects
-[33] RequiredBank
-[34] SFX_Motor_Skateboard
-[35] SFX_Special_Skateboard
-[36] Skateboard_Jump
-[37] SoundCue
-[38] SoundOverrides
-[39] StandaloneSeekFreeReferencer
-[40] StartEvent
-[41] StopEvent
-[42] StrProperty
-[43] TAGame
-[44] ThrottleEngageSound
+[Name 0] [0x0007001000000000] AirMaxThrottleTime
+[Name 1] [0x0007001000000000] AkAudio
+[Name 2] [0x0007001000000000] AkBank
+[Name 3] [0x0007001000000000] AkSoundCue
+[Name 4] [0x0007001000000000] ArrayProperty
+[Name 5] [0x0007001000000000] AssetAttribute_SoundOverrides_TA
+[Name 6] [0x0007001000000000] Attributes
+[Name 7] [0x0007001000000000] Class
+[Name 8] [0x0007001000000000] Core
+[Name 9] [0x0007001000000000] Engine
+[Name 10] [0x0007001000000000] Engine_Skateboard_Ignition
+[Name 11] [0x0007001000000000] Engine_Skateboard_Loops
+[Name 12] [0x0007001000000000] Engine_Skateboard_OnThrottle_Push
+[Name 13] [0x0007001000000000] EngineAudio
+[Name 14] [0x0007001000000000] engineaudio_skateboard
+[Name 15] [0x0007001000000000] EngineAudio_Skateboard_Profile
+[Name 16] [0x0007001000000000] engineaudio_skateboard_SF
+[Name 17] [0x0007001000000000] EngineAudioProfile_TA
+[Name 18] [0x0007001000000000] ExhaustSound
+[Name 19] [0x0007001000000000] FloatProperty
+[Name 20] [0x0007001000000000] FXName
+[Name 21] [0x0007001000000000] IgnitionSound
+[Name 22] [0x0007001000000000] JumpSound
+[Name 23] [0x0007001000000000] NameProperty
+[Name 24] [0x0007001000000000] None
+[Name 25] [0x0007001000000000] ObjectProperty
+[Name 26] [0x0007001000000000] ObjectReferencer
+[Name 27] [0x0007001000000000] Package
+[Name 28] [0x0007001000000000] ProductAsset_EngineAudio_TA
+[Name 29] [0x0007001000000000] ProductSlot_TA
+[Name 30] [0x0007001000000000] ProductSlots
+[Name 31] [0x0007001000000000] Profile
+[Name 32] [0x0007001000000000] ReferencedObjects
+[Name 33] [0x0007001000000000] RequiredBank
+[Name 34] [0x0007001000000000] SFX_Motor_Skateboard
+[Name 35] [0x0007001000000000] SFX_Special_Skateboard
+[Name 36] [0x0007001000000000] Skateboard_Jump
+[Name 37] [0x0007001000000000] SoundCue
+[Name 38] [0x0007001000000000] SoundOverrides
+[Name 39] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 40] [0x0007001000000000] StartEvent
+[Name 41] [0x0007001000000000] StopEvent
+[Name 42] [0x0007001000000000] StrProperty
+[Name 43] [0x0007001000000000] TAGame
+[Name 44] [0x0007001000000000] ThrottleEngageSound
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAkBank engineaudio_skateboard.engineaudio_skateboard.SFX_Motor_Skateboard
 	Name: SFX_Motor_Skateboard
-	Class: AkBank
-	Outer: Package engineaudio_skateboard
+	Class: UAkBank
+	Outer: engineaudio_skateboard
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000aa5 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UAkBank engineaudio_skateboard.SFX_Special_Skateboard.SFX_Special_Skateboard
 	Name: SFX_Special_Skateboard
-	Class: AkBank
-	Outer: Package SFX_Special_Skateboard
+	Class: UAkBank
+	Outer: SFX_Special_Skateboard
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000ab1 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UAkSoundCue engineaudio_skateboard.engineaudio_skateboard.Engine_Skateboard_Ignition
 	Name: Engine_Skateboard_Ignition
-	Class: AkSoundCue
-	Outer: Package engineaudio_skateboard
+	Class: UAkSoundCue
+	Outer: engineaudio_skateboard
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000abd with 0x00000097 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UAkSoundCue engineaudio_skateboard.engineaudio_skateboard.Engine_Skateboard_Loops
 	Name: Engine_Skateboard_Loops
-	Class: AkSoundCue
-	Outer: Package engineaudio_skateboard
+	Class: UAkSoundCue
+	Outer: engineaudio_skateboard
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000b54 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UAkSoundCue engineaudio_skateboard.engineaudio_skateboard.Engine_Skateboard_OnThrottle_Push
 	Name: Engine_Skateboard_OnThrottle_Push
-	Class: AkSoundCue
-	Outer: Package engineaudio_skateboard
+	Class: UAkSoundCue
+	Outer: engineaudio_skateboard
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000be8 with 0x0000009e Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UAkSoundCue engineaudio_skateboard.SFX_Special_Skateboard.Skateboard_Jump
 	Name: Skateboard_Jump
-	Class: AkSoundCue
-	Outer: Package SFX_Special_Skateboard
+	Class: UAkSoundCue
+	Outer: SFX_Special_Skateboard
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000c86 with 0x00000059 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UAssetAttribute_SoundOverrides_TA engineaudio_skateboard.engineaudio_skateboard.engineaudio_skateboard.AssetAttribute_SoundOverrides_TA_0
 	Name: AssetAttribute_SoundOverrides_TA_0
-	Class: AssetAttribute_SoundOverrides_TA
-	Outer: ProductAsset_EngineAudio_TA engineaudio_skateboard
+	Class: UAssetAttribute_SoundOverrides_TA
+	Outer: engineaudio_skateboard
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000cdf with 0x0000006c Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UEngineAudioProfile_TA engineaudio_skateboard.engineaudio_skateboard.EngineAudio_Skateboard_Profile
 	Name: EngineAudio_Skateboard_Profile
-	Class: EngineAudioProfile_TA
-	Outer: Package engineaudio_skateboard
+	Class: UEngineAudioProfile_TA
+	Outer: engineaudio_skateboard
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000d4b with 0x00000028 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UObjectReferencer engineaudio_skateboard.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000000d73 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[9]
+[Export 9]
+	Full Name: UPackage engineaudio_skateboard.engineaudio_skateboard
 	Name: engineaudio_skateboard
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000d9f with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[10]
+[Export 10]
+	Full Name: UPackage engineaudio_skateboard.engineaudio_skateboard_SF
 	Name: engineaudio_skateboard_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000dab with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[11]
+[Export 11]
+	Full Name: UPackage engineaudio_skateboard.SFX_Special_Skateboard
 	Name: SFX_Special_Skateboard
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000000db7 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[12]
+[Export 12]
+	Full Name: UProductAsset_EngineAudio_TA engineaudio_skateboard.engineaudio_skateboard.engineaudio_skateboard
 	Name: engineaudio_skateboard
-	Class: ProductAsset_EngineAudio_TA
-	Outer: Package engineaudio_skateboard
+	Class: UProductAsset_EngineAudio_TA
+	Outer: engineaudio_skateboard
 	Archetype: ProductAsset_EngineAudio_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000000dc3 with 0x0000009c Bytes
@@ -197,68 +211,82 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass AkAudio.AkSoundCue
 	Name: AkSoundCue
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[1]
+	Class Package: Core
+	Outer: AkAudio
+[Import 1]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[2]
+	Class Package: Core
+	Outer: Core
+[Import 2]
+	Full Name: UClass Engine.AkBank
 	Name: AkBank
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass TAGame.AssetAttribute_SoundOverrides_TA
 	Name: AssetAttribute_SoundOverrides_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UClass TAGame.EngineAudioProfile_TA
 	Name: EngineAudioProfile_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
+	Class Package: Core
+	Outer: TAGame
+[Import 6]
+	Full Name: UClass TAGame.ProductAsset_EngineAudio_TA
 	Name: ProductAsset_EngineAudio_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[7]
+	Class Package: Core
+	Outer: TAGame
+[Import 7]
+	Full Name: UPackage AkAudio
 	Name: AkAudio
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[12]
+	Class Package: Core
+[Import 12]
+	Full Name: UProductAsset_EngineAudio_TA ProductSlots.EngineAudio.ProductAsset_EngineAudio_TA_0
 	Name: ProductAsset_EngineAudio_TA_0
 	Class: ProductAsset_EngineAudio_TA
-	Package: TAGame
-	Outer: ProductSlot_TA EngineAudio
-[13]
+	Class Package: TAGame
+	Outer: EngineAudio
+[Import 13]
+	Full Name: UProductSlot_TA ProductSlots.EngineAudio
 	Name: EngineAudio
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots

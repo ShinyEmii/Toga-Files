@@ -85,6 +85,7 @@ Test Data Size: 0x00003fbc
 Compressed Chunk Info Offset: 0x00001aa8
 Last Block Size: 0x00000000
 Base Header Size: 0x00000131
+Encrypted Header Size: 0x00005a80
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -92,354 +93,382 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] Attributes
-[2] Black_00
-[3] BlackMetal_00
-[4] BoolProperty
-[5] bReplicated
-[6] bUsedWithSkeletalMesh
-[7] ByteProperty
-[8] CF_Overlay_N
-[9] Class
-[10] ColorMaterialInput
-[11] CompressionSettings
-[12] Core
-[13] CustomColor
-[14] Default__ProductAsset_Wheel_TA
-[15] DefaultGenerator
-[16] DefaultProduct_New
-[17] DefaultValue
-[18] Description
-[19] DiffuseColor
-[20] EmissiveColor
-[21] Engine
-[22] EPixelFormat
-[23] Expression
-[24] ExpressionGUID
-[25] Expressions
-[26] FirstResourceMemMip
-[27] FloatProperty
-[28] Format
-[29] FrontRight
-[30] Generator
-[31] Global brightness
-[32] GoldMetal_00
-[33] GradientStripe2_T
-[34] Guid
-[35] Icon
-[36] IconLarge
-[37] Icons
-[38] IntProperty
-[39] Label
-[40] LightMapCoordinateIndex
-[41] LightMapResolution
-[42] LinearColor
-[43] LinearGradient_Balanced_Vertical
-[44] LODGroup
-[45] Mat_rl36_Inverted
-[46] Material
-[47] MaterialExpressionScalarParameter
-[48] MaterialExpressionVectorParameter
-[49] MaterialGroups
-[50] MaterialInstanceConstant
-[51] MaterialName
-[52] Materials
-[53] MIC_rl36_Inverted
-[54] MipGenSettings
-[55] MipTailBaseIdx
-[56] NameProperty
-[57] None
-[58] Normal
-[59] ObjectProperty
-[60] ObjectReferencer
-[61] OnlineLabel
-[62] OriginalSizeX
-[63] OriginalSizeY
-[64] OutputIndex
-[65] Overrides
-[66] Package
-[67] PaintMaterialGroup
-[68] Paints
-[69] PaintsToOverride
-[70] PaintToOverride
-[71] ParameterName
-[72] ParameterValue
-[73] Parent
-[74] ParentLightingGuid
-[75] PF_A8R8G8B8
-[76] PF_DXT1
-[77] PF_DXT5
-[78] PlatinumMetal_00
-[79] PluralLabel
-[80] PrevGenerator
-[81] Product_TA
-[82] ProductAsset_Wheel_TA
-[83] ProductAttribute_PaintSettings_TA
-[84] ProductOverride_MaterialParameter_TA
-[85] ProductPaint
-[86] ProductPaint_TA
-[87] Products
-[88] ProductsDB
-[89] ProductSlot_TA
-[90] ProductSlots
-[91] ReferencedObjects
-[92] RLWH036_N
-[93] RoseGoldMetal_00
-[94] Rotator
-[95] Scale3D
-[96] SizeX
-[97] SizeY
-[98] Skin_Universal_Parent
-[99] SpecularColor
-[100] SRGB
-[101] StandaloneSeekFreeReferencer
-[102] StaticMesh
-[103] StrProperty
-[104] StructProperty
-[105] TAGame
-[106] TC_NormalmapAlpha
-[107] TC_NormalmapSwizzle
-[108] TC_VectorDisplacementmap
-[109] Texture2D
-[110] TextureCompressionSettings
-[111] TextureFileCacheName
-[112] TextureGroup
-[113] TEXTUREGROUP_VehicleNormalMap
-[114] TEXTUREGROUP_WorldNormalMap
-[115] TextureMipGenSettings
-[116] Textures
-[117] Textures6
-[118] Textures7
-[119] ThumbnailCameraRotationOffset
-[120] ThumbnailProductRotation
-[121] ThumbnailRenderer
-[122] ThumbnailRenderer_TA
-[123] ThumbnailRenderers
-[124] TMGS_NoMipmaps
-[125] Universal_Noise_34_RGB
-[126] UnpackMin
-[127] UnsupportedPaints
-[128] Vector
-[129] VectorMaterialInput
-[130] VectorParameterValues
-[131] wheel_hurl
-[132] Wheel_Renderer
-[133] wheel_rl36
-[134] wheel_rl36_inverted
-[135] wheel_rl36_inverted_SF
-[136] Wheel_RL36_SE
-[137] WHEEL_Star
-[138] WheelAssetGenerator_1Wheel_TA
-[139] WheelAssetSettings_TA
-[140] Wheels
-[141] WhiteGoldMetal_00
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] Attributes
+[Name 2] [0x0007001000000000] Black_00
+[Name 3] [0x0007001000000000] BlackMetal_00
+[Name 4] [0x0007001000000000] BoolProperty
+[Name 5] [0x0007001000000000] bReplicated
+[Name 6] [0x0007001000000000] bUsedWithSkeletalMesh
+[Name 7] [0x0007001000000000] ByteProperty
+[Name 8] [0x0007001000000000] CF_Overlay_N
+[Name 9] [0x0007001000000000] Class
+[Name 10] [0x0007001000000000] ColorMaterialInput
+[Name 11] [0x0007001000000000] CompressionSettings
+[Name 12] [0x0007001000000000] Core
+[Name 13] [0x0007001000000000] CustomColor
+[Name 14] [0x0007001000000000] Default__ProductAsset_Wheel_TA
+[Name 15] [0x0007001000000000] DefaultGenerator
+[Name 16] [0x0007001000000000] DefaultProduct_New
+[Name 17] [0x0007001000000000] DefaultValue
+[Name 18] [0x0007001000000000] Description
+[Name 19] [0x0007001000000000] DiffuseColor
+[Name 20] [0x0007001000000000] EmissiveColor
+[Name 21] [0x0007001000000000] Engine
+[Name 22] [0x0007001000000000] EPixelFormat
+[Name 23] [0x0007001000000000] Expression
+[Name 24] [0x0007001000000000] ExpressionGUID
+[Name 25] [0x0007001000000000] Expressions
+[Name 26] [0x0007001000000000] FirstResourceMemMip
+[Name 27] [0x0007001000000000] FloatProperty
+[Name 28] [0x0007001000000000] Format
+[Name 29] [0x0007001000000000] FrontRight
+[Name 30] [0x0007001000000000] Generator
+[Name 31] [0x0007001000000000] Global brightness
+[Name 32] [0x0007001000000000] GoldMetal_00
+[Name 33] [0x0007001000000000] GradientStripe2_T
+[Name 34] [0x0007001000000000] Guid
+[Name 35] [0x0007001000000000] Icon
+[Name 36] [0x0007001000000000] IconLarge
+[Name 37] [0x0007001000000000] Icons
+[Name 38] [0x0007001000000000] IntProperty
+[Name 39] [0x0007001000000000] Label
+[Name 40] [0x0007001000000000] LightMapCoordinateIndex
+[Name 41] [0x0007001000000000] LightMapResolution
+[Name 42] [0x0007001000000000] LinearColor
+[Name 43] [0x0007001000000000] LinearGradient_Balanced_Vertical
+[Name 44] [0x0007001000000000] LODGroup
+[Name 45] [0x0007001000000000] Mat_rl36_Inverted
+[Name 46] [0x0007001000000000] Material
+[Name 47] [0x0007001000000000] MaterialExpressionScalarParameter
+[Name 48] [0x0007001000000000] MaterialExpressionVectorParameter
+[Name 49] [0x0007001000000000] MaterialGroups
+[Name 50] [0x0007001000000000] MaterialInstanceConstant
+[Name 51] [0x0007001000000000] MaterialName
+[Name 52] [0x0007001000000000] Materials
+[Name 53] [0x0007001000000000] MIC_rl36_Inverted
+[Name 54] [0x0007001000000000] MipGenSettings
+[Name 55] [0x0007001000000000] MipTailBaseIdx
+[Name 56] [0x0007001000000000] NameProperty
+[Name 57] [0x0007001000000000] None
+[Name 58] [0x0007001000000000] Normal
+[Name 59] [0x0007001000000000] ObjectProperty
+[Name 60] [0x0007001000000000] ObjectReferencer
+[Name 61] [0x0007001000000000] OnlineLabel
+[Name 62] [0x0007001000000000] OriginalSizeX
+[Name 63] [0x0007001000000000] OriginalSizeY
+[Name 64] [0x0007001000000000] OutputIndex
+[Name 65] [0x0007001000000000] Overrides
+[Name 66] [0x0007001000000000] Package
+[Name 67] [0x0007001000000000] PaintMaterialGroup
+[Name 68] [0x0007001000000000] Paints
+[Name 69] [0x0007001000000000] PaintsToOverride
+[Name 70] [0x0007001000000000] PaintToOverride
+[Name 71] [0x0007001000000000] ParameterName
+[Name 72] [0x0007001000000000] ParameterValue
+[Name 73] [0x0007001000000000] Parent
+[Name 74] [0x0007001000000000] ParentLightingGuid
+[Name 75] [0x0007001000000000] PF_A8R8G8B8
+[Name 76] [0x0007001000000000] PF_DXT1
+[Name 77] [0x0007001000000000] PF_DXT5
+[Name 78] [0x0007001000000000] PlatinumMetal_00
+[Name 79] [0x0007001000000000] PluralLabel
+[Name 80] [0x0007001000000000] PrevGenerator
+[Name 81] [0x0007001000000000] Product_TA
+[Name 82] [0x0007001000000000] ProductAsset_Wheel_TA
+[Name 83] [0x0007001000000000] ProductAttribute_PaintSettings_TA
+[Name 84] [0x0007001000000000] ProductOverride_MaterialParameter_TA
+[Name 85] [0x0007001000000000] ProductPaint
+[Name 86] [0x0007001000000000] ProductPaint_TA
+[Name 87] [0x0007001000000000] Products
+[Name 88] [0x0007001000000000] ProductsDB
+[Name 89] [0x0007001000000000] ProductSlot_TA
+[Name 90] [0x0007001000000000] ProductSlots
+[Name 91] [0x0007001000000000] ReferencedObjects
+[Name 92] [0x0007001000000000] RLWH036_N
+[Name 93] [0x0007001000000000] RoseGoldMetal_00
+[Name 94] [0x0007001000000000] Rotator
+[Name 95] [0x0007001000000000] Scale3D
+[Name 96] [0x0007001000000000] SizeX
+[Name 97] [0x0007001000000000] SizeY
+[Name 98] [0x0007001000000000] Skin_Universal_Parent
+[Name 99] [0x0007001000000000] SpecularColor
+[Name 100] [0x0007001000000000] SRGB
+[Name 101] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 102] [0x0007001000000000] StaticMesh
+[Name 103] [0x0007001000000000] StrProperty
+[Name 104] [0x0007001000000000] StructProperty
+[Name 105] [0x0007001000000000] TAGame
+[Name 106] [0x0007001000000000] TC_NormalmapAlpha
+[Name 107] [0x0007001000000000] TC_NormalmapSwizzle
+[Name 108] [0x0007001000000000] TC_VectorDisplacementmap
+[Name 109] [0x0007001000000000] Texture2D
+[Name 110] [0x0007001000000000] TextureCompressionSettings
+[Name 111] [0x0007001000000000] TextureFileCacheName
+[Name 112] [0x0007001000000000] TextureGroup
+[Name 113] [0x0007001000000000] TEXTUREGROUP_VehicleNormalMap
+[Name 114] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 115] [0x0007001000000000] TextureMipGenSettings
+[Name 116] [0x0007001000000000] Textures
+[Name 117] [0x0007001000000000] Textures6
+[Name 118] [0x0007001000000000] Textures7
+[Name 119] [0x0007001000000000] ThumbnailCameraRotationOffset
+[Name 120] [0x0007001000000000] ThumbnailProductRotation
+[Name 121] [0x0007001000000000] ThumbnailRenderer
+[Name 122] [0x0007001000000000] ThumbnailRenderer_TA
+[Name 123] [0x0007001000000000] ThumbnailRenderers
+[Name 124] [0x0007001000000000] TMGS_NoMipmaps
+[Name 125] [0x0007001000000000] Universal_Noise_34_RGB
+[Name 126] [0x0007001000000000] UnpackMin
+[Name 127] [0x0007001000000000] UnsupportedPaints
+[Name 128] [0x0007001000000000] Vector
+[Name 129] [0x0007001000000000] VectorMaterialInput
+[Name 130] [0x0007001000000000] VectorParameterValues
+[Name 131] [0x0007001000000000] wheel_hurl
+[Name 132] [0x0007001000000000] Wheel_Renderer
+[Name 133] [0x0007001000000000] wheel_rl36
+[Name 134] [0x0007001000000000] wheel_rl36_inverted
+[Name 135] [0x0007001000000000] wheel_rl36_inverted_SF
+[Name 136] [0x0007001000000000] Wheel_RL36_SE
+[Name 137] [0x0007001000000000] WHEEL_Star
+[Name 138] [0x0007001000000000] WheelAssetGenerator_1Wheel_TA
+[Name 139] [0x0007001000000000] WheelAssetSettings_TA
+[Name 140] [0x0007001000000000] Wheels
+[Name 141] [0x0007001000000000] WhiteGoldMetal_00
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UMaterial wheel_rl36_inverted.wheel_rl36_inverted.Mat_rl36_Inverted
 	Name: Mat_rl36_Inverted
-	Class: Material
-	Outer: Package wheel_rl36_inverted
+	Class: UMaterial
+	Outer: wheel_rl36_inverted
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000001bd9 with 0x0000029d Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterialExpressionScalarParameter wheel_rl36_inverted.wheel_rl36_inverted.Mat_rl36_Inverted.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Mat_rl36_Inverted
+	Class: UMaterialExpressionScalarParameter
+	Outer: Mat_rl36_Inverted
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000001e76 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterialExpressionVectorParameter wheel_rl36_inverted.wheel_rl36_inverted.Mat_rl36_Inverted.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Mat_rl36_Inverted
+	Class: UMaterialExpressionVectorParameter
+	Outer: Mat_rl36_Inverted
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000001f0a with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterialInstanceConstant wheel_rl36_inverted.wheel_rl36_inverted.MIC_rl36_Inverted
 	Name: MIC_rl36_Inverted
-	Class: MaterialInstanceConstant
-	Outer: Package wheel_rl36_inverted
+	Class: UMaterialInstanceConstant
+	Outer: wheel_rl36_inverted
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000001fb2 with 0x000000fc Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UProductAsset_Wheel_TA wheel_rl36_inverted.ProductSlots.Wheels.ProductAsset_Wheel_TA_0
 	Name: ProductAsset_Wheel_TA_0
-	Class: ProductAsset_Wheel_TA
-	Outer: ProductSlot_TA Wheels
+	Class: UProductAsset_Wheel_TA
+	Outer: Wheels
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000020ae with 0x0000009c Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UObjectReferencer wheel_rl36_inverted.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x000000000000214a with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[6]
+[Export 6]
+	Full Name: UPackage wheel_rl36_inverted.ProductSlots
 	Name: ProductSlots
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002176 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[7]
+[Export 7]
+	Full Name: UPackage wheel_rl36_inverted.Skin_Universal_Parent
 	Name: Skin_Universal_Parent
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002182 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[8]
+[Export 8]
+	Full Name: UPackage wheel_rl36_inverted.Skin_Universal_Parent.Textures
 	Name: Textures
-	Class: Package
-	Outer: Package Skin_Universal_Parent
+	Class: UPackage
+	Outer: Skin_Universal_Parent
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000218e with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UPackage wheel_rl36_inverted.wheel_hurl
 	Name: wheel_hurl
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000219a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[10]
+[Export 10]
+	Full Name: UPackage wheel_rl36_inverted.wheel_hurl.Textures
 	Name: Textures
-	Class: Package
-	Outer: Package wheel_hurl
+	Class: UPackage
+	Outer: wheel_hurl
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000021a6 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UPackage wheel_rl36_inverted.wheel_rl36
 	Name: wheel_rl36
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000021b2 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[12]
+[Export 12]
+	Full Name: UPackage wheel_rl36_inverted.wheel_rl36_inverted
 	Name: wheel_rl36_inverted
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000021be with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[13]
+[Export 13]
+	Full Name: UPackage wheel_rl36_inverted.wheel_rl36_inverted_SF
 	Name: wheel_rl36_inverted_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000021ca with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[14]
+[Export 14]
+	Full Name: UWheelAssetGenerator_1Wheel_TA wheel_rl36_inverted.ProductSlots.Wheels.ProductAsset_Wheel_TA_0.WheelAssetGenerator_1Wheel_TA_1
 	Name: WheelAssetGenerator_1Wheel_TA_1
-	Class: WheelAssetGenerator_1Wheel_TA
-	Outer: ProductAsset_Wheel_TA ProductAsset_Wheel_TA_0
+	Class: UWheelAssetGenerator_1Wheel_TA
+	Outer: ProductAsset_Wheel_TA_0
 	Archetype: DefaultGenerator
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000021d6 with 0x00000010 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UProductAsset_Wheel_TA wheel_rl36_inverted.wheel_rl36_inverted.wheel_rl36_inverted
 	Name: wheel_rl36_inverted
-	Class: ProductAsset_Wheel_TA
-	Outer: Package wheel_rl36_inverted
+	Class: UProductAsset_Wheel_TA
+	Outer: wheel_rl36_inverted
 	Archetype: ProductAsset_Wheel_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000021e6 with 0x00000064 Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UProductAttribute_PaintSettings_TA wheel_rl36_inverted.wheel_rl36_inverted.wheel_rl36_inverted.ProductAttribute_PaintSettings_TA_0
 	Name: ProductAttribute_PaintSettings_TA_0
-	Class: ProductAttribute_PaintSettings_TA
-	Outer: ProductAsset_Wheel_TA wheel_rl36_inverted
+	Class: UProductAttribute_PaintSettings_TA
+	Outer: wheel_rl36_inverted
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000224a with 0x000000e4 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UProductOverride_MaterialParameter_TA wheel_rl36_inverted.wheel_rl36_inverted.wheel_rl36_inverted.ProductAttribute_PaintSettings_TA_0.ProductOverride_MaterialParameter_TA_0
 	Name: ProductOverride_MaterialParameter_TA_0
-	Class: ProductOverride_MaterialParameter_TA
-	Outer: ProductAttribute_PaintSettings_TA ProductAttribute_PaintSettings_TA_0
+	Class: UProductOverride_MaterialParameter_TA
+	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000232e with 0x000000d0 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UProductSlot_TA wheel_rl36_inverted.ProductSlots.Wheels
 	Name: Wheels
-	Class: ProductSlot_TA
-	Outer: Package ProductSlots
+	Class: UProductSlot_TA
+	Outer: ProductSlots
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x00000000000023fe with 0x0000012b Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UStaticMesh wheel_rl36_inverted.wheel_rl36_inverted.Wheel_RL36_SE
 	Name: Wheel_RL36_SE
-	Class: StaticMesh
-	Outer: Package wheel_rl36_inverted
+	Class: UStaticMesh
+	Outer: wheel_rl36_inverted
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002529 with 0x0004a175 Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UTexture2D wheel_rl36_inverted.Skin_Universal_Parent.Textures.GradientStripe2_T
 	Name: GradientStripe2_T
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000004c69e with 0x00000cf4 Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UTexture2D wheel_rl36_inverted.Skin_Universal_Parent.Textures.LinearGradient_Balanced_Vertical
 	Name: LinearGradient_Balanced_Vertical
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000004d392 with 0x0010016c Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UTexture2D wheel_rl36_inverted.Skin_Universal_Parent.Textures.Universal_Noise_34_RGB
 	Name: Universal_Noise_34_RGB
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000014d4fe with 0x00005780 Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UTexture2D wheel_rl36_inverted.wheel_hurl.Textures.CF_Overlay_N
 	Name: CF_Overlay_N
-	Class: Texture2D
-	Outer: Package Textures
+	Class: UTexture2D
+	Outer: Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000152c7e with 0x00001869 Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UTexture2D wheel_rl36_inverted.wheel_rl36.RLWH036_N
 	Name: RLWH036_N
-	Class: Texture2D
-	Outer: Package wheel_rl36
+	Class: UTexture2D
+	Outer: wheel_rl36
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000001544e7 with 0x00001885 Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UWheelAssetGenerator_1Wheel_TA wheel_rl36_inverted.wheel_rl36_inverted.wheel_rl36_inverted.WheelAssetGenerator_1Wheel_TA_0
 	Name: WheelAssetGenerator_1Wheel_TA_0
-	Class: WheelAssetGenerator_1Wheel_TA
-	Outer: ProductAsset_Wheel_TA wheel_rl36_inverted
+	Class: UWheelAssetGenerator_1Wheel_TA
+	Outer: wheel_rl36_inverted
 	Archetype: WheelAssetGenerator_1Wheel_TA_1
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000155d6c with 0x00000058 Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UWheelAssetSettings_TA wheel_rl36_inverted.wheel_rl36_inverted.wheel_rl36_inverted.WheelAssetGenerator_1Wheel_TA_0.WheelAssetSettings_TA_1
 	Name: WheelAssetSettings_TA_1
-	Class: WheelAssetSettings_TA
-	Outer: WheelAssetGenerator_1Wheel_TA WheelAssetGenerator_1Wheel_TA_0
+	Class: UWheelAssetSettings_TA
+	Outer: WheelAssetGenerator_1Wheel_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000155dc4 with 0x0000002c Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UWheelAssetSettings_TA wheel_rl36_inverted.wheel_rl36_inverted.wheel_rl36_inverted.WheelAssetGenerator_1Wheel_TA_0.WheelAssetSettings_TA_3
 	Name: WheelAssetSettings_TA_3
-	Class: WheelAssetSettings_TA
-	Outer: WheelAssetGenerator_1Wheel_TA WheelAssetGenerator_1Wheel_TA_0
+	Class: UWheelAssetSettings_TA
+	Outer: WheelAssetGenerator_1Wheel_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000155df0 with 0x00000058 Bytes
 	Export Flags: 0x00000001
@@ -448,167 +477,201 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialExpressionVectorParameter
 	Name: MaterialExpressionVectorParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.StaticMesh
 	Name: StaticMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass TAGame.ProductAsset_Wheel_TA
 	Name: ProductAsset_Wheel_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[9]
+	Class Package: Core
+	Outer: TAGame
+[Import 9]
+	Full Name: UClass TAGame.ProductAttribute_PaintSettings_TA
 	Name: ProductAttribute_PaintSettings_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[10]
+	Class Package: Core
+	Outer: TAGame
+[Import 10]
+	Full Name: UClass TAGame.ProductOverride_MaterialParameter_TA
 	Name: ProductOverride_MaterialParameter_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[11]
+	Class Package: Core
+	Outer: TAGame
+[Import 11]
+	Full Name: UClass TAGame.ProductSlot_TA
 	Name: ProductSlot_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[12]
+	Class Package: Core
+	Outer: TAGame
+[Import 12]
+	Full Name: UClass TAGame.WheelAssetGenerator_1Wheel_TA
 	Name: WheelAssetGenerator_1Wheel_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[13]
+	Class Package: Core
+	Outer: TAGame
+[Import 13]
+	Full Name: UClass TAGame.WheelAssetSettings_TA
 	Name: WheelAssetSettings_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[14]
+	Class Package: Core
+	Outer: TAGame
+[Import 14]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[15]
+	Class Package: Core
+[Import 15]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UPackage ProductPaint
 	Name: ProductPaint
 	Class: Package
-	Package: Core
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UPackage ProductPaint.Paints
 	Name: Paints
 	Class: Package
-	Package: Core
-	Outer: Package ProductPaint
-[18]
+	Class Package: Core
+	Outer: ProductPaint
+[Import 18]
+	Full Name: UPackage ProductsDB
 	Name: ProductsDB
 	Class: Package
-	Package: Core
-[19]
+	Class Package: Core
+[Import 19]
+	Full Name: UPackage ProductsDB.Products
 	Name: Products
 	Class: Package
-	Package: Core
-	Outer: Package ProductsDB
-[20]
+	Class Package: Core
+	Outer: ProductsDB
+[Import 20]
+	Full Name: UPackage ProductSlots.Icons
 	Name: Icons
 	Class: Package
-	Package: Core
-	Outer: Package ProductSlots
-[21]
+	Class Package: Core
+	Outer: ProductSlots
+[Import 21]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[22]
+	Class Package: Core
+[Import 22]
+	Full Name: UPackage ThumbnailRenderers
 	Name: ThumbnailRenderers
 	Class: Package
-	Package: Core
-[23]
+	Class Package: Core
+[Import 23]
+	Full Name: UProduct_TA ProductsDB.Products.WHEEL_Star
 	Name: WHEEL_Star
 	Class: Product_TA
-	Package: TAGame
-	Outer: Package Products
-[24]
+	Class Package: TAGame
+	Outer: Products
+[Import 24]
+	Full Name: UProductAsset_Wheel_TA TAGame.Default__ProductAsset_Wheel_TA
 	Name: Default__ProductAsset_Wheel_TA
 	Class: ProductAsset_Wheel_TA
-	Package: TAGame
-	Outer: Package TAGame
-[25]
+	Class Package: TAGame
+	Outer: TAGame
+[Import 25]
+	Full Name: UProductPaint_TA ProductPaint.Paints.Black_00
 	Name: Black_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[26]
+	Class Package: TAGame
+	Outer: Paints
+[Import 26]
+	Full Name: UProductPaint_TA ProductPaint.Paints.BlackMetal_00
 	Name: BlackMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[27]
+	Class Package: TAGame
+	Outer: Paints
+[Import 27]
+	Full Name: UProductPaint_TA ProductPaint.Paints.GoldMetal_00
 	Name: GoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[28]
+	Class Package: TAGame
+	Outer: Paints
+[Import 28]
+	Full Name: UProductPaint_TA ProductPaint.Paints.PlatinumMetal_00
 	Name: PlatinumMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[29]
+	Class Package: TAGame
+	Outer: Paints
+[Import 29]
+	Full Name: UProductPaint_TA ProductPaint.Paints.RoseGoldMetal_00
 	Name: RoseGoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[30]
+	Class Package: TAGame
+	Outer: Paints
+[Import 30]
+	Full Name: UProductPaint_TA ProductPaint.Paints.WhiteGoldMetal_00
 	Name: WhiteGoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[31]
+	Class Package: TAGame
+	Outer: Paints
+[Import 31]
+	Full Name: UTexture2D ProductSlots.Icons.Wheels
 	Name: Wheels
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Icons
-[32]
+	Class Package: Engine
+	Outer: Icons
+[Import 32]
+	Full Name: UThumbnailRenderer_TA ThumbnailRenderers.Wheel_Renderer
 	Name: Wheel_Renderer
 	Class: ThumbnailRenderer_TA
-	Package: TAGame
-	Outer: Package ThumbnailRenderers
-[33]
+	Class Package: TAGame
+	Outer: ThumbnailRenderers
+[Import 33]
+	Full Name: UWheelAssetGenerator_1Wheel_TA TAGame.Default__ProductAsset_Wheel_TA.DefaultGenerator
 	Name: DefaultGenerator
 	Class: WheelAssetGenerator_1Wheel_TA
-	Package: TAGame
-	Outer: ProductAsset_Wheel_TA Default__ProductAsset_Wheel_TA
+	Class Package: TAGame
+	Outer: Default__ProductAsset_Wheel_TA

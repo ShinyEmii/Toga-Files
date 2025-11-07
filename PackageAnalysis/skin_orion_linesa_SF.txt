@@ -121,6 +121,7 @@ Test Data Size: 0x00003eb7
 Compressed Chunk Info Offset: 0x00001639
 Last Block Size: 0x0000000c
 Base Header Size: 0x00000199
+Encrypted Header Size: 0x00005560
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -128,243 +129,257 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] Attributes
-[2] bHasQualitySwitch
-[3] bHasStaticPermutationResource
-[4] BlackMetal_00
-[5] Blank_N
-[6] Body_Import
-[7] Body_Octane_Curvature
-[8] Body_Octane_Textures
-[9] Body_Orion
-[10] Body_Orion_CurvaturePainted
-[11] Body_Orion_MIC
-[12] Body_Orion_Textures
-[13] Body_Paintable_Mat
-[14] body_ron
-[15] BoolProperty
-[16] BumpOffset
-[17] ByteProperty
-[18] CarbonFiber_Flipped_N
-[19] CarParts
-[20] Class
-[21] Core
-[22] CurvaturePack
-[23] CustomColor
-[24] Detail_Blank
-[25] Detail_Fur
-[26] Detail_Sparkle
-[27] Diffuse
-[28] DropShadow
-[29] Emissive
-[30] Engine
-[31] ENVPack
-[32] EPixelFormat
-[33] ExpressionGUID
-[34] F1DetailNormal
-[35] F1Type
-[36] F2DetailNormal
-[37] F2Type
-[38] FirstResourceMemMip
-[39] FloatProperty
-[40] Format
-[41] Fur_N
-[42] GarageView
-[43] Glass
-[44] GoldMetal_00
-[45] Grass_Textures
-[46] GrassCube
-[47] Guid
-[48] Import_Body_BlankSkin
-[49] IntProperty
-[50] LightFalloffArray
-[51] LinearColor
-[52] Material
-[53] MaterialGroups
-[54] MaterialInstanceConstant
-[55] Materials
-[56] MIC_Orion_LinesA
-[57] MIC_Orion_LinesA_Paintable
-[58] MipGenSettings
-[59] MipTailBaseIdx
-[60] NameProperty
-[61] None
-[62] ObjectProperty
-[63] ObjectReferencer
-[64] Octane_Body_D
-[65] OriginalSizeX
-[66] OriginalSizeY
-[67] Orion_Body_BlankSkin
-[68] Orion_Body_D
-[69] Package
-[70] PaintColor
-[71] PaintMask_MaskedByAlpha
-[72] PaintMaskInRGB
-[73] PaintMaterialGroup
-[74] PaintParameterName
-[75] Paints
-[76] ParameterName
-[77] ParameterValue
-[78] Parent
-[79] ParentLightingGuid
-[80] Pepe_Flames
-[81] PF_DXT1
-[82] PF_DXT5
-[83] PlatinumMetal_00
-[84] ProductAsset_Skin_TA
-[85] ProductAttribute_PaintSettings_TA
-[86] ProductPaint
-[87] ProductPaint_TA
-[88] ProductSlot_TA
-[89] ProductSlots
-[90] PurePaint
-[91] ReferencedObjects
-[92] RoseGoldMetal_00
-[93] Rubber
-[94] ScalarParameterValues
-[95] SharpMasks
-[96] SizeX
-[97] SizeY
-[98] Skin
-[99] Skin_Octane_Flames
-[100] skin_orion_linesa
-[101] skin_orion_linesa_SF
-[102] skin_paladin_linesA_RGB
-[103] Sparkle
-[104] Sparkle_N
-[105] StandaloneSeekFreeReferencer
-[106] StructProperty
-[107] TAGame
-[108] TeamColor
-[109] Texture2D
-[110] TextureFileCacheName
-[111] TextureMipGenSettings
-[112] TextureParameterValues
-[113] TextureRenderTargetCube
-[114] Textures2
-[115] Textures5
-[116] ThumbnailKeyLightBrightnessScale
-[117] TMGS_NoMipmaps
-[118] TrimColor
-[119] TrimPaintable
-[120] UnsupportedPaints
-[121] Use_UV2
-[122] UseColorLookup
-[123] UseDetailNormals
-[124] UseDiffuseTexture
-[125] UseNormalMap
-[126] UsePaintedSkin
-[127] VectorParameterValues
-[128] Vehicle_Parent_Materials
-[129] Vehicle_Parent_Textures
-[130] VertexColorMasks
-[131] WhiteGoldMetal_00
-[132] IncludePaintIDs
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] Attributes
+[Name 2] [0x0007001000000000] bHasQualitySwitch
+[Name 3] [0x0007001000000000] bHasStaticPermutationResource
+[Name 4] [0x0007001000000000] BlackMetal_00
+[Name 5] [0x0007001000000000] Blank_N
+[Name 6] [0x0007001000000000] Body_Import
+[Name 7] [0x0007001000000000] Body_Octane_Curvature
+[Name 8] [0x0007001000000000] Body_Octane_Textures
+[Name 9] [0x0007001000000000] Body_Orion
+[Name 10] [0x0007001000000000] Body_Orion_CurvaturePainted
+[Name 11] [0x0007001000000000] Body_Orion_MIC
+[Name 12] [0x0007001000000000] Body_Orion_Textures
+[Name 13] [0x0007001000000000] Body_Paintable_Mat
+[Name 14] [0x0007001000000000] body_ron
+[Name 15] [0x0007001000000000] BoolProperty
+[Name 16] [0x0007001000000000] BumpOffset
+[Name 17] [0x0007001000000000] ByteProperty
+[Name 18] [0x0007001000000000] CarbonFiber_Flipped_N
+[Name 19] [0x0007001000000000] CarParts
+[Name 20] [0x0007001000000000] Class
+[Name 21] [0x0007001000000000] Core
+[Name 22] [0x0007001000000000] CurvaturePack
+[Name 23] [0x0007001000000000] CustomColor
+[Name 24] [0x0007001000000000] Detail_Blank
+[Name 25] [0x0007001000000000] Detail_Fur
+[Name 26] [0x0007001000000000] Detail_Sparkle
+[Name 27] [0x0007001000000000] Diffuse
+[Name 28] [0x0007001000000000] DropShadow
+[Name 29] [0x0007001000000000] Emissive
+[Name 30] [0x0007001000000000] Engine
+[Name 31] [0x0007001000000000] ENVPack
+[Name 32] [0x0007001000000000] EPixelFormat
+[Name 33] [0x0007001000000000] ExpressionGUID
+[Name 34] [0x0007001000000000] F1DetailNormal
+[Name 35] [0x0007001000000000] F1Type
+[Name 36] [0x0007001000000000] F2DetailNormal
+[Name 37] [0x0007001000000000] F2Type
+[Name 38] [0x0007001000000000] FirstResourceMemMip
+[Name 39] [0x0007001000000000] FloatProperty
+[Name 40] [0x0007001000000000] Format
+[Name 41] [0x0007001000000000] Fur_N
+[Name 42] [0x0007001000000000] GarageView
+[Name 43] [0x0007001000000000] Glass
+[Name 44] [0x0007001000000000] GoldMetal_00
+[Name 45] [0x0007001000000000] Grass_Textures
+[Name 46] [0x0007001000000000] GrassCube
+[Name 47] [0x0007001000000000] Guid
+[Name 48] [0x0007001000000000] Import_Body_BlankSkin
+[Name 49] [0x0007001000000000] IntProperty
+[Name 50] [0x0007001000000000] LightFalloffArray
+[Name 51] [0x0007001000000000] LinearColor
+[Name 52] [0x0007001000000000] Material
+[Name 53] [0x0007001000000000] MaterialGroups
+[Name 54] [0x0007001000000000] MaterialInstanceConstant
+[Name 55] [0x0007001000000000] Materials
+[Name 56] [0x0007001000000000] MIC_Orion_LinesA
+[Name 57] [0x0007001000000000] MIC_Orion_LinesA_Paintable
+[Name 58] [0x0007001000000000] MipGenSettings
+[Name 59] [0x0007001000000000] MipTailBaseIdx
+[Name 60] [0x0007001000000000] NameProperty
+[Name 61] [0x0007001000000000] None
+[Name 62] [0x0007001000000000] ObjectProperty
+[Name 63] [0x0007001000000000] ObjectReferencer
+[Name 64] [0x0007001000000000] Octane_Body_D
+[Name 65] [0x0007001000000000] OriginalSizeX
+[Name 66] [0x0007001000000000] OriginalSizeY
+[Name 67] [0x0007001000000000] Orion_Body_BlankSkin
+[Name 68] [0x0007001000000000] Orion_Body_D
+[Name 69] [0x0007001000000000] Package
+[Name 70] [0x0007001000000000] PaintColor
+[Name 71] [0x0007001000000000] PaintMask_MaskedByAlpha
+[Name 72] [0x0007001000000000] PaintMaskInRGB
+[Name 73] [0x0007001000000000] PaintMaterialGroup
+[Name 74] [0x0007001000000000] PaintParameterName
+[Name 75] [0x0007001000000000] Paints
+[Name 76] [0x0007001000000000] ParameterName
+[Name 77] [0x0007001000000000] ParameterValue
+[Name 78] [0x0007001000000000] Parent
+[Name 79] [0x0007001000000000] ParentLightingGuid
+[Name 80] [0x0007001000000000] Pepe_Flames
+[Name 81] [0x0007001000000000] PF_DXT1
+[Name 82] [0x0007001000000000] PF_DXT5
+[Name 83] [0x0007001000000000] PlatinumMetal_00
+[Name 84] [0x0007001000000000] ProductAsset_Skin_TA
+[Name 85] [0x0007001000000000] ProductAttribute_PaintSettings_TA
+[Name 86] [0x0007001000000000] ProductPaint
+[Name 87] [0x0007001000000000] ProductPaint_TA
+[Name 88] [0x0007001000000000] ProductSlot_TA
+[Name 89] [0x0007001000000000] ProductSlots
+[Name 90] [0x0007001000000000] PurePaint
+[Name 91] [0x0007001000000000] ReferencedObjects
+[Name 92] [0x0007001000000000] RoseGoldMetal_00
+[Name 93] [0x0007001000000000] Rubber
+[Name 94] [0x0007001000000000] ScalarParameterValues
+[Name 95] [0x0007001000000000] SharpMasks
+[Name 96] [0x0007001000000000] SizeX
+[Name 97] [0x0007001000000000] SizeY
+[Name 98] [0x0007001000000000] Skin
+[Name 99] [0x0007001000000000] Skin_Octane_Flames
+[Name 100] [0x0007001000000000] skin_orion_linesa
+[Name 101] [0x0007001000000000] skin_orion_linesa_SF
+[Name 102] [0x0007001000000000] skin_paladin_linesA_RGB
+[Name 103] [0x0007001000000000] Sparkle
+[Name 104] [0x0007001000000000] Sparkle_N
+[Name 105] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 106] [0x0007001000000000] StructProperty
+[Name 107] [0x0007001000000000] TAGame
+[Name 108] [0x0007001000000000] TeamColor
+[Name 109] [0x0007001000000000] Texture2D
+[Name 110] [0x0007001000000000] TextureFileCacheName
+[Name 111] [0x0007001000000000] TextureMipGenSettings
+[Name 112] [0x0007001000000000] TextureParameterValues
+[Name 113] [0x0007001000000000] TextureRenderTargetCube
+[Name 114] [0x0007001000000000] Textures2
+[Name 115] [0x0007001000000000] Textures5
+[Name 116] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
+[Name 117] [0x0007001000000000] TMGS_NoMipmaps
+[Name 118] [0x0007001000000000] TrimColor
+[Name 119] [0x0007001000000000] TrimPaintable
+[Name 120] [0x0007001000000000] UnsupportedPaints
+[Name 121] [0x0007001000000000] Use_UV2
+[Name 122] [0x0007001000000000] UseColorLookup
+[Name 123] [0x0007001000000000] UseDetailNormals
+[Name 124] [0x0007001000000000] UseDiffuseTexture
+[Name 125] [0x0007001000000000] UseNormalMap
+[Name 126] [0x0007001000000000] UsePaintedSkin
+[Name 127] [0x0007001000000000] VectorParameterValues
+[Name 128] [0x0007001000000000] Vehicle_Parent_Materials
+[Name 129] [0x0007001000000000] Vehicle_Parent_Textures
+[Name 130] [0x0007001000000000] VertexColorMasks
+[Name 131] [0x0007001000000000] WhiteGoldMetal_00
+[Name 132] [0x0007001000000000] IncludePaintIDs
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UMaterialInstanceConstant skin_orion_linesa.Body_Orion.Body_Orion_MIC
 	Name: Body_Orion_MIC
-	Class: MaterialInstanceConstant
-	Outer: Package Body_Orion
+	Class: UMaterialInstanceConstant
+	Outer: Body_Orion
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000407bb4 with 0x00000cae Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterialInstanceConstant skin_orion_linesa.skin_orion_linesa.MIC_Orion_LinesA
 	Name: MIC_Orion_LinesA
-	Class: MaterialInstanceConstant
-	Outer: Package skin_orion_linesa
+	Class: UMaterialInstanceConstant
+	Outer: skin_orion_linesa
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000002480 with 0x00000bb2 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterialInstanceConstant skin_orion_linesa.skin_orion_linesa.MIC_Orion_LinesA_Paintable
 	Name: MIC_Orion_LinesA_Paintable
-	Class: MaterialInstanceConstant
-	Outer: Package skin_orion_linesa
+	Class: UMaterialInstanceConstant
+	Outer: skin_orion_linesa
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000003032 with 0x00000c3a Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UObjectReferencer skin_orion_linesa.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000003c6c with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[4]
+[Export 4]
+	Full Name: UPackage skin_orion_linesa.Body_Orion
 	Name: Body_Orion
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003c98 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[5]
+[Export 5]
+	Full Name: UPackage skin_orion_linesa.Body_Orion_Textures
 	Name: Body_Orion_Textures
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003ca4 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[6]
+[Export 6]
+	Full Name: UPackage skin_orion_linesa.skin_orion_linesa
 	Name: skin_orion_linesa
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003cb0 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[7]
+[Export 7]
+	Full Name: UPackage skin_orion_linesa.skin_orion_linesa_SF
 	Name: skin_orion_linesa_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000003cbc with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[8]
+[Export 8]
+	Full Name: UProductAsset_Skin_TA skin_orion_linesa.skin_orion_linesa.skin_orion_linesa
 	Name: skin_orion_linesa
-	Class: ProductAsset_Skin_TA
-	Outer: Package skin_orion_linesa
+	Class: UProductAsset_Skin_TA
+	Outer: skin_orion_linesa
 	Archetype: ProductAsset_Skin_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003cc8 with 0x00000064 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UProductAttribute_PaintSettings_TA skin_orion_linesa.skin_orion_linesa.skin_orion_linesa.ProductAttribute_PaintSettings_TA_0
 	Name: ProductAttribute_PaintSettings_TA_0
-	Class: ProductAttribute_PaintSettings_TA
-	Outer: ProductAsset_Skin_TA skin_orion_linesa
+	Class: UProductAttribute_PaintSettings_TA
+	Outer: skin_orion_linesa
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000408862 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UTexture2D skin_orion_linesa.Body_Orion_Textures.Body_Orion_CurvaturePainted
 	Name: Body_Orion_CurvaturePainted
-	Class: Texture2D
-	Outer: Package Body_Orion_Textures
+	Class: UTexture2D
+	Outer: Body_Orion_Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003dd0 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UTexture2D skin_orion_linesa.Body_Orion_Textures.Orion_Body_BlankSkin
 	Name: Orion_Body_BlankSkin
-	Class: Texture2D
-	Outer: Package Body_Orion_Textures
+	Class: UTexture2D
+	Outer: Body_Orion_Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000004ae0 with 0x00400144 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UTexture2D skin_orion_linesa.Body_Orion_Textures.Orion_Body_D
 	Name: Orion_Body_D
-	Class: Texture2D
-	Outer: Package Body_Orion_Textures
+	Class: UTexture2D
+	Outer: Body_Orion_Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000404c24 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UTexture2D skin_orion_linesa.skin_orion_linesa.skin_paladin_linesA_RGB
 	Name: skin_paladin_linesA_RGB
-	Class: Texture2D
-	Outer: Package skin_orion_linesa
+	Class: UTexture2D
+	Outer: skin_orion_linesa
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000004063ec with 0x000017c8 Bytes
 	Export Flags: 0x00000001
@@ -373,193 +388,234 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass TAGame.ProductAsset_Skin_TA
 	Name: ProductAsset_Skin_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UClass TAGame.ProductAttribute_PaintSettings_TA
 	Name: ProductAttribute_PaintSettings_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
+	Class Package: Core
+	Outer: TAGame
+[Import 6]
+	Full Name: UMaterial Vehicle_Parent_Materials.Body_Paintable_Mat
 	Name: Body_Paintable_Mat
 	Class: Material
-	Package: Engine
-	Outer: Package Vehicle_Parent_Materials
-[7]
+	Class Package: Engine
+	Outer: Vehicle_Parent_Materials
+[Import 7]
+	Full Name: UPackage Body_Import
 	Name: Body_Import
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage Body_Octane_Textures
 	Name: Body_Octane_Textures
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage body_ron
 	Name: body_ron
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UPackage Detail_Blank
 	Name: Detail_Blank
 	Class: Package
-	Package: Core
-[12]
+	Class Package: Core
+[Import 12]
+	Full Name: UPackage Detail_Fur
 	Name: Detail_Fur
 	Class: Package
-	Package: Core
-[13]
+	Class Package: Core
+[Import 13]
+	Full Name: UPackage Detail_Sparkle
 	Name: Detail_Sparkle
 	Class: Package
-	Package: Core
-[14]
+	Class Package: Core
+[Import 14]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[15]
+	Class Package: Core
+[Import 15]
+	Full Name: UPackage Grass_Textures
 	Name: Grass_Textures
 	Class: Package
-	Package: Core
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UPackage ProductPaint
 	Name: ProductPaint
 	Class: Package
-	Package: Core
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UPackage ProductPaint.Paints
 	Name: Paints
 	Class: Package
-	Package: Core
-	Outer: Package ProductPaint
-[18]
+	Class Package: Core
+	Outer: ProductPaint
+[Import 18]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[19]
+	Class Package: Core
+[Import 19]
+	Full Name: UPackage Skin_Octane_Flames
 	Name: Skin_Octane_Flames
 	Class: Package
-	Package: Core
-[20]
+	Class Package: Core
+[Import 20]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[21]
+	Class Package: Core
+[Import 21]
+	Full Name: UPackage Vehicle_Parent_Materials
 	Name: Vehicle_Parent_Materials
 	Class: Package
-	Package: Core
-[22]
+	Class Package: Core
+[Import 22]
+	Full Name: UPackage Vehicle_Parent_Textures
 	Name: Vehicle_Parent_Textures
 	Class: Package
-	Package: Core
-[23]
+	Class Package: Core
+[Import 23]
+	Full Name: UProductAsset_Skin_TA ProductSlots.Skin.ProductAsset_Skin_TA_0
 	Name: ProductAsset_Skin_TA_0
 	Class: ProductAsset_Skin_TA
-	Package: TAGame
-	Outer: ProductSlot_TA Skin
-[24]
+	Class Package: TAGame
+	Outer: Skin
+[Import 24]
+	Full Name: UProductPaint_TA ProductPaint.Paints.BlackMetal_00
 	Name: BlackMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[25]
+	Class Package: TAGame
+	Outer: Paints
+[Import 25]
+	Full Name: UProductPaint_TA ProductPaint.Paints.GoldMetal_00
 	Name: GoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[26]
+	Class Package: TAGame
+	Outer: Paints
+[Import 26]
+	Full Name: UProductPaint_TA ProductPaint.Paints.PlatinumMetal_00
 	Name: PlatinumMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[27]
+	Class Package: TAGame
+	Outer: Paints
+[Import 27]
+	Full Name: UProductPaint_TA ProductPaint.Paints.RoseGoldMetal_00
 	Name: RoseGoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[28]
+	Class Package: TAGame
+	Outer: Paints
+[Import 28]
+	Full Name: UProductPaint_TA ProductPaint.Paints.WhiteGoldMetal_00
 	Name: WhiteGoldMetal_00
 	Class: ProductPaint_TA
-	Package: TAGame
-	Outer: Package Paints
-[29]
+	Class Package: TAGame
+	Outer: Paints
+[Import 29]
+	Full Name: UProductSlot_TA ProductSlots.Skin
 	Name: Skin
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
-[30]
+	Class Package: TAGame
+	Outer: ProductSlots
+[Import 30]
+	Full Name: UTexture2D Body_Import.Import_Body_BlankSkin
 	Name: Import_Body_BlankSkin
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Body_Import
-[31]
+	Class Package: Engine
+	Outer: Body_Import
+[Import 31]
+	Full Name: UTexture2D Body_Octane_Textures.Body_Octane_Curvature
 	Name: Body_Octane_Curvature
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Body_Octane_Textures
-[32]
+	Class Package: Engine
+	Outer: Body_Octane_Textures
+[Import 32]
+	Full Name: UTexture2D Body_Octane_Textures.Octane_Body_D
 	Name: Octane_Body_D
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Body_Octane_Textures
-[33]
+	Class Package: Engine
+	Outer: Body_Octane_Textures
+[Import 33]
+	Full Name: UTexture2D body_ron.CarbonFiber_Flipped_N
 	Name: CarbonFiber_Flipped_N
 	Class: Texture2D
-	Package: Engine
-	Outer: Package body_ron
-[34]
+	Class Package: Engine
+	Outer: body_ron
+[Import 34]
+	Full Name: UTexture2D Detail_Blank.Blank_N
 	Name: Blank_N
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Detail_Blank
-[35]
+	Class Package: Engine
+	Outer: Detail_Blank
+[Import 35]
+	Full Name: UTexture2D Detail_Fur.Fur_N
 	Name: Fur_N
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Detail_Fur
-[36]
+	Class Package: Engine
+	Outer: Detail_Fur
+[Import 36]
+	Full Name: UTexture2D Detail_Sparkle.Sparkle_N
 	Name: Sparkle_N
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Detail_Sparkle
-[37]
+	Class Package: Engine
+	Outer: Detail_Sparkle
+[Import 37]
+	Full Name: UTexture2D Skin_Octane_Flames.Pepe_Flames
 	Name: Pepe_Flames
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Skin_Octane_Flames
-[38]
+	Class Package: Engine
+	Outer: Skin_Octane_Flames
+[Import 38]
+	Full Name: UTexture2D Vehicle_Parent_Textures.ENVPack
 	Name: ENVPack
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Vehicle_Parent_Textures
-[39]
+	Class Package: Engine
+	Outer: Vehicle_Parent_Textures
+[Import 39]
+	Full Name: UTexture2D Vehicle_Parent_Textures.LightFalloffArray
 	Name: LightFalloffArray
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Vehicle_Parent_Textures
-[40]
+	Class Package: Engine
+	Outer: Vehicle_Parent_Textures
+[Import 40]
+	Full Name: UTextureRenderTargetCube Grass_Textures.GrassCube
 	Name: GrassCube
 	Class: TextureRenderTargetCube
-	Package: Engine
-	Outer: Package Grass_Textures
+	Class Package: Engine
+	Outer: Grass_Textures

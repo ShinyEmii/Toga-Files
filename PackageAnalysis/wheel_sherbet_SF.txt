@@ -56,6 +56,7 @@ Test Data Size: 0x00003fdd
 Compressed Chunk Info Offset: 0x0000114b
 Last Block Size: 0x00000004
 Base Header Size: 0x000000d1
+Encrypted Header Size: 0x00005140
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -63,227 +64,243 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] BoolProperty
-[2] bReplicated
-[3] bUsedWithSkeletalMesh
-[4] ByteProperty
-[5] Class
-[6] ColorMaterialInput
-[7] CompressionSettings
-[8] Core
-[9] Default__ProductAsset_Wheel_TA
-[10] DefaultGenerator
-[11] DefaultProduct_New
-[12] Description
-[13] DiffuseColor
-[14] Engine
-[15] EPixelFormat
-[16] Expression
-[17] Expressions
-[18] FirstResourceMemMip
-[19] FloatProperty
-[20] Format
-[21] FrontRight
-[22] Generator
-[23] Guid
-[24] Icon
-[25] IconLarge
-[26] Icons
-[27] IntProperty
-[28] Label
-[29] LightMapCoordinateIndex
-[30] LightMapResolution
-[31] LODGroup
-[32] Mask
-[33] MaskB
-[34] MaskG
-[35] MaskR
-[36] MAT_WWheel_Sherbet
-[37] Material
-[38] MaterialInstanceConstant
-[39] MIC_WWheel_Sherbet
-[40] MipTailBaseIdx
-[41] NameProperty
-[42] None
-[43] Normal
-[44] ObjectProperty
-[45] ObjectReferencer
-[46] OnlineLabel
-[47] OriginalSizeX
-[48] OriginalSizeY
-[49] Package
-[50] Parent
-[51] ParentLightingGuid
-[52] PF_DXT1
-[53] PF_DXT5
-[54] PluralLabel
-[55] PrevGenerator
-[56] Product_TA
-[57] ProductAsset_Wheel_TA
-[58] Products
-[59] ProductsDB
-[60] ProductSlot_TA
-[61] ProductSlots
-[62] ReferencedObjects
-[63] Rotator
-[64] ScalarMaterialInput
-[65] Scale3D
-[66] SizeX
-[67] SizeY
-[68] SpecularColor
-[69] SpecularPower
-[70] SRGB
-[71] StandaloneSeekFreeReferencer
-[72] StaticMesh
-[73] StrProperty
-[74] StructProperty
-[75] T_Wheel_Sherbet_D
-[76] T_Wheel_Sherbet_N
-[77] TAGame
-[78] TC_NormalmapSwizzle
-[79] Texture2D
-[80] TextureCompressionSettings
-[81] TextureFileCacheName
-[82] TextureGroup
-[83] TEXTUREGROUP_WorldNormalMap
-[84] Textures7
-[85] ThumbnailCameraRotationOffset
-[86] ThumbnailKeyLightBrightnessScale
-[87] ThumbnailProductRotation
-[88] ThumbnailRenderer
-[89] ThumbnailRenderer_TA
-[90] ThumbnailRenderers
-[91] UnpackMin
-[92] Vector
-[93] VectorMaterialInput
-[94] Wheel_Renderer
-[95] wheel_sherbet
-[96] wheel_sherbet_SF
-[97] Wheel_Sherbet_SM
-[98] WHEEL_Star
-[99] WheelAssetGenerator_1Wheel_TA
-[100] WheelAssetSettings_TA
-[101] Wheels
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] BoolProperty
+[Name 2] [0x0007001000000000] bReplicated
+[Name 3] [0x0007001000000000] bUsedWithSkeletalMesh
+[Name 4] [0x0007001000000000] ByteProperty
+[Name 5] [0x0007001000000000] Class
+[Name 6] [0x0007001000000000] ColorMaterialInput
+[Name 7] [0x0007001000000000] CompressionSettings
+[Name 8] [0x0007001000000000] Core
+[Name 9] [0x0007001000000000] Default__ProductAsset_Wheel_TA
+[Name 10] [0x0007001000000000] DefaultGenerator
+[Name 11] [0x0007001000000000] DefaultProduct_New
+[Name 12] [0x0007001000000000] Description
+[Name 13] [0x0007001000000000] DiffuseColor
+[Name 14] [0x0007001000000000] Engine
+[Name 15] [0x0007001000000000] EPixelFormat
+[Name 16] [0x0007001000000000] Expression
+[Name 17] [0x0007001000000000] Expressions
+[Name 18] [0x0007001000000000] FirstResourceMemMip
+[Name 19] [0x0007001000000000] FloatProperty
+[Name 20] [0x0007001000000000] Format
+[Name 21] [0x0007001000000000] FrontRight
+[Name 22] [0x0007001000000000] Generator
+[Name 23] [0x0007001000000000] Guid
+[Name 24] [0x0007001000000000] Icon
+[Name 25] [0x0007001000000000] IconLarge
+[Name 26] [0x0007001000000000] Icons
+[Name 27] [0x0007001000000000] IntProperty
+[Name 28] [0x0007001000000000] Label
+[Name 29] [0x0007001000000000] LightMapCoordinateIndex
+[Name 30] [0x0007001000000000] LightMapResolution
+[Name 31] [0x0007001000000000] LODGroup
+[Name 32] [0x0007001000000000] Mask
+[Name 33] [0x0007001000000000] MaskB
+[Name 34] [0x0007001000000000] MaskG
+[Name 35] [0x0007001000000000] MaskR
+[Name 36] [0x0007001000000000] MAT_WWheel_Sherbet
+[Name 37] [0x0007001000000000] Material
+[Name 38] [0x0007001000000000] MaterialInstanceConstant
+[Name 39] [0x0007001000000000] MIC_WWheel_Sherbet
+[Name 40] [0x0007001000000000] MipTailBaseIdx
+[Name 41] [0x0007001000000000] NameProperty
+[Name 42] [0x0007001000000000] None
+[Name 43] [0x0007001000000000] Normal
+[Name 44] [0x0007001000000000] ObjectProperty
+[Name 45] [0x0007001000000000] ObjectReferencer
+[Name 46] [0x0007001000000000] OnlineLabel
+[Name 47] [0x0007001000000000] OriginalSizeX
+[Name 48] [0x0007001000000000] OriginalSizeY
+[Name 49] [0x0007001000000000] Package
+[Name 50] [0x0007001000000000] Parent
+[Name 51] [0x0007001000000000] ParentLightingGuid
+[Name 52] [0x0007001000000000] PF_DXT1
+[Name 53] [0x0007001000000000] PF_DXT5
+[Name 54] [0x0007001000000000] PluralLabel
+[Name 55] [0x0007001000000000] PrevGenerator
+[Name 56] [0x0007001000000000] Product_TA
+[Name 57] [0x0007001000000000] ProductAsset_Wheel_TA
+[Name 58] [0x0007001000000000] Products
+[Name 59] [0x0007001000000000] ProductsDB
+[Name 60] [0x0007001000000000] ProductSlot_TA
+[Name 61] [0x0007001000000000] ProductSlots
+[Name 62] [0x0007001000000000] ReferencedObjects
+[Name 63] [0x0007001000000000] Rotator
+[Name 64] [0x0007001000000000] ScalarMaterialInput
+[Name 65] [0x0007001000000000] Scale3D
+[Name 66] [0x0007001000000000] SizeX
+[Name 67] [0x0007001000000000] SizeY
+[Name 68] [0x0007001000000000] SpecularColor
+[Name 69] [0x0007001000000000] SpecularPower
+[Name 70] [0x0007001000000000] SRGB
+[Name 71] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 72] [0x0007001000000000] StaticMesh
+[Name 73] [0x0007001000000000] StrProperty
+[Name 74] [0x0007001000000000] StructProperty
+[Name 75] [0x0007001000000000] T_Wheel_Sherbet_D
+[Name 76] [0x0007001000000000] T_Wheel_Sherbet_N
+[Name 77] [0x0007001000000000] TAGame
+[Name 78] [0x0007001000000000] TC_NormalmapSwizzle
+[Name 79] [0x0007001000000000] Texture2D
+[Name 80] [0x0007001000000000] TextureCompressionSettings
+[Name 81] [0x0007001000000000] TextureFileCacheName
+[Name 82] [0x0007001000000000] TextureGroup
+[Name 83] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 84] [0x0007001000000000] Textures7
+[Name 85] [0x0007001000000000] ThumbnailCameraRotationOffset
+[Name 86] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
+[Name 87] [0x0007001000000000] ThumbnailProductRotation
+[Name 88] [0x0007001000000000] ThumbnailRenderer
+[Name 89] [0x0007001000000000] ThumbnailRenderer_TA
+[Name 90] [0x0007001000000000] ThumbnailRenderers
+[Name 91] [0x0007001000000000] UnpackMin
+[Name 92] [0x0007001000000000] Vector
+[Name 93] [0x0007001000000000] VectorMaterialInput
+[Name 94] [0x0007001000000000] Wheel_Renderer
+[Name 95] [0x0007001000000000] wheel_sherbet
+[Name 96] [0x0007001000000000] wheel_sherbet_SF
+[Name 97] [0x0007001000000000] Wheel_Sherbet_SM
+[Name 98] [0x0007001000000000] WHEEL_Star
+[Name 99] [0x0007001000000000] WheelAssetGenerator_1Wheel_TA
+[Name 100] [0x0007001000000000] WheelAssetSettings_TA
+[Name 101] [0x0007001000000000] Wheels
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UMaterial wheel_sherbet.wheel_sherbet.MAT_WWheel_Sherbet
 	Name: MAT_WWheel_Sherbet
-	Class: Material
-	Outer: Package wheel_sherbet
+	Class: UMaterial
+	Outer: wheel_sherbet
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x000000000000121c with 0x0000025d Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterialInstanceConstant wheel_sherbet.wheel_sherbet.MIC_WWheel_Sherbet
 	Name: MIC_WWheel_Sherbet
-	Class: MaterialInstanceConstant
-	Outer: Package wheel_sherbet
+	Class: UMaterialInstanceConstant
+	Outer: wheel_sherbet
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000001479 with 0x00000058 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UProductAsset_Wheel_TA wheel_sherbet.ProductSlots.Wheels.ProductAsset_Wheel_TA_0
 	Name: ProductAsset_Wheel_TA_0
-	Class: ProductAsset_Wheel_TA
-	Outer: ProductSlot_TA Wheels
+	Class: UProductAsset_Wheel_TA
+	Outer: Wheels
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000014d1 with 0x0000009c Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UObjectReferencer wheel_sherbet.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x000000000000156d with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[4]
+[Export 4]
+	Full Name: UPackage wheel_sherbet.ProductSlots
 	Name: ProductSlots
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001599 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[5]
+[Export 5]
+	Full Name: UPackage wheel_sherbet.wheel_sherbet
 	Name: wheel_sherbet
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000015a5 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[6]
+[Export 6]
+	Full Name: UPackage wheel_sherbet.wheel_sherbet_SF
 	Name: wheel_sherbet_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000015b1 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[7]
+[Export 7]
+	Full Name: UWheelAssetGenerator_1Wheel_TA wheel_sherbet.ProductSlots.Wheels.ProductAsset_Wheel_TA_0.WheelAssetGenerator_1Wheel_TA_1
 	Name: WheelAssetGenerator_1Wheel_TA_1
-	Class: WheelAssetGenerator_1Wheel_TA
-	Outer: ProductAsset_Wheel_TA ProductAsset_Wheel_TA_0
+	Class: UWheelAssetGenerator_1Wheel_TA
+	Outer: ProductAsset_Wheel_TA_0
 	Archetype: DefaultGenerator
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000015bd with 0x00000010 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UProductAsset_Wheel_TA wheel_sherbet.wheel_sherbet.wheel_sherbet
 	Name: wheel_sherbet
-	Class: ProductAsset_Wheel_TA
-	Outer: Package wheel_sherbet
+	Class: UProductAsset_Wheel_TA
+	Outer: wheel_sherbet
 	Archetype: ProductAsset_Wheel_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000015cd with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UProductSlot_TA wheel_sherbet.ProductSlots.Wheels
 	Name: Wheels
-	Class: ProductSlot_TA
-	Outer: Package ProductSlots
+	Class: UProductSlot_TA
+	Outer: ProductSlots
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x000000000000162d with 0x0000012b Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UStaticMesh wheel_sherbet.wheel_sherbet.Wheel_Sherbet_SM
 	Name: Wheel_Sherbet_SM
-	Class: StaticMesh
-	Outer: Package wheel_sherbet
+	Class: UStaticMesh
+	Outer: wheel_sherbet
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001758 with 0x0003e9a1 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UTexture2D wheel_sherbet.wheel_sherbet.T_Wheel_Sherbet_D
 	Name: T_Wheel_Sherbet_D
-	Class: Texture2D
-	Outer: Package wheel_sherbet
+	Class: UTexture2D
+	Outer: wheel_sherbet
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000400f9 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UTexture2D wheel_sherbet.wheel_sherbet.T_Wheel_Sherbet_N
 	Name: T_Wheel_Sherbet_N
-	Class: Texture2D
-	Outer: Package wheel_sherbet
+	Class: UTexture2D
+	Outer: wheel_sherbet
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000040e09 with 0x00001885 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UWheelAssetGenerator_1Wheel_TA wheel_sherbet.wheel_sherbet.wheel_sherbet.WheelAssetGenerator_1Wheel_TA_0
 	Name: WheelAssetGenerator_1Wheel_TA_0
-	Class: WheelAssetGenerator_1Wheel_TA
-	Outer: ProductAsset_Wheel_TA wheel_sherbet
+	Class: UWheelAssetGenerator_1Wheel_TA
+	Outer: wheel_sherbet
 	Archetype: WheelAssetGenerator_1Wheel_TA_1
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000004268e with 0x00000058 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UWheelAssetSettings_TA wheel_sherbet.wheel_sherbet.wheel_sherbet.WheelAssetGenerator_1Wheel_TA_0.WheelAssetSettings_TA_1
 	Name: WheelAssetSettings_TA_1
-	Class: WheelAssetSettings_TA
-	Outer: WheelAssetGenerator_1Wheel_TA WheelAssetGenerator_1Wheel_TA_0
+	Class: UWheelAssetSettings_TA
+	Outer: WheelAssetGenerator_1Wheel_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000426e6 with 0x0000002c Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UWheelAssetSettings_TA wheel_sherbet.wheel_sherbet.wheel_sherbet.WheelAssetGenerator_1Wheel_TA_0.WheelAssetSettings_TA_2
 	Name: WheelAssetSettings_TA_2
-	Class: WheelAssetSettings_TA
-	Outer: WheelAssetGenerator_1Wheel_TA WheelAssetGenerator_1Wheel_TA_0
+	Class: UWheelAssetSettings_TA
+	Outer: WheelAssetGenerator_1Wheel_TA_0
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000042712 with 0x00000058 Bytes
 	Export Flags: 0x00000001
@@ -292,108 +309,130 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.StaticMesh
 	Name: StaticMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass TAGame.ProductAsset_Wheel_TA
 	Name: ProductAsset_Wheel_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[7]
+	Class Package: Core
+	Outer: TAGame
+[Import 7]
+	Full Name: UClass TAGame.ProductSlot_TA
 	Name: ProductSlot_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[8]
+	Class Package: Core
+	Outer: TAGame
+[Import 8]
+	Full Name: UClass TAGame.WheelAssetGenerator_1Wheel_TA
 	Name: WheelAssetGenerator_1Wheel_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[9]
+	Class Package: Core
+	Outer: TAGame
+[Import 9]
+	Full Name: UClass TAGame.WheelAssetSettings_TA
 	Name: WheelAssetSettings_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[10]
+	Class Package: Core
+	Outer: TAGame
+[Import 10]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[11]
+	Class Package: Core
+[Import 11]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[12]
+	Class Package: Core
+[Import 12]
+	Full Name: UPackage ProductsDB
 	Name: ProductsDB
 	Class: Package
-	Package: Core
-[13]
+	Class Package: Core
+[Import 13]
+	Full Name: UPackage ProductsDB.Products
 	Name: Products
 	Class: Package
-	Package: Core
-	Outer: Package ProductsDB
-[14]
+	Class Package: Core
+	Outer: ProductsDB
+[Import 14]
+	Full Name: UPackage ProductSlots.Icons
 	Name: Icons
 	Class: Package
-	Package: Core
-	Outer: Package ProductSlots
-[15]
+	Class Package: Core
+	Outer: ProductSlots
+[Import 15]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UPackage ThumbnailRenderers
 	Name: ThumbnailRenderers
 	Class: Package
-	Package: Core
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UProduct_TA ProductsDB.Products.WHEEL_Star
 	Name: WHEEL_Star
 	Class: Product_TA
-	Package: TAGame
-	Outer: Package Products
-[18]
+	Class Package: TAGame
+	Outer: Products
+[Import 18]
+	Full Name: UProductAsset_Wheel_TA TAGame.Default__ProductAsset_Wheel_TA
 	Name: Default__ProductAsset_Wheel_TA
 	Class: ProductAsset_Wheel_TA
-	Package: TAGame
-	Outer: Package TAGame
-[19]
+	Class Package: TAGame
+	Outer: TAGame
+[Import 19]
+	Full Name: UTexture2D ProductSlots.Icons.Wheels
 	Name: Wheels
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Icons
-[20]
+	Class Package: Engine
+	Outer: Icons
+[Import 20]
+	Full Name: UThumbnailRenderer_TA ThumbnailRenderers.Wheel_Renderer
 	Name: Wheel_Renderer
 	Class: ThumbnailRenderer_TA
-	Package: TAGame
-	Outer: Package ThumbnailRenderers
-[21]
+	Class Package: TAGame
+	Outer: ThumbnailRenderers
+[Import 21]
+	Full Name: UWheelAssetGenerator_1Wheel_TA TAGame.Default__ProductAsset_Wheel_TA.DefaultGenerator
 	Name: DefaultGenerator
 	Class: WheelAssetGenerator_1Wheel_TA
-	Package: TAGame
-	Outer: ProductAsset_Wheel_TA Default__ProductAsset_Wheel_TA
+	Class Package: TAGame
+	Outer: Default__ProductAsset_Wheel_TA

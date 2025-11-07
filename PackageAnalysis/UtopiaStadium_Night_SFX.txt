@@ -165,6 +165,7 @@ Test Data Size: 0x00003e92
 Compressed Chunk Info Offset: 0x00001036
 Last Block Size: 0x00000004
 Base Header Size: 0x0000020d
+Encrypted Header Size: 0x00004f10
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -172,250 +173,211 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ActivateDelay
-[1] AkAudio
-[2] AkBank
-[3] AkSoundCue
-[4] ArrayProperty
-[5] bAllowAnyType
-[6] bClampedMax
-[7] bClampedMin
-[8] bClientSideOnly
-[9] bDisabled
-[10] bDisabledPIE
-[11] bHasImpulse
-[12] bHidden
-[13] bModifiesLinkedObject
-[14] BoolProperty
-[15] bSequenceNeverReadsOnlyWritesToThisVar
-[16] bWriteable
-[17] ByteProperty
-[18] Class
-[19] Core
-[20] DefaultViewX
-[21] DefaultViewY
-[22] DrawHeight
-[23] DrawWidth
-[24] DrawX
-[25] DrawY
-[26] ELightingBuildQuality
-[27] Engine
-[28] ExpectedType
-[29] FloatProperty
-[30] InputLinkIdx
-[31] InputLinks
-[32] IntProperty
-[33] Level
-[34] LevelLightingQuality
-[35] LinkDesc
-[36] LinkedOp
-[37] LinkedVariables
-[38] Links
-[39] LinkVar
-[40] Main_Sequence
-[41] MaxVars
-[42] MaxWidth
-[43] MinVars
-[44] Model
-[45] NameProperty
-[46] None
-[47] ObjectProperty
-[48] ObjInstanceVersion
-[49] OutputLinks
-[50] OverrideDelta
-[51] Package
-[52] ParentSequence
-[53] Park_Night_Quad_Loop
-[54] PersistentLevel
-[55] Polys
-[56] PropertyName
-[57] Quality_Production
-[58] QueuedActivations
-[59] RequiredBank
-[60] SeqAct_AkPlaySound
-[61] SeqEvent_LevelLoaded
-[62] Sequence
-[63] SequenceObjects
-[64] SeqVar_Object
-[65] SFX_Amb_Park
-[66] SoundCue
-[67] StartEvent
-[68] StrProperty
-[69] Tag
-[70] Targets
-[71] TheWorld
-[72] utopiastadium_night_sfx
-[73] VariableLinks
-[74] World
-[75] WorldInfo
-[76] Reverb_Arena
-[77] SFX_AMB_Reverb
-[78] StopEvent
-[79] Bank
-[80] SeqAct_AkLoadBank
+[Name 0] [0x0007001000000000] ActivateDelay
+[Name 1] [0x0007001000000000] AkAudio
+[Name 2] [0x0007001000000000] AkBank
+[Name 3] [0x0007001000000000] AkSoundCue
+[Name 4] [0x0007001000000000] ArrayProperty
+[Name 5] [0x0007001000000000] bAllowAnyType
+[Name 6] [0x0007001000000000] bClampedMax
+[Name 7] [0x0007001000000000] bClampedMin
+[Name 8] [0x0007001000000000] bClientSideOnly
+[Name 9] [0x0007001000000000] bDisabled
+[Name 10] [0x0007001000000000] bDisabledPIE
+[Name 11] [0x0007001000000000] bHasImpulse
+[Name 12] [0x0007001000000000] bHidden
+[Name 13] [0x0007001000000000] bModifiesLinkedObject
+[Name 14] [0x0007001000000000] BoolProperty
+[Name 15] [0x0007001000000000] bSequenceNeverReadsOnlyWritesToThisVar
+[Name 16] [0x0007001000000000] bWriteable
+[Name 17] [0x0007001000000000] ByteProperty
+[Name 18] [0x0007001000000000] Class
+[Name 19] [0x0007001000000000] Core
+[Name 20] [0x0007001000000000] DefaultViewX
+[Name 21] [0x0007001000000000] DefaultViewY
+[Name 22] [0x0007001000000000] DrawHeight
+[Name 23] [0x0007001000000000] DrawWidth
+[Name 24] [0x0007001000000000] DrawX
+[Name 25] [0x0007001000000000] DrawY
+[Name 26] [0x0007001000000000] ELightingBuildQuality
+[Name 27] [0x0007001000000000] Engine
+[Name 28] [0x0007001000000000] ExpectedType
+[Name 29] [0x0007001000000000] FloatProperty
+[Name 30] [0x0007001000000000] InputLinkIdx
+[Name 31] [0x0007001000000000] InputLinks
+[Name 32] [0x0007001000000000] IntProperty
+[Name 33] [0x0007001000000000] Level
+[Name 34] [0x0007001000000000] LevelLightingQuality
+[Name 35] [0x0007001000000000] LinkDesc
+[Name 36] [0x0007001000000000] LinkedOp
+[Name 37] [0x0007001000000000] LinkedVariables
+[Name 38] [0x0007001000000000] Links
+[Name 39] [0x0007001000000000] LinkVar
+[Name 40] [0x0007001000000000] Main_Sequence
+[Name 41] [0x0007001000000000] MaxVars
+[Name 42] [0x0007001000000000] MaxWidth
+[Name 43] [0x0007001000000000] MinVars
+[Name 44] [0x0007001000000000] Model
+[Name 45] [0x0007001000000000] NameProperty
+[Name 46] [0x0007001000000000] None
+[Name 47] [0x0007001000000000] ObjectProperty
+[Name 48] [0x0007001000000000] ObjInstanceVersion
+[Name 49] [0x0007001000000000] OutputLinks
+[Name 50] [0x0007001000000000] OverrideDelta
+[Name 51] [0x0007001000000000] Package
+[Name 52] [0x0007001000000000] ParentSequence
+[Name 53] [0x0007001000000000] Park_Night_Quad_Loop
+[Name 54] [0x0007001000000000] PersistentLevel
+[Name 55] [0x0007001000000000] Polys
+[Name 56] [0x0007001000000000] PropertyName
+[Name 57] [0x0007001000000000] Quality_Production
+[Name 58] [0x0007001000000000] QueuedActivations
+[Name 59] [0x0007001000000000] RequiredBank
+[Name 60] [0x0007001000000000] SeqAct_AkPlaySound
+[Name 61] [0x0007001000000000] SeqEvent_LevelLoaded
+[Name 62] [0x0007001000000000] Sequence
+[Name 63] [0x0007001000000000] SequenceObjects
+[Name 64] [0x0007001000000000] SeqVar_Object
+[Name 65] [0x0007001000000000] SFX_Amb_Park
+[Name 66] [0x0007001000000000] SoundCue
+[Name 67] [0x0007001000000000] StartEvent
+[Name 68] [0x0007001000000000] StrProperty
+[Name 69] [0x0007001000000000] Tag
+[Name 70] [0x0007001000000000] Targets
+[Name 71] [0x0007001000000000] TheWorld
+[Name 72] [0x0007001000000000] utopiastadium_night_sfx
+[Name 73] [0x0007001000000000] VariableLinks
+[Name 74] [0x0007001000000000] World
+[Name 75] [0x0007001000000000] WorldInfo
+[Name 76] [0x0007000000000000] Reverb_Arena
+[Name 77] [0x0007001000000000] SFX_AMB_Reverb
+[Name 78] [0x0007000000000000] StopEvent
+[Name 79] [0x0007001000000000] Bank
+[Name 80] [0x0007001000000000] SeqAct_AkLoadBank
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAkBank UtopiaStadium_Night_SFX.SFX_Amb_Park.SFX_Amb_Park
 	Name: SFX_Amb_Park
-	Class: AkBank
-	Outer: Package SFX_Amb_Park
+	Class: UAkBank
+	Outer: SFX_Amb_Park
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001243 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UAkSoundCue UtopiaStadium_Night_SFX.SFX_Amb_Park.Park_Night_Quad_Loop
 	Name: Park_Night_Quad_Loop
-	Class: AkSoundCue
-	Outer: Package SFX_Amb_Park
+	Class: UAkSoundCue
+	Outer: SFX_Amb_Park
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000124f with 0x0000005e Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: ULevel UtopiaStadium_Night_SFX.TheWorld.PersistentLevel
 	Name: PersistentLevel
-	Class: Level
-	Outer: World TheWorld
+	Class: ULevel
+	Outer: TheWorld
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000012ad with 0x00000108 Bytes
 	Export Flags: 0x00000000
-[3]
+[Export 3]
+	Full Name: UModel UtopiaStadium_Night_SFX.TheWorld.PersistentLevel.Model_4
 	Name: Model_4
-	Class: Model
-	Outer: Level PersistentLevel
+	Class: UModel
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002729 with 0x0000009c Bytes
 	Export Flags: 0x00000000
-[4]
+[Export 4]
+	Full Name: UPackage UtopiaStadium_Night_SFX.SFX_Amb_Park
 	Name: SFX_Amb_Park
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001451 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[5]
+[Export 5]
+	Full Name: UPackage UtopiaStadium_Night_SFX.utopiastadium_night_sfx
 	Name: utopiastadium_night_sfx
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000145d with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0xf2887f63 0x4a9f9a55 0xdf418385 0xabb79204
 	Package Flags: 0x228a0009
-[6]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[7]
+[Export 7]
+	Full Name: USeqAct_AkPlaySound UtopiaStadium_Night_SFX.TheWorld.PersistentLevel.Main_Sequence.SeqAct_AkPlaySound_2
 	Name: SeqAct_AkPlaySound_2
-	Class: SeqAct_AkPlaySound
-	Outer: Sequence Main_Sequence
+	Class: USeqAct_AkPlaySound
+	Outer: Main_Sequence
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000001469 with 0x0000068e Bytes
 	Export Flags: 0x00000000
-[8]
+[Export 8]
+	Full Name: USeqEvent_LevelLoaded UtopiaStadium_Night_SFX.TheWorld.PersistentLevel.Main_Sequence.SeqEvent_LevelLoaded_4
 	Name: SeqEvent_LevelLoaded_4
-	Class: SeqEvent_LevelLoaded
-	Outer: Sequence Main_Sequence
+	Class: USeqEvent_LevelLoaded
+	Outer: Main_Sequence
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000001af7 with 0x00000535 Bytes
 	Export Flags: 0x00000000
-[9]
+[Export 9]
+	Full Name: USequence UtopiaStadium_Night_SFX.TheWorld.PersistentLevel.Main_Sequence
 	Name: Main_Sequence
-	Class: Sequence
-	Outer: Level PersistentLevel
+	Class: USequence
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000202c with 0x0000006c Bytes
 	Export Flags: 0x00000000
-[10]
+[Export 10]
+	Full Name: UWorld UtopiaStadium_Night_SFX.TheWorld
 	Name: TheWorld
-	Class: World
+	Class: UWorld
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002098 with 0x0000008c Bytes
 	Export Flags: 0x00000000
-[11]
+[Export 11]
+	Full Name: UWorldInfo UtopiaStadium_Night_SFX.TheWorld.PersistentLevel.WorldInfo_2
 	Name: WorldInfo_2
-	Class: WorldInfo
-	Outer: Level PersistentLevel
+	Class: UWorldInfo
+	Outer: PersistentLevel
 	Object Flags: 0x0207000100000000
 	Serialized data: at 0x0000000000002124 with 0x0000006a Bytes
 	Export Flags: 0x00000000
-[12]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[13]
+[Export 13]
+	Full Name: UAkBank UtopiaStadium_Night_SFX.SFX_AMB_Reverb.SFX_AMB_Reverb
 	Name: SFX_AMB_Reverb
-	Class: AkBank
-	Outer: Package SFX_AMB_Reverb
+	Class: UAkBank
+	Outer: SFX_AMB_Reverb
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000218e with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[14]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[15]
+[Export 15]
+	Full Name: UPackage UtopiaStadium_Night_SFX.SFX_AMB_Reverb
 	Name: SFX_AMB_Reverb
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000219a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[16]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[17]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[18]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[19]
+[Export 19]
+	Full Name: USeqAct_AkLoadBank UtopiaStadium_Night_SFX.TheWorld.PersistentLevel.Main_Sequence.SeqAct_AkLoadBank_0
 	Name: SeqAct_AkLoadBank_0
-	Class: SeqAct_AkLoadBank
-	Outer: Sequence Main_Sequence
+	Class: USeqAct_AkLoadBank
+	Outer: Main_Sequence
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000021a6 with 0x000004b7 Bytes
 	Export Flags: 0x00000000
-[20]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[21]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[22]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[23]
+[Export 23]
+	Full Name: UPolys UtopiaStadium_Night_SFX.TheWorld.PersistentLevel.Polys_115
 	Name: Polys_115
-	Class: Polys
-	Outer: Level PersistentLevel
+	Class: UPolys
+	Outer: PersistentLevel
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000027c5 with 0x00000018 Bytes
 	Export Flags: 0x00000000
@@ -424,80 +386,96 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass AkAudio.AkSoundCue
 	Name: AkSoundCue
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[1]
+	Class Package: Core
+	Outer: AkAudio
+[Import 1]
+	Full Name: UClass AkAudio.SeqAct_AkPlaySound
 	Name: SeqAct_AkPlaySound
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[2]
+	Class Package: Core
+	Outer: AkAudio
+[Import 2]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[3]
+	Class Package: Core
+	Outer: Core
+[Import 3]
+	Full Name: UClass Engine.AkBank
 	Name: AkBank
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.Level
 	Name: Level
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.Model
 	Name: Model
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.Polys
 	Name: Polys
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.SeqEvent_LevelLoaded
 	Name: SeqEvent_LevelLoaded
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.Sequence
 	Name: Sequence
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass Engine.SeqVar_Object
 	Name: SeqVar_Object
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[10]
+	Class Package: Core
+	Outer: Engine
+[Import 10]
+	Full Name: UClass Engine.World
 	Name: World
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[11]
+	Class Package: Core
+	Outer: Engine
+[Import 11]
+	Full Name: UClass Engine.WorldInfo
 	Name: WorldInfo
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[12]
+	Class Package: Core
+	Outer: Engine
+[Import 12]
+	Full Name: UPackage AkAudio
 	Name: AkAudio
 	Class: Package
-	Package: Core
-[13]
+	Class Package: Core
+[Import 13]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[14]
+	Class Package: Core
+[Import 14]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[15]
+	Class Package: Core
+[Import 15]
+	Full Name: UClass AkAudio.SeqAct_AkLoadBank
 	Name: SeqAct_AkLoadBank
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
+	Class Package: Core
+	Outer: AkAudio

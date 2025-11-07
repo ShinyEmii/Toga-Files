@@ -57,6 +57,7 @@ Test Data Size: 0x00003622
 Compressed Chunk Info Offset: 0x00001592
 Last Block Size: 0x00000000
 Base Header Size: 0x000000c9
+Encrypted Header Size: 0x00004c30
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -64,392 +65,246 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] AkAudio
-[1] AkBank
-[2] AkSoundCue
-[3] Album_Anthem_RadioClassics_Vol1
-[4] Album_RadioClassics_01
-[5] Album_RadioClassics_01_WithEdgeFade
-[6] Anthem_RadioClassics_Vol1_01
-[7] ArrayProperty
-[8] bIsSourceArtUncompressed
-[9] BoolProperty
-[10] bReplicated
-[11] ByteProperty
-[12] Class
-[13] CompressionNone
-[14] Core
-[15] Engine
-[16] EpicSaveStinger
-[17] EPixelFormat
-[18] FloatProperty
-[19] Format
-[20] GoalScoredStinger
-[21] GoalStinger
-[22] Icon
-[23] IconLarge
-[24] Icons
-[25] IntProperty
-[26] Label
-[27] LODGroup
-[28] MipTailBaseIdx
-[29] MusicStingers
-[30] MVPAnthem
-[31] MX_Anthem_RadioClassics_Vol1_01
-[32] mx_anthems_radioclassics_vol1
-[33] mx_anthems_radioclassics_vol1_SF
-[34] NeverStream
-[35] None
-[36] ObjectProperty
-[37] ObjectReferencer
-[38] OnlineLabel
-[39] OriginalSizeX
-[40] OriginalSizeY
-[41] Package
-[42] PF_A8R8G8B8
-[43] PluralLabel
-[44] ProductAsset_MusicStingers_TA
-[45] ProductAsset_Pack_TA
-[46] ProductSlot_TA
-[47] ProductSlots
-[48] RadioClassics_Vol1_01_EpicSave
-[49] RadioClassics_Vol1_01_Goal
-[50] RadioClassics_Vol1_01_MVP
-[51] ReferencedObjects
-[52] RequiredBank
-[53] SizeX
-[54] SizeY
-[55] SRGB
-[56] StandaloneSeekFreeReferencer
-[57] StartEvent
-[58] StopEvent
-[59] StrProperty
-[60] TAGame
-[61] Texture2D
-[62] TextureGroup
-[63] TEXTUREGROUP_UI
-[64] Thumbnail
-[65] ThumbnailKeyLightBrightnessScale
-[66] Anthem_RadioClassics_Vol1_02
-[67] Anthem_RadioClassics_Vol1_03
-[68] Anthem_RadioClassics_Vol1_04
-[69] anthem_radioclassics_vol1_05
-[70] MX_Anthem_RadioClassics_Vol1_02
-[71] MX_Anthem_RadioClassics_Vol1_03
-[72] MX_Anthem_RadioClassics_Vol1_04
-[73] MX_Anthem_RadioClassics_Vol1_05
-[74] RadioClassics_Vol1_02_EpicSave
-[75] RadioClassics_Vol1_02_Goal
-[76] RadioClassics_Vol1_02_MVP
-[77] RadioClassics_Vol1_03_EpicSave
-[78] RadioClassics_Vol1_03_Goal
-[79] RadioClassics_Vol1_03_MVP
-[80] RadioClassics_Vol1_04_EpicSave
-[81] RadioClassics_Vol1_04_Goal
-[82] RadioClassics_Vol1_04_MVP
-[83] RadioClassics_Vol1_05_EpicSave
-[84] RadioClassics_Vol1_05_Goal
-[85] RadioClassics_Vol1_05_MVP
+[Name 0] [0x0007001000000000] AkAudio
+[Name 1] [0x0007001000000000] AkBank
+[Name 2] [0x0007001000000000] AkSoundCue
+[Name 3] [0x0007001000000000] Album_Anthem_RadioClassics_Vol1
+[Name 4] [0x0007000000000000] Album_RadioClassics_01
+[Name 5] [0x0007000000000000] Album_RadioClassics_01_WithEdgeFade
+[Name 6] [0x0007001000000000] Anthem_RadioClassics_Vol1_01
+[Name 7] [0x0007001000000000] ArrayProperty
+[Name 8] [0x0007000000000000] bIsSourceArtUncompressed
+[Name 9] [0x0007000000000000] BoolProperty
+[Name 10] [0x0007000000000000] bReplicated
+[Name 11] [0x0007000000000000] ByteProperty
+[Name 12] [0x0007001000000000] Class
+[Name 13] [0x0007000000000000] CompressionNone
+[Name 14] [0x0007001000000000] Core
+[Name 15] [0x0007001000000000] Engine
+[Name 16] [0x0007001000000000] EpicSaveStinger
+[Name 17] [0x0007000000000000] EPixelFormat
+[Name 18] [0x0007001000000000] FloatProperty
+[Name 19] [0x0007000000000000] Format
+[Name 20] [0x0007001000000000] GoalScoredStinger
+[Name 21] [0x0007000000000000] GoalStinger
+[Name 22] [0x0007000000000000] Icon
+[Name 23] [0x0007000000000000] IconLarge
+[Name 24] [0x0007000000000000] Icons
+[Name 25] [0x0007000000000000] IntProperty
+[Name 26] [0x0007000000000000] Label
+[Name 27] [0x0007000000000000] LODGroup
+[Name 28] [0x0007000000000000] MipTailBaseIdx
+[Name 29] [0x0007001000000000] MusicStingers
+[Name 30] [0x0007001000000000] MVPAnthem
+[Name 31] [0x0007001000000000] MX_Anthem_RadioClassics_Vol1_01
+[Name 32] [0x0007001000000000] mx_anthems_radioclassics_vol1
+[Name 33] [0x0007001000000000] mx_anthems_radioclassics_vol1_SF
+[Name 34] [0x0007000000000000] NeverStream
+[Name 35] [0x0007001000000000] None
+[Name 36] [0x0007001000000000] ObjectProperty
+[Name 37] [0x0007001000000000] ObjectReferencer
+[Name 38] [0x0007000000000000] OnlineLabel
+[Name 39] [0x0007000000000000] OriginalSizeX
+[Name 40] [0x0007000000000000] OriginalSizeY
+[Name 41] [0x0007001000000000] Package
+[Name 42] [0x0007000000000000] PF_A8R8G8B8
+[Name 43] [0x0007000000000000] PluralLabel
+[Name 44] [0x0007001000000000] ProductAsset_MusicStingers_TA
+[Name 45] [0x0007001000000000] ProductAsset_Pack_TA
+[Name 46] [0x0007001000000000] ProductSlot_TA
+[Name 47] [0x0007001000000000] ProductSlots
+[Name 48] [0x0007001000000000] RadioClassics_Vol1_01_EpicSave
+[Name 49] [0x0007001000000000] RadioClassics_Vol1_01_Goal
+[Name 50] [0x0007001000000000] RadioClassics_Vol1_01_MVP
+[Name 51] [0x0007001000000000] ReferencedObjects
+[Name 52] [0x0007001000000000] RequiredBank
+[Name 53] [0x0007000000000000] SizeX
+[Name 54] [0x0007000000000000] SizeY
+[Name 55] [0x0007000000000000] SRGB
+[Name 56] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 57] [0x0007001000000000] StartEvent
+[Name 58] [0x0007001000000000] StopEvent
+[Name 59] [0x0007001000000000] StrProperty
+[Name 60] [0x0007001000000000] TAGame
+[Name 61] [0x0007000000000000] Texture2D
+[Name 62] [0x0007000000000000] TextureGroup
+[Name 63] [0x0007000000000000] TEXTUREGROUP_UI
+[Name 64] [0x0007000000000000] Thumbnail
+[Name 65] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
+[Name 66] [0x0007000000000000] Anthem_RadioClassics_Vol1_02
+[Name 67] [0x0007000000000000] Anthem_RadioClassics_Vol1_03
+[Name 68] [0x0007000000000000] Anthem_RadioClassics_Vol1_04
+[Name 69] [0x0007000000000000] anthem_radioclassics_vol1_05
+[Name 70] [0x0007000000000000] MX_Anthem_RadioClassics_Vol1_02
+[Name 71] [0x0007000000000000] MX_Anthem_RadioClassics_Vol1_03
+[Name 72] [0x0007000000000000] MX_Anthem_RadioClassics_Vol1_04
+[Name 73] [0x0007000000000000] MX_Anthem_RadioClassics_Vol1_05
+[Name 74] [0x0007000000000000] RadioClassics_Vol1_02_EpicSave
+[Name 75] [0x0007000000000000] RadioClassics_Vol1_02_Goal
+[Name 76] [0x0007000000000000] RadioClassics_Vol1_02_MVP
+[Name 77] [0x0007000000000000] RadioClassics_Vol1_03_EpicSave
+[Name 78] [0x0007000000000000] RadioClassics_Vol1_03_Goal
+[Name 79] [0x0007000000000000] RadioClassics_Vol1_03_MVP
+[Name 80] [0x0007000000000000] RadioClassics_Vol1_04_EpicSave
+[Name 81] [0x0007000000000000] RadioClassics_Vol1_04_Goal
+[Name 82] [0x0007000000000000] RadioClassics_Vol1_04_MVP
+[Name 83] [0x0007000000000000] RadioClassics_Vol1_05_EpicSave
+[Name 84] [0x0007000000000000] RadioClassics_Vol1_05_Goal
+[Name 85] [0x0007000000000000] RadioClassics_Vol1_05_MVP
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UAkBank mx_anthems_radioclassics_vol1.mx_anthems_radioclassics_vol1.MX_Anthem_RadioClassics_Vol1_01
 	Name: MX_Anthem_RadioClassics_Vol1_01
-	Class: AkBank
-	Outer: Package mx_anthems_radioclassics_vol1
+	Class: UAkBank
+	Outer: mx_anthems_radioclassics_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000165b with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UAkSoundCue mx_anthems_radioclassics_vol1.mx_anthems_radioclassics_vol1.RadioClassics_Vol1_01_EpicSave
 	Name: RadioClassics_Vol1_01_EpicSave
-	Class: AkSoundCue
-	Outer: Package mx_anthems_radioclassics_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_radioclassics_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001667 with 0x0000009f Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UAkSoundCue mx_anthems_radioclassics_vol1.mx_anthems_radioclassics_vol1.RadioClassics_Vol1_01_Goal
 	Name: RadioClassics_Vol1_01_Goal
-	Class: AkSoundCue
-	Outer: Package mx_anthems_radioclassics_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_radioclassics_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001706 with 0x0000009b Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UAkSoundCue mx_anthems_radioclassics_vol1.mx_anthems_radioclassics_vol1.RadioClassics_Vol1_01_MVP
 	Name: RadioClassics_Vol1_01_MVP
-	Class: AkSoundCue
-	Outer: Package mx_anthems_radioclassics_vol1
+	Class: UAkSoundCue
+	Outer: mx_anthems_radioclassics_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000017a1 with 0x0000009a Bytes
 	Export Flags: 0x00000001
-[4]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[5]
+[Export 5]
+	Full Name: UObjectReferencer mx_anthems_radioclassics_vol1.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x000000000004258a with 0x00000030 Bytes
 	Export Flags: 0x00000000
-[6]
+[Export 6]
+	Full Name: UPackage mx_anthems_radioclassics_vol1.mx_anthems_radioclassics_vol1
 	Name: mx_anthems_radioclassics_vol1
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001877 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[7]
+[Export 7]
+	Full Name: UPackage mx_anthems_radioclassics_vol1.mx_anthems_radioclassics_vol1_SF
 	Name: mx_anthems_radioclassics_vol1_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001883 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[8]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[9]
+[Export 9]
+	Full Name: UProductAsset_MusicStingers_TA mx_anthems_radioclassics_vol1.mx_anthems_radioclassics_vol1.Anthem_RadioClassics_Vol1_01
 	Name: Anthem_RadioClassics_Vol1_01
-	Class: ProductAsset_MusicStingers_TA
-	Outer: Package mx_anthems_radioclassics_vol1
+	Class: UProductAsset_MusicStingers_TA
+	Outer: mx_anthems_radioclassics_vol1
 	Archetype: ProductAsset_MusicStingers_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000004267a with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UProductAsset_Pack_TA mx_anthems_radioclassics_vol1.mx_anthems_radioclassics_vol1.Album_Anthem_RadioClassics_Vol1
 	Name: Album_Anthem_RadioClassics_Vol1
-	Class: ProductAsset_Pack_TA
-	Outer: Package mx_anthems_radioclassics_vol1
+	Class: UProductAsset_Pack_TA
+	Outer: mx_anthems_radioclassics_vol1
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000426da with 0x00000028 Bytes
 	Export Flags: 0x00000001
-[11]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[12]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[13]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[14]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[15]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[16]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[17]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[18]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[19]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[20]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[21]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[22]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[23]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[24]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[25]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[26]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[27]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[28]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[29]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[30]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[31]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[32]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
 
 
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass AkAudio.AkSoundCue
 	Name: AkSoundCue
 	Class: Class
-	Package: Core
-	Outer: Package AkAudio
-[1]
+	Class Package: Core
+	Outer: AkAudio
+[Import 1]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[2]
+	Class Package: Core
+	Outer: Core
+[Import 2]
+	Full Name: UClass Engine.AkBank
 	Name: AkBank
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
-	Name: None
-	Class: None
-	Package: None
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass TAGame.ProductAsset_MusicStingers_TA
 	Name: ProductAsset_MusicStingers_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
+	Class Package: Core
+	Outer: TAGame
+[Import 6]
+	Full Name: UClass TAGame.ProductAsset_Pack_TA
 	Name: ProductAsset_Pack_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[7]
-	Name: None
-	Class: None
-	Package: None
-[8]
+	Class Package: Core
+	Outer: TAGame
+[Import 8]
+	Full Name: UPackage AkAudio
 	Name: AkAudio
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[11]
-	Name: None
-	Class: None
-	Package: None
-[12]
+	Class Package: Core
+[Import 12]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[13]
-	Name: None
-	Class: None
-	Package: None
-[14]
-	Name: None
-	Class: None
-	Package: None
-[15]
-	Name: None
-	Class: None
-	Package: None
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[17]
+	Class Package: Core
+[Import 17]
+	Full Name: UProductAsset_MusicStingers_TA ProductSlots.MusicStingers.ProductAsset_MusicStingers_TA_0
 	Name: ProductAsset_MusicStingers_TA_0
 	Class: ProductAsset_MusicStingers_TA
-	Package: TAGame
-	Outer: ProductSlot_TA MusicStingers
-[18]
+	Class Package: TAGame
+	Outer: MusicStingers
+[Import 18]
+	Full Name: UProductSlot_TA ProductSlots.MusicStingers
 	Name: MusicStingers
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots

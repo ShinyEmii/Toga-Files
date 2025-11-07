@@ -201,6 +201,7 @@ Test Data Size: 0x00003f7e
 Compressed Chunk Info Offset: 0x000018c2
 Last Block Size: 0x00000004
 Base Header Size: 0x000002d5
+Encrypted Header Size: 0x00005870
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -208,425 +209,468 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArmBack
-[1] ArmTop
-[2] ArrayProperty
-[3] BackPiece
-[4] bAllowLicensedEquip
-[5] Banner
-[6] Banner_S7GrandChamp
-[7] bIsSourceArtUncompressed
-[8] BoolProperty
-[9] bReplicated
-[10] ByteProperty
-[11] Class
-[12] ColorCircle
-[13] ColorCircle2
-[14] ColorShift3
-[15] ColorShift4
-[16] CompressionNone
-[17] Core
-[18] DefaultProduct_New
-[19] Edges1
-[20] Edges2
-[21] Editions
-[22] EmblemBack
-[23] EmblemBack2
-[24] EmblemDots
-[25] EmblemGlow
-[26] EndPiece
-[27] Engine
-[28] EPixelFormat
-[29] FlashTextureRescale
-[30] FlashTextureScale_Mult4
-[31] Format
-[32] GFxUI
-[33] HolographicGlare
-[34] HolographicGlare2
-[35] Icon
-[36] IconLarge
-[37] Icons
-[38] IntProperty
-[39] Label
-[40] leftglow
-[41] LODGroup
-[42] MainBannerTop2
-[43] MatchesRequiredToUnlock
-[44] MipGenSettings
-[45] MipTailBaseIdx
-[46] MovieReference
-[47] NameProperty
-[48] NeverStream
-[49] None
-[50] ObjectProperty
-[51] ObjectReferencer
-[52] OnlineLabel
-[53] OriginalSizeX
-[54] OriginalSizeY
-[55] Package
-[56] PackTextureSize
-[57] PF_A8R8G8B8
-[58] PF_DXT1
-[59] PF_DXT5
-[60] PlayerBanner
-[61] playerBanner_RLShield
-[62] playerbanner_s7rewardgrandchampion
-[63] playerbanner_s7rewardgrandchampion_SF
-[64] PluralLabel
-[65] Product_TA
-[66] ProductAsset_PlayerBanner_TA
-[67] Products
-[68] ProductsDB
-[69] ProductSlot_TA
-[70] ProductSlots
-[71] RawData
-[72] RedRing0
-[73] RedRing1
-[74] RedRing10
-[75] RedRing11
-[76] RedRing12
-[77] RedRing13
-[78] RedRing14
-[79] RedRing2
-[80] RedRing3
-[81] RedRing4
-[82] RedRing5
-[83] RedRing6
-[84] RedRing7
-[85] RedRing8
-[86] RedRing9
-[87] ReferencedObjects
-[88] References
-[89] RingColor
-[90] SizeX
-[91] SizeY
-[92] SourceFile
-[93] SourceFileCRC
-[94] SourceFileTimestamp
-[95] SRGB
-[96] StandaloneSeekFreeReferencer
-[97] StrProperty
-[98] SwfMovie
-[99] TAGame
-[100] Texture2D
-[101] TextureFileCacheName
-[102] TextureFormat
-[103] TextureGroup
-[104] TEXTUREGROUP_UI
-[105] TextureMipGenSettings
-[106] TextureRescale
-[107] Textures
-[108] Thumb_Banner_S7RewardGrandChamp
-[109] Thumbnail
-[110] TMGS_NoMipmaps
-[111] FloatProperty
-[112] ThumbnailKeyLightBrightnessScale
+[Name 0] [0x0007001000000000] ArmBack
+[Name 1] [0x0007001000000000] ArmTop
+[Name 2] [0x0007001000000000] ArrayProperty
+[Name 3] [0x0007001000000000] BackPiece
+[Name 4] [0x0007001000000000] bAllowLicensedEquip
+[Name 5] [0x0007001000000000] Banner
+[Name 6] [0x0007001000000000] Banner_S7GrandChamp
+[Name 7] [0x0007001000000000] bIsSourceArtUncompressed
+[Name 8] [0x0007001000000000] BoolProperty
+[Name 9] [0x0007001000000000] bReplicated
+[Name 10] [0x0007001000000000] ByteProperty
+[Name 11] [0x0007001000000000] Class
+[Name 12] [0x0007001000000000] ColorCircle
+[Name 13] [0x0007001000000000] ColorCircle2
+[Name 14] [0x0007001000000000] ColorShift3
+[Name 15] [0x0007001000000000] ColorShift4
+[Name 16] [0x0007001000000000] CompressionNone
+[Name 17] [0x0007001000000000] Core
+[Name 18] [0x0007001000000000] DefaultProduct_New
+[Name 19] [0x0007001000000000] Edges1
+[Name 20] [0x0007001000000000] Edges2
+[Name 21] [0x0007001000000000] Editions
+[Name 22] [0x0007001000000000] EmblemBack
+[Name 23] [0x0007001000000000] EmblemBack2
+[Name 24] [0x0007001000000000] EmblemDots
+[Name 25] [0x0007001000000000] EmblemGlow
+[Name 26] [0x0007001000000000] EndPiece
+[Name 27] [0x0007001000000000] Engine
+[Name 28] [0x0007001000000000] EPixelFormat
+[Name 29] [0x0007001000000000] FlashTextureRescale
+[Name 30] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 31] [0x0007001000000000] Format
+[Name 32] [0x0007001000000000] GFxUI
+[Name 33] [0x0007001000000000] HolographicGlare
+[Name 34] [0x0007001000000000] HolographicGlare2
+[Name 35] [0x0007001000000000] Icon
+[Name 36] [0x0007001000000000] IconLarge
+[Name 37] [0x0007001000000000] Icons
+[Name 38] [0x0007001000000000] IntProperty
+[Name 39] [0x0007001000000000] Label
+[Name 40] [0x0007001000000000] leftglow
+[Name 41] [0x0007001000000000] LODGroup
+[Name 42] [0x0007001000000000] MainBannerTop2
+[Name 43] [0x0007000000000000] MatchesRequiredToUnlock
+[Name 44] [0x0007001000000000] MipGenSettings
+[Name 45] [0x0007001000000000] MipTailBaseIdx
+[Name 46] [0x0007001000000000] MovieReference
+[Name 47] [0x0007001000000000] NameProperty
+[Name 48] [0x0007001000000000] NeverStream
+[Name 49] [0x0007001000000000] None
+[Name 50] [0x0007001000000000] ObjectProperty
+[Name 51] [0x0007001000000000] ObjectReferencer
+[Name 52] [0x0007001000000000] OnlineLabel
+[Name 53] [0x0007001000000000] OriginalSizeX
+[Name 54] [0x0007001000000000] OriginalSizeY
+[Name 55] [0x0007001000000000] Package
+[Name 56] [0x0007001000000000] PackTextureSize
+[Name 57] [0x0007001000000000] PF_A8R8G8B8
+[Name 58] [0x0007001000000000] PF_DXT1
+[Name 59] [0x0007001000000000] PF_DXT5
+[Name 60] [0x0007001000000000] PlayerBanner
+[Name 61] [0x0007001000000000] playerBanner_RLShield
+[Name 62] [0x0007001000000000] playerbanner_s7rewardgrandchampion
+[Name 63] [0x0007001000000000] playerbanner_s7rewardgrandchampion_SF
+[Name 64] [0x0007001000000000] PluralLabel
+[Name 65] [0x0007001000000000] Product_TA
+[Name 66] [0x0007001000000000] ProductAsset_PlayerBanner_TA
+[Name 67] [0x0007001000000000] Products
+[Name 68] [0x0007001000000000] ProductsDB
+[Name 69] [0x0007001000000000] ProductSlot_TA
+[Name 70] [0x0007001000000000] ProductSlots
+[Name 71] [0x0007001000000000] RawData
+[Name 72] [0x0007001000000000] RedRing0
+[Name 73] [0x0007001000000000] RedRing1
+[Name 74] [0x0007001000000000] RedRing10
+[Name 75] [0x0007001000000000] RedRing11
+[Name 76] [0x0007001000000000] RedRing12
+[Name 77] [0x0007001000000000] RedRing13
+[Name 78] [0x0007001000000000] RedRing14
+[Name 79] [0x0007001000000000] RedRing2
+[Name 80] [0x0007001000000000] RedRing3
+[Name 81] [0x0007001000000000] RedRing4
+[Name 82] [0x0007001000000000] RedRing5
+[Name 83] [0x0007001000000000] RedRing6
+[Name 84] [0x0007001000000000] RedRing7
+[Name 85] [0x0007001000000000] RedRing8
+[Name 86] [0x0007001000000000] RedRing9
+[Name 87] [0x0007001000000000] ReferencedObjects
+[Name 88] [0x0007001000000000] References
+[Name 89] [0x0007001000000000] RingColor
+[Name 90] [0x0007001000000000] SizeX
+[Name 91] [0x0007001000000000] SizeY
+[Name 92] [0x0007001000000000] SourceFile
+[Name 93] [0x0007001000000000] SourceFileCRC
+[Name 94] [0x0007001000000000] SourceFileTimestamp
+[Name 95] [0x0007001000000000] SRGB
+[Name 96] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 97] [0x0007001000000000] StrProperty
+[Name 98] [0x0007001000000000] SwfMovie
+[Name 99] [0x0007001000000000] TAGame
+[Name 100] [0x0007001000000000] Texture2D
+[Name 101] [0x0007001000000000] TextureFileCacheName
+[Name 102] [0x0007001000000000] TextureFormat
+[Name 103] [0x0007001000000000] TextureGroup
+[Name 104] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 105] [0x0007001000000000] TextureMipGenSettings
+[Name 106] [0x0007001000000000] TextureRescale
+[Name 107] [0x0007001000000000] Textures
+[Name 108] [0x0007001000000000] Thumb_Banner_S7RewardGrandChamp
+[Name 109] [0x0007001000000000] Thumbnail
+[Name 110] [0x0007001000000000] TMGS_NoMipmaps
+[Name 111] [0x0007001000000000] FloatProperty
+[Name 112] [0x0007001000000000] ThumbnailKeyLightBrightnessScale
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UProductAsset_PlayerBanner_TA playerbanner_s7rewardgrandchampion.ProductSlots.PlayerBanner.ProductAsset_PlayerBanner_TA_0
 	Name: ProductAsset_PlayerBanner_TA_0
-	Class: ProductAsset_PlayerBanner_TA
-	Outer: ProductSlot_TA PlayerBanner
+	Class: UProductAsset_PlayerBanner_TA
+	Outer: PlayerBanner
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001b97 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UObjectReferencer playerbanner_s7rewardgrandchampion.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000001ba3 with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[2]
+[Export 2]
+	Full Name: UPackage playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion
 	Name: playerbanner_s7rewardgrandchampion
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001bcf with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[3]
+[Export 3]
+	Full Name: UPackage playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion_SF
 	Name: playerbanner_s7rewardgrandchampion_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001bdb with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[4]
+[Export 4]
+	Full Name: UPackage playerbanner_s7rewardgrandchampion.ProductSlots
 	Name: ProductSlots
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000001be7 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
-[5]
+[Export 5]
+	Full Name: UProductAsset_PlayerBanner_TA playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion
 	Name: playerbanner_s7rewardgrandchampion
-	Class: ProductAsset_PlayerBanner_TA
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UProductAsset_PlayerBanner_TA
+	Outer: playerbanner_s7rewardgrandchampion
 	Archetype: ProductAsset_PlayerBanner_TA_0
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000efd83 with 0x00000060 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UProductSlot_TA playerbanner_s7rewardgrandchampion.ProductSlots.PlayerBanner
 	Name: PlayerBanner
-	Class: ProductSlot_TA
-	Outer: Package ProductSlots
+	Class: UProductSlot_TA
+	Outer: ProductSlots
 	Object Flags: 0x000f010400000000
 	Serialized data: at 0x00000000000efde3 with 0x00000111 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: USwfMovie playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.Banner_S7GrandChamp
 	Name: Banner_S7GrandChamp
-	Class: SwfMovie
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: USwfMovie
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000001d64 with 0x00005aa2 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.ArmBack
 	Name: ArmBack
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000007806 with 0x00000979 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.ArmTop
 	Name: ArmTop
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000817f with 0x00000979 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.BackPiece
 	Name: BackPiece
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000008af8 with 0x00000c1e Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.ColorCircle
 	Name: ColorCircle
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000009716 with 0x00006fd7 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.ColorCircle2
 	Name: ColorCircle2
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000106ed with 0x00001192 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.ColorShift3
 	Name: ColorShift3
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000001187f with 0x000016be Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.ColorShift4
 	Name: ColorShift4
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000012f3d with 0x000001f6 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.Edges1
 	Name: Edges1
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000013133 with 0x00010192 Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.Edges2
 	Name: Edges2
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000232c5 with 0x00010192 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.EmblemBack
 	Name: EmblemBack
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000033457 with 0x0000337e Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.EmblemBack2
 	Name: EmblemBack2
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000367d5 with 0x0000337e Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.EmblemDots
 	Name: EmblemDots
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000039b53 with 0x00002179 Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.EmblemGlow
 	Name: EmblemGlow
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000003bccc with 0x0000288e Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.EndPiece
 	Name: EndPiece
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000003e55a with 0x00004179 Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.HolographicGlare
 	Name: HolographicGlare
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000426d3 with 0x000139fe Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.HolographicGlare2
 	Name: HolographicGlare2
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000560d1 with 0x0000c4ce Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.leftglow
 	Name: leftglow
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000006259f with 0x0000a58e Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.MainBannerTop2
 	Name: MainBannerTop2
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000006cb2d with 0x000291d7 Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.RedRing0
 	Name: RedRing0
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000095d04 with 0x00001a7e Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.RedRing1
 	Name: RedRing1
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000097782 with 0x00001a7e Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.RedRing10
 	Name: RedRing10
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000099200 with 0x00001a7e Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.RedRing11
 	Name: RedRing11
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000009ac7e with 0x00001a7e Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.RedRing12
 	Name: RedRing12
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000009c6fc with 0x00001a7e Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.RedRing13
 	Name: RedRing13
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000009e17a with 0x00001a7e Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.RedRing14
 	Name: RedRing14
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000009fbf8 with 0x00001a7e Bytes
 	Export Flags: 0x00000001
-[33]
+[Export 33]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.RedRing2
 	Name: RedRing2
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000a1676 with 0x00001a7e Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.RedRing3
 	Name: RedRing3
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000a30f4 with 0x00001a7e Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.RedRing4
 	Name: RedRing4
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000a4b72 with 0x00001a7e Bytes
 	Export Flags: 0x00000001
-[36]
+[Export 36]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.RedRing5
 	Name: RedRing5
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000a65f0 with 0x00001a7e Bytes
 	Export Flags: 0x00000001
-[37]
+[Export 37]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.RedRing6
 	Name: RedRing6
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000a806e with 0x00001a7e Bytes
 	Export Flags: 0x00000001
-[38]
+[Export 38]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.RedRing7
 	Name: RedRing7
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000a9aec with 0x00001a7e Bytes
 	Export Flags: 0x00000001
-[39]
+[Export 39]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.RedRing8
 	Name: RedRing8
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000ab56a with 0x00001a7e Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.RedRing9
 	Name: RedRing9
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000acfe8 with 0x00001a7e Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.RingColor
 	Name: RingColor
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000aea66 with 0x00001179 Bytes
 	Export Flags: 0x00000001
-[42]
+[Export 42]
+	Full Name: UTexture2D playerbanner_s7rewardgrandchampion.playerbanner_s7rewardgrandchampion.Thumb_Banner_S7RewardGrandChamp
 	Name: Thumb_Banner_S7RewardGrandChamp
-	Class: Texture2D
-	Outer: Package playerbanner_s7rewardgrandchampion
+	Class: UTexture2D
+	Outer: playerbanner_s7rewardgrandchampion
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000afbdf with 0x000401a4 Bytes
 	Export Flags: 0x00000001
@@ -635,73 +679,88 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[4]
+	Class Package: Core
+	Outer: GFxUI
+[Import 4]
+	Full Name: UClass TAGame.ProductAsset_PlayerBanner_TA
 	Name: ProductAsset_PlayerBanner_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[5]
+	Class Package: Core
+	Outer: TAGame
+[Import 5]
+	Full Name: UClass TAGame.ProductSlot_TA
 	Name: ProductSlot_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[6]
+	Class Package: Core
+	Outer: TAGame
+[Import 6]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[9]
+	Class Package: Core
+[Import 9]
+	Full Name: UPackage ProductsDB
 	Name: ProductsDB
 	Class: Package
-	Package: Core
-[10]
+	Class Package: Core
+[Import 10]
+	Full Name: UPackage ProductsDB.Products
 	Name: Products
 	Class: Package
-	Package: Core
-	Outer: Package ProductsDB
-[11]
+	Class Package: Core
+	Outer: ProductsDB
+[Import 11]
+	Full Name: UPackage ProductSlots.Icons
 	Name: Icons
 	Class: Package
-	Package: Core
-	Outer: Package ProductSlots
-[12]
+	Class Package: Core
+	Outer: ProductSlots
+[Import 12]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[13]
+	Class Package: Core
+[Import 13]
+	Full Name: UProduct_TA ProductsDB.Products.playerBanner_RLShield
 	Name: playerBanner_RLShield
 	Class: Product_TA
-	Package: TAGame
-	Outer: Package Products
-[14]
+	Class Package: TAGame
+	Outer: Products
+[Import 14]
+	Full Name: UTexture2D ProductSlots.Icons.Banner
 	Name: Banner
 	Class: Texture2D
-	Package: Engine
-	Outer: Package Icons
+	Class Package: Engine
+	Outer: Icons

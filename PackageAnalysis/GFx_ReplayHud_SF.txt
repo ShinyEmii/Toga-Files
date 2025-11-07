@@ -236,6 +236,7 @@ Test Data Size: 0x00003fb7
 Compressed Chunk Info Offset: 0x000027ad
 Last Block Size: 0x00000000
 Base Header Size: 0x00000341
+Encrypted Header Size: 0x000067b0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -243,702 +244,776 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Names ~ 
 
 
-[0] ArrayProperty
-[1] BoolProperty
-[2] BoostMeter_Background
-[3] BoostMeter_Fill
-[4] BoostMeter_FillTintablePortion
-[5] BoostMeter_Glow
-[6] bUsesFontlib
-[7] ByteProperty
-[8] CameraToFocusGlow
-[9] Class
-[10] Core
-[11] Engine
-[12] EPixelFormat
-[13] FlashTextureRescale
-[14] FlashTextureScale_Mult4
-[15] Format
-[16] GFx_ReplayHud
-[17] GFx_ReplayHud_SF
-[18] GFX_Shared
-[19] GFX_Shared_PowerUpIcons
-[20] GFxUI
-[21] Icon_Camera
-[22] Icon_Focus
-[23] Icon_FOV
-[24] Icon_Pause
-[25] Icon_Play
-[26] Icon_PlaySpeed
-[27] IntProperty
-[28] ItemsModeView_TimerBackground
-[29] ItemsModeView_TimerFill
-[30] LODGroup
-[31] Marker_Goal
-[32] Marker_Save
-[33] Marker_User
-[34] MipTailBaseIdx
-[35] NameProperty
-[36] None
-[37] ObjectReferencer
-[38] OriginalSizeX
-[39] OriginalSizeY
-[40] Package
-[41] PackTextureSize
-[42] PF_DXT5
-[43] PowerUpIcon_BallFreeze
-[44] PowerUpIcon_BallLasso
-[45] PowerUpIcon_BallMagnet
-[46] PowerUpIcon_BallSpring
-[47] PowerUpIcon_BallVelcro
-[48] PowerUpIcon_CarSpring
-[49] PowerUpIcon_EnemyBooster
-[50] PowerUpIcon_EnemySwapper
-[51] PowerUpIcon_GhostBall
-[52] PowerUpIcon_GrapplingHook
-[53] PowerUpIcon_PowerHitter
-[54] PowerUpIcon_ReleaseBall
-[55] PowerUpIcon_Tornado
-[56] PowerUpIcons
-[57] PowerUpIcons_IE
-[58] RawData
-[59] ReferencedObjects
-[60] ReferencedSwfs
-[61] References
-[62] ReplayHUD
-[63] SharedComponents
-[64] SizeX
-[65] SizeY
-[66] SourceFile
-[67] SourceFileCRC
-[68] SourceFileTimestamp
-[69] SRGB
-[70] StandaloneSeekFreeReferencer
-[71] StrProperty
-[72] SwfMovie
-[73] Texture2D
-[74] TextureFileCacheName
-[75] TextureFormat
-[76] TextureGroup
-[77] TEXTUREGROUP_UI
-[78] TextureRescale
-[79] Textures
-[80] Textures5
-[81] TimelineShadow
-[82] PowerUpIcon_BallFreeze_BW
-[83] PowerUpIcon_BallLasso_BW
-[84] PowerUpIcon_BallMagnet_BW
-[85] PowerUpIcon_BallSpring_BW
-[86] PowerUpIcon_BallVelcro_BW
-[87] PowerUpIcon_CarSpring_BW
-[88] PowerUpIcon_EnemyBooster_BW
-[89] PowerUpIcon_EnemySwapper_BW
-[90] PowerUpIcon_GhostBall_BW
-[91] PowerUpIcon_GrapplingHook_BW
-[92] PowerUpIcon_Honk
-[93] PowerUpIcon_PowerHitter_BW
-[94] PowerUpIcon_ReleaseBall_BW
-[95] PowerUpIcon_Tornado_BW
-[96] PowerUpIcon_Decoy
-[97] PowerUpIcon_Decoy_BW
-[98] PowerUpIcon_Inflate
-[99] PowerUpIcon_Inflate_BW
-[100] PowerUpIcon_Reflect
-[101] PowerUpIcon_Reflect_BW
-[102] PowerUpIcon_Shockwave
-[103] PowerUpIcon_Shockwave_BW
-[104] BatmanRumble_PowerUpIcon_Disruptor
-[105] BatmanRumble_PowerUpIcon_Disruptor_BW
-[106] BatmanRumble_PowerUpIcon_Freezer
-[107] BatmanRumble_PowerUpIcon_Freezer_BW
-[108] BatmanRumble_PowerUpIcon_GrapplingHook
-[109] BatmanRumble_PowerUpIcon_GrapplingHook_BW
-[110] BatmanRumble_PowerUpIcon_Haymaker
-[111] BatmanRumble_PowerUpIcon_Haymaker_BW
-[112] BatmanRumble_PowerUpIcon_Magnetizer
-[113] BatmanRumble_PowerUpIcon_Magnetizer_BW
-[114] BatmanRumble_PowerUpIcon_Plunger
-[115] BatmanRumble_PowerUpIcon_Plunger_BW
-[116] BatmanRumble_PowerUpIcon_PowerHitter
-[117] BatmanRumble_PowerUpIcon_PowerHitter_BW
-[118] BatmanRumble_PowerUpIcon_Spike
-[119] BatmanRumble_PowerUpIcon_Spike_BW
-[120] BatmanRumble_PowerUpIcon_Swapper
-[121] BatmanRumble_PowerUpIcon_Swapper_BW
-[122] BatmanRumble_PowerUpIcon_TheBoot
-[123] BatmanRumble_PowerUpIcon_TheBoot_BW
-[124] BatmanRumble_PowerUpIcon_Tornado
-[125] BatmanRumble_PowerUpIcon_Tornado_BW
+[Name 0] [0x0007001000000000] ArrayProperty
+[Name 1] [0x0007001000000000] BoolProperty
+[Name 2] [0x0007001000000000] BoostMeter_Background
+[Name 3] [0x0007001000000000] BoostMeter_Fill
+[Name 4] [0x0007001000000000] BoostMeter_FillTintablePortion
+[Name 5] [0x0007001000000000] BoostMeter_Glow
+[Name 6] [0x0007001000000000] bUsesFontlib
+[Name 7] [0x0007001000000000] ByteProperty
+[Name 8] [0x0007001000000000] CameraToFocusGlow
+[Name 9] [0x0007001000000000] Class
+[Name 10] [0x0007001000000000] Core
+[Name 11] [0x0007001000000000] Engine
+[Name 12] [0x0007001000000000] EPixelFormat
+[Name 13] [0x0007001000000000] FlashTextureRescale
+[Name 14] [0x0007001000000000] FlashTextureScale_Mult4
+[Name 15] [0x0007001000000000] Format
+[Name 16] [0x0007001000000000] GFx_ReplayHud
+[Name 17] [0x0007001000000000] GFx_ReplayHud_SF
+[Name 18] [0x0007001000000000] GFX_Shared
+[Name 19] [0x0007001000000000] GFX_Shared_PowerUpIcons
+[Name 20] [0x0007001000000000] GFxUI
+[Name 21] [0x0007001000000000] Icon_Camera
+[Name 22] [0x0007001000000000] Icon_Focus
+[Name 23] [0x0007001000000000] Icon_FOV
+[Name 24] [0x0007001000000000] Icon_Pause
+[Name 25] [0x0007001000000000] Icon_Play
+[Name 26] [0x0007001000000000] Icon_PlaySpeed
+[Name 27] [0x0007001000000000] IntProperty
+[Name 28] [0x0007001000000000] ItemsModeView_TimerBackground
+[Name 29] [0x0007001000000000] ItemsModeView_TimerFill
+[Name 30] [0x0007001000000000] LODGroup
+[Name 31] [0x0007001000000000] Marker_Goal
+[Name 32] [0x0007001000000000] Marker_Save
+[Name 33] [0x0007001000000000] Marker_User
+[Name 34] [0x0007001000000000] MipTailBaseIdx
+[Name 35] [0x0007001000000000] NameProperty
+[Name 36] [0x0007001000000000] None
+[Name 37] [0x0007001000000000] ObjectReferencer
+[Name 38] [0x0007001000000000] OriginalSizeX
+[Name 39] [0x0007001000000000] OriginalSizeY
+[Name 40] [0x0007001000000000] Package
+[Name 41] [0x0007001000000000] PackTextureSize
+[Name 42] [0x0007001000000000] PF_DXT5
+[Name 43] [0x0007001000000000] PowerUpIcon_BallFreeze
+[Name 44] [0x0007001000000000] PowerUpIcon_BallLasso
+[Name 45] [0x0007001000000000] PowerUpIcon_BallMagnet
+[Name 46] [0x0007001000000000] PowerUpIcon_BallSpring
+[Name 47] [0x0007001000000000] PowerUpIcon_BallVelcro
+[Name 48] [0x0007001000000000] PowerUpIcon_CarSpring
+[Name 49] [0x0007001000000000] PowerUpIcon_EnemyBooster
+[Name 50] [0x0007001000000000] PowerUpIcon_EnemySwapper
+[Name 51] [0x0007001000000000] PowerUpIcon_GhostBall
+[Name 52] [0x0007001000000000] PowerUpIcon_GrapplingHook
+[Name 53] [0x0007001000000000] PowerUpIcon_PowerHitter
+[Name 54] [0x0007001000000000] PowerUpIcon_ReleaseBall
+[Name 55] [0x0007001000000000] PowerUpIcon_Tornado
+[Name 56] [0x0007001000000000] PowerUpIcons
+[Name 57] [0x0007000000000000] PowerUpIcons_IE
+[Name 58] [0x0007001000000000] RawData
+[Name 59] [0x0007001000000000] ReferencedObjects
+[Name 60] [0x0007001000000000] ReferencedSwfs
+[Name 61] [0x0007001000000000] References
+[Name 62] [0x0007001000000000] ReplayHUD
+[Name 63] [0x0007001000000000] SharedComponents
+[Name 64] [0x0007001000000000] SizeX
+[Name 65] [0x0007001000000000] SizeY
+[Name 66] [0x0007001000000000] SourceFile
+[Name 67] [0x0007001000000000] SourceFileCRC
+[Name 68] [0x0007001000000000] SourceFileTimestamp
+[Name 69] [0x0007001000000000] SRGB
+[Name 70] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 71] [0x0007001000000000] StrProperty
+[Name 72] [0x0007001000000000] SwfMovie
+[Name 73] [0x0007001000000000] Texture2D
+[Name 74] [0x0007001000000000] TextureFileCacheName
+[Name 75] [0x0007001000000000] TextureFormat
+[Name 76] [0x0007001000000000] TextureGroup
+[Name 77] [0x0007001000000000] TEXTUREGROUP_UI
+[Name 78] [0x0007001000000000] TextureRescale
+[Name 79] [0x0007001000000000] Textures
+[Name 80] [0x0007001000000000] Textures5
+[Name 81] [0x0007001000000000] TimelineShadow
+[Name 82] [0x0007001000000000] PowerUpIcon_BallFreeze_BW
+[Name 83] [0x0007001000000000] PowerUpIcon_BallLasso_BW
+[Name 84] [0x0007001000000000] PowerUpIcon_BallMagnet_BW
+[Name 85] [0x0007001000000000] PowerUpIcon_BallSpring_BW
+[Name 86] [0x0007001000000000] PowerUpIcon_BallVelcro_BW
+[Name 87] [0x0007001000000000] PowerUpIcon_CarSpring_BW
+[Name 88] [0x0007001000000000] PowerUpIcon_EnemyBooster_BW
+[Name 89] [0x0007001000000000] PowerUpIcon_EnemySwapper_BW
+[Name 90] [0x0007001000000000] PowerUpIcon_GhostBall_BW
+[Name 91] [0x0007001000000000] PowerUpIcon_GrapplingHook_BW
+[Name 92] [0x0007001000000000] PowerUpIcon_Honk
+[Name 93] [0x0007001000000000] PowerUpIcon_PowerHitter_BW
+[Name 94] [0x0007001000000000] PowerUpIcon_ReleaseBall_BW
+[Name 95] [0x0007001000000000] PowerUpIcon_Tornado_BW
+[Name 96] [0x0007001000000000] PowerUpIcon_Decoy
+[Name 97] [0x0007001000000000] PowerUpIcon_Decoy_BW
+[Name 98] [0x0007001000000000] PowerUpIcon_Inflate
+[Name 99] [0x0007001000000000] PowerUpIcon_Inflate_BW
+[Name 100] [0x0007001000000000] PowerUpIcon_Reflect
+[Name 101] [0x0007001000000000] PowerUpIcon_Reflect_BW
+[Name 102] [0x0007001000000000] PowerUpIcon_Shockwave
+[Name 103] [0x0007001000000000] PowerUpIcon_Shockwave_BW
+[Name 104] [0x0007001000000000] BatmanRumble_PowerUpIcon_Disruptor
+[Name 105] [0x0007001000000000] BatmanRumble_PowerUpIcon_Disruptor_BW
+[Name 106] [0x0007001000000000] BatmanRumble_PowerUpIcon_Freezer
+[Name 107] [0x0007001000000000] BatmanRumble_PowerUpIcon_Freezer_BW
+[Name 108] [0x0007001000000000] BatmanRumble_PowerUpIcon_GrapplingHook
+[Name 109] [0x0007001000000000] BatmanRumble_PowerUpIcon_GrapplingHook_BW
+[Name 110] [0x0007001000000000] BatmanRumble_PowerUpIcon_Haymaker
+[Name 111] [0x0007001000000000] BatmanRumble_PowerUpIcon_Haymaker_BW
+[Name 112] [0x0007001000000000] BatmanRumble_PowerUpIcon_Magnetizer
+[Name 113] [0x0007001000000000] BatmanRumble_PowerUpIcon_Magnetizer_BW
+[Name 114] [0x0007001000000000] BatmanRumble_PowerUpIcon_Plunger
+[Name 115] [0x0007001000000000] BatmanRumble_PowerUpIcon_Plunger_BW
+[Name 116] [0x0007001000000000] BatmanRumble_PowerUpIcon_PowerHitter
+[Name 117] [0x0007001000000000] BatmanRumble_PowerUpIcon_PowerHitter_BW
+[Name 118] [0x0007001000000000] BatmanRumble_PowerUpIcon_Spike
+[Name 119] [0x0007001000000000] BatmanRumble_PowerUpIcon_Spike_BW
+[Name 120] [0x0007001000000000] BatmanRumble_PowerUpIcon_Swapper
+[Name 121] [0x0007001000000000] BatmanRumble_PowerUpIcon_Swapper_BW
+[Name 122] [0x0007001000000000] BatmanRumble_PowerUpIcon_TheBoot
+[Name 123] [0x0007001000000000] BatmanRumble_PowerUpIcon_TheBoot_BW
+[Name 124] [0x0007001000000000] BatmanRumble_PowerUpIcon_Tornado
+[Name 125] [0x0007001000000000] BatmanRumble_PowerUpIcon_Tornado_BW
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UObjectReferencer GFx_ReplayHud.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x0000000000002aee with 0x00000070 Bytes
 	Export Flags: 0x00000000
-[1]
+[Export 1]
+	Full Name: UPackage GFx_ReplayHud.GFx_ReplayHud
 	Name: GFx_ReplayHud
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002b5e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[2]
+[Export 2]
+	Full Name: UPackage GFx_ReplayHud.GFx_ReplayHud_SF
 	Name: GFx_ReplayHud_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002b6a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[3]
+[Export 3]
+	Full Name: UPackage GFx_ReplayHud.GFX_Shared_PowerUpIcons
 	Name: GFX_Shared_PowerUpIcons
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000002b76 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[4]
+[Export 4]
+	Full Name: USwfMovie GFx_ReplayHud.GFx_ReplayHud.ReplayHUD
 	Name: ReplayHUD
-	Class: SwfMovie
-	Outer: Package GFx_ReplayHud
+	Class: USwfMovie
+	Outer: GFx_ReplayHud
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000002b82 with 0x0010a4fb Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: USwfMovie GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcons
 	Name: PowerUpIcons
-	Class: SwfMovie
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: USwfMovie
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000010d07d with 0x00003d76 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UTexture2D GFx_ReplayHud.GFx_ReplayHud.BoostMeter_Background
 	Name: BoostMeter_Background
-	Class: Texture2D
-	Outer: Package GFx_ReplayHud
+	Class: UTexture2D
+	Outer: GFx_ReplayHud
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000110df3 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UTexture2D GFx_ReplayHud.GFx_ReplayHud.BoostMeter_Fill
 	Name: BoostMeter_Fill
-	Class: Texture2D
-	Outer: Package GFx_ReplayHud
+	Class: UTexture2D
+	Outer: GFx_ReplayHud
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000120f6c with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UTexture2D GFx_ReplayHud.GFx_ReplayHud.BoostMeter_FillTintablePortion
 	Name: BoostMeter_FillTintablePortion
-	Class: Texture2D
-	Outer: Package GFx_ReplayHud
+	Class: UTexture2D
+	Outer: GFx_ReplayHud
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001310e5 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UTexture2D GFx_ReplayHud.GFx_ReplayHud.BoostMeter_Glow
 	Name: BoostMeter_Glow
-	Class: Texture2D
-	Outer: Package GFx_ReplayHud
+	Class: UTexture2D
+	Outer: GFx_ReplayHud
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000014125e with 0x00001179 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UTexture2D GFx_ReplayHud.GFx_ReplayHud.CameraToFocusGlow
 	Name: CameraToFocusGlow
-	Class: Texture2D
-	Outer: Package GFx_ReplayHud
+	Class: UTexture2D
+	Outer: GFx_ReplayHud
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001423d7 with 0x00001179 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UTexture2D GFx_ReplayHud.GFx_ReplayHud.Icon_Camera
 	Name: Icon_Camera
-	Class: Texture2D
-	Outer: Package GFx_ReplayHud
+	Class: UTexture2D
+	Outer: GFx_ReplayHud
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000143550 with 0x00001179 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UTexture2D GFx_ReplayHud.GFx_ReplayHud.Icon_Focus
 	Name: Icon_Focus
-	Class: Texture2D
-	Outer: Package GFx_ReplayHud
+	Class: UTexture2D
+	Outer: GFx_ReplayHud
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001446c9 with 0x00001179 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UTexture2D GFx_ReplayHud.GFx_ReplayHud.Icon_FOV
 	Name: Icon_FOV
-	Class: Texture2D
-	Outer: Package GFx_ReplayHud
+	Class: UTexture2D
+	Outer: GFx_ReplayHud
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000145842 with 0x00001179 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UTexture2D GFx_ReplayHud.GFx_ReplayHud.Icon_Pause
 	Name: Icon_Pause
-	Class: Texture2D
-	Outer: Package GFx_ReplayHud
+	Class: UTexture2D
+	Outer: GFx_ReplayHud
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001469bb with 0x00001179 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UTexture2D GFx_ReplayHud.GFx_ReplayHud.Icon_Play
 	Name: Icon_Play
-	Class: Texture2D
-	Outer: Package GFx_ReplayHud
+	Class: UTexture2D
+	Outer: GFx_ReplayHud
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000147b34 with 0x00001179 Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UTexture2D GFx_ReplayHud.GFx_ReplayHud.Icon_PlaySpeed
 	Name: Icon_PlaySpeed
-	Class: Texture2D
-	Outer: Package GFx_ReplayHud
+	Class: UTexture2D
+	Outer: GFx_ReplayHud
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000148cad with 0x00001179 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UTexture2D GFx_ReplayHud.GFx_ReplayHud.ItemsModeView_TimerBackground
 	Name: ItemsModeView_TimerBackground
-	Class: Texture2D
-	Outer: Package GFx_ReplayHud
+	Class: UTexture2D
+	Outer: GFx_ReplayHud
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000149e26 with 0x00004179 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UTexture2D GFx_ReplayHud.GFx_ReplayHud.ItemsModeView_TimerFill
 	Name: ItemsModeView_TimerFill
-	Class: Texture2D
-	Outer: Package GFx_ReplayHud
+	Class: UTexture2D
+	Outer: GFx_ReplayHud
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000014df9f with 0x00004179 Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UTexture2D GFx_ReplayHud.GFx_ReplayHud.Marker_Goal
 	Name: Marker_Goal
-	Class: Texture2D
-	Outer: Package GFx_ReplayHud
+	Class: UTexture2D
+	Outer: GFx_ReplayHud
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000152118 with 0x00000979 Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UTexture2D GFx_ReplayHud.GFx_ReplayHud.Marker_Save
 	Name: Marker_Save
-	Class: Texture2D
-	Outer: Package GFx_ReplayHud
+	Class: UTexture2D
+	Outer: GFx_ReplayHud
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000152a91 with 0x00000979 Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UTexture2D GFx_ReplayHud.GFx_ReplayHud.Marker_User
 	Name: Marker_User
-	Class: Texture2D
-	Outer: Package GFx_ReplayHud
+	Class: UTexture2D
+	Outer: GFx_ReplayHud
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000015340a with 0x00000579 Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UTexture2D GFx_ReplayHud.GFx_ReplayHud.TimelineShadow
 	Name: TimelineShadow
-	Class: Texture2D
-	Outer: Package GFx_ReplayHud
+	Class: UTexture2D
+	Outer: GFx_ReplayHud
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000153983 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_BallFreeze
 	Name: PowerUpIcon_BallFreeze
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000163afc with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_BallLasso
 	Name: PowerUpIcon_BallLasso
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000173c75 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_BallMagnet
 	Name: PowerUpIcon_BallMagnet
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000183dee with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_BallSpring
 	Name: PowerUpIcon_BallSpring
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000193f67 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_BallVelcro
 	Name: PowerUpIcon_BallVelcro
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001a40e0 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_CarSpring
 	Name: PowerUpIcon_CarSpring
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001b4259 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_EnemyBooster
 	Name: PowerUpIcon_EnemyBooster
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001c43d2 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_EnemySwapper
 	Name: PowerUpIcon_EnemySwapper
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001d454b with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[31]
+[Export 31]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_GhostBall
 	Name: PowerUpIcon_GhostBall
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001e46c4 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[32]
+[Export 32]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_GrapplingHook
 	Name: PowerUpIcon_GrapplingHook
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000001f483d with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[33]
+[Export 33]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_PowerHitter
 	Name: PowerUpIcon_PowerHitter
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002049b6 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[34]
+[Export 34]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_ReleaseBall
 	Name: PowerUpIcon_ReleaseBall
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000214b2f with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_Tornado
 	Name: PowerUpIcon_Tornado
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000224ca8 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[36]
-	Name: None
-	Class: Class
-	Object Flags: 0x0000000000000000
-	Serialized data: at 0x0000000000000000 with 0x00000000 Bytes
-	Export Flags: 0x00000000
-[37]
+[Export 37]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_BallFreeze_BW
 	Name: PowerUpIcon_BallFreeze_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000234e21 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[38]
+[Export 38]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_BallLasso_BW
 	Name: PowerUpIcon_BallLasso_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000244f9a with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[39]
+[Export 39]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_BallMagnet_BW
 	Name: PowerUpIcon_BallMagnet_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000255113 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[40]
+[Export 40]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_BallSpring_BW
 	Name: PowerUpIcon_BallSpring_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000026528c with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_BallVelcro_BW
 	Name: PowerUpIcon_BallVelcro_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000275405 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[42]
+[Export 42]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_CarSpring_BW
 	Name: PowerUpIcon_CarSpring_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000028557e with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[43]
+[Export 43]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_EnemyBooster_BW
 	Name: PowerUpIcon_EnemyBooster_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002956f7 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[44]
+[Export 44]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_EnemySwapper_BW
 	Name: PowerUpIcon_EnemySwapper_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002a5870 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[45]
+[Export 45]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_GhostBall_BW
 	Name: PowerUpIcon_GhostBall_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002b59e9 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[46]
+[Export 46]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_GrapplingHook_BW
 	Name: PowerUpIcon_GrapplingHook_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002c5b62 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[47]
+[Export 47]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_Honk
 	Name: PowerUpIcon_Honk
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002d5cdb with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[48]
+[Export 48]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_PowerHitter_BW
 	Name: PowerUpIcon_PowerHitter_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002e5e54 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[49]
+[Export 49]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_ReleaseBall_BW
 	Name: PowerUpIcon_ReleaseBall_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000002f5fcd with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[50]
+[Export 50]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_Tornado_BW
 	Name: PowerUpIcon_Tornado_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000306146 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[51]
+[Export 51]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_Decoy
 	Name: PowerUpIcon_Decoy
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000003162bf with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[52]
+[Export 52]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_Decoy_BW
 	Name: PowerUpIcon_Decoy_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000326438 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[53]
+[Export 53]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_Inflate
 	Name: PowerUpIcon_Inflate
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000003365b1 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[54]
+[Export 54]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_Inflate_BW
 	Name: PowerUpIcon_Inflate_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000034672a with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[55]
+[Export 55]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_Reflect
 	Name: PowerUpIcon_Reflect
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000003568a3 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[56]
+[Export 56]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_Reflect_BW
 	Name: PowerUpIcon_Reflect_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000366a1c with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[57]
+[Export 57]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_Shockwave
 	Name: PowerUpIcon_Shockwave
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000376b95 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[58]
+[Export 58]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.PowerUpIcon_Shockwave_BW
 	Name: PowerUpIcon_Shockwave_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000386d0e with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[59]
+[Export 59]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_Disruptor
 	Name: BatmanRumble_PowerUpIcon_Disruptor
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000396e87 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[60]
+[Export 60]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_Disruptor_BW
 	Name: BatmanRumble_PowerUpIcon_Disruptor_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000003a7000 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[61]
+[Export 61]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_Freezer
 	Name: BatmanRumble_PowerUpIcon_Freezer
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000003b7179 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[62]
+[Export 62]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_Freezer_BW
 	Name: BatmanRumble_PowerUpIcon_Freezer_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000003c72f2 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[63]
+[Export 63]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_GrapplingHook
 	Name: BatmanRumble_PowerUpIcon_GrapplingHook
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000003d746b with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[64]
+[Export 64]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_GrapplingHook_BW
 	Name: BatmanRumble_PowerUpIcon_GrapplingHook_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000003e75e4 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[65]
+[Export 65]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_Haymaker
 	Name: BatmanRumble_PowerUpIcon_Haymaker
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000003f775d with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[66]
+[Export 66]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_Haymaker_BW
 	Name: BatmanRumble_PowerUpIcon_Haymaker_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000004078d6 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[67]
+[Export 67]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_Magnetizer
 	Name: BatmanRumble_PowerUpIcon_Magnetizer
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000417a4f with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[68]
+[Export 68]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_Magnetizer_BW
 	Name: BatmanRumble_PowerUpIcon_Magnetizer_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000427bc8 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[69]
+[Export 69]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_Plunger
 	Name: BatmanRumble_PowerUpIcon_Plunger
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000437d41 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[70]
+[Export 70]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_Plunger_BW
 	Name: BatmanRumble_PowerUpIcon_Plunger_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000447eba with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[71]
+[Export 71]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_PowerHitter
 	Name: BatmanRumble_PowerUpIcon_PowerHitter
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000458033 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[72]
+[Export 72]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_PowerHitter_BW
 	Name: BatmanRumble_PowerUpIcon_PowerHitter_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000004681ac with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[73]
+[Export 73]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_Spike
 	Name: BatmanRumble_PowerUpIcon_Spike
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000478325 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[74]
+[Export 74]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_Spike_BW
 	Name: BatmanRumble_PowerUpIcon_Spike_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000048849e with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[75]
+[Export 75]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_Swapper
 	Name: BatmanRumble_PowerUpIcon_Swapper
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000498617 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[76]
+[Export 76]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_Swapper_BW
 	Name: BatmanRumble_PowerUpIcon_Swapper_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000004a8790 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[77]
+[Export 77]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_TheBoot
 	Name: BatmanRumble_PowerUpIcon_TheBoot
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000004b8909 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[78]
+[Export 78]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_TheBoot_BW
 	Name: BatmanRumble_PowerUpIcon_TheBoot_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000004c8a82 with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[79]
+[Export 79]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_Tornado
 	Name: BatmanRumble_PowerUpIcon_Tornado
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000004d8bfb with 0x00010179 Bytes
 	Export Flags: 0x00000001
-[80]
+[Export 80]
+	Full Name: UTexture2D GFx_ReplayHud.GFX_Shared_PowerUpIcons.BatmanRumble_PowerUpIcon_Tornado_BW
 	Name: BatmanRumble_PowerUpIcon_Tornado_BW
-	Class: Texture2D
-	Outer: Package GFX_Shared_PowerUpIcons
+	Class: UTexture2D
+	Outer: GFX_Shared_PowerUpIcons
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000004e8d74 with 0x00010179 Bytes
 	Export Flags: 0x00000001
@@ -947,44 +1022,53 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass GFxUI.SwfMovie
 	Name: SwfMovie
 	Class: Class
-	Package: Core
-	Outer: Package GFxUI
-[4]
+	Class Package: Core
+	Outer: GFxUI
+[Import 4]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[5]
+	Class Package: Core
+[Import 5]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[6]
+	Class Package: Core
+[Import 6]
+	Full Name: UPackage GFX_Shared
 	Name: GFX_Shared
 	Class: Package
-	Package: Core
-[7]
+	Class Package: Core
+[Import 7]
+	Full Name: UPackage GFxUI
 	Name: GFxUI
 	Class: Package
-	Package: Core
-[8]
+	Class Package: Core
+[Import 8]
+	Full Name: USwfMovie GFX_Shared.SharedComponents
 	Name: SharedComponents
 	Class: SwfMovie
-	Package: GFxUI
-	Outer: Package GFX_Shared
+	Class Package: GFxUI
+	Outer: GFX_Shared

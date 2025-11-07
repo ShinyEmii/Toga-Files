@@ -76,6 +76,7 @@ Test Data Size: 0x00003fb7
 Compressed Chunk Info Offset: 0x00002071
 Last Block Size: 0x00000004
 Base Header Size: 0x00000111
+Encrypted Header Size: 0x00006040
 
 AES: iKxkZ9HwK1dhuPsjKAwat7ZYphch8Zg3T3Leiwu+caQ=
 
@@ -83,513 +84,561 @@ AES: iKxkZ9HwK1dhuPsjKAwat7ZYphch8Zg3T3Leiwu+caQ=
     ~ Names ~ 
 
 
-[0] A
-[1] animation
-[2] Antenna
-[3] Antenna_WakeupShip
-[4] ArrayProperty
-[5] AT_WakeupShip_E
-[6] Attachment_Parent_Materials
-[7] Attachments
-[8] B
-[9] Basic_Mat
-[10] Behaviors
-[11] bExposeToLibrary
-[12] bHasStaticPermutationResource
-[13] BoolProperty
-[14] bPerPixelCameraVector
-[15] Breakout_FX
-[16] bUsedWithSkeletalMesh
-[17] bUsedWithStaticLighting
-[18] ByteProperty
-[19] Class
-[20] ColorMaterialInput
-[21] Component
-[22] CompressionNoAlpha
-[23] CompressionSettings
-[24] Core
-[25] DefaultValue
-[26] Desc
-[27] Description
-[28] Diffuse
-[29] DiffuseColor
-[30] DiffuseRim
-[31] DiffuseSpec
-[32] Emissive_Glow_Mask
-[33] Emissive_Mask
-[34] Emissive_mask_color
-[35] EmissiveColor
-[36] Engine
-[37] Engine_MaterialFunctions02
-[38] EPixelFormat
-[39] EProductAttachmentSocket
-[40] Expression
-[41] ExpressionGUID
-[42] ExpressionInput
-[43] Expressions
-[44] FirstResourceMemMip
-[45] FixVertexNormals
-[46] FloatProperty
-[47] Format
-[48] FresnelColor
-[49] FresnelDarken
-[50] Function
-[51] FunctionExpressions
-[52] Functions
-[53] FXActor
-[54] Group
-[55] Guid
-[56] Hat
-[57] hat_burntkey
-[58] Hat_Burntkey_D
-[59] Hat_Burntkey_N
-[60] hat_burntkey_SF
-[61] Hat_Burntkey_SM
-[62] Hat_Burntkey_Spec
-[63] Hat_Viking_Helmet_Diffuse
-[64] Hat_Viking_Helmet_Normal
-[65] Hat_Viking_Helmet_Textures
-[66] InheritCarAttribute
-[67] IntProperty
-[68] LibraryCategories
-[69] LightMapCoordinateIndex
-[70] LightMapResolution
-[71] LinearColor
-[72] LODGroup
-[73] Mask
-[74] MaskA
-[75] MaskB
-[76] MaskG
-[77] MaskR
-[78] Material
-[79] MaterialExpressionScalarParameter
-[80] MaterialExpressionStaticSwitchParameter
-[81] MaterialExpressionTextureSampleParameter2D
-[82] MaterialExpressionVectorParameter
-[83] MaterialFunction
-[84] MaterialFunctionInfos
-[85] MaterialInstanceConstant
-[86] MIC_Hat_Burntkey
-[87] MipTailBaseIdx
-[88] Movement(UsePreDefinedPivots)
-[89] NameProperty
-[90] None
-[91] Normal
-[92] ObjectLocalToWorldData
-[93] ObjectProperty
-[94] ObjectReferencer
-[95] OriginalSizeX
-[96] OriginalSizeY
-[97] OutputIndex
-[98] Package
-[99] ParameterName
-[100] ParameterValue
-[101] Parent
-[102] ParentLightingGuid
-[103] ParticleSystem
-[104] PAS_Hat
-[105] PF_DXT1
-[106] PF_DXT5
-[107] PivotPainter
-[108] PivotPainter_PerObjectData
-[109] ProductAsset_Attachment_TA
-[110] ProductSlot_TA
-[111] ProductSlots
-[112] ReferencedObjects
-[113] Reflections
-[114] RimSharpness
-[115] RimValue
-[116] Rotation
-[117] Rotator
-[118] ScalarMaterialInput
-[119] ScalarParameterValues
-[120] Scale
-[121] SharpReflections
-[122] SizeX
-[123] SizeY
-[124] SkeletalMesh
-[125] Socket
-[126] Sparkles
-[127] SpecBrightness
-[128] SpecInDiffuseAlpha
-[129] SpecPower
-[130] Specular
-[131] SpecularColor
-[132] SpecularPower
-[133] SRGB
-[134] StandaloneSeekFreeReferencer
-[135] StateId
-[136] StaticMesh
-[137] StrProperty
-[138] StructProperty
-[139] TAGame
-[140] TC_NormalmapSwizzle
-[141] Texture
-[142] Texture2D
-[143] TextureCompressionSettings
-[144] TextureFileCacheName
-[145] TextureGroup
-[146] TEXTUREGROUP_CharacterNormalMap
-[147] TEXTUREGROUP_Weapon
-[148] TEXTUREGROUP_WorldNormalMap
-[149] TextureParameterValues
-[150] Textures2
-[151] Textures4
-[152] Textures5
-[153] Translation
-[154] TranslationAmount
-[155] UnpackMin
-[156] UseSpecMap
-[157] Vector
-[158] VectorMaterialInput
-[159] VertexColor_Glow
-[160] VertexGlow_Color
-[161] WorldPositionOffset
+[Name 0] [0x0007001000000000] A
+[Name 1] [0x0007001000000000] animation
+[Name 2] [0x0007001000000000] Antenna
+[Name 3] [0x0007001000000000] Antenna_WakeupShip
+[Name 4] [0x0007001000000000] ArrayProperty
+[Name 5] [0x0007001000000000] AT_WakeupShip_E
+[Name 6] [0x0007001000000000] Attachment_Parent_Materials
+[Name 7] [0x0007001000000000] Attachments
+[Name 8] [0x0007001000000000] B
+[Name 9] [0x0007001000000000] Basic_Mat
+[Name 10] [0x0007001000000000] Behaviors
+[Name 11] [0x0007001000000000] bExposeToLibrary
+[Name 12] [0x0007001000000000] bHasStaticPermutationResource
+[Name 13] [0x0007001000000000] BoolProperty
+[Name 14] [0x0007001000000000] bPerPixelCameraVector
+[Name 15] [0x0007001000000000] Breakout_FX
+[Name 16] [0x0007001000000000] bUsedWithSkeletalMesh
+[Name 17] [0x0007001000000000] bUsedWithStaticLighting
+[Name 18] [0x0007001000000000] ByteProperty
+[Name 19] [0x0007001000000000] Class
+[Name 20] [0x0007001000000000] ColorMaterialInput
+[Name 21] [0x0007001000000000] Component
+[Name 22] [0x0007001000000000] CompressionNoAlpha
+[Name 23] [0x0007001000000000] CompressionSettings
+[Name 24] [0x0007001000000000] Core
+[Name 25] [0x0007001000000000] DefaultValue
+[Name 26] [0x0007001000000000] Desc
+[Name 27] [0x0007001000000000] Description
+[Name 28] [0x0007001000000000] Diffuse
+[Name 29] [0x0007001000000000] DiffuseColor
+[Name 30] [0x0007001000000000] DiffuseRim
+[Name 31] [0x0007001000000000] DiffuseSpec
+[Name 32] [0x0007001000000000] Emissive_Glow_Mask
+[Name 33] [0x0007001000000000] Emissive_Mask
+[Name 34] [0x0007001000000000] Emissive_mask_color
+[Name 35] [0x0007001000000000] EmissiveColor
+[Name 36] [0x0007001000000000] Engine
+[Name 37] [0x0007001000000000] Engine_MaterialFunctions02
+[Name 38] [0x0007001000000000] EPixelFormat
+[Name 39] [0x0007001000000000] EProductAttachmentSocket
+[Name 40] [0x0007001000000000] Expression
+[Name 41] [0x0007001000000000] ExpressionGUID
+[Name 42] [0x0007001000000000] ExpressionInput
+[Name 43] [0x0007001000000000] Expressions
+[Name 44] [0x0007001000000000] FirstResourceMemMip
+[Name 45] [0x0007001000000000] FixVertexNormals
+[Name 46] [0x0007001000000000] FloatProperty
+[Name 47] [0x0007001000000000] Format
+[Name 48] [0x0007001000000000] FresnelColor
+[Name 49] [0x0007001000000000] FresnelDarken
+[Name 50] [0x0007001000000000] Function
+[Name 51] [0x0007001000000000] FunctionExpressions
+[Name 52] [0x0007001000000000] Functions
+[Name 53] [0x0007001000000000] FXActor
+[Name 54] [0x0007001000000000] Group
+[Name 55] [0x0007001000000000] Guid
+[Name 56] [0x0007001000000000] Hat
+[Name 57] [0x0007001000000000] hat_burntkey
+[Name 58] [0x0007001000000000] Hat_Burntkey_D
+[Name 59] [0x0007001000000000] Hat_Burntkey_N
+[Name 60] [0x0007001000000000] hat_burntkey_SF
+[Name 61] [0x0007001000000000] Hat_Burntkey_SM
+[Name 62] [0x0007001000000000] Hat_Burntkey_Spec
+[Name 63] [0x0007001000000000] Hat_Viking_Helmet_Diffuse
+[Name 64] [0x0007001000000000] Hat_Viking_Helmet_Normal
+[Name 65] [0x0007001000000000] Hat_Viking_Helmet_Textures
+[Name 66] [0x0007001000000000] InheritCarAttribute
+[Name 67] [0x0007001000000000] IntProperty
+[Name 68] [0x0007001000000000] LibraryCategories
+[Name 69] [0x0007001000000000] LightMapCoordinateIndex
+[Name 70] [0x0007001000000000] LightMapResolution
+[Name 71] [0x0007001000000000] LinearColor
+[Name 72] [0x0007001000000000] LODGroup
+[Name 73] [0x0007001000000000] Mask
+[Name 74] [0x0007001000000000] MaskA
+[Name 75] [0x0007001000000000] MaskB
+[Name 76] [0x0007001000000000] MaskG
+[Name 77] [0x0007001000000000] MaskR
+[Name 78] [0x0007001000000000] Material
+[Name 79] [0x0007001000000000] MaterialExpressionScalarParameter
+[Name 80] [0x0007001000000000] MaterialExpressionStaticSwitchParameter
+[Name 81] [0x0007001000000000] MaterialExpressionTextureSampleParameter2D
+[Name 82] [0x0007001000000000] MaterialExpressionVectorParameter
+[Name 83] [0x0007001000000000] MaterialFunction
+[Name 84] [0x0007001000000000] MaterialFunctionInfos
+[Name 85] [0x0007001000000000] MaterialInstanceConstant
+[Name 86] [0x0007001000000000] MIC_Hat_Burntkey
+[Name 87] [0x0007001000000000] MipTailBaseIdx
+[Name 88] [0x0007001000000000] Movement(UsePreDefinedPivots)
+[Name 89] [0x0007001000000000] NameProperty
+[Name 90] [0x0007001000000000] None
+[Name 91] [0x0007001000000000] Normal
+[Name 92] [0x0007001000000000] ObjectLocalToWorldData
+[Name 93] [0x0007001000000000] ObjectProperty
+[Name 94] [0x0007001000000000] ObjectReferencer
+[Name 95] [0x0007001000000000] OriginalSizeX
+[Name 96] [0x0007001000000000] OriginalSizeY
+[Name 97] [0x0007001000000000] OutputIndex
+[Name 98] [0x0007001000000000] Package
+[Name 99] [0x0007001000000000] ParameterName
+[Name 100] [0x0007001000000000] ParameterValue
+[Name 101] [0x0007001000000000] Parent
+[Name 102] [0x0007001000000000] ParentLightingGuid
+[Name 103] [0x0007001000000000] ParticleSystem
+[Name 104] [0x0007001000000000] PAS_Hat
+[Name 105] [0x0007001000000000] PF_DXT1
+[Name 106] [0x0007001000000000] PF_DXT5
+[Name 107] [0x0007001000000000] PivotPainter
+[Name 108] [0x0007001000000000] PivotPainter_PerObjectData
+[Name 109] [0x0007001000000000] ProductAsset_Attachment_TA
+[Name 110] [0x0007001000000000] ProductSlot_TA
+[Name 111] [0x0007001000000000] ProductSlots
+[Name 112] [0x0007001000000000] ReferencedObjects
+[Name 113] [0x0007001000000000] Reflections
+[Name 114] [0x0007001000000000] RimSharpness
+[Name 115] [0x0007001000000000] RimValue
+[Name 116] [0x0007001000000000] Rotation
+[Name 117] [0x0007001000000000] Rotator
+[Name 118] [0x0007001000000000] ScalarMaterialInput
+[Name 119] [0x0007001000000000] ScalarParameterValues
+[Name 120] [0x0007001000000000] Scale
+[Name 121] [0x0007001000000000] SharpReflections
+[Name 122] [0x0007001000000000] SizeX
+[Name 123] [0x0007001000000000] SizeY
+[Name 124] [0x0007001000000000] SkeletalMesh
+[Name 125] [0x0007001000000000] Socket
+[Name 126] [0x0007001000000000] Sparkles
+[Name 127] [0x0007001000000000] SpecBrightness
+[Name 128] [0x0007001000000000] SpecInDiffuseAlpha
+[Name 129] [0x0007001000000000] SpecPower
+[Name 130] [0x0007001000000000] Specular
+[Name 131] [0x0007001000000000] SpecularColor
+[Name 132] [0x0007001000000000] SpecularPower
+[Name 133] [0x0007001000000000] SRGB
+[Name 134] [0x0007001000000000] StandaloneSeekFreeReferencer
+[Name 135] [0x0007001000000000] StateId
+[Name 136] [0x0007001000000000] StaticMesh
+[Name 137] [0x0007001000000000] StrProperty
+[Name 138] [0x0007001000000000] StructProperty
+[Name 139] [0x0007001000000000] TAGame
+[Name 140] [0x0007001000000000] TC_NormalmapSwizzle
+[Name 141] [0x0007001000000000] Texture
+[Name 142] [0x0007001000000000] Texture2D
+[Name 143] [0x0007001000000000] TextureCompressionSettings
+[Name 144] [0x0007001000000000] TextureFileCacheName
+[Name 145] [0x0007001000000000] TextureGroup
+[Name 146] [0x0007001000000000] TEXTUREGROUP_CharacterNormalMap
+[Name 147] [0x0007001000000000] TEXTUREGROUP_Weapon
+[Name 148] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
+[Name 149] [0x0007001000000000] TextureParameterValues
+[Name 150] [0x0007001000000000] Textures2
+[Name 151] [0x0007001000000000] Textures4
+[Name 152] [0x0007001000000000] Textures5
+[Name 153] [0x0007001000000000] Translation
+[Name 154] [0x0007001000000000] TranslationAmount
+[Name 155] [0x0007001000000000] UnpackMin
+[Name 156] [0x0007001000000000] UseSpecMap
+[Name 157] [0x0007001000000000] Vector
+[Name 158] [0x0007001000000000] VectorMaterialInput
+[Name 159] [0x0007001000000000] VertexColor_Glow
+[Name 160] [0x0007001000000000] VertexGlow_Color
+[Name 161] [0x0007001000000000] WorldPositionOffset
 
 
     ~ Exports ~ 
 
 
-[0]
+[Export 0]
+	Full Name: UMaterial hat_burntkey.Attachment_Parent_Materials.Basic_Mat
 	Name: Basic_Mat
-	Class: Material
-	Outer: Package Attachment_Parent_Materials
+	Class: UMaterial
+	Outer: Attachment_Parent_Materials
 	Object Flags: 0x000f000500000000
 	Serialized data: at 0x0000000000002182 with 0x00000557 Bytes
 	Export Flags: 0x00000001
-[1]
+[Export 1]
+	Full Name: UMaterialExpressionScalarParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionScalarParameter_0
 	Name: MaterialExpressionScalarParameter_0
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000026d9 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[2]
+[Export 2]
+	Full Name: UMaterialExpressionScalarParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionScalarParameter_1
 	Name: MaterialExpressionScalarParameter_1
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000276d with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[3]
+[Export 3]
+	Full Name: UMaterialExpressionScalarParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionScalarParameter_2
 	Name: MaterialExpressionScalarParameter_2
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002801 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[4]
+[Export 4]
+	Full Name: UMaterialExpressionScalarParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionScalarParameter_3
 	Name: MaterialExpressionScalarParameter_3
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002895 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[5]
+[Export 5]
+	Full Name: UMaterialExpressionScalarParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionScalarParameter_4
 	Name: MaterialExpressionScalarParameter_4
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002929 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[6]
+[Export 6]
+	Full Name: UMaterialExpressionScalarParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionScalarParameter_5
 	Name: MaterialExpressionScalarParameter_5
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000029bd with 0x000000b4 Bytes
 	Export Flags: 0x00000001
-[7]
+[Export 7]
+	Full Name: UMaterialExpressionScalarParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionScalarParameter_6
 	Name: MaterialExpressionScalarParameter_6
-	Class: MaterialExpressionScalarParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionScalarParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002a71 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[8]
+[Export 8]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_0
 	Name: MaterialExpressionStaticSwitchParameter_0
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002b05 with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[9]
+[Export 9]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_1
 	Name: MaterialExpressionStaticSwitchParameter_1
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002c05 with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[10]
+[Export 10]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_2
 	Name: MaterialExpressionStaticSwitchParameter_2
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002d05 with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[11]
+[Export 11]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_3
 	Name: MaterialExpressionStaticSwitchParameter_3
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002e05 with 0x000001c4 Bytes
 	Export Flags: 0x00000001
-[12]
+[Export 12]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_4
 	Name: MaterialExpressionStaticSwitchParameter_4
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000002fc9 with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[13]
+[Export 13]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_5
 	Name: MaterialExpressionStaticSwitchParameter_5
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000030c9 with 0x00000170 Bytes
 	Export Flags: 0x00000001
-[14]
+[Export 14]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_6
 	Name: MaterialExpressionStaticSwitchParameter_6
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003239 with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[15]
+[Export 15]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_7
 	Name: MaterialExpressionStaticSwitchParameter_7
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003339 with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[16]
+[Export 16]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_8
 	Name: MaterialExpressionStaticSwitchParameter_8
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003439 with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[17]
+[Export 17]
+	Full Name: UMaterialExpressionStaticSwitchParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionStaticSwitchParameter_9
 	Name: MaterialExpressionStaticSwitchParameter_9
-	Class: MaterialExpressionStaticSwitchParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionStaticSwitchParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003539 with 0x00000100 Bytes
 	Export Flags: 0x00000001
-[18]
+[Export 18]
+	Full Name: UMaterialExpressionTextureSampleParameter2D hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionTextureSampleParameter2D_0
 	Name: MaterialExpressionTextureSampleParameter2D_0
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003639 with 0x00000094 Bytes
 	Export Flags: 0x00000001
-[19]
+[Export 19]
+	Full Name: UMaterialExpressionTextureSampleParameter2D hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionTextureSampleParameter2D_2
 	Name: MaterialExpressionTextureSampleParameter2D_2
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000036cd with 0x000000b8 Bytes
 	Export Flags: 0x00000001
-[20]
+[Export 20]
+	Full Name: UMaterialExpressionTextureSampleParameter2D hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionTextureSampleParameter2D_3
 	Name: MaterialExpressionTextureSampleParameter2D_3
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003785 with 0x000000b7 Bytes
 	Export Flags: 0x00000001
-[21]
+[Export 21]
+	Full Name: UMaterialExpressionTextureSampleParameter2D hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionTextureSampleParameter2D_5
 	Name: MaterialExpressionTextureSampleParameter2D_5
-	Class: MaterialExpressionTextureSampleParameter2D
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionTextureSampleParameter2D
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x000000000000383c with 0x000000b9 Bytes
 	Export Flags: 0x00000001
-[22]
+[Export 22]
+	Full Name: UMaterialExpressionVectorParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionVectorParameter_0
 	Name: MaterialExpressionVectorParameter_0
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionVectorParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000038f5 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
-[23]
+[Export 23]
+	Full Name: UMaterialExpressionVectorParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionVectorParameter_1
 	Name: MaterialExpressionVectorParameter_1
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionVectorParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x00000000000039bd with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[24]
+[Export 24]
+	Full Name: UMaterialExpressionVectorParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionVectorParameter_3
 	Name: MaterialExpressionVectorParameter_3
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionVectorParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003a65 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[25]
+[Export 25]
+	Full Name: UMaterialExpressionVectorParameter hat_burntkey.Attachment_Parent_Materials.Basic_Mat.MaterialExpressionVectorParameter_4
 	Name: MaterialExpressionVectorParameter_4
-	Class: MaterialExpressionVectorParameter
-	Outer: Material Basic_Mat
+	Class: UMaterialExpressionVectorParameter
+	Outer: Basic_Mat
 	Object Flags: 0x0007000100000000
 	Serialized data: at 0x0000000000003b0d with 0x000000a8 Bytes
 	Export Flags: 0x00000001
-[26]
+[Export 26]
+	Full Name: UMaterialFunction hat_burntkey.Breakout_FX.Functions.FixVertexNormals
 	Name: FixVertexNormals
-	Class: MaterialFunction
-	Outer: Package Functions
+	Class: UMaterialFunction
+	Outer: Functions
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003bb5 with 0x000000c4 Bytes
 	Export Flags: 0x00000001
-[27]
+[Export 27]
+	Full Name: UMaterialFunction hat_burntkey.Engine_MaterialFunctions02.ObjectLocalToWorldData
 	Name: ObjectLocalToWorldData
-	Class: MaterialFunction
-	Outer: Package Engine_MaterialFunctions02
+	Class: UMaterialFunction
+	Outer: Engine_MaterialFunctions02
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003c79 with 0x00000106 Bytes
 	Export Flags: 0x00000001
-[28]
+[Export 28]
+	Full Name: UMaterialFunction hat_burntkey.Engine_MaterialFunctions02.PivotPainter.PivotPainter_PerObjectData
 	Name: PivotPainter_PerObjectData
-	Class: MaterialFunction
-	Outer: Package PivotPainter
+	Class: UMaterialFunction
+	Outer: PivotPainter
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003d7f with 0x0000018f Bytes
 	Export Flags: 0x00000001
-[29]
+[Export 29]
+	Full Name: UMaterialInstanceConstant hat_burntkey.hat_burntkey.MIC_Hat_Burntkey
 	Name: MIC_Hat_Burntkey
-	Class: MaterialInstanceConstant
-	Outer: Package hat_burntkey
+	Class: UMaterialInstanceConstant
+	Outer: hat_burntkey
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000003f0e with 0x00000621 Bytes
 	Export Flags: 0x00000001
-[30]
+[Export 30]
+	Full Name: UObjectReferencer hat_burntkey.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
-	Class: ObjectReferencer
+	Class: UObjectReferencer
 	Object Flags: 0x0007000000000000
 	Serialized data: at 0x000000000000452f with 0x0000002c Bytes
 	Export Flags: 0x00000000
-[31]
+[Export 31]
+	Full Name: UPackage hat_burntkey.Antenna_WakeupShip
 	Name: Antenna_WakeupShip
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000455b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[32]
+[Export 32]
+	Full Name: UPackage hat_burntkey.Attachment_Parent_Materials
 	Name: Attachment_Parent_Materials
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004567 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[33]
+[Export 33]
+	Full Name: UPackage hat_burntkey.Breakout_FX
 	Name: Breakout_FX
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004573 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[34]
+[Export 34]
+	Full Name: UPackage hat_burntkey.Breakout_FX.Functions
 	Name: Functions
-	Class: Package
-	Outer: Package Breakout_FX
+	Class: UPackage
+	Outer: Breakout_FX
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000457f with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[35]
+[Export 35]
+	Full Name: UPackage hat_burntkey.Engine_MaterialFunctions02
 	Name: Engine_MaterialFunctions02
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x000000000000458b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[36]
+[Export 36]
+	Full Name: UPackage hat_burntkey.Engine_MaterialFunctions02.PivotPainter
 	Name: PivotPainter
-	Class: Package
-	Outer: Package Engine_MaterialFunctions02
+	Class: UPackage
+	Outer: Engine_MaterialFunctions02
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x0000000000004597 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[37]
+[Export 37]
+	Full Name: UPackage hat_burntkey.hat_burntkey
 	Name: hat_burntkey
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000045a3 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[38]
+[Export 38]
+	Full Name: UPackage hat_burntkey.hat_burntkey_SF
 	Name: hat_burntkey_SF
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000045af with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
-[39]
+[Export 39]
+	Full Name: UPackage hat_burntkey.Hat_Viking_Helmet_Textures
 	Name: Hat_Viking_Helmet_Textures
-	Class: Package
+	Class: UPackage
 	Object Flags: 0x0007000400000000
 	Serialized data: at 0x00000000000045bb with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
-[40]
+[Export 40]
+	Full Name: UProductAsset_Attachment_TA hat_burntkey.hat_burntkey.hat_burntkey
 	Name: hat_burntkey
-	Class: ProductAsset_Attachment_TA
-	Outer: Package hat_burntkey
+	Class: UProductAsset_Attachment_TA
+	Outer: hat_burntkey
 	Archetype: ProductAsset_Attachment_TA_2
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x00000000000045c7 with 0x000001c8 Bytes
 	Export Flags: 0x00000001
-[41]
+[Export 41]
+	Full Name: UStaticMesh hat_burntkey.hat_burntkey.Hat_Burntkey_SM
 	Name: Hat_Burntkey_SM
-	Class: StaticMesh
-	Outer: Package hat_burntkey
+	Class: UStaticMesh
+	Outer: hat_burntkey
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000000478f with 0x000929ff Bytes
 	Export Flags: 0x00000001
-[42]
+[Export 42]
+	Full Name: UTexture2D hat_burntkey.Antenna_WakeupShip.AT_WakeupShip_E
 	Name: AT_WakeupShip_E
-	Class: Texture2D
-	Outer: Package Antenna_WakeupShip
+	Class: UTexture2D
+	Outer: Antenna_WakeupShip
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000009718e with 0x00000cd5 Bytes
 	Export Flags: 0x00000001
-[43]
+[Export 43]
+	Full Name: UTexture2D hat_burntkey.hat_burntkey.Hat_Burntkey_D
 	Name: Hat_Burntkey_D
-	Class: Texture2D
-	Outer: Package hat_burntkey
+	Class: UTexture2D
+	Outer: hat_burntkey
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000097e63 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
-[44]
+[Export 44]
+	Full Name: UTexture2D hat_burntkey.hat_burntkey.Hat_Burntkey_N
 	Name: Hat_Burntkey_N
-	Class: Texture2D
-	Outer: Package hat_burntkey
+	Class: UTexture2D
+	Outer: hat_burntkey
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x0000000000098b73 with 0x00001885 Bytes
 	Export Flags: 0x00000001
-[45]
+[Export 45]
+	Full Name: UTexture2D hat_burntkey.hat_burntkey.Hat_Burntkey_Spec
 	Name: Hat_Burntkey_Spec
-	Class: Texture2D
-	Outer: Package hat_burntkey
+	Class: UTexture2D
+	Outer: hat_burntkey
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000009a3f8 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
-[46]
+[Export 46]
+	Full Name: UTexture2D hat_burntkey.Hat_Viking_Helmet_Textures.Hat_Viking_Helmet_Diffuse
 	Name: Hat_Viking_Helmet_Diffuse
-	Class: Texture2D
-	Outer: Package Hat_Viking_Helmet_Textures
+	Class: UTexture2D
+	Outer: Hat_Viking_Helmet_Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000009b108 with 0x00000d00 Bytes
 	Export Flags: 0x00000001
-[47]
+[Export 47]
+	Full Name: UTexture2D hat_burntkey.Hat_Viking_Helmet_Textures.Hat_Viking_Helmet_Normal
 	Name: Hat_Viking_Helmet_Normal
-	Class: Texture2D
-	Outer: Package Hat_Viking_Helmet_Textures
+	Class: UTexture2D
+	Outer: Hat_Viking_Helmet_Textures
 	Object Flags: 0x000f000400000000
 	Serialized data: at 0x000000000009be08 with 0x0000184d Bytes
 	Export Flags: 0x00000001
@@ -598,89 +647,107 @@ AES: iKxkZ9HwK1dhuPsjKAwat7ZYphch8Zg3T3Leiwu+caQ=
     ~ Imports ~ 
 
 
-[0]
+[Import 0]
+	Full Name: UClass Core.Package
 	Name: Package
 	Class: Class
-	Package: Core
-	Outer: Package Core
-[1]
+	Class Package: Core
+	Outer: Core
+[Import 1]
+	Full Name: UClass Engine.Material
 	Name: Material
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[2]
+	Class Package: Core
+	Outer: Engine
+[Import 2]
+	Full Name: UClass Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[3]
+	Class Package: Core
+	Outer: Engine
+[Import 3]
+	Full Name: UClass Engine.MaterialExpressionStaticSwitchParameter
 	Name: MaterialExpressionStaticSwitchParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[4]
+	Class Package: Core
+	Outer: Engine
+[Import 4]
+	Full Name: UClass Engine.MaterialExpressionTextureSampleParameter2D
 	Name: MaterialExpressionTextureSampleParameter2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[5]
+	Class Package: Core
+	Outer: Engine
+[Import 5]
+	Full Name: UClass Engine.MaterialExpressionVectorParameter
 	Name: MaterialExpressionVectorParameter
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[6]
+	Class Package: Core
+	Outer: Engine
+[Import 6]
+	Full Name: UClass Engine.MaterialFunction
 	Name: MaterialFunction
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[7]
+	Class Package: Core
+	Outer: Engine
+[Import 7]
+	Full Name: UClass Engine.MaterialInstanceConstant
 	Name: MaterialInstanceConstant
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[8]
+	Class Package: Core
+	Outer: Engine
+[Import 8]
+	Full Name: UClass Engine.ObjectReferencer
 	Name: ObjectReferencer
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[9]
+	Class Package: Core
+	Outer: Engine
+[Import 9]
+	Full Name: UClass Engine.StaticMesh
 	Name: StaticMesh
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[10]
+	Class Package: Core
+	Outer: Engine
+[Import 10]
+	Full Name: UClass Engine.Texture2D
 	Name: Texture2D
 	Class: Class
-	Package: Core
-	Outer: Package Engine
-[11]
+	Class Package: Core
+	Outer: Engine
+[Import 11]
+	Full Name: UClass TAGame.ProductAsset_Attachment_TA
 	Name: ProductAsset_Attachment_TA
 	Class: Class
-	Package: Core
-	Outer: Package TAGame
-[12]
+	Class Package: Core
+	Outer: TAGame
+[Import 12]
+	Full Name: UPackage Core
 	Name: Core
 	Class: Package
-	Package: Core
-[13]
+	Class Package: Core
+[Import 13]
+	Full Name: UPackage Engine
 	Name: Engine
 	Class: Package
-	Package: Core
-[14]
+	Class Package: Core
+[Import 14]
+	Full Name: UPackage ProductSlots
 	Name: ProductSlots
 	Class: Package
-	Package: Core
-[15]
+	Class Package: Core
+[Import 15]
+	Full Name: UPackage TAGame
 	Name: TAGame
 	Class: Package
-	Package: Core
-[16]
+	Class Package: Core
+[Import 16]
+	Full Name: UProductAsset_Attachment_TA ProductSlots.Hat.ProductAsset_Attachment_TA_2
 	Name: ProductAsset_Attachment_TA_2
 	Class: ProductAsset_Attachment_TA
-	Package: TAGame
-	Outer: ProductSlot_TA Hat
-[17]
+	Class Package: TAGame
+	Outer: Hat
+[Import 17]
+	Full Name: UProductSlot_TA ProductSlots.Hat
 	Name: Hat
 	Class: ProductSlot_TA
-	Package: TAGame
-	Outer: Package ProductSlots
+	Class Package: TAGame
+	Outer: ProductSlots
