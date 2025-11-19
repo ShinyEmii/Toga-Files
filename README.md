@@ -35,4 +35,12 @@ This info includes:
 - Folder
 - Package
 - AES key for the package
+## maps.csv
+CSV file with info about every maps.
+This info includes:
+- Name
+- Label
+- Variant Of
+- Weight
+- AES key
   
