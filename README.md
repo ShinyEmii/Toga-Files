@@ -43,4 +43,11 @@ This info includes:
 - Variant Of
 - Weight
 - AES key
-  
+## soundtracks.csv
+CSV file with info about every maps.
+This info includes:
+- Name
+- Label
+- Variant Of
+- Weight
+- AES key
