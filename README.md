@@ -44,10 +44,8 @@ This info includes:
 - Weight
 - AES key
 ## soundtracks.csv
-CSV file with info about every maps.
+CSV file with info about every soundtrack.
 This info includes:
-- Name
+- ID (this matches wem or ewem file name)
+- Artist
 - Label
-- Variant Of
-- Weight
-- AES key
