@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x00009edd Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 293 Name Offset: 0x000000b9
-Export Count: 198 Export Offset: 0x0000272b
-Import Count: 61 Import Offset: 0x0000207f
-Depends Offset: 0x00005edb
-Import Export Guids Offset: 0x00005edb
+Name Count: 323 Name Offset: 0x000000c5
+Export Count: 208 Export Offset: 0x00002abd
+Import Count: 65 Import Offset: 0x000023a1
+Depends Offset: 0x0000653d
+Import Export Guids Offset: 0x0000653d
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x4334ea99 0x4b5bf102 0xb4198a88 0xe545243b
+GUID: 0x0d8028d1 0x492d5aa8 0xd156d198 0x3754bd12
 Generations:
 [0]
 	Export Count: 198
@@ -26,6 +26,10 @@ Generations:
 [1]
 	Export Count: 198
 	Name Count: 293
+	Net Object Count: 0
+[2]
+	Export Count: 208
+	Name Count: 323
 	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
@@ -44,11 +48,11 @@ Texture Allocations Texture Types:
 	Exports:
 		[0] Texture2D boost_sprinkle.boost_sprinkle.Flame3_TXT
 		[1] Texture2D boost_sprinkle.boost_sprinkle.Sprinkle_TXT
-Test Data Size: 0x00003fe6
-Compressed Chunk Info Offset: 0x00005e22
-Last Block Size: 0x00000004
-Base Header Size: 0x000000b9
-Encrypted Header Size: 0x00009e20
+Test Data Size: 0x0000396c
+Compressed Chunk Info Offset: 0x00006478
+Last Block Size: 0x00000008
+Base Header Size: 0x000000c5
+Encrypted Header Size: 0x00009e10
 
 AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 
@@ -349,6 +353,36 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 [Name 290] [0x0007001000000000] Wheel
 [Name 291] [0x0007001000000000] WorldPositionOffset
 [Name 292] [0x0007001000000000] XAxisFacing_YUp
+[Name 293] [0x0007001000000000] bIsLooping
+[Name 294] [0x0007001000000000] BoostActivated_FF
+[Name 295] [0x0007001000000000] BoostActivationSHake
+[Name 296] [0x0007001000000000] BoostBase
+[Name 297] [0x0007001000000000] BoostShake
+[Name 298] [0x0007001000000000] DryFireSound
+[Name 299] [0x0007001000000000] Duration
+[Name 300] [0x0007001000000000] EShakeReceiver
+[Name 301] [0x0007001000000000] EWaveformFunction
+[Name 302] [0x0007001000000000] ForceFeedback
+[Name 303] [0x0007001000000000] ForceFeedbackWaveform
+[Name 304] [0x0007001000000000] FX
+[Name 305] [0x0007001000000000] FXActor_TA
+[Name 306] [0x0007001000000000] LeftAmplitude
+[Name 307] [0x0007001000000000] LeftFunction
+[Name 308] [0x0007001000000000] LeftTriggerAmplitude
+[Name 309] [0x0007001000000000] LeftTriggerFunction
+[Name 310] [0x0007001000000000] Location
+[Name 311] [0x0007001000000000] Receiver
+[Name 312] [0x0007001000000000] RightAmplitude
+[Name 313] [0x0007001000000000] RightFunction
+[Name 314] [0x0007001000000000] RightTriggerAmplitude
+[Name 315] [0x0007001000000000] RightTriggerFunction
+[Name 316] [0x0007001000000000] Samples
+[Name 317] [0x0007001000000000] SFX_UI_Boost
+[Name 318] [0x0007001000000000] ShakeComponent_X
+[Name 319] [0x0007001000000000] ShakeReceiver_Local
+[Name 320] [0x0007001000000000] UI_BoostFail
+[Name 321] [0x0007001000000000] WF_Constant
+[Name 322] [0x0007001000000000] WF_Sin0to180
 
 
     ~ Exports ~ 
@@ -360,7 +394,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: AkBank
 	Outer: SFX_Car_Boost
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000005edb with 0x0000000c Bytes
+	Serialized data: at 0x000000000000653d with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 1]
 	Full Name: AkPlaySoundComponent boost_sprinkle.boost_sprinkle.Boost_Sprinkle_FXActor.AkPlaySoundComponent_0
@@ -368,7 +402,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: AkPlaySoundComponent
 	Outer: Boost_Sprinkle_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000005ee7 with 0x00000045 Bytes
+	Serialized data: at 0x0000000000006549 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 2]
 	Full Name: AkSoundCue boost_sprinkle.SFX_Car_Boost.boost_sprinkle
@@ -376,7 +410,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: AkSoundCue
 	Outer: SFX_Car_Boost
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000005f2c with 0x00000088 Bytes
+	Serialized data: at 0x000000000000658e with 0x00000088 Bytes
 	Export Flags: 0x00000001
 [Export 3]
 	Full Name: DistributionVectorUniformRange boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleVelocityOverLifetime_1.DistributionVectorUniformRange_0
@@ -384,7 +418,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: DistributionVectorUniformRange
 	Outer: ParticleModuleVelocityOverLifetime_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000005fb4 with 0x00000081 Bytes
+	Serialized data: at 0x0000000000006616 with 0x00000081 Bytes
 	Export Flags: 0x00000001
 [Export 4]
 	Full Name: DistributionVectorUniformRange boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleVelocityOverLifetime_1.DistributionVectorUniformRange_0
@@ -392,7 +426,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: DistributionVectorUniformRange
 	Outer: ParticleModuleVelocityOverLifetime_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006035 with 0x00000081 Bytes
+	Serialized data: at 0x0000000000006697 with 0x00000081 Bytes
 	Export Flags: 0x00000001
 [Export 5]
 	Full Name: DistributionVectorUniformRange boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleVelocityOverLifetime_0.DistributionVectorUniformRange_0
@@ -400,7 +434,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: DistributionVectorUniformRange
 	Outer: ParticleModuleVelocityOverLifetime_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000060b6 with 0x00000081 Bytes
+	Serialized data: at 0x0000000000006718 with 0x00000081 Bytes
 	Export Flags: 0x00000001
 [Export 6]
 	Full Name: DistributionVectorUniformRange boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleVelocityOverLifetime_0.DistributionVectorUniformRange_0
@@ -408,7 +442,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: DistributionVectorUniformRange
 	Outer: ParticleModuleVelocityOverLifetime_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006137 with 0x00000081 Bytes
+	Serialized data: at 0x0000000000006799 with 0x00000081 Bytes
 	Export Flags: 0x00000001
 [Export 7]
 	Full Name: FXActor_Boost_TA boost_sprinkle.boost_sprinkle.Boost_Sprinkle_FXActor
@@ -416,7 +450,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: FXActor_Boost_TA
 	Outer: boost_sprinkle
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x00000000000061b8 with 0x0000074a Bytes
+	Serialized data: at 0x0000000000099b6a with 0x00000766 Bytes
 	Export Flags: 0x00000001
 [Export 8]
 	Full Name: FXTrait_BoostParticle_TA boost_sprinkle.boost_sprinkle.Boost_Sprinkle_FXActor.FXTrait_BoostParticle_TA_0
@@ -424,7 +458,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: FXTrait_BoostParticle_TA
 	Outer: Boost_Sprinkle_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000006902 with 0x00000060 Bytes
+	Serialized data: at 0x0000000000006f64 with 0x00000060 Bytes
 	Export Flags: 0x00000001
 [Export 9]
 	Full Name: Material boost_sprinkle.boost_sprinkle.flame_MAT
@@ -432,7 +466,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: Material
 	Outer: boost_sprinkle
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000006962 with 0x000001aa Bytes
+	Serialized data: at 0x0000000000006fc4 with 0x000001aa Bytes
 	Export Flags: 0x00000001
 [Export 10]
 	Full Name: Material boost_sprinkle.boost_sprinkle.Sprinkle_Mat
@@ -440,7 +474,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: Material
 	Outer: boost_sprinkle
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000006b0c with 0x00000219 Bytes
+	Serialized data: at 0x000000000000716e with 0x00000219 Bytes
 	Export Flags: 0x00000001
 [Export 11]
 	Full Name: Material Materials.FlashGradient_MAT
@@ -448,7 +482,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000006d25 with 0x000001a1 Bytes
+	Serialized data: at 0x0000000000007387 with 0x000001a1 Bytes
 	Export Flags: 0x00000001
 [Export 12]
 	Full Name: MaterialExpressionStaticSwitchParameter boost_sprinkle.boost_sprinkle.flame_MAT.MaterialExpressionStaticSwitchParameter_1
@@ -456,7 +490,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: flame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006ec6 with 0x00000078 Bytes
+	Serialized data: at 0x0000000000007528 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 13]
 	Full Name: MaterialExpressionStaticSwitchParameter boost_sprinkle.boost_sprinkle.Sprinkle_Mat.MaterialExpressionStaticSwitchParameter_0
@@ -464,7 +498,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Sprinkle_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006f3e with 0x00000100 Bytes
+	Serialized data: at 0x00000000000075a0 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 14]
 	Full Name: MaterialExpressionStaticSwitchParameter boost_sprinkle.boost_sprinkle.Sprinkle_Mat.MaterialExpressionStaticSwitchParameter_1
@@ -472,7 +506,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Sprinkle_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000703e with 0x00000100 Bytes
+	Serialized data: at 0x00000000000076a0 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 15]
 	Full Name: MaterialInstanceConstant Materials.Boost_sprinkle_Mat
@@ -480,21 +514,21 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: MaterialInstanceConstant
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000000713e with 0x00000628 Bytes
+	Serialized data: at 0x00000000000077a0 with 0x00000628 Bytes
 	Export Flags: 0x00000001
 [Export 16]
 	Full Name: ObjectReferencer boost_sprinkle.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000007766 with 0x0000002c Bytes
+	Serialized data: at 0x0000000000007dc8 with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [Export 17]
 	Full Name: Package boost_sprinkle.boost_sprinkle
 	Name: boost_sprinkle
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000007792 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000007df4 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -504,14 +538,14 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: Package
 	Outer: boost_sprinkle
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000779e with 0x0000000c Bytes
+	Serialized data: at 0x0000000000007e00 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 19]
 	Full Name: Package boost_sprinkle.boost_sprinkle_SF
 	Name: boost_sprinkle_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000077aa with 0x0000000c Bytes
+	Serialized data: at 0x0000000000007e0c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -520,7 +554,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Name: explosion_tw
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000077b6 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000007e18 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -530,14 +564,14 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: Package
 	Outer: explosion_tw
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000077c2 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000007e24 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 22]
 	Full Name: Package boost_sprinkle.SFX_Car_Boost
 	Name: SFX_Car_Boost
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000077ce with 0x0000000c Bytes
+	Serialized data: at 0x0000000000007e30 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -548,7 +582,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Outer: Boost_Sprinkle_FXActor
 	Archetype: DefaultParameters
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x00000000000077da with 0x00000010 Bytes
+	Serialized data: at 0x0000000000007e3c with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 24]
 	Full Name: ParticleLODLevel boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleSpriteEmitter_0.ParticleLODLevel_0
@@ -556,7 +590,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000077ea with 0x00000094 Bytes
+	Serialized data: at 0x0000000000007e4c with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 25]
 	Full Name: ParticleLODLevel boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleSpriteEmitter_2.ParticleLODLevel_0
@@ -564,7 +598,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000787e with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000007ee0 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 26]
 	Full Name: ParticleLODLevel boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleSpriteEmitter_4.ParticleLODLevel_1
@@ -572,7 +606,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007926 with 0x000000c4 Bytes
+	Serialized data: at 0x000000000009a2d0 with 0x000000c4 Bytes
 	Export Flags: 0x00000001
 [Export 27]
 	Full Name: ParticleLODLevel boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleSpriteEmitter_0.ParticleLODLevel_0
@@ -580,7 +614,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000079ea with 0x00000094 Bytes
+	Serialized data: at 0x000000000000804c with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 28]
 	Full Name: ParticleLODLevel boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleSpriteEmitter_2.ParticleLODLevel_0
@@ -588,7 +622,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007a7e with 0x000000a8 Bytes
+	Serialized data: at 0x00000000000080e0 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 29]
 	Full Name: ParticleLODLevel boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleSpriteEmitter_4.ParticleLODLevel_1
@@ -596,7 +630,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007b26 with 0x000000c4 Bytes
+	Serialized data: at 0x0000000000008188 with 0x000000c4 Bytes
 	Export Flags: 0x00000001
 [Export 30]
 	Full Name: ParticleLODLevel boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleSpriteEmitter_0.ParticleLODLevel_0
@@ -604,7 +638,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007bea with 0x00000094 Bytes
+	Serialized data: at 0x000000000000824c with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 31]
 	Full Name: ParticleLODLevel boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleSpriteEmitter_2.ParticleLODLevel_2
@@ -612,7 +646,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007c7e with 0x000000c8 Bytes
+	Serialized data: at 0x000000000009a394 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 32]
 	Full Name: ParticleLODLevel boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleSpriteEmitter_3.ParticleLODLevel_3
@@ -620,7 +654,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007d46 with 0x000000a8 Bytes
+	Serialized data: at 0x000000000009a45c with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 33]
 	Full Name: ParticleLODLevel boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleSpriteEmitter_0.ParticleLODLevel_0
@@ -628,7 +662,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007dee with 0x00000094 Bytes
+	Serialized data: at 0x0000000000008450 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 34]
 	Full Name: ParticleLODLevel boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleSpriteEmitter_2.ParticleLODLevel_2
@@ -636,7 +670,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007e82 with 0x000000c4 Bytes
+	Serialized data: at 0x00000000000084e4 with 0x000000c4 Bytes
 	Export Flags: 0x00000001
 [Export 35]
 	Full Name: ParticleLODLevel boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleSpriteEmitter_3.ParticleLODLevel_3
@@ -644,7 +678,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007f46 with 0x000000a8 Bytes
+	Serialized data: at 0x000000000009a504 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 36]
 	Full Name: ParticleModuleAccelerationOverLifetime boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleAccelerationOverLifetime_0
@@ -652,7 +686,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleAccelerationOverLifetime
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007fee with 0x000000fa Bytes
+	Serialized data: at 0x0000000000008650 with 0x000000fa Bytes
 	Export Flags: 0x00000001
 [Export 37]
 	Full Name: ParticleModuleAccelerationOverLifetime boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleAccelerationOverLifetime_0
@@ -660,7 +694,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleAccelerationOverLifetime
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000080e8 with 0x000000fa Bytes
+	Serialized data: at 0x000000000000874a with 0x000000fa Bytes
 	Export Flags: 0x00000001
 [Export 38]
 	Full Name: ParticleModuleAccelerationOverLifetime boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleAccelerationOverLifetime_0
@@ -668,7 +702,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleAccelerationOverLifetime
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000081e2 with 0x000000fa Bytes
+	Serialized data: at 0x0000000000008844 with 0x000000fa Bytes
 	Export Flags: 0x00000001
 [Export 39]
 	Full Name: ParticleModuleAccelerationOverLifetime boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleAccelerationOverLifetime_0
@@ -676,7 +710,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleAccelerationOverLifetime
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000082dc with 0x000000fa Bytes
+	Serialized data: at 0x000000000000893e with 0x000000fa Bytes
 	Export Flags: 0x00000001
 [Export 40]
 	Full Name: ParticleModuleCollision boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleCollision_0
@@ -684,7 +718,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleCollision
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000083d6 with 0x0000037a Bytes
+	Serialized data: at 0x0000000000008a38 with 0x0000037a Bytes
 	Export Flags: 0x00000001
 [Export 41]
 	Full Name: ParticleModuleCollision boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleCollision_0
@@ -692,7 +726,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleCollision
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008750 with 0x0000037a Bytes
+	Serialized data: at 0x0000000000008db2 with 0x0000037a Bytes
 	Export Flags: 0x00000001
 [Export 42]
 	Full Name: ParticleModuleCollision boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleCollision_1
@@ -700,7 +734,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleCollision
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008aca with 0x0000037a Bytes
+	Serialized data: at 0x000000000000912c with 0x0000037a Bytes
 	Export Flags: 0x00000001
 [Export 43]
 	Full Name: ParticleModuleCollision boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleCollision_1
@@ -708,7 +742,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleCollision
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008e44 with 0x0000037a Bytes
+	Serialized data: at 0x00000000000094a6 with 0x0000037a Bytes
 	Export Flags: 0x00000001
 [Export 44]
 	Full Name: ParticleModuleColor boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleColor_0
@@ -716,7 +750,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColor
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000091be with 0x000000f1 Bytes
+	Serialized data: at 0x0000000000009820 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 45]
 	Full Name: ParticleModuleColor boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleColor_2
@@ -724,7 +758,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColor
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000092af with 0x000000f1 Bytes
+	Serialized data: at 0x0000000000009911 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 46]
 	Full Name: ParticleModuleColor boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleColor_0
@@ -732,7 +766,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColor
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000093a0 with 0x000000f1 Bytes
+	Serialized data: at 0x0000000000009a02 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 47]
 	Full Name: ParticleModuleColor boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleColor_2
@@ -740,7 +774,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColor
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000009491 with 0x000000f1 Bytes
+	Serialized data: at 0x0000000000009af3 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 48]
 	Full Name: ParticleModuleColor boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleColor_0
@@ -748,7 +782,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColor
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000009582 with 0x000000f1 Bytes
+	Serialized data: at 0x0000000000009be4 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 49]
 	Full Name: ParticleModuleColor boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleColor_1
@@ -756,7 +790,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColor
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000009673 with 0x000000f1 Bytes
+	Serialized data: at 0x0000000000009cd5 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 50]
 	Full Name: ParticleModuleColor boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleColor_0
@@ -764,7 +798,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColor
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000009764 with 0x000000f1 Bytes
+	Serialized data: at 0x0000000000009dc6 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 51]
 	Full Name: ParticleModuleColor boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleColor_1
@@ -772,7 +806,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColor
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000009855 with 0x000000f1 Bytes
+	Serialized data: at 0x0000000000009eb7 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 52]
 	Full Name: ParticleModuleColorOverLife boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleColorOverLife_0
@@ -780,7 +814,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColorOverLife
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000009946 with 0x00000155 Bytes
+	Serialized data: at 0x0000000000009fa8 with 0x00000155 Bytes
 	Export Flags: 0x00000001
 [Export 53]
 	Full Name: ParticleModuleColorOverLife boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleColorOverLife_0
@@ -788,7 +822,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColorOverLife
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000009a9b with 0x00000155 Bytes
+	Serialized data: at 0x000000000000a0fd with 0x00000155 Bytes
 	Export Flags: 0x00000001
 [Export 54]
 	Full Name: ParticleModuleColorOverLife boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleColorOverLife_1
@@ -796,7 +830,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColorOverLife
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000009bf0 with 0x00000155 Bytes
+	Serialized data: at 0x000000000000a252 with 0x00000155 Bytes
 	Export Flags: 0x00000001
 [Export 55]
 	Full Name: ParticleModuleColorOverLife boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleColorOverLife_1
@@ -804,7 +838,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColorOverLife
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000009d45 with 0x00000155 Bytes
+	Serialized data: at 0x000000000000a3a7 with 0x00000155 Bytes
 	Export Flags: 0x00000001
 [Export 56]
 	Full Name: ParticleModuleColorScaleOverLife boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleColorScaleOverLife_0
@@ -812,7 +846,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000009e9a with 0x00000139 Bytes
+	Serialized data: at 0x000000000000a4fc with 0x00000139 Bytes
 	Export Flags: 0x00000001
 [Export 57]
 	Full Name: ParticleModuleColorScaleOverLife boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleColorScaleOverLife_2
@@ -820,7 +854,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000009fd3 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000000a635 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 58]
 	Full Name: ParticleModuleColorScaleOverLife boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleColorScaleOverLife_0
@@ -828,7 +862,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a0c4 with 0x00000139 Bytes
+	Serialized data: at 0x000000000000a726 with 0x00000139 Bytes
 	Export Flags: 0x00000001
 [Export 59]
 	Full Name: ParticleModuleColorScaleOverLife boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleColorScaleOverLife_2
@@ -836,7 +870,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a1fd with 0x000000f1 Bytes
+	Serialized data: at 0x000000000000a85f with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 60]
 	Full Name: ParticleModuleColorScaleOverLife boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleColorScaleOverLife_0
@@ -844,7 +878,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a2ee with 0x00000139 Bytes
+	Serialized data: at 0x000000000000a950 with 0x00000139 Bytes
 	Export Flags: 0x00000001
 [Export 61]
 	Full Name: ParticleModuleColorScaleOverLife boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleColorScaleOverLife_1
@@ -852,7 +886,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a427 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000000aa89 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 62]
 	Full Name: ParticleModuleColorScaleOverLife boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleColorScaleOverLife_2
@@ -860,7 +894,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a518 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000000ab7a with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 63]
 	Full Name: ParticleModuleColorScaleOverLife boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleColorScaleOverLife_0
@@ -868,7 +902,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a609 with 0x00000139 Bytes
+	Serialized data: at 0x000000000000ac6b with 0x00000139 Bytes
 	Export Flags: 0x00000001
 [Export 64]
 	Full Name: ParticleModuleColorScaleOverLife boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleColorScaleOverLife_1
@@ -876,7 +910,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a742 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000000ada4 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 65]
 	Full Name: ParticleModuleLifetime boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleLifetime_0
@@ -884,7 +918,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLifetime
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a833 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000ae95 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 66]
 	Full Name: ParticleModuleLifetime boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleLifetime_2
@@ -892,7 +926,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLifetime
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a8d0 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000af32 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 67]
 	Full Name: ParticleModuleLifetime boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleLifetime_4
@@ -900,7 +934,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLifetime
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a96d with 0x0000009d Bytes
+	Serialized data: at 0x000000000000afcf with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 68]
 	Full Name: ParticleModuleLifetime boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleLifetime_0
@@ -908,7 +942,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLifetime
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000aa0a with 0x0000009d Bytes
+	Serialized data: at 0x000000000000b06c with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 69]
 	Full Name: ParticleModuleLifetime boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleLifetime_2
@@ -916,7 +950,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLifetime
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000aaa7 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000b109 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 70]
 	Full Name: ParticleModuleLifetime boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleLifetime_4
@@ -924,7 +958,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLifetime
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ab44 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000b1a6 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 71]
 	Full Name: ParticleModuleLifetime boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleLifetime_0
@@ -932,7 +966,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLifetime
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000abe1 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000b243 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 72]
 	Full Name: ParticleModuleLifetime boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleLifetime_2
@@ -940,7 +974,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLifetime
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ac7e with 0x0000009d Bytes
+	Serialized data: at 0x000000000000b2e0 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 73]
 	Full Name: ParticleModuleLifetime boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleLifetime_3
@@ -948,7 +982,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLifetime
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ad1b with 0x0000009d Bytes
+	Serialized data: at 0x000000000000b37d with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 74]
 	Full Name: ParticleModuleLifetime boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleLifetime_0
@@ -956,7 +990,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLifetime
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000adb8 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000b41a with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 75]
 	Full Name: ParticleModuleLifetime boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleLifetime_2
@@ -964,7 +998,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLifetime
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ae55 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000b4b7 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 76]
 	Full Name: ParticleModuleLifetime boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleLifetime_3
@@ -972,7 +1006,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLifetime
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000aef2 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000b554 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 77]
 	Full Name: ParticleModuleLocation boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleLocation_0
@@ -980,7 +1014,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLocation
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000af8f with 0x00000128 Bytes
+	Serialized data: at 0x000000000000b5f1 with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [Export 78]
 	Full Name: ParticleModuleLocation boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleLocation_1
@@ -988,7 +1022,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLocation
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b0b7 with 0x00000071 Bytes
+	Serialized data: at 0x000000000000b719 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 79]
 	Full Name: ParticleModuleLocation boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleLocation_0
@@ -996,7 +1030,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLocation
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b128 with 0x00000128 Bytes
+	Serialized data: at 0x000000000000b78a with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [Export 80]
 	Full Name: ParticleModuleLocation boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleLocation_1
@@ -1004,7 +1038,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLocation
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b250 with 0x00000071 Bytes
+	Serialized data: at 0x000000000000b8b2 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 81]
 	Full Name: ParticleModuleLocation boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleLocation_0
@@ -1012,7 +1046,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLocation
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b2c1 with 0x00000071 Bytes
+	Serialized data: at 0x000000000000b923 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 82]
 	Full Name: ParticleModuleLocation boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleLocation_1
@@ -1020,7 +1054,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLocation
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b332 with 0x00000071 Bytes
+	Serialized data: at 0x000000000000b994 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 83]
 	Full Name: ParticleModuleLocation boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleLocation_0
@@ -1028,7 +1062,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLocation
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b3a3 with 0x00000071 Bytes
+	Serialized data: at 0x000000000000ba05 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 84]
 	Full Name: ParticleModuleLocation boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleLocation_1
@@ -1036,7 +1070,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLocation
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b414 with 0x00000071 Bytes
+	Serialized data: at 0x000000000000ba76 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 85]
 	Full Name: ParticleModuleLocationEmitter boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleLocationEmitter_1
@@ -1044,7 +1078,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLocationEmitter
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b485 with 0x00000082 Bytes
+	Serialized data: at 0x000000000000bae7 with 0x00000082 Bytes
 	Export Flags: 0x00000001
 [Export 86]
 	Full Name: ParticleModuleLocationEmitter boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleLocationEmitter_1
@@ -1052,7 +1086,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLocationEmitter
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b507 with 0x00000082 Bytes
+	Serialized data: at 0x000000000000bb69 with 0x00000082 Bytes
 	Export Flags: 0x00000001
 [Export 87]
 	Full Name: ParticleModuleLocationEmitter boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleLocationEmitter_0
@@ -1060,7 +1094,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLocationEmitter
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b589 with 0x00000082 Bytes
+	Serialized data: at 0x000000000000bbeb with 0x00000082 Bytes
 	Export Flags: 0x00000001
 [Export 88]
 	Full Name: ParticleModuleLocationEmitter boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleLocationEmitter_0
@@ -1068,7 +1102,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLocationEmitter
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b60b with 0x00000082 Bytes
+	Serialized data: at 0x000000000000bc6d with 0x00000082 Bytes
 	Export Flags: 0x00000001
 [Export 89]
 	Full Name: ParticleModuleLocationPrimitiveCylinder boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleLocationPrimitiveCylinder_1
@@ -1076,7 +1110,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLocationPrimitiveCylinder
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b68d with 0x000001ef Bytes
+	Serialized data: at 0x000000000000bcef with 0x000001ef Bytes
 	Export Flags: 0x00000001
 [Export 90]
 	Full Name: ParticleModuleLocationPrimitiveCylinder boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleLocationPrimitiveCylinder_1
@@ -1084,7 +1118,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLocationPrimitiveCylinder
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b87c with 0x000001ef Bytes
+	Serialized data: at 0x000000000000bede with 0x000001ef Bytes
 	Export Flags: 0x00000001
 [Export 91]
 	Full Name: ParticleModuleLocationPrimitiveCylinder boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleLocationPrimitiveCylinder_0
@@ -1092,7 +1126,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLocationPrimitiveCylinder
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ba6b with 0x000001ef Bytes
+	Serialized data: at 0x000000000000c0cd with 0x000001ef Bytes
 	Export Flags: 0x00000001
 [Export 92]
 	Full Name: ParticleModuleLocationPrimitiveCylinder boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleLocationPrimitiveCylinder_0
@@ -1100,7 +1134,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleLocationPrimitiveCylinder
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bc5a with 0x000001ef Bytes
+	Serialized data: at 0x000000000000c2bc with 0x000001ef Bytes
 	Export Flags: 0x00000001
 [Export 93]
 	Full Name: ParticleModuleMeshRotation boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleMeshRotation_0
@@ -1108,7 +1142,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleMeshRotation
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000be49 with 0x000000de Bytes
+	Serialized data: at 0x000000000000c4ab with 0x000000de Bytes
 	Export Flags: 0x00000001
 [Export 94]
 	Full Name: ParticleModuleMeshRotation boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleMeshRotation_0
@@ -1116,7 +1150,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleMeshRotation
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bf27 with 0x00000129 Bytes
+	Serialized data: at 0x000000000000c589 with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [Export 95]
 	Full Name: ParticleModuleMeshRotation boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleMeshRotation_0
@@ -1124,7 +1158,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleMeshRotation
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c050 with 0x000000de Bytes
+	Serialized data: at 0x000000000000c6b2 with 0x000000de Bytes
 	Export Flags: 0x00000001
 [Export 96]
 	Full Name: ParticleModuleMeshRotation boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleMeshRotation_0
@@ -1132,7 +1166,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleMeshRotation
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c12e with 0x00000129 Bytes
+	Serialized data: at 0x000000000000c790 with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [Export 97]
 	Full Name: ParticleModuleMeshRotationRateOverLife boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleMeshRotationRateOverLife_0
@@ -1140,7 +1174,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleMeshRotationRateOverLife
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c257 with 0x000001ad Bytes
+	Serialized data: at 0x000000000000c8b9 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 98]
 	Full Name: ParticleModuleMeshRotationRateOverLife boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleMeshRotationRateOverLife_0
@@ -1148,7 +1182,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleMeshRotationRateOverLife
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c404 with 0x000001c6 Bytes
+	Serialized data: at 0x000000000000ca66 with 0x000001c6 Bytes
 	Export Flags: 0x00000001
 [Export 99]
 	Full Name: ParticleModuleMeshRotationRateOverLife boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleMeshRotationRateOverLife_0
@@ -1156,7 +1190,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleMeshRotationRateOverLife
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c5ca with 0x000001ad Bytes
+	Serialized data: at 0x000000000000cc2c with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 100]
 	Full Name: ParticleModuleMeshRotationRateOverLife boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleMeshRotationRateOverLife_0
@@ -1164,7 +1198,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleMeshRotationRateOverLife
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c777 with 0x000001c6 Bytes
+	Serialized data: at 0x000000000000cdd9 with 0x000001c6 Bytes
 	Export Flags: 0x00000001
 [Export 101]
 	Full Name: ParticleModuleOrbit boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleOrbit_0
@@ -1172,7 +1206,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleOrbit
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c93d with 0x000002d6 Bytes
+	Serialized data: at 0x000000000000cf9f with 0x000002d6 Bytes
 	Export Flags: 0x00000001
 [Export 102]
 	Full Name: ParticleModuleOrbit boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleOrbit_3
@@ -1180,7 +1214,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleOrbit
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cc13 with 0x000002d6 Bytes
+	Serialized data: at 0x000000000000d275 with 0x000002d6 Bytes
 	Export Flags: 0x00000001
 [Export 103]
 	Full Name: ParticleModuleOrbit boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleOrbit_0
@@ -1188,7 +1222,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleOrbit
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cee9 with 0x000002d6 Bytes
+	Serialized data: at 0x000000000000d54b with 0x000002d6 Bytes
 	Export Flags: 0x00000001
 [Export 104]
 	Full Name: ParticleModuleOrbit boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleOrbit_3
@@ -1196,7 +1230,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleOrbit
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d1bf with 0x000002d6 Bytes
+	Serialized data: at 0x000000000000d821 with 0x000002d6 Bytes
 	Export Flags: 0x00000001
 [Export 105]
 	Full Name: ParticleModuleOrbit boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleOrbit_0
@@ -1204,7 +1238,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleOrbit
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d495 with 0x000002d6 Bytes
+	Serialized data: at 0x000000000000daf7 with 0x000002d6 Bytes
 	Export Flags: 0x00000001
 [Export 106]
 	Full Name: ParticleModuleOrbit boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleOrbit_1
@@ -1212,7 +1246,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleOrbit
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d76b with 0x000002d6 Bytes
+	Serialized data: at 0x000000000000ddcd with 0x000002d6 Bytes
 	Export Flags: 0x00000001
 [Export 107]
 	Full Name: ParticleModuleOrbit boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleOrbit_0
@@ -1220,7 +1254,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleOrbit
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000da41 with 0x000002d6 Bytes
+	Serialized data: at 0x000000000000e0a3 with 0x000002d6 Bytes
 	Export Flags: 0x00000001
 [Export 108]
 	Full Name: ParticleModuleOrbit boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleOrbit_1
@@ -1228,7 +1262,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleOrbit
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000dd17 with 0x000002d6 Bytes
+	Serialized data: at 0x000000000000e379 with 0x000002d6 Bytes
 	Export Flags: 0x00000001
 [Export 109]
 	Full Name: ParticleModuleRequired boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleRequired_0
@@ -1236,7 +1270,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRequired
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000dfed with 0x00000129 Bytes
+	Serialized data: at 0x000000000000e64f with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [Export 110]
 	Full Name: ParticleModuleRequired boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleRequired_2
@@ -1244,7 +1278,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRequired
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e116 with 0x0000016d Bytes
+	Serialized data: at 0x000000000000e778 with 0x0000016d Bytes
 	Export Flags: 0x00000001
 [Export 111]
 	Full Name: ParticleModuleRequired boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleRequired_4
@@ -1252,7 +1286,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRequired
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e283 with 0x00000110 Bytes
+	Serialized data: at 0x000000000000e8e5 with 0x00000110 Bytes
 	Export Flags: 0x00000001
 [Export 112]
 	Full Name: ParticleModuleRequired boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleRequired_0
@@ -1260,7 +1294,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRequired
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e393 with 0x00000129 Bytes
+	Serialized data: at 0x000000000000e9f5 with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [Export 113]
 	Full Name: ParticleModuleRequired boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleRequired_2
@@ -1268,7 +1302,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRequired
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e4bc with 0x00000154 Bytes
+	Serialized data: at 0x000000000000eb1e with 0x00000154 Bytes
 	Export Flags: 0x00000001
 [Export 114]
 	Full Name: ParticleModuleRequired boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleRequired_4
@@ -1276,7 +1310,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRequired
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e610 with 0x00000138 Bytes
+	Serialized data: at 0x000000000009a5ac with 0x00000138 Bytes
 	Export Flags: 0x00000001
 [Export 115]
 	Full Name: ParticleModuleRequired boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleRequired_0
@@ -1284,7 +1318,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRequired
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e748 with 0x000000f4 Bytes
+	Serialized data: at 0x000000000000edaa with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 116]
 	Full Name: ParticleModuleRequired boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleRequired_2
@@ -1292,7 +1326,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRequired
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e83c with 0x000000db Bytes
+	Serialized data: at 0x000000000000ee9e with 0x000000db Bytes
 	Export Flags: 0x00000001
 [Export 117]
 	Full Name: ParticleModuleRequired boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleRequired_3
@@ -1300,7 +1334,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRequired
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e917 with 0x0000016d Bytes
+	Serialized data: at 0x000000000000ef79 with 0x0000016d Bytes
 	Export Flags: 0x00000001
 [Export 118]
 	Full Name: ParticleModuleRequired boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleRequired_0
@@ -1308,7 +1342,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRequired
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ea84 with 0x0000010d Bytes
+	Serialized data: at 0x000000000000f0e6 with 0x0000010d Bytes
 	Export Flags: 0x00000001
 [Export 119]
 	Full Name: ParticleModuleRequired boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleRequired_2
@@ -1316,7 +1350,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRequired
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000eb91 with 0x000000c2 Bytes
+	Serialized data: at 0x000000000000f1f3 with 0x000000c2 Bytes
 	Export Flags: 0x00000001
 [Export 120]
 	Full Name: ParticleModuleRequired boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleRequired_3
@@ -1324,7 +1358,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRequired
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ec53 with 0x00000154 Bytes
+	Serialized data: at 0x000000000000f2b5 with 0x00000154 Bytes
 	Export Flags: 0x00000001
 [Export 121]
 	Full Name: ParticleModuleRotation boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleRotation_1
@@ -1332,7 +1366,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRotation
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000eda7 with 0x00000071 Bytes
+	Serialized data: at 0x000000000000f409 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 122]
 	Full Name: ParticleModuleRotation boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleRotation_1
@@ -1340,7 +1374,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRotation
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ee18 with 0x00000071 Bytes
+	Serialized data: at 0x000000000000f47a with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 123]
 	Full Name: ParticleModuleRotation boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleRotation_0
@@ -1348,7 +1382,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRotation
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ee89 with 0x00000071 Bytes
+	Serialized data: at 0x000000000000f4eb with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 124]
 	Full Name: ParticleModuleRotation boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleRotation_0
@@ -1356,7 +1390,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRotation
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000eefa with 0x00000071 Bytes
+	Serialized data: at 0x000000000000f55c with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 125]
 	Full Name: ParticleModuleRotationRate boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleRotationRate_1
@@ -1364,7 +1398,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRotationRate
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ef6b with 0x00000108 Bytes
+	Serialized data: at 0x000000000000f5cd with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 126]
 	Full Name: ParticleModuleRotationRate boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleRotationRate_1
@@ -1372,7 +1406,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRotationRate
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f073 with 0x00000108 Bytes
+	Serialized data: at 0x000000000000f6d5 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 127]
 	Full Name: ParticleModuleRotationRate boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleRotationRate_0
@@ -1380,7 +1414,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRotationRate
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f17b with 0x00000108 Bytes
+	Serialized data: at 0x000000000000f7dd with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 128]
 	Full Name: ParticleModuleRotationRate boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleRotationRate_0
@@ -1388,7 +1422,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleRotationRate
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f283 with 0x00000108 Bytes
+	Serialized data: at 0x000000000000f8e5 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 129]
 	Full Name: ParticleModuleSize boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleSize_0
@@ -1396,7 +1430,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSize
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f38b with 0x000000ce Bytes
+	Serialized data: at 0x000000000000f9ed with 0x000000ce Bytes
 	Export Flags: 0x00000001
 [Export 130]
 	Full Name: ParticleModuleSize boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleSize_2
@@ -1404,7 +1438,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSize
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f459 with 0x00000128 Bytes
+	Serialized data: at 0x000000000000fabb with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [Export 131]
 	Full Name: ParticleModuleSize boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleSize_4
@@ -1412,7 +1446,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSize
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f581 with 0x000000ce Bytes
+	Serialized data: at 0x000000000000fbe3 with 0x000000ce Bytes
 	Export Flags: 0x00000001
 [Export 132]
 	Full Name: ParticleModuleSize boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleSize_0
@@ -1420,7 +1454,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSize
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f64f with 0x000000ce Bytes
+	Serialized data: at 0x000000000000fcb1 with 0x000000ce Bytes
 	Export Flags: 0x00000001
 [Export 133]
 	Full Name: ParticleModuleSize boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleSize_2
@@ -1428,7 +1462,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSize
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f71d with 0x00000128 Bytes
+	Serialized data: at 0x000000000000fd7f with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [Export 134]
 	Full Name: ParticleModuleSize boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleSize_4
@@ -1436,7 +1470,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSize
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f845 with 0x000000ce Bytes
+	Serialized data: at 0x000000000000fea7 with 0x000000ce Bytes
 	Export Flags: 0x00000001
 [Export 135]
 	Full Name: ParticleModuleSize boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleSize_0
@@ -1444,7 +1478,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSize
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f913 with 0x000000ce Bytes
+	Serialized data: at 0x000000000000ff75 with 0x000000ce Bytes
 	Export Flags: 0x00000001
 [Export 136]
 	Full Name: ParticleModuleSize boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleSize_2
@@ -1452,7 +1486,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSize
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f9e1 with 0x000000ce Bytes
+	Serialized data: at 0x0000000000010043 with 0x000000ce Bytes
 	Export Flags: 0x00000001
 [Export 137]
 	Full Name: ParticleModuleSize boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleSize_3
@@ -1460,7 +1494,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSize
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000faaf with 0x00000128 Bytes
+	Serialized data: at 0x0000000000010111 with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [Export 138]
 	Full Name: ParticleModuleSize boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleSize_0
@@ -1468,7 +1502,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSize
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000fbd7 with 0x000000ce Bytes
+	Serialized data: at 0x0000000000010239 with 0x000000ce Bytes
 	Export Flags: 0x00000001
 [Export 139]
 	Full Name: ParticleModuleSize boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleSize_2
@@ -1476,7 +1510,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSize
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000fca5 with 0x000000ce Bytes
+	Serialized data: at 0x0000000000010307 with 0x000000ce Bytes
 	Export Flags: 0x00000001
 [Export 140]
 	Full Name: ParticleModuleSize boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleSize_3
@@ -1484,7 +1518,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSize
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000fd73 with 0x00000128 Bytes
+	Serialized data: at 0x00000000000103d5 with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [Export 141]
 	Full Name: ParticleModuleSizeMultiplyLife boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleSizeMultiplyLife_0
@@ -1492,7 +1526,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000fe9b with 0x000000c9 Bytes
+	Serialized data: at 0x00000000000104fd with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 142]
 	Full Name: ParticleModuleSizeMultiplyLife boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleSizeMultiplyLife_3
@@ -1500,7 +1534,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ff64 with 0x000000e5 Bytes
+	Serialized data: at 0x00000000000105c6 with 0x000000e5 Bytes
 	Export Flags: 0x00000001
 [Export 143]
 	Full Name: ParticleModuleSizeMultiplyLife boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleSizeMultiplyLife_4
@@ -1508,7 +1542,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000010049 with 0x000001ad Bytes
+	Serialized data: at 0x00000000000106ab with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 144]
 	Full Name: ParticleModuleSizeMultiplyLife boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleSizeMultiplyLife_0
@@ -1516,7 +1550,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000101f6 with 0x000000c9 Bytes
+	Serialized data: at 0x0000000000010858 with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 145]
 	Full Name: ParticleModuleSizeMultiplyLife boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleSizeMultiplyLife_3
@@ -1524,7 +1558,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000102bf with 0x000000e5 Bytes
+	Serialized data: at 0x0000000000010921 with 0x000000e5 Bytes
 	Export Flags: 0x00000001
 [Export 146]
 	Full Name: ParticleModuleSizeMultiplyLife boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleSizeMultiplyLife_4
@@ -1532,7 +1566,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000103a4 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000010a06 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 147]
 	Full Name: ParticleModuleSizeMultiplyLife boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleSizeMultiplyLife_0
@@ -1540,7 +1574,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000010551 with 0x000000e5 Bytes
+	Serialized data: at 0x0000000000010bb3 with 0x000000e5 Bytes
 	Export Flags: 0x00000001
 [Export 148]
 	Full Name: ParticleModuleSizeMultiplyLife boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleSizeMultiplyLife_1
@@ -1548,7 +1582,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000010636 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000010c98 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 149]
 	Full Name: ParticleModuleSizeMultiplyLife boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleSizeMultiplyLife_3
@@ -1556,7 +1590,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000107e3 with 0x000000c9 Bytes
+	Serialized data: at 0x0000000000010e45 with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 150]
 	Full Name: ParticleModuleSizeMultiplyLife boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleSizeMultiplyLife_0
@@ -1564,7 +1598,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000108ac with 0x000000e5 Bytes
+	Serialized data: at 0x0000000000010f0e with 0x000000e5 Bytes
 	Export Flags: 0x00000001
 [Export 151]
 	Full Name: ParticleModuleSizeMultiplyLife boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleSizeMultiplyLife_1
@@ -1572,7 +1606,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000010991 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000010ff3 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 152]
 	Full Name: ParticleModuleSizeMultiplyLife boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleSizeMultiplyLife_3
@@ -1580,7 +1614,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000010b3e with 0x000000c9 Bytes
+	Serialized data: at 0x00000000000111a0 with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 153]
 	Full Name: ParticleModuleSpawn boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleSpawn_0
@@ -1588,7 +1622,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSpawn
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000010c07 with 0x000000e1 Bytes
+	Serialized data: at 0x000000000009a6e4 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 154]
 	Full Name: ParticleModuleSpawn boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleSpawn_2
@@ -1596,7 +1630,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSpawn
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000010ce8 with 0x000000e1 Bytes
+	Serialized data: at 0x000000000001134a with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 155]
 	Full Name: ParticleModuleSpawn boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleSpawn_4
@@ -1604,7 +1638,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSpawn
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000010dc9 with 0x000000e1 Bytes
+	Serialized data: at 0x000000000001142b with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 156]
 	Full Name: ParticleModuleSpawn boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleSpawn_0
@@ -1612,7 +1646,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSpawn
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000010eaa with 0x000000e1 Bytes
+	Serialized data: at 0x000000000001150c with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 157]
 	Full Name: ParticleModuleSpawn boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleSpawn_2
@@ -1620,7 +1654,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSpawn
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000010f8b with 0x000000e1 Bytes
+	Serialized data: at 0x00000000000115ed with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 158]
 	Full Name: ParticleModuleSpawn boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleSpawn_4
@@ -1628,7 +1662,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSpawn
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001106c with 0x000000e1 Bytes
+	Serialized data: at 0x000000000009a7c5 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 159]
 	Full Name: ParticleModuleSpawn boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleSpawn_0
@@ -1636,7 +1670,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSpawn
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001114d with 0x000000e1 Bytes
+	Serialized data: at 0x00000000000117af with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 160]
 	Full Name: ParticleModuleSpawn boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleSpawn_2
@@ -1644,7 +1678,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSpawn
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001122e with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000011890 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 161]
 	Full Name: ParticleModuleSpawn boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleSpawn_3
@@ -1652,7 +1686,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSpawn
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001130f with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000011971 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 162]
 	Full Name: ParticleModuleSpawn boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleSpawn_0
@@ -1660,7 +1694,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSpawn
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000113f0 with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000011a52 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 163]
 	Full Name: ParticleModuleSpawn boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleSpawn_2
@@ -1668,7 +1702,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSpawn
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000114d1 with 0x000000e1 Bytes
+	Serialized data: at 0x000000000009a8a6 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 164]
 	Full Name: ParticleModuleSpawn boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleSpawn_3
@@ -1676,7 +1710,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleSpawn
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000115b2 with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000011c14 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 165]
 	Full Name: ParticleModuleTypeDataMesh boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleTypeDataMesh_0
@@ -1684,7 +1718,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011693 with 0x00000071 Bytes
+	Serialized data: at 0x0000000000011cf5 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 166]
 	Full Name: ParticleModuleTypeDataMesh boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleTypeDataMesh_0
@@ -1692,7 +1726,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011704 with 0x00000071 Bytes
+	Serialized data: at 0x0000000000011d66 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 167]
 	Full Name: ParticleModuleTypeDataMesh boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleTypeDataMesh_0
@@ -1700,7 +1734,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011775 with 0x00000071 Bytes
+	Serialized data: at 0x0000000000011dd7 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 168]
 	Full Name: ParticleModuleTypeDataMesh boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleTypeDataMesh_0
@@ -1708,7 +1742,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000117e6 with 0x00000071 Bytes
+	Serialized data: at 0x0000000000011e48 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 169]
 	Full Name: ParticleModuleVelocity boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleVelocity_1
@@ -1716,7 +1750,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleVelocity
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011857 with 0x0000016c Bytes
+	Serialized data: at 0x0000000000011eb9 with 0x0000016c Bytes
 	Export Flags: 0x00000001
 [Export 170]
 	Full Name: ParticleModuleVelocity boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleVelocity_1
@@ -1724,7 +1758,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleVelocity
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000119c3 with 0x0000016c Bytes
+	Serialized data: at 0x0000000000012025 with 0x0000016c Bytes
 	Export Flags: 0x00000001
 [Export 171]
 	Full Name: ParticleModuleVelocity boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleVelocity_4
@@ -1732,7 +1766,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleVelocity
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011b2f with 0x0000016c Bytes
+	Serialized data: at 0x0000000000012191 with 0x0000016c Bytes
 	Export Flags: 0x00000001
 [Export 172]
 	Full Name: ParticleModuleVelocity boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleVelocity_4
@@ -1740,7 +1774,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleVelocity
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011c9b with 0x0000016c Bytes
+	Serialized data: at 0x00000000000122fd with 0x0000016c Bytes
 	Export Flags: 0x00000001
 [Export 173]
 	Full Name: ParticleModuleVelocityOverLifetime boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleModuleVelocityOverLifetime_1
@@ -1748,7 +1782,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011e07 with 0x0000008d Bytes
+	Serialized data: at 0x0000000000012469 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 174]
 	Full Name: ParticleModuleVelocityOverLifetime boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleModuleVelocityOverLifetime_1
@@ -1756,7 +1790,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011e94 with 0x0000008d Bytes
+	Serialized data: at 0x00000000000124f6 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 175]
 	Full Name: ParticleModuleVelocityOverLifetime boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleModuleVelocityOverLifetime_0
@@ -1764,7 +1798,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011f21 with 0x0000008d Bytes
+	Serialized data: at 0x0000000000012583 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 176]
 	Full Name: ParticleModuleVelocityOverLifetime boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleModuleVelocityOverLifetime_0
@@ -1772,7 +1806,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011fae with 0x0000008d Bytes
+	Serialized data: at 0x0000000000012610 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 177]
 	Full Name: ParticleSpriteEmitter boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleSpriteEmitter_0
@@ -1780,7 +1814,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleSpriteEmitter
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001203b with 0x0000004c Bytes
+	Serialized data: at 0x000000000001269d with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 178]
 	Full Name: ParticleSpriteEmitter boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleSpriteEmitter_2
@@ -1788,7 +1822,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleSpriteEmitter
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012087 with 0x0000002c Bytes
+	Serialized data: at 0x00000000000126e9 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 179]
 	Full Name: ParticleSpriteEmitter boost_sprinkle.boost_sprinkle.Sprinkle2_PS.ParticleSpriteEmitter_4
@@ -1796,7 +1830,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleSpriteEmitter
 	Outer: Sprinkle2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000120b3 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000012715 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 180]
 	Full Name: ParticleSpriteEmitter boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleSpriteEmitter_0
@@ -1804,7 +1838,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleSpriteEmitter
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000120ff with 0x0000004c Bytes
+	Serialized data: at 0x0000000000012761 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 181]
 	Full Name: ParticleSpriteEmitter boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleSpriteEmitter_2
@@ -1812,7 +1846,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleSpriteEmitter
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001214b with 0x0000002c Bytes
+	Serialized data: at 0x00000000000127ad with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 182]
 	Full Name: ParticleSpriteEmitter boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME.ParticleSpriteEmitter_4
@@ -1820,7 +1854,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleSpriteEmitter
 	Outer: Sprinkle2_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012177 with 0x0000004c Bytes
+	Serialized data: at 0x00000000000127d9 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 183]
 	Full Name: ParticleSpriteEmitter boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleSpriteEmitter_0
@@ -1828,7 +1862,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleSpriteEmitter
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000121c3 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000012825 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 184]
 	Full Name: ParticleSpriteEmitter boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleSpriteEmitter_2
@@ -1836,7 +1870,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleSpriteEmitter
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001220f with 0x0000004c Bytes
+	Serialized data: at 0x0000000000012871 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 185]
 	Full Name: ParticleSpriteEmitter boost_sprinkle.boost_sprinkle.Sprinkle_PS.ParticleSpriteEmitter_3
@@ -1844,7 +1878,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleSpriteEmitter
 	Outer: Sprinkle_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001225b with 0x0000002c Bytes
+	Serialized data: at 0x00000000000128bd with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 186]
 	Full Name: ParticleSpriteEmitter boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleSpriteEmitter_0
@@ -1852,7 +1886,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleSpriteEmitter
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012287 with 0x0000004c Bytes
+	Serialized data: at 0x00000000000128e9 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 187]
 	Full Name: ParticleSpriteEmitter boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleSpriteEmitter_2
@@ -1860,7 +1894,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleSpriteEmitter
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000122d3 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000012935 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 188]
 	Full Name: ParticleSpriteEmitter boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME.ParticleSpriteEmitter_3
@@ -1868,7 +1902,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleSpriteEmitter
 	Outer: Sprinkle_PS_INGAME
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001231f with 0x0000002c Bytes
+	Serialized data: at 0x0000000000012981 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 189]
 	Full Name: ParticleSystem boost_sprinkle.boost_sprinkle.Sprinkle2_PS
@@ -1876,7 +1910,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleSystem
 	Outer: boost_sprinkle
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000001234b with 0x00000127 Bytes
+	Serialized data: at 0x00000000000129ad with 0x00000127 Bytes
 	Export Flags: 0x00000001
 [Export 190]
 	Full Name: ParticleSystem boost_sprinkle.boost_sprinkle.Sprinkle2_PS_INGAME
@@ -1884,7 +1918,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleSystem
 	Outer: boost_sprinkle
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000012472 with 0x00000127 Bytes
+	Serialized data: at 0x0000000000012ad4 with 0x00000127 Bytes
 	Export Flags: 0x00000001
 [Export 191]
 	Full Name: ParticleSystem boost_sprinkle.boost_sprinkle.Sprinkle_PS
@@ -1892,7 +1926,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleSystem
 	Outer: boost_sprinkle
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000012599 with 0x00000127 Bytes
+	Serialized data: at 0x0000000000012bfb with 0x00000127 Bytes
 	Export Flags: 0x00000001
 [Export 192]
 	Full Name: ParticleSystem boost_sprinkle.boost_sprinkle.Sprinkle_PS_INGAME
@@ -1900,7 +1934,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleSystem
 	Outer: boost_sprinkle
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000126c0 with 0x00000127 Bytes
+	Serialized data: at 0x0000000000012d22 with 0x00000127 Bytes
 	Export Flags: 0x00000001
 [Export 193]
 	Full Name: ParticleSystemComponent_TA boost_sprinkle.boost_sprinkle.Boost_Sprinkle_FXActor.ParticleSystemComponent_TA_0
@@ -1908,7 +1942,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ParticleSystemComponent_TA
 	Outer: Boost_Sprinkle_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x00000000000127e7 with 0x0000008d Bytes
+	Serialized data: at 0x0000000000012e49 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 194]
 	Full Name: ProductAsset_Boost_TA boost_sprinkle.boost_sprinkle.boost_sprinkle
@@ -1917,7 +1951,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Outer: boost_sprinkle
 	Archetype: ProductAsset_Boost_TA_0
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000012874 with 0x00000028 Bytes
+	Serialized data: at 0x0000000000012ed6 with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [Export 195]
 	Full Name: StaticMesh boost_sprinkle.boost_sprinkle.FireWheel_SM
@@ -1925,7 +1959,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: StaticMesh
 	Outer: boost_sprinkle
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001289c with 0x000852a0 Bytes
+	Serialized data: at 0x0000000000012efe with 0x000852a0 Bytes
 	Export Flags: 0x00000001
 [Export 196]
 	Full Name: Texture2D boost_sprinkle.boost_sprinkle.Flame3_TXT
@@ -1933,7 +1967,7 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: Texture2D
 	Outer: boost_sprinkle
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000097b3c with 0x00000cf4 Bytes
+	Serialized data: at 0x000000000009819e with 0x00000cf4 Bytes
 	Export Flags: 0x00000001
 [Export 197]
 	Full Name: Texture2D boost_sprinkle.boost_sprinkle.Sprinkle_TXT
@@ -1941,7 +1975,89 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: Texture2D
 	Outer: boost_sprinkle
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000098830 with 0x00000cd8 Bytes
+	Serialized data: at 0x0000000000098e92 with 0x00000cd8 Bytes
+	Export Flags: 0x00000001
+[Export 198]
+	Full Name: AkSoundCue boost_sprinkle.SFX_UI_Boost.UI_BoostFail
+	Name: UI_BoostFail
+	Class: AkSoundCue
+	Outer: SFX_UI_Boost
+	Object Flags: 0x000f000400000000
+	Serialized data: at 0x000000000009a987 with 0x00000056 Bytes
+	Export Flags: 0x00000001
+[Export 199]
+	Full Name: ForceFeedbackWaveform FX.BoostActivated_FF
+	Name: BoostActivated_FF
+	Class: ForceFeedbackWaveform
+	Outer: FX
+	Object Flags: 0x000f000502000400
+	Serialized data: at 0x000000000009a9dd with 0x00000170 Bytes
+	Export Flags: 0x00000001
+[Export 200]
+	Full Name: ForceFeedbackWaveform FX.ForceFeedback
+	Name: ForceFeedback
+	Class: ForceFeedbackWaveform
+	Outer: FX
+	Object Flags: 0x000f000502000400
+	Serialized data: at 0x000000000009ab4d with 0x00000189 Bytes
+	Export Flags: 0x00000001
+[Export 201]
+	Full Name: FXActor_Boost_TA boost_sprinkle.BoostBase.FXActor
+	Name: FXActor
+	Class: FXActor_Boost_TA
+	Outer: BoostBase
+	Object Flags: 0x000f000502000400
+	Serialized data: at 0x000000000009acd6 with 0x000006be Bytes
+	Export Flags: 0x00000001
+[Export 202]
+	Full Name: Package boost_sprinkle.BoostBase
+	Name: BoostBase
+	Class: Package
+	Object Flags: 0x0007000400000000
+	Serialized data: at 0x000000000009b394 with 0x0000000c Bytes
+	Export Flags: 0x00000001
+	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
+	Package Flags: 0x20000005
+[Export 203]
+	Full Name: Package boost_sprinkle.BoostBase.FX
+	Name: FX
+	Class: Package
+	Outer: BoostBase
+	Object Flags: 0x0007000400000000
+	Serialized data: at 0x000000000009b3a0 with 0x0000000c Bytes
+	Export Flags: 0x00000001
+[Export 204]
+	Full Name: Package boost_sprinkle.SFX_UI_Boost
+	Name: SFX_UI_Boost
+	Class: Package
+	Object Flags: 0x0007000400000000
+	Serialized data: at 0x000000000009b3ac with 0x0000000c Bytes
+	Export Flags: 0x00000001
+	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
+	Package Flags: 0x20000005
+[Export 205]
+	Full Name: ParameterDispenser_X boost_sprinkle.BoostBase.FXActor.ParameterDispenser_X_0
+	Name: ParameterDispenser_X_0
+	Class: ParameterDispenser_X
+	Outer: FXActor
+	Object Flags: 0x0007000402000400
+	Serialized data: at 0x000000000009b3b8 with 0x00000010 Bytes
+	Export Flags: 0x00000001
+[Export 206]
+	Full Name: ShakeComponent_X boost_sprinkle.BoostBase.FXActor.ShakeComponent_X_0
+	Name: ShakeComponent_X_0
+	Class: ShakeComponent_X
+	Outer: FXActor
+	Object Flags: 0x0007000502000400
+	Serialized data: at 0x000000000009b3c8 with 0x0000006d Bytes
+	Export Flags: 0x00000001
+[Export 207]
+	Full Name: ShakeComponent_X boost_sprinkle.BoostBase.FXActor.ShakeComponent_X_1
+	Name: ShakeComponent_X_1
+	Class: ShakeComponent_X
+	Outer: FXActor
+	Object Flags: 0x0007000502000400
+	Serialized data: at 0x000000000009b435 with 0x0000006d Bytes
 	Export Flags: 0x00000001
 
 
@@ -2305,3 +2421,27 @@ AES: Ykl+bxEyaOQdg866nZB6W9lnahVSog8+iAP8ZtSPUHo=
 	Class: ProductSlot_TA
 	Class Package: TAGame
 	Outer: ProductSlots
+[Import 61]
+	Full Name: AkBank SFX_UI_Boost.SFX_UI_Boost
+	Name: SFX_UI_Boost
+	Class: AkBank
+	Class Package: Engine
+	Outer: SFX_UI_Boost
+[Import 62]
+	Full Name: Class Engine.ForceFeedbackWaveform
+	Name: ForceFeedbackWaveform
+	Class: Class
+	Class Package: Core
+	Outer: Engine
+[Import 63]
+	Full Name: Class ProjectX.ShakeComponent_X
+	Name: ShakeComponent_X
+	Class: Class
+	Class Package: Core
+	Outer: ProjectX
+[Import 64]
+	Full Name: FXActorEvent_X FXActorEvents.BoostShake
+	Name: BoostShake
+	Class: FXActorEvent_X
+	Class Package: ProjectX
+	Outer: FXActorEvents

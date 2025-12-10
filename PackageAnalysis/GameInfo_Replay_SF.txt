@@ -8,16 +8,16 @@ File Version: 868
 Licensee Version: 32
 Total Header Size: 0x0000749d Bytes
 Folder Name: "None"
-Package Flags: 0x0288028d
-Name Count: 269 Name Offset: 0x00000141
-Export Count: 52 Export Offset: 0x0000265c
-Import Count: 52 Import Offset: 0x000020ac
-Depends Offset: 0x000035e4
-Import Export Guids Offset: 0x000035e4
+Package Flags: 0x028802c9
+Name Count: 276 Name Offset: 0x0000014d
+Export Count: 52 Export Offset: 0x0000272c
+Import Count: 52 Import Offset: 0x0000217c
+Depends Offset: 0x00003750
+Import Export Guids Offset: 0x00003750
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x80677c32 0x48ebfdd5 0x6ad634a7 0x899de5c8
+GUID: 0xd3eb249e 0x4e0bb17b 0xca8271b3 0xada27d15
 Generations:
 [0]
 	Export Count: 52
@@ -83,6 +83,10 @@ Generations:
 	Export Count: 52
 	Name Count: 269
 	Net Object Count: 0
+[16]
+	Export Count: 52
+	Name Count: 276
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression: ZLIB
@@ -93,10 +97,10 @@ Additional Packages To Cook:
 	Empty
 Texture Allocations Texture Types:
 	Empty
-Test Data Size: 0x00003e85
-Compressed Chunk Info Offset: 0x000034a3
-Last Block Size: 0x0000000c
-Base Header Size: 0x00000141
+Test Data Size: 0x00003d01
+Compressed Chunk Info Offset: 0x00003603
+Last Block Size: 0x00000000
+Base Header Size: 0x0000014d
 Encrypted Header Size: 0x00007350
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
@@ -141,8 +145,8 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 33] [0x0007001000000000] Camera_Replay_TA
 [Name 34] [0x0007001000000000] CameraArchetype
 [Name 35] [0x0007001000000000] CameraMode
-[Name 36] [0x0007001000000000] CameraOffsetPitch
-[Name 37] [0x0007001000000000] CameraOffsetYaw
+[Name 36] [0x0007000000000000] CameraOffsetPitch
+[Name 37] [0x0007000000000000] CameraOffsetYaw
 [Name 38] [0x0007001000000000] CameraState_Ballcam
 [Name 39] [0x0007001000000000] CameraState_BallCam_TA
 [Name 40] [0x0007001000000000] CameraState_CamActorCinematic_X
@@ -276,9 +280,9 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 168] [0x0007001000000000] MinimumStateTime
 [Name 169] [0x0007001000000000] MinimumTimeToBall
 [Name 170] [0x0007001000000000] MinimumViewRating
-[Name 171] [0x0007001000000000] MouseCameraDeadzone
-[Name 172] [0x0007001000000000] MouseCameraLockTimeWindow
-[Name 173] [0x0007001000000000] MouseCameraLockWindowInDegrees
+[Name 171] [0x0007000000000000] MouseCameraDeadzone
+[Name 172] [0x0007000000000000] MouseCameraLockTimeWindow
+[Name 173] [0x0007000000000000] MouseCameraLockWindowInDegrees
 [Name 174] [0x0007001000000000] NameProperty
 [Name 175] [0x0007001000000000] None
 [Name 176] [0x0007001000000000] ObjectProperty
@@ -374,6 +378,13 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 266] [0x0007001000000000] YawMax
 [Name 267] [0x0007001000000000] ArriveWeight
 [Name 268] [0x0007001000000000] LeaveWeight
+[Name 269] [0x0007001000000000] AnimDistanceOffset
+[Name 270] [0x0007001000000000] AnimPitchOffset
+[Name 271] [0x0007001000000000] AnimZOffset
+[Name 272] [0x0007001000000000] CameraOffsetPitchDeg
+[Name 273] [0x0007001000000000] CameraOffsetYawDeg
+[Name 274] [0x0007001000000000] CameraZOffset
+[Name 275] [0x0007001000000000] DefaultFOV
 
 
     ~ Exports ~ 
@@ -385,7 +396,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: AudioFieldSideComponent_TA
 	Outer: PlayerControllerArchetype
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x00000000000035e4 with 0x00000010 Bytes
+	Serialized data: at 0x0000000000003750 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 1]
 	Full Name: AudioParamsSuperSonicReplayComponent_TA GameInfo.GameInfo_Replay.PlayerControllerArchetype.AudioParamsSuperSonicReplayComponent0
@@ -394,7 +405,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: PlayerControllerArchetype
 	Archetype: AudioParamsSuperSonicReplayComponent0
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x00000000000035f4 with 0x00000010 Bytes
+	Serialized data: at 0x0000000000003760 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 2]
 	Full Name: AudioSlomoReplayComponent_TA GameInfo.GameInfo_Replay.PlayerControllerArchetype.AudioSlomoReplayComponent0
@@ -403,7 +414,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: PlayerControllerArchetype
 	Archetype: AudioSlomoReplayComponent0
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x0000000000003604 with 0x00000010 Bytes
+	Serialized data: at 0x0000000000003770 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 3]
 	Full Name: AudioSpectatorMixComponent_TA GameInfo.GameInfo_Replay.PlayerControllerArchetype.AudioSpectatorMixComponent
@@ -411,7 +422,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: AudioSpectatorMixComponent_TA
 	Outer: PlayerControllerArchetype
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000003614 with 0x00000010 Bytes
+	Serialized data: at 0x0000000000003780 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 4]
 	Full Name: Camera_Replay_TA Camera.Camera_Replay
@@ -419,7 +430,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Camera_Replay_TA
 	Outer: Camera
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000003624 with 0x0000026c Bytes
+	Serialized data: at 0x0000000000003790 with 0x0000026c Bytes
 	Export Flags: 0x00000001
 [Export 5]
 	Full Name: CameraState_BallCam_TA Camera.CameraState_Ballcam
@@ -427,7 +438,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_BallCam_TA
 	Outer: Camera
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000003890 with 0x00000448 Bytes
+	Serialized data: at 0x000000000001024a with 0x000003bc Bytes
 	Export Flags: 0x00000001
 [Export 6]
 	Full Name: CameraState_CamActorCinematic_X Camera.Camera_Replay.Kismet
@@ -435,7 +446,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_CamActorCinematic_X
 	Outer: Camera_Replay
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000003cd8 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000003e44 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 7]
 	Full Name: CameraState_CameraTrack_TA Camera.Camera_Replay.CameraTrack
@@ -443,7 +454,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_CameraTrack_TA
 	Outer: Camera_Replay
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000003ce4 with 0x00000034 Bytes
+	Serialized data: at 0x0000000000003e50 with 0x00000034 Bytes
 	Export Flags: 0x00000001
 [Export 8]
 	Full Name: CameraState_Car_TA Camera.CameraState_Car
@@ -451,7 +462,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_Car_TA
 	Outer: Camera
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000003d18 with 0x000003bc Bytes
+	Serialized data: at 0x0000000000010606 with 0x00000330 Bytes
 	Export Flags: 0x00000001
 [Export 9]
 	Full Name: CameraStateSelector_RandomSequence_TA Camera.Selector_Idle
@@ -459,7 +470,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraStateSelector_RandomSequence_TA
 	Outer: Camera
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x00000000000040d4 with 0x00000030 Bytes
+	Serialized data: at 0x0000000000004240 with 0x00000030 Bytes
 	Export Flags: 0x00000001
 [Export 10]
 	Full Name: CameraStateSelector_RandomSequence_TA Camera.Selector_Countdown
@@ -467,7 +478,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraStateSelector_RandomSequence_TA
 	Outer: Camera
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000004104 with 0x00000034 Bytes
+	Serialized data: at 0x0000000000004270 with 0x00000034 Bytes
 	Export Flags: 0x00000001
 [Export 11]
 	Full Name: CameraStateSelector_RandomSequence_TA Camera.Selector_Kickoff
@@ -475,7 +486,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraStateSelector_RandomSequence_TA
 	Outer: Camera
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000004138 with 0x00000030 Bytes
+	Serialized data: at 0x00000000000042a4 with 0x00000030 Bytes
 	Export Flags: 0x00000001
 [Export 12]
 	Full Name: CameraStateSelector_Priority_TA Camera.Selector_Active
@@ -483,7 +494,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraStateSelector_Priority_TA
 	Outer: Camera
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000004168 with 0x0000015c Bytes
+	Serialized data: at 0x00000000000042d4 with 0x0000015c Bytes
 	Export Flags: 0x00000001
 [Export 13]
 	Full Name: CameraState_Director_TA Director.Camera_Director
@@ -491,7 +502,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_Director_TA
 	Outer: Director
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x00000000000042c4 with 0x0000007c Bytes
+	Serialized data: at 0x0000000000004430 with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 14]
 	Full Name: CameraState_DirectorBallCam_TA Camera.CameraState_DirectorPlayerView.BallCameraState
@@ -499,7 +510,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_DirectorBallCam_TA
 	Outer: CameraState_DirectorPlayerView
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000004340 with 0x000004e0 Bytes
+	Serialized data: at 0x0000000000010936 with 0x00000454 Bytes
 	Export Flags: 0x00000001
 [Export 15]
 	Full Name: CameraState_DirectorCountdownRotate_TA Camera.Selector_Countdown.RotateAroundCars
@@ -507,7 +518,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_DirectorCountdownRotate_TA
 	Outer: Selector_Countdown
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000009db8 with 0x00000e29 Bytes
+	Serialized data: at 0x0000000000009f24 with 0x00000e29 Bytes
 	Export Flags: 0x00000001
 [Export 16]
 	Full Name: CameraState_DirectorCountdownTailPass_TA Camera.Selector_Countdown.TailPass
@@ -515,7 +526,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_DirectorCountdownTailPass_TA
 	Outer: Selector_Countdown
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x000000000000abe1 with 0x00000e8d Bytes
+	Serialized data: at 0x000000000000ad4d with 0x00000e8d Bytes
 	Export Flags: 0x00000001
 [Export 17]
 	Full Name: CameraState_DirectorGoalScorer_TA Camera.CameraState_DirectorGoalScorer
@@ -523,7 +534,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_DirectorGoalScorer_TA
 	Outer: Camera
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x000000000000ba6e with 0x00000de4 Bytes
+	Serialized data: at 0x000000000000bbda with 0x00000de4 Bytes
 	Export Flags: 0x00000001
 [Export 18]
 	Full Name: CameraState_DirectorKickoff_TA Camera.Selector_Kickoff.KickoffState
@@ -531,7 +542,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_DirectorKickoff_TA
 	Outer: Selector_Kickoff
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x000000000000c852 with 0x00000e38 Bytes
+	Serialized data: at 0x000000000000c9be with 0x00000e38 Bytes
 	Export Flags: 0x00000001
 [Export 19]
 	Full Name: CameraState_DirectorPlayerView_TA Camera.CameraState_DirectorPlayerView
@@ -539,7 +550,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_DirectorPlayerView_TA
 	Outer: Camera
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x000000000000d68a with 0x000014e8 Bytes
+	Serialized data: at 0x000000000000d7f6 with 0x000014e8 Bytes
 	Export Flags: 0x00000001
 [Export 20]
 	Full Name: CameraState_LiveReplay_TA Camera.CameraState_LiveReplay
@@ -547,7 +558,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_LiveReplay_TA
 	Outer: Camera
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x000000000000eb72 with 0x00000370 Bytes
+	Serialized data: at 0x000000000000ecde with 0x00000370 Bytes
 	Export Flags: 0x00000001
 [Export 21]
 	Full Name: CameraState_PodiumSpotlight_TA Camera.CameraState_PodiumSpotlight
@@ -555,7 +566,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_PodiumSpotlight_TA
 	Outer: Camera
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x000000000000883a with 0x00000114 Bytes
+	Serialized data: at 0x0000000000010d8a with 0x000001a0 Bytes
 	Export Flags: 0x00000001
 [Export 22]
 	Full Name: CameraState_PrePodiumSpotlight_TA Camera.CameraState_PrePodiumSpotlight
@@ -563,7 +574,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_PrePodiumSpotlight_TA
 	Outer: Camera
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x000000000000894e with 0x00000044 Bytes
+	Serialized data: at 0x0000000000008aba with 0x00000044 Bytes
 	Export Flags: 0x00000001
 [Export 23]
 	Full Name: CameraState_ReplayAutoCam_TA Camera.Camera_Replay.AutoCam
@@ -571,7 +582,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_ReplayAutoCam_TA
 	Outer: Camera_Replay
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000008992 with 0x00000085 Bytes
+	Serialized data: at 0x0000000000008afe with 0x00000085 Bytes
 	Export Flags: 0x00000001
 [Export 24]
 	Full Name: CameraState_ReplayFly_TA Camera.Camera_Replay.Fly
@@ -579,7 +590,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_ReplayFly_TA
 	Outer: Camera_Replay
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000008a17 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000008b83 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 25]
 	Full Name: CameraState_ReplayHardAttach_TA Camera.Camera_Replay.HardAttach
@@ -587,7 +598,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_ReplayHardAttach_TA
 	Outer: Camera_Replay
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000008a23 with 0x00000080 Bytes
+	Serialized data: at 0x0000000000008b8f with 0x00000080 Bytes
 	Export Flags: 0x00000001
 [Export 26]
 	Full Name: CameraState_ReplayPlayerView_TA Camera.Camera_Replay.PlayerView
@@ -595,7 +606,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_ReplayPlayerView_TA
 	Outer: Camera_Replay
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000008aa3 with 0x00000044 Bytes
+	Serialized data: at 0x0000000000008c0f with 0x00000044 Bytes
 	Export Flags: 0x00000001
 [Export 27]
 	Full Name: CameraState_ReplaySoftAttach_TA Camera.Camera_Replay.SoftAttach
@@ -603,7 +614,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_ReplaySoftAttach_TA
 	Outer: Camera_Replay
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000008ae7 with 0x00000080 Bytes
+	Serialized data: at 0x0000000000008c53 with 0x00000080 Bytes
 	Export Flags: 0x00000001
 [Export 28]
 	Full Name: CameraState_StadiumSide_TA Camera.CameraState_StadiumSide
@@ -611,7 +622,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_StadiumSide_TA
 	Outer: Camera
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x000000000000eee2 with 0x000011fc Bytes
+	Serialized data: at 0x000000000000f04e with 0x000011fc Bytes
 	Export Flags: 0x00000001
 [Export 29]
 	Full Name: CameraState_Waiting_TA Camera.Selector_Idle.Waiting
@@ -619,7 +630,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: CameraState_Waiting_TA
 	Outer: Selector_Idle
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000009973 with 0x0000006c Bytes
+	Serialized data: at 0x0000000000009adf with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 30]
 	Full Name: CameraStateBlender_X Camera.Camera_Replay.StateBlender0
@@ -628,7 +639,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: Camera_Replay
 	Archetype: StateBlender0
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x00000000000099df with 0x00000010 Bytes
+	Serialized data: at 0x0000000000009b4b with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 31]
 	Full Name: CameraStateSelector_Priority_TA Director.Camera_Director.Selector_Active
@@ -637,7 +648,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: Camera_Director
 	Archetype: Selector_Active
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x00000000000099ef with 0x00000010 Bytes
+	Serialized data: at 0x0000000000009b5b with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 32]
 	Full Name: CameraStateSelector_RandomSequence_TA Director.Camera_Director.Selector_Countdown
@@ -646,7 +657,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: Camera_Director
 	Archetype: Selector_Countdown
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x00000000000099ff with 0x00000010 Bytes
+	Serialized data: at 0x0000000000009b6b with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 33]
 	Full Name: CameraStateSelector_RandomSequence_TA Director.Camera_Director.Selector_Idle
@@ -655,7 +666,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: Camera_Director
 	Archetype: Selector_Idle
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000009a0f with 0x00000010 Bytes
+	Serialized data: at 0x0000000000009b7b with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 34]
 	Full Name: CameraStateSelector_RandomSequence_TA Director.Camera_Director.Selector_Kickoff
@@ -664,7 +675,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: Camera_Director
 	Archetype: Selector_Kickoff
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000009a1f with 0x00000010 Bytes
+	Serialized data: at 0x0000000000009b8b with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 35]
 	Full Name: CylinderComponent GameInfo.GameInfo_Replay.PlayerControllerArchetype.CollisionCylinder
@@ -673,7 +684,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: PlayerControllerArchetype
 	Archetype: CollisionCylinder
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x0000000000009a2f with 0x0000002c Bytes
+	Serialized data: at 0x0000000000009b9b with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 36]
 	Full Name: GameInfo_Replay_TA GameInfo.GameInfo_Replay
@@ -681,7 +692,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: GameInfo_Replay_TA
 	Outer: GameInfo
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000009a5b with 0x00000080 Bytes
+	Serialized data: at 0x0000000000009bc7 with 0x00000080 Bytes
 	Export Flags: 0x00000001
 [Export 37]
 	Full Name: GFxHUD_Replay_TA GFx.GFxHUD_Replay
@@ -689,7 +700,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: GFxHUD_Replay_TA
 	Outer: GFx
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000009adb with 0x00000035 Bytes
+	Serialized data: at 0x0000000000009c47 with 0x00000035 Bytes
 	Export Flags: 0x00000001
 [Export 38]
 	Full Name: GFxHUD_TA GameInfo.GameInfo_Replay.PlayerControllerArchetype.SplitscreenHUDArchetype
@@ -697,7 +708,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: GFxHUD_TA
 	Outer: PlayerControllerArchetype
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000009b10 with 0x00000040 Bytes
+	Serialized data: at 0x0000000000009c7c with 0x00000040 Bytes
 	Export Flags: 0x00000001
 [Export 39]
 	Full Name: GroupComponent_ORS GameInfo.GameInfo_Replay.DefaultRegistryGroup
@@ -706,7 +717,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: GameInfo_Replay
 	Archetype: DefaultRegistryGroup
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x0000000000009b50 with 0x00000010 Bytes
+	Serialized data: at 0x0000000000009cbc with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 40]
 	Full Name: GroupComponent_ORS GameInfo.GameInfo_Replay.PlayerControllerArchetype.DefaultRegistryGroup
@@ -715,21 +726,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: PlayerControllerArchetype
 	Archetype: DefaultRegistryGroup
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x0000000000009b60 with 0x00000010 Bytes
+	Serialized data: at 0x0000000000009ccc with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 41]
 	Full Name: ObjectReferencer GameInfo_Replay.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000009b70 with 0x00000054 Bytes
+	Serialized data: at 0x0000000000009cdc with 0x00000054 Bytes
 	Export Flags: 0x00000000
 [Export 42]
 	Full Name: Package GameInfo_Replay.Archetypes
 	Name: Archetypes
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000009bc4 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000009d30 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x21c70719 0xfaa1219c 0x8848eeb2 0x7f8b18c8
 	Package Flags: 0x20000040
@@ -739,7 +750,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Archetypes
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000009bd0 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000009d3c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 44]
 	Full Name: Package Camera.Director
@@ -747,7 +758,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Camera
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000009bdc with 0x0000000c Bytes
+	Serialized data: at 0x0000000000009d48 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 45]
 	Full Name: Package GameInfo_Replay.Archetypes.GFx
@@ -755,7 +766,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Archetypes
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000009be8 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000009d54 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 46]
 	Full Name: Package GameInfo_Replay.Archetypes.PostProcessManager
@@ -763,14 +774,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Archetypes
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000009bf4 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000009d60 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 47]
 	Full Name: Package GameInfo_Replay.GameInfo_Replay
 	Name: GameInfo_Replay
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000009c00 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000009d6c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0xe19d236e 0xf0b458d9 0x029edeae 0xd0396c76
 	Package Flags: 0x20000040
@@ -780,24 +791,24 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: GameInfo_Replay
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000009c0c with 0x0000000c Bytes
+	Serialized data: at 0x0000000000009d78 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 49]
 	Full Name: Package GameInfo_Replay.GameInfo_Replay_SF
 	Name: GameInfo_Replay_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000009c18 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000009d84 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
-	Package Flags: 0x0288000d
+	Package GUID: 0xd3eb249e 0x4e0bb17b 0xca8271b3 0xada27d15
+	Package Flags: 0x02880049
 [Export 50]
 	Full Name: PlayerController_Replay_TA GameInfo.GameInfo_Replay.PlayerControllerArchetype
 	Name: PlayerControllerArchetype
 	Class: PlayerController_Replay_TA
 	Outer: GameInfo_Replay
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000009c24 with 0x00000188 Bytes
+	Serialized data: at 0x0000000000009d90 with 0x00000188 Bytes
 	Export Flags: 0x00000001
 [Export 51]
 	Full Name: PostProcessManager_TA PostProcessManager.PostProcessManager_Default
@@ -805,7 +816,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: PostProcessManager_TA
 	Outer: PostProcessManager
 	Object Flags: 0x000f000402000400
-	Serialized data: at 0x0000000000009dac with 0x0000000c Bytes
+	Serialized data: at 0x0000000000009f18 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 
 
