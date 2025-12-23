@@ -10,6 +10,9 @@ This info includes:
 ## PackageDecrypted
 This directory holds every upk that wasn't encrypted with 'x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=' default AES key reencrypted to use that key.
 This makes then usable with Rocket League compatible UModel.
+## EWEMDecrypted
+This directory holds every decrypted ewem.
+For opening and extracting audio from those files I recommend using foobar2000 with vgmstream decoder.
 # Files
 ## aes.txt
 Every AES key currently used in game.
