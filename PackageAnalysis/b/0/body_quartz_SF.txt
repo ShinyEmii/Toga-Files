@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x000154c1 Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 995 Name Offset: 0x00000279
-Export Count: 537 Export Offset: 0x0000846a
-Import Count: 181 Import Offset: 0x0000709e
-Depends Offset: 0x00011b72
-Import Export Guids Offset: 0x00011b72
+Name Count: 999 Name Offset: 0x00000289
+Export Count: 540 Export Offset: 0x000084e7
+Import Count: 181 Import Offset: 0x0000711b
+Depends Offset: 0x00011cc7
+Import Export Guids Offset: 0x00011cc7
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x926869a5 0x4bd202aa 0xced35c93 0x244ce24a
+GUID: 0x8dcc00bb 0x470cef8c 0xd7822eb0 0x3ffe271c
 Generations:
 [0]
 	Export Count: 515
@@ -139,6 +139,10 @@ Generations:
 	Export Count: 537
 	Name Count: 995
 	Net Object Count: 0
+[30]
+	Export Count: 540
+	Name Count: 999
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression: ZLIB
@@ -175,6 +179,8 @@ Texture Allocations Texture Types:
 		[2] Texture2D body_quartz.body_quartz.body_quartz_curvature
 		[3] Texture2D body_quartz.body_quartz.body_quartz_d
 		[4] Texture2D body_quartz.body_quartz.chassis_quartz_rgb
+		[5] Texture2D body_quartz.body_quartz.body_quartz_fxmasks
+		[6] Texture2D body_quartz.body_quartz.body_quartz_normal
 [3]
 	Resolution: [64 x 64]
 	Num Mips: 7
@@ -182,49 +188,63 @@ Texture Allocations Texture Types:
 	Flags: 1
 	Exports:
 		[0] Texture2D body_quartz.body_endo.Endo_Chassis_D
-		[1] Texture2D body_quartz.body_quartz.Body_Quartz_BlankSkin_02
-		[2] Texture2D body_quartz.body_quartz.chassis_quartz_d
-Test Data Size: 0x000038a3
+		[1] Texture2D body_quartz.body_quartz.chassis_quartz_d
+Test Data Size: 0x00003706
 Compressed Chunk Info:
-	Offset: 0x000118f9
+	Offset: 0x00011a3e
 	[0]
-		Uncompressed Offset: 0x0000000000011b72
+		Uncompressed Offset: 0x0000000000011cc7
 		Uncompressed Size: 0x0000f9e5
 		Compressed Offset: 0x00000000000154c1
 		Compressed Size: 0x000021af
 	[1]
-		Uncompressed Offset: 0x0000000000021557
+		Uncompressed Offset: 0x00000000000216ac
 		Uncompressed Size: 0x00419123
 		Compressed Offset: 0x0000000000017670
 		Compressed Size: 0x0015162f
 	[2]
-		Uncompressed Offset: 0x000000000043a67a
+		Uncompressed Offset: 0x000000000043a7cf
 		Uncompressed Size: 0x00054c00
 		Compressed Offset: 0x0000000000168c9f
 		Compressed Size: 0x0002af19
 	[3]
-		Uncompressed Offset: 0x000000000048f27a
+		Uncompressed Offset: 0x000000000048f3cf
 		Uncompressed Size: 0x00000efa
 		Compressed Offset: 0x0000000000193bb8
 		Compressed Size: 0x00000449
 	[4]
-		Uncompressed Offset: 0x0000000000490174
+		Uncompressed Offset: 0x00000000004902c9
 		Uncompressed Size: 0x00419123
 		Compressed Offset: 0x0000000000194001
 		Compressed Size: 0x00151625
 	[5]
-		Uncompressed Offset: 0x00000000008a9297
+		Uncompressed Offset: 0x00000000008a93ec
 		Uncompressed Size: 0x00000afa
 		Compressed Offset: 0x00000000002e5626
 		Compressed Size: 0x000002eb
 	[6]
-		Uncompressed Offset: 0x00000000008a9d91
+		Uncompressed Offset: 0x00000000008a9ee6
 		Uncompressed Size: 0x00000795
 		Compressed Offset: 0x00000000002e5911
 		Compressed Size: 0x000001e4
+	[7]
+		Uncompressed Offset: 0x00000000008aa67b
+		Uncompressed Size: 0x0000217f
+		Compressed Offset: 0x00000000002e5af5
+		Compressed Size: 0x0000093f
+	[8]
+		Uncompressed Offset: 0x00000000008ac7fa
+		Uncompressed Size: 0x00419123
+		Compressed Offset: 0x00000000002e6434
+		Compressed Size: 0x00151625
+	[9]
+		Uncompressed Offset: 0x0000000000cc591d
+		Uncompressed Size: 0x00003054
+		Compressed Offset: 0x0000000000437a59
+		Compressed Size: 0x00002003
 Last Block Size: 0x00000008
-Base Header Size: 0x00000279
-Encrypted Header Size: 0x00015240
+Base Header Size: 0x00000289
+Encrypted Header Size: 0x00015230
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -242,7 +262,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 7] [0x0007000000000000] AddressY
 [Name 8] [0x0007000000000000] AdjustBrightnessCurve
 [Name 9] [0x0007001000000000] AggGeom
-[Name 10] [0x0007001000000000] AllSlots
+[Name 10] [0x0007000000000000] AllSlots
 [Name 11] [0x0007000000000000] AlphaOverLife
 [Name 12] [0x0007001000000000] AlphaScaleOverLife
 [Name 13] [0x0007001000000000] AmbBoost_01
@@ -345,7 +365,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 110] [0x0007001000000000] Body_Octane_Textures
 [Name 111] [0x0007001000000000] body_quartz
 [Name 112] [0x0007001000000000] body_quartz_blankskin
-[Name 113] [0x0007001000000000] Body_Quartz_BlankSkin_02
+[Name 113] [0x0007000000000000] Body_Quartz_BlankSkin_02
 [Name 114] [0x0007001000000000] body_quartz_curvature
 [Name 115] [0x0007001000000000] body_quartz_d
 [Name 116] [0x0007001000000000] body_quartz_SF
@@ -469,7 +489,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 234] [0x0007001000000000] CurvaturePack
 [Name 235] [0x0007001000000000] CustomColor
 [Name 236] [0x0007001000000000] CustomColors
-[Name 237] [0x0007001000000000] CustomFinish
+[Name 237] [0x0007000000000000] CustomFinish
 [Name 238] [0x0007001000000000] CustomLeftRightAxis
 [Name 239] [0x0007001000000000] CustomLeftRightBoneName
 [Name 240] [0x0007001000000000] CustomLighting
@@ -481,14 +501,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 246] [0x0007000000000000] Default__PointLightMovable
 [Name 247] [0x0007000000000000] Default__ProductAsset_Body_TA
 [Name 248] [0x0007000000000000] Default__ProductAsset_Wheel_TA
-[Name 249] [0x0007001000000000] Default__ProductEquipProfile_TA
-[Name 250] [0x0007001000000000] Default__ProductEquipProfileSlot_ForcedProduct_TA
+[Name 249] [0x0007000000000000] Default__ProductEquipProfile_TA
+[Name 250] [0x0007000000000000] Default__ProductEquipProfileSlot_ForcedProduct_TA
 [Name 251] [0x0007000000000000] Default__SkeletalMeshActor
 [Name 252] [0x0007000000000000] Default__SpotLightMovable
 [Name 253] [0x0007000000000000] Default__StaticMeshActor
 [Name 254] [0x0007001000000000] DefaultColor
-[Name 255] [0x0007001000000000] DefaultEquipProfile
-[Name 256] [0x0007001000000000] DefaultForcedProduct
+[Name 255] [0x0007000000000000] DefaultEquipProfile
+[Name 256] [0x0007000000000000] DefaultForcedProduct
 [Name 257] [0x0007000000000000] DefaultGenerator
 [Name 258] [0x0007001000000000] DefaultInstance
 [Name 259] [0x0007000000000000] DefaultParameters
@@ -533,7 +553,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 298] [0x0007000000000000] EdgeDirections
 [Name 299] [0x0007001000000000] EDPV_UserSet
 [Name 300] [0x0007001000000000] EEmitterDynamicParameterValue
-[Name 301] [0x0007001000000000] EEnableSlotCustomization
+[Name 301] [0x0007000000000000] EEnableSlotCustomization
 [Name 302] [0x0007001000000000] EFXComponentTarget
 [Name 303] [0x0007001000000000] EFXLocality
 [Name 304] [0x0007000000000000] ElemBox
@@ -555,12 +575,12 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 320] [0x0007001000000000] en_panel_low_JNT
 [Name 321] [0x0007001000000000] en_panel_right_JNT
 [Name 322] [0x0007001000000000] en_panel_up_JNT
-[Name 323] [0x0007001000000000] EnableSlotCustomization_Disabled
+[Name 323] [0x0007000000000000] EnableSlotCustomization_Disabled
 [Name 324] [0x0007001000000000] Endo_Chassis_D
 [Name 325] [0x0007001000000000] Endo_Chassis_N
 [Name 326] [0x0007001000000000] Endo_Chassis_RGB
 [Name 327] [0x0007001000000000] Engine
-[Name 328] [0x0007001000000000] EngineAudio
+[Name 328] [0x0007000000000000] EngineAudio
 [Name 329] [0x0007001000000000] EngineAudioReference
 [Name 330] [0x0007001000000000] EngineGlow
 [Name 331] [0x0007001000000000] ENVPack
@@ -608,8 +628,8 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 373] [0x0007001000000000] FLWheelRollControl
 [Name 374] [0x0007001000000000] FLWheelSteerControl
 [Name 375] [0x0007001000000000] FLWheelTranslateControl
-[Name 376] [0x0007001000000000] ForcedCustomColor
-[Name 377] [0x0007001000000000] ForcedProduct
+[Name 376] [0x0007000000000000] ForcedCustomColor
+[Name 377] [0x0007000000000000] ForcedProduct
 [Name 378] [0x0007001000000000] ForCodeUseOnly
 [Name 379] [0x0007001000000000] Format
 [Name 380] [0x0007001000000000] FR_axleShaft_jnt
@@ -663,7 +683,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 428] [0x0007001000000000] HandlingPreset_TA
 [Name 429] [0x0007001000000000] HandlingPresets
 [Name 430] [0x0007001000000000] HandlingPresetZOffset
-[Name 431] [0x0007001000000000] Hat
+[Name 431] [0x0007000000000000] Hat
 [Name 432] [0x0007001000000000] HatSocket
 [Name 433] [0x0007001000000000] HeadlightBrightness
 [Name 434] [0x0007001000000000] HeadlightColor
@@ -807,7 +827,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 572] [0x0007001000000000] Package
 [Name 573] [0x0007001000000000] PaintColor
 [Name 574] [0x0007001000000000] Painted
-[Name 575] [0x0007001000000000] PaintFinish
+[Name 575] [0x0007000000000000] PaintFinish
 [Name 576] [0x0007001000000000] PaintMaskInRGB
 [Name 577] [0x0007000000000000] PaintMasksSpec
 [Name 578] [0x0007000000000000] PaintMaterialGroup
@@ -887,10 +907,10 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 652] [0x0007001000000000] ProductAssetReferenceWheel_TA
 [Name 653] [0x0007000000000000] ProductAttribute_PaintSettings_TA
 [Name 654] [0x0007001000000000] ProductEquipProfile_TA
-[Name 655] [0x0007001000000000] ProductEquipProfileSlot_Custom_TA
-[Name 656] [0x0007001000000000] ProductEquipProfileSlot_Disabled_TA
-[Name 657] [0x0007001000000000] ProductEquipProfileSlot_Enabled_TA
-[Name 658] [0x0007001000000000] ProductEquipProfileSlot_ForcedProduct_TA
+[Name 655] [0x0007000000000000] ProductEquipProfileSlot_Custom_TA
+[Name 656] [0x0007000000000000] ProductEquipProfileSlot_Disabled_TA
+[Name 657] [0x0007000000000000] ProductEquipProfileSlot_Enabled_TA
+[Name 658] [0x0007000000000000] ProductEquipProfileSlot_ForcedProduct_TA
 [Name 659] [0x0007001000000000] ProductID
 [Name 660] [0x0007000000000000] ProductPaint
 [Name 661] [0x0007000000000000] ProductPaint_TA
@@ -965,8 +985,8 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 730] [0x0007001000000000] Skin_Octane_Flames
 [Name 731] [0x0007001000000000] SkinMaterialIndex
 [Name 732] [0x0007001000000000] SkinParameters
-[Name 733] [0x0007001000000000] SlotCustomization
-[Name 734] [0x0007001000000000] SlotEnabled
+[Name 733] [0x0007000000000000] SlotCustomization
+[Name 734] [0x0007000000000000] SlotEnabled
 [Name 735] [0x0007000000000000] SmokePuffs
 [Name 736] [0x0007001000000000] Socket
 [Name 737] [0x0007001000000000] SocketName
@@ -1160,7 +1180,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 925] [0x0007000000000000] VertexData
 [Name 926] [0x0007000000000000] VertexPositionVersionNumber
 [Name 927] [0x0007000000000000] Water_02_N
-[Name 928] [0x0007001000000000] Wheel
+[Name 928] [0x0007000000000000] Wheel
 [Name 929] [0x0007000000000000] Wheel_Master_Mat
 [Name 930] [0x0007000000000000] Wheel_OEM_MIC
 [Name 931] [0x0007000000000000] Wheel_OEM_MIC_PAINTED
@@ -1188,7 +1208,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 953] [0x0007000000000000] Wheels
 [Name 954] [0x0007001000000000] WheelWidth
 [Name 955] [0x0007000000000000] WhiteGoldMetal_00
-[Name 956] [0x0007001000000000] WhitelistProducts
+[Name 956] [0x0007000000000000] WhitelistProducts
 [Name 957] [0x0007001000000000] WorldPositionOffset
 [Name 958] [0x0007001000000000] X
 [Name 959] [0x0007001000000000] Y
@@ -1227,6 +1247,10 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 992] [0x0007001000000000] ENVMap_ClampMin
 [Name 993] [0x0007001000000000] OverlayENV_Intensity
 [Name 994] [0x0007001000000000] Tint
+[Name 995] [0x0007001000000000] body_quartz_fxmasks
+[Name 996] [0x0007001000000000] body_quartz_normal
+[Name 997] [0x0007001000000000] BodyNormalMap
+[Name 998] [0x0007001000000000] FXMasks
 
 
     ~ Exports ~ 
@@ -1238,7 +1262,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: AnimTree
 	Outer: Body_AT
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000011b72 with 0x00000a9d Bytes
+	Serialized data: at 0x0000000000011cc7 with 0x00000a9d Bytes
 	Export Flags: 0x00000001
 [Export 11]
 	Full Name: FXActor_TA body_quartz.Body_FX.Body_FXActor
@@ -1246,7 +1270,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: FXActor_TA
 	Outer: Body_FX
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x000000000001260f with 0x0000068a Bytes
+	Serialized data: at 0x0000000000012764 with 0x0000068a Bytes
 	Export Flags: 0x00000001
 [Export 13]
 	Full Name: FXActor_TA body_quartz.body_quartz.FXActor_body_quartz
@@ -1254,7 +1278,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: FXActor_TA
 	Outer: body_quartz
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x0000000000012c99 with 0x000006c6 Bytes
+	Serialized data: at 0x0000000000012dee with 0x000006c6 Bytes
 	Export Flags: 0x00000001
 [Export 15]
 	Full Name: Material body_quartz.Body_Rye.MAT_Body_NewWindshield
@@ -1262,7 +1286,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Material
 	Outer: Body_Rye
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000001335f with 0x00000978 Bytes
+	Serialized data: at 0x00000000000134b4 with 0x00000978 Bytes
 	Export Flags: 0x00000001
 [Export 17]
 	Full Name: Material Materials.flame_MAT
@@ -1270,7 +1294,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000013cd7 with 0x0000021f Bytes
+	Serialized data: at 0x0000000000013e2c with 0x0000021f Bytes
 	Export Flags: 0x00000001
 [Export 24]
 	Full Name: Material body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat
@@ -1278,7 +1302,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Material
 	Outer: Vehicle_Parent_Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000048f27a with 0x000005a3 Bytes
+	Serialized data: at 0x000000000048f3cf with 0x000005a3 Bytes
 	Export Flags: 0x00000001
 [Export 26]
 	Full Name: MaterialExpressionScalarParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionScalarParameter_0
@@ -1286,7 +1310,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000145d3 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000014728 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 27]
 	Full Name: MaterialExpressionScalarParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionScalarParameter_6
@@ -1294,7 +1318,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014667 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000147bc with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 28]
 	Full Name: MaterialExpressionScalarParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionScalarParameter_67
@@ -1302,7 +1326,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000146fb with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000014850 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 29]
 	Full Name: MaterialExpressionScalarParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionScalarParameter_7
@@ -1310,7 +1334,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000147af with 0x00000094 Bytes
+	Serialized data: at 0x0000000000014904 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 30]
 	Full Name: MaterialExpressionScalarParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionScalarParameter_73
@@ -1318,7 +1342,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014843 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000014998 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 43]
 	Full Name: MaterialExpressionScalarParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionScalarParameter_0
@@ -1326,7 +1350,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000148f7 with 0x000000c6 Bytes
+	Serialized data: at 0x0000000000014a4c with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [Export 44]
 	Full Name: MaterialExpressionScalarParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionScalarParameter_1
@@ -1334,7 +1358,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000149bd with 0x00000098 Bytes
+	Serialized data: at 0x0000000000014b12 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [Export 45]
 	Full Name: MaterialExpressionScalarParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionScalarParameter_2
@@ -1342,7 +1366,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014a55 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000014baa with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 46]
 	Full Name: MaterialExpressionScalarParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionScalarParameter_3
@@ -1350,7 +1374,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014b09 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000014c5e with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 47]
 	Full Name: MaterialExpressionScalarParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionScalarParameter_9
@@ -1358,7 +1382,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014bbd with 0x000000c6 Bytes
+	Serialized data: at 0x0000000000014d12 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [Export 51]
 	Full Name: MaterialExpressionStaticBoolParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticBoolParameter_0
@@ -1366,7 +1390,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticBoolParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014c83 with 0x00000098 Bytes
+	Serialized data: at 0x0000000000014dd8 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [Export 52]
 	Full Name: MaterialExpressionStaticComponentMaskParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticComponentMaskParameter_0
@@ -1374,7 +1398,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticComponentMaskParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014d1b with 0x00000165 Bytes
+	Serialized data: at 0x0000000000014e70 with 0x00000165 Bytes
 	Export Flags: 0x00000001
 [Export 53]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_0
@@ -1382,7 +1406,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014e80 with 0x00000100 Bytes
+	Serialized data: at 0x0000000000014fd5 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 54]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_1
@@ -1390,7 +1414,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014f80 with 0x000001c1 Bytes
+	Serialized data: at 0x00000000000150d5 with 0x000001c1 Bytes
 	Export Flags: 0x00000001
 [Export 55]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_100
@@ -1398,7 +1422,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015141 with 0x00000132 Bytes
+	Serialized data: at 0x0000000000015296 with 0x00000132 Bytes
 	Export Flags: 0x00000001
 [Export 56]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_101
@@ -1406,7 +1430,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015273 with 0x00000119 Bytes
+	Serialized data: at 0x00000000000153c8 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 57]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_102
@@ -1414,7 +1438,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001538c with 0x00000100 Bytes
+	Serialized data: at 0x00000000000154e1 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 58]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_103
@@ -1422,7 +1446,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001548c with 0x00000170 Bytes
+	Serialized data: at 0x00000000000155e1 with 0x00000170 Bytes
 	Export Flags: 0x00000001
 [Export 59]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_104
@@ -1430,7 +1454,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000155fc with 0x00000132 Bytes
+	Serialized data: at 0x0000000000015751 with 0x00000132 Bytes
 	Export Flags: 0x00000001
 [Export 60]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_105
@@ -1438,7 +1462,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001572e with 0x00000119 Bytes
+	Serialized data: at 0x0000000000015883 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 61]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_106
@@ -1446,7 +1470,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015847 with 0x00000119 Bytes
+	Serialized data: at 0x000000000001599c with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 62]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_107
@@ -1454,7 +1478,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015960 with 0x000001dd Bytes
+	Serialized data: at 0x0000000000015ab5 with 0x000001dd Bytes
 	Export Flags: 0x00000001
 [Export 63]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_108
@@ -1462,7 +1486,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015b3d with 0x00000100 Bytes
+	Serialized data: at 0x0000000000015c92 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 64]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_109
@@ -1470,7 +1494,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015c3d with 0x00000119 Bytes
+	Serialized data: at 0x0000000000015d92 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 65]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_110
@@ -1478,7 +1502,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015d56 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000015eab with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 66]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_112
@@ -1486,7 +1510,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015e6f with 0x00000186 Bytes
+	Serialized data: at 0x0000000000015fc4 with 0x00000186 Bytes
 	Export Flags: 0x00000001
 [Export 67]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_113
@@ -1494,7 +1518,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015ff5 with 0x00000119 Bytes
+	Serialized data: at 0x000000000001614a with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 68]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_114
@@ -1502,7 +1526,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001610e with 0x000001e0 Bytes
+	Serialized data: at 0x0000000000016263 with 0x000001e0 Bytes
 	Export Flags: 0x00000001
 [Export 69]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_115
@@ -1510,7 +1534,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000162ee with 0x000001a8 Bytes
+	Serialized data: at 0x0000000000016443 with 0x000001a8 Bytes
 	Export Flags: 0x00000001
 [Export 70]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_116
@@ -1518,7 +1542,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016496 with 0x00000100 Bytes
+	Serialized data: at 0x00000000000165eb with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 71]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_117
@@ -1526,7 +1550,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016596 with 0x00000100 Bytes
+	Serialized data: at 0x00000000000166eb with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 72]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_118
@@ -1534,7 +1558,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016696 with 0x0000012c Bytes
+	Serialized data: at 0x00000000000167eb with 0x0000012c Bytes
 	Export Flags: 0x00000001
 [Export 73]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_119
@@ -1542,7 +1566,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000167c2 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000016917 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 74]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_120
@@ -1550,7 +1574,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000168db with 0x00000100 Bytes
+	Serialized data: at 0x0000000000016a30 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 75]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_121
@@ -1558,7 +1582,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000169db with 0x00000119 Bytes
+	Serialized data: at 0x0000000000016b30 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 76]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_122
@@ -1566,7 +1590,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016af4 with 0x0000012d Bytes
+	Serialized data: at 0x0000000000016c49 with 0x0000012d Bytes
 	Export Flags: 0x00000001
 [Export 77]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_123
@@ -1574,7 +1598,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016c21 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000016d76 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 78]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_124
@@ -1582,7 +1606,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016d3a with 0x00000119 Bytes
+	Serialized data: at 0x0000000000016e8f with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 79]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_125
@@ -1590,7 +1614,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016e53 with 0x00000132 Bytes
+	Serialized data: at 0x0000000000016fa8 with 0x00000132 Bytes
 	Export Flags: 0x00000001
 [Export 80]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_2
@@ -1598,7 +1622,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016f85 with 0x00000100 Bytes
+	Serialized data: at 0x00000000000170da with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 81]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_3
@@ -1606,7 +1630,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017085 with 0x00000231 Bytes
+	Serialized data: at 0x00000000000171da with 0x00000231 Bytes
 	Export Flags: 0x00000001
 [Export 82]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_5
@@ -1614,7 +1638,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000172b6 with 0x00000231 Bytes
+	Serialized data: at 0x000000000001740b with 0x00000231 Bytes
 	Export Flags: 0x00000001
 [Export 83]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_95
@@ -1622,7 +1646,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000174e7 with 0x00000119 Bytes
+	Serialized data: at 0x000000000001763c with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 84]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_96
@@ -1630,7 +1654,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017600 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000017755 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 85]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_97
@@ -1638,7 +1662,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017719 with 0x00000119 Bytes
+	Serialized data: at 0x000000000001786e with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 86]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_98
@@ -1646,7 +1670,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017832 with 0x00000170 Bytes
+	Serialized data: at 0x0000000000017987 with 0x00000170 Bytes
 	Export Flags: 0x00000001
 [Export 87]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_99
@@ -1654,7 +1678,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000179a2 with 0x00000100 Bytes
+	Serialized data: at 0x0000000000017af7 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 89]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_0
@@ -1662,7 +1686,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017aa2 with 0x0000016d Bytes
+	Serialized data: at 0x0000000000017bf7 with 0x0000016d Bytes
 	Export Flags: 0x00000001
 [Export 90]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_1
@@ -1670,7 +1694,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017c0f with 0x00000100 Bytes
+	Serialized data: at 0x0000000000017d64 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 91]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_2
@@ -1678,7 +1702,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017d0f with 0x00000120 Bytes
+	Serialized data: at 0x0000000000017e64 with 0x00000120 Bytes
 	Export Flags: 0x00000001
 [Export 92]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_3
@@ -1686,7 +1710,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017e2f with 0x00000189 Bytes
+	Serialized data: at 0x0000000000017f84 with 0x00000189 Bytes
 	Export Flags: 0x00000001
 [Export 93]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_4
@@ -1694,7 +1718,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017fb8 with 0x000001e0 Bytes
+	Serialized data: at 0x000000000001810d with 0x000001e0 Bytes
 	Export Flags: 0x00000001
 [Export 94]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_5
@@ -1702,7 +1726,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018198 with 0x0000018d Bytes
+	Serialized data: at 0x00000000000182ed with 0x0000018d Bytes
 	Export Flags: 0x00000001
 [Export 95]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_8
@@ -1710,7 +1734,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018325 with 0x00000100 Bytes
+	Serialized data: at 0x000000000001847a with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 103]
 	Full Name: MaterialExpressionTextureObjectParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureObjectParameter_0
@@ -1718,7 +1742,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureObjectParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018425 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001857a with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 104]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_36
@@ -1726,7 +1750,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000184d9 with 0x000000d8 Bytes
+	Serialized data: at 0x000000000001862e with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [Export 105]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_37
@@ -1734,7 +1758,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000185b1 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000018706 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 106]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_38
@@ -1742,7 +1766,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001865e with 0x000000f1 Bytes
+	Serialized data: at 0x00000000000187b3 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 107]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_39
@@ -1750,7 +1774,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001874f with 0x000000d8 Bytes
+	Serialized data: at 0x00000000000188a4 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [Export 108]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_40
@@ -1758,7 +1782,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018827 with 0x00000094 Bytes
+	Serialized data: at 0x000000000001897c with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 109]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_41
@@ -1766,7 +1790,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000188bb with 0x000000ad Bytes
+	Serialized data: at 0x0000000000018a10 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 110]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_42
@@ -1774,7 +1798,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018968 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000018abd with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 111]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_43
@@ -1782,7 +1806,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000189fc with 0x00000094 Bytes
+	Serialized data: at 0x0000000000018b51 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 112]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_44
@@ -1790,7 +1814,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018a90 with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000018be5 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [Export 113]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_45
@@ -1798,7 +1822,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018b68 with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000018cbd with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [Export 114]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_46
@@ -1806,7 +1830,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018c40 with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000018d95 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [Export 115]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_47
@@ -1814,7 +1838,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018d18 with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000018e6d with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [Export 116]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_55
@@ -1822,7 +1846,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018df0 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000018f45 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 122]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionTextureSampleParameter2D_0
@@ -1830,7 +1854,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018ea4 with 0x000000d6 Bytes
+	Serialized data: at 0x0000000000018ff9 with 0x000000d6 Bytes
 	Export Flags: 0x00000001
 [Export 123]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionTextureSampleParameter2D_1
@@ -1838,7 +1862,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018f7a with 0x000000d8 Bytes
+	Serialized data: at 0x00000000000190cf with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [Export 124]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionTextureSampleParameter2D_2
@@ -1846,7 +1870,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019052 with 0x000000cd Bytes
+	Serialized data: at 0x00000000000191a7 with 0x000000cd Bytes
 	Export Flags: 0x00000001
 [Export 125]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionTextureSampleParameter2D_3
@@ -1854,7 +1878,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001911f with 0x000000cd Bytes
+	Serialized data: at 0x0000000000019274 with 0x000000cd Bytes
 	Export Flags: 0x00000001
 [Export 126]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionTextureSampleParameter2D_4
@@ -1862,7 +1886,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000191ec with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000019341 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 127]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionTextureSampleParameter2D_5
@@ -1870,7 +1894,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000192a0 with 0x00000123 Bytes
+	Serialized data: at 0x00000000000193f5 with 0x00000123 Bytes
 	Export Flags: 0x00000001
 [Export 133]
 	Full Name: MaterialExpressionTextureSampleParameterSubUV Materials.flame_MAT.MaterialExpressionTextureSampleParameterSubUV_0
@@ -1878,7 +1902,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameterSubUV
 	Outer: flame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000193c3 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000019518 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 134]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_2
@@ -1886,7 +1910,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019457 with 0x000000a8 Bytes
+	Serialized data: at 0x00000000000195ac with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 135]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_23
@@ -1894,7 +1918,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000194ff with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000019654 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 136]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_24
@@ -1902,7 +1926,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000195a7 with 0x000000a8 Bytes
+	Serialized data: at 0x00000000000196fc with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 137]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_25
@@ -1910,7 +1934,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001964f with 0x000000a8 Bytes
+	Serialized data: at 0x00000000000197a4 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 138]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_26
@@ -1918,7 +1942,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000196f7 with 0x0000010c Bytes
+	Serialized data: at 0x000000000001984c with 0x0000010c Bytes
 	Export Flags: 0x00000001
 [Export 139]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_27
@@ -1926,7 +1950,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019803 with 0x0000010c Bytes
+	Serialized data: at 0x0000000000019958 with 0x0000010c Bytes
 	Export Flags: 0x00000001
 [Export 140]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_28
@@ -1934,7 +1958,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001990f with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000019a64 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 141]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_29
@@ -1942,7 +1966,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019a03 with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000019b58 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 142]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_48
@@ -1950,7 +1974,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019af7 with 0x00000145 Bytes
+	Serialized data: at 0x0000000000019c4c with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 143]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_49
@@ -1958,7 +1982,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019c3c with 0x0000012c Bytes
+	Serialized data: at 0x0000000000019d91 with 0x0000012c Bytes
 	Export Flags: 0x00000001
 [Export 144]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_50
@@ -1966,7 +1990,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019d68 with 0x00000114 Bytes
+	Serialized data: at 0x0000000000019ebd with 0x00000114 Bytes
 	Export Flags: 0x00000001
 [Export 148]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_0
@@ -1974,7 +1998,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019e7c with 0x000000c8 Bytes
+	Serialized data: at 0x0000000000019fd1 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 149]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_1
@@ -1982,7 +2006,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019f44 with 0x000000c8 Bytes
+	Serialized data: at 0x000000000001a099 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 150]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_2
@@ -1990,7 +2014,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a00c with 0x000000c8 Bytes
+	Serialized data: at 0x000000000001a161 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 151]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_3
@@ -1998,7 +2022,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a0d4 with 0x000000a8 Bytes
+	Serialized data: at 0x000000000001a229 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 152]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_4
@@ -2006,7 +2030,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a17c with 0x000000cf Bytes
+	Serialized data: at 0x000000000001a2d1 with 0x000000cf Bytes
 	Export Flags: 0x00000001
 [Export 153]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_5
@@ -2014,7 +2038,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a24b with 0x000000a8 Bytes
+	Serialized data: at 0x000000000001a3a0 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 154]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_6
@@ -2022,7 +2046,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a2f3 with 0x000000cf Bytes
+	Serialized data: at 0x000000000001a448 with 0x000000cf Bytes
 	Export Flags: 0x00000001
 [Export 155]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_7
@@ -2030,7 +2054,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a3c2 with 0x000000a8 Bytes
+	Serialized data: at 0x000000000001a517 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 156]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_8
@@ -2038,7 +2062,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a46a with 0x000000cf Bytes
+	Serialized data: at 0x000000000001a5bf with 0x000000cf Bytes
 	Export Flags: 0x00000001
 [Export 157]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_9
@@ -2046,7 +2070,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a539 with 0x000000a8 Bytes
+	Serialized data: at 0x000000000001a68e with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 162]
 	Full Name: MaterialFunction body_quartz.Psy_MaterialFunctions.ParallexCorrectWorldENV
@@ -2054,7 +2078,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialFunction
 	Outer: Psy_MaterialFunctions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001a5e1 with 0x00000124 Bytes
+	Serialized data: at 0x000000000001a736 with 0x00000124 Bytes
 	Export Flags: 0x00000001
 [Export 166]
 	Full Name: MaterialInstanceConstant body_quartz.body_quartz.MIC_body_quartz
@@ -2062,7 +2086,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialInstanceConstant
 	Outer: body_quartz
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000001a705 with 0x0000121e Bytes
+	Serialized data: at 0x00000000008aa67b with 0x00001216 Bytes
 	Export Flags: 0x00000001
 [Export 167]
 	Full Name: MaterialInstanceConstant body_quartz.body_quartz.MIC_chassis_quartz
@@ -2070,21 +2094,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialInstanceConstant
 	Outer: body_quartz
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000048f81d with 0x000007a9 Bytes
+	Serialized data: at 0x00000000008ab891 with 0x000007a9 Bytes
 	Export Flags: 0x00000001
 [Export 175]
 	Full Name: ObjectReferencer body_quartz.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000001c08c with 0x0000002c Bytes
+	Serialized data: at 0x000000000001c1e1 with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [Export 176]
 	Full Name: Package body_quartz.Body_AT
 	Name: Body_AT
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001c0b8 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001c20d with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2093,7 +2117,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: body_endo
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001c0c4 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001c219 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2102,7 +2126,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Body_FX
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001c0d0 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001c225 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2111,7 +2135,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Body_MuscleCar
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001c0dc with 0x0000000c Bytes
+	Serialized data: at 0x000000000001c231 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2120,7 +2144,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: body_quartz
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001c0e8 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001c23d with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2129,7 +2153,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: body_quartz_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001c0f4 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001c249 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -2138,7 +2162,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Body_Rye
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001c100 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001c255 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2147,7 +2171,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: boost_berry
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001c10c with 0x0000000c Bytes
+	Serialized data: at 0x000000000001c261 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2157,7 +2181,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: boost_berry
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001c118 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001c26d with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 188]
 	Full Name: Package body_quartz.boost_berry.Textures
@@ -2165,14 +2189,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: boost_berry
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001c124 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001c279 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 219]
 	Full Name: Package body_quartz.Psy_MaterialFunctions
 	Name: Psy_MaterialFunctions
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001c154 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001c2a9 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2181,7 +2205,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: SpaceStation_FieldAssets
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001c160 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001c2b5 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2191,14 +2215,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: SpaceStation_FieldAssets
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001c16c with 0x0000000c Bytes
+	Serialized data: at 0x000000000001c2c1 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 230]
 	Full Name: Package body_quartz.Vehicle_Parent_Materials
 	Name: Vehicle_Parent_Materials
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001c178 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001c2cd with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -2208,7 +2232,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParameterDispenser_X
 	Outer: Body_FXActor
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x000000000001c184 with 0x00000010 Bytes
+	Serialized data: at 0x000000000001c2d9 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 237]
 	Full Name: ParameterDispenser_X body_quartz.body_quartz.FXActor_body_quartz.ParameterDispenser_X_0
@@ -2216,7 +2240,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParameterDispenser_X
 	Outer: FXActor_body_quartz
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x000000000001c194 with 0x00000010 Bytes
+	Serialized data: at 0x000000000001c2e9 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 238]
 	Full Name: ParticleLODLevel body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleSpriteEmitter_1.ParticleLODLevel_1
@@ -2224,7 +2248,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c1a4 with 0x000000a4 Bytes
+	Serialized data: at 0x000000000001c2f9 with 0x000000a4 Bytes
 	Export Flags: 0x00000001
 [Export 239]
 	Full Name: ParticleLODLevel body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleSpriteEmitter_2.ParticleLODLevel_2
@@ -2232,7 +2256,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c248 with 0x000000b0 Bytes
+	Serialized data: at 0x000000000001c39d with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [Export 240]
 	Full Name: ParticleLODLevel body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleSpriteEmitter_3.ParticleLODLevel_1
@@ -2240,7 +2264,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c2f8 with 0x000000b0 Bytes
+	Serialized data: at 0x000000000001c44d with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [Export 241]
 	Full Name: ParticleLODLevel body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleSpriteEmitter_4.ParticleLODLevel_3
@@ -2248,7 +2272,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c3a8 with 0x000000a4 Bytes
+	Serialized data: at 0x000000000001c4fd with 0x000000a4 Bytes
 	Export Flags: 0x00000001
 [Export 250]
 	Full Name: ParticleModuleAcceleration body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleAcceleration_0
@@ -2256,7 +2280,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleAcceleration
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c44c with 0x00000141 Bytes
+	Serialized data: at 0x000000000001c5a1 with 0x00000141 Bytes
 	Export Flags: 0x00000001
 [Export 253]
 	Full Name: ParticleModuleColor body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleColor_1
@@ -2264,7 +2288,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleColor
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c58d with 0x000000f1 Bytes
+	Serialized data: at 0x000000000001c6e2 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 254]
 	Full Name: ParticleModuleColor body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleColor_2
@@ -2272,7 +2296,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleColor
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c67e with 0x0000011d Bytes
+	Serialized data: at 0x000000000001c7d3 with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [Export 264]
 	Full Name: ParticleModuleColorScaleOverLife body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleColorScaleOverLife_2
@@ -2280,7 +2304,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c79b with 0x0000015d Bytes
+	Serialized data: at 0x000000000001c8f0 with 0x0000015d Bytes
 	Export Flags: 0x00000001
 [Export 265]
 	Full Name: ParticleModuleColorScaleOverLife body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleColorScaleOverLife_5
@@ -2288,7 +2312,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c8f8 with 0x000001c9 Bytes
+	Serialized data: at 0x000000000001ca4d with 0x000001c9 Bytes
 	Export Flags: 0x00000001
 [Export 266]
 	Full Name: ParticleModuleColorScaleOverLife body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleColorScaleOverLife_6
@@ -2296,7 +2320,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cac1 with 0x00000126 Bytes
+	Serialized data: at 0x000000000001cc16 with 0x00000126 Bytes
 	Export Flags: 0x00000001
 [Export 275]
 	Full Name: ParticleModuleLifetime body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleLifetime_1
@@ -2304,7 +2328,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleLifetime
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cbe7 with 0x00000108 Bytes
+	Serialized data: at 0x000000000001cd3c with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 276]
 	Full Name: ParticleModuleLifetime body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleLifetime_5
@@ -2312,7 +2336,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleLifetime
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001ccef with 0x00000108 Bytes
+	Serialized data: at 0x000000000001ce44 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 284]
 	Full Name: ParticleModuleLocation body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleLocation_0
@@ -2320,7 +2344,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleLocation
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cdf7 with 0x000000ad Bytes
+	Serialized data: at 0x000000000001cf4c with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 285]
 	Full Name: ParticleModuleLocation body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleLocation_1
@@ -2328,7 +2352,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleLocation
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cea4 with 0x000000ad Bytes
+	Serialized data: at 0x000000000001cff9 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 293]
 	Full Name: ParticleModuleLocationPrimitiveCylinder body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleLocationPrimitiveCylinder_1
@@ -2336,7 +2360,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleLocationPrimitiveCylinder
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cf51 with 0x000002f4 Bytes
+	Serialized data: at 0x000000000001d0a6 with 0x000002f4 Bytes
 	Export Flags: 0x00000001
 [Export 294]
 	Full Name: ParticleModuleLocationPrimitiveCylinder body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleLocationPrimitiveCylinder_2
@@ -2344,7 +2368,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleLocationPrimitiveCylinder
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d245 with 0x000002f4 Bytes
+	Serialized data: at 0x000000000001d39a with 0x000002f4 Bytes
 	Export Flags: 0x00000001
 [Export 301]
 	Full Name: ParticleModuleOrbit body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleOrbit_1
@@ -2352,7 +2376,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleOrbit
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d539 with 0x0000020e Bytes
+	Serialized data: at 0x000000000001d68e with 0x0000020e Bytes
 	Export Flags: 0x00000001
 [Export 304]
 	Full Name: ParticleModuleParameterDynamic body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleParameterDynamic_0
@@ -2360,7 +2384,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleParameterDynamic
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d747 with 0x0000081d Bytes
+	Serialized data: at 0x000000000001d89c with 0x0000081d Bytes
 	Export Flags: 0x00000001
 [Export 305]
 	Full Name: ParticleModuleRequired body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleRequired_1
@@ -2368,7 +2392,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleRequired
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000048ffc6 with 0x000001ae Bytes
+	Serialized data: at 0x000000000049011b with 0x000001ae Bytes
 	Export Flags: 0x00000001
 [Export 306]
 	Full Name: ParticleModuleRequired body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleRequired_3
@@ -2376,7 +2400,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleRequired
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e112 with 0x00000189 Bytes
+	Serialized data: at 0x000000000001e267 with 0x00000189 Bytes
 	Export Flags: 0x00000001
 [Export 314]
 	Full Name: ParticleModuleRotation body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleRotation_3
@@ -2384,7 +2408,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleRotation
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e29b with 0x000000a5 Bytes
+	Serialized data: at 0x000000000001e3f0 with 0x000000a5 Bytes
 	Export Flags: 0x00000001
 [Export 317]
 	Full Name: ParticleModuleSize body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleSize_1
@@ -2392,7 +2416,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSize
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e340 with 0x00000128 Bytes
+	Serialized data: at 0x000000000001e495 with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [Export 318]
 	Full Name: ParticleModuleSize body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleSize_3
@@ -2400,7 +2424,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSize
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e468 with 0x00000128 Bytes
+	Serialized data: at 0x000000000001e5bd with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [Export 326]
 	Full Name: ParticleModuleSizeMultiplyLife body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleSizeMultiplyLife_1
@@ -2408,7 +2432,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e590 with 0x000001ad Bytes
+	Serialized data: at 0x000000000001e6e5 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 327]
 	Full Name: ParticleModuleSizeMultiplyLife body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleSizeMultiplyLife_3
@@ -2416,7 +2440,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e73d with 0x000001ad Bytes
+	Serialized data: at 0x000000000001e892 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 331]
 	Full Name: ParticleModuleSpawn body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleSpawn_2
@@ -2424,7 +2448,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSpawn
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e8ea with 0x000000e1 Bytes
+	Serialized data: at 0x000000000001ea3f with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 332]
 	Full Name: ParticleModuleSpawn body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleSpawn_3
@@ -2432,7 +2456,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSpawn
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e9cb with 0x00000181 Bytes
+	Serialized data: at 0x000000000001eb20 with 0x00000181 Bytes
 	Export Flags: 0x00000001
 [Export 342]
 	Full Name: ParticleModuleSubUV body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleSubUV_1
@@ -2440,7 +2464,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSubUV
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001eb4c with 0x0000008d Bytes
+	Serialized data: at 0x000000000001eca1 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 343]
 	Full Name: ParticleModuleSubUV body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleSubUV_3
@@ -2448,7 +2472,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSubUV
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001ebd9 with 0x000000b9 Bytes
+	Serialized data: at 0x000000000001ed2e with 0x000000b9 Bytes
 	Export Flags: 0x00000001
 [Export 344]
 	Full Name: ParticleModuleVelocity body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleVelocity_1
@@ -2456,7 +2480,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleVelocity
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001ec92 with 0x0000016c Bytes
+	Serialized data: at 0x000000000001ede7 with 0x0000016c Bytes
 	Export Flags: 0x00000001
 [Export 345]
 	Full Name: ParticleModuleVelocity body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleVelocity_2
@@ -2464,7 +2488,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleVelocity
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001edfe with 0x0000016c Bytes
+	Serialized data: at 0x000000000001ef53 with 0x0000016c Bytes
 	Export Flags: 0x00000001
 [Export 353]
 	Full Name: ParticleModuleVelocityOverLifetime body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleVelocityOverLifetime_0
@@ -2472,7 +2496,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001ef6a with 0x000001ad Bytes
+	Serialized data: at 0x000000000001f0bf with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 354]
 	Full Name: ParticleModuleVelocityOverLifetime body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleModuleVelocityOverLifetime_1
@@ -2480,7 +2504,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001f117 with 0x00000135 Bytes
+	Serialized data: at 0x000000000001f26c with 0x00000135 Bytes
 	Export Flags: 0x00000001
 [Export 355]
 	Full Name: ParticleSpriteEmitter body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleSpriteEmitter_1
@@ -2488,7 +2512,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSpriteEmitter
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001f24c with 0x0000004c Bytes
+	Serialized data: at 0x000000000001f3a1 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 356]
 	Full Name: ParticleSpriteEmitter body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleSpriteEmitter_2
@@ -2496,7 +2520,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSpriteEmitter
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001f298 with 0x0000002c Bytes
+	Serialized data: at 0x000000000001f3ed with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 357]
 	Full Name: ParticleSpriteEmitter body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleSpriteEmitter_3
@@ -2504,7 +2528,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSpriteEmitter
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001f2c4 with 0x0000002c Bytes
+	Serialized data: at 0x000000000001f419 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 358]
 	Full Name: ParticleSpriteEmitter body_quartz.body_quartz.AmbientBoost_body_quartz_PS.ParticleSpriteEmitter_4
@@ -2512,7 +2536,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSpriteEmitter
 	Outer: AmbientBoost_body_quartz_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001f2f0 with 0x0000004c Bytes
+	Serialized data: at 0x000000000001f445 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 368]
 	Full Name: ParticleSystem body_quartz.body_quartz.AmbientBoost_body_quartz_PS
@@ -2520,7 +2544,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSystem
 	Outer: body_quartz
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000001f33c with 0x0000012b Bytes
+	Serialized data: at 0x000000000001f491 with 0x0000012b Bytes
 	Export Flags: 0x00000001
 [Export 372]
 	Full Name: ParticleSystemComponent body_quartz.Body_FX.Body_FXActor.ParticleSystemComponent_0
@@ -2528,7 +2552,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSystemComponent
 	Outer: Body_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000001f467 with 0x0000007a Bytes
+	Serialized data: at 0x000000000001f5bc with 0x0000007a Bytes
 	Export Flags: 0x00000001
 [Export 373]
 	Full Name: ParticleSystemComponent body_quartz.Body_FX.Body_FXActor.ParticleSystemComponent_1
@@ -2536,7 +2560,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSystemComponent
 	Outer: Body_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000001f4e1 with 0x0000007a Bytes
+	Serialized data: at 0x000000000001f636 with 0x0000007a Bytes
 	Export Flags: 0x00000001
 [Export 374]
 	Full Name: ParticleSystemComponent body_quartz.body_quartz.FXActor_body_quartz.ParticleSystemComponent_2
@@ -2544,7 +2568,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSystemComponent
 	Outer: FXActor_body_quartz
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000001f55b with 0x0000007a Bytes
+	Serialized data: at 0x000000000001f6b0 with 0x0000007a Bytes
 	Export Flags: 0x00000001
 [Export 376]
 	Full Name: PhysicsAsset body_quartz.Body_MuscleCar.Body_MuscleCar_Physics
@@ -2552,7 +2576,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: PhysicsAsset
 	Outer: Body_MuscleCar
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000001f5d5 with 0x00000068 Bytes
+	Serialized data: at 0x000000000001f72a with 0x00000068 Bytes
 	Export Flags: 0x00000001
 [Export 378]
 	Full Name: PhysicsAssetInstance body_quartz.Body_MuscleCar.Body_MuscleCar_Physics.PhysicsAssetInstance_0
@@ -2560,7 +2584,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: PhysicsAssetInstance
 	Outer: Body_MuscleCar_Physics
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001f63d with 0x00000030 Bytes
+	Serialized data: at 0x000000000001f792 with 0x00000030 Bytes
 	Export Flags: 0x00000001
 [Export 386]
 	Full Name: ProductAsset_Body_TA body_quartz.body_quartz.body_quartz
@@ -2569,7 +2593,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: body_quartz
 	Archetype: ProductAsset_Body_TA_2
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001f66d with 0x00000768 Bytes
+	Serialized data: at 0x00000000008ac03a with 0x000007c0 Bytes
 	Export Flags: 0x00000001
 [Export 389]
 	Full Name: ProductAssetReference_TA body_quartz.body_quartz.body_quartz.ProductAssetReference_TA_0
@@ -2577,51 +2601,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductAssetReference_TA
 	Outer: body_quartz
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001fdd5 with 0x00000028 Bytes
-	Export Flags: 0x00000001
-[Export 390]
-	Full Name: ProductAssetReference_TA body_quartz.body_quartz.body_quartz.ProductEquipProfile_TA_0.ProductEquipProfileSlot_Custom_TA_0.ProductAssetReference_TA_0
-	Name: ProductAssetReference_TA_0
-	Class: ProductAssetReference_TA
-	Outer: ProductEquipProfileSlot_Custom_TA_0
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001fdfd with 0x00000028 Bytes
-	Export Flags: 0x00000001
-[Export 391]
-	Full Name: ProductAssetReference_TA body_quartz.body_quartz.body_quartz.ProductEquipProfile_TA_0.ProductEquipProfileSlot_ForcedProduct_TA_0.ProductAssetReference_TA_0
-	Name: ProductAssetReference_TA_0
-	Class: ProductAssetReference_TA
-	Outer: ProductEquipProfileSlot_ForcedProduct_TA_0
-	Archetype: DefaultForcedProduct
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001fe25 with 0x00000028 Bytes
-	Export Flags: 0x00000001
-[Export 392]
-	Full Name: ProductAssetReference_TA body_quartz.body_quartz.body_quartz.ProductEquipProfile_TA_0.ProductEquipProfileSlot_ForcedProduct_TA_1.ProductAssetReference_TA_1
-	Name: ProductAssetReference_TA_1
-	Class: ProductAssetReference_TA
-	Outer: ProductEquipProfileSlot_ForcedProduct_TA_1
-	Archetype: DefaultForcedProduct
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001fe4d with 0x00000028 Bytes
-	Export Flags: 0x00000001
-[Export 393]
-	Full Name: ProductAssetReference_TA body_quartz.body_quartz.body_quartz.ProductEquipProfile_TA_0.ProductEquipProfileSlot_ForcedProduct_TA_2.ProductAssetReference_TA_0
-	Name: ProductAssetReference_TA_0
-	Class: ProductAssetReference_TA
-	Outer: ProductEquipProfileSlot_ForcedProduct_TA_2
-	Archetype: DefaultForcedProduct
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001fe75 with 0x00000028 Bytes
-	Export Flags: 0x00000001
-[Export 394]
-	Full Name: ProductAssetReference_TA body_quartz.body_quartz.body_quartz.ProductEquipProfile_TA_0.ProductEquipProfileSlot_ForcedProduct_TA_3.ProductAssetReference_TA_1
-	Name: ProductAssetReference_TA_1
-	Class: ProductAssetReference_TA
-	Outer: ProductEquipProfileSlot_ForcedProduct_TA_3
-	Archetype: DefaultForcedProduct
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001fe9d with 0x00000028 Bytes
+	Serialized data: at 0x000000000001ff2a with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [Export 395]
 	Full Name: ProductAssetReferenceWheel_TA body_quartz.body_quartz.body_quartz.ProductAssetReferenceWheel_TA_0
@@ -2629,72 +2609,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductAssetReferenceWheel_TA
 	Outer: body_quartz
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001fec5 with 0x00000028 Bytes
-	Export Flags: 0x00000001
-[Export 397]
-	Full Name: ProductEquipProfile_TA body_quartz.body_quartz.body_quartz.ProductEquipProfile_TA_0
-	Name: ProductEquipProfile_TA_0
-	Class: ProductEquipProfile_TA
-	Outer: body_quartz
-	Archetype: DefaultEquipProfile
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001feed with 0x00000118 Bytes
-	Export Flags: 0x00000001
-[Export 398]
-	Full Name: ProductEquipProfileSlot_Custom_TA body_quartz.body_quartz.body_quartz.ProductEquipProfile_TA_0.ProductEquipProfileSlot_Custom_TA_0
-	Name: ProductEquipProfileSlot_Custom_TA_0
-	Class: ProductEquipProfileSlot_Custom_TA
-	Outer: ProductEquipProfile_TA_0
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000020005 with 0x00000054 Bytes
-	Export Flags: 0x00000001
-[Export 399]
-	Full Name: ProductEquipProfileSlot_Disabled_TA body_quartz.body_quartz.body_quartz.ProductEquipProfile_TA_0.ProductEquipProfileSlot_Disabled_TA_0
-	Name: ProductEquipProfileSlot_Disabled_TA_0
-	Class: ProductEquipProfileSlot_Disabled_TA
-	Outer: ProductEquipProfile_TA_0
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000020059 with 0x0000000c Bytes
-	Export Flags: 0x00000001
-[Export 400]
-	Full Name: ProductEquipProfileSlot_Disabled_TA body_quartz.body_quartz.body_quartz.ProductEquipProfile_TA_0.ProductEquipProfileSlot_Disabled_TA_1
-	Name: ProductEquipProfileSlot_Disabled_TA_1
-	Class: ProductEquipProfileSlot_Disabled_TA
-	Outer: ProductEquipProfile_TA_0
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000020065 with 0x0000000c Bytes
-	Export Flags: 0x00000001
-[Export 401]
-	Full Name: ProductEquipProfileSlot_ForcedProduct_TA body_quartz.body_quartz.body_quartz.ProductEquipProfile_TA_0.ProductEquipProfileSlot_ForcedProduct_TA_0
-	Name: ProductEquipProfileSlot_ForcedProduct_TA_0
-	Class: ProductEquipProfileSlot_ForcedProduct_TA
-	Outer: ProductEquipProfile_TA_0
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000020071 with 0x00000028 Bytes
-	Export Flags: 0x00000001
-[Export 402]
-	Full Name: ProductEquipProfileSlot_ForcedProduct_TA body_quartz.body_quartz.body_quartz.ProductEquipProfile_TA_0.ProductEquipProfileSlot_ForcedProduct_TA_1
-	Name: ProductEquipProfileSlot_ForcedProduct_TA_1
-	Class: ProductEquipProfileSlot_ForcedProduct_TA
-	Outer: ProductEquipProfile_TA_0
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000020099 with 0x00000028 Bytes
-	Export Flags: 0x00000001
-[Export 403]
-	Full Name: ProductEquipProfileSlot_ForcedProduct_TA body_quartz.body_quartz.body_quartz.ProductEquipProfile_TA_0.ProductEquipProfileSlot_ForcedProduct_TA_2
-	Name: ProductEquipProfileSlot_ForcedProduct_TA_2
-	Class: ProductEquipProfileSlot_ForcedProduct_TA
-	Outer: ProductEquipProfile_TA_0
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000200c1 with 0x00000028 Bytes
-	Export Flags: 0x00000001
-[Export 404]
-	Full Name: ProductEquipProfileSlot_ForcedProduct_TA body_quartz.body_quartz.body_quartz.ProductEquipProfile_TA_0.ProductEquipProfileSlot_ForcedProduct_TA_3
-	Name: ProductEquipProfileSlot_ForcedProduct_TA_3
-	Class: ProductEquipProfileSlot_ForcedProduct_TA
-	Outer: ProductEquipProfile_TA_0
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000200e9 with 0x00000028 Bytes
+	Serialized data: at 0x000000000002001a with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [Export 407]
 	Full Name: RB_BodyInstance body_quartz.Body_MuscleCar.Body_MuscleCar_Physics.PhysicsAssetInstance_0.RB_BodyInstance_1
@@ -2702,7 +2617,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: RB_BodyInstance
 	Outer: PhysicsAssetInstance_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020111 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000020266 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 409]
 	Full Name: RB_BodySetup body_quartz.Body_MuscleCar.Body_MuscleCar_Physics.RB_BodySetup_0
@@ -2710,7 +2625,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: RB_BodySetup
 	Outer: Body_MuscleCar_Physics
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002011d with 0x0000017e Bytes
+	Serialized data: at 0x0000000000020272 with 0x0000017e Bytes
 	Export Flags: 0x00000001
 [Export 412]
 	Full Name: SkelControlLookAt body_quartz.Body_AT.Body_AT.SkelControlLookAt_0
@@ -2718,7 +2633,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlLookAt
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002029b with 0x000000d9 Bytes
+	Serialized data: at 0x00000000000203f0 with 0x000000d9 Bytes
 	Export Flags: 0x00000001
 [Export 413]
 	Full Name: SkelControlLookAt body_quartz.Body_AT.Body_AT.SkelControlLookAt_1
@@ -2726,7 +2641,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlLookAt
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000020374 with 0x000000c0 Bytes
+	Serialized data: at 0x00000000000204c9 with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [Export 414]
 	Full Name: SkelControlLookAt body_quartz.Body_AT.Body_AT.SkelControlLookAt_10
@@ -2734,7 +2649,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlLookAt
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000020434 with 0x000000d9 Bytes
+	Serialized data: at 0x0000000000020589 with 0x000000d9 Bytes
 	Export Flags: 0x00000001
 [Export 415]
 	Full Name: SkelControlLookAt body_quartz.Body_AT.Body_AT.SkelControlLookAt_11
@@ -2742,7 +2657,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlLookAt
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002050d with 0x00000089 Bytes
+	Serialized data: at 0x0000000000020662 with 0x00000089 Bytes
 	Export Flags: 0x00000001
 [Export 416]
 	Full Name: SkelControlLookAt body_quartz.Body_AT.Body_AT.SkelControlLookAt_2
@@ -2750,7 +2665,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlLookAt
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000020596 with 0x00000089 Bytes
+	Serialized data: at 0x00000000000206eb with 0x00000089 Bytes
 	Export Flags: 0x00000001
 [Export 417]
 	Full Name: SkelControlLookAt body_quartz.Body_AT.Body_AT.SkelControlLookAt_3
@@ -2758,7 +2673,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlLookAt
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002061f with 0x000000c0 Bytes
+	Serialized data: at 0x0000000000020774 with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [Export 418]
 	Full Name: SkelControlLookAt body_quartz.Body_AT.Body_AT.SkelControlLookAt_4
@@ -2766,7 +2681,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlLookAt
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000000206df with 0x000000d9 Bytes
+	Serialized data: at 0x0000000000020834 with 0x000000d9 Bytes
 	Export Flags: 0x00000001
 [Export 419]
 	Full Name: SkelControlLookAt body_quartz.Body_AT.Body_AT.SkelControlLookAt_5
@@ -2774,7 +2689,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlLookAt
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000000207b8 with 0x00000070 Bytes
+	Serialized data: at 0x000000000002090d with 0x00000070 Bytes
 	Export Flags: 0x00000001
 [Export 420]
 	Full Name: SkelControlLookAt body_quartz.Body_AT.Body_AT.SkelControlLookAt_6
@@ -2782,7 +2697,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlLookAt
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000020828 with 0x000000c0 Bytes
+	Serialized data: at 0x000000000002097d with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [Export 421]
 	Full Name: SkelControlLookAt body_quartz.Body_AT.Body_AT.SkelControlLookAt_7
@@ -2790,7 +2705,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlLookAt
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000000208e8 with 0x000000d9 Bytes
+	Serialized data: at 0x0000000000020a3d with 0x000000d9 Bytes
 	Export Flags: 0x00000001
 [Export 422]
 	Full Name: SkelControlLookAt body_quartz.Body_AT.Body_AT.SkelControlLookAt_8
@@ -2798,7 +2713,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlLookAt
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000000209c1 with 0x00000070 Bytes
+	Serialized data: at 0x0000000000020b16 with 0x00000070 Bytes
 	Export Flags: 0x00000001
 [Export 423]
 	Full Name: SkelControlLookAt body_quartz.Body_AT.Body_AT.SkelControlLookAt_9
@@ -2806,7 +2721,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlLookAt
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000020a31 with 0x000000c0 Bytes
+	Serialized data: at 0x0000000000020b86 with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [Export 424]
 	Full Name: SkelControlSingleBone body_quartz.Body_AT.Body_AT.SkelControlSingleBone_1
@@ -2814,7 +2729,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlSingleBone
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000020af1 with 0x00000086 Bytes
+	Serialized data: at 0x0000000000020c46 with 0x00000086 Bytes
 	Export Flags: 0x00000001
 [Export 425]
 	Full Name: SkelControlSingleBone body_quartz.Body_AT.Body_AT.SkelControlSingleBone_10
@@ -2822,7 +2737,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlSingleBone
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000020b77 with 0x000000a2 Bytes
+	Serialized data: at 0x0000000000020ccc with 0x000000a2 Bytes
 	Export Flags: 0x00000001
 [Export 426]
 	Full Name: SkelControlSingleBone body_quartz.Body_AT.Body_AT.SkelControlSingleBone_11
@@ -2830,7 +2745,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlSingleBone
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000020c19 with 0x000000e0 Bytes
+	Serialized data: at 0x0000000000020d6e with 0x000000e0 Bytes
 	Export Flags: 0x00000001
 [Export 427]
 	Full Name: SkelControlSingleBone body_quartz.Body_AT.Body_AT.SkelControlSingleBone_12
@@ -2838,7 +2753,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlSingleBone
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000020cf9 with 0x00000086 Bytes
+	Serialized data: at 0x0000000000020e4e with 0x00000086 Bytes
 	Export Flags: 0x00000001
 [Export 428]
 	Full Name: SkelControlSingleBone body_quartz.Body_AT.Body_AT.SkelControlSingleBone_13
@@ -2846,7 +2761,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlSingleBone
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000020d7f with 0x00000086 Bytes
+	Serialized data: at 0x0000000000020ed4 with 0x00000086 Bytes
 	Export Flags: 0x00000001
 [Export 429]
 	Full Name: SkelControlSingleBone body_quartz.Body_AT.Body_AT.SkelControlSingleBone_14
@@ -2854,7 +2769,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlSingleBone
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000020e05 with 0x0000009f Bytes
+	Serialized data: at 0x0000000000020f5a with 0x0000009f Bytes
 	Export Flags: 0x00000001
 [Export 430]
 	Full Name: SkelControlSingleBone body_quartz.Body_AT.Body_AT.SkelControlSingleBone_15
@@ -2862,7 +2777,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlSingleBone
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000020ea4 with 0x000000a2 Bytes
+	Serialized data: at 0x0000000000020ff9 with 0x000000a2 Bytes
 	Export Flags: 0x00000001
 [Export 431]
 	Full Name: SkelControlSingleBone body_quartz.Body_AT.Body_AT.SkelControlSingleBone_2
@@ -2870,7 +2785,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlSingleBone
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000020f46 with 0x000000ea Bytes
+	Serialized data: at 0x000000000002109b with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [Export 432]
 	Full Name: SkelControlSingleBone body_quartz.Body_AT.Body_AT.SkelControlSingleBone_3
@@ -2878,7 +2793,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlSingleBone
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000021030 with 0x000000ea Bytes
+	Serialized data: at 0x0000000000021185 with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [Export 433]
 	Full Name: SkelControlSingleBone body_quartz.Body_AT.Body_AT.SkelControlSingleBone_4
@@ -2886,7 +2801,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlSingleBone
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000002111a with 0x000000ea Bytes
+	Serialized data: at 0x000000000002126f with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [Export 434]
 	Full Name: SkelControlSingleBone body_quartz.Body_AT.Body_AT.SkelControlSingleBone_5
@@ -2894,7 +2809,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlSingleBone
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000021204 with 0x000000ea Bytes
+	Serialized data: at 0x0000000000021359 with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [Export 435]
 	Full Name: SkelControlSingleBone body_quartz.Body_AT.Body_AT.SkelControlSingleBone_6
@@ -2902,7 +2817,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlSingleBone
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000000212ee with 0x000000a2 Bytes
+	Serialized data: at 0x0000000000021443 with 0x000000a2 Bytes
 	Export Flags: 0x00000001
 [Export 436]
 	Full Name: SkelControlSingleBone body_quartz.Body_AT.Body_AT.SkelControlSingleBone_7
@@ -2910,7 +2825,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlSingleBone
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000021390 with 0x00000086 Bytes
+	Serialized data: at 0x00000000000214e5 with 0x00000086 Bytes
 	Export Flags: 0x00000001
 [Export 437]
 	Full Name: SkelControlSingleBone body_quartz.Body_AT.Body_AT.SkelControlSingleBone_8
@@ -2918,7 +2833,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlSingleBone
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000021416 with 0x0000009f Bytes
+	Serialized data: at 0x000000000002156b with 0x0000009f Bytes
 	Export Flags: 0x00000001
 [Export 438]
 	Full Name: SkelControlSingleBone body_quartz.Body_AT.Body_AT.SkelControlSingleBone_9
@@ -2926,15 +2841,15 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkelControlSingleBone
 	Outer: Body_AT
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000000214b5 with 0x000000a2 Bytes
+	Serialized data: at 0x000000000002160a with 0x000000a2 Bytes
 	Export Flags: 0x00000001
 [Export 439]
 	Full Name: SkeletalMesh body_quartz.body_quartz.Body_Quartz_SK
 	Name: Body_Quartz_SK
 	Class: SkeletalMesh
 	Outer: body_quartz
-	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000490174 with 0x00419123 Bytes
+	Object Flags: 0x000f000500000000
+	Serialized data: at 0x00000000008ac7fa with 0x00419123 Bytes
 	Export Flags: 0x00000001
 [Export 442]
 	Full Name: SkeletalMeshSocket body_quartz.body_quartz.Body_Quartz_SK.SkeletalMeshSocket_0
@@ -2942,7 +2857,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkeletalMeshSocket
 	Outer: Body_Quartz_SK
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000043a67a with 0x00000078 Bytes
+	Serialized data: at 0x0000000000cc591d with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 443]
 	Full Name: SkeletalMeshSocket body_quartz.body_quartz.Body_Quartz_SK.SkeletalMeshSocket_1
@@ -2950,7 +2865,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkeletalMeshSocket
 	Outer: Body_Quartz_SK
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000043a6f2 with 0x00000078 Bytes
+	Serialized data: at 0x000000000043a847 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 444]
 	Full Name: SkeletalMeshSocket body_quartz.body_quartz.Body_Quartz_SK.SkeletalMeshSocket_2
@@ -2958,7 +2873,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkeletalMeshSocket
 	Outer: Body_Quartz_SK
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000043a76a with 0x0000004c Bytes
+	Serialized data: at 0x000000000043a8bf with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 445]
 	Full Name: SkeletalMeshSocket body_quartz.body_quartz.Body_Quartz_SK.SkeletalMeshSocket_3
@@ -2966,7 +2881,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkeletalMeshSocket
 	Outer: Body_Quartz_SK
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000043a7b6 with 0x00000078 Bytes
+	Serialized data: at 0x0000000000cc5995 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 446]
 	Full Name: SkeletalMeshSocket body_quartz.body_quartz.Body_Quartz_SK.SkeletalMeshSocket_4
@@ -2974,7 +2889,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkeletalMeshSocket
 	Outer: Body_Quartz_SK
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000043a82e with 0x00000078 Bytes
+	Serialized data: at 0x000000000043a983 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 447]
 	Full Name: SkeletalMeshSocket body_quartz.body_quartz.Body_Quartz_SK.SkeletalMeshSocket_5
@@ -2982,7 +2897,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkeletalMeshSocket
 	Outer: Body_Quartz_SK
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000043a8a6 with 0x00000078 Bytes
+	Serialized data: at 0x000000000043a9fb with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 448]
 	Full Name: SkeletalMeshSocket body_quartz.body_quartz.Body_Quartz_SK.SkeletalMeshSocket_6
@@ -2990,7 +2905,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SkeletalMeshSocket
 	Outer: Body_Quartz_SK
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000043a91e with 0x00000078 Bytes
+	Serialized data: at 0x000000000043aa73 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 451]
 	Full Name: StaticMesh body_quartz.body_quartz.boostconemesh_quartz_sm
@@ -2998,7 +2913,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: StaticMesh
 	Outer: body_quartz
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000043a996 with 0x00010bc1 Bytes
+	Serialized data: at 0x000000000043aaeb with 0x00010bc1 Bytes
 	Export Flags: 0x00000001
 [Export 452]
 	Full Name: StaticMesh body_quartz.body_quartz.lens_quartz_sm
@@ -3006,7 +2921,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: StaticMesh
 	Outer: body_quartz
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000044b557 with 0x000318c5 Bytes
+	Serialized data: at 0x000000000044b6ac with 0x000318c5 Bytes
 	Export Flags: 0x00000001
 [Export 459]
 	Full Name: StaticMeshComponent body_quartz.body_quartz.FXActor_body_quartz.StaticMeshComponent_6
@@ -3014,7 +2929,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: StaticMeshComponent
 	Outer: FXActor_body_quartz
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000047ce1c with 0x00000065 Bytes
+	Serialized data: at 0x000000000047cf71 with 0x00000065 Bytes
 	Export Flags: 0x00000001
 [Export 465]
 	Full Name: Texture2D body_quartz.body_endo.Endo_Chassis_D
@@ -3022,7 +2937,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: body_endo
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000047ce81 with 0x00000d10 Bytes
+	Serialized data: at 0x000000000047cfd6 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [Export 466]
 	Full Name: Texture2D body_quartz.body_endo.Endo_Chassis_N
@@ -3030,7 +2945,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: body_endo
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000047db91 with 0x00001885 Bytes
+	Serialized data: at 0x000000000047dce6 with 0x00001885 Bytes
 	Export Flags: 0x00000001
 [Export 467]
 	Full Name: Texture2D body_quartz.body_endo.Endo_Chassis_RGB
@@ -3038,7 +2953,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: body_endo
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000047f416 with 0x000017f0 Bytes
+	Serialized data: at 0x000000000047f56b with 0x000017f0 Bytes
 	Export Flags: 0x00000001
 [Export 471]
 	Full Name: Texture2D body_quartz.body_quartz.body_quartz_blankskin
@@ -3046,15 +2961,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: body_quartz
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000480c06 with 0x000017c8 Bytes
-	Export Flags: 0x00000001
-[Export 472]
-	Full Name: Texture2D body_quartz.body_quartz.Body_Quartz_BlankSkin_02
-	Name: Body_Quartz_BlankSkin_02
-	Class: Texture2D
-	Outer: body_quartz
-	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000004823ce with 0x00000d10 Bytes
+	Serialized data: at 0x0000000000480d5b with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [Export 473]
 	Full Name: Texture2D body_quartz.body_quartz.body_quartz_curvature
@@ -3062,7 +2969,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: body_quartz
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000004830de with 0x000017c8 Bytes
+	Serialized data: at 0x0000000000483233 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [Export 474]
 	Full Name: Texture2D body_quartz.body_quartz.body_quartz_d
@@ -3070,7 +2977,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: body_quartz
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000004848a6 with 0x000017c8 Bytes
+	Serialized data: at 0x00000000004849fb with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [Export 475]
 	Full Name: Texture2D body_quartz.body_quartz.chassis_quartz_d
@@ -3078,7 +2985,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: body_quartz
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000048606e with 0x00000d10 Bytes
+	Serialized data: at 0x00000000004861c3 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [Export 476]
 	Full Name: Texture2D body_quartz.body_quartz.chassis_quartz_n
@@ -3086,7 +2993,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: body_quartz
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000486d7e with 0x00001885 Bytes
+	Serialized data: at 0x0000000000486ed3 with 0x00001885 Bytes
 	Export Flags: 0x00000001
 [Export 477]
 	Full Name: Texture2D body_quartz.body_quartz.chassis_quartz_rgb
@@ -3094,7 +3001,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: body_quartz
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000488603 with 0x000017c8 Bytes
+	Serialized data: at 0x0000000000488758 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [Export 479]
 	Full Name: Texture2D Textures.FireBurst_01_T
@@ -3102,7 +3009,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000489dcb with 0x00002d7a Bytes
+	Serialized data: at 0x0000000000489f20 with 0x00002d7a Bytes
 	Export Flags: 0x00000001
 [Export 494]
 	Full Name: Texture2D Tex.Blank_N
@@ -3110,7 +3017,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Tex
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000048d2e9 with 0x000017dd Bytes
+	Serialized data: at 0x000000000048d43e with 0x000017dd Bytes
 	Export Flags: 0x00000001
 [Export 518]
 	Full Name: Material body_quartz.Vehicle_Parent_Materials02.MAT_Vehicle_Glass_Translucent
@@ -3118,7 +3025,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Material
 	Outer: Vehicle_Parent_Materials02
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000008a9d91 with 0x00000569 Bytes
+	Serialized data: at 0x00000000008a9ee6 with 0x00000569 Bytes
 	Export Flags: 0x00000001
 [Export 519]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Vehicle_Parent_Materials02.MAT_Vehicle_Glass_Translucent.MaterialExpressionTextureSampleParameter2D_0
@@ -3126,7 +3033,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Vehicle_Glass_Translucent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000048efdf with 0x000000d8 Bytes
+	Serialized data: at 0x000000000048f134 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [Export 520]
 	Full Name: MaterialExpressionTextureSampleParameter2D body_quartz.Vehicle_Parent_Materials02.MAT_Vehicle_Glass_Translucent.MaterialExpressionTextureSampleParameter2D_1
@@ -3134,14 +3041,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Vehicle_Glass_Translucent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000048f0b7 with 0x000001b7 Bytes
+	Serialized data: at 0x000000000048f20c with 0x000001b7 Bytes
 	Export Flags: 0x00000001
 [Export 521]
 	Full Name: Package body_quartz.Vehicle_Parent_Materials02
 	Name: Vehicle_Parent_Materials02
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000048f26e with 0x0000000c Bytes
+	Serialized data: at 0x000000000048f3c3 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -3151,7 +3058,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000008a9297 with 0x000000e6 Bytes
+	Serialized data: at 0x00000000008a93ec with 0x000000e6 Bytes
 	Export Flags: 0x00000001
 [Export 523]
 	Full Name: MaterialExpressionScalarParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionScalarParameter_4
@@ -3159,7 +3066,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000008a937d with 0x000000b4 Bytes
+	Serialized data: at 0x00000000008a94d2 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 524]
 	Full Name: MaterialExpressionScalarParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionScalarParameter_5
@@ -3167,7 +3074,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000008a9431 with 0x0000012a Bytes
+	Serialized data: at 0x00000000008a9586 with 0x0000012a Bytes
 	Export Flags: 0x00000001
 [Export 525]
 	Full Name: MaterialExpressionScalarParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionScalarParameter_7
@@ -3175,7 +3082,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000008a955b with 0x000000de Bytes
+	Serialized data: at 0x00000000008a96b0 with 0x000000de Bytes
 	Export Flags: 0x00000001
 [Export 526]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_6
@@ -3183,7 +3090,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000008a9639 with 0x00000174 Bytes
+	Serialized data: at 0x00000000008a978e with 0x00000174 Bytes
 	Export Flags: 0x00000001
 [Export 527]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_7
@@ -3191,7 +3098,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000008a97ad with 0x0000015b Bytes
+	Serialized data: at 0x00000000008a9902 with 0x0000015b Bytes
 	Export Flags: 0x00000001
 [Export 528]
 	Full Name: MaterialExpressionStaticSwitchParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_9
@@ -3199,7 +3106,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000008a9908 with 0x0000015b Bytes
+	Serialized data: at 0x00000000008a9a5d with 0x0000015b Bytes
 	Export Flags: 0x00000001
 [Export 529]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_10
@@ -3207,7 +3114,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000008a9a63 with 0x00000136 Bytes
+	Serialized data: at 0x00000000008a9bb8 with 0x00000136 Bytes
 	Export Flags: 0x00000001
 [Export 530]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_12
@@ -3215,7 +3122,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000008a9b99 with 0x000000a8 Bytes
+	Serialized data: at 0x00000000008a9cee with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 531]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_16
@@ -3223,7 +3130,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000008a9c41 with 0x000000a8 Bytes
+	Serialized data: at 0x00000000008a9d96 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 532]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_18
@@ -3231,7 +3138,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000008a9ce9 with 0x000000a8 Bytes
+	Serialized data: at 0x00000000008a9e3e with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 533]
 	Full Name: MaterialExpressionScalarParameter body_quartz.Vehicle_Parent_Materials02.MAT_Vehicle_Glass_Translucent.MaterialExpressionScalarParameter_0
@@ -3239,7 +3146,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Vehicle_Glass_Translucent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000008aa2fa with 0x00000094 Bytes
+	Serialized data: at 0x00000000008aa44f with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 534]
 	Full Name: MaterialExpressionScalarParameter body_quartz.Vehicle_Parent_Materials02.MAT_Vehicle_Glass_Translucent.MaterialExpressionScalarParameter_1
@@ -3247,7 +3154,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Vehicle_Glass_Translucent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000008aa38e with 0x00000078 Bytes
+	Serialized data: at 0x00000000008aa4e3 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 535]
 	Full Name: MaterialExpressionScalarParameter body_quartz.Vehicle_Parent_Materials02.MAT_Vehicle_Glass_Translucent.MaterialExpressionScalarParameter_4
@@ -3255,7 +3162,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Vehicle_Glass_Translucent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000008aa406 with 0x00000078 Bytes
+	Serialized data: at 0x00000000008aa55b with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 536]
 	Full Name: MaterialExpressionVectorParameter body_quartz.Vehicle_Parent_Materials02.MAT_Vehicle_Glass_Translucent.MaterialExpressionVectorParameter_0
@@ -3263,7 +3170,31 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Vehicle_Glass_Translucent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000008aa47e with 0x000000a8 Bytes
+	Serialized data: at 0x00000000008aa5d3 with 0x000000a8 Bytes
+	Export Flags: 0x00000001
+[Export 537]
+	Full Name: ProductEquipProfile_TA body_quartz.body_quartz.body_quartz.ProductEquipProfile_TA_1
+	Name: ProductEquipProfile_TA_1
+	Class: ProductEquipProfile_TA
+	Outer: body_quartz
+	Object Flags: 0x0007000400000000
+	Serialized data: at 0x0000000000cc5a0d with 0x0000000c Bytes
+	Export Flags: 0x00000001
+[Export 538]
+	Full Name: Texture2D body_quartz.body_quartz.body_quartz_fxmasks
+	Name: body_quartz_fxmasks
+	Class: Texture2D
+	Outer: body_quartz
+	Object Flags: 0x000f000400000000
+	Serialized data: at 0x0000000000cc5a19 with 0x000017ac Bytes
+	Export Flags: 0x00000001
+[Export 539]
+	Full Name: Texture2D body_quartz.body_quartz.body_quartz_normal
+	Name: body_quartz_normal
+	Class: Texture2D
+	Outer: body_quartz
+	Object Flags: 0x000f000400000000
+	Serialized data: at 0x0000000000cc71c5 with 0x000017ac Bytes
 	Export Flags: 0x00000001
 
 
@@ -3576,24 +3507,6 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Class
 	Class Package: Core
 	Outer: TAGame
-[Import 77]
-	Full Name: Class TAGame.ProductEquipProfileSlot_Custom_TA
-	Name: ProductEquipProfileSlot_Custom_TA
-	Class: Class
-	Class Package: Core
-	Outer: TAGame
-[Import 78]
-	Full Name: Class TAGame.ProductEquipProfileSlot_Disabled_TA
-	Name: ProductEquipProfileSlot_Disabled_TA
-	Class: Class
-	Class Package: Core
-	Outer: TAGame
-[Import 79]
-	Full Name: Class TAGame.ProductEquipProfileSlot_ForcedProduct_TA
-	Name: ProductEquipProfileSlot_ForcedProduct_TA
-	Class: Class
-	Class Package: Core
-	Outer: TAGame
 [Import 89]
 	Full Name: FXActorEvent_X FXActorEvents.Boost
 	Name: Boost
@@ -3649,30 +3562,6 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: TAGame
 	Class: Package
 	Class Package: Core
-[Import 112]
-	Full Name: ProductAssetReference_TA TAGame.Default__ProductEquipProfileSlot_ForcedProduct_TA.DefaultForcedProduct
-	Name: DefaultForcedProduct
-	Class: ProductAssetReference_TA
-	Class Package: TAGame
-	Outer: Default__ProductEquipProfileSlot_ForcedProduct_TA
-[Import 114]
-	Full Name: ProductEquipProfile_TA TAGame.Default__ProductEquipProfile_TA
-	Name: Default__ProductEquipProfile_TA
-	Class: ProductEquipProfile_TA
-	Class Package: TAGame
-	Outer: TAGame
-[Import 115]
-	Full Name: ProductEquipProfileSlot_Enabled_TA TAGame.Default__ProductEquipProfile_TA.SlotEnabled
-	Name: SlotEnabled
-	Class: ProductEquipProfileSlot_Enabled_TA
-	Class Package: TAGame
-	Outer: Default__ProductEquipProfile_TA
-[Import 116]
-	Full Name: ProductEquipProfileSlot_ForcedProduct_TA TAGame.Default__ProductEquipProfileSlot_ForcedProduct_TA
-	Name: Default__ProductEquipProfileSlot_ForcedProduct_TA
-	Class: ProductEquipProfileSlot_ForcedProduct_TA
-	Class Package: TAGame
-	Outer: TAGame
 [Import 132]
 	Full Name: HandlingPreset_TA Presets.MuscleCar
 	Name: MuscleCar
@@ -3824,12 +3713,6 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductAsset_Body_TA
 	Class Package: TAGame
 	Outer: Body
-[Import 161]
-	Full Name: ProductEquipProfile_TA ProductSlots.Body.ProductAsset_Body_TA_2.DefaultEquipProfile
-	Name: DefaultEquipProfile
-	Class: ProductEquipProfile_TA
-	Class Package: TAGame
-	Outer: ProductAsset_Body_TA_2
 [Import 162]
 	Full Name: ProductSlot_TA ProductSlots.Body
 	Name: Body

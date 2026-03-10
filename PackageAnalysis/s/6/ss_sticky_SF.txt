@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x0000accd Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 288 Name Offset: 0x00000101
-Export Count: 260 Export Offset: 0x000023d0
-Import Count: 48 Import Offset: 0x00001e90
-Depends Offset: 0x00006cf0
-Import Export Guids Offset: 0x00006cf0
+Name Count: 289 Name Offset: 0x0000010d
+Export Count: 260 Export Offset: 0x00002430
+Import Count: 50 Import Offset: 0x00001eb8
+Depends Offset: 0x00006d50
+Import Export Guids Offset: 0x00006d50
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x6bbb68b4 0x4d6287fc 0x0859a5ab 0x82c2d4d9
+GUID: 0x171c53f2 0x418b0dc1 0xfc91d1a5 0xe5675dfc
 Generations:
 [0]
 	Export Count: 260
@@ -34,6 +34,10 @@ Generations:
 [3]
 	Export Count: 260
 	Name Count: 288
+	Net Object Count: 0
+[4]
+	Export Count: 260
+	Name Count: 289
 	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
@@ -64,16 +68,21 @@ Texture Allocations Texture Types:
 	Exports:
 		[0] Texture2D ss_sticky.ss_sticky.BackTrail_E_T
 		[1] Texture2D ss_sticky.ss_sticky.TentaTrail_E_T
-Test Data Size: 0x00003fc1
+Test Data Size: 0x00003f49
 Compressed Chunk Info:
-	Offset: 0x00006bef
+	Offset: 0x00006c43
 	[0]
-		Uncompressed Offset: 0x0000000000006cf0
+		Uncompressed Offset: 0x0000000000006d50
 		Uncompressed Size: 0x0001d5e9
 		Compressed Offset: 0x000000000000accd
 		Compressed Size: 0x00005646
-Last Block Size: 0x0000000c
-Base Header Size: 0x00000101
+	[1]
+		Uncompressed Offset: 0x0000000000024339
+		Uncompressed Size: 0x00000c38
+		Compressed Offset: 0x0000000000010313
+		Compressed Size: 0x000001ef
+Last Block Size: 0x00000000
+Base Header Size: 0x0000010d
 Encrypted Header Size: 0x0000abc0
 
 AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
@@ -112,7 +121,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 [Name 27] [0x0007001000000000] bEnablePreviousTangentRecalculation
 [Name 28] [0x0007001000000000] bExistingAttachment
 [Name 29] [0x0007001000000000] bExistingComponent
-[Name 30] [0x0007001000000000] bExposeToLibrary
+[Name 30] [0x0007000000000000] bExposeToLibrary
 [Name 31] [0x0007001000000000] bIsCachedInPool
 [Name 32] [0x0007001000000000] bKillOnDeactivate
 [Name 33] [0x0007001000000000] BlackMetal_00
@@ -187,7 +196,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 [Name 102] [0x0007001000000000] FoamGradient01_T
 [Name 103] [0x0007001000000000] Format
 [Name 104] [0x0007001000000000] Function
-[Name 105] [0x0007001000000000] FunctionExpressions
+[Name 105] [0x0007000000000000] FunctionExpressions
 [Name 106] [0x0007001000000000] FX
 [Name 107] [0x0007001000000000] FX_PS
 [Name 108] [0x0007001000000000] FXActor_TA
@@ -370,6 +379,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 [Name 285] [0x0007001000000000] WPO
 [Name 286] [0x0007001000000000] X
 [Name 287] [0x0007001000000000] Y
+[Name 288] [0x0007001000000000] IncludePaintIDs
 
 
     ~ Exports ~ 
@@ -381,7 +391,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: FXActor_TA
 	Outer: ss_sticky
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x0000000000006cf0 with 0x0000036f Bytes
+	Serialized data: at 0x0000000000006d50 with 0x0000036f Bytes
 	Export Flags: 0x00000001
 [Export 1]
 	Full Name: FXTrait_PreviewParticle_TA ss_sticky.ss_sticky.SS_Sticky_FXActor.FXTrait_PreviewParticle_TA_0
@@ -389,7 +399,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: FXTrait_PreviewParticle_TA
 	Outer: SS_Sticky_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000000705f with 0x00000028 Bytes
+	Serialized data: at 0x00000000000070bf with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [Export 2]
 	Full Name: Material ss_sticky.ss_sticky.BackTrail_MAT
@@ -397,7 +407,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: Material
 	Outer: ss_sticky
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000007087 with 0x00000325 Bytes
+	Serialized data: at 0x0000000000024339 with 0x00000325 Bytes
 	Export Flags: 0x00000001
 [Export 3]
 	Full Name: Material ss_sticky.ss_sticky.Cone2_MAT
@@ -405,7 +415,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: Material
 	Outer: ss_sticky
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000073ac with 0x00000399 Bytes
+	Serialized data: at 0x000000000000740c with 0x00000399 Bytes
 	Export Flags: 0x00000001
 [Export 4]
 	Full Name: Material ss_sticky.ss_sticky.ConeS_MAT
@@ -413,7 +423,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: Material
 	Outer: ss_sticky
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000007745 with 0x00000469 Bytes
+	Serialized data: at 0x000000000002465e with 0x00000469 Bytes
 	Export Flags: 0x00000001
 [Export 5]
 	Full Name: Material ss_sticky.ss_sticky.TentaTrails_MAT
@@ -421,7 +431,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: Material
 	Outer: ss_sticky
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000007bae with 0x00000405 Bytes
+	Serialized data: at 0x0000000000024ac7 with 0x00000405 Bytes
 	Export Flags: 0x00000001
 [Export 6]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.BackTrail_MAT.MaterialExpressionScalarParameter_1
@@ -429,7 +439,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: BackTrail_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007fb3 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000008013 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 7]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.BackTrail_MAT.MaterialExpressionScalarParameter_6
@@ -437,7 +447,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: BackTrail_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008047 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000080a7 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 8]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.BackTrail_MAT.MaterialExpressionScalarParameter_7
@@ -445,7 +455,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: BackTrail_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000080db with 0x00000094 Bytes
+	Serialized data: at 0x000000000000813b with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 9]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.Cone2_MAT.MaterialExpressionScalarParameter_2
@@ -453,7 +463,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: Cone2_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000816f with 0x00000094 Bytes
+	Serialized data: at 0x00000000000081cf with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 10]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.Cone2_MAT.MaterialExpressionScalarParameter_3
@@ -461,7 +471,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: Cone2_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008203 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000008263 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 11]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.Cone2_MAT.MaterialExpressionScalarParameter_5
@@ -469,7 +479,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: Cone2_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008297 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000082f7 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 12]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.Cone2_MAT.MaterialExpressionScalarParameter_6
@@ -477,7 +487,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: Cone2_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000832b with 0x000000b0 Bytes
+	Serialized data: at 0x000000000000838b with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [Export 13]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.Cone2_MAT.MaterialExpressionScalarParameter_7
@@ -485,7 +495,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: Cone2_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000083db with 0x00000094 Bytes
+	Serialized data: at 0x000000000000843b with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 14]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.Cone2_MAT.MaterialExpressionScalarParameter_8
@@ -493,7 +503,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: Cone2_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000846f with 0x00000094 Bytes
+	Serialized data: at 0x00000000000084cf with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 15]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.Cone2_MAT.MaterialExpressionScalarParameter_9
@@ -501,7 +511,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: Cone2_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008503 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000008563 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 16]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.ConeS_MAT.MaterialExpressionScalarParameter_1
@@ -509,7 +519,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: ConeS_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008597 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000085f7 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 17]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.ConeS_MAT.MaterialExpressionScalarParameter_13
@@ -517,7 +527,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: ConeS_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000862b with 0x00000094 Bytes
+	Serialized data: at 0x000000000000868b with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 18]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.ConeS_MAT.MaterialExpressionScalarParameter_14
@@ -525,7 +535,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: ConeS_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000086bf with 0x000000b0 Bytes
+	Serialized data: at 0x000000000000871f with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [Export 19]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.ConeS_MAT.MaterialExpressionScalarParameter_15
@@ -533,7 +543,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: ConeS_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000876f with 0x00000094 Bytes
+	Serialized data: at 0x00000000000087cf with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 20]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.ConeS_MAT.MaterialExpressionScalarParameter_16
@@ -541,7 +551,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: ConeS_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008803 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000008863 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 21]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.ConeS_MAT.MaterialExpressionScalarParameter_17
@@ -549,7 +559,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: ConeS_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008897 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000088f7 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 22]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.ConeS_MAT.MaterialExpressionScalarParameter_19
@@ -557,7 +567,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: ConeS_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000892b with 0x00000094 Bytes
+	Serialized data: at 0x000000000000898b with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 23]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.ConeS_MAT.MaterialExpressionScalarParameter_22
@@ -565,7 +575,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: ConeS_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000089bf with 0x00000094 Bytes
+	Serialized data: at 0x0000000000008a1f with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 24]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.ConeS_MAT.MaterialExpressionScalarParameter_23
@@ -573,7 +583,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: ConeS_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008a53 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000008ab3 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 25]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.TentaTrails_MAT.MaterialExpressionScalarParameter_19
@@ -581,7 +591,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: TentaTrails_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008ae7 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000008b47 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 26]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.TentaTrails_MAT.MaterialExpressionScalarParameter_58
@@ -589,7 +599,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: TentaTrails_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008b7b with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000008bdb with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 27]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.TentaTrails_MAT.MaterialExpressionScalarParameter_59
@@ -597,7 +607,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: TentaTrails_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008c2f with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000008c8f with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 28]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.TentaTrails_MAT.MaterialExpressionScalarParameter_60
@@ -605,7 +615,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: TentaTrails_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008ce3 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000008d43 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 29]
 	Full Name: MaterialExpressionScalarParameter ss_sticky.ss_sticky.TentaTrails_MAT.MaterialExpressionScalarParameter_61
@@ -613,15 +623,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialExpressionScalarParameter
 	Outer: TentaTrails_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008d97 with 0x000000b4 Bytes
-	Export Flags: 0x00000001
-[Export 30]
-	Full Name: MaterialFunction ss_sticky.Psy_MaterialFunctions.SmoothStep
-	Name: SmoothStep
-	Class: MaterialFunction
-	Outer: Psy_MaterialFunctions
-	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000008e4b with 0x000000b5 Bytes
+	Serialized data: at 0x0000000000008df7 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 31]
 	Full Name: MaterialInstanceConstant ss_sticky.ss_sticky.1_MIC
@@ -629,7 +631,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialInstanceConstant
 	Outer: ss_sticky
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000008f00 with 0x000002b8 Bytes
+	Serialized data: at 0x0000000000008f60 with 0x000002b8 Bytes
 	Export Flags: 0x00000001
 [Export 32]
 	Full Name: MaterialInstanceConstant ss_sticky.ss_sticky.1S_MIC
@@ -637,7 +639,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialInstanceConstant
 	Outer: ss_sticky
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000091b8 with 0x000002b8 Bytes
+	Serialized data: at 0x0000000000009218 with 0x000002b8 Bytes
 	Export Flags: 0x00000001
 [Export 33]
 	Full Name: MaterialInstanceConstant ss_sticky.ss_sticky.2_MIC
@@ -645,7 +647,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialInstanceConstant
 	Outer: ss_sticky
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000009470 with 0x000002b8 Bytes
+	Serialized data: at 0x00000000000094d0 with 0x000002b8 Bytes
 	Export Flags: 0x00000001
 [Export 34]
 	Full Name: MaterialInstanceConstant ss_sticky.ss_sticky.2s_MIC
@@ -653,7 +655,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialInstanceConstant
 	Outer: ss_sticky
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000009728 with 0x000002b8 Bytes
+	Serialized data: at 0x0000000000009788 with 0x000002b8 Bytes
 	Export Flags: 0x00000001
 [Export 35]
 	Full Name: MaterialInstanceConstant ss_sticky.ss_sticky.3_MIC
@@ -661,7 +663,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialInstanceConstant
 	Outer: ss_sticky
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000099e0 with 0x000002b8 Bytes
+	Serialized data: at 0x0000000000009a40 with 0x000002b8 Bytes
 	Export Flags: 0x00000001
 [Export 36]
 	Full Name: MaterialInstanceConstant ss_sticky.ss_sticky.4_MIC
@@ -669,7 +671,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialInstanceConstant
 	Outer: ss_sticky
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000009c98 with 0x000002b8 Bytes
+	Serialized data: at 0x0000000000009cf8 with 0x000002b8 Bytes
 	Export Flags: 0x00000001
 [Export 37]
 	Full Name: MaterialInstanceConstant ss_sticky.ss_sticky.ConeS_MIC
@@ -677,21 +679,21 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: MaterialInstanceConstant
 	Outer: ss_sticky
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000009f50 with 0x0000032c Bytes
+	Serialized data: at 0x0000000000009fb0 with 0x0000032c Bytes
 	Export Flags: 0x00000001
 [Export 38]
 	Full Name: ObjectReferencer ss_sticky.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000000a27c with 0x0000002c Bytes
+	Serialized data: at 0x000000000000a2dc with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [Export 39]
 	Full Name: Package ss_sticky.boost_darkcloud
 	Name: boost_darkcloud
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000a2a8 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000a308 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -701,14 +703,14 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: Package
 	Outer: boost_darkcloud
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000a2b4 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000a314 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 41]
 	Full Name: Package ss_sticky.ItemsMode
 	Name: ItemsMode
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000a2c0 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000a320 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -718,7 +720,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: Package
 	Outer: ItemsMode
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000a2cc with 0x0000000c Bytes
+	Serialized data: at 0x000000000000a32c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 43]
 	Full Name: Package Car.Storm
@@ -726,7 +728,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: Package
 	Outer: Car
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000a2d8 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000a338 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 44]
 	Full Name: Package Storm.Textures
@@ -734,23 +736,14 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: Package
 	Outer: Storm
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000a2e4 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000a344 with 0x0000000c Bytes
 	Export Flags: 0x00000001
-[Export 45]
-	Full Name: Package ss_sticky.Psy_MaterialFunctions
-	Name: Psy_MaterialFunctions
-	Class: Package
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000a2f0 with 0x0000000c Bytes
-	Export Flags: 0x00000001
-	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
-	Package Flags: 0x20000005
 [Export 46]
 	Full Name: Package ss_sticky.ss_kirby
 	Name: ss_kirby
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000a2fc with 0x0000000c Bytes
+	Serialized data: at 0x000000000000a35c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -759,7 +752,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Name: ss_sticky
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000a308 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000a368 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -768,7 +761,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Name: ss_sticky_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000a314 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000a374 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -779,7 +772,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Outer: SS_Sticky_FXActor
 	Archetype: DefaultParameters
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x000000000000a320 with 0x00000010 Bytes
+	Serialized data: at 0x000000000000a380 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 50]
 	Full Name: ParticleLODLevel ss_sticky.ss_sticky.FX_PS.ParticleSpriteEmitter_1.ParticleLODLevel_1
@@ -787,7 +780,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a330 with 0x000000b8 Bytes
+	Serialized data: at 0x000000000000a390 with 0x000000b8 Bytes
 	Export Flags: 0x00000001
 [Export 51]
 	Full Name: ParticleLODLevel ss_sticky.ss_sticky.FX_PS.ParticleSpriteEmitter_11.ParticleLODLevel_1
@@ -795,7 +788,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_11
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a3e8 with 0x000000ac Bytes
+	Serialized data: at 0x000000000000a448 with 0x000000ac Bytes
 	Export Flags: 0x00000001
 [Export 52]
 	Full Name: ParticleLODLevel ss_sticky.ss_sticky.FX_PS.ParticleSpriteEmitter_2.ParticleLODLevel_2
@@ -803,7 +796,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a494 with 0x000000bc Bytes
+	Serialized data: at 0x000000000000a4f4 with 0x000000bc Bytes
 	Export Flags: 0x00000001
 [Export 53]
 	Full Name: ParticleLODLevel ss_sticky.ss_sticky.FX_PS.ParticleSpriteEmitter_3.ParticleLODLevel_3
@@ -811,7 +804,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a550 with 0x000000b8 Bytes
+	Serialized data: at 0x000000000000a5b0 with 0x000000b8 Bytes
 	Export Flags: 0x00000001
 [Export 54]
 	Full Name: ParticleLODLevel ss_sticky.ss_sticky.FX_PS.ParticleSpriteEmitter_4.ParticleLODLevel_4
@@ -819,7 +812,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a608 with 0x000000b8 Bytes
+	Serialized data: at 0x000000000000a668 with 0x000000b8 Bytes
 	Export Flags: 0x00000001
 [Export 55]
 	Full Name: ParticleLODLevel ss_sticky.ss_sticky.FX_PS.ParticleSpriteEmitter_5.ParticleLODLevel_5
@@ -827,7 +820,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_5
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a6c0 with 0x000000b8 Bytes
+	Serialized data: at 0x000000000000a720 with 0x000000b8 Bytes
 	Export Flags: 0x00000001
 [Export 56]
 	Full Name: ParticleLODLevel ss_sticky.ss_sticky.FX_PS.ParticleSpriteEmitter_6.ParticleLODLevel_6
@@ -835,7 +828,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_6
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a778 with 0x000000b0 Bytes
+	Serialized data: at 0x000000000000a7d8 with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [Export 57]
 	Full Name: ParticleLODLevel ss_sticky.ss_sticky.FX_PS.ParticleSpriteEmitter_7.ParticleLODLevel_0
@@ -843,7 +836,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_7
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a828 with 0x000000b0 Bytes
+	Serialized data: at 0x000000000000a888 with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [Export 58]
 	Full Name: ParticleLODLevel ss_sticky.ss_sticky.FX_PS.ParticleSpriteEmitter_8.ParticleLODLevel_2
@@ -851,7 +844,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_8
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a8d8 with 0x000000bc Bytes
+	Serialized data: at 0x000000000000a938 with 0x000000bc Bytes
 	Export Flags: 0x00000001
 [Export 59]
 	Full Name: ParticleLODLevel ss_sticky.ss_sticky.FXGame_PS.ParticleSpriteEmitter_1.ParticleLODLevel_1
@@ -859,7 +852,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a994 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000a9f4 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 60]
 	Full Name: ParticleLODLevel ss_sticky.ss_sticky.FXGame_PS.ParticleSpriteEmitter_11.ParticleLODLevel_1
@@ -867,7 +860,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_11
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000aa48 with 0x000000ac Bytes
+	Serialized data: at 0x000000000000aaa8 with 0x000000ac Bytes
 	Export Flags: 0x00000001
 [Export 61]
 	Full Name: ParticleLODLevel ss_sticky.ss_sticky.FXGame_PS.ParticleSpriteEmitter_2.ParticleLODLevel_2
@@ -875,7 +868,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000aaf4 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000ab54 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 62]
 	Full Name: ParticleLODLevel ss_sticky.ss_sticky.FXGame_PS.ParticleSpriteEmitter_3.ParticleLODLevel_3
@@ -883,7 +876,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000aba8 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000ac08 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 63]
 	Full Name: ParticleLODLevel ss_sticky.ss_sticky.FXGame_PS.ParticleSpriteEmitter_4.ParticleLODLevel_4
@@ -891,7 +884,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ac5c with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000acbc with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 64]
 	Full Name: ParticleLODLevel ss_sticky.ss_sticky.FXGame_PS.ParticleSpriteEmitter_5.ParticleLODLevel_5
@@ -899,7 +892,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_5
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ad10 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000ad70 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 65]
 	Full Name: ParticleLODLevel ss_sticky.ss_sticky.FXGame_PS.ParticleSpriteEmitter_6.ParticleLODLevel_6
@@ -907,7 +900,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_6
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000adc4 with 0x000000b0 Bytes
+	Serialized data: at 0x000000000000ae24 with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [Export 66]
 	Full Name: ParticleLODLevel ss_sticky.ss_sticky.FXGame_PS.ParticleSpriteEmitter_7.ParticleLODLevel_0
@@ -915,7 +908,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_7
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ae74 with 0x000000b0 Bytes
+	Serialized data: at 0x000000000000aed4 with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [Export 67]
 	Full Name: ParticleLODLevel ss_sticky.ss_sticky.FXGame_PS.ParticleSpriteEmitter_8.ParticleLODLevel_2
@@ -923,7 +916,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_8
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000af24 with 0x000000b8 Bytes
+	Serialized data: at 0x000000000000af84 with 0x000000b8 Bytes
 	Export Flags: 0x00000001
 [Export 68]
 	Full Name: ParticleModuleColor ss_sticky.ss_sticky.FX_PS.ParticleModuleColor_1
@@ -931,7 +924,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleColor
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000afdc with 0x000000b5 Bytes
+	Serialized data: at 0x000000000000b03c with 0x000000b5 Bytes
 	Export Flags: 0x00000001
 [Export 69]
 	Full Name: ParticleModuleColor ss_sticky.ss_sticky.FX_PS.ParticleModuleColor_10
@@ -939,7 +932,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleColor
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b091 with 0x000000b5 Bytes
+	Serialized data: at 0x000000000000b0f1 with 0x000000b5 Bytes
 	Export Flags: 0x00000001
 [Export 70]
 	Full Name: ParticleModuleColor ss_sticky.ss_sticky.FX_PS.ParticleModuleColor_2
@@ -947,7 +940,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleColor
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b146 with 0x000000b5 Bytes
+	Serialized data: at 0x000000000000b1a6 with 0x000000b5 Bytes
 	Export Flags: 0x00000001
 [Export 71]
 	Full Name: ParticleModuleColor ss_sticky.ss_sticky.FX_PS.ParticleModuleColor_3
@@ -955,7 +948,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleColor
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b1fb with 0x000000b5 Bytes
+	Serialized data: at 0x000000000000b25b with 0x000000b5 Bytes
 	Export Flags: 0x00000001
 [Export 72]
 	Full Name: ParticleModuleColor ss_sticky.ss_sticky.FX_PS.ParticleModuleColor_4
@@ -963,7 +956,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleColor
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b2b0 with 0x000000b5 Bytes
+	Serialized data: at 0x000000000000b310 with 0x000000b5 Bytes
 	Export Flags: 0x00000001
 [Export 73]
 	Full Name: ParticleModuleColor ss_sticky.ss_sticky.FX_PS.ParticleModuleColor_5
@@ -971,7 +964,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleColor
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b365 with 0x000000b5 Bytes
+	Serialized data: at 0x000000000000b3c5 with 0x000000b5 Bytes
 	Export Flags: 0x00000001
 [Export 74]
 	Full Name: ParticleModuleColor ss_sticky.ss_sticky.FX_PS.ParticleModuleColor_6
@@ -979,7 +972,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleColor
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b41a with 0x000000b5 Bytes
+	Serialized data: at 0x000000000000b47a with 0x000000b5 Bytes
 	Export Flags: 0x00000001
 [Export 75]
 	Full Name: ParticleModuleColor ss_sticky.ss_sticky.FX_PS.ParticleModuleColor_7
@@ -987,7 +980,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleColor
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b4cf with 0x000000b5 Bytes
+	Serialized data: at 0x000000000000b52f with 0x000000b5 Bytes
 	Export Flags: 0x00000001
 [Export 76]
 	Full Name: ParticleModuleColor ss_sticky.ss_sticky.FX_PS.ParticleModuleColor_8
@@ -995,7 +988,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleColor
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b584 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000000b5e4 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 77]
 	Full Name: ParticleModuleColor ss_sticky.ss_sticky.FX_PS.ParticleModuleColor_9
@@ -1003,7 +996,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleColor
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b675 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000000b6d5 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 78]
 	Full Name: ParticleModuleColor ss_sticky.ss_sticky.FXGame_PS.ParticleModuleColor_10
@@ -1011,7 +1004,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleColor
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b766 with 0x000000b5 Bytes
+	Serialized data: at 0x000000000000b7c6 with 0x000000b5 Bytes
 	Export Flags: 0x00000001
 [Export 79]
 	Full Name: ParticleModuleColor ss_sticky.ss_sticky.FXGame_PS.ParticleModuleColor_5
@@ -1019,7 +1012,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleColor
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b81b with 0x000000f1 Bytes
+	Serialized data: at 0x000000000000b87b with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 80]
 	Full Name: ParticleModuleColor ss_sticky.ss_sticky.FXGame_PS.ParticleModuleColor_6
@@ -1027,7 +1020,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleColor
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b90c with 0x000000b5 Bytes
+	Serialized data: at 0x000000000000b96c with 0x000000b5 Bytes
 	Export Flags: 0x00000001
 [Export 81]
 	Full Name: ParticleModuleColor ss_sticky.ss_sticky.FXGame_PS.ParticleModuleColor_8
@@ -1035,7 +1028,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleColor
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b9c1 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000000ba21 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 82]
 	Full Name: ParticleModuleColorScaleOverLife ss_sticky.ss_sticky.FX_PS.ParticleModuleColorScaleOverLife_0
@@ -1043,7 +1036,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bab2 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000000bb12 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 83]
 	Full Name: ParticleModuleColorScaleOverLife ss_sticky.ss_sticky.FX_PS.ParticleModuleColorScaleOverLife_1
@@ -1051,7 +1044,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bba3 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000000bc03 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 84]
 	Full Name: ParticleModuleColorScaleOverLife ss_sticky.ss_sticky.FXGame_PS.ParticleModuleColorScaleOverLife_0
@@ -1059,7 +1052,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bc94 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000000bcf4 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 85]
 	Full Name: ParticleModuleColorScaleOverLife ss_sticky.ss_sticky.FXGame_PS.ParticleModuleColorScaleOverLife_2
@@ -1067,7 +1060,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bd85 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000000bde5 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 86]
 	Full Name: ParticleModuleLifetime ss_sticky.ss_sticky.FX_PS.ParticleModuleLifetime_1
@@ -1075,7 +1068,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLifetime
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000be76 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000bed6 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 87]
 	Full Name: ParticleModuleLifetime ss_sticky.ss_sticky.FX_PS.ParticleModuleLifetime_11
@@ -1083,7 +1076,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLifetime
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bf13 with 0x00000071 Bytes
+	Serialized data: at 0x000000000000bf73 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 88]
 	Full Name: ParticleModuleLifetime ss_sticky.ss_sticky.FX_PS.ParticleModuleLifetime_2
@@ -1091,7 +1084,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLifetime
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bf84 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000bfe4 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 89]
 	Full Name: ParticleModuleLifetime ss_sticky.ss_sticky.FX_PS.ParticleModuleLifetime_3
@@ -1099,7 +1092,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLifetime
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c021 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000c081 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 90]
 	Full Name: ParticleModuleLifetime ss_sticky.ss_sticky.FX_PS.ParticleModuleLifetime_4
@@ -1107,7 +1100,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLifetime
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c0be with 0x0000009d Bytes
+	Serialized data: at 0x000000000000c11e with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 91]
 	Full Name: ParticleModuleLifetime ss_sticky.ss_sticky.FX_PS.ParticleModuleLifetime_5
@@ -1115,7 +1108,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLifetime
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c15b with 0x0000009d Bytes
+	Serialized data: at 0x000000000000c1bb with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 92]
 	Full Name: ParticleModuleLifetime ss_sticky.ss_sticky.FX_PS.ParticleModuleLifetime_6
@@ -1123,7 +1116,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLifetime
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c1f8 with 0x00000071 Bytes
+	Serialized data: at 0x000000000000c258 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 93]
 	Full Name: ParticleModuleLifetime ss_sticky.ss_sticky.FX_PS.ParticleModuleLifetime_7
@@ -1131,7 +1124,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLifetime
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c269 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000c2c9 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 94]
 	Full Name: ParticleModuleLifetime ss_sticky.ss_sticky.FX_PS.ParticleModuleLifetime_8
@@ -1139,7 +1132,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLifetime
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c306 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000c366 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 95]
 	Full Name: ParticleModuleLifetime ss_sticky.ss_sticky.FXGame_PS.ParticleModuleLifetime_1
@@ -1147,7 +1140,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLifetime
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c3a3 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000c403 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 96]
 	Full Name: ParticleModuleLifetime ss_sticky.ss_sticky.FXGame_PS.ParticleModuleLifetime_11
@@ -1155,7 +1148,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLifetime
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c440 with 0x00000071 Bytes
+	Serialized data: at 0x000000000000c4a0 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 97]
 	Full Name: ParticleModuleLifetime ss_sticky.ss_sticky.FXGame_PS.ParticleModuleLifetime_2
@@ -1163,7 +1156,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLifetime
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c4b1 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000c511 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 98]
 	Full Name: ParticleModuleLifetime ss_sticky.ss_sticky.FXGame_PS.ParticleModuleLifetime_3
@@ -1171,7 +1164,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLifetime
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c54e with 0x0000009d Bytes
+	Serialized data: at 0x000000000000c5ae with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 99]
 	Full Name: ParticleModuleLifetime ss_sticky.ss_sticky.FXGame_PS.ParticleModuleLifetime_4
@@ -1179,7 +1172,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLifetime
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c5eb with 0x0000009d Bytes
+	Serialized data: at 0x000000000000c64b with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 100]
 	Full Name: ParticleModuleLifetime ss_sticky.ss_sticky.FXGame_PS.ParticleModuleLifetime_5
@@ -1187,7 +1180,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLifetime
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c688 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000c6e8 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 101]
 	Full Name: ParticleModuleLifetime ss_sticky.ss_sticky.FXGame_PS.ParticleModuleLifetime_6
@@ -1195,7 +1188,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLifetime
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c725 with 0x00000071 Bytes
+	Serialized data: at 0x000000000000c785 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 102]
 	Full Name: ParticleModuleLifetime ss_sticky.ss_sticky.FXGame_PS.ParticleModuleLifetime_7
@@ -1203,7 +1196,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLifetime
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c796 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000c7f6 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 103]
 	Full Name: ParticleModuleLifetime ss_sticky.ss_sticky.FXGame_PS.ParticleModuleLifetime_8
@@ -1211,7 +1204,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLifetime
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c833 with 0x0000009d Bytes
+	Serialized data: at 0x000000000000c893 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 104]
 	Full Name: ParticleModuleLocation ss_sticky.ss_sticky.FX_PS.ParticleModuleLocation_1
@@ -1219,7 +1212,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLocation
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c8d0 with 0x000000ad Bytes
+	Serialized data: at 0x000000000000c930 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 105]
 	Full Name: ParticleModuleLocation ss_sticky.ss_sticky.FX_PS.ParticleModuleLocation_2
@@ -1227,7 +1220,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLocation
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c97d with 0x000000ad Bytes
+	Serialized data: at 0x000000000000c9dd with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 106]
 	Full Name: ParticleModuleLocation ss_sticky.ss_sticky.FX_PS.ParticleModuleLocation_3
@@ -1235,7 +1228,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLocation
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ca2a with 0x000000ad Bytes
+	Serialized data: at 0x000000000000ca8a with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 107]
 	Full Name: ParticleModuleLocation ss_sticky.ss_sticky.FX_PS.ParticleModuleLocation_4
@@ -1243,7 +1236,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLocation
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cad7 with 0x000000ad Bytes
+	Serialized data: at 0x000000000000cb37 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 108]
 	Full Name: ParticleModuleLocation ss_sticky.ss_sticky.FX_PS.ParticleModuleLocation_5
@@ -1251,7 +1244,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLocation
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cb84 with 0x000000ad Bytes
+	Serialized data: at 0x000000000000cbe4 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 109]
 	Full Name: ParticleModuleLocation ss_sticky.ss_sticky.FX_PS.ParticleModuleLocation_6
@@ -1259,7 +1252,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLocation
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cc31 with 0x000000ad Bytes
+	Serialized data: at 0x000000000000cc91 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 110]
 	Full Name: ParticleModuleLocation ss_sticky.ss_sticky.FX_PS.ParticleModuleLocation_7
@@ -1267,7 +1260,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLocation
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ccde with 0x000000ad Bytes
+	Serialized data: at 0x000000000000cd3e with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 111]
 	Full Name: ParticleModuleLocation ss_sticky.ss_sticky.FX_PS.ParticleModuleLocation_8
@@ -1275,7 +1268,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLocation
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cd8b with 0x000000ad Bytes
+	Serialized data: at 0x000000000000cdeb with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 112]
 	Full Name: ParticleModuleLocation ss_sticky.ss_sticky.FX_PS.ParticleModuleLocation_9
@@ -1283,7 +1276,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLocation
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ce38 with 0x000000ad Bytes
+	Serialized data: at 0x000000000000ce98 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 113]
 	Full Name: ParticleModuleLocation ss_sticky.ss_sticky.FXGame_PS.ParticleModuleLocation_1
@@ -1291,7 +1284,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLocation
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cee5 with 0x000000ad Bytes
+	Serialized data: at 0x000000000000cf45 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 114]
 	Full Name: ParticleModuleLocation ss_sticky.ss_sticky.FXGame_PS.ParticleModuleLocation_2
@@ -1299,7 +1292,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLocation
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cf92 with 0x000000ad Bytes
+	Serialized data: at 0x000000000000cff2 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 115]
 	Full Name: ParticleModuleLocation ss_sticky.ss_sticky.FXGame_PS.ParticleModuleLocation_3
@@ -1307,7 +1300,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLocation
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d03f with 0x000000ad Bytes
+	Serialized data: at 0x000000000000d09f with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 116]
 	Full Name: ParticleModuleLocation ss_sticky.ss_sticky.FXGame_PS.ParticleModuleLocation_4
@@ -1315,7 +1308,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLocation
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d0ec with 0x000000ad Bytes
+	Serialized data: at 0x000000000000d14c with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 117]
 	Full Name: ParticleModuleLocation ss_sticky.ss_sticky.FXGame_PS.ParticleModuleLocation_5
@@ -1323,7 +1316,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLocation
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d199 with 0x000000ad Bytes
+	Serialized data: at 0x000000000000d1f9 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 118]
 	Full Name: ParticleModuleLocation ss_sticky.ss_sticky.FXGame_PS.ParticleModuleLocation_6
@@ -1331,7 +1324,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLocation
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d246 with 0x000000ad Bytes
+	Serialized data: at 0x000000000000d2a6 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 119]
 	Full Name: ParticleModuleLocation ss_sticky.ss_sticky.FXGame_PS.ParticleModuleLocation_7
@@ -1339,7 +1332,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLocation
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d2f3 with 0x000000ad Bytes
+	Serialized data: at 0x000000000000d353 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 120]
 	Full Name: ParticleModuleLocation ss_sticky.ss_sticky.FXGame_PS.ParticleModuleLocation_8
@@ -1347,7 +1340,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLocation
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d3a0 with 0x000000ad Bytes
+	Serialized data: at 0x000000000000d400 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 121]
 	Full Name: ParticleModuleLocation ss_sticky.ss_sticky.FXGame_PS.ParticleModuleLocation_9
@@ -1355,7 +1348,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleLocation
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d44d with 0x000000ad Bytes
+	Serialized data: at 0x000000000000d4ad with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 122]
 	Full Name: ParticleModuleMeshRotation_Seeded ss_sticky.ss_sticky.FX_PS.ParticleModuleMeshRotation_Seeded_3
@@ -1363,7 +1356,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleMeshRotation_Seeded
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d4fa with 0x00000110 Bytes
+	Serialized data: at 0x000000000000d55a with 0x00000110 Bytes
 	Export Flags: 0x00000001
 [Export 123]
 	Full Name: ParticleModuleMeshRotation_Seeded ss_sticky.ss_sticky.FXGame_PS.ParticleModuleMeshRotation_Seeded_3
@@ -1371,7 +1364,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleMeshRotation_Seeded
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d60a with 0x00000110 Bytes
+	Serialized data: at 0x000000000000d66a with 0x00000110 Bytes
 	Export Flags: 0x00000001
 [Export 124]
 	Full Name: ParticleModuleParameterDynamic ss_sticky.ss_sticky.FX_PS.ParticleModuleParameterDynamic_0
@@ -1379,7 +1372,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleParameterDynamic
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d71a with 0x00000781 Bytes
+	Serialized data: at 0x000000000000d77a with 0x00000781 Bytes
 	Export Flags: 0x00000001
 [Export 125]
 	Full Name: ParticleModuleParameterDynamic ss_sticky.ss_sticky.FX_PS.ParticleModuleParameterDynamic_1
@@ -1387,7 +1380,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleParameterDynamic
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000de9b with 0x00000781 Bytes
+	Serialized data: at 0x000000000000defb with 0x00000781 Bytes
 	Export Flags: 0x00000001
 [Export 126]
 	Full Name: ParticleModuleParameterDynamic ss_sticky.ss_sticky.FX_PS.ParticleModuleParameterDynamic_2
@@ -1395,7 +1388,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleParameterDynamic
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e61c with 0x00000781 Bytes
+	Serialized data: at 0x000000000000e67c with 0x00000781 Bytes
 	Export Flags: 0x00000001
 [Export 127]
 	Full Name: ParticleModuleParameterDynamic ss_sticky.ss_sticky.FX_PS.ParticleModuleParameterDynamic_3
@@ -1403,7 +1396,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleParameterDynamic
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ed9d with 0x00000781 Bytes
+	Serialized data: at 0x000000000000edfd with 0x00000781 Bytes
 	Export Flags: 0x00000001
 [Export 128]
 	Full Name: ParticleModuleParameterDynamic ss_sticky.ss_sticky.FX_PS.ParticleModuleParameterDynamic_4
@@ -1411,7 +1404,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleParameterDynamic
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000f51e with 0x00000781 Bytes
+	Serialized data: at 0x000000000000f57e with 0x00000781 Bytes
 	Export Flags: 0x00000001
 [Export 129]
 	Full Name: ParticleModuleParameterDynamic ss_sticky.ss_sticky.FX_PS.ParticleModuleParameterDynamic_5
@@ -1419,7 +1412,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleParameterDynamic
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000fc9f with 0x00000781 Bytes
+	Serialized data: at 0x000000000000fcff with 0x00000781 Bytes
 	Export Flags: 0x00000001
 [Export 130]
 	Full Name: ParticleModuleParameterDynamic ss_sticky.ss_sticky.FX_PS.ParticleModuleParameterDynamic_6
@@ -1427,7 +1420,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleParameterDynamic
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000010420 with 0x00000781 Bytes
+	Serialized data: at 0x0000000000010480 with 0x00000781 Bytes
 	Export Flags: 0x00000001
 [Export 131]
 	Full Name: ParticleModuleParameterDynamic ss_sticky.ss_sticky.FXGame_PS.ParticleModuleParameterDynamic_0
@@ -1435,7 +1428,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleParameterDynamic
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000010ba1 with 0x00000781 Bytes
+	Serialized data: at 0x0000000000010c01 with 0x00000781 Bytes
 	Export Flags: 0x00000001
 [Export 132]
 	Full Name: ParticleModuleParameterDynamic ss_sticky.ss_sticky.FXGame_PS.ParticleModuleParameterDynamic_1
@@ -1443,7 +1436,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleParameterDynamic
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011322 with 0x00000781 Bytes
+	Serialized data: at 0x0000000000011382 with 0x00000781 Bytes
 	Export Flags: 0x00000001
 [Export 133]
 	Full Name: ParticleModuleParameterDynamic ss_sticky.ss_sticky.FXGame_PS.ParticleModuleParameterDynamic_2
@@ -1451,7 +1444,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleParameterDynamic
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011aa3 with 0x00000781 Bytes
+	Serialized data: at 0x0000000000011b03 with 0x00000781 Bytes
 	Export Flags: 0x00000001
 [Export 134]
 	Full Name: ParticleModuleParameterDynamic ss_sticky.ss_sticky.FXGame_PS.ParticleModuleParameterDynamic_3
@@ -1459,7 +1452,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleParameterDynamic
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012224 with 0x00000781 Bytes
+	Serialized data: at 0x0000000000012284 with 0x00000781 Bytes
 	Export Flags: 0x00000001
 [Export 135]
 	Full Name: ParticleModuleParameterDynamic ss_sticky.ss_sticky.FXGame_PS.ParticleModuleParameterDynamic_4
@@ -1467,7 +1460,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleParameterDynamic
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000129a5 with 0x00000781 Bytes
+	Serialized data: at 0x0000000000012a05 with 0x00000781 Bytes
 	Export Flags: 0x00000001
 [Export 136]
 	Full Name: ParticleModuleParameterDynamic ss_sticky.ss_sticky.FXGame_PS.ParticleModuleParameterDynamic_5
@@ -1475,7 +1468,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleParameterDynamic
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000013126 with 0x00000781 Bytes
+	Serialized data: at 0x0000000000013186 with 0x00000781 Bytes
 	Export Flags: 0x00000001
 [Export 137]
 	Full Name: ParticleModuleParameterDynamic ss_sticky.ss_sticky.FXGame_PS.ParticleModuleParameterDynamic_6
@@ -1483,7 +1476,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleParameterDynamic
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000138a7 with 0x00000781 Bytes
+	Serialized data: at 0x0000000000013907 with 0x00000781 Bytes
 	Export Flags: 0x00000001
 [Export 138]
 	Full Name: ParticleModuleRequired ss_sticky.ss_sticky.FX_PS.ParticleModuleRequired_1
@@ -1491,7 +1484,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleRequired
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014028 with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000014088 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 139]
 	Full Name: ParticleModuleRequired ss_sticky.ss_sticky.FX_PS.ParticleModuleRequired_11
@@ -1499,7 +1492,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleRequired
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001411c with 0x00000129 Bytes
+	Serialized data: at 0x000000000001417c with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [Export 140]
 	Full Name: ParticleModuleRequired ss_sticky.ss_sticky.FX_PS.ParticleModuleRequired_2
@@ -1507,7 +1500,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleRequired
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014245 with 0x000000f4 Bytes
+	Serialized data: at 0x00000000000142a5 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 141]
 	Full Name: ParticleModuleRequired ss_sticky.ss_sticky.FX_PS.ParticleModuleRequired_3
@@ -1515,7 +1508,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleRequired
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014339 with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000014399 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 142]
 	Full Name: ParticleModuleRequired ss_sticky.ss_sticky.FX_PS.ParticleModuleRequired_4
@@ -1523,7 +1516,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleRequired
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001442d with 0x000000f4 Bytes
+	Serialized data: at 0x000000000001448d with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 143]
 	Full Name: ParticleModuleRequired ss_sticky.ss_sticky.FX_PS.ParticleModuleRequired_5
@@ -1531,7 +1524,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleRequired
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014521 with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000014581 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 144]
 	Full Name: ParticleModuleRequired ss_sticky.ss_sticky.FX_PS.ParticleModuleRequired_6
@@ -1539,7 +1532,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleRequired
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014615 with 0x00000129 Bytes
+	Serialized data: at 0x0000000000014675 with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [Export 145]
 	Full Name: ParticleModuleRequired ss_sticky.ss_sticky.FX_PS.ParticleModuleRequired_7
@@ -1547,7 +1540,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleRequired
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001473e with 0x000000f4 Bytes
+	Serialized data: at 0x000000000001479e with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 146]
 	Full Name: ParticleModuleRequired ss_sticky.ss_sticky.FX_PS.ParticleModuleRequired_8
@@ -1555,7 +1548,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleRequired
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014832 with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000014892 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 147]
 	Full Name: ParticleModuleRequired ss_sticky.ss_sticky.FXGame_PS.ParticleModuleRequired_1
@@ -1563,7 +1556,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleRequired
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014926 with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000014986 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 148]
 	Full Name: ParticleModuleRequired ss_sticky.ss_sticky.FXGame_PS.ParticleModuleRequired_11
@@ -1571,7 +1564,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleRequired
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014a1a with 0x00000129 Bytes
+	Serialized data: at 0x0000000000014a7a with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [Export 149]
 	Full Name: ParticleModuleRequired ss_sticky.ss_sticky.FXGame_PS.ParticleModuleRequired_2
@@ -1579,7 +1572,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleRequired
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014b43 with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000014ba3 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 150]
 	Full Name: ParticleModuleRequired ss_sticky.ss_sticky.FXGame_PS.ParticleModuleRequired_3
@@ -1587,7 +1580,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleRequired
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014c37 with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000014c97 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 151]
 	Full Name: ParticleModuleRequired ss_sticky.ss_sticky.FXGame_PS.ParticleModuleRequired_4
@@ -1595,7 +1588,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleRequired
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014d2b with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000014d8b with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 152]
 	Full Name: ParticleModuleRequired ss_sticky.ss_sticky.FXGame_PS.ParticleModuleRequired_5
@@ -1603,7 +1596,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleRequired
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014e1f with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000014e7f with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 153]
 	Full Name: ParticleModuleRequired ss_sticky.ss_sticky.FXGame_PS.ParticleModuleRequired_6
@@ -1611,7 +1604,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleRequired
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014f13 with 0x00000129 Bytes
+	Serialized data: at 0x0000000000014f73 with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [Export 154]
 	Full Name: ParticleModuleRequired ss_sticky.ss_sticky.FXGame_PS.ParticleModuleRequired_7
@@ -1619,7 +1612,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleRequired
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001503c with 0x000000f4 Bytes
+	Serialized data: at 0x000000000001509c with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 155]
 	Full Name: ParticleModuleRequired ss_sticky.ss_sticky.FXGame_PS.ParticleModuleRequired_8
@@ -1627,7 +1620,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleRequired
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015130 with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000015190 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 156]
 	Full Name: ParticleModuleSize ss_sticky.ss_sticky.FX_PS.ParticleModuleSize_1
@@ -1635,7 +1628,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSize
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015224 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000015284 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 157]
 	Full Name: ParticleModuleSize ss_sticky.ss_sticky.FX_PS.ParticleModuleSize_2
@@ -1643,7 +1636,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSize
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000152d1 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000015331 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 158]
 	Full Name: ParticleModuleSize ss_sticky.ss_sticky.FX_PS.ParticleModuleSize_3
@@ -1651,7 +1644,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSize
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001537e with 0x000000ad Bytes
+	Serialized data: at 0x00000000000153de with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 159]
 	Full Name: ParticleModuleSize ss_sticky.ss_sticky.FX_PS.ParticleModuleSize_4
@@ -1659,7 +1652,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSize
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001542b with 0x000000ad Bytes
+	Serialized data: at 0x000000000001548b with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 160]
 	Full Name: ParticleModuleSize ss_sticky.ss_sticky.FX_PS.ParticleModuleSize_5
@@ -1667,7 +1660,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSize
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000154d8 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000015538 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 161]
 	Full Name: ParticleModuleSize ss_sticky.ss_sticky.FX_PS.ParticleModuleSize_6
@@ -1675,7 +1668,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSize
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015585 with 0x000000ad Bytes
+	Serialized data: at 0x00000000000155e5 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 162]
 	Full Name: ParticleModuleSize ss_sticky.ss_sticky.FX_PS.ParticleModuleSize_7
@@ -1683,7 +1676,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSize
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015632 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000015692 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 163]
 	Full Name: ParticleModuleSize ss_sticky.ss_sticky.FX_PS.ParticleModuleSize_8
@@ -1691,7 +1684,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSize
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000156df with 0x000000ad Bytes
+	Serialized data: at 0x000000000001573f with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 164]
 	Full Name: ParticleModuleSize ss_sticky.ss_sticky.FX_PS.ParticleModuleSize_9
@@ -1699,7 +1692,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSize
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001578c with 0x000000ad Bytes
+	Serialized data: at 0x00000000000157ec with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 165]
 	Full Name: ParticleModuleSize ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSize_1
@@ -1707,7 +1700,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSize
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015839 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000015899 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 166]
 	Full Name: ParticleModuleSize ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSize_2
@@ -1715,7 +1708,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSize
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000158e6 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000015946 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 167]
 	Full Name: ParticleModuleSize ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSize_3
@@ -1723,7 +1716,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSize
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015993 with 0x000000ad Bytes
+	Serialized data: at 0x00000000000159f3 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 168]
 	Full Name: ParticleModuleSize ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSize_4
@@ -1731,7 +1724,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSize
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015a40 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000015aa0 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 169]
 	Full Name: ParticleModuleSize ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSize_5
@@ -1739,7 +1732,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSize
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015aed with 0x000000ad Bytes
+	Serialized data: at 0x0000000000015b4d with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 170]
 	Full Name: ParticleModuleSize ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSize_6
@@ -1747,7 +1740,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSize
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015b9a with 0x000000ad Bytes
+	Serialized data: at 0x0000000000015bfa with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 171]
 	Full Name: ParticleModuleSize ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSize_7
@@ -1755,7 +1748,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSize
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015c47 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000015ca7 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 172]
 	Full Name: ParticleModuleSize ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSize_8
@@ -1763,7 +1756,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSize
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015cf4 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000015d54 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 173]
 	Full Name: ParticleModuleSize ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSize_9
@@ -1771,7 +1764,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSize
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015da1 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000015e01 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 174]
 	Full Name: ParticleModuleSizeScale ss_sticky.ss_sticky.FX_PS.ParticleModuleSizeScale_1
@@ -1779,7 +1772,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSizeScale
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015e4e with 0x000001ad Bytes
+	Serialized data: at 0x0000000000015eae with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 175]
 	Full Name: ParticleModuleSizeScale ss_sticky.ss_sticky.FX_PS.ParticleModuleSizeScale_2
@@ -1787,7 +1780,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSizeScale
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015ffb with 0x000001ad Bytes
+	Serialized data: at 0x000000000001605b with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 176]
 	Full Name: ParticleModuleSizeScale ss_sticky.ss_sticky.FX_PS.ParticleModuleSizeScale_3
@@ -1795,7 +1788,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSizeScale
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000161a8 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000016208 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 177]
 	Full Name: ParticleModuleSizeScale ss_sticky.ss_sticky.FX_PS.ParticleModuleSizeScale_4
@@ -1803,7 +1796,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSizeScale
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016355 with 0x000001ad Bytes
+	Serialized data: at 0x00000000000163b5 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 178]
 	Full Name: ParticleModuleSizeScale ss_sticky.ss_sticky.FX_PS.ParticleModuleSizeScale_5
@@ -1811,7 +1804,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSizeScale
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016502 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000016562 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 179]
 	Full Name: ParticleModuleSizeScale ss_sticky.ss_sticky.FX_PS.ParticleModuleSizeScale_6
@@ -1819,7 +1812,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSizeScale
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000166af with 0x000001ad Bytes
+	Serialized data: at 0x000000000001670f with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 180]
 	Full Name: ParticleModuleSizeScale ss_sticky.ss_sticky.FX_PS.ParticleModuleSizeScale_7
@@ -1827,7 +1820,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSizeScale
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001685c with 0x000001ad Bytes
+	Serialized data: at 0x00000000000168bc with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 181]
 	Full Name: ParticleModuleSizeScale ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSizeScale_1
@@ -1835,7 +1828,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSizeScale
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016a09 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000016a69 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 182]
 	Full Name: ParticleModuleSizeScale ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSizeScale_2
@@ -1843,7 +1836,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSizeScale
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016bb6 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000016c16 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 183]
 	Full Name: ParticleModuleSizeScale ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSizeScale_3
@@ -1851,7 +1844,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSizeScale
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016d63 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000016dc3 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 184]
 	Full Name: ParticleModuleSizeScale ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSizeScale_4
@@ -1859,7 +1852,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSizeScale
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016f10 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000016f70 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 185]
 	Full Name: ParticleModuleSizeScale ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSizeScale_5
@@ -1867,7 +1860,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSizeScale
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000170bd with 0x000001ad Bytes
+	Serialized data: at 0x000000000001711d with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 186]
 	Full Name: ParticleModuleSizeScale ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSizeScale_6
@@ -1875,7 +1868,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSizeScale
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001726a with 0x000001ad Bytes
+	Serialized data: at 0x00000000000172ca with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 187]
 	Full Name: ParticleModuleSizeScale ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSizeScale_7
@@ -1883,7 +1876,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSizeScale
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017417 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000017477 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 188]
 	Full Name: ParticleModuleSpawn ss_sticky.ss_sticky.FX_PS.ParticleModuleSpawn_1
@@ -1891,7 +1884,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSpawn
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000175c4 with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000017624 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 189]
 	Full Name: ParticleModuleSpawn ss_sticky.ss_sticky.FX_PS.ParticleModuleSpawn_11
@@ -1899,7 +1892,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSpawn
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000176a5 with 0x00000159 Bytes
+	Serialized data: at 0x0000000000017705 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 190]
 	Full Name: ParticleModuleSpawn ss_sticky.ss_sticky.FX_PS.ParticleModuleSpawn_2
@@ -1907,7 +1900,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSpawn
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000177fe with 0x000000e1 Bytes
+	Serialized data: at 0x000000000001785e with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 191]
 	Full Name: ParticleModuleSpawn ss_sticky.ss_sticky.FX_PS.ParticleModuleSpawn_3
@@ -1915,7 +1908,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSpawn
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000178df with 0x000000e1 Bytes
+	Serialized data: at 0x000000000001793f with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 192]
 	Full Name: ParticleModuleSpawn ss_sticky.ss_sticky.FX_PS.ParticleModuleSpawn_4
@@ -1923,7 +1916,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSpawn
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000179c0 with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000017a20 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 193]
 	Full Name: ParticleModuleSpawn ss_sticky.ss_sticky.FX_PS.ParticleModuleSpawn_5
@@ -1931,7 +1924,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSpawn
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017aa1 with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000017b01 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 194]
 	Full Name: ParticleModuleSpawn ss_sticky.ss_sticky.FX_PS.ParticleModuleSpawn_6
@@ -1939,7 +1932,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSpawn
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017b82 with 0x00000159 Bytes
+	Serialized data: at 0x0000000000017be2 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 195]
 	Full Name: ParticleModuleSpawn ss_sticky.ss_sticky.FX_PS.ParticleModuleSpawn_7
@@ -1947,7 +1940,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSpawn
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017cdb with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000017d3b with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 196]
 	Full Name: ParticleModuleSpawn ss_sticky.ss_sticky.FX_PS.ParticleModuleSpawn_8
@@ -1955,7 +1948,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSpawn
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017dbc with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000017e1c with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 197]
 	Full Name: ParticleModuleSpawn ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSpawn_1
@@ -1963,7 +1956,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSpawn
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017e9d with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000017efd with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 198]
 	Full Name: ParticleModuleSpawn ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSpawn_11
@@ -1971,7 +1964,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSpawn
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017f7e with 0x00000159 Bytes
+	Serialized data: at 0x0000000000017fde with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 199]
 	Full Name: ParticleModuleSpawn ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSpawn_2
@@ -1979,7 +1972,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSpawn
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000180d7 with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000018137 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 200]
 	Full Name: ParticleModuleSpawn ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSpawn_3
@@ -1987,7 +1980,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSpawn
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000181b8 with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000018218 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 201]
 	Full Name: ParticleModuleSpawn ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSpawn_4
@@ -1995,7 +1988,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSpawn
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018299 with 0x000000e1 Bytes
+	Serialized data: at 0x00000000000182f9 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 202]
 	Full Name: ParticleModuleSpawn ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSpawn_5
@@ -2003,7 +1996,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSpawn
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001837a with 0x000000e1 Bytes
+	Serialized data: at 0x00000000000183da with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 203]
 	Full Name: ParticleModuleSpawn ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSpawn_6
@@ -2011,7 +2004,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSpawn
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001845b with 0x00000159 Bytes
+	Serialized data: at 0x00000000000184bb with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 204]
 	Full Name: ParticleModuleSpawn ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSpawn_7
@@ -2019,7 +2012,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSpawn
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000185b4 with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000018614 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 205]
 	Full Name: ParticleModuleSpawn ss_sticky.ss_sticky.FXGame_PS.ParticleModuleSpawn_8
@@ -2027,7 +2020,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleSpawn
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018695 with 0x000000e1 Bytes
+	Serialized data: at 0x00000000000186f5 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 206]
 	Full Name: ParticleModuleTypeDataMesh ss_sticky.ss_sticky.FX_PS.ParticleModuleTypeDataMesh_0
@@ -2035,7 +2028,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleTypeDataMesh
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018776 with 0x00000062 Bytes
+	Serialized data: at 0x00000000000187d6 with 0x00000062 Bytes
 	Export Flags: 0x00000001
 [Export 207]
 	Full Name: ParticleModuleTypeDataMesh ss_sticky.ss_sticky.FX_PS.ParticleModuleTypeDataMesh_3
@@ -2043,7 +2036,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleTypeDataMesh
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000187d8 with 0x00000062 Bytes
+	Serialized data: at 0x0000000000018838 with 0x00000062 Bytes
 	Export Flags: 0x00000001
 [Export 208]
 	Full Name: ParticleModuleTypeDataMesh ss_sticky.ss_sticky.FXGame_PS.ParticleModuleTypeDataMesh_0
@@ -2051,7 +2044,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleTypeDataMesh
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001883a with 0x00000062 Bytes
+	Serialized data: at 0x000000000001889a with 0x00000062 Bytes
 	Export Flags: 0x00000001
 [Export 209]
 	Full Name: ParticleModuleTypeDataMesh ss_sticky.ss_sticky.FXGame_PS.ParticleModuleTypeDataMesh_3
@@ -2059,7 +2052,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleTypeDataMesh
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001889c with 0x00000062 Bytes
+	Serialized data: at 0x00000000000188fc with 0x00000062 Bytes
 	Export Flags: 0x00000001
 [Export 210]
 	Full Name: ParticleModuleTypeDataRibbon ss_sticky.ss_sticky.FX_PS.ParticleModuleTypeDataRibbon_1
@@ -2067,7 +2060,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000188fe with 0x000000cc Bytes
+	Serialized data: at 0x000000000001895e with 0x000000cc Bytes
 	Export Flags: 0x00000001
 [Export 211]
 	Full Name: ParticleModuleTypeDataRibbon ss_sticky.ss_sticky.FX_PS.ParticleModuleTypeDataRibbon_2
@@ -2075,7 +2068,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000189ca with 0x00000097 Bytes
+	Serialized data: at 0x0000000000018a2a with 0x00000097 Bytes
 	Export Flags: 0x00000001
 [Export 212]
 	Full Name: ParticleModuleTypeDataRibbon ss_sticky.ss_sticky.FX_PS.ParticleModuleTypeDataRibbon_3
@@ -2083,7 +2076,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018a61 with 0x00000097 Bytes
+	Serialized data: at 0x0000000000018ac1 with 0x00000097 Bytes
 	Export Flags: 0x00000001
 [Export 213]
 	Full Name: ParticleModuleTypeDataRibbon ss_sticky.ss_sticky.FX_PS.ParticleModuleTypeDataRibbon_4
@@ -2091,7 +2084,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018af8 with 0x00000097 Bytes
+	Serialized data: at 0x0000000000018b58 with 0x00000097 Bytes
 	Export Flags: 0x00000001
 [Export 214]
 	Full Name: ParticleModuleTypeDataRibbon ss_sticky.ss_sticky.FX_PS.ParticleModuleTypeDataRibbon_5
@@ -2099,7 +2092,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018b8f with 0x00000097 Bytes
+	Serialized data: at 0x0000000000018bef with 0x00000097 Bytes
 	Export Flags: 0x00000001
 [Export 215]
 	Full Name: ParticleModuleTypeDataRibbon ss_sticky.ss_sticky.FX_PS.ParticleModuleTypeDataRibbon_6
@@ -2107,7 +2100,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018c26 with 0x00000097 Bytes
+	Serialized data: at 0x0000000000018c86 with 0x00000097 Bytes
 	Export Flags: 0x00000001
 [Export 216]
 	Full Name: ParticleModuleTypeDataRibbon ss_sticky.ss_sticky.FX_PS.ParticleModuleTypeDataRibbon_7
@@ -2115,7 +2108,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018cbd with 0x000000cc Bytes
+	Serialized data: at 0x0000000000018d1d with 0x000000cc Bytes
 	Export Flags: 0x00000001
 [Export 217]
 	Full Name: ParticleModuleTypeDataRibbon ss_sticky.ss_sticky.FXGame_PS.ParticleModuleTypeDataRibbon_1
@@ -2123,7 +2116,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018d89 with 0x000000b0 Bytes
+	Serialized data: at 0x0000000000018de9 with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [Export 218]
 	Full Name: ParticleModuleTypeDataRibbon ss_sticky.ss_sticky.FXGame_PS.ParticleModuleTypeDataRibbon_2
@@ -2131,7 +2124,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018e39 with 0x00000097 Bytes
+	Serialized data: at 0x0000000000018e99 with 0x00000097 Bytes
 	Export Flags: 0x00000001
 [Export 219]
 	Full Name: ParticleModuleTypeDataRibbon ss_sticky.ss_sticky.FXGame_PS.ParticleModuleTypeDataRibbon_3
@@ -2139,7 +2132,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018ed0 with 0x00000097 Bytes
+	Serialized data: at 0x0000000000018f30 with 0x00000097 Bytes
 	Export Flags: 0x00000001
 [Export 220]
 	Full Name: ParticleModuleTypeDataRibbon ss_sticky.ss_sticky.FXGame_PS.ParticleModuleTypeDataRibbon_4
@@ -2147,7 +2140,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018f67 with 0x00000097 Bytes
+	Serialized data: at 0x0000000000018fc7 with 0x00000097 Bytes
 	Export Flags: 0x00000001
 [Export 221]
 	Full Name: ParticleModuleTypeDataRibbon ss_sticky.ss_sticky.FXGame_PS.ParticleModuleTypeDataRibbon_5
@@ -2155,7 +2148,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018ffe with 0x00000097 Bytes
+	Serialized data: at 0x000000000001905e with 0x00000097 Bytes
 	Export Flags: 0x00000001
 [Export 222]
 	Full Name: ParticleModuleTypeDataRibbon ss_sticky.ss_sticky.FXGame_PS.ParticleModuleTypeDataRibbon_6
@@ -2163,7 +2156,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019095 with 0x00000097 Bytes
+	Serialized data: at 0x00000000000190f5 with 0x00000097 Bytes
 	Export Flags: 0x00000001
 [Export 223]
 	Full Name: ParticleModuleTypeDataRibbon ss_sticky.ss_sticky.FXGame_PS.ParticleModuleTypeDataRibbon_7
@@ -2171,7 +2164,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001912c with 0x000000b0 Bytes
+	Serialized data: at 0x000000000001918c with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [Export 224]
 	Full Name: ParticleModuleVelocity ss_sticky.ss_sticky.FX_PS.ParticleModuleVelocity_0
@@ -2179,7 +2172,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleVelocity
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000191dc with 0x000000f1 Bytes
+	Serialized data: at 0x000000000001923c with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 225]
 	Full Name: ParticleModuleVelocity ss_sticky.ss_sticky.FX_PS.ParticleModuleVelocity_1
@@ -2187,7 +2180,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleVelocity
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000192cd with 0x000000f1 Bytes
+	Serialized data: at 0x000000000001932d with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 226]
 	Full Name: ParticleModuleVelocity ss_sticky.ss_sticky.FXGame_PS.ParticleModuleVelocity_0
@@ -2195,7 +2188,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleVelocity
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000193be with 0x000000f1 Bytes
+	Serialized data: at 0x000000000001941e with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 227]
 	Full Name: ParticleModuleVelocity ss_sticky.ss_sticky.FXGame_PS.ParticleModuleVelocity_1
@@ -2203,7 +2196,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleModuleVelocity
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000194af with 0x000000f1 Bytes
+	Serialized data: at 0x000000000001950f with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 228]
 	Full Name: ParticleSpriteEmitter ss_sticky.ss_sticky.FX_PS.ParticleSpriteEmitter_1
@@ -2211,7 +2204,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSpriteEmitter
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000195a0 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000019600 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 229]
 	Full Name: ParticleSpriteEmitter ss_sticky.ss_sticky.FX_PS.ParticleSpriteEmitter_11
@@ -2219,7 +2212,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSpriteEmitter
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000195ec with 0x0000002c Bytes
+	Serialized data: at 0x000000000001964c with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 230]
 	Full Name: ParticleSpriteEmitter ss_sticky.ss_sticky.FX_PS.ParticleSpriteEmitter_2
@@ -2227,7 +2220,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSpriteEmitter
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019618 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000019678 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 231]
 	Full Name: ParticleSpriteEmitter ss_sticky.ss_sticky.FX_PS.ParticleSpriteEmitter_3
@@ -2235,7 +2228,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSpriteEmitter
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019664 with 0x0000004c Bytes
+	Serialized data: at 0x00000000000196c4 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 232]
 	Full Name: ParticleSpriteEmitter ss_sticky.ss_sticky.FX_PS.ParticleSpriteEmitter_4
@@ -2243,7 +2236,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSpriteEmitter
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000196b0 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000019710 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 233]
 	Full Name: ParticleSpriteEmitter ss_sticky.ss_sticky.FX_PS.ParticleSpriteEmitter_5
@@ -2251,7 +2244,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSpriteEmitter
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000196fc with 0x0000004c Bytes
+	Serialized data: at 0x000000000001975c with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 234]
 	Full Name: ParticleSpriteEmitter ss_sticky.ss_sticky.FX_PS.ParticleSpriteEmitter_6
@@ -2259,7 +2252,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSpriteEmitter
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019748 with 0x0000002c Bytes
+	Serialized data: at 0x00000000000197a8 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 235]
 	Full Name: ParticleSpriteEmitter ss_sticky.ss_sticky.FX_PS.ParticleSpriteEmitter_7
@@ -2267,7 +2260,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSpriteEmitter
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019774 with 0x0000002c Bytes
+	Serialized data: at 0x00000000000197d4 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 236]
 	Full Name: ParticleSpriteEmitter ss_sticky.ss_sticky.FX_PS.ParticleSpriteEmitter_8
@@ -2275,7 +2268,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSpriteEmitter
 	Outer: FX_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000197a0 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000019800 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 237]
 	Full Name: ParticleSpriteEmitter ss_sticky.ss_sticky.FXGame_PS.ParticleSpriteEmitter_1
@@ -2283,7 +2276,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSpriteEmitter
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000197ec with 0x0000004c Bytes
+	Serialized data: at 0x000000000001984c with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 238]
 	Full Name: ParticleSpriteEmitter ss_sticky.ss_sticky.FXGame_PS.ParticleSpriteEmitter_11
@@ -2291,7 +2284,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSpriteEmitter
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019838 with 0x0000002c Bytes
+	Serialized data: at 0x0000000000019898 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 239]
 	Full Name: ParticleSpriteEmitter ss_sticky.ss_sticky.FXGame_PS.ParticleSpriteEmitter_2
@@ -2299,7 +2292,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSpriteEmitter
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019864 with 0x0000004c Bytes
+	Serialized data: at 0x00000000000198c4 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 240]
 	Full Name: ParticleSpriteEmitter ss_sticky.ss_sticky.FXGame_PS.ParticleSpriteEmitter_3
@@ -2307,7 +2300,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSpriteEmitter
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000198b0 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000019910 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 241]
 	Full Name: ParticleSpriteEmitter ss_sticky.ss_sticky.FXGame_PS.ParticleSpriteEmitter_4
@@ -2315,7 +2308,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSpriteEmitter
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000198fc with 0x0000004c Bytes
+	Serialized data: at 0x000000000001995c with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 242]
 	Full Name: ParticleSpriteEmitter ss_sticky.ss_sticky.FXGame_PS.ParticleSpriteEmitter_5
@@ -2323,7 +2316,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSpriteEmitter
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019948 with 0x0000004c Bytes
+	Serialized data: at 0x00000000000199a8 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 243]
 	Full Name: ParticleSpriteEmitter ss_sticky.ss_sticky.FXGame_PS.ParticleSpriteEmitter_6
@@ -2331,7 +2324,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSpriteEmitter
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019994 with 0x0000002c Bytes
+	Serialized data: at 0x00000000000199f4 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 244]
 	Full Name: ParticleSpriteEmitter ss_sticky.ss_sticky.FXGame_PS.ParticleSpriteEmitter_7
@@ -2339,7 +2332,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSpriteEmitter
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000199c0 with 0x0000002c Bytes
+	Serialized data: at 0x0000000000019a20 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 245]
 	Full Name: ParticleSpriteEmitter ss_sticky.ss_sticky.FXGame_PS.ParticleSpriteEmitter_8
@@ -2347,7 +2340,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSpriteEmitter
 	Outer: FXGame_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000199ec with 0x0000004c Bytes
+	Serialized data: at 0x0000000000019a4c with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 246]
 	Full Name: ParticleSystem ss_sticky.ss_sticky.FX_PS
@@ -2355,7 +2348,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSystem
 	Outer: ss_sticky
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000019a38 with 0x0000013f Bytes
+	Serialized data: at 0x0000000000019a98 with 0x0000013f Bytes
 	Export Flags: 0x00000001
 [Export 247]
 	Full Name: ParticleSystem ss_sticky.ss_sticky.FXGame_PS
@@ -2363,7 +2356,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSystem
 	Outer: ss_sticky
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000019b77 with 0x0000013f Bytes
+	Serialized data: at 0x0000000000019bd7 with 0x0000013f Bytes
 	Export Flags: 0x00000001
 [Export 248]
 	Full Name: ParticleSystemComponent ss_sticky.ss_sticky.SS_Sticky_FXActor.ParticleSystemComponent_0
@@ -2371,7 +2364,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ParticleSystemComponent
 	Outer: SS_Sticky_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000019cb6 with 0x00000061 Bytes
+	Serialized data: at 0x0000000000019d16 with 0x00000061 Bytes
 	Export Flags: 0x00000001
 [Export 249]
 	Full Name: ProductAsset_SupersonicTrail_TA ss_sticky.ss_sticky.ss_sticky
@@ -2380,7 +2373,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Outer: ss_sticky
 	Archetype: ProductAsset_SupersonicTrail_TA_0
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000019d17 with 0x00000064 Bytes
+	Serialized data: at 0x0000000000019d77 with 0x00000064 Bytes
 	Export Flags: 0x00000001
 [Export 250]
 	Full Name: ProductAttribute_PaintSettings_TA ss_sticky.ss_sticky.ss_sticky.ProductAttribute_PaintSettings_TA_0
@@ -2388,7 +2381,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ProductAttribute_PaintSettings_TA
 	Outer: ss_sticky
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019d7b with 0x00000055 Bytes
+	Serialized data: at 0x0000000000024ecc with 0x000000a5 Bytes
 	Export Flags: 0x00000001
 [Export 251]
 	Full Name: StaticMesh ss_sticky.ss_sticky.SlimeCone_SM
@@ -2396,7 +2389,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: StaticMesh
 	Outer: ss_sticky
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000019dd0 with 0x00002885 Bytes
+	Serialized data: at 0x0000000000019e30 with 0x00002885 Bytes
 	Export Flags: 0x00000001
 [Export 252]
 	Full Name: Texture2D Textures.Darkcloud_Tail_T
@@ -2404,7 +2397,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001c655 with 0x00000cf4 Bytes
+	Serialized data: at 0x000000000001c6b5 with 0x00000cf4 Bytes
 	Export Flags: 0x00000001
 [Export 253]
 	Full Name: Texture2D Textures.Clouds_RGB_Soft_T
@@ -2412,7 +2405,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001d349 with 0x00000d10 Bytes
+	Serialized data: at 0x000000000001d3a9 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [Export 254]
 	Full Name: Texture2D ss_sticky.ss_kirby.FoamGradient01_T
@@ -2420,7 +2413,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: Texture2D
 	Outer: ss_kirby
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001e059 with 0x00000cd8 Bytes
+	Serialized data: at 0x000000000001e0b9 with 0x00000cd8 Bytes
 	Export Flags: 0x00000001
 [Export 255]
 	Full Name: Texture2D ss_sticky.ss_sticky.BackTrail_E_T
@@ -2428,7 +2421,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: Texture2D
 	Outer: ss_sticky
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001ed31 with 0x00001790 Bytes
+	Serialized data: at 0x000000000001ed91 with 0x00001790 Bytes
 	Export Flags: 0x00000001
 [Export 256]
 	Full Name: Texture2D ss_sticky.ss_sticky.Darkcloud2_Tail_T
@@ -2436,7 +2429,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: Texture2D
 	Outer: ss_sticky
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000204c1 with 0x00000cd8 Bytes
+	Serialized data: at 0x0000000000020521 with 0x00000cd8 Bytes
 	Export Flags: 0x00000001
 [Export 257]
 	Full Name: Texture2D ss_sticky.ss_sticky.DarksLIME_Tail_T
@@ -2444,7 +2437,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: Texture2D
 	Outer: ss_sticky
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000021199 with 0x00000cd8 Bytes
+	Serialized data: at 0x00000000000211f9 with 0x00000cd8 Bytes
 	Export Flags: 0x00000001
 [Export 258]
 	Full Name: Texture2D ss_sticky.ss_sticky.FoamGradient01_T
@@ -2452,7 +2445,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: Texture2D
 	Outer: ss_sticky
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000021e71 with 0x00000cd8 Bytes
+	Serialized data: at 0x0000000000021ed1 with 0x00000cd8 Bytes
 	Export Flags: 0x00000001
 [Export 259]
 	Full Name: Texture2D ss_sticky.ss_sticky.TentaTrail_E_T
@@ -2460,7 +2453,7 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: Texture2D
 	Outer: ss_sticky
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000022b49 with 0x00001790 Bytes
+	Serialized data: at 0x0000000000022ba9 with 0x00001790 Bytes
 	Export Flags: 0x00000001
 
 
@@ -2482,12 +2475,6 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 [Import 2]
 	Full Name: Class Engine.MaterialExpressionScalarParameter
 	Name: MaterialExpressionScalarParameter
-	Class: Class
-	Class Package: Core
-	Outer: Engine
-[Import 3]
-	Full Name: Class Engine.MaterialFunction
-	Name: MaterialFunction
 	Class: Class
 	Class Package: Core
 	Outer: Engine
@@ -2748,3 +2735,14 @@ AES: ujLmxYrq+F6zrg39JZunl2NC/WnnSMx1GJxo1foQ7M0=
 	Class: ProductSlot_TA
 	Class Package: TAGame
 	Outer: ProductSlots
+[Import 48]
+	Full Name: MaterialFunction Psy_MaterialFunctions.SmoothStep
+	Name: SmoothStep
+	Class: MaterialFunction
+	Class Package: Engine
+	Outer: Psy_MaterialFunctions
+[Import 49]
+	Full Name: Package Psy_MaterialFunctions
+	Name: Psy_MaterialFunctions
+	Class: Package
+	Class Package: Core

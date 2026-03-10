@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x00007bed Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 273 Name Offset: 0x000000f1
-Export Count: 83 Export Offset: 0x000024b6
-Import Count: 61 Import Offset: 0x00001e0a
-Depends Offset: 0x00003c0e
-Import Export Guids Offset: 0x00003c0e
+Name Count: 274 Name Offset: 0x000000f9
+Export Count: 83 Export Offset: 0x0000252e
+Import Count: 64 Import Offset: 0x00001e2e
+Depends Offset: 0x00003c86
+Import Export Guids Offset: 0x00003c86
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x3c9ad36a 0x44c4ac20 0xa6721b8c 0x1b69893d
+GUID: 0xcc3b4023 0x48296bb2 0xd1a8d299 0x62a6ba30
 Generations:
 [0]
 	Export Count: 83
@@ -34,6 +34,10 @@ Generations:
 [3]
 	Export Count: 83
 	Name Count: 273
+	Net Object Count: 0
+[4]
+	Export Count: 83
+	Name Count: 274
 	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
@@ -59,17 +63,21 @@ Texture Allocations Texture Types:
 	Flags: 1
 	Exports:
 		[0] Texture2D Textures.TrailMask_RGB_T
-		[1] Texture2D Textures.CloudDistort_T
-Test Data Size: 0x00003fc3
+Test Data Size: 0x00003f33
 Compressed Chunk Info:
-	Offset: 0x00003b1d
+	Offset: 0x00003b8d
 	[0]
-		Uncompressed Offset: 0x0000000000003c0e
+		Uncompressed Offset: 0x0000000000003c86
 		Uncompressed Size: 0x00010ff5
 		Compressed Offset: 0x0000000000007bed
 		Compressed Size: 0x000084d2
-Last Block Size: 0x0000000c
-Base Header Size: 0x000000f1
+	[1]
+		Uncompressed Offset: 0x0000000000014c7b
+		Uncompressed Size: 0x00000aa5
+		Compressed Offset: 0x00000000000100bf
+		Compressed Size: 0x000001de
+Last Block Size: 0x00000004
+Base Header Size: 0x000000f9
 Encrypted Header Size: 0x00007af0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
@@ -129,9 +137,9 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 48] [0x0007001000000000] ColorMaterialInput
 [Name 49] [0x0007001000000000] ColorScaleOverLife
 [Name 50] [0x0007001000000000] Component
-[Name 51] [0x0007001000000000] CompressionNoAlpha
+[Name 51] [0x0007000000000000] CompressionNoAlpha
 [Name 52] [0x0007001000000000] CompressionNone
-[Name 53] [0x0007001000000000] CompressionSettings
+[Name 53] [0x0007000000000000] CompressionSettings
 [Name 54] [0x0007001000000000] Constant
 [Name 55] [0x0007001000000000] Core
 [Name 56] [0x0007001000000000] CreationTime
@@ -328,13 +336,13 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 247] [0x0007001000000000] Tag
 [Name 248] [0x0007001000000000] TAGame
 [Name 249] [0x0007001000000000] Target
-[Name 250] [0x0007001000000000] TC_Grayscale
+[Name 250] [0x0007000000000000] TC_Grayscale
 [Name 251] [0x0007001000000000] Template
 [Name 252] [0x0007001000000000] Texture2D
-[Name 253] [0x0007001000000000] TextureCompressionSettings
+[Name 253] [0x0007000000000000] TextureCompressionSettings
 [Name 254] [0x0007001000000000] TextureFileCacheName
 [Name 255] [0x0007001000000000] Textures
-[Name 256] [0x0007001000000000] Textures3
+[Name 256] [0x0007000000000000] Textures3
 [Name 257] [0x0007001000000000] Textures7
 [Name 258] [0x0007001000000000] TilingDistance
 [Name 259] [0x0007001000000000] TrailMask_RGB_T
@@ -351,6 +359,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 270] [0x0007001000000000] WhiteGoldMetal_00
 [Name 271] [0x0007001000000000] WingsMetalColor02
 [Name 272] [0x0007001000000000] Yellow_00
+[Name 273] [0x0007001000000000] IncludePaintIDs
 
 
     ~ Exports ~ 
@@ -362,7 +371,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000003c0e with 0x0000008d Bytes
+	Serialized data: at 0x0000000000003c86 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 1]
 	Full Name: DistributionVectorParticleParameter FX.SmokeTrailSS_PS.ParticleModuleColor_0.DistributionVectorParticleParameter_0
@@ -370,7 +379,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000003c9b with 0x000000ed Bytes
+	Serialized data: at 0x0000000000003d13 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 2]
 	Full Name: DistributionVectorParticleParameter FX.SmokeTrailSS_PS.ParticleModuleColor_1.DistributionVectorParticleParameter_0
@@ -378,7 +387,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000003d88 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000003e00 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 3]
 	Full Name: DistributionVectorParticleParameter FX.SmokeTrailSS_PS.ParticleModuleColor_2.DistributionVectorParticleParameter_0
@@ -386,7 +395,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000003e75 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000003eed with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 4]
 	Full Name: DistributionVectorParticleParameter FX.SmokeTrailSS_PS.ParticleModuleColorScaleOverLife_0.DistributionVectorParticleParameter_2
@@ -394,7 +403,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColorScaleOverLife_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000003f62 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000003fda with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 5]
 	Full Name: DistributionVectorParticleParameter FX.SmokeTrailSS_PS.ParticleModuleColorScaleOverLife_1.DistributionVectorParticleParameter_1
@@ -402,7 +411,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColorScaleOverLife_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000404f with 0x000000ed Bytes
+	Serialized data: at 0x00000000000040c7 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 6]
 	Full Name: DistributionVectorParticleParameter FX.SmokeTrailSS_PS.ParticleModuleColorScaleOverLife_2.DistributionVectorParticleParameter_0
@@ -410,7 +419,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColorScaleOverLife_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000413c with 0x000000ed Bytes
+	Serialized data: at 0x00000000000041b4 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 7]
 	Full Name: FXActor_TA Actors.SS_Wings_FXActor
@@ -418,7 +427,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: FXActor_TA
 	Outer: Actors
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x0000000000004229 with 0x0000036b Bytes
+	Serialized data: at 0x00000000000042a1 with 0x0000036b Bytes
 	Export Flags: 0x00000001
 [Export 8]
 	Full Name: Material Materials.SmokeTrail02_MAT
@@ -426,7 +435,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000004594 with 0x00000245 Bytes
+	Serialized data: at 0x0000000000014c7b with 0x00000245 Bytes
 	Export Flags: 0x00000001
 [Export 9]
 	Full Name: Material Materials.Smoketrail_MAT
@@ -434,21 +443,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000047d9 with 0x0000026d Bytes
+	Serialized data: at 0x0000000000014ec0 with 0x0000026d Bytes
 	Export Flags: 0x00000001
 [Export 10]
 	Full Name: ObjectReferencer ss_splitenergy.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000004a46 with 0x0000002c Bytes
+	Serialized data: at 0x0000000000004abe with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [Export 11]
 	Full Name: Package ss_splitenergy.boost_energyburst
 	Name: boost_energyburst
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000004a72 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000004aea with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -458,14 +467,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: boost_energyburst
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000004a7e with 0x0000000c Bytes
+	Serialized data: at 0x0000000000004af6 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 13]
 	Full Name: Package ss_splitenergy.boost_splitenergy
 	Name: boost_splitenergy
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000004a8a with 0x0000000c Bytes
+	Serialized data: at 0x0000000000004b02 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -475,7 +484,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: boost_splitenergy
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000004a96 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000004b0e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 15]
 	Full Name: Package ss_splitenergy.boost_splitenergy.Textures
@@ -483,31 +492,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: boost_splitenergy
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000004aa2 with 0x0000000c Bytes
-	Export Flags: 0x00000001
-[Export 16]
-	Full Name: Package ss_splitenergy.Boost_SweetTooth
-	Name: Boost_SweetTooth
-	Class: Package
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000004aae with 0x0000000c Bytes
-	Export Flags: 0x00000001
-	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
-	Package Flags: 0x20000005
-[Export 17]
-	Full Name: Package ss_splitenergy.Boost_SweetTooth.Textures
-	Name: Textures
-	Class: Package
-	Outer: Boost_SweetTooth
-	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000004aba with 0x0000000c Bytes
+	Serialized data: at 0x0000000000004b1a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 18]
 	Full Name: Package ss_splitenergy.ss_space_tear
 	Name: ss_space_tear
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000004ac6 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000004b3e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -517,14 +509,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: ss_space_tear
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000004ad2 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000004b4a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 20]
 	Full Name: Package ss_splitenergy.ss_splitenergy
 	Name: ss_splitenergy
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000004ade with 0x0000000c Bytes
+	Serialized data: at 0x0000000000004b56 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -534,7 +526,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: ss_splitenergy
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000004aea with 0x0000000c Bytes
+	Serialized data: at 0x0000000000004b62 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 22]
 	Full Name: Package ss_splitenergy.ss_splitenergy.FX
@@ -542,14 +534,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: ss_splitenergy
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000004af6 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000004b6e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 23]
 	Full Name: Package ss_splitenergy.ss_splitenergy_SF
 	Name: ss_splitenergy_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000004b02 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000004b7a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -560,7 +552,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: SS_Wings_FXActor
 	Archetype: DefaultParameters
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x0000000000004b0e with 0x00000010 Bytes
+	Serialized data: at 0x0000000000004b86 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 25]
 	Full Name: ParticleLODLevel FX.SmokeTrailSS_PS.ParticleSpriteEmitter_0.ParticleLODLevel_0
@@ -568,7 +560,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000004b1e with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000004b96 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 26]
 	Full Name: ParticleLODLevel FX.SmokeTrailSS_PS.ParticleSpriteEmitter_1.ParticleLODLevel_1
@@ -576,7 +568,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000004bd2 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000004c4a with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 27]
 	Full Name: ParticleLODLevel FX.SmokeTrailSS_PS.ParticleSpriteEmitter_2.ParticleLODLevel_1
@@ -584,7 +576,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000004c86 with 0x000000b0 Bytes
+	Serialized data: at 0x0000000000004cfe with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [Export 28]
 	Full Name: ParticleModuleColor FX.SmokeTrailSS_PS.ParticleModuleColor_0
@@ -592,7 +584,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleColor
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000004d36 with 0x000000fd Bytes
+	Serialized data: at 0x0000000000004dae with 0x000000fd Bytes
 	Export Flags: 0x00000001
 [Export 29]
 	Full Name: ParticleModuleColor FX.SmokeTrailSS_PS.ParticleModuleColor_1
@@ -600,7 +592,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleColor
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000004e33 with 0x000000fd Bytes
+	Serialized data: at 0x0000000000004eab with 0x000000fd Bytes
 	Export Flags: 0x00000001
 [Export 30]
 	Full Name: ParticleModuleColor FX.SmokeTrailSS_PS.ParticleModuleColor_2
@@ -608,7 +600,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleColor
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000004f30 with 0x000000fd Bytes
+	Serialized data: at 0x0000000000004fa8 with 0x000000fd Bytes
 	Export Flags: 0x00000001
 [Export 31]
 	Full Name: ParticleModuleColorScaleOverLife FX.SmokeTrailSS_PS.ParticleModuleColorScaleOverLife_0
@@ -616,7 +608,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000502d with 0x00000159 Bytes
+	Serialized data: at 0x00000000000050a5 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 32]
 	Full Name: ParticleModuleColorScaleOverLife FX.SmokeTrailSS_PS.ParticleModuleColorScaleOverLife_1
@@ -624,7 +616,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000005186 with 0x0000013d Bytes
+	Serialized data: at 0x00000000000051fe with 0x0000013d Bytes
 	Export Flags: 0x00000001
 [Export 33]
 	Full Name: ParticleModuleColorScaleOverLife FX.SmokeTrailSS_PS.ParticleModuleColorScaleOverLife_2
@@ -632,7 +624,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000052c3 with 0x0000015d Bytes
+	Serialized data: at 0x000000000000533b with 0x0000015d Bytes
 	Export Flags: 0x00000001
 [Export 34]
 	Full Name: ParticleModuleLifetime FX.SmokeTrailSS_PS.ParticleModuleLifetime_0
@@ -640,7 +632,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleLifetime
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000005420 with 0x0000009d Bytes
+	Serialized data: at 0x0000000000005498 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 35]
 	Full Name: ParticleModuleLifetime FX.SmokeTrailSS_PS.ParticleModuleLifetime_1
@@ -648,7 +640,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleLifetime
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000054bd with 0x0000009d Bytes
+	Serialized data: at 0x0000000000005535 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 36]
 	Full Name: ParticleModuleLifetime FX.SmokeTrailSS_PS.ParticleModuleLifetime_2
@@ -656,7 +648,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleLifetime
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000555a with 0x0000009d Bytes
+	Serialized data: at 0x00000000000055d2 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 37]
 	Full Name: ParticleModuleLocation FX.SmokeTrailSS_PS.ParticleModuleLocation_0
@@ -664,7 +656,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleLocation
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000055f7 with 0x000000ad Bytes
+	Serialized data: at 0x000000000000566f with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 38]
 	Full Name: ParticleModuleParameterDynamic FX.SmokeTrailSS_PS.ParticleModuleParameterDynamic_1
@@ -672,7 +664,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleParameterDynamic
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000056a4 with 0x00000771 Bytes
+	Serialized data: at 0x000000000000571c with 0x00000771 Bytes
 	Export Flags: 0x00000001
 [Export 39]
 	Full Name: ParticleModuleRequired FX.SmokeTrailSS_PS.ParticleModuleRequired_0
@@ -680,7 +672,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleRequired
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000005e15 with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000005e8d with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 40]
 	Full Name: ParticleModuleRequired FX.SmokeTrailSS_PS.ParticleModuleRequired_1
@@ -688,7 +680,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleRequired
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000005f09 with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000005f81 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 41]
 	Full Name: ParticleModuleRequired FX.SmokeTrailSS_PS.ParticleModuleRequired_2
@@ -696,7 +688,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleRequired
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000005ffd with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000006075 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 42]
 	Full Name: ParticleModuleSize FX.SmokeTrailSS_PS.ParticleModuleSize_0
@@ -704,7 +696,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSize
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000060f1 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000006169 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 43]
 	Full Name: ParticleModuleSize FX.SmokeTrailSS_PS.ParticleModuleSize_1
@@ -712,7 +704,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSize
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000619e with 0x000000ad Bytes
+	Serialized data: at 0x0000000000006216 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 44]
 	Full Name: ParticleModuleSize FX.SmokeTrailSS_PS.ParticleModuleSize_2
@@ -720,7 +712,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSize
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000624b with 0x000000ad Bytes
+	Serialized data: at 0x00000000000062c3 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 45]
 	Full Name: ParticleModuleSizeScale FX.SmokeTrailSS_PS.ParticleModuleSizeScale_0
@@ -728,7 +720,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSizeScale
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000062f8 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000006370 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 46]
 	Full Name: ParticleModuleSizeScale FX.SmokeTrailSS_PS.ParticleModuleSizeScale_2
@@ -736,7 +728,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSizeScale
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000064a5 with 0x000001ad Bytes
+	Serialized data: at 0x000000000000651d with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 47]
 	Full Name: ParticleModuleSpawn FX.SmokeTrailSS_PS.ParticleModuleSpawn_0
@@ -744,7 +736,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSpawn
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006652 with 0x000000e1 Bytes
+	Serialized data: at 0x00000000000066ca with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 48]
 	Full Name: ParticleModuleSpawn FX.SmokeTrailSS_PS.ParticleModuleSpawn_1
@@ -752,7 +744,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSpawn
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006733 with 0x000000e1 Bytes
+	Serialized data: at 0x00000000000067ab with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 49]
 	Full Name: ParticleModuleSpawn FX.SmokeTrailSS_PS.ParticleModuleSpawn_2
@@ -760,7 +752,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSpawn
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006814 with 0x000000e1 Bytes
+	Serialized data: at 0x000000000000688c with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 50]
 	Full Name: ParticleModuleTypeDataRibbon FX.SmokeTrailSS_PS.ParticleModuleTypeDataRibbon_0
@@ -768,7 +760,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000068f5 with 0x000000cc Bytes
+	Serialized data: at 0x000000000000696d with 0x000000cc Bytes
 	Export Flags: 0x00000001
 [Export 51]
 	Full Name: ParticleModuleTypeDataRibbon FX.SmokeTrailSS_PS.ParticleModuleTypeDataRibbon_1
@@ -776,7 +768,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000069c1 with 0x000000cc Bytes
+	Serialized data: at 0x0000000000006a39 with 0x000000cc Bytes
 	Export Flags: 0x00000001
 [Export 52]
 	Full Name: ParticleModuleTypeDataRibbon FX.SmokeTrailSS_PS.ParticleModuleTypeDataRibbon_2
@@ -784,7 +776,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006a8d with 0x000000cc Bytes
+	Serialized data: at 0x0000000000006b05 with 0x000000cc Bytes
 	Export Flags: 0x00000001
 [Export 53]
 	Full Name: ParticleSpriteEmitter FX.SmokeTrailSS_PS.ParticleSpriteEmitter_0
@@ -792,7 +784,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSpriteEmitter
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006b59 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000006bd1 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 54]
 	Full Name: ParticleSpriteEmitter FX.SmokeTrailSS_PS.ParticleSpriteEmitter_1
@@ -800,7 +792,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSpriteEmitter
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006ba5 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000006c1d with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 55]
 	Full Name: ParticleSpriteEmitter FX.SmokeTrailSS_PS.ParticleSpriteEmitter_2
@@ -808,7 +800,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSpriteEmitter
 	Outer: SmokeTrailSS_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006bf1 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000006c69 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 56]
 	Full Name: ParticleSystem FX.SmokeTrailSS_PS
@@ -816,7 +808,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSystem
 	Outer: FX
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000006c3d with 0x00000127 Bytes
+	Serialized data: at 0x0000000000006cb5 with 0x00000127 Bytes
 	Export Flags: 0x00000001
 [Export 57]
 	Full Name: ParticleSystemComponent_TA Actors.SS_Wings_FXActor.ParticleSystemComponent_TA_0
@@ -824,7 +816,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSystemComponent_TA
 	Outer: SS_Wings_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000006d64 with 0x00000061 Bytes
+	Serialized data: at 0x0000000000006ddc with 0x00000061 Bytes
 	Export Flags: 0x00000001
 [Export 58]
 	Full Name: ProductAsset_SupersonicTrail_TA ss_splitenergy.ss_splitenergy.ss_splitenergy
@@ -833,7 +825,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: ss_splitenergy
 	Archetype: ProductAsset_SupersonicTrail_TA_0
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000006dc5 with 0x00000064 Bytes
+	Serialized data: at 0x0000000000006e3d with 0x00000064 Bytes
 	Export Flags: 0x00000001
 [Export 59]
 	Full Name: ProductAttribute_PaintSettings_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0
@@ -841,7 +833,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductAttribute_PaintSettings_TA
 	Outer: ss_splitenergy
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000006e29 with 0x000005a3 Bytes
+	Serialized data: at 0x000000000001512d with 0x000005f3 Bytes
 	Export Flags: 0x00000001
 [Export 60]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_0
@@ -849,7 +841,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000073cc with 0x00000160 Bytes
+	Serialized data: at 0x0000000000007444 with 0x00000160 Bytes
 	Export Flags: 0x00000001
 [Export 61]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_1
@@ -857,7 +849,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000752c with 0x00000160 Bytes
+	Serialized data: at 0x00000000000075a4 with 0x00000160 Bytes
 	Export Flags: 0x00000001
 [Export 62]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_10
@@ -865,7 +857,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000768c with 0x000000c4 Bytes
+	Serialized data: at 0x0000000000007704 with 0x000000c4 Bytes
 	Export Flags: 0x00000001
 [Export 63]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_2
@@ -873,7 +865,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000007750 with 0x00000160 Bytes
+	Serialized data: at 0x00000000000077c8 with 0x00000160 Bytes
 	Export Flags: 0x00000001
 [Export 64]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_3
@@ -881,7 +873,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000078b0 with 0x000000c4 Bytes
+	Serialized data: at 0x0000000000007928 with 0x000000c4 Bytes
 	Export Flags: 0x00000001
 [Export 65]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_4
@@ -889,7 +881,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000007974 with 0x00000160 Bytes
+	Serialized data: at 0x00000000000079ec with 0x00000160 Bytes
 	Export Flags: 0x00000001
 [Export 66]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_5
@@ -897,7 +889,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000007ad4 with 0x00000160 Bytes
+	Serialized data: at 0x0000000000007b4c with 0x00000160 Bytes
 	Export Flags: 0x00000001
 [Export 67]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_9
@@ -905,7 +897,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000007c34 with 0x00000160 Bytes
+	Serialized data: at 0x0000000000007cac with 0x00000160 Bytes
 	Export Flags: 0x00000001
 [Export 68]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_0
@@ -913,7 +905,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000007d94 with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000007e0c with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 69]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_1
@@ -921,7 +913,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000007e88 with 0x0000006c Bytes
+	Serialized data: at 0x0000000000007f00 with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 70]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_10
@@ -929,7 +921,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000007ef4 with 0x0000006c Bytes
+	Serialized data: at 0x0000000000007f6c with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 71]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_11
@@ -937,7 +929,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000007f60 with 0x0000006c Bytes
+	Serialized data: at 0x0000000000007fd8 with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 72]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_12
@@ -945,7 +937,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000007fcc with 0x0000006c Bytes
+	Serialized data: at 0x0000000000008044 with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 73]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_2
@@ -953,7 +945,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000008038 with 0x0000006c Bytes
+	Serialized data: at 0x00000000000080b0 with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 74]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_3
@@ -961,7 +953,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000080a4 with 0x0000006c Bytes
+	Serialized data: at 0x000000000000811c with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 75]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_4
@@ -969,7 +961,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000008110 with 0x0000006c Bytes
+	Serialized data: at 0x0000000000008188 with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 76]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_5
@@ -977,7 +969,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000817c with 0x0000006c Bytes
+	Serialized data: at 0x00000000000081f4 with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 77]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_6
@@ -985,7 +977,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000081e8 with 0x0000006c Bytes
+	Serialized data: at 0x0000000000008260 with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 78]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA ss_splitenergy.ss_splitenergy.ss_splitenergy.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_9
@@ -993,7 +985,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000008254 with 0x0000006c Bytes
+	Serialized data: at 0x00000000000082cc with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 79]
 	Full Name: Texture2D Textures.TrailMask_RGB_T
@@ -1001,7 +993,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000082c0 with 0x000057de Bytes
+	Serialized data: at 0x0000000000008338 with 0x000057de Bytes
 	Export Flags: 0x00000001
 [Export 80]
 	Full Name: Texture2D Textures.SmokeTrail01_RGB_T
@@ -1009,15 +1001,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000da9e with 0x00000cd8 Bytes
-	Export Flags: 0x00000001
-[Export 81]
-	Full Name: Texture2D Textures.CloudDistort_T
-	Name: CloudDistort_T
-	Class: Texture2D
-	Outer: Textures
-	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000e776 with 0x000057b5 Bytes
+	Serialized data: at 0x000000000000db16 with 0x00000cd8 Bytes
 	Export Flags: 0x00000001
 [Export 82]
 	Full Name: Texture2D T.SS_Space_Tear_Space_T
@@ -1025,7 +1009,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: T
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000013f2b with 0x00000cd8 Bytes
+	Serialized data: at 0x0000000000013fa3 with 0x00000cd8 Bytes
 	Export Flags: 0x00000001
 
 
@@ -1387,6 +1371,23 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Import 60]
 	Full Name: Texture2D Textures.SphereMask_TimeOffset
 	Name: SphereMask_TimeOffset
+	Class: Texture2D
+	Class Package: Engine
+	Outer: Textures
+[Import 61]
+	Full Name: Package Boost_SweetTooth
+	Name: Boost_SweetTooth
+	Class: Package
+	Class Package: Core
+[Import 62]
+	Full Name: Package Boost_SweetTooth.Textures
+	Name: Textures
+	Class: Package
+	Class Package: Core
+	Outer: Boost_SweetTooth
+[Import 63]
+	Full Name: Texture2D Textures.CloudDistort_T
+	Name: CloudDistort_T
 	Class: Texture2D
 	Class Package: Engine
 	Outer: Textures

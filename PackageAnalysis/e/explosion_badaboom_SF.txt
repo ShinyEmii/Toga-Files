@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x00010605 Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 574 Name Offset: 0x00000251
-Export Count: 446 Export Offset: 0x00004af2
-Import Count: 106 Import Offset: 0x00003f5a
-Depends Offset: 0x0000c862
-Import Export Guids Offset: 0x0000c862
+Name Count: 574 Name Offset: 0x0000025d
+Export Count: 446 Export Offset: 0x00004afe
+Import Count: 106 Import Offset: 0x00003f66
+Depends Offset: 0x0000c86e
+Import Export Guids Offset: 0x0000c86e
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0xd40fd6a1 0x4d7011ab 0x57d442bd 0x96152170
+GUID: 0x6b47c61d 0x4001e403 0x3f053e82 0x074fd379
 Generations:
 [0]
 	Export Count: 446
@@ -107,6 +107,10 @@ Generations:
 	Export Count: 446
 	Name Count: 574
 	Net Object Count: 0
+[22]
+	Export Count: 446
+	Name Count: 574
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression: ZLIB
@@ -117,26 +121,27 @@ Additional Packages To Cook:
 	Empty
 Texture Allocations Texture Types:
 [0]
-	Resolution: [64 x 64]
+	Resolution: [32 x 64]
 	Num Mips: 7
-	Format: DXT1
+	Format: A8R8G8B8
 	Flags: 1
 	Exports:
-		[0] Texture2D Textures.FlameMask_RGB_T
+		[0] Texture2D Textures.Photo_Base_02_T
+		[1] Texture2D Textures.Photo_Base_Simple_T
 [1]
 	Resolution: [2048 x 2048]
 	Num Mips: 1
 	Format: A8R8G8B8
-	Flags: 1
+	Flags: 0
 	Exports:
-		[0] Texture2D Textures.Smoke_HQ
+		[0] Texture2D Textures.GradientMask_RGB_T
 [2]
-	Resolution: [2048 x 2048]
-	Num Mips: 1
-	Format: DXT5
+	Resolution: [64 x 64]
+	Num Mips: 7
+	Format: A8R8G8B8
 	Flags: 1
 	Exports:
-		[0] Texture2D Textures.smoke_puff_8x8_soft
+		[0] Texture2D Textures.Distort_RGB_T
 [3]
 	Resolution: [64 x 64]
 	Num Mips: 7
@@ -145,78 +150,77 @@ Texture Allocations Texture Types:
 	Exports:
 		[0] Texture2D Textures.Smoke_V1
 [4]
-	Resolution: [64 x 64]
-	Num Mips: 7
-	Format: A8R8G8B8
+	Resolution: [2048 x 2048]
+	Num Mips: 1
+	Format: DXT5
 	Flags: 1
 	Exports:
-		[0] Texture2D Textures.Distort_RGB_T
+		[0] Texture2D Textures.smoke_puff_8x8_soft
 [5]
 	Resolution: [2048 x 2048]
 	Num Mips: 1
 	Format: A8R8G8B8
-	Flags: 0
-	Exports:
-		[0] Texture2D Textures.GradientMask_RGB_T
-[6]
-	Resolution: [32 x 64]
-	Num Mips: 7
-	Format: A8R8G8B8
 	Flags: 1
 	Exports:
-		[0] Texture2D Textures.Photo_Base_02_T
-		[1] Texture2D Textures.Photo_Base_Simple_T
-Test Data Size: 0x00003cc7
+		[0] Texture2D Textures.Smoke_HQ
+[6]
+	Resolution: [64 x 64]
+	Num Mips: 7
+	Format: DXT1
+	Flags: 1
+	Exports:
+		[0] Texture2D Textures.FlameMask_RGB_T
+Test Data Size: 0x00003cbb
 Compressed Chunk Info:
 	Offset: 0x0000c611
 	[0]
-		Uncompressed Offset: 0x000000000000c862
+		Uncompressed Offset: 0x000000000000c86e
 		Uncompressed Size: 0x000c5a95
 		Compressed Offset: 0x0000000000010605
 		Compressed Size: 0x0004ba73
 	[1]
-		Uncompressed Offset: 0x00000000000d22f7
+		Uncompressed Offset: 0x00000000000d2303
 		Uncompressed Size: 0x01000194
 		Compressed Offset: 0x000000000005c078
 		Compressed Size: 0x006100c7
 	[2]
-		Uncompressed Offset: 0x00000000010d248b
+		Uncompressed Offset: 0x00000000010d2497
 		Uncompressed Size: 0x0040016c
 		Compressed Offset: 0x000000000066c13f
 		Compressed Size: 0x0012a321
 	[3]
-		Uncompressed Offset: 0x00000000014d25f7
+		Uncompressed Offset: 0x00000000014d2603
 		Uncompressed Size: 0x000017d4
 		Compressed Offset: 0x0000000000796460
 		Compressed Size: 0x00000d3c
 	[4]
-		Uncompressed Offset: 0x00000000014d3dcb
+		Uncompressed Offset: 0x00000000014d3dd7
 		Uncompressed Size: 0x0100018f
 		Compressed Offset: 0x000000000079719c
 		Compressed Size: 0x001b952d
 	[5]
-		Uncompressed Offset: 0x00000000024d3f5a
+		Uncompressed Offset: 0x00000000024d3f66
 		Uncompressed Size: 0x000057de
 		Compressed Offset: 0x00000000009506c9
 		Compressed Size: 0x000047aa
 	[6]
-		Uncompressed Offset: 0x00000000024d9738
+		Uncompressed Offset: 0x00000000024d9744
 		Uncompressed Size: 0x00000879
 		Compressed Offset: 0x0000000000954e73
 		Compressed Size: 0x0000015e
 	[7]
-		Uncompressed Offset: 0x00000000024d9fb1
+		Uncompressed Offset: 0x00000000024d9fbd
 		Uncompressed Size: 0x00000664
 		Compressed Offset: 0x0000000000954fd1
 		Compressed Size: 0x00000122
 	[8]
-		Uncompressed Offset: 0x00000000024da615
+		Uncompressed Offset: 0x00000000024da621
 		Uncompressed Size: 0x0000058d
 		Compressed Offset: 0x00000000009550f3
 		Compressed Size: 0x00000156
-Last Block Size: 0x00000004
-Base Header Size: 0x00000251
-Encrypted Header Size: 0x000103b0
+Last Block Size: 0x00000008
+Base Header Size: 0x0000025d
+Encrypted Header Size: 0x000103a0
 
 AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 
@@ -809,7 +813,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: AkBank
 	Outer: SFX_GoalEvent
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000c862 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000c86e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 1]
 	Full Name: AkBank explosion_badaboom.SFX_GoalExplosions.SFX_GoalExplosion_Badaboom
@@ -817,7 +821,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: AkBank
 	Outer: SFX_GoalExplosions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000c86e with 0x0000000c Bytes
+	Serialized data: at 0x000000000000c87a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 2]
 	Full Name: AkPlaySoundComponent Archetype.Explosion_Badaboom_FXActor.AkPlaySoundComponent_0
@@ -825,7 +829,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: AkPlaySoundComponent
 	Outer: Explosion_Badaboom_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000000c87a with 0x0000005e Bytes
+	Serialized data: at 0x000000000000c886 with 0x0000005e Bytes
 	Export Flags: 0x00000001
 [Export 3]
 	Full Name: AkPlaySoundComponent Ball.BallExplosion_Base_FXActor.AkPlaySoundComponent_0
@@ -833,7 +837,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: AkPlaySoundComponent
 	Outer: BallExplosion_Base_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000000c8d8 with 0x0000005e Bytes
+	Serialized data: at 0x000000000000c8e4 with 0x0000005e Bytes
 	Export Flags: 0x00000001
 [Export 4]
 	Full Name: AkSoundCue explosion_badaboom.SFX_GoalEvent.GoalEvent_Explosion
@@ -841,7 +845,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: AkSoundCue
 	Outer: SFX_GoalEvent
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000c936 with 0x0000005d Bytes
+	Serialized data: at 0x000000000000c942 with 0x0000005d Bytes
 	Export Flags: 0x00000001
 [Export 5]
 	Full Name: AkSoundCue explosion_badaboom.SFX_GoalExplosions.GoalExplosion_Badaboom
@@ -849,7 +853,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: AkSoundCue
 	Outer: SFX_GoalExplosions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000c993 with 0x00000060 Bytes
+	Serialized data: at 0x000000000000c99f with 0x00000060 Bytes
 	Export Flags: 0x00000001
 [Export 6]
 	Full Name: CameraShake Explosion.Explosion_Large_CameraShake
@@ -857,7 +861,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: CameraShake
 	Outer: Explosion
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x000000000000c9f3 with 0x000002d4 Bytes
+	Serialized data: at 0x000000000000c9ff with 0x000002d4 Bytes
 	Export Flags: 0x00000001
 [Export 7]
 	Full Name: CameraShake Archetypes.Explosion_Portal_CameraShake
@@ -865,7 +869,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: CameraShake
 	Outer: Archetypes
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x000000000000ccc7 with 0x000002d4 Bytes
+	Serialized data: at 0x000000000000ccd3 with 0x000002d4 Bytes
 	Export Flags: 0x00000001
 [Export 8]
 	Full Name: DistributionFloatParticleParameter FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_27.DistributionFloatParticleParameter_3
@@ -873,7 +877,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleColor_27
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cf9b with 0x0000008d Bytes
+	Serialized data: at 0x000000000000cfa7 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 9]
 	Full Name: DistributionFloatParticleParameter FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_32.DistributionFloatParticleParameter_3
@@ -881,7 +885,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleColor_32
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d028 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000d034 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 10]
 	Full Name: DistributionFloatParticleParameter FX.Explosion_Badaboom_v2_PS.ParticleModuleParameterDynamic_14.DistributionFloatParticleParameter_1
@@ -889,7 +893,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_14
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d0b5 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000d0c1 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 11]
 	Full Name: DistributionFloatParticleParameter FX.Explosion_Badaboom_v2_PS.ParticleModuleParameterDynamic_18.DistributionFloatParticleParameter_0
@@ -897,7 +901,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_18
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d142 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000d14e with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 12]
 	Full Name: DistributionFloatParticleParameter FX.Explosion_Badaboom_v2_PS.ParticleModuleParameterDynamic_20.DistributionFloatParticleParameter_4
@@ -905,7 +909,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_20
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d1cf with 0x0000008d Bytes
+	Serialized data: at 0x000000000000d1db with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 13]
 	Full Name: DistributionFloatParticleParameter FX.Explosion_Badaboom_v2_PS.ParticleModuleParameterDynamic_20.DistributionFloatParticleParameter_5
@@ -913,7 +917,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_20
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d25c with 0x0000008d Bytes
+	Serialized data: at 0x000000000000d268 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 14]
 	Full Name: DistributionFloatParticleParameter FX.Explosion_Badaboom_v2_PS.ParticleModuleParameterDynamic_26.DistributionFloatParticleParameter_1
@@ -921,7 +925,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_26
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d2e9 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000d2f5 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 15]
 	Full Name: DistributionVectorParticleParameter FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_1.DistributionVectorParticleParameter_1
@@ -929,7 +933,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d376 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000d382 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 16]
 	Full Name: DistributionVectorParticleParameter FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_13.DistributionVectorParticleParameter_1
@@ -937,7 +941,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_13
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d463 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000d46f with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 17]
 	Full Name: DistributionVectorParticleParameter FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_15.DistributionVectorParticleParameter_1
@@ -945,7 +949,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_15
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d550 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000d55c with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 18]
 	Full Name: DistributionVectorParticleParameter FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_18.DistributionVectorParticleParameter_1
@@ -953,7 +957,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_18
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d63d with 0x000000ed Bytes
+	Serialized data: at 0x000000000000d649 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 19]
 	Full Name: DistributionVectorParticleParameter FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_19.DistributionVectorParticleParameter_1
@@ -961,7 +965,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_19
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d72a with 0x000000ed Bytes
+	Serialized data: at 0x000000000000d736 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 20]
 	Full Name: DistributionVectorParticleParameter FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_2.DistributionVectorParticleParameter_1
@@ -969,7 +973,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d817 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000d823 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 21]
 	Full Name: DistributionVectorParticleParameter FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_23.DistributionVectorParticleParameter_1
@@ -977,7 +981,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_23
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d904 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000d910 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 22]
 	Full Name: DistributionVectorParticleParameter FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_27.DistributionVectorParticleParameter_1
@@ -985,7 +989,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_27
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d9f1 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000d9fd with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 23]
 	Full Name: DistributionVectorParticleParameter FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_28.DistributionVectorParticleParameter_1
@@ -993,7 +997,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_28
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000dade with 0x000000ed Bytes
+	Serialized data: at 0x000000000000daea with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 24]
 	Full Name: DistributionVectorParticleParameter FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_29.DistributionVectorParticleParameter_1
@@ -1001,7 +1005,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_29
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000dbcb with 0x000000ed Bytes
+	Serialized data: at 0x000000000000dbd7 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 25]
 	Full Name: DistributionVectorParticleParameter FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_32.DistributionVectorParticleParameter_1
@@ -1009,7 +1013,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_32
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000dcb8 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000dcc4 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 26]
 	Full Name: ForceFeedbackWaveform Explosion.Explosion_Large_FF
@@ -1017,7 +1021,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ForceFeedbackWaveform
 	Outer: Explosion
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x000000000000dda5 with 0x000002b8 Bytes
+	Serialized data: at 0x000000000000ddb1 with 0x000002b8 Bytes
 	Export Flags: 0x00000001
 [Export 28]
 	Full Name: FXActor_TA Archetype.Explosion_Badaboom_FXActor
@@ -1025,7 +1029,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: FXActor_TA
 	Outer: Archetype
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x000000000000e315 with 0x0000095d Bytes
+	Serialized data: at 0x000000000000e321 with 0x0000095d Bytes
 	Export Flags: 0x00000001
 [Export 29]
 	Full Name: FXActor_TA Ball.BallExplosion_Base_FXActor
@@ -1033,7 +1037,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: FXActor_TA
 	Outer: Ball
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x000000000000ec72 with 0x00000656 Bytes
+	Serialized data: at 0x000000000000ec7e with 0x00000656 Bytes
 	Export Flags: 0x00000001
 [Export 30]
 	Full Name: Material Materials.LightningTEST_MAT
@@ -1041,7 +1045,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000024d9738 with 0x000002eb Bytes
+	Serialized data: at 0x00000000024d9744 with 0x000002eb Bytes
 	Export Flags: 0x00000001
 [Export 31]
 	Full Name: Material Materials.Base_MAT
@@ -1049,7 +1053,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000000f5b3 with 0x0000030a Bytes
+	Serialized data: at 0x000000000000f5bf with 0x0000030a Bytes
 	Export Flags: 0x00000001
 [Export 32]
 	Full Name: Material Materials.RingDissolve_MAT
@@ -1057,7 +1061,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000000f8bd with 0x000002be Bytes
+	Serialized data: at 0x000000000000f8c9 with 0x000002be Bytes
 	Export Flags: 0x00000001
 [Export 33]
 	Full Name: Material Explosion.ExpBallLighting_MAT
@@ -1065,7 +1069,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Material
 	Outer: Explosion
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000000fb7b with 0x000002ea Bytes
+	Serialized data: at 0x000000000000fb87 with 0x000002ea Bytes
 	Export Flags: 0x00000001
 [Export 34]
 	Full Name: Material Materials.Badaboom_02_MAT
@@ -1073,7 +1077,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000000fe65 with 0x00000694 Bytes
+	Serialized data: at 0x000000000000fe71 with 0x00000694 Bytes
 	Export Flags: 0x00000001
 [Export 35]
 	Full Name: Material Materials.Base_DirtSpikes_MAT
@@ -1081,7 +1085,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000104f9 with 0x000003b1 Bytes
+	Serialized data: at 0x0000000000010505 with 0x000003b1 Bytes
 	Export Flags: 0x00000001
 [Export 36]
 	Full Name: Material Materials.Clouds_02_Mat
@@ -1089,7 +1093,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000108aa with 0x0000059f Bytes
+	Serialized data: at 0x00000000000108b6 with 0x0000059f Bytes
 	Export Flags: 0x00000001
 [Export 37]
 	Full Name: Material Materials.RingDissolve_MAT
@@ -1097,7 +1101,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000010e49 with 0x00000252 Bytes
+	Serialized data: at 0x0000000000010e55 with 0x00000252 Bytes
 	Export Flags: 0x00000001
 [Export 38]
 	Full Name: Material Materials.BoostMesh_Burst_MAT
@@ -1105,7 +1109,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000001109b with 0x0000029e Bytes
+	Serialized data: at 0x00000000000110a7 with 0x0000029e Bytes
 	Export Flags: 0x00000001
 [Export 39]
 	Full Name: Material Materials.NukeCoreSphere_MAT
@@ -1113,7 +1117,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000024d9fb1 with 0x00000664 Bytes
+	Serialized data: at 0x00000000024d9fbd with 0x00000664 Bytes
 	Export Flags: 0x00000001
 [Export 41]
 	Full Name: MaterialExpressionScalarParameter Materials.Badaboom_02_MAT.MaterialExpressionScalarParameter_0
@@ -1121,7 +1125,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: Badaboom_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011afa with 0x00000094 Bytes
+	Serialized data: at 0x0000000000011b06 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 42]
 	Full Name: MaterialExpressionScalarParameter Materials.Badaboom_02_MAT.MaterialExpressionScalarParameter_1
@@ -1129,7 +1133,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: Badaboom_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011b8e with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000011b9a with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 43]
 	Full Name: MaterialExpressionScalarParameter Materials.Badaboom_02_MAT.MaterialExpressionScalarParameter_10
@@ -1137,7 +1141,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: Badaboom_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011c42 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000011c4e with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 44]
 	Full Name: MaterialExpressionScalarParameter Materials.Badaboom_02_MAT.MaterialExpressionScalarParameter_13
@@ -1145,7 +1149,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: Badaboom_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011cf6 with 0x000000c0 Bytes
+	Serialized data: at 0x0000000000011d02 with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [Export 45]
 	Full Name: MaterialExpressionScalarParameter Materials.Badaboom_02_MAT.MaterialExpressionScalarParameter_15
@@ -1153,7 +1157,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: Badaboom_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011db6 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000011dc2 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 46]
 	Full Name: MaterialExpressionScalarParameter Materials.Badaboom_02_MAT.MaterialExpressionScalarParameter_2
@@ -1161,7 +1165,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: Badaboom_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011e4a with 0x00000094 Bytes
+	Serialized data: at 0x0000000000011e56 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 47]
 	Full Name: MaterialExpressionScalarParameter Materials.Badaboom_02_MAT.MaterialExpressionScalarParameter_3
@@ -1169,7 +1173,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: Badaboom_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011ede with 0x00000094 Bytes
+	Serialized data: at 0x0000000000011eea with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 48]
 	Full Name: MaterialExpressionScalarParameter Materials.Badaboom_02_MAT.MaterialExpressionScalarParameter_4
@@ -1177,7 +1181,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: Badaboom_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011f72 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000011f7e with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 49]
 	Full Name: MaterialExpressionScalarParameter Materials.Badaboom_02_MAT.MaterialExpressionScalarParameter_5
@@ -1185,7 +1189,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: Badaboom_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012006 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000012012 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 50]
 	Full Name: MaterialExpressionScalarParameter Materials.Badaboom_02_MAT.MaterialExpressionScalarParameter_6
@@ -1193,7 +1197,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: Badaboom_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001209a with 0x000000b4 Bytes
+	Serialized data: at 0x00000000000120a6 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 51]
 	Full Name: MaterialExpressionScalarParameter Materials.Badaboom_02_MAT.MaterialExpressionScalarParameter_8
@@ -1201,7 +1205,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: Badaboom_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001214e with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001215a with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 52]
 	Full Name: MaterialExpressionScalarParameter Materials.Base_DirtSpikes_MAT.MaterialExpressionScalarParameter_0
@@ -1209,7 +1213,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: Base_DirtSpikes_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012202 with 0x00000094 Bytes
+	Serialized data: at 0x000000000001220e with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 53]
 	Full Name: MaterialExpressionScalarParameter Materials.Base_DirtSpikes_MAT.MaterialExpressionScalarParameter_12
@@ -1217,7 +1221,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: Base_DirtSpikes_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012296 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000122a2 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 54]
 	Full Name: MaterialExpressionScalarParameter Materials.Base_DirtSpikes_MAT.MaterialExpressionScalarParameter_8
@@ -1225,7 +1229,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: Base_DirtSpikes_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001232a with 0x00000078 Bytes
+	Serialized data: at 0x0000000000012336 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 55]
 	Full Name: MaterialExpressionScalarParameter Materials.Clouds_02_Mat.MaterialExpressionScalarParameter_0
@@ -1233,7 +1237,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: Clouds_02_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000123a2 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000123ae with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 56]
 	Full Name: MaterialExpressionScalarParameter Materials.Clouds_02_Mat.MaterialExpressionScalarParameter_1
@@ -1241,7 +1245,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: Clouds_02_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012436 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000012442 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 57]
 	Full Name: MaterialExpressionScalarParameter Materials.NukeCoreSphere_MAT.MaterialExpressionScalarParameter_0
@@ -1249,7 +1253,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: NukeCoreSphere_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000124ca with 0x00000094 Bytes
+	Serialized data: at 0x00000000000124d6 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 58]
 	Full Name: MaterialExpressionScalarParameter Materials.NukeCoreSphere_MAT.MaterialExpressionScalarParameter_1
@@ -1257,7 +1261,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: NukeCoreSphere_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001255e with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001256a with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 59]
 	Full Name: MaterialExpressionScalarParameter Materials.NukeCoreSphere_MAT.MaterialExpressionScalarParameter_10
@@ -1265,7 +1269,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: NukeCoreSphere_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012612 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001261e with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 60]
 	Full Name: MaterialExpressionScalarParameter Materials.NukeCoreSphere_MAT.MaterialExpressionScalarParameter_13
@@ -1273,7 +1277,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: NukeCoreSphere_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000126c6 with 0x000000c0 Bytes
+	Serialized data: at 0x00000000000126d2 with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [Export 61]
 	Full Name: MaterialExpressionScalarParameter Materials.NukeCoreSphere_MAT.MaterialExpressionScalarParameter_15
@@ -1281,7 +1285,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: NukeCoreSphere_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012786 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000012792 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 62]
 	Full Name: MaterialExpressionScalarParameter Materials.NukeCoreSphere_MAT.MaterialExpressionScalarParameter_2
@@ -1289,7 +1293,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: NukeCoreSphere_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001281a with 0x00000094 Bytes
+	Serialized data: at 0x0000000000012826 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 63]
 	Full Name: MaterialExpressionScalarParameter Materials.NukeCoreSphere_MAT.MaterialExpressionScalarParameter_3
@@ -1297,7 +1301,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: NukeCoreSphere_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000128ae with 0x00000094 Bytes
+	Serialized data: at 0x00000000000128ba with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 64]
 	Full Name: MaterialExpressionScalarParameter Materials.NukeCoreSphere_MAT.MaterialExpressionScalarParameter_8
@@ -1305,7 +1309,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionScalarParameter
 	Outer: NukeCoreSphere_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012942 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000001294e with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 65]
 	Full Name: MaterialExpressionStaticSwitchParameter Materials.Badaboom_02_MAT.MaterialExpressionStaticSwitchParameter_0
@@ -1313,7 +1317,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Badaboom_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000129f6 with 0x00000100 Bytes
+	Serialized data: at 0x0000000000012a02 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 66]
 	Full Name: MaterialExpressionStaticSwitchParameter Materials.Badaboom_02_MAT.MaterialExpressionStaticSwitchParameter_2
@@ -1321,7 +1325,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Badaboom_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012af6 with 0x00000100 Bytes
+	Serialized data: at 0x0000000000012b02 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 67]
 	Full Name: MaterialExpressionStaticSwitchParameter Materials.Clouds_02_Mat.MaterialExpressionStaticSwitchParameter_0
@@ -1329,7 +1333,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Clouds_02_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012bf6 with 0x00000100 Bytes
+	Serialized data: at 0x0000000000012c02 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 68]
 	Full Name: MaterialExpressionTextureSampleParameter2D Materials.Base_MAT.MaterialExpressionTextureSampleParameter2D_0
@@ -1337,7 +1341,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Base_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012cf6 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000012d02 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 69]
 	Full Name: MaterialExpressionVectorParameter Materials.LightningTEST_MAT.MaterialExpressionVectorParameter_1
@@ -1345,7 +1349,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionVectorParameter
 	Outer: LightningTEST_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012da3 with 0x00000088 Bytes
+	Serialized data: at 0x0000000000012daf with 0x00000088 Bytes
 	Export Flags: 0x00000001
 [Export 70]
 	Full Name: MaterialExpressionVectorParameter Materials.Badaboom_02_MAT.MaterialExpressionVectorParameter_1
@@ -1353,7 +1357,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionVectorParameter
 	Outer: Badaboom_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012e2b with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000012e37 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 71]
 	Full Name: MaterialExpressionVectorParameter Materials.Badaboom_02_MAT.MaterialExpressionVectorParameter_2
@@ -1361,7 +1365,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionVectorParameter
 	Outer: Badaboom_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012ed3 with 0x000000c8 Bytes
+	Serialized data: at 0x0000000000012edf with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 72]
 	Full Name: MaterialExpressionVectorParameter Materials.Badaboom_02_MAT.MaterialExpressionVectorParameter_3
@@ -1369,7 +1373,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionVectorParameter
 	Outer: Badaboom_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012f9b with 0x000000c8 Bytes
+	Serialized data: at 0x0000000000012fa7 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 73]
 	Full Name: MaterialExpressionVectorParameter Materials.NukeCoreSphere_MAT.MaterialExpressionVectorParameter_2
@@ -1377,7 +1381,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionVectorParameter
 	Outer: NukeCoreSphere_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000013063 with 0x000000c8 Bytes
+	Serialized data: at 0x000000000001306f with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 74]
 	Full Name: MaterialExpressionVectorParameter Materials.NukeCoreSphere_MAT.MaterialExpressionVectorParameter_3
@@ -1385,7 +1389,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionVectorParameter
 	Outer: NukeCoreSphere_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001312b with 0x000000c8 Bytes
+	Serialized data: at 0x0000000000013137 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 75]
 	Full Name: MaterialExpressionVectorParameter Materials.NukeCoreSphere_MAT.MaterialExpressionVectorParameter_6
@@ -1393,7 +1397,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialExpressionVectorParameter
 	Outer: NukeCoreSphere_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000131f3 with 0x000000a8 Bytes
+	Serialized data: at 0x00000000000131ff with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 76]
 	Full Name: MaterialFunction explosion_badaboom.Psy_MaterialFunctions.MonochromaticShift
@@ -1401,7 +1405,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialFunction
 	Outer: Psy_MaterialFunctions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001329b with 0x0000009c Bytes
+	Serialized data: at 0x00000000000132a7 with 0x0000009c Bytes
 	Export Flags: 0x00000001
 [Export 77]
 	Full Name: MaterialInstanceConstant Materials.Badaboom_V2_02_MIC
@@ -1409,7 +1413,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialInstanceConstant
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000013337 with 0x000006e1 Bytes
+	Serialized data: at 0x0000000000013343 with 0x000006e1 Bytes
 	Export Flags: 0x00000001
 [Export 78]
 	Full Name: MaterialInstanceConstant Materials.Clouds_02_MIC
@@ -1417,7 +1421,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialInstanceConstant
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000013a18 with 0x00000245 Bytes
+	Serialized data: at 0x0000000000013a24 with 0x00000245 Bytes
 	Export Flags: 0x00000001
 [Export 79]
 	Full Name: MaterialInstanceConstant Materials.Clouds_MIC
@@ -1425,7 +1429,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialInstanceConstant
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000013c5d with 0x00000245 Bytes
+	Serialized data: at 0x0000000000013c69 with 0x00000245 Bytes
 	Export Flags: 0x00000001
 [Export 80]
 	Full Name: MaterialInstanceConstant Materials.NukeCoreSphere_MIC
@@ -1433,21 +1437,21 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: MaterialInstanceConstant
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000013ea2 with 0x00000540 Bytes
+	Serialized data: at 0x0000000000013eae with 0x00000540 Bytes
 	Export Flags: 0x00000001
 [Export 81]
 	Full Name: ObjectReferencer explosion_badaboom.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000000143e2 with 0x0000002c Bytes
+	Serialized data: at 0x00000000000143ee with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [Export 82]
 	Full Name: Package explosion_badaboom.boost_darkmatter
 	Name: boost_darkmatter
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001440e with 0x0000000c Bytes
+	Serialized data: at 0x000000000001441a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1457,14 +1461,14 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: boost_darkmatter
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001441a with 0x0000000c Bytes
+	Serialized data: at 0x0000000000014426 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 84]
 	Full Name: Package explosion_badaboom.Boost_Photon
 	Name: Boost_Photon
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000014426 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000014432 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1474,7 +1478,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: Boost_Photon
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000014432 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001443e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 86]
 	Full Name: Package explosion_badaboom.Boost_Photon.SM
@@ -1482,7 +1486,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: Boost_Photon
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001443e with 0x0000000c Bytes
+	Serialized data: at 0x000000000001444a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 87]
 	Full Name: Package explosion_badaboom.Boost_Photon.Textures
@@ -1490,14 +1494,14 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: Boost_Photon
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001444a with 0x0000000c Bytes
+	Serialized data: at 0x0000000000014456 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 92]
 	Full Name: Package explosion_badaboom.Breakout_FX
 	Name: Breakout_FX
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000014486 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000014492 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1507,7 +1511,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: Breakout_FX
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000014492 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001449e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 94]
 	Full Name: Package Ball.Materials
@@ -1515,7 +1519,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: Ball
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001449e with 0x0000000c Bytes
+	Serialized data: at 0x00000000000144aa with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 95]
 	Full Name: Package Materials.Explosion
@@ -1523,14 +1527,14 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: Materials
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000144aa with 0x0000000c Bytes
+	Serialized data: at 0x00000000000144b6 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 96]
 	Full Name: Package explosion_badaboom.CameraShakes
 	Name: CameraShakes
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000144b6 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000144c2 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1540,14 +1544,14 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: CameraShakes
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000144c2 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000144ce with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 98]
 	Full Name: Package explosion_badaboom.Explosion_Assets
 	Name: Explosion_Assets
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000144ce with 0x0000000c Bytes
+	Serialized data: at 0x00000000000144da with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1557,14 +1561,14 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: Explosion_Assets
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000144da with 0x0000000c Bytes
+	Serialized data: at 0x00000000000144e6 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 100]
 	Full Name: Package explosion_badaboom.explosion_badaboom
 	Name: explosion_badaboom
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000144e6 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000144f2 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1574,7 +1578,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: explosion_badaboom
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000144f2 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000144fe with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 102]
 	Full Name: Package explosion_badaboom.explosion_badaboom.FX
@@ -1582,7 +1586,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: explosion_badaboom
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000144fe with 0x0000000c Bytes
+	Serialized data: at 0x000000000001450a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 103]
 	Full Name: Package explosion_badaboom.explosion_badaboom.Materials
@@ -1590,7 +1594,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: explosion_badaboom
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001450a with 0x0000000c Bytes
+	Serialized data: at 0x0000000000014516 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 104]
 	Full Name: Package explosion_badaboom.explosion_badaboom.Textures
@@ -1598,14 +1602,14 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: explosion_badaboom
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000014516 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000014522 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 105]
 	Full Name: Package explosion_badaboom.explosion_badaboom_SF
 	Name: explosion_badaboom_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000014522 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001452e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -1614,7 +1618,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Name: explosion_nuke
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001452e with 0x0000000c Bytes
+	Serialized data: at 0x000000000001453a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1624,7 +1628,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: explosion_nuke
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001453a with 0x0000000c Bytes
+	Serialized data: at 0x0000000000014546 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 108]
 	Full Name: Package explosion_badaboom.explosion_nuke.Meshes
@@ -1632,7 +1636,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: explosion_nuke
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000014546 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000014552 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 109]
 	Full Name: Package explosion_badaboom.explosion_nuke.Textures
@@ -1640,14 +1644,14 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: explosion_nuke
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000014552 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001455e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 110]
 	Full Name: Package explosion_badaboom.explosion_Portal
 	Name: explosion_Portal
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001455e with 0x0000000c Bytes
+	Serialized data: at 0x000000000001456a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1657,14 +1661,14 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: explosion_Portal
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001456a with 0x0000000c Bytes
+	Serialized data: at 0x0000000000014576 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 114]
 	Full Name: Package explosion_badaboom.FXActors
 	Name: FXActors
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001458e with 0x0000000c Bytes
+	Serialized data: at 0x000000000001459a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1674,14 +1678,14 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: FXActors
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001459a with 0x0000000c Bytes
+	Serialized data: at 0x00000000000145a6 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 116]
 	Full Name: Package explosion_badaboom.Psy_MaterialFunctions
 	Name: Psy_MaterialFunctions
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000145a6 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000145b2 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1690,7 +1694,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Name: SFX_GoalEvent
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000145b2 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000145be with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1699,7 +1703,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Name: SFX_GoalExplosions
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000145be with 0x0000000c Bytes
+	Serialized data: at 0x00000000000145ca with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1708,7 +1712,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Name: wheel_psyonix
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000145e2 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000145ee with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1718,7 +1722,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Package
 	Outer: wheel_psyonix
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000145ee with 0x0000000c Bytes
+	Serialized data: at 0x00000000000145fa with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 123]
 	Full Name: ParameterDispenser_X Archetype.Explosion_Badaboom_FXActor.DefaultParameters
@@ -1727,7 +1731,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Outer: Explosion_Badaboom_FXActor
 	Archetype: DefaultParameters
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x00000000000145fa with 0x00000010 Bytes
+	Serialized data: at 0x0000000000014606 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 124]
 	Full Name: ParameterDispenser_X Ball.BallExplosion_Base_FXActor.DefaultParameters
@@ -1736,7 +1740,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Outer: BallExplosion_Base_FXActor
 	Archetype: DefaultParameters
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x000000000001460a with 0x00000010 Bytes
+	Serialized data: at 0x0000000000014616 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 125]
 	Full Name: ParticleLODLevel FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_0.ParticleLODLevel_0
@@ -1744,7 +1748,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001461a with 0x000000ac Bytes
+	Serialized data: at 0x0000000000014626 with 0x000000ac Bytes
 	Export Flags: 0x00000001
 [Export 126]
 	Full Name: ParticleLODLevel FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_1.ParticleLODLevel_0
@@ -1752,7 +1756,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000146c6 with 0x000000b0 Bytes
+	Serialized data: at 0x00000000000146d2 with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [Export 127]
 	Full Name: ParticleLODLevel FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_13.ParticleLODLevel_0
@@ -1760,7 +1764,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_13
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014776 with 0x000000c0 Bytes
+	Serialized data: at 0x0000000000014782 with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [Export 128]
 	Full Name: ParticleLODLevel FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_15.ParticleLODLevel_2
@@ -1768,7 +1772,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_15
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014836 with 0x000000c4 Bytes
+	Serialized data: at 0x0000000000014842 with 0x000000c4 Bytes
 	Export Flags: 0x00000001
 [Export 129]
 	Full Name: ParticleLODLevel FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_17.ParticleLODLevel_4
@@ -1776,7 +1780,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_17
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000148fa with 0x000000b8 Bytes
+	Serialized data: at 0x0000000000014906 with 0x000000b8 Bytes
 	Export Flags: 0x00000001
 [Export 130]
 	Full Name: ParticleLODLevel FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_19.ParticleLODLevel_7
@@ -1784,7 +1788,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_19
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000149b2 with 0x000000ac Bytes
+	Serialized data: at 0x00000000000149be with 0x000000ac Bytes
 	Export Flags: 0x00000001
 [Export 131]
 	Full Name: ParticleLODLevel FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_20.ParticleLODLevel_6
@@ -1792,7 +1796,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_20
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014a5e with 0x000000c4 Bytes
+	Serialized data: at 0x0000000000014a6a with 0x000000c4 Bytes
 	Export Flags: 0x00000001
 [Export 132]
 	Full Name: ParticleLODLevel FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_22.ParticleLODLevel_1
@@ -1800,7 +1804,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_22
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014b22 with 0x000000c0 Bytes
+	Serialized data: at 0x0000000000014b2e with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [Export 133]
 	Full Name: ParticleLODLevel FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_26.ParticleLODLevel_0
@@ -1808,7 +1812,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_26
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014be2 with 0x000000bc Bytes
+	Serialized data: at 0x0000000000014bee with 0x000000bc Bytes
 	Export Flags: 0x00000001
 [Export 134]
 	Full Name: ParticleLODLevel FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_29.ParticleLODLevel_0
@@ -1816,7 +1820,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_29
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014c9e with 0x000000ac Bytes
+	Serialized data: at 0x0000000000014caa with 0x000000ac Bytes
 	Export Flags: 0x00000001
 [Export 135]
 	Full Name: ParticleLODLevel FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_3.ParticleLODLevel_0
@@ -1824,7 +1828,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014d4a with 0x000000b8 Bytes
+	Serialized data: at 0x0000000000014d56 with 0x000000b8 Bytes
 	Export Flags: 0x00000001
 [Export 136]
 	Full Name: ParticleLODLevel FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_30.ParticleLODLevel_0
@@ -1832,7 +1836,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_30
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014e02 with 0x000000bc Bytes
+	Serialized data: at 0x0000000000014e0e with 0x000000bc Bytes
 	Export Flags: 0x00000001
 [Export 137]
 	Full Name: ParticleLODLevel FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_31.ParticleLODLevel_0
@@ -1840,7 +1844,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_31
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014ebe with 0x000000b0 Bytes
+	Serialized data: at 0x0000000000014eca with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [Export 138]
 	Full Name: ParticleLODLevel FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_32.ParticleLODLevel_0
@@ -1848,7 +1852,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_32
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014f6e with 0x000000c4 Bytes
+	Serialized data: at 0x0000000000014f7a with 0x000000c4 Bytes
 	Export Flags: 0x00000001
 [Export 139]
 	Full Name: ParticleLODLevel FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_35.ParticleLODLevel_0
@@ -1856,7 +1860,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_35
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015032 with 0x000000c4 Bytes
+	Serialized data: at 0x000000000001503e with 0x000000c4 Bytes
 	Export Flags: 0x00000001
 [Export 140]
 	Full Name: ParticleLODLevel FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_37.ParticleLODLevel_2
@@ -1864,7 +1868,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_37
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000150f6 with 0x000000c4 Bytes
+	Serialized data: at 0x0000000000015102 with 0x000000c4 Bytes
 	Export Flags: 0x00000001
 [Export 141]
 	Full Name: ParticleLODLevel FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_4.ParticleLODLevel_1
@@ -1872,7 +1876,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000151ba with 0x000000b8 Bytes
+	Serialized data: at 0x00000000000151c6 with 0x000000b8 Bytes
 	Export Flags: 0x00000001
 [Export 142]
 	Full Name: ParticleLODLevel FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_5.ParticleLODLevel_2
@@ -1880,7 +1884,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_5
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015272 with 0x000000b8 Bytes
+	Serialized data: at 0x000000000001527e with 0x000000b8 Bytes
 	Export Flags: 0x00000001
 [Export 143]
 	Full Name: ParticleModuleAcceleration FX.Explosion_Badaboom_v2_PS.ParticleModuleAcceleration_1
@@ -1888,7 +1892,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleAcceleration
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001532a with 0x00000141 Bytes
+	Serialized data: at 0x0000000000015336 with 0x00000141 Bytes
 	Export Flags: 0x00000001
 [Export 144]
 	Full Name: ParticleModuleAcceleration FX.Explosion_Badaboom_v2_PS.ParticleModuleAcceleration_4
@@ -1896,7 +1900,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleAcceleration
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001546b with 0x00000141 Bytes
+	Serialized data: at 0x0000000000015477 with 0x00000141 Bytes
 	Export Flags: 0x00000001
 [Export 145]
 	Full Name: ParticleModuleAcceleration FX.Explosion_Badaboom_v2_PS.ParticleModuleAcceleration_8
@@ -1904,7 +1908,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleAcceleration
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000155ac with 0x00000141 Bytes
+	Serialized data: at 0x00000000000155b8 with 0x00000141 Bytes
 	Export Flags: 0x00000001
 [Export 146]
 	Full Name: ParticleModuleColor FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_0
@@ -1912,7 +1916,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColor
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000156ed with 0x0000011d Bytes
+	Serialized data: at 0x00000000000156f9 with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [Export 147]
 	Full Name: ParticleModuleColor FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_1
@@ -1920,7 +1924,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColor
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001580a with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000015816 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 148]
 	Full Name: ParticleModuleColor FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_13
@@ -1928,7 +1932,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColor
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000158db with 0x000000d1 Bytes
+	Serialized data: at 0x00000000000158e7 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 149]
 	Full Name: ParticleModuleColor FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_15
@@ -1936,7 +1940,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColor
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000159ac with 0x000000d1 Bytes
+	Serialized data: at 0x00000000000159b8 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 150]
 	Full Name: ParticleModuleColor FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_18
@@ -1944,7 +1948,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColor
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015a7d with 0x00000116 Bytes
+	Serialized data: at 0x0000000000015a89 with 0x00000116 Bytes
 	Export Flags: 0x00000001
 [Export 151]
 	Full Name: ParticleModuleColor FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_19
@@ -1952,7 +1956,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColor
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015b93 with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000015b9f with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 152]
 	Full Name: ParticleModuleColor FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_2
@@ -1960,7 +1964,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColor
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015c64 with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000015c70 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 153]
 	Full Name: ParticleModuleColor FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_21
@@ -1968,7 +1972,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColor
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015d35 with 0x0000011d Bytes
+	Serialized data: at 0x0000000000015d41 with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [Export 154]
 	Full Name: ParticleModuleColor FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_23
@@ -1976,7 +1980,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColor
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015e52 with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000015e5e with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 155]
 	Full Name: ParticleModuleColor FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_26
@@ -1984,7 +1988,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColor
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015f23 with 0x0000011d Bytes
+	Serialized data: at 0x0000000000015f2f with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [Export 156]
 	Full Name: ParticleModuleColor FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_27
@@ -1992,7 +1996,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColor
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016040 with 0x000000ed Bytes
+	Serialized data: at 0x000000000001604c with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 157]
 	Full Name: ParticleModuleColor FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_28
@@ -2000,7 +2004,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColor
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001612d with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000016139 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 158]
 	Full Name: ParticleModuleColor FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_29
@@ -2008,7 +2012,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColor
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000161fe with 0x000000d1 Bytes
+	Serialized data: at 0x000000000001620a with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 159]
 	Full Name: ParticleModuleColor FX.Explosion_Badaboom_v2_PS.ParticleModuleColor_32
@@ -2016,7 +2020,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColor
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000162cf with 0x000000ed Bytes
+	Serialized data: at 0x00000000000162db with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 160]
 	Full Name: ParticleModuleColorScaleOverLife FX.Explosion_Badaboom_v2_PS.ParticleModuleColorScaleOverLife_0
@@ -2024,7 +2028,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000163bc with 0x00000185 Bytes
+	Serialized data: at 0x00000000000163c8 with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 161]
 	Full Name: ParticleModuleColorScaleOverLife FX.Explosion_Badaboom_v2_PS.ParticleModuleColorScaleOverLife_1
@@ -2032,7 +2036,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016541 with 0x00000235 Bytes
+	Serialized data: at 0x000000000001654d with 0x00000235 Bytes
 	Export Flags: 0x00000001
 [Export 162]
 	Full Name: ParticleModuleColorScaleOverLife FX.Explosion_Badaboom_v2_PS.ParticleModuleColorScaleOverLife_14
@@ -2040,7 +2044,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016776 with 0x00000155 Bytes
+	Serialized data: at 0x0000000000016782 with 0x00000155 Bytes
 	Export Flags: 0x00000001
 [Export 163]
 	Full Name: ParticleModuleColorScaleOverLife FX.Explosion_Badaboom_v2_PS.ParticleModuleColorScaleOverLife_16
@@ -2048,7 +2052,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000168cb with 0x0000011d Bytes
+	Serialized data: at 0x00000000000168d7 with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [Export 164]
 	Full Name: ParticleModuleColorScaleOverLife FX.Explosion_Badaboom_v2_PS.ParticleModuleColorScaleOverLife_17
@@ -2056,7 +2060,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000169e8 with 0x00000235 Bytes
+	Serialized data: at 0x00000000000169f4 with 0x00000235 Bytes
 	Export Flags: 0x00000001
 [Export 165]
 	Full Name: ParticleModuleColorScaleOverLife FX.Explosion_Badaboom_v2_PS.ParticleModuleColorScaleOverLife_18
@@ -2064,7 +2068,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016c1d with 0x00000155 Bytes
+	Serialized data: at 0x0000000000016c29 with 0x00000155 Bytes
 	Export Flags: 0x00000001
 [Export 166]
 	Full Name: ParticleModuleColorScaleOverLife FX.Explosion_Badaboom_v2_PS.ParticleModuleColorScaleOverLife_2
@@ -2072,7 +2076,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016d72 with 0x0000010d Bytes
+	Serialized data: at 0x0000000000016d7e with 0x0000010d Bytes
 	Export Flags: 0x00000001
 [Export 167]
 	Full Name: ParticleModuleColorScaleOverLife FX.Explosion_Badaboom_v2_PS.ParticleModuleColorScaleOverLife_20
@@ -2080,7 +2084,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016e7f with 0x00000235 Bytes
+	Serialized data: at 0x0000000000016e8b with 0x00000235 Bytes
 	Export Flags: 0x00000001
 [Export 168]
 	Full Name: ParticleModuleColorScaleOverLife FX.Explosion_Badaboom_v2_PS.ParticleModuleColorScaleOverLife_22
@@ -2088,7 +2092,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000170b4 with 0x00000185 Bytes
+	Serialized data: at 0x00000000000170c0 with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 169]
 	Full Name: ParticleModuleColorScaleOverLife FX.Explosion_Badaboom_v2_PS.ParticleModuleColorScaleOverLife_25
@@ -2096,7 +2100,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017239 with 0x000001fd Bytes
+	Serialized data: at 0x0000000000017245 with 0x000001fd Bytes
 	Export Flags: 0x00000001
 [Export 170]
 	Full Name: ParticleModuleColorScaleOverLife FX.Explosion_Badaboom_v2_PS.ParticleModuleColorScaleOverLife_26
@@ -2104,7 +2108,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017436 with 0x00000185 Bytes
+	Serialized data: at 0x0000000000017442 with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 171]
 	Full Name: ParticleModuleColorScaleOverLife FX.Explosion_Badaboom_v2_PS.ParticleModuleColorScaleOverLife_28
@@ -2112,7 +2116,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000175bb with 0x00000285 Bytes
+	Serialized data: at 0x00000000000175c7 with 0x00000285 Bytes
 	Export Flags: 0x00000001
 [Export 172]
 	Full Name: ParticleModuleColorScaleOverLife FX.Explosion_Badaboom_v2_PS.ParticleModuleColorScaleOverLife_29
@@ -2120,7 +2124,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017840 with 0x00000155 Bytes
+	Serialized data: at 0x000000000001784c with 0x00000155 Bytes
 	Export Flags: 0x00000001
 [Export 173]
 	Full Name: ParticleModuleColorScaleOverLife FX.Explosion_Badaboom_v2_PS.ParticleModuleColorScaleOverLife_3
@@ -2128,7 +2132,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017995 with 0x0000010d Bytes
+	Serialized data: at 0x00000000000179a1 with 0x0000010d Bytes
 	Export Flags: 0x00000001
 [Export 174]
 	Full Name: ParticleModuleColorScaleOverLife FX.Explosion_Badaboom_v2_PS.ParticleModuleColorScaleOverLife_31
@@ -2136,7 +2140,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017aa2 with 0x00000185 Bytes
+	Serialized data: at 0x0000000000017aae with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 175]
 	Full Name: ParticleModuleColorScaleOverLife FX.Explosion_Badaboom_v2_PS.ParticleModuleColorScaleOverLife_33
@@ -2144,7 +2148,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017c27 with 0x00000185 Bytes
+	Serialized data: at 0x0000000000017c33 with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 176]
 	Full Name: ParticleModuleColorScaleOverLife FX.Explosion_Badaboom_v2_PS.ParticleModuleColorScaleOverLife_4
@@ -2152,7 +2156,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017dac with 0x0000010d Bytes
+	Serialized data: at 0x0000000000017db8 with 0x0000010d Bytes
 	Export Flags: 0x00000001
 [Export 177]
 	Full Name: ParticleModuleLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleLifetime_0
@@ -2160,7 +2164,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017eb9 with 0x0000009d Bytes
+	Serialized data: at 0x0000000000017ec5 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 178]
 	Full Name: ParticleModuleLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleLifetime_1
@@ -2168,7 +2172,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017f56 with 0x0000009d Bytes
+	Serialized data: at 0x0000000000017f62 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 179]
 	Full Name: ParticleModuleLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleLifetime_11
@@ -2176,7 +2180,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017ff3 with 0x0000009d Bytes
+	Serialized data: at 0x0000000000017fff with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 180]
 	Full Name: ParticleModuleLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleLifetime_13
@@ -2184,7 +2188,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018090 with 0x0000009d Bytes
+	Serialized data: at 0x000000000001809c with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 181]
 	Full Name: ParticleModuleLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleLifetime_16
@@ -2192,7 +2196,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001812d with 0x0000009d Bytes
+	Serialized data: at 0x0000000000018139 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 182]
 	Full Name: ParticleModuleLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleLifetime_18
@@ -2200,7 +2204,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000181ca with 0x0000009d Bytes
+	Serialized data: at 0x00000000000181d6 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 183]
 	Full Name: ParticleModuleLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleLifetime_2
@@ -2208,7 +2212,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018267 with 0x00000108 Bytes
+	Serialized data: at 0x0000000000018273 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 184]
 	Full Name: ParticleModuleLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleLifetime_20
@@ -2216,7 +2220,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001836f with 0x0000009d Bytes
+	Serialized data: at 0x000000000001837b with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 185]
 	Full Name: ParticleModuleLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleLifetime_21
@@ -2224,7 +2228,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001840c with 0x00000108 Bytes
+	Serialized data: at 0x0000000000018418 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 186]
 	Full Name: ParticleModuleLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleLifetime_22
@@ -2232,7 +2236,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018514 with 0x00000108 Bytes
+	Serialized data: at 0x0000000000018520 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 187]
 	Full Name: ParticleModuleLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleLifetime_27
@@ -2240,7 +2244,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001861c with 0x0000009d Bytes
+	Serialized data: at 0x0000000000018628 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 188]
 	Full Name: ParticleModuleLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleLifetime_28
@@ -2248,7 +2252,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000186b9 with 0x0000009d Bytes
+	Serialized data: at 0x00000000000186c5 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 189]
 	Full Name: ParticleModuleLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleLifetime_3
@@ -2256,7 +2260,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018756 with 0x00000108 Bytes
+	Serialized data: at 0x0000000000018762 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 190]
 	Full Name: ParticleModuleLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleLifetime_31
@@ -2264,7 +2268,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001885e with 0x0000009d Bytes
+	Serialized data: at 0x000000000001886a with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 191]
 	Full Name: ParticleModuleLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleLifetime_34
@@ -2272,7 +2276,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000188fb with 0x0000009d Bytes
+	Serialized data: at 0x0000000000018907 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 192]
 	Full Name: ParticleModuleLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleLifetime_4
@@ -2280,7 +2284,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018998 with 0x00000108 Bytes
+	Serialized data: at 0x00000000000189a4 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 193]
 	Full Name: ParticleModuleLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleLifetime_5
@@ -2288,7 +2292,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018aa0 with 0x0000009d Bytes
+	Serialized data: at 0x0000000000018aac with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 194]
 	Full Name: ParticleModuleLocation FX.Explosion_Badaboom_v2_PS.ParticleModuleLocation_0
@@ -2296,7 +2300,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLocation
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018b3d with 0x000000ad Bytes
+	Serialized data: at 0x0000000000018b49 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 195]
 	Full Name: ParticleModuleLocation FX.Explosion_Badaboom_v2_PS.ParticleModuleLocation_1
@@ -2304,7 +2308,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLocation
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018bea with 0x000000ad Bytes
+	Serialized data: at 0x0000000000018bf6 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 196]
 	Full Name: ParticleModuleLocation FX.Explosion_Badaboom_v2_PS.ParticleModuleLocation_3
@@ -2312,7 +2316,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLocation
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018c97 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000018ca3 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 197]
 	Full Name: ParticleModuleLocation FX.Explosion_Badaboom_v2_PS.ParticleModuleLocation_4
@@ -2320,7 +2324,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLocation
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018d44 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000018d50 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 198]
 	Full Name: ParticleModuleLocation FX.Explosion_Badaboom_v2_PS.ParticleModuleLocation_5
@@ -2328,7 +2332,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLocation
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018df1 with 0x00000071 Bytes
+	Serialized data: at 0x0000000000018dfd with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 199]
 	Full Name: ParticleModuleLocation FX.Explosion_Badaboom_v2_PS.ParticleModuleLocation_6
@@ -2336,7 +2340,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLocation
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018e62 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000018e6e with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 200]
 	Full Name: ParticleModuleLocationPrimitiveCylinder FX.Explosion_Badaboom_v2_PS.ParticleModuleLocationPrimitiveCylinder_1
@@ -2344,7 +2348,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLocationPrimitiveCylinder
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018f0f with 0x00000248 Bytes
+	Serialized data: at 0x0000000000018f1b with 0x00000248 Bytes
 	Export Flags: 0x00000001
 [Export 201]
 	Full Name: ParticleModuleLocationPrimitiveSphere FX.Explosion_Badaboom_v2_PS.ParticleModuleLocationPrimitiveSphere_0
@@ -2352,7 +2356,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLocationPrimitiveSphere
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019157 with 0x00000151 Bytes
+	Serialized data: at 0x0000000000019163 with 0x00000151 Bytes
 	Export Flags: 0x00000001
 [Export 202]
 	Full Name: ParticleModuleLocationPrimitiveSphere FX.Explosion_Badaboom_v2_PS.ParticleModuleLocationPrimitiveSphere_1
@@ -2360,7 +2364,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLocationPrimitiveSphere
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000192a8 with 0x00000125 Bytes
+	Serialized data: at 0x00000000000192b4 with 0x00000125 Bytes
 	Export Flags: 0x00000001
 [Export 203]
 	Full Name: ParticleModuleLocationPrimitiveSphere FX.Explosion_Badaboom_v2_PS.ParticleModuleLocationPrimitiveSphere_2
@@ -2368,7 +2372,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLocationPrimitiveSphere
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000193cd with 0x00000161 Bytes
+	Serialized data: at 0x00000000000193d9 with 0x00000161 Bytes
 	Export Flags: 0x00000001
 [Export 204]
 	Full Name: ParticleModuleLocationPrimitiveSphere FX.Explosion_Badaboom_v2_PS.ParticleModuleLocationPrimitiveSphere_4
@@ -2376,7 +2380,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLocationPrimitiveSphere
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001952e with 0x00000183 Bytes
+	Serialized data: at 0x000000000001953a with 0x00000183 Bytes
 	Export Flags: 0x00000001
 [Export 205]
 	Full Name: ParticleModuleLocationPrimitiveSphere FX.Explosion_Badaboom_v2_PS.ParticleModuleLocationPrimitiveSphere_5
@@ -2384,7 +2388,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleLocationPrimitiveSphere
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000196b1 with 0x00000183 Bytes
+	Serialized data: at 0x00000000000196bd with 0x00000183 Bytes
 	Export Flags: 0x00000001
 [Export 206]
 	Full Name: ParticleModuleMeshRotation FX.Explosion_Badaboom_v2_PS.ParticleModuleMeshRotation_0
@@ -2392,7 +2396,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleMeshRotation
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019834 with 0x000000e6 Bytes
+	Serialized data: at 0x0000000000019840 with 0x000000e6 Bytes
 	Export Flags: 0x00000001
 [Export 207]
 	Full Name: ParticleModuleMeshRotation FX.Explosion_Badaboom_v2_PS.ParticleModuleMeshRotation_1
@@ -2400,7 +2404,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleMeshRotation
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001991a with 0x000000e6 Bytes
+	Serialized data: at 0x0000000000019926 with 0x000000e6 Bytes
 	Export Flags: 0x00000001
 [Export 208]
 	Full Name: ParticleModuleMeshRotation FX.Explosion_Badaboom_v2_PS.ParticleModuleMeshRotation_11
@@ -2408,7 +2412,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleMeshRotation
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019a00 with 0x00000110 Bytes
+	Serialized data: at 0x0000000000019a0c with 0x00000110 Bytes
 	Export Flags: 0x00000001
 [Export 209]
 	Full Name: ParticleModuleMeshRotation FX.Explosion_Badaboom_v2_PS.ParticleModuleMeshRotation_14
@@ -2416,7 +2420,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleMeshRotation
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019b10 with 0x00000110 Bytes
+	Serialized data: at 0x0000000000019b1c with 0x00000110 Bytes
 	Export Flags: 0x00000001
 [Export 210]
 	Full Name: ParticleModuleMeshRotation FX.Explosion_Badaboom_v2_PS.ParticleModuleMeshRotation_16
@@ -2424,7 +2428,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleMeshRotation
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019c20 with 0x00000110 Bytes
+	Serialized data: at 0x0000000000019c2c with 0x00000110 Bytes
 	Export Flags: 0x00000001
 [Export 211]
 	Full Name: ParticleModuleMeshRotation FX.Explosion_Badaboom_v2_PS.ParticleModuleMeshRotation_18
@@ -2432,7 +2436,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleMeshRotation
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019d30 with 0x00000110 Bytes
+	Serialized data: at 0x0000000000019d3c with 0x00000110 Bytes
 	Export Flags: 0x00000001
 [Export 212]
 	Full Name: ParticleModuleMeshRotation FX.Explosion_Badaboom_v2_PS.ParticleModuleMeshRotation_2
@@ -2440,7 +2444,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleMeshRotation
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019e40 with 0x000000c5 Bytes
+	Serialized data: at 0x0000000000019e4c with 0x000000c5 Bytes
 	Export Flags: 0x00000001
 [Export 213]
 	Full Name: ParticleModuleMeshRotation FX.Explosion_Badaboom_v2_PS.ParticleModuleMeshRotation_3
@@ -2448,7 +2452,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleMeshRotation
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019f05 with 0x000000c5 Bytes
+	Serialized data: at 0x0000000000019f11 with 0x000000c5 Bytes
 	Export Flags: 0x00000001
 [Export 214]
 	Full Name: ParticleModuleMeshRotation FX.Explosion_Badaboom_v2_PS.ParticleModuleMeshRotation_4
@@ -2456,7 +2460,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleMeshRotation
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019fca with 0x000000c5 Bytes
+	Serialized data: at 0x0000000000019fd6 with 0x000000c5 Bytes
 	Export Flags: 0x00000001
 [Export 215]
 	Full Name: ParticleModuleMeshRotationRate FX.Explosion_Badaboom_v2_PS.ParticleModuleMeshRotationRate_10
@@ -2464,7 +2468,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleMeshRotationRate
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a08f with 0x00000198 Bytes
+	Serialized data: at 0x000000000001a09b with 0x00000198 Bytes
 	Export Flags: 0x00000001
 [Export 216]
 	Full Name: ParticleModuleMeshRotationRate FX.Explosion_Badaboom_v2_PS.ParticleModuleMeshRotationRate_11
@@ -2472,7 +2476,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleMeshRotationRate
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a227 with 0x00000198 Bytes
+	Serialized data: at 0x000000000001a233 with 0x00000198 Bytes
 	Export Flags: 0x00000001
 [Export 217]
 	Full Name: ParticleModuleMeshRotationRate FX.Explosion_Badaboom_v2_PS.ParticleModuleMeshRotationRate_5
@@ -2480,7 +2484,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleMeshRotationRate
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a3bf with 0x00000198 Bytes
+	Serialized data: at 0x000000000001a3cb with 0x00000198 Bytes
 	Export Flags: 0x00000001
 [Export 218]
 	Full Name: ParticleModuleOrbit FX.Explosion_Badaboom_v2_PS.ParticleModuleOrbit_5
@@ -2488,7 +2492,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleOrbit
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a557 with 0x000000f9 Bytes
+	Serialized data: at 0x000000000001a563 with 0x000000f9 Bytes
 	Export Flags: 0x00000001
 [Export 219]
 	Full Name: ParticleModuleOrbit FX.Explosion_Badaboom_v2_PS.ParticleModuleOrbit_6
@@ -2496,7 +2500,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleOrbit
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a650 with 0x000000f9 Bytes
+	Serialized data: at 0x000000000001a65c with 0x000000f9 Bytes
 	Export Flags: 0x00000001
 [Export 220]
 	Full Name: ParticleModuleOrbit FX.Explosion_Badaboom_v2_PS.ParticleModuleOrbit_8
@@ -2504,7 +2508,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleOrbit
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a749 with 0x00000526 Bytes
+	Serialized data: at 0x000000000001a755 with 0x00000526 Bytes
 	Export Flags: 0x00000001
 [Export 221]
 	Full Name: ParticleModuleParameterDynamic FX.Explosion_Badaboom_v2_PS.ParticleModuleParameterDynamic_0
@@ -2512,7 +2516,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleParameterDynamic
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001ac6f with 0x0000083d Bytes
+	Serialized data: at 0x000000000001ac7b with 0x0000083d Bytes
 	Export Flags: 0x00000001
 [Export 222]
 	Full Name: ParticleModuleParameterDynamic FX.Explosion_Badaboom_v2_PS.ParticleModuleParameterDynamic_12
@@ -2520,7 +2524,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleParameterDynamic
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b4ac with 0x0000083d Bytes
+	Serialized data: at 0x000000000001b4b8 with 0x0000083d Bytes
 	Export Flags: 0x00000001
 [Export 223]
 	Full Name: ParticleModuleParameterDynamic FX.Explosion_Badaboom_v2_PS.ParticleModuleParameterDynamic_14
@@ -2528,7 +2532,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleParameterDynamic
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001bce9 with 0x00000779 Bytes
+	Serialized data: at 0x000000000001bcf5 with 0x00000779 Bytes
 	Export Flags: 0x00000001
 [Export 224]
 	Full Name: ParticleModuleParameterDynamic FX.Explosion_Badaboom_v2_PS.ParticleModuleParameterDynamic_16
@@ -2536,7 +2540,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleParameterDynamic
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c462 with 0x0000081d Bytes
+	Serialized data: at 0x000000000001c46e with 0x0000081d Bytes
 	Export Flags: 0x00000001
 [Export 225]
 	Full Name: ParticleModuleParameterDynamic FX.Explosion_Badaboom_v2_PS.ParticleModuleParameterDynamic_18
@@ -2544,7 +2548,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleParameterDynamic
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cc7f with 0x00000779 Bytes
+	Serialized data: at 0x000000000001cc8b with 0x00000779 Bytes
 	Export Flags: 0x00000001
 [Export 226]
 	Full Name: ParticleModuleParameterDynamic FX.Explosion_Badaboom_v2_PS.ParticleModuleParameterDynamic_2
@@ -2552,7 +2556,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleParameterDynamic
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d3f8 with 0x000007cd Bytes
+	Serialized data: at 0x000000000001d404 with 0x000007cd Bytes
 	Export Flags: 0x00000001
 [Export 227]
 	Full Name: ParticleModuleParameterDynamic FX.Explosion_Badaboom_v2_PS.ParticleModuleParameterDynamic_20
@@ -2560,7 +2564,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleParameterDynamic
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001dbc5 with 0x00000761 Bytes
+	Serialized data: at 0x000000000001dbd1 with 0x00000761 Bytes
 	Export Flags: 0x00000001
 [Export 228]
 	Full Name: ParticleModuleParameterDynamic FX.Explosion_Badaboom_v2_PS.ParticleModuleParameterDynamic_25
@@ -2568,7 +2572,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleParameterDynamic
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e326 with 0x000008e1 Bytes
+	Serialized data: at 0x000000000001e332 with 0x000008e1 Bytes
 	Export Flags: 0x00000001
 [Export 229]
 	Full Name: ParticleModuleParameterDynamic FX.Explosion_Badaboom_v2_PS.ParticleModuleParameterDynamic_26
@@ -2576,7 +2580,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleParameterDynamic
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001ec07 with 0x00000779 Bytes
+	Serialized data: at 0x000000000001ec13 with 0x00000779 Bytes
 	Export Flags: 0x00000001
 [Export 230]
 	Full Name: ParticleModuleParameterDynamic FX.Explosion_Badaboom_v2_PS.ParticleModuleParameterDynamic_27
@@ -2584,7 +2588,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleParameterDynamic
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001f380 with 0x000008e1 Bytes
+	Serialized data: at 0x000000000001f38c with 0x000008e1 Bytes
 	Export Flags: 0x00000001
 [Export 231]
 	Full Name: ParticleModuleParameterDynamic FX.Explosion_Badaboom_v2_PS.ParticleModuleParameterDynamic_29
@@ -2592,7 +2596,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleParameterDynamic
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001fc61 with 0x00000845 Bytes
+	Serialized data: at 0x000000000001fc6d with 0x00000845 Bytes
 	Export Flags: 0x00000001
 [Export 232]
 	Full Name: ParticleModuleParameterDynamic FX.Explosion_Badaboom_v2_PS.ParticleModuleParameterDynamic_3
@@ -2600,7 +2604,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleParameterDynamic
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000204a6 with 0x000007cd Bytes
+	Serialized data: at 0x00000000000204b2 with 0x000007cd Bytes
 	Export Flags: 0x00000001
 [Export 233]
 	Full Name: ParticleModuleParameterDynamic FX.Explosion_Badaboom_v2_PS.ParticleModuleParameterDynamic_4
@@ -2608,7 +2612,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleParameterDynamic
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020c73 with 0x000007cd Bytes
+	Serialized data: at 0x0000000000020c7f with 0x000007cd Bytes
 	Export Flags: 0x00000001
 [Export 234]
 	Full Name: ParticleModuleRequired FX.Explosion_Badaboom_v2_PS.ParticleModuleRequired_0
@@ -2616,7 +2620,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRequired
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000024d9a23 with 0x00000145 Bytes
+	Serialized data: at 0x00000000024d9a2f with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 235]
 	Full Name: ParticleModuleRequired FX.Explosion_Badaboom_v2_PS.ParticleModuleRequired_1
@@ -2624,7 +2628,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRequired
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021585 with 0x000001ec Bytes
+	Serialized data: at 0x0000000000021591 with 0x000001ec Bytes
 	Export Flags: 0x00000001
 [Export 236]
 	Full Name: ParticleModuleRequired FX.Explosion_Badaboom_v2_PS.ParticleModuleRequired_14
@@ -2632,7 +2636,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRequired
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021771 with 0x0000016d Bytes
+	Serialized data: at 0x000000000002177d with 0x0000016d Bytes
 	Export Flags: 0x00000001
 [Export 237]
 	Full Name: ParticleModuleRequired FX.Explosion_Badaboom_v2_PS.ParticleModuleRequired_16
@@ -2640,7 +2644,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRequired
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000218de with 0x00000221 Bytes
+	Serialized data: at 0x00000000000218ea with 0x00000221 Bytes
 	Export Flags: 0x00000001
 [Export 238]
 	Full Name: ParticleModuleRequired FX.Explosion_Badaboom_v2_PS.ParticleModuleRequired_18
@@ -2648,7 +2652,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRequired
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021aff with 0x00000154 Bytes
+	Serialized data: at 0x0000000000021b0b with 0x00000154 Bytes
 	Export Flags: 0x00000001
 [Export 239]
 	Full Name: ParticleModuleRequired FX.Explosion_Badaboom_v2_PS.ParticleModuleRequired_2
@@ -2656,7 +2660,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRequired
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021c53 with 0x00000145 Bytes
+	Serialized data: at 0x0000000000021c5f with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 240]
 	Full Name: ParticleModuleRequired FX.Explosion_Badaboom_v2_PS.ParticleModuleRequired_20
@@ -2664,7 +2668,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRequired
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000024d9b68 with 0x00000129 Bytes
+	Serialized data: at 0x00000000024d9b74 with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [Export 241]
 	Full Name: ParticleModuleRequired FX.Explosion_Badaboom_v2_PS.ParticleModuleRequired_21
@@ -2672,7 +2676,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRequired
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021ec1 with 0x0000012c Bytes
+	Serialized data: at 0x0000000000021ecd with 0x0000012c Bytes
 	Export Flags: 0x00000001
 [Export 242]
 	Full Name: ParticleModuleRequired FX.Explosion_Badaboom_v2_PS.ParticleModuleRequired_22
@@ -2680,7 +2684,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRequired
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021fed with 0x0000012c Bytes
+	Serialized data: at 0x0000000000021ff9 with 0x0000012c Bytes
 	Export Flags: 0x00000001
 [Export 243]
 	Full Name: ParticleModuleRequired FX.Explosion_Badaboom_v2_PS.ParticleModuleRequired_26
@@ -2688,7 +2692,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRequired
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022119 with 0x00000145 Bytes
+	Serialized data: at 0x0000000000022125 with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 244]
 	Full Name: ParticleModuleRequired FX.Explosion_Badaboom_v2_PS.ParticleModuleRequired_29
@@ -2696,7 +2700,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRequired
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000024d9c91 with 0x00000145 Bytes
+	Serialized data: at 0x00000000024d9c9d with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 245]
 	Full Name: ParticleModuleRequired FX.Explosion_Badaboom_v2_PS.ParticleModuleRequired_3
@@ -2704,7 +2708,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRequired
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000223a3 with 0x00000145 Bytes
+	Serialized data: at 0x00000000000223af with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 246]
 	Full Name: ParticleModuleRequired FX.Explosion_Badaboom_v2_PS.ParticleModuleRequired_30
@@ -2712,7 +2716,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRequired
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000224e8 with 0x00000145 Bytes
+	Serialized data: at 0x00000000000224f4 with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 247]
 	Full Name: ParticleModuleRequired FX.Explosion_Badaboom_v2_PS.ParticleModuleRequired_31
@@ -2720,7 +2724,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRequired
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002262d with 0x000001ec Bytes
+	Serialized data: at 0x0000000000022639 with 0x000001ec Bytes
 	Export Flags: 0x00000001
 [Export 248]
 	Full Name: ParticleModuleRequired FX.Explosion_Badaboom_v2_PS.ParticleModuleRequired_32
@@ -2728,7 +2732,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRequired
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022819 with 0x0000016d Bytes
+	Serialized data: at 0x0000000000022825 with 0x0000016d Bytes
 	Export Flags: 0x00000001
 [Export 249]
 	Full Name: ParticleModuleRequired FX.Explosion_Badaboom_v2_PS.ParticleModuleRequired_35
@@ -2736,7 +2740,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRequired
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022986 with 0x00000145 Bytes
+	Serialized data: at 0x0000000000022992 with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 250]
 	Full Name: ParticleModuleRequired FX.Explosion_Badaboom_v2_PS.ParticleModuleRequired_4
@@ -2744,7 +2748,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRequired
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022acb with 0x00000145 Bytes
+	Serialized data: at 0x0000000000022ad7 with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 251]
 	Full Name: ParticleModuleRotation FX.Explosion_Badaboom_v2_PS.ParticleModuleRotation_1
@@ -2752,7 +2756,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRotation
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022c10 with 0x00000071 Bytes
+	Serialized data: at 0x0000000000022c1c with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 252]
 	Full Name: ParticleModuleRotation FX.Explosion_Badaboom_v2_PS.ParticleModuleRotation_2
@@ -2760,7 +2764,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRotation
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022c81 with 0x00000071 Bytes
+	Serialized data: at 0x0000000000022c8d with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 253]
 	Full Name: ParticleModuleRotation FX.Explosion_Badaboom_v2_PS.ParticleModuleRotation_9
@@ -2768,7 +2772,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleRotation
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022cf2 with 0x00000071 Bytes
+	Serialized data: at 0x0000000000022cfe with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 254]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_0
@@ -2776,7 +2780,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022d63 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000022d6f with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 255]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_1
@@ -2784,7 +2788,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022e10 with 0x00000149 Bytes
+	Serialized data: at 0x0000000000022e1c with 0x00000149 Bytes
 	Export Flags: 0x00000001
 [Export 256]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_11
@@ -2792,7 +2796,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022f59 with 0x000000c6 Bytes
+	Serialized data: at 0x0000000000022f65 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [Export 257]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_15
@@ -2800,7 +2804,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002301f with 0x000000ad Bytes
+	Serialized data: at 0x000000000002302b with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 258]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_17
@@ -2808,7 +2812,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000230cc with 0x00000149 Bytes
+	Serialized data: at 0x00000000000230d8 with 0x00000149 Bytes
 	Export Flags: 0x00000001
 [Export 259]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_18
@@ -2816,7 +2820,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023215 with 0x00000149 Bytes
+	Serialized data: at 0x0000000000023221 with 0x00000149 Bytes
 	Export Flags: 0x00000001
 [Export 260]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_19
@@ -2824,7 +2828,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002335e with 0x00000071 Bytes
+	Serialized data: at 0x000000000002336a with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 261]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_2
@@ -2832,7 +2836,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000233cf with 0x00000149 Bytes
+	Serialized data: at 0x00000000000233db with 0x00000149 Bytes
 	Export Flags: 0x00000001
 [Export 262]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_21
@@ -2840,7 +2844,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023518 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000023524 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 263]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_26
@@ -2848,7 +2852,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000235c5 with 0x000000ad Bytes
+	Serialized data: at 0x00000000000235d1 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 264]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_29
@@ -2856,7 +2860,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023672 with 0x000000ad Bytes
+	Serialized data: at 0x000000000002367e with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 265]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_3
@@ -2864,7 +2868,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002371f with 0x00000149 Bytes
+	Serialized data: at 0x000000000002372b with 0x00000149 Bytes
 	Export Flags: 0x00000001
 [Export 266]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_31
@@ -2872,7 +2876,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023868 with 0x000000c6 Bytes
+	Serialized data: at 0x0000000000023874 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [Export 267]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_33
@@ -2880,7 +2884,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002392e with 0x000000ad Bytes
+	Serialized data: at 0x000000000002393a with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 268]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_34
@@ -2888,7 +2892,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000239db with 0x00000149 Bytes
+	Serialized data: at 0x00000000000239e7 with 0x00000149 Bytes
 	Export Flags: 0x00000001
 [Export 269]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_35
@@ -2896,7 +2900,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023b24 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000023b30 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 270]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_37
@@ -2904,7 +2908,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023bd1 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000023bdd with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 271]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_4
@@ -2912,7 +2916,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023c7e with 0x00000149 Bytes
+	Serialized data: at 0x0000000000023c8a with 0x00000149 Bytes
 	Export Flags: 0x00000001
 [Export 272]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_41
@@ -2920,7 +2924,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023dc7 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000023dd3 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 273]
 	Full Name: ParticleModuleSize FX.Explosion_Badaboom_v2_PS.ParticleModuleSize_5
@@ -2928,7 +2932,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSize
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023e74 with 0x00000149 Bytes
+	Serialized data: at 0x0000000000023e80 with 0x00000149 Bytes
 	Export Flags: 0x00000001
 [Export 274]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_0
@@ -2936,7 +2940,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023fbd with 0x000001ad Bytes
+	Serialized data: at 0x0000000000023fc9 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 275]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_10
@@ -2944,7 +2948,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002416a with 0x000001c6 Bytes
+	Serialized data: at 0x0000000000024176 with 0x000001c6 Bytes
 	Export Flags: 0x00000001
 [Export 276]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_11
@@ -2952,7 +2956,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024330 with 0x000000e2 Bytes
+	Serialized data: at 0x000000000002433c with 0x000000e2 Bytes
 	Export Flags: 0x00000001
 [Export 277]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_12
@@ -2960,7 +2964,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024412 with 0x0000017d Bytes
+	Serialized data: at 0x000000000002441e with 0x0000017d Bytes
 	Export Flags: 0x00000001
 [Export 278]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_14
@@ -2968,7 +2972,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002458f with 0x00000135 Bytes
+	Serialized data: at 0x000000000002459b with 0x00000135 Bytes
 	Export Flags: 0x00000001
 [Export 279]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_16
@@ -2976,7 +2980,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000246c4 with 0x000001c6 Bytes
+	Serialized data: at 0x00000000000246d0 with 0x000001c6 Bytes
 	Export Flags: 0x00000001
 [Export 280]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_17
@@ -2984,7 +2988,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002488a with 0x000000e2 Bytes
+	Serialized data: at 0x0000000000024896 with 0x000000e2 Bytes
 	Export Flags: 0x00000001
 [Export 281]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_19
@@ -2992,7 +2996,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002496c with 0x000001ad Bytes
+	Serialized data: at 0x0000000000024978 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 282]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_21
@@ -3000,7 +3004,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024b19 with 0x0000017d Bytes
+	Serialized data: at 0x0000000000024b25 with 0x0000017d Bytes
 	Export Flags: 0x00000001
 [Export 283]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_22
@@ -3008,7 +3012,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024c96 with 0x0000017d Bytes
+	Serialized data: at 0x0000000000024ca2 with 0x0000017d Bytes
 	Export Flags: 0x00000001
 [Export 284]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_26
@@ -3016,7 +3020,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024e13 with 0x000001c6 Bytes
+	Serialized data: at 0x0000000000024e1f with 0x000001c6 Bytes
 	Export Flags: 0x00000001
 [Export 285]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_28
@@ -3024,7 +3028,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024fd9 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000024fe5 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 286]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_29
@@ -3032,7 +3036,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025186 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000025192 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 287]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_32
@@ -3040,7 +3044,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025333 with 0x000001ad Bytes
+	Serialized data: at 0x000000000002533f with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 288]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_33
@@ -3048,7 +3052,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000254e0 with 0x00000135 Bytes
+	Serialized data: at 0x00000000000254ec with 0x00000135 Bytes
 	Export Flags: 0x00000001
 [Export 289]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_35
@@ -3056,7 +3060,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025615 with 0x000001c6 Bytes
+	Serialized data: at 0x0000000000025621 with 0x000001c6 Bytes
 	Export Flags: 0x00000001
 [Export 290]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_36
@@ -3064,7 +3068,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000257db with 0x000000e2 Bytes
+	Serialized data: at 0x00000000000257e7 with 0x000000e2 Bytes
 	Export Flags: 0x00000001
 [Export 291]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_37
@@ -3072,7 +3076,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000258bd with 0x0000017d Bytes
+	Serialized data: at 0x00000000000258c9 with 0x0000017d Bytes
 	Export Flags: 0x00000001
 [Export 292]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_39
@@ -3080,7 +3084,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025a3a with 0x000001ad Bytes
+	Serialized data: at 0x0000000000025a46 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 293]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_5
@@ -3088,7 +3092,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025be7 with 0x00000135 Bytes
+	Serialized data: at 0x0000000000025bf3 with 0x00000135 Bytes
 	Export Flags: 0x00000001
 [Export 294]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeMultiplyLife_6
@@ -3096,7 +3100,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025d1c with 0x000001ad Bytes
+	Serialized data: at 0x0000000000025d28 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 295]
 	Full Name: ParticleModuleSizeScale FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeScale_1
@@ -3104,7 +3108,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeScale
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025ec9 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000025ed5 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 296]
 	Full Name: ParticleModuleSizeScale FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeScale_2
@@ -3112,7 +3116,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeScale
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025f76 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000025f82 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 297]
 	Full Name: ParticleModuleSizeScale FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeScale_3
@@ -3120,7 +3124,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeScale
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026023 with 0x000000ad Bytes
+	Serialized data: at 0x000000000002602f with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 298]
 	Full Name: ParticleModuleSizeScale FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeScale_4
@@ -3128,7 +3132,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeScale
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000260d0 with 0x000000ad Bytes
+	Serialized data: at 0x00000000000260dc with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 299]
 	Full Name: ParticleModuleSizeScale FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeScale_5
@@ -3136,7 +3140,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeScale
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002617d with 0x000000c6 Bytes
+	Serialized data: at 0x0000000000026189 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [Export 300]
 	Full Name: ParticleModuleSizeScale FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeScale_6
@@ -3144,7 +3148,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeScale
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026243 with 0x000000ad Bytes
+	Serialized data: at 0x000000000002624f with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 301]
 	Full Name: ParticleModuleSizeScale FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeScale_7
@@ -3152,7 +3156,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeScale
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000262f0 with 0x000000c6 Bytes
+	Serialized data: at 0x00000000000262fc with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [Export 302]
 	Full Name: ParticleModuleSizeScale FX.Explosion_Badaboom_v2_PS.ParticleModuleSizeScale_8
@@ -3160,7 +3164,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSizeScale
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000263b6 with 0x000000c6 Bytes
+	Serialized data: at 0x00000000000263c2 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [Export 303]
 	Full Name: ParticleModuleSpawn FX.Explosion_Badaboom_v2_PS.ParticleModuleSpawn_0
@@ -3168,7 +3172,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSpawn
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002647c with 0x00000159 Bytes
+	Serialized data: at 0x0000000000026488 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 304]
 	Full Name: ParticleModuleSpawn FX.Explosion_Badaboom_v2_PS.ParticleModuleSpawn_1
@@ -3176,7 +3180,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSpawn
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000265d5 with 0x00000159 Bytes
+	Serialized data: at 0x00000000000265e1 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 305]
 	Full Name: ParticleModuleSpawn FX.Explosion_Badaboom_v2_PS.ParticleModuleSpawn_11
@@ -3184,7 +3188,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSpawn
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002672e with 0x00000159 Bytes
+	Serialized data: at 0x000000000002673a with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 306]
 	Full Name: ParticleModuleSpawn FX.Explosion_Badaboom_v2_PS.ParticleModuleSpawn_13
@@ -3192,7 +3196,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSpawn
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026887 with 0x000001b5 Bytes
+	Serialized data: at 0x0000000000026893 with 0x000001b5 Bytes
 	Export Flags: 0x00000001
 [Export 307]
 	Full Name: ParticleModuleSpawn FX.Explosion_Badaboom_v2_PS.ParticleModuleSpawn_15
@@ -3200,7 +3204,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSpawn
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026a3c with 0x00000159 Bytes
+	Serialized data: at 0x0000000000026a48 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 308]
 	Full Name: ParticleModuleSpawn FX.Explosion_Badaboom_v2_PS.ParticleModuleSpawn_17
@@ -3208,7 +3212,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSpawn
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026b95 with 0x00000159 Bytes
+	Serialized data: at 0x0000000000026ba1 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 309]
 	Full Name: ParticleModuleSpawn FX.Explosion_Badaboom_v2_PS.ParticleModuleSpawn_19
@@ -3216,7 +3220,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSpawn
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026cee with 0x00000159 Bytes
+	Serialized data: at 0x0000000000026cfa with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 310]
 	Full Name: ParticleModuleSpawn FX.Explosion_Badaboom_v2_PS.ParticleModuleSpawn_2
@@ -3224,7 +3228,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSpawn
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026e47 with 0x00000129 Bytes
+	Serialized data: at 0x0000000000026e53 with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [Export 311]
 	Full Name: ParticleModuleSpawn FX.Explosion_Badaboom_v2_PS.ParticleModuleSpawn_21
@@ -3232,7 +3236,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSpawn
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026f70 with 0x00000159 Bytes
+	Serialized data: at 0x0000000000026f7c with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 312]
 	Full Name: ParticleModuleSpawn FX.Explosion_Badaboom_v2_PS.ParticleModuleSpawn_22
@@ -3240,7 +3244,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSpawn
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000270c9 with 0x00000159 Bytes
+	Serialized data: at 0x00000000000270d5 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 313]
 	Full Name: ParticleModuleSpawn FX.Explosion_Badaboom_v2_PS.ParticleModuleSpawn_26
@@ -3248,7 +3252,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSpawn
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027222 with 0x00000159 Bytes
+	Serialized data: at 0x000000000002722e with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 314]
 	Full Name: ParticleModuleSpawn FX.Explosion_Badaboom_v2_PS.ParticleModuleSpawn_29
@@ -3256,7 +3260,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSpawn
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002737b with 0x00000159 Bytes
+	Serialized data: at 0x0000000000027387 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 315]
 	Full Name: ParticleModuleSpawn FX.Explosion_Badaboom_v2_PS.ParticleModuleSpawn_3
@@ -3264,7 +3268,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSpawn
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000274d4 with 0x00000129 Bytes
+	Serialized data: at 0x00000000000274e0 with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [Export 316]
 	Full Name: ParticleModuleSpawn FX.Explosion_Badaboom_v2_PS.ParticleModuleSpawn_30
@@ -3272,7 +3276,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSpawn
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000275fd with 0x00000159 Bytes
+	Serialized data: at 0x0000000000027609 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 317]
 	Full Name: ParticleModuleSpawn FX.Explosion_Badaboom_v2_PS.ParticleModuleSpawn_31
@@ -3280,7 +3284,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSpawn
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027756 with 0x00000159 Bytes
+	Serialized data: at 0x0000000000027762 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 318]
 	Full Name: ParticleModuleSpawn FX.Explosion_Badaboom_v2_PS.ParticleModuleSpawn_34
@@ -3288,7 +3292,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSpawn
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000278af with 0x00000159 Bytes
+	Serialized data: at 0x00000000000278bb with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 319]
 	Full Name: ParticleModuleSpawn FX.Explosion_Badaboom_v2_PS.ParticleModuleSpawn_4
@@ -3296,7 +3300,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSpawn
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027a08 with 0x00000129 Bytes
+	Serialized data: at 0x0000000000027a14 with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [Export 320]
 	Full Name: ParticleModuleSubUV FX.Explosion_Badaboom_v2_PS.ParticleModuleSubUV_0
@@ -3304,7 +3308,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSubUV
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027b31 with 0x00000105 Bytes
+	Serialized data: at 0x0000000000027b3d with 0x00000105 Bytes
 	Export Flags: 0x00000001
 [Export 321]
 	Full Name: ParticleModuleSubUV FX.Explosion_Badaboom_v2_PS.ParticleModuleSubUV_2
@@ -3312,7 +3316,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSubUV
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027c36 with 0x00000105 Bytes
+	Serialized data: at 0x0000000000027c42 with 0x00000105 Bytes
 	Export Flags: 0x00000001
 [Export 322]
 	Full Name: ParticleModuleSubUV FX.Explosion_Badaboom_v2_PS.ParticleModuleSubUV_5
@@ -3320,7 +3324,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSubUV
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027d3b with 0x00000105 Bytes
+	Serialized data: at 0x0000000000027d47 with 0x00000105 Bytes
 	Export Flags: 0x00000001
 [Export 323]
 	Full Name: ParticleModuleSubUVMovie FX.Explosion_Badaboom_v2_PS.ParticleModuleSubUVMovie_3
@@ -3328,7 +3332,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSubUVMovie
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027e40 with 0x00000116 Bytes
+	Serialized data: at 0x0000000000027e4c with 0x00000116 Bytes
 	Export Flags: 0x00000001
 [Export 324]
 	Full Name: ParticleModuleSubUVMovie FX.Explosion_Badaboom_v2_PS.ParticleModuleSubUVMovie_4
@@ -3336,7 +3340,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleSubUVMovie
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027f56 with 0x00000116 Bytes
+	Serialized data: at 0x0000000000027f62 with 0x00000116 Bytes
 	Export Flags: 0x00000001
 [Export 325]
 	Full Name: ParticleModuleTypeDataMesh FX.Explosion_Badaboom_v2_PS.ParticleModuleTypeDataMesh_0
@@ -3344,7 +3348,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000024d9dd6 with 0x00000062 Bytes
+	Serialized data: at 0x00000000024d9de2 with 0x00000062 Bytes
 	Export Flags: 0x00000001
 [Export 326]
 	Full Name: ParticleModuleTypeDataMesh FX.Explosion_Badaboom_v2_PS.ParticleModuleTypeDataMesh_1
@@ -3352,7 +3356,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000024d9e38 with 0x00000062 Bytes
+	Serialized data: at 0x00000000024d9e44 with 0x00000062 Bytes
 	Export Flags: 0x00000001
 [Export 327]
 	Full Name: ParticleModuleTypeDataMesh FX.Explosion_Badaboom_v2_PS.ParticleModuleTypeDataMesh_10
@@ -3360,7 +3364,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000028130 with 0x0000007e Bytes
+	Serialized data: at 0x000000000002813c with 0x0000007e Bytes
 	Export Flags: 0x00000001
 [Export 328]
 	Full Name: ParticleModuleTypeDataMesh FX.Explosion_Badaboom_v2_PS.ParticleModuleTypeDataMesh_14
@@ -3368,7 +3372,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000281ae with 0x0000007e Bytes
+	Serialized data: at 0x00000000000281ba with 0x0000007e Bytes
 	Export Flags: 0x00000001
 [Export 329]
 	Full Name: ParticleModuleTypeDataMesh FX.Explosion_Badaboom_v2_PS.ParticleModuleTypeDataMesh_16
@@ -3376,7 +3380,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002822c with 0x0000007e Bytes
+	Serialized data: at 0x0000000000028238 with 0x0000007e Bytes
 	Export Flags: 0x00000001
 [Export 330]
 	Full Name: ParticleModuleTypeDataMesh FX.Explosion_Badaboom_v2_PS.ParticleModuleTypeDataMesh_20
@@ -3384,7 +3388,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000024d9e9a with 0x00000062 Bytes
+	Serialized data: at 0x00000000024d9ea6 with 0x00000062 Bytes
 	Export Flags: 0x00000001
 [Export 331]
 	Full Name: ParticleModuleTypeDataMesh FX.Explosion_Badaboom_v2_PS.ParticleModuleTypeDataMesh_21
@@ -3392,7 +3396,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002830c with 0x0000007e Bytes
+	Serialized data: at 0x0000000000028318 with 0x0000007e Bytes
 	Export Flags: 0x00000001
 [Export 332]
 	Full Name: ParticleModuleTypeDataMesh FX.Explosion_Badaboom_v2_PS.ParticleModuleTypeDataMesh_22
@@ -3400,7 +3404,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002838a with 0x00000062 Bytes
+	Serialized data: at 0x0000000000028396 with 0x00000062 Bytes
 	Export Flags: 0x00000001
 [Export 333]
 	Full Name: ParticleModuleTypeDataMesh FX.Explosion_Badaboom_v2_PS.ParticleModuleTypeDataMesh_23
@@ -3408,7 +3412,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000283ec with 0x0000007e Bytes
+	Serialized data: at 0x00000000000283f8 with 0x0000007e Bytes
 	Export Flags: 0x00000001
 [Export 334]
 	Full Name: ParticleModuleTypeDataMesh FX.Explosion_Badaboom_v2_PS.ParticleModuleTypeDataMesh_24
@@ -3416,7 +3420,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002846a with 0x00000062 Bytes
+	Serialized data: at 0x0000000000028476 with 0x00000062 Bytes
 	Export Flags: 0x00000001
 [Export 335]
 	Full Name: ParticleModuleTypeDataMesh FX.Explosion_Badaboom_v2_PS.ParticleModuleTypeDataMesh_3
@@ -3424,7 +3428,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000284cc with 0x0000007e Bytes
+	Serialized data: at 0x00000000000284d8 with 0x0000007e Bytes
 	Export Flags: 0x00000001
 [Export 336]
 	Full Name: ParticleModuleTypeDataMesh FX.Explosion_Badaboom_v2_PS.ParticleModuleTypeDataMesh_4
@@ -3432,7 +3436,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002854a with 0x00000062 Bytes
+	Serialized data: at 0x0000000000028556 with 0x00000062 Bytes
 	Export Flags: 0x00000001
 [Export 337]
 	Full Name: ParticleModuleTypeDataMesh FX.Explosion_Badaboom_v2_PS.ParticleModuleTypeDataMesh_5
@@ -3440,7 +3444,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000285ac with 0x00000062 Bytes
+	Serialized data: at 0x00000000000285b8 with 0x00000062 Bytes
 	Export Flags: 0x00000001
 [Export 338]
 	Full Name: ParticleModuleTypeDataMesh FX.Explosion_Badaboom_v2_PS.ParticleModuleTypeDataMesh_6
@@ -3448,7 +3452,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002860e with 0x00000062 Bytes
+	Serialized data: at 0x000000000002861a with 0x00000062 Bytes
 	Export Flags: 0x00000001
 [Export 339]
 	Full Name: ParticleModuleVelocity FX.Explosion_Badaboom_v2_PS.ParticleModuleVelocity_1
@@ -3456,7 +3460,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleVelocity
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000028670 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000002867c with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 340]
 	Full Name: ParticleModuleVelocity FX.Explosion_Badaboom_v2_PS.ParticleModuleVelocity_10
@@ -3464,7 +3468,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleVelocity
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000028761 with 0x00000185 Bytes
+	Serialized data: at 0x000000000002876d with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 341]
 	Full Name: ParticleModuleVelocity FX.Explosion_Badaboom_v2_PS.ParticleModuleVelocity_11
@@ -3472,7 +3476,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleVelocity
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000288e6 with 0x0000010a Bytes
+	Serialized data: at 0x00000000000288f2 with 0x0000010a Bytes
 	Export Flags: 0x00000001
 [Export 342]
 	Full Name: ParticleModuleVelocity FX.Explosion_Badaboom_v2_PS.ParticleModuleVelocity_13
@@ -3480,7 +3484,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleVelocity
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000289f0 with 0x000000f1 Bytes
+	Serialized data: at 0x00000000000289fc with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 343]
 	Full Name: ParticleModuleVelocity FX.Explosion_Badaboom_v2_PS.ParticleModuleVelocity_2
@@ -3488,7 +3492,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleVelocity
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000028ae1 with 0x00000185 Bytes
+	Serialized data: at 0x0000000000028aed with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 344]
 	Full Name: ParticleModuleVelocity FX.Explosion_Badaboom_v2_PS.ParticleModuleVelocity_4
@@ -3496,7 +3500,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleVelocity
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000028c66 with 0x0000010a Bytes
+	Serialized data: at 0x0000000000028c72 with 0x0000010a Bytes
 	Export Flags: 0x00000001
 [Export 345]
 	Full Name: ParticleModuleVelocity FX.Explosion_Badaboom_v2_PS.ParticleModuleVelocity_6
@@ -3504,7 +3508,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleVelocity
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000028d70 with 0x00000185 Bytes
+	Serialized data: at 0x0000000000028d7c with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 346]
 	Full Name: ParticleModuleVelocityOverLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleVelocityOverLifetime_1
@@ -3512,7 +3516,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000028ef5 with 0x000001df Bytes
+	Serialized data: at 0x0000000000028f01 with 0x000001df Bytes
 	Export Flags: 0x00000001
 [Export 347]
 	Full Name: ParticleModuleVelocityOverLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleVelocityOverLifetime_4
@@ -3520,7 +3524,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000290d4 with 0x000001c6 Bytes
+	Serialized data: at 0x00000000000290e0 with 0x000001c6 Bytes
 	Export Flags: 0x00000001
 [Export 348]
 	Full Name: ParticleModuleVelocityOverLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleVelocityOverLifetime_7
@@ -3528,7 +3532,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002929a with 0x000001c6 Bytes
+	Serialized data: at 0x00000000000292a6 with 0x000001c6 Bytes
 	Export Flags: 0x00000001
 [Export 349]
 	Full Name: ParticleModuleVelocityOverLifetime FX.Explosion_Badaboom_v2_PS.ParticleModuleVelocityOverLifetime_9
@@ -3536,7 +3540,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029460 with 0x000001c6 Bytes
+	Serialized data: at 0x000000000002946c with 0x000001c6 Bytes
 	Export Flags: 0x00000001
 [Export 350]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_0
@@ -3544,7 +3548,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029626 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000029632 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 351]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_1
@@ -3552,7 +3556,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029672 with 0x0000004c Bytes
+	Serialized data: at 0x000000000002967e with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 352]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_10
@@ -3560,7 +3564,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000296be with 0x00000045 Bytes
+	Serialized data: at 0x00000000000296ca with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 353]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_11
@@ -3568,7 +3572,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029703 with 0x00000045 Bytes
+	Serialized data: at 0x000000000002970f with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 354]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_12
@@ -3576,7 +3580,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029748 with 0x00000045 Bytes
+	Serialized data: at 0x0000000000029754 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 355]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_13
@@ -3584,7 +3588,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002978d with 0x0000004c Bytes
+	Serialized data: at 0x0000000000029799 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 356]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_14
@@ -3592,7 +3596,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000297d9 with 0x00000045 Bytes
+	Serialized data: at 0x00000000000297e5 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 357]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_15
@@ -3600,7 +3604,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002981e with 0x0000004c Bytes
+	Serialized data: at 0x000000000002982a with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 358]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_16
@@ -3608,7 +3612,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002986a with 0x00000045 Bytes
+	Serialized data: at 0x0000000000029876 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 359]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_17
@@ -3616,7 +3620,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000298af with 0x0000004c Bytes
+	Serialized data: at 0x00000000000298bb with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 360]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_18
@@ -3624,7 +3628,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000298fb with 0x00000045 Bytes
+	Serialized data: at 0x0000000000029907 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 361]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_19
@@ -3632,7 +3636,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029940 with 0x0000004c Bytes
+	Serialized data: at 0x000000000002994c with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 362]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_2
@@ -3640,7 +3644,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002998c with 0x00000045 Bytes
+	Serialized data: at 0x0000000000029998 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 363]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_20
@@ -3648,7 +3652,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000299d1 with 0x0000004c Bytes
+	Serialized data: at 0x00000000000299dd with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 364]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_21
@@ -3656,7 +3660,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029a1d with 0x00000045 Bytes
+	Serialized data: at 0x0000000000029a29 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 365]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_22
@@ -3664,7 +3668,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029a62 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000029a6e with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 366]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_23
@@ -3672,7 +3676,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029aae with 0x00000045 Bytes
+	Serialized data: at 0x0000000000029aba with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 367]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_24
@@ -3680,7 +3684,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029af3 with 0x00000045 Bytes
+	Serialized data: at 0x0000000000029aff with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 368]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_25
@@ -3688,7 +3692,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029b38 with 0x00000045 Bytes
+	Serialized data: at 0x0000000000029b44 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 369]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_26
@@ -3696,7 +3700,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029b7d with 0x0000004c Bytes
+	Serialized data: at 0x0000000000029b89 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 370]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_27
@@ -3704,7 +3708,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029bc9 with 0x00000045 Bytes
+	Serialized data: at 0x0000000000029bd5 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 371]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_28
@@ -3712,7 +3716,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029c0e with 0x00000045 Bytes
+	Serialized data: at 0x0000000000029c1a with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 372]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_29
@@ -3720,7 +3724,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029c53 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000029c5f with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 373]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_3
@@ -3728,7 +3732,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029c9f with 0x0000004c Bytes
+	Serialized data: at 0x0000000000029cab with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 374]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_30
@@ -3736,7 +3740,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029ceb with 0x0000004c Bytes
+	Serialized data: at 0x0000000000029cf7 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 375]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_31
@@ -3744,7 +3748,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029d37 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000029d43 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 376]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_32
@@ -3752,7 +3756,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029d83 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000029d8f with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 377]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_33
@@ -3760,7 +3764,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029dcf with 0x00000045 Bytes
+	Serialized data: at 0x0000000000029ddb with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 378]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_34
@@ -3768,7 +3772,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029e14 with 0x00000045 Bytes
+	Serialized data: at 0x0000000000029e20 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 379]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_35
@@ -3776,7 +3780,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029e59 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000029e65 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 380]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_37
@@ -3784,7 +3788,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029ea5 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000029eb1 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 381]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_38
@@ -3792,7 +3796,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029ef1 with 0x00000045 Bytes
+	Serialized data: at 0x0000000000029efd with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 382]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_4
@@ -3800,7 +3804,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029f36 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000029f42 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 383]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_49
@@ -3808,7 +3812,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029f82 with 0x00000045 Bytes
+	Serialized data: at 0x0000000000029f8e with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 384]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_5
@@ -3816,7 +3820,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000029fc7 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000029fd3 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 385]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_50
@@ -3824,7 +3828,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002a013 with 0x00000045 Bytes
+	Serialized data: at 0x000000000002a01f with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 386]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_6
@@ -3832,7 +3836,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002a058 with 0x00000045 Bytes
+	Serialized data: at 0x000000000002a064 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 387]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_7
@@ -3840,7 +3844,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002a09d with 0x00000045 Bytes
+	Serialized data: at 0x000000000002a0a9 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 388]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_8
@@ -3848,7 +3852,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002a0e2 with 0x00000045 Bytes
+	Serialized data: at 0x000000000002a0ee with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 389]
 	Full Name: ParticleSpriteEmitter FX.Explosion_Badaboom_v2_PS.ParticleSpriteEmitter_9
@@ -3856,7 +3860,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSpriteEmitter
 	Outer: Explosion_Badaboom_v2_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002a127 with 0x00000045 Bytes
+	Serialized data: at 0x000000000002a133 with 0x00000045 Bytes
 	Export Flags: 0x00000001
 [Export 390]
 	Full Name: ParticleSystem FX.Explosion_Badaboom_v2_PS
@@ -3864,7 +3868,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSystem
 	Outer: FX
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000002a16c with 0x000001bb Bytes
+	Serialized data: at 0x000000000002a178 with 0x000001bb Bytes
 	Export Flags: 0x00000001
 [Export 391]
 	Full Name: ParticleSystemComponent Archetype.Explosion_Badaboom_FXActor.ParticleSystemComponent_1
@@ -3872,7 +3876,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ParticleSystemComponent
 	Outer: Explosion_Badaboom_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000002a327 with 0x0000008d Bytes
+	Serialized data: at 0x000000000002a333 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 392]
 	Full Name: ProductAsset_GoalExplosion_TA explosion_badaboom.explosion_badaboom.explosion_badaboom
@@ -3881,7 +3885,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Outer: explosion_badaboom
 	Archetype: ProductAsset_GoalExplosion_TA_0
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000002a3b4 with 0x000000a2 Bytes
+	Serialized data: at 0x000000000002a3c0 with 0x000000a2 Bytes
 	Export Flags: 0x00000001
 [Export 393]
 	Full Name: ProductAttribute_PaintSettings_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0
@@ -3889,7 +3893,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductAttribute_PaintSettings_TA
 	Outer: explosion_badaboom
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000024da615 with 0x0000058d Bytes
+	Serialized data: at 0x00000000024da621 with 0x0000058d Bytes
 	Export Flags: 0x00000001
 [Export 394]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_0
@@ -3897,7 +3901,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002a993 with 0x000001fc Bytes
+	Serialized data: at 0x000000000002a99f with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 395]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_1
@@ -3905,7 +3909,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002ab8f with 0x00000160 Bytes
+	Serialized data: at 0x000000000002ab9b with 0x00000160 Bytes
 	Export Flags: 0x00000001
 [Export 396]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_10
@@ -3913,7 +3917,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002acef with 0x000001fc Bytes
+	Serialized data: at 0x000000000002acfb with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 397]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_11
@@ -3921,7 +3925,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002aeeb with 0x000001fc Bytes
+	Serialized data: at 0x000000000002aef7 with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 398]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_2
@@ -3929,7 +3933,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b0e7 with 0x000001fc Bytes
+	Serialized data: at 0x000000000002b0f3 with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 399]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_3
@@ -3937,7 +3941,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b2e3 with 0x000001fc Bytes
+	Serialized data: at 0x000000000002b2ef with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 400]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_4
@@ -3945,7 +3949,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b4df with 0x000001fc Bytes
+	Serialized data: at 0x000000000002b4eb with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 401]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_5
@@ -3953,7 +3957,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b6db with 0x000001fc Bytes
+	Serialized data: at 0x000000000002b6e7 with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 402]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_6
@@ -3961,7 +3965,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b8d7 with 0x00000160 Bytes
+	Serialized data: at 0x000000000002b8e3 with 0x00000160 Bytes
 	Export Flags: 0x00000001
 [Export 403]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_7
@@ -3969,7 +3973,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002ba37 with 0x00000160 Bytes
+	Serialized data: at 0x000000000002ba43 with 0x00000160 Bytes
 	Export Flags: 0x00000001
 [Export 404]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_8
@@ -3977,7 +3981,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002bb97 with 0x000001fc Bytes
+	Serialized data: at 0x000000000002bba3 with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 405]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_9
@@ -3985,7 +3989,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002bd93 with 0x000001fc Bytes
+	Serialized data: at 0x000000000002bd9f with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 406]
 	Full Name: ProductOverride_ParticleSystemComponent_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemComponent_TA_0
@@ -3993,7 +3997,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemComponent_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002bf8f with 0x00000028 Bytes
+	Serialized data: at 0x000000000002bf9b with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [Export 407]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_0
@@ -4001,7 +4005,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002bfb7 with 0x0000006c Bytes
+	Serialized data: at 0x000000000002bfc3 with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 408]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_1
@@ -4009,7 +4013,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c023 with 0x0000006c Bytes
+	Serialized data: at 0x000000000002c02f with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 409]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_10
@@ -4017,7 +4021,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c08f with 0x0000006c Bytes
+	Serialized data: at 0x000000000002c09b with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 410]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_11
@@ -4025,7 +4029,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c0fb with 0x0000006c Bytes
+	Serialized data: at 0x000000000002c107 with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 411]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_12
@@ -4033,7 +4037,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c167 with 0x0000006c Bytes
+	Serialized data: at 0x000000000002c173 with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 412]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_13
@@ -4041,7 +4045,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c1d3 with 0x0000006c Bytes
+	Serialized data: at 0x000000000002c1df with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 413]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_14
@@ -4049,7 +4053,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c23f with 0x0000006c Bytes
+	Serialized data: at 0x000000000002c24b with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 414]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_15
@@ -4057,7 +4061,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c2ab with 0x0000006c Bytes
+	Serialized data: at 0x000000000002c2b7 with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 415]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_16
@@ -4065,7 +4069,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c317 with 0x0000006c Bytes
+	Serialized data: at 0x000000000002c323 with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 416]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_17
@@ -4073,7 +4077,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c383 with 0x0000006c Bytes
+	Serialized data: at 0x000000000002c38f with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 417]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_18
@@ -4081,7 +4085,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c3ef with 0x0000006c Bytes
+	Serialized data: at 0x000000000002c3fb with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 418]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_2
@@ -4089,7 +4093,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c45b with 0x0000006c Bytes
+	Serialized data: at 0x000000000002c467 with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 419]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_3
@@ -4097,7 +4101,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c4c7 with 0x0000006c Bytes
+	Serialized data: at 0x000000000002c4d3 with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 420]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_4
@@ -4105,7 +4109,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c533 with 0x0000006c Bytes
+	Serialized data: at 0x000000000002c53f with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 421]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_5
@@ -4113,7 +4117,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c59f with 0x0000006c Bytes
+	Serialized data: at 0x000000000002c5ab with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 422]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_6
@@ -4121,7 +4125,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c60b with 0x0000006c Bytes
+	Serialized data: at 0x000000000002c617 with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 423]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_7
@@ -4129,7 +4133,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c677 with 0x0000006c Bytes
+	Serialized data: at 0x000000000002c683 with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 424]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_8
@@ -4137,7 +4141,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c6e3 with 0x0000006c Bytes
+	Serialized data: at 0x000000000002c6ef with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 425]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_9
@@ -4145,7 +4149,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c74f with 0x0000006c Bytes
+	Serialized data: at 0x000000000002c75b with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 426]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA explosion_badaboom.explosion_badaboom.explosion_badaboom.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_0
@@ -4153,7 +4157,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002c7bb with 0x0000007c Bytes
+	Serialized data: at 0x000000000002c7c7 with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 428]
 	Full Name: ShakeComponent_X Archetype.Explosion_Badaboom_FXActor.ShakeComponent_X_1
@@ -4161,7 +4165,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ShakeComponent_X
 	Outer: Explosion_Badaboom_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x00000000024d9efc with 0x000000b5 Bytes
+	Serialized data: at 0x00000000024d9f08 with 0x000000b5 Bytes
 	Export Flags: 0x00000001
 [Export 429]
 	Full Name: ShakeComponent_X Ball.BallExplosion_Base_FXActor.ShakeComponent_X_0
@@ -4169,7 +4173,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: ShakeComponent_X
 	Outer: BallExplosion_Base_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000002ca12 with 0x000000b2 Bytes
+	Serialized data: at 0x000000000002ca1e with 0x000000b2 Bytes
 	Export Flags: 0x00000001
 [Export 430]
 	Full Name: StaticMesh SM.Photon_Boost_SM
@@ -4177,7 +4181,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: StaticMesh
 	Outer: SM
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000002cac4 with 0x00000449 Bytes
+	Serialized data: at 0x000000000002cad0 with 0x00000449 Bytes
 	Export Flags: 0x00000001
 [Export 431]
 	Full Name: StaticMesh SM.Ring_SM
@@ -4185,7 +4189,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: StaticMesh
 	Outer: SM
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000002cf0d with 0x00003249 Bytes
+	Serialized data: at 0x000000000002cf19 with 0x00003249 Bytes
 	Export Flags: 0x00000001
 [Export 432]
 	Full Name: StaticMesh SM.Exp_Lightning_1_SM
@@ -4193,7 +4197,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: StaticMesh
 	Outer: SM
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000030156 with 0x000718a9 Bytes
+	Serialized data: at 0x0000000000030162 with 0x000718a9 Bytes
 	Export Flags: 0x00000001
 [Export 433]
 	Full Name: StaticMesh SM.LightingArc_01_SM
@@ -4201,7 +4205,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: StaticMesh
 	Outer: SM
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000a19ff with 0x0000b599 Bytes
+	Serialized data: at 0x00000000000a1a0b with 0x0000b599 Bytes
 	Export Flags: 0x00000001
 [Export 434]
 	Full Name: StaticMesh Meshes.Nuke_Sphere_IN_SM
@@ -4209,7 +4213,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: StaticMesh
 	Outer: Meshes
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000acf98 with 0x00007069 Bytes
+	Serialized data: at 0x00000000000acfa4 with 0x00007069 Bytes
 	Export Flags: 0x00000001
 [Export 436]
 	Full Name: Texture2D Textures.Photo_Base_02_T
@@ -4217,7 +4221,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000c0a9f with 0x00002d95 Bytes
+	Serialized data: at 0x00000000000c0aab with 0x00002d95 Bytes
 	Export Flags: 0x00000001
 [Export 437]
 	Full Name: Texture2D Textures.Photo_Base_Simple_T
@@ -4225,7 +4229,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000c3834 with 0x00002d95 Bytes
+	Serialized data: at 0x00000000000c3840 with 0x00002d95 Bytes
 	Export Flags: 0x00000001
 [Export 440]
 	Full Name: Texture2D Textures.FlameMask_RGB_T
@@ -4233,7 +4237,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000d15cb with 0x00000d2c Bytes
+	Serialized data: at 0x00000000000d15d7 with 0x00000d2c Bytes
 	Export Flags: 0x00000001
 [Export 441]
 	Full Name: Texture2D Textures.Smoke_HQ
@@ -4241,7 +4245,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000d22f7 with 0x01000194 Bytes
+	Serialized data: at 0x00000000000d2303 with 0x01000194 Bytes
 	Export Flags: 0x00000001
 [Export 442]
 	Full Name: Texture2D Textures.smoke_puff_8x8_soft
@@ -4249,7 +4253,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000010d248b with 0x0040016c Bytes
+	Serialized data: at 0x00000000010d2497 with 0x0040016c Bytes
 	Export Flags: 0x00000001
 [Export 443]
 	Full Name: Texture2D Textures.Smoke_V1
@@ -4257,7 +4261,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000014d25f7 with 0x000017d4 Bytes
+	Serialized data: at 0x00000000014d2603 with 0x000017d4 Bytes
 	Export Flags: 0x00000001
 [Export 444]
 	Full Name: Texture2D Textures.GradientMask_RGB_T
@@ -4265,7 +4269,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000014d3dcb with 0x0100018f Bytes
+	Serialized data: at 0x00000000014d3dd7 with 0x0100018f Bytes
 	Export Flags: 0x00000001
 [Export 445]
 	Full Name: Texture2D Textures.Distort_RGB_T
@@ -4273,7 +4277,7 @@ AES: p5CvmV08xn/lxkn184ffsnarmpWOo9KEUFcz8E3JTm8=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000024d3f5a with 0x000057de Bytes
+	Serialized data: at 0x00000000024d3f66 with 0x000057de Bytes
 	Export Flags: 0x00000001
 
 
