@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x000152cd Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 710 Name Offset: 0x00000315
-Export Count: 656 Export Offset: 0x00005be6
-Import Count: 119 Import Offset: 0x00004ee2
-Depends Offset: 0x00011466
-Import Export Guids Offset: 0x00011466
+Name Count: 710 Name Offset: 0x00000321
+Export Count: 656 Export Offset: 0x00005bf2
+Import Count: 119 Import Offset: 0x00004eee
+Depends Offset: 0x00011472
+Import Export Guids Offset: 0x00011472
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x9ce12df0 0x4035f8db 0xe648aaad 0x518b7c9d
+GUID: 0x360c3504 0x4311e943 0xeeea8182 0xc695122a
 Generations:
 [0]
 	Export Count: 633
@@ -203,6 +203,10 @@ Generations:
 	Export Count: 656
 	Name Count: 710
 	Net Object Count: 0
+[46]
+	Export Count: 656
+	Name Count: 710
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression: ZLIB
@@ -213,13 +217,6 @@ Additional Packages To Cook:
 	Empty
 Texture Allocations Texture Types:
 [0]
-	Resolution: [32 x 64]
-	Num Mips: 7
-	Format: DXT1
-	Flags: 1
-	Exports:
-		[0] Texture2D Textures.IllustrativeBoost_Cone_T
-[1]
 	Resolution: [64 x 64]
 	Num Mips: 7
 	Format: DXT1
@@ -231,7 +228,7 @@ Texture Allocations Texture Types:
 		[3] Texture2D T.White
 		[4] Texture2D Textures.Dot_Soft_Mask
 		[5] Texture2D boost_drof.LensFlares_Textures.DirtyLens_Pack
-[2]
+[1]
 	Resolution: [32 x 64]
 	Num Mips: 7
 	Format: A8R8G8B8
@@ -239,27 +236,34 @@ Texture Allocations Texture Types:
 	Exports:
 		[0] Texture2D Textures.Photo_Base_02_T
 		[1] Texture2D Textures.Photo_Base_Simple_T
-Test Data Size: 0x00003e1b
+[2]
+	Resolution: [32 x 64]
+	Num Mips: 7
+	Format: DXT1
+	Flags: 1
+	Exports:
+		[0] Texture2D Textures.IllustrativeBoost_Cone_T
+Test Data Size: 0x00003e0f
 Compressed Chunk Info:
 	Offset: 0x00011151
 	[0]
-		Uncompressed Offset: 0x0000000000011466
+		Uncompressed Offset: 0x0000000000011472
 		Uncompressed Size: 0x00025870
 		Compressed Offset: 0x00000000000152cd
 		Compressed Size: 0x00005f17
 	[1]
-		Uncompressed Offset: 0x0000000000036cd6
+		Uncompressed Offset: 0x0000000000036ce2
 		Uncompressed Size: 0x00000056
 		Compressed Offset: 0x000000000001b1e4
 		Compressed Size: 0x00000053
 	[2]
-		Uncompressed Offset: 0x0000000000036d2c
+		Uncompressed Offset: 0x0000000000036d38
 		Uncompressed Size: 0x00000817
 		Compressed Offset: 0x000000000001b237
 		Compressed Size: 0x00000174
-Last Block Size: 0x00000008
-Base Header Size: 0x00000315
-Encrypted Header Size: 0x00014fb0
+Last Block Size: 0x0000000c
+Base Header Size: 0x00000321
+Encrypted Header Size: 0x00014fa0
 
 AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 
@@ -988,7 +992,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: AkBank
 	Outer: SFX_Car_Boost
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000011466 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000011472 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 2]
 	Full Name: AkPlaySoundComponent boost_drof.boost_drof.Boost_Drof_FXActor.AkPlaySoundComponent_0
@@ -996,7 +1000,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: AkPlaySoundComponent
 	Outer: Boost_Drof_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000001147e with 0x00000071 Bytes
+	Serialized data: at 0x000000000001148a with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 3]
 	Full Name: AkSoundCue boost_drof.SFX_Car_Boost.Boost_Drof_Loop
@@ -1004,7 +1008,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: AkSoundCue
 	Outer: SFX_Car_Boost
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000114ef with 0x0000008a Bytes
+	Serialized data: at 0x00000000000114fb with 0x0000008a Bytes
 	Export Flags: 0x00000001
 [Export 4]
 	Full Name: AkSoundCue boost_drof.SFX_UI_Boost.UI_BoostFail
@@ -1012,7 +1016,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: AkSoundCue
 	Outer: SFX_UI_Boost
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000036cd6 with 0x00000056 Bytes
+	Serialized data: at 0x0000000000036ce2 with 0x00000056 Bytes
 	Export Flags: 0x00000001
 [Export 9]
 	Full Name: DistributionFloatConstant boost_drof.boost_drof.Boost_Drof_FXActor.DistributionFloatConstant_0
@@ -1020,7 +1024,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionFloatConstant
 	Outer: Boost_Drof_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x00000000000115cf with 0x0000002c Bytes
+	Serialized data: at 0x00000000000115db with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 10]
 	Full Name: DistributionFloatConstant boost_drof.boost_drof.Boost_Drof_FXActor.DistributionFloatConstant_1
@@ -1028,7 +1032,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionFloatConstant
 	Outer: Boost_Drof_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x00000000000115fb with 0x0000002c Bytes
+	Serialized data: at 0x0000000000011607 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 11]
 	Full Name: DistributionFloatParticleParameter FX.Drof_black_PS.ParticleModuleParameterDynamic_0.DistributionFloatParticleParameter_2
@@ -1036,7 +1040,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011627 with 0x0000008d Bytes
+	Serialized data: at 0x0000000000011633 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 12]
 	Full Name: DistributionFloatParticleParameter FX.Drof_black_PS.ParticleModuleParameterDynamic_1.DistributionFloatParticleParameter_1
@@ -1044,7 +1048,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000116b4 with 0x0000008d Bytes
+	Serialized data: at 0x00000000000116c0 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 13]
 	Full Name: DistributionFloatParticleParameter FX.Drof_black_PS.ParticleModuleParameterDynamic_2.DistributionFloatParticleParameter_1
@@ -1052,7 +1056,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011741 with 0x0000008d Bytes
+	Serialized data: at 0x000000000001174d with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 14]
 	Full Name: DistributionFloatParticleParameter FX.Drof_black_PS.ParticleModuleParameterDynamic_3.DistributionFloatParticleParameter_2
@@ -1060,7 +1064,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000117ce with 0x0000008d Bytes
+	Serialized data: at 0x00000000000117da with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 15]
 	Full Name: DistributionFloatParticleParameter FX.Drof_black_PS.ParticleModuleParameterDynamic_4.DistributionFloatParticleParameter_2
@@ -1068,7 +1072,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001185b with 0x0000008d Bytes
+	Serialized data: at 0x0000000000011867 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 16]
 	Full Name: DistributionFloatParticleParameter FX.Drof_black_PS.ParticleModuleParameterDynamic_5.DistributionFloatParticleParameter_1
@@ -1076,7 +1080,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_5
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000118e8 with 0x0000008d Bytes
+	Serialized data: at 0x00000000000118f4 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 17]
 	Full Name: DistributionFloatParticleParameter FX.Drof_PS.ParticleModuleParameterDynamic_0.DistributionFloatParticleParameter_2
@@ -1084,7 +1088,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011975 with 0x0000008d Bytes
+	Serialized data: at 0x0000000000011981 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 18]
 	Full Name: DistributionFloatParticleParameter FX.Drof_PS.ParticleModuleParameterDynamic_1.DistributionFloatParticleParameter_1
@@ -1092,7 +1096,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011a02 with 0x0000008d Bytes
+	Serialized data: at 0x0000000000011a0e with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 19]
 	Full Name: DistributionFloatParticleParameter FX.Drof_PS.ParticleModuleParameterDynamic_2.DistributionFloatParticleParameter_1
@@ -1100,7 +1104,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011a8f with 0x0000008d Bytes
+	Serialized data: at 0x0000000000011a9b with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 20]
 	Full Name: DistributionFloatParticleParameter FX.Drof_PS.ParticleModuleParameterDynamic_3.DistributionFloatParticleParameter_2
@@ -1108,7 +1112,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011b1c with 0x0000008d Bytes
+	Serialized data: at 0x0000000000011b28 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 21]
 	Full Name: DistributionFloatParticleParameter FX.Drof_PS.ParticleModuleParameterDynamic_4.DistributionFloatParticleParameter_2
@@ -1116,7 +1120,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011ba9 with 0x0000008d Bytes
+	Serialized data: at 0x0000000000011bb5 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 22]
 	Full Name: DistributionFloatParticleParameter FX.Drof_PS.ParticleModuleParameterDynamic_5.DistributionFloatParticleParameter_1
@@ -1124,7 +1128,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_5
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011c36 with 0x0000008d Bytes
+	Serialized data: at 0x0000000000011c42 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 23]
 	Full Name: DistributionVectorConstant boost_drof.boost_drof.Boost_Drof_FXActor.DistributionVectorConstant_2
@@ -1132,7 +1136,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionVectorConstant
 	Outer: Boost_Drof_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000011cc3 with 0x0000003c Bytes
+	Serialized data: at 0x0000000000011ccf with 0x0000003c Bytes
 	Export Flags: 0x00000001
 [Export 24]
 	Full Name: DistributionVectorConstant boost_drof.boost_drof.Boost_Drof_FXActor.DistributionVectorConstant_3
@@ -1140,7 +1144,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionVectorConstant
 	Outer: Boost_Drof_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000011cff with 0x0000003c Bytes
+	Serialized data: at 0x0000000000011d0b with 0x0000003c Bytes
 	Export Flags: 0x00000001
 [Export 25]
 	Full Name: DistributionVectorParticleParameter FX.Drof_black_PS.ParticleModuleColor_1.DistributionVectorParticleParameter_0
@@ -1148,7 +1152,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011d3b with 0x000000ed Bytes
+	Serialized data: at 0x0000000000011d47 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 26]
 	Full Name: DistributionVectorParticleParameter FX.Drof_black_PS.ParticleModuleColor_14.DistributionVectorParticleParameter_0
@@ -1156,7 +1160,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_14
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011e28 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000011e34 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 27]
 	Full Name: DistributionVectorParticleParameter FX.Drof_black_PS.ParticleModuleColor_5.DistributionVectorParticleParameter_1
@@ -1164,7 +1168,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_5
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011f15 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000011f21 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 28]
 	Full Name: DistributionVectorParticleParameter FX.Drof_black_PS.ParticleModuleColor_7.DistributionVectorParticleParameter_1
@@ -1172,7 +1176,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_7
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012002 with 0x000000ed Bytes
+	Serialized data: at 0x000000000001200e with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 29]
 	Full Name: DistributionVectorParticleParameter FX.Drof_black_PS.ParticleModuleColor_8.DistributionVectorParticleParameter_0
@@ -1180,7 +1184,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_8
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000120ef with 0x000000ed Bytes
+	Serialized data: at 0x00000000000120fb with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 30]
 	Full Name: DistributionVectorParticleParameter FX.Drof_black_PS.ParticleModuleColorScaleOverLife_1.DistributionVectorParticleParameter_0
@@ -1188,7 +1192,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColorScaleOverLife_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000121dc with 0x00000145 Bytes
+	Serialized data: at 0x00000000000121e8 with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 31]
 	Full Name: DistributionVectorParticleParameter FX.Drof_black_PS.ParticleModuleColorScaleOverLife_6.DistributionVectorParticleParameter_0
@@ -1196,7 +1200,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColorScaleOverLife_6
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012321 with 0x00000145 Bytes
+	Serialized data: at 0x000000000001232d with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 32]
 	Full Name: DistributionVectorParticleParameter FX.Drof_PS.ParticleModuleColor_1.DistributionVectorParticleParameter_0
@@ -1204,7 +1208,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012466 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000012472 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 33]
 	Full Name: DistributionVectorParticleParameter FX.Drof_PS.ParticleModuleColor_14.DistributionVectorParticleParameter_0
@@ -1212,7 +1216,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_14
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012553 with 0x000000ed Bytes
+	Serialized data: at 0x000000000001255f with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 34]
 	Full Name: DistributionVectorParticleParameter FX.Drof_PS.ParticleModuleColor_2.DistributionVectorParticleParameter_0
@@ -1220,7 +1224,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012640 with 0x000000ed Bytes
+	Serialized data: at 0x000000000001264c with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 35]
 	Full Name: DistributionVectorParticleParameter FX.Drof_PS.ParticleModuleColor_4.DistributionVectorParticleParameter_1
@@ -1228,7 +1232,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001272d with 0x000000ed Bytes
+	Serialized data: at 0x0000000000012739 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 36]
 	Full Name: DistributionVectorParticleParameter FX.Drof_PS.ParticleModuleColor_5.DistributionVectorParticleParameter_1
@@ -1236,7 +1240,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_5
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001281a with 0x000000ed Bytes
+	Serialized data: at 0x0000000000012826 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 37]
 	Full Name: DistributionVectorParticleParameter FX.Drof_PS.ParticleModuleColor_7.DistributionVectorParticleParameter_1
@@ -1244,7 +1248,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_7
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012907 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000012913 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 38]
 	Full Name: DistributionVectorParticleParameter FX.Drof_PS.ParticleModuleColor_8.DistributionVectorParticleParameter_0
@@ -1252,7 +1256,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_8
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000129f4 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000012a00 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 39]
 	Full Name: DistributionVectorParticleParameter FX.Drof_PS.ParticleModuleColorScaleOverLife_1.DistributionVectorParticleParameter_0
@@ -1260,7 +1264,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColorScaleOverLife_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012ae1 with 0x00000145 Bytes
+	Serialized data: at 0x0000000000012aed with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 40]
 	Full Name: DistributionVectorParticleParameter FX.Drof_PS.ParticleModuleColorScaleOverLife_6.DistributionVectorParticleParameter_0
@@ -1268,7 +1272,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColorScaleOverLife_6
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012c26 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000012c32 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 41]
 	Full Name: ForceFeedbackWaveform FX.BoostActivated_FF
@@ -1276,7 +1280,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ForceFeedbackWaveform
 	Outer: FX
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x0000000000012d13 with 0x00000170 Bytes
+	Serialized data: at 0x0000000000012d1f with 0x00000170 Bytes
 	Export Flags: 0x00000001
 [Export 42]
 	Full Name: ForceFeedbackWaveform FX.ForceFeedback
@@ -1284,7 +1288,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ForceFeedbackWaveform
 	Outer: FX
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x0000000000012e83 with 0x00000189 Bytes
+	Serialized data: at 0x0000000000012e8f with 0x00000189 Bytes
 	Export Flags: 0x00000001
 [Export 43]
 	Full Name: FXActor_Boost_TA boost_drof.boost_drof.Boost_Drof_FXActor
@@ -1292,7 +1296,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: FXActor_Boost_TA
 	Outer: boost_drof
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x000000000001300c with 0x00000e05 Bytes
+	Serialized data: at 0x0000000000013018 with 0x00000e05 Bytes
 	Export Flags: 0x00000001
 [Export 44]
 	Full Name: FXActor_Boost_TA boost_drof.BoostBase.FXActor
@@ -1300,7 +1304,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: FXActor_Boost_TA
 	Outer: BoostBase
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x0000000000013e11 with 0x000006be Bytes
+	Serialized data: at 0x0000000000013e1d with 0x000006be Bytes
 	Export Flags: 0x00000001
 [Export 45]
 	Full Name: FXTrait_BoostParticle_TA boost_drof.boost_drof.Boost_Drof_FXActor.FXTrait_BoostParticle_TA_8
@@ -1308,7 +1312,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: FXTrait_BoostParticle_TA
 	Outer: Boost_Drof_FXActor
 	Object Flags: 0x0007000402000000
-	Serialized data: at 0x00000000000144cf with 0x00000588 Bytes
+	Serialized data: at 0x00000000000144db with 0x00000588 Bytes
 	Export Flags: 0x00000001
 [Export 46]
 	Full Name: FXTrait_BoostParticle_TA boost_drof.boost_drof.Boost_Drof_FXActor.FXTrait_BoostParticle_TA_9
@@ -1316,7 +1320,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: FXTrait_BoostParticle_TA
 	Outer: Boost_Drof_FXActor
 	Object Flags: 0x0007000402000000
-	Serialized data: at 0x0000000000014a57 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000014a63 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 47]
 	Full Name: LensFlare boost_drof.Boost_Propulsion.BoostFlare_LF
@@ -1324,7 +1328,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: LensFlare
 	Outer: Boost_Propulsion
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000014a63 with 0x00001341 Bytes
+	Serialized data: at 0x0000000000014a6f with 0x00001341 Bytes
 	Export Flags: 0x00000001
 [Export 48]
 	Full Name: LensFlareComponent boost_drof.boost_drof.Boost_Drof_FXActor.LensFlareComponent_0
@@ -1332,7 +1336,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: LensFlareComponent
 	Outer: Boost_Drof_FXActor
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x0000000000015da4 with 0x000000c0 Bytes
+	Serialized data: at 0x0000000000015db0 with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [Export 49]
 	Full Name: Material Materials.drofTile_MAT
@@ -1340,7 +1344,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000015e64 with 0x00000219 Bytes
+	Serialized data: at 0x0000000000015e70 with 0x00000219 Bytes
 	Export Flags: 0x00000001
 [Export 50]
 	Full Name: Material Materials.Trail_ES_MAT
@@ -1348,7 +1352,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000001607d with 0x000006c8 Bytes
+	Serialized data: at 0x0000000000016089 with 0x000006c8 Bytes
 	Export Flags: 0x00000001
 [Export 51]
 	Full Name: Material Materials.BoostMesh_MAT
@@ -1356,7 +1360,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000016745 with 0x000002c2 Bytes
+	Serialized data: at 0x0000000000016751 with 0x000002c2 Bytes
 	Export Flags: 0x00000001
 [Export 52]
 	Full Name: Material Materials.Base_MAT
@@ -1364,7 +1368,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000016a07 with 0x0000030a Bytes
+	Serialized data: at 0x0000000000016a13 with 0x0000030a Bytes
 	Export Flags: 0x00000001
 [Export 53]
 	Full Name: Material Materials.Blank_MAT
@@ -1372,7 +1376,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000016d11 with 0x00000158 Bytes
+	Serialized data: at 0x0000000000016d1d with 0x00000158 Bytes
 	Export Flags: 0x00000001
 [Export 54]
 	Full Name: Material Materials.BoostMesh_Paintable_02_MAT
@@ -1380,7 +1384,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000016e69 with 0x000003df Bytes
+	Serialized data: at 0x0000000000016e75 with 0x000003df Bytes
 	Export Flags: 0x00000001
 [Export 56]
 	Full Name: Material Materials.DustyFlare_Mat
@@ -1388,7 +1392,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000017248 with 0x00000283 Bytes
+	Serialized data: at 0x0000000000017254 with 0x00000283 Bytes
 	Export Flags: 0x00000001
 [Export 58]
 	Full Name: MaterialExpressionScalarParameter Materials.drofTile_MAT.MaterialExpressionScalarParameter_0
@@ -1396,7 +1400,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: drofTile_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000174cb with 0x00000094 Bytes
+	Serialized data: at 0x00000000000174d7 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 59]
 	Full Name: MaterialExpressionScalarParameter Materials.drofTile_MAT.MaterialExpressionScalarParameter_2
@@ -1404,7 +1408,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: drofTile_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001755f with 0x00000094 Bytes
+	Serialized data: at 0x000000000001756b with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 60]
 	Full Name: MaterialExpressionScalarParameter Materials.drofTile_MAT.MaterialExpressionScalarParameter_20
@@ -1412,7 +1416,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: drofTile_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000175f3 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000175ff with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 61]
 	Full Name: MaterialExpressionScalarParameter Materials.Trail_ES_MAT.MaterialExpressionScalarParameter_0
@@ -1420,7 +1424,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: Trail_ES_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017687 with 0x00000098 Bytes
+	Serialized data: at 0x0000000000017693 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [Export 62]
 	Full Name: MaterialExpressionScalarParameter Materials.Trail_ES_MAT.MaterialExpressionScalarParameter_1
@@ -1428,7 +1432,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: Trail_ES_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001771f with 0x00000098 Bytes
+	Serialized data: at 0x000000000001772b with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [Export 63]
 	Full Name: MaterialExpressionScalarParameter Materials.Trail_ES_MAT.MaterialExpressionScalarParameter_16
@@ -1436,7 +1440,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: Trail_ES_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000177b7 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000177c3 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 64]
 	Full Name: MaterialExpressionScalarParameter Materials.Trail_ES_MAT.MaterialExpressionScalarParameter_2
@@ -1444,7 +1448,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: Trail_ES_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001784b with 0x00000098 Bytes
+	Serialized data: at 0x0000000000017857 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [Export 65]
 	Full Name: MaterialExpressionScalarParameter Materials.Trail_ES_MAT.MaterialExpressionScalarParameter_3
@@ -1452,7 +1456,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: Trail_ES_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000178e3 with 0x00000098 Bytes
+	Serialized data: at 0x00000000000178ef with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [Export 66]
 	Full Name: MaterialExpressionScalarParameter Materials.Trail_ES_MAT.MaterialExpressionScalarParameter_4
@@ -1460,7 +1464,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: Trail_ES_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001797b with 0x00000078 Bytes
+	Serialized data: at 0x0000000000017987 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 67]
 	Full Name: MaterialExpressionScalarParameter Materials.Trail_ES_MAT.MaterialExpressionScalarParameter_5
@@ -1468,7 +1472,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: Trail_ES_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000179f3 with 0x00000078 Bytes
+	Serialized data: at 0x00000000000179ff with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 68]
 	Full Name: MaterialExpressionScalarParameter Materials.BoostMesh_MAT.MaterialExpressionScalarParameter_1
@@ -1476,7 +1480,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: BoostMesh_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017a6b with 0x00000094 Bytes
+	Serialized data: at 0x0000000000017a77 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 69]
 	Full Name: MaterialExpressionScalarParameter Materials.BoostMesh_Paintable_02_MAT.MaterialExpressionScalarParameter_11
@@ -1484,7 +1488,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: BoostMesh_Paintable_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017aff with 0x00000094 Bytes
+	Serialized data: at 0x0000000000017b0b with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 70]
 	Full Name: MaterialExpressionScalarParameter Materials.BoostMesh_Paintable_02_MAT.MaterialExpressionScalarParameter_12
@@ -1492,7 +1496,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: BoostMesh_Paintable_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017b93 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000017b9f with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 71]
 	Full Name: MaterialExpressionScalarParameter Materials.BoostMesh_Paintable_02_MAT.MaterialExpressionScalarParameter_14
@@ -1500,7 +1504,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: BoostMesh_Paintable_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017c27 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000017c33 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 72]
 	Full Name: MaterialExpressionScalarParameter Materials.BoostMesh_Paintable_02_MAT.MaterialExpressionScalarParameter_16
@@ -1508,7 +1512,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: BoostMesh_Paintable_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017cbb with 0x00000094 Bytes
+	Serialized data: at 0x0000000000017cc7 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 73]
 	Full Name: MaterialExpressionScalarParameter Materials.BoostMesh_Paintable_02_MAT.MaterialExpressionScalarParameter_17
@@ -1516,7 +1520,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: BoostMesh_Paintable_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017d4f with 0x00000094 Bytes
+	Serialized data: at 0x0000000000017d5b with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 74]
 	Full Name: MaterialExpressionScalarParameter Materials.BoostMesh_Paintable_02_MAT.MaterialExpressionScalarParameter_18
@@ -1524,7 +1528,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: BoostMesh_Paintable_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017de3 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000017def with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 75]
 	Full Name: MaterialExpressionScalarParameter Materials.BoostMesh_Paintable_02_MAT.MaterialExpressionScalarParameter_19
@@ -1532,7 +1536,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: BoostMesh_Paintable_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017e77 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000017e83 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 76]
 	Full Name: MaterialExpressionScalarParameter Materials.BoostMesh_Paintable_02_MAT.MaterialExpressionScalarParameter_25
@@ -1540,7 +1544,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: BoostMesh_Paintable_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017f0b with 0x00000094 Bytes
+	Serialized data: at 0x0000000000017f17 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 77]
 	Full Name: MaterialExpressionScalarParameter Materials.BoostMesh_Paintable_02_MAT.MaterialExpressionScalarParameter_26
@@ -1548,7 +1552,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: BoostMesh_Paintable_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017f9f with 0x00000094 Bytes
+	Serialized data: at 0x0000000000017fab with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 78]
 	Full Name: MaterialExpressionScalarParameter Materials.BoostMesh_Paintable_02_MAT.MaterialExpressionScalarParameter_27
@@ -1556,7 +1560,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: BoostMesh_Paintable_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018033 with 0x00000094 Bytes
+	Serialized data: at 0x000000000001803f with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 79]
 	Full Name: MaterialExpressionScalarParameter Materials.BoostMesh_Paintable_02_MAT.MaterialExpressionScalarParameter_28
@@ -1564,7 +1568,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: BoostMesh_Paintable_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000180c7 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000180d3 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 80]
 	Full Name: MaterialExpressionScalarParameter Materials.BoostMesh_Paintable_02_MAT.MaterialExpressionScalarParameter_3
@@ -1572,7 +1576,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionScalarParameter
 	Outer: BoostMesh_Paintable_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001815b with 0x00000094 Bytes
+	Serialized data: at 0x0000000000018167 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 93]
 	Full Name: MaterialExpressionStaticComponentMaskParameter Materials.Trail_ES_MAT.MaterialExpressionStaticComponentMaskParameter_0
@@ -1580,7 +1584,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionStaticComponentMaskParameter
 	Outer: Trail_ES_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000181ef with 0x00000145 Bytes
+	Serialized data: at 0x00000000000181fb with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 94]
 	Full Name: MaterialExpressionStaticComponentMaskParameter Materials.Trail_ES_MAT.MaterialExpressionStaticComponentMaskParameter_2
@@ -1588,7 +1592,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionStaticComponentMaskParameter
 	Outer: Trail_ES_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018334 with 0x00000145 Bytes
+	Serialized data: at 0x0000000000018340 with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 95]
 	Full Name: MaterialExpressionStaticSwitchParameter Materials.Trail_ES_MAT.MaterialExpressionStaticSwitchParameter_0
@@ -1596,7 +1600,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Trail_ES_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018479 with 0x00000120 Bytes
+	Serialized data: at 0x0000000000018485 with 0x00000120 Bytes
 	Export Flags: 0x00000001
 [Export 96]
 	Full Name: MaterialExpressionStaticSwitchParameter Materials.Trail_ES_MAT.MaterialExpressionStaticSwitchParameter_1
@@ -1604,7 +1608,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Trail_ES_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018599 with 0x00000119 Bytes
+	Serialized data: at 0x00000000000185a5 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 97]
 	Full Name: MaterialExpressionStaticSwitchParameter Materials.Trail_ES_MAT.MaterialExpressionStaticSwitchParameter_2
@@ -1612,7 +1616,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Trail_ES_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000186b2 with 0x00000100 Bytes
+	Serialized data: at 0x00000000000186be with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 98]
 	Full Name: MaterialExpressionStaticSwitchParameter Materials.Trail_ES_MAT.MaterialExpressionStaticSwitchParameter_3
@@ -1620,7 +1624,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Trail_ES_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000187b2 with 0x00000119 Bytes
+	Serialized data: at 0x00000000000187be with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 99]
 	Full Name: MaterialExpressionStaticSwitchParameter Materials.DustyFlare_Mat.MaterialExpressionStaticSwitchParameter_0
@@ -1628,7 +1632,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: DustyFlare_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000188cb with 0x00000100 Bytes
+	Serialized data: at 0x00000000000188d7 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 100]
 	Full Name: MaterialExpressionTextureSampleParameter2D Materials.Base_MAT.MaterialExpressionTextureSampleParameter2D_0
@@ -1636,7 +1640,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Base_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000189cb with 0x000000ad Bytes
+	Serialized data: at 0x00000000000189d7 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 101]
 	Full Name: MaterialExpressionTextureSampleParameter2D Materials.DustyFlare_Mat.MaterialExpressionTextureSampleParameter2D_0
@@ -1644,7 +1648,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: DustyFlare_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018a78 with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000018a84 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [Export 102]
 	Full Name: MaterialExpressionVectorParameter Materials.BoostMesh_Paintable_02_MAT.MaterialExpressionVectorParameter_1
@@ -1652,7 +1656,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialExpressionVectorParameter
 	Outer: BoostMesh_Paintable_02_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018b50 with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000018b5c with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 105]
 	Full Name: MaterialFunction boost_drof.Psy_MaterialFunctions.AlphaThreshold_Normalized
@@ -1660,7 +1664,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialFunction
 	Outer: Psy_MaterialFunctions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000018bf8 with 0x00000099 Bytes
+	Serialized data: at 0x0000000000018c04 with 0x00000099 Bytes
 	Export Flags: 0x00000001
 [Export 112]
 	Full Name: MaterialInstanceConstant Materials.Trail_drof_MIC
@@ -1668,7 +1672,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialInstanceConstant
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000018c91 with 0x00000511 Bytes
+	Serialized data: at 0x0000000000018c9d with 0x00000511 Bytes
 	Export Flags: 0x00000001
 [Export 116]
 	Full Name: MaterialInstanceConstant Materials.MasterBoost_Propulsion_MIC
@@ -1676,7 +1680,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialInstanceConstant
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000191a2 with 0x0000052c Bytes
+	Serialized data: at 0x00000000000191ae with 0x0000052c Bytes
 	Export Flags: 0x00000001
 [Export 119]
 	Full Name: MaterialInstanceConstant Materials.DustyFlare_Flicker_MIC
@@ -1684,21 +1688,21 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: MaterialInstanceConstant
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000196ce with 0x000001e2 Bytes
+	Serialized data: at 0x00000000000196da with 0x000001e2 Bytes
 	Export Flags: 0x00000001
 [Export 122]
 	Full Name: ObjectReferencer boost_drof.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000000198b0 with 0x0000002c Bytes
+	Serialized data: at 0x00000000000198bc with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [Export 165]
 	Full Name: Package boost_drof.boost_drof
 	Name: boost_drof
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000198dc with 0x0000000c Bytes
+	Serialized data: at 0x00000000000198e8 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1708,7 +1712,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Package
 	Outer: boost_drof
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000198e8 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000198f4 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 167]
 	Full Name: Package boost_drof.boost_drof.Materials
@@ -1716,7 +1720,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Package
 	Outer: boost_drof
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000198f4 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019900 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 168]
 	Full Name: Package boost_drof.boost_drof.Textures
@@ -1724,14 +1728,14 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Package
 	Outer: boost_drof
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019900 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001990c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 169]
 	Full Name: Package boost_drof.boost_drof_SF
 	Name: boost_drof_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001990c with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019918 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -1740,7 +1744,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Name: boost_glaucous
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019918 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019924 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1750,7 +1754,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Package
 	Outer: boost_glaucous
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019924 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019930 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 172]
 	Full Name: Package boost_drof.boost_glaucous.Textures
@@ -1758,14 +1762,14 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Package
 	Outer: boost_glaucous
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019930 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001993c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 173]
 	Full Name: Package boost_drof.Boost_Illustrative
 	Name: Boost_Illustrative
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001993c with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019948 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1775,7 +1779,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Package
 	Outer: Boost_Illustrative
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019948 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019954 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 175]
 	Full Name: Package boost_drof.Boost_Illustrative.SM
@@ -1783,7 +1787,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Package
 	Outer: Boost_Illustrative
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019954 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019960 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 176]
 	Full Name: Package boost_drof.Boost_Illustrative.Textures
@@ -1791,14 +1795,14 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Package
 	Outer: Boost_Illustrative
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019960 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001996c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 182]
 	Full Name: Package boost_drof.Boost_Photon
 	Name: Boost_Photon
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001996c with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019978 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1808,7 +1812,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Package
 	Outer: Boost_Photon
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019978 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019984 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 184]
 	Full Name: Package boost_drof.Boost_Photon.Textures
@@ -1816,14 +1820,14 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Package
 	Outer: Boost_Photon
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019984 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019990 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 185]
 	Full Name: Package boost_drof.Boost_Propulsion
 	Name: Boost_Propulsion
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019990 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001999c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
@@ -1833,14 +1837,14 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Package
 	Outer: Boost_Propulsion
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001999c with 0x0000000c Bytes
+	Serialized data: at 0x00000000000199a8 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 187]
 	Full Name: Package boost_drof.boost_raceflames
 	Name: boost_raceflames
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000199a8 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000199b4 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1850,14 +1854,14 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Package
 	Outer: boost_raceflames
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000199b4 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000199c0 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 189]
 	Full Name: Package boost_drof.boost_spell_streak
 	Name: boost_spell_streak
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000199c0 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000199cc with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1867,14 +1871,14 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Package
 	Outer: boost_spell_streak
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000199cc with 0x0000000c Bytes
+	Serialized data: at 0x00000000000199d8 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 191]
 	Full Name: Package boost_drof.boost_stream
 	Name: boost_stream
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000199d8 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000199e4 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1884,14 +1888,14 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Package
 	Outer: boost_stream
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000199e4 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000199f0 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 199]
 	Full Name: Package boost_drof.BoostBase
 	Name: BoostBase
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000199f0 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000199fc with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1901,14 +1905,14 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Package
 	Outer: BoostBase
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000199fc with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019a08 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 201]
 	Full Name: Package boost_drof.explosion_illustrated_bursts
 	Name: explosion_illustrated_bursts
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019a08 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019a14 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1918,14 +1922,14 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Package
 	Outer: explosion_illustrated_bursts
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019a14 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019a20 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 208]
 	Full Name: Package boost_drof.LensFlares
 	Name: LensFlares
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019a20 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019a2c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1935,14 +1939,14 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Package
 	Outer: LensFlares
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019a2c with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019a38 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 210]
 	Full Name: Package boost_drof.LensFlares_Textures
 	Name: LensFlares_Textures
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019a38 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019a44 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1951,7 +1955,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Name: Psy_MaterialFunctions
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019a44 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019a50 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1960,7 +1964,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Name: SFX_Car_Boost
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019a50 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019a5c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1969,7 +1973,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Name: SFX_UI_Boost
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000019a5c with 0x0000000c Bytes
+	Serialized data: at 0x0000000000019a68 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1979,7 +1983,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParameterDispenser_X
 	Outer: Boost_Drof_FXActor
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x0000000000019a68 with 0x00000010 Bytes
+	Serialized data: at 0x0000000000019a74 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 222]
 	Full Name: ParameterDispenser_X boost_drof.BoostBase.FXActor.ParameterDispenser_X_0
@@ -1987,7 +1991,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParameterDispenser_X
 	Outer: FXActor
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x0000000000019a78 with 0x00000010 Bytes
+	Serialized data: at 0x0000000000019a84 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 223]
 	Full Name: ParticleLODLevel FX.Drof_black_PS.ParticleSpriteEmitter_0.ParticleLODLevel_0
@@ -1995,7 +1999,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019a88 with 0x000000c0 Bytes
+	Serialized data: at 0x0000000000019a94 with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [Export 224]
 	Full Name: ParticleLODLevel FX.Drof_black_PS.ParticleSpriteEmitter_1.ParticleLODLevel_0
@@ -2003,7 +2007,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019b48 with 0x000000bc Bytes
+	Serialized data: at 0x0000000000019b54 with 0x000000bc Bytes
 	Export Flags: 0x00000001
 [Export 225]
 	Full Name: ParticleLODLevel FX.Drof_black_PS.ParticleSpriteEmitter_2.ParticleLODLevel_1
@@ -2011,7 +2015,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019c04 with 0x000000c0 Bytes
+	Serialized data: at 0x0000000000019c10 with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [Export 226]
 	Full Name: ParticleLODLevel FX.Drof_black_PS.ParticleSpriteEmitter_3.ParticleLODLevel_2
@@ -2019,7 +2023,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019cc4 with 0x000000bc Bytes
+	Serialized data: at 0x0000000000019cd0 with 0x000000bc Bytes
 	Export Flags: 0x00000001
 [Export 227]
 	Full Name: ParticleLODLevel FX.Drof_black_PS.ParticleSpriteEmitter_4.ParticleLODLevel_0
@@ -2027,7 +2031,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019d80 with 0x000000c0 Bytes
+	Serialized data: at 0x0000000000019d8c with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [Export 228]
 	Full Name: ParticleLODLevel FX.Drof_black_PS.ParticleSpriteEmitter_5.ParticleLODLevel_0
@@ -2035,7 +2039,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_5
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019e40 with 0x000000bc Bytes
+	Serialized data: at 0x0000000000019e4c with 0x000000bc Bytes
 	Export Flags: 0x00000001
 [Export 229]
 	Full Name: ParticleLODLevel FX.Drof_black_PS.ParticleSpriteEmitter_7.ParticleLODLevel_1
@@ -2043,7 +2047,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_7
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019efc with 0x00000098 Bytes
+	Serialized data: at 0x0000000000019f08 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [Export 230]
 	Full Name: ParticleLODLevel FX.Drof_PS.ParticleSpriteEmitter_0.ParticleLODLevel_0
@@ -2051,7 +2055,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019f94 with 0x000000bc Bytes
+	Serialized data: at 0x0000000000019fa0 with 0x000000bc Bytes
 	Export Flags: 0x00000001
 [Export 231]
 	Full Name: ParticleLODLevel FX.Drof_PS.ParticleSpriteEmitter_1.ParticleLODLevel_0
@@ -2059,7 +2063,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a050 with 0x000000bc Bytes
+	Serialized data: at 0x000000000001a05c with 0x000000bc Bytes
 	Export Flags: 0x00000001
 [Export 232]
 	Full Name: ParticleLODLevel FX.Drof_PS.ParticleSpriteEmitter_2.ParticleLODLevel_1
@@ -2067,7 +2071,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a10c with 0x000000bc Bytes
+	Serialized data: at 0x000000000001a118 with 0x000000bc Bytes
 	Export Flags: 0x00000001
 [Export 233]
 	Full Name: ParticleLODLevel FX.Drof_PS.ParticleSpriteEmitter_3.ParticleLODLevel_2
@@ -2075,7 +2079,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a1c8 with 0x000000bc Bytes
+	Serialized data: at 0x000000000001a1d4 with 0x000000bc Bytes
 	Export Flags: 0x00000001
 [Export 234]
 	Full Name: ParticleLODLevel FX.Drof_PS.ParticleSpriteEmitter_4.ParticleLODLevel_0
@@ -2083,7 +2087,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a284 with 0x000000bc Bytes
+	Serialized data: at 0x000000000001a290 with 0x000000bc Bytes
 	Export Flags: 0x00000001
 [Export 235]
 	Full Name: ParticleLODLevel FX.Drof_PS.ParticleSpriteEmitter_5.ParticleLODLevel_0
@@ -2091,7 +2095,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_5
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a340 with 0x000000bc Bytes
+	Serialized data: at 0x000000000001a34c with 0x000000bc Bytes
 	Export Flags: 0x00000001
 [Export 236]
 	Full Name: ParticleLODLevel FX.Drof_PS.ParticleSpriteEmitter_7.ParticleLODLevel_1
@@ -2099,7 +2103,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_7
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a3fc with 0x00000094 Bytes
+	Serialized data: at 0x000000000001a408 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 237]
 	Full Name: ParticleModuleColor FX.Drof_black_PS.ParticleModuleColor_0
@@ -2107,7 +2111,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColor
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a490 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000001a49c with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 238]
 	Full Name: ParticleModuleColor FX.Drof_black_PS.ParticleModuleColor_1
@@ -2115,7 +2119,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColor
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a581 with 0x000000ea Bytes
+	Serialized data: at 0x000000000001a58d with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [Export 239]
 	Full Name: ParticleModuleColor FX.Drof_black_PS.ParticleModuleColor_10
@@ -2123,7 +2127,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColor
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a66b with 0x000000f1 Bytes
+	Serialized data: at 0x000000000001a677 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 240]
 	Full Name: ParticleModuleColor FX.Drof_black_PS.ParticleModuleColor_14
@@ -2131,7 +2135,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColor
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a75c with 0x000000ea Bytes
+	Serialized data: at 0x000000000001a768 with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [Export 241]
 	Full Name: ParticleModuleColor FX.Drof_black_PS.ParticleModuleColor_3
@@ -2139,7 +2143,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColor
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a846 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000001a852 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 242]
 	Full Name: ParticleModuleColor FX.Drof_black_PS.ParticleModuleColor_4
@@ -2147,7 +2151,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColor
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a937 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000001a943 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 243]
 	Full Name: ParticleModuleColor FX.Drof_black_PS.ParticleModuleColor_5
@@ -2155,7 +2159,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColor
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001aa28 with 0x000000ea Bytes
+	Serialized data: at 0x000000000001aa34 with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [Export 244]
 	Full Name: ParticleModuleColor FX.Drof_black_PS.ParticleModuleColor_6
@@ -2163,7 +2167,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColor
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001ab12 with 0x000000f1 Bytes
+	Serialized data: at 0x000000000001ab1e with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 245]
 	Full Name: ParticleModuleColor FX.Drof_black_PS.ParticleModuleColor_7
@@ -2171,7 +2175,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColor
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001ac03 with 0x000000d1 Bytes
+	Serialized data: at 0x000000000001ac0f with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 246]
 	Full Name: ParticleModuleColor FX.Drof_black_PS.ParticleModuleColor_8
@@ -2179,7 +2183,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColor
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001acd4 with 0x000000ea Bytes
+	Serialized data: at 0x000000000001ace0 with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [Export 247]
 	Full Name: ParticleModuleColor FX.Drof_black_PS.ParticleModuleColor_9
@@ -2187,7 +2191,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColor
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001adbe with 0x000000f1 Bytes
+	Serialized data: at 0x000000000001adca with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 248]
 	Full Name: ParticleModuleColor FX.Drof_PS.ParticleModuleColor_1
@@ -2195,7 +2199,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColor
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001aeaf with 0x000000d1 Bytes
+	Serialized data: at 0x000000000001aebb with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 249]
 	Full Name: ParticleModuleColor FX.Drof_PS.ParticleModuleColor_14
@@ -2203,7 +2207,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColor
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001af80 with 0x000000d1 Bytes
+	Serialized data: at 0x000000000001af8c with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 250]
 	Full Name: ParticleModuleColor FX.Drof_PS.ParticleModuleColor_2
@@ -2211,7 +2215,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColor
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b051 with 0x000000d1 Bytes
+	Serialized data: at 0x000000000001b05d with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 251]
 	Full Name: ParticleModuleColor FX.Drof_PS.ParticleModuleColor_4
@@ -2219,7 +2223,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColor
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b122 with 0x000000d1 Bytes
+	Serialized data: at 0x000000000001b12e with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 252]
 	Full Name: ParticleModuleColor FX.Drof_PS.ParticleModuleColor_5
@@ -2227,7 +2231,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColor
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b1f3 with 0x000000d1 Bytes
+	Serialized data: at 0x000000000001b1ff with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 253]
 	Full Name: ParticleModuleColor FX.Drof_PS.ParticleModuleColor_7
@@ -2235,7 +2239,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColor
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b2c4 with 0x000000d1 Bytes
+	Serialized data: at 0x000000000001b2d0 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 254]
 	Full Name: ParticleModuleColor FX.Drof_PS.ParticleModuleColor_8
@@ -2243,7 +2247,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColor
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b395 with 0x000000d1 Bytes
+	Serialized data: at 0x000000000001b3a1 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 255]
 	Full Name: ParticleModuleColorScaleOverLife FX.Drof_black_PS.ParticleModuleColorScaleOverLife_0
@@ -2251,7 +2255,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b466 with 0x00000155 Bytes
+	Serialized data: at 0x000000000001b472 with 0x00000155 Bytes
 	Export Flags: 0x00000001
 [Export 256]
 	Full Name: ParticleModuleColorScaleOverLife FX.Drof_black_PS.ParticleModuleColorScaleOverLife_1
@@ -2259,7 +2263,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b5bb with 0x000000ed Bytes
+	Serialized data: at 0x000000000001b5c7 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 257]
 	Full Name: ParticleModuleColorScaleOverLife FX.Drof_black_PS.ParticleModuleColorScaleOverLife_10
@@ -2267,7 +2271,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b6a8 with 0x00000185 Bytes
+	Serialized data: at 0x000000000001b6b4 with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 258]
 	Full Name: ParticleModuleColorScaleOverLife FX.Drof_black_PS.ParticleModuleColorScaleOverLife_2
@@ -2275,7 +2279,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b82d with 0x00000185 Bytes
+	Serialized data: at 0x000000000001b839 with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 259]
 	Full Name: ParticleModuleColorScaleOverLife FX.Drof_black_PS.ParticleModuleColorScaleOverLife_3
@@ -2283,7 +2287,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b9b2 with 0x00000185 Bytes
+	Serialized data: at 0x000000000001b9be with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 260]
 	Full Name: ParticleModuleColorScaleOverLife FX.Drof_black_PS.ParticleModuleColorScaleOverLife_4
@@ -2291,7 +2295,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001bb37 with 0x000001ad Bytes
+	Serialized data: at 0x000000000001bb43 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 261]
 	Full Name: ParticleModuleColorScaleOverLife FX.Drof_black_PS.ParticleModuleColorScaleOverLife_5
@@ -2299,7 +2303,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001bce4 with 0x00000155 Bytes
+	Serialized data: at 0x000000000001bcf0 with 0x00000155 Bytes
 	Export Flags: 0x00000001
 [Export 262]
 	Full Name: ParticleModuleColorScaleOverLife FX.Drof_black_PS.ParticleModuleColorScaleOverLife_6
@@ -2307,7 +2311,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001be39 with 0x000000ed Bytes
+	Serialized data: at 0x000000000001be45 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 263]
 	Full Name: ParticleModuleColorScaleOverLife FX.Drof_black_PS.ParticleModuleColorScaleOverLife_9
@@ -2315,7 +2319,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001bf26 with 0x00000185 Bytes
+	Serialized data: at 0x000000000001bf32 with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 264]
 	Full Name: ParticleModuleColorScaleOverLife FX.Drof_PS.ParticleModuleColorScaleOverLife_0
@@ -2323,7 +2327,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c0ab with 0x0000016e Bytes
+	Serialized data: at 0x000000000001c0b7 with 0x0000016e Bytes
 	Export Flags: 0x00000001
 [Export 265]
 	Full Name: ParticleModuleColorScaleOverLife FX.Drof_PS.ParticleModuleColorScaleOverLife_1
@@ -2331,7 +2335,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c219 with 0x000000ed Bytes
+	Serialized data: at 0x000000000001c225 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 266]
 	Full Name: ParticleModuleColorScaleOverLife FX.Drof_PS.ParticleModuleColorScaleOverLife_10
@@ -2339,7 +2343,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c306 with 0x00000185 Bytes
+	Serialized data: at 0x000000000001c312 with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 267]
 	Full Name: ParticleModuleColorScaleOverLife FX.Drof_PS.ParticleModuleColorScaleOverLife_2
@@ -2347,7 +2351,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c48b with 0x00000185 Bytes
+	Serialized data: at 0x000000000001c497 with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 268]
 	Full Name: ParticleModuleColorScaleOverLife FX.Drof_PS.ParticleModuleColorScaleOverLife_3
@@ -2355,7 +2359,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c610 with 0x00000185 Bytes
+	Serialized data: at 0x000000000001c61c with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 269]
 	Full Name: ParticleModuleColorScaleOverLife FX.Drof_PS.ParticleModuleColorScaleOverLife_4
@@ -2363,7 +2367,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c795 with 0x000001ad Bytes
+	Serialized data: at 0x000000000001c7a1 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 270]
 	Full Name: ParticleModuleColorScaleOverLife FX.Drof_PS.ParticleModuleColorScaleOverLife_5
@@ -2371,7 +2375,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c942 with 0x0000016e Bytes
+	Serialized data: at 0x000000000001c94e with 0x0000016e Bytes
 	Export Flags: 0x00000001
 [Export 271]
 	Full Name: ParticleModuleColorScaleOverLife FX.Drof_PS.ParticleModuleColorScaleOverLife_6
@@ -2379,7 +2383,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cab0 with 0x000000ed Bytes
+	Serialized data: at 0x000000000001cabc with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 272]
 	Full Name: ParticleModuleColorScaleOverLife FX.Drof_PS.ParticleModuleColorScaleOverLife_9
@@ -2387,7 +2391,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cb9d with 0x00000185 Bytes
+	Serialized data: at 0x000000000001cba9 with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 273]
 	Full Name: ParticleModuleLifetime FX.Drof_black_PS.ParticleModuleLifetime_0
@@ -2395,7 +2399,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLifetime
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cd22 with 0x0000009d Bytes
+	Serialized data: at 0x000000000001cd2e with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 274]
 	Full Name: ParticleModuleLifetime FX.Drof_black_PS.ParticleModuleLifetime_1
@@ -2403,7 +2407,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLifetime
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cdbf with 0x00000108 Bytes
+	Serialized data: at 0x000000000001cdcb with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 275]
 	Full Name: ParticleModuleLifetime FX.Drof_black_PS.ParticleModuleLifetime_2
@@ -2411,7 +2415,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLifetime
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cec7 with 0x0000009d Bytes
+	Serialized data: at 0x000000000001ced3 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 276]
 	Full Name: ParticleModuleLifetime FX.Drof_black_PS.ParticleModuleLifetime_3
@@ -2419,7 +2423,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLifetime
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cf64 with 0x0000009d Bytes
+	Serialized data: at 0x000000000001cf70 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 277]
 	Full Name: ParticleModuleLifetime FX.Drof_black_PS.ParticleModuleLifetime_4
@@ -2427,7 +2431,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLifetime
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d001 with 0x0000009d Bytes
+	Serialized data: at 0x000000000001d00d with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 278]
 	Full Name: ParticleModuleLifetime FX.Drof_black_PS.ParticleModuleLifetime_5
@@ -2435,7 +2439,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLifetime
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d09e with 0x00000108 Bytes
+	Serialized data: at 0x000000000001d0aa with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 279]
 	Full Name: ParticleModuleLifetime FX.Drof_black_PS.ParticleModuleLifetime_7
@@ -2443,7 +2447,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLifetime
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d1a6 with 0x0000009d Bytes
+	Serialized data: at 0x000000000001d1b2 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 280]
 	Full Name: ParticleModuleLifetime FX.Drof_PS.ParticleModuleLifetime_0
@@ -2451,7 +2455,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLifetime
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d243 with 0x0000009d Bytes
+	Serialized data: at 0x000000000001d24f with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 281]
 	Full Name: ParticleModuleLifetime FX.Drof_PS.ParticleModuleLifetime_1
@@ -2459,7 +2463,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLifetime
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d2e0 with 0x00000108 Bytes
+	Serialized data: at 0x000000000001d2ec with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 282]
 	Full Name: ParticleModuleLifetime FX.Drof_PS.ParticleModuleLifetime_2
@@ -2467,7 +2471,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLifetime
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d3e8 with 0x0000009d Bytes
+	Serialized data: at 0x000000000001d3f4 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 283]
 	Full Name: ParticleModuleLifetime FX.Drof_PS.ParticleModuleLifetime_3
@@ -2475,7 +2479,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLifetime
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d485 with 0x0000009d Bytes
+	Serialized data: at 0x000000000001d491 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 284]
 	Full Name: ParticleModuleLifetime FX.Drof_PS.ParticleModuleLifetime_4
@@ -2483,7 +2487,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLifetime
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d522 with 0x0000009d Bytes
+	Serialized data: at 0x000000000001d52e with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 285]
 	Full Name: ParticleModuleLifetime FX.Drof_PS.ParticleModuleLifetime_5
@@ -2491,7 +2495,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLifetime
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d5bf with 0x00000108 Bytes
+	Serialized data: at 0x000000000001d5cb with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 286]
 	Full Name: ParticleModuleLifetime FX.Drof_PS.ParticleModuleLifetime_7
@@ -2499,7 +2503,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLifetime
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d6c7 with 0x0000009d Bytes
+	Serialized data: at 0x000000000001d6d3 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 287]
 	Full Name: ParticleModuleLocation FX.Drof_black_PS.ParticleModuleLocation_0
@@ -2507,7 +2511,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocation
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d764 with 0x000000ad Bytes
+	Serialized data: at 0x000000000001d770 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 288]
 	Full Name: ParticleModuleLocation FX.Drof_black_PS.ParticleModuleLocation_1
@@ -2515,7 +2519,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocation
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d811 with 0x000000ad Bytes
+	Serialized data: at 0x000000000001d81d with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 289]
 	Full Name: ParticleModuleLocation FX.Drof_black_PS.ParticleModuleLocation_2
@@ -2523,7 +2527,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocation
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d8be with 0x000000ad Bytes
+	Serialized data: at 0x000000000001d8ca with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 290]
 	Full Name: ParticleModuleLocation FX.Drof_black_PS.ParticleModuleLocation_3
@@ -2531,7 +2535,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocation
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d96b with 0x000000ad Bytes
+	Serialized data: at 0x000000000001d977 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 291]
 	Full Name: ParticleModuleLocation FX.Drof_black_PS.ParticleModuleLocation_4
@@ -2539,7 +2543,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocation
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001da18 with 0x000000ad Bytes
+	Serialized data: at 0x000000000001da24 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 292]
 	Full Name: ParticleModuleLocation FX.Drof_black_PS.ParticleModuleLocation_5
@@ -2547,7 +2551,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocation
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001dac5 with 0x000000ad Bytes
+	Serialized data: at 0x000000000001dad1 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 293]
 	Full Name: ParticleModuleLocation FX.Drof_black_PS.ParticleModuleLocation_7
@@ -2555,7 +2559,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocation
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001db72 with 0x000000ad Bytes
+	Serialized data: at 0x000000000001db7e with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 294]
 	Full Name: ParticleModuleLocation FX.Drof_PS.ParticleModuleLocation_0
@@ -2563,7 +2567,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocation
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001dc1f with 0x000000ad Bytes
+	Serialized data: at 0x000000000001dc2b with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 295]
 	Full Name: ParticleModuleLocation FX.Drof_PS.ParticleModuleLocation_1
@@ -2571,7 +2575,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocation
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001dccc with 0x000000ad Bytes
+	Serialized data: at 0x000000000001dcd8 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 296]
 	Full Name: ParticleModuleLocation FX.Drof_PS.ParticleModuleLocation_2
@@ -2579,7 +2583,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocation
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001dd79 with 0x000000ad Bytes
+	Serialized data: at 0x000000000001dd85 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 297]
 	Full Name: ParticleModuleLocation FX.Drof_PS.ParticleModuleLocation_3
@@ -2587,7 +2591,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocation
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001de26 with 0x000000ad Bytes
+	Serialized data: at 0x000000000001de32 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 298]
 	Full Name: ParticleModuleLocation FX.Drof_PS.ParticleModuleLocation_4
@@ -2595,7 +2599,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocation
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001ded3 with 0x000000ad Bytes
+	Serialized data: at 0x000000000001dedf with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 299]
 	Full Name: ParticleModuleLocation FX.Drof_PS.ParticleModuleLocation_5
@@ -2603,7 +2607,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocation
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001df80 with 0x000000ad Bytes
+	Serialized data: at 0x000000000001df8c with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 300]
 	Full Name: ParticleModuleLocation FX.Drof_PS.ParticleModuleLocation_7
@@ -2611,7 +2615,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocation
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e02d with 0x000000ad Bytes
+	Serialized data: at 0x000000000001e039 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 301]
 	Full Name: ParticleModuleLocationEmitter FX.Drof_black_PS.ParticleModuleLocationEmitter_0
@@ -2619,7 +2623,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocationEmitter
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e0da with 0x0000008e Bytes
+	Serialized data: at 0x000000000001e0e6 with 0x0000008e Bytes
 	Export Flags: 0x00000001
 [Export 302]
 	Full Name: ParticleModuleLocationEmitter FX.Drof_black_PS.ParticleModuleLocationEmitter_1
@@ -2627,7 +2631,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocationEmitter
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e168 with 0x0000008e Bytes
+	Serialized data: at 0x000000000001e174 with 0x0000008e Bytes
 	Export Flags: 0x00000001
 [Export 303]
 	Full Name: ParticleModuleLocationEmitter FX.Drof_black_PS.ParticleModuleLocationEmitter_2
@@ -2635,7 +2639,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocationEmitter
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e1f6 with 0x0000008e Bytes
+	Serialized data: at 0x000000000001e202 with 0x0000008e Bytes
 	Export Flags: 0x00000001
 [Export 304]
 	Full Name: ParticleModuleLocationEmitter FX.Drof_black_PS.ParticleModuleLocationEmitter_3
@@ -2643,7 +2647,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocationEmitter
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e284 with 0x0000008e Bytes
+	Serialized data: at 0x000000000001e290 with 0x0000008e Bytes
 	Export Flags: 0x00000001
 [Export 305]
 	Full Name: ParticleModuleLocationEmitter FX.Drof_PS.ParticleModuleLocationEmitter_0
@@ -2651,7 +2655,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocationEmitter
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e312 with 0x0000008e Bytes
+	Serialized data: at 0x000000000001e31e with 0x0000008e Bytes
 	Export Flags: 0x00000001
 [Export 306]
 	Full Name: ParticleModuleLocationEmitter FX.Drof_PS.ParticleModuleLocationEmitter_1
@@ -2659,7 +2663,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocationEmitter
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e3a0 with 0x0000008e Bytes
+	Serialized data: at 0x000000000001e3ac with 0x0000008e Bytes
 	Export Flags: 0x00000001
 [Export 307]
 	Full Name: ParticleModuleLocationEmitter FX.Drof_PS.ParticleModuleLocationEmitter_2
@@ -2667,7 +2671,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocationEmitter
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e42e with 0x0000008e Bytes
+	Serialized data: at 0x000000000001e43a with 0x0000008e Bytes
 	Export Flags: 0x00000001
 [Export 308]
 	Full Name: ParticleModuleLocationEmitter FX.Drof_PS.ParticleModuleLocationEmitter_3
@@ -2675,7 +2679,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleLocationEmitter
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e4bc with 0x0000008e Bytes
+	Serialized data: at 0x000000000001e4c8 with 0x0000008e Bytes
 	Export Flags: 0x00000001
 [Export 309]
 	Full Name: ParticleModuleMeshRotation FX.Drof_black_PS.ParticleModuleMeshRotation_0
@@ -2683,7 +2687,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleMeshRotation
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e54a with 0x000000c5 Bytes
+	Serialized data: at 0x000000000001e556 with 0x000000c5 Bytes
 	Export Flags: 0x00000001
 [Export 310]
 	Full Name: ParticleModuleMeshRotation FX.Drof_black_PS.ParticleModuleMeshRotation_1
@@ -2691,7 +2695,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleMeshRotation
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e60f with 0x000000c5 Bytes
+	Serialized data: at 0x000000000001e61b with 0x000000c5 Bytes
 	Export Flags: 0x00000001
 [Export 311]
 	Full Name: ParticleModuleMeshRotation FX.Drof_PS.ParticleModuleMeshRotation_0
@@ -2699,7 +2703,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleMeshRotation
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e6d4 with 0x000000c5 Bytes
+	Serialized data: at 0x000000000001e6e0 with 0x000000c5 Bytes
 	Export Flags: 0x00000001
 [Export 312]
 	Full Name: ParticleModuleMeshRotation FX.Drof_PS.ParticleModuleMeshRotation_1
@@ -2707,7 +2711,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleMeshRotation
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e799 with 0x000000c5 Bytes
+	Serialized data: at 0x000000000001e7a5 with 0x000000c5 Bytes
 	Export Flags: 0x00000001
 [Export 313]
 	Full Name: ParticleModuleParameterDynamic FX.Drof_black_PS.ParticleModuleParameterDynamic_0
@@ -2715,7 +2719,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleParameterDynamic
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e85e with 0x00000755 Bytes
+	Serialized data: at 0x000000000001e86a with 0x00000755 Bytes
 	Export Flags: 0x00000001
 [Export 314]
 	Full Name: ParticleModuleParameterDynamic FX.Drof_black_PS.ParticleModuleParameterDynamic_1
@@ -2723,7 +2727,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleParameterDynamic
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001efb3 with 0x00000771 Bytes
+	Serialized data: at 0x000000000001efbf with 0x00000771 Bytes
 	Export Flags: 0x00000001
 [Export 315]
 	Full Name: ParticleModuleParameterDynamic FX.Drof_black_PS.ParticleModuleParameterDynamic_2
@@ -2731,7 +2735,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleParameterDynamic
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001f724 with 0x00000755 Bytes
+	Serialized data: at 0x000000000001f730 with 0x00000755 Bytes
 	Export Flags: 0x00000001
 [Export 316]
 	Full Name: ParticleModuleParameterDynamic FX.Drof_black_PS.ParticleModuleParameterDynamic_3
@@ -2739,7 +2743,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleParameterDynamic
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001fe79 with 0x00000755 Bytes
+	Serialized data: at 0x000000000001fe85 with 0x00000755 Bytes
 	Export Flags: 0x00000001
 [Export 317]
 	Full Name: ParticleModuleParameterDynamic FX.Drof_black_PS.ParticleModuleParameterDynamic_4
@@ -2747,7 +2751,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleParameterDynamic
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000205ce with 0x00000755 Bytes
+	Serialized data: at 0x00000000000205da with 0x00000755 Bytes
 	Export Flags: 0x00000001
 [Export 318]
 	Full Name: ParticleModuleParameterDynamic FX.Drof_black_PS.ParticleModuleParameterDynamic_5
@@ -2755,7 +2759,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleParameterDynamic
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020d23 with 0x00000771 Bytes
+	Serialized data: at 0x0000000000020d2f with 0x00000771 Bytes
 	Export Flags: 0x00000001
 [Export 319]
 	Full Name: ParticleModuleParameterDynamic FX.Drof_PS.ParticleModuleParameterDynamic_0
@@ -2763,7 +2767,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleParameterDynamic
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021494 with 0x00000755 Bytes
+	Serialized data: at 0x00000000000214a0 with 0x00000755 Bytes
 	Export Flags: 0x00000001
 [Export 320]
 	Full Name: ParticleModuleParameterDynamic FX.Drof_PS.ParticleModuleParameterDynamic_1
@@ -2771,7 +2775,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleParameterDynamic
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021be9 with 0x00000771 Bytes
+	Serialized data: at 0x0000000000021bf5 with 0x00000771 Bytes
 	Export Flags: 0x00000001
 [Export 321]
 	Full Name: ParticleModuleParameterDynamic FX.Drof_PS.ParticleModuleParameterDynamic_2
@@ -2779,7 +2783,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleParameterDynamic
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002235a with 0x00000755 Bytes
+	Serialized data: at 0x0000000000022366 with 0x00000755 Bytes
 	Export Flags: 0x00000001
 [Export 322]
 	Full Name: ParticleModuleParameterDynamic FX.Drof_PS.ParticleModuleParameterDynamic_3
@@ -2787,7 +2791,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleParameterDynamic
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022aaf with 0x00000755 Bytes
+	Serialized data: at 0x0000000000022abb with 0x00000755 Bytes
 	Export Flags: 0x00000001
 [Export 323]
 	Full Name: ParticleModuleParameterDynamic FX.Drof_PS.ParticleModuleParameterDynamic_4
@@ -2795,7 +2799,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleParameterDynamic
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023204 with 0x00000755 Bytes
+	Serialized data: at 0x0000000000023210 with 0x00000755 Bytes
 	Export Flags: 0x00000001
 [Export 324]
 	Full Name: ParticleModuleParameterDynamic FX.Drof_PS.ParticleModuleParameterDynamic_5
@@ -2803,7 +2807,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleParameterDynamic
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023959 with 0x00000771 Bytes
+	Serialized data: at 0x0000000000023965 with 0x00000771 Bytes
 	Export Flags: 0x00000001
 [Export 325]
 	Full Name: ParticleModuleRequired FX.Drof_black_PS.ParticleModuleRequired_0
@@ -2811,7 +2815,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleRequired
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000240ca with 0x000000f7 Bytes
+	Serialized data: at 0x00000000000240d6 with 0x000000f7 Bytes
 	Export Flags: 0x00000001
 [Export 326]
 	Full Name: ParticleModuleRequired FX.Drof_black_PS.ParticleModuleRequired_1
@@ -2819,7 +2823,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleRequired
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000241c1 with 0x000000f4 Bytes
+	Serialized data: at 0x00000000000241cd with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 327]
 	Full Name: ParticleModuleRequired FX.Drof_black_PS.ParticleModuleRequired_2
@@ -2827,7 +2831,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleRequired
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000242b5 with 0x000000f7 Bytes
+	Serialized data: at 0x00000000000242c1 with 0x000000f7 Bytes
 	Export Flags: 0x00000001
 [Export 328]
 	Full Name: ParticleModuleRequired FX.Drof_black_PS.ParticleModuleRequired_3
@@ -2835,7 +2839,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleRequired
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000243ac with 0x000000f7 Bytes
+	Serialized data: at 0x00000000000243b8 with 0x000000f7 Bytes
 	Export Flags: 0x00000001
 [Export 329]
 	Full Name: ParticleModuleRequired FX.Drof_black_PS.ParticleModuleRequired_4
@@ -2843,7 +2847,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleRequired
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000244a3 with 0x0000014b Bytes
+	Serialized data: at 0x00000000000244af with 0x0000014b Bytes
 	Export Flags: 0x00000001
 [Export 330]
 	Full Name: ParticleModuleRequired FX.Drof_black_PS.ParticleModuleRequired_5
@@ -2851,7 +2855,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleRequired
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000245ee with 0x000000f4 Bytes
+	Serialized data: at 0x00000000000245fa with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 331]
 	Full Name: ParticleModuleRequired FX.Drof_black_PS.ParticleModuleRequired_7
@@ -2859,7 +2863,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleRequired
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000246e2 with 0x00000110 Bytes
+	Serialized data: at 0x00000000000246ee with 0x00000110 Bytes
 	Export Flags: 0x00000001
 [Export 332]
 	Full Name: ParticleModuleRequired FX.Drof_PS.ParticleModuleRequired_0
@@ -2867,7 +2871,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleRequired
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000247f2 with 0x000000f7 Bytes
+	Serialized data: at 0x00000000000247fe with 0x000000f7 Bytes
 	Export Flags: 0x00000001
 [Export 333]
 	Full Name: ParticleModuleRequired FX.Drof_PS.ParticleModuleRequired_1
@@ -2875,7 +2879,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleRequired
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000248e9 with 0x000000f4 Bytes
+	Serialized data: at 0x00000000000248f5 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 334]
 	Full Name: ParticleModuleRequired FX.Drof_PS.ParticleModuleRequired_2
@@ -2883,7 +2887,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleRequired
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000249dd with 0x000000f7 Bytes
+	Serialized data: at 0x00000000000249e9 with 0x000000f7 Bytes
 	Export Flags: 0x00000001
 [Export 335]
 	Full Name: ParticleModuleRequired FX.Drof_PS.ParticleModuleRequired_3
@@ -2891,7 +2895,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleRequired
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024ad4 with 0x000000f7 Bytes
+	Serialized data: at 0x0000000000024ae0 with 0x000000f7 Bytes
 	Export Flags: 0x00000001
 [Export 336]
 	Full Name: ParticleModuleRequired FX.Drof_PS.ParticleModuleRequired_4
@@ -2899,7 +2903,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleRequired
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024bcb with 0x0000014b Bytes
+	Serialized data: at 0x0000000000024bd7 with 0x0000014b Bytes
 	Export Flags: 0x00000001
 [Export 337]
 	Full Name: ParticleModuleRequired FX.Drof_PS.ParticleModuleRequired_5
@@ -2907,7 +2911,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleRequired
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024d16 with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000024d22 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 338]
 	Full Name: ParticleModuleRequired FX.Drof_PS.ParticleModuleRequired_7
@@ -2915,7 +2919,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleRequired
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024e0a with 0x00000110 Bytes
+	Serialized data: at 0x0000000000024e16 with 0x00000110 Bytes
 	Export Flags: 0x00000001
 [Export 339]
 	Full Name: ParticleModuleSize FX.Drof_black_PS.ParticleModuleSize_0
@@ -2923,7 +2927,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSize
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024f1a with 0x000000ad Bytes
+	Serialized data: at 0x0000000000024f26 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 340]
 	Full Name: ParticleModuleSize FX.Drof_black_PS.ParticleModuleSize_1
@@ -2931,7 +2935,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSize
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024fc7 with 0x00000128 Bytes
+	Serialized data: at 0x0000000000024fd3 with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [Export 341]
 	Full Name: ParticleModuleSize FX.Drof_black_PS.ParticleModuleSize_2
@@ -2939,7 +2943,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSize
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000250ef with 0x000000ad Bytes
+	Serialized data: at 0x00000000000250fb with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 342]
 	Full Name: ParticleModuleSize FX.Drof_black_PS.ParticleModuleSize_3
@@ -2947,7 +2951,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSize
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002519c with 0x000000ad Bytes
+	Serialized data: at 0x00000000000251a8 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 343]
 	Full Name: ParticleModuleSize FX.Drof_black_PS.ParticleModuleSize_4
@@ -2955,7 +2959,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSize
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025249 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000025255 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 344]
 	Full Name: ParticleModuleSize FX.Drof_black_PS.ParticleModuleSize_5
@@ -2963,7 +2967,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSize
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000252f6 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000025302 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 345]
 	Full Name: ParticleModuleSize FX.Drof_black_PS.ParticleModuleSize_7
@@ -2971,7 +2975,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSize
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000253a3 with 0x000000ad Bytes
+	Serialized data: at 0x00000000000253af with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 346]
 	Full Name: ParticleModuleSize FX.Drof_PS.ParticleModuleSize_0
@@ -2979,7 +2983,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSize
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025450 with 0x000000ad Bytes
+	Serialized data: at 0x000000000002545c with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 347]
 	Full Name: ParticleModuleSize FX.Drof_PS.ParticleModuleSize_1
@@ -2987,7 +2991,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSize
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000254fd with 0x00000128 Bytes
+	Serialized data: at 0x0000000000025509 with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [Export 348]
 	Full Name: ParticleModuleSize FX.Drof_PS.ParticleModuleSize_2
@@ -2995,7 +2999,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSize
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025625 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000025631 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 349]
 	Full Name: ParticleModuleSize FX.Drof_PS.ParticleModuleSize_3
@@ -3003,7 +3007,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSize
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000256d2 with 0x000000ad Bytes
+	Serialized data: at 0x00000000000256de with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 350]
 	Full Name: ParticleModuleSize FX.Drof_PS.ParticleModuleSize_4
@@ -3011,7 +3015,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSize
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002577f with 0x000000ad Bytes
+	Serialized data: at 0x000000000002578b with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 351]
 	Full Name: ParticleModuleSize FX.Drof_PS.ParticleModuleSize_5
@@ -3019,7 +3023,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSize
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002582c with 0x000000ad Bytes
+	Serialized data: at 0x0000000000025838 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 352]
 	Full Name: ParticleModuleSize FX.Drof_PS.ParticleModuleSize_7
@@ -3027,7 +3031,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSize
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000258d9 with 0x000000ad Bytes
+	Serialized data: at 0x00000000000258e5 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 353]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Drof_black_PS.ParticleModuleSizeMultiplyLife_0
@@ -3035,7 +3039,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025986 with 0x000000c9 Bytes
+	Serialized data: at 0x0000000000025992 with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 354]
 	Full Name: ParticleModuleSizeMultiplyLife FX.Drof_PS.ParticleModuleSizeMultiplyLife_0
@@ -3043,7 +3047,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025a4f with 0x000000c9 Bytes
+	Serialized data: at 0x0000000000025a5b with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 355]
 	Full Name: ParticleModuleSizeScale FX.Drof_black_PS.ParticleModuleSizeScale_0
@@ -3051,7 +3055,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSizeScale
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025b18 with 0x000000c9 Bytes
+	Serialized data: at 0x0000000000025b24 with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 356]
 	Full Name: ParticleModuleSizeScale FX.Drof_black_PS.ParticleModuleSizeScale_1
@@ -3059,7 +3063,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSizeScale
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025be1 with 0x000000c9 Bytes
+	Serialized data: at 0x0000000000025bed with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 357]
 	Full Name: ParticleModuleSizeScale FX.Drof_PS.ParticleModuleSizeScale_0
@@ -3067,7 +3071,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSizeScale
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025caa with 0x000000c9 Bytes
+	Serialized data: at 0x0000000000025cb6 with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 358]
 	Full Name: ParticleModuleSizeScale FX.Drof_PS.ParticleModuleSizeScale_1
@@ -3075,7 +3079,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSizeScale
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025d73 with 0x000000c9 Bytes
+	Serialized data: at 0x0000000000025d7f with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 359]
 	Full Name: ParticleModuleSizeScaleByTime FX.Drof_black_PS.ParticleModuleSizeScaleByTime_0
@@ -3083,7 +3087,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSizeScaleByTime
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025e3c with 0x000001ad Bytes
+	Serialized data: at 0x0000000000025e48 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 360]
 	Full Name: ParticleModuleSizeScaleByTime FX.Drof_black_PS.ParticleModuleSizeScaleByTime_1
@@ -3091,7 +3095,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSizeScaleByTime
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025fe9 with 0x00000135 Bytes
+	Serialized data: at 0x0000000000025ff5 with 0x00000135 Bytes
 	Export Flags: 0x00000001
 [Export 361]
 	Full Name: ParticleModuleSizeScaleByTime FX.Drof_black_PS.ParticleModuleSizeScaleByTime_2
@@ -3099,7 +3103,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSizeScaleByTime
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002611e with 0x00000105 Bytes
+	Serialized data: at 0x000000000002612a with 0x00000105 Bytes
 	Export Flags: 0x00000001
 [Export 362]
 	Full Name: ParticleModuleSizeScaleByTime FX.Drof_black_PS.ParticleModuleSizeScaleByTime_3
@@ -3107,7 +3111,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSizeScaleByTime
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026223 with 0x00000105 Bytes
+	Serialized data: at 0x000000000002622f with 0x00000105 Bytes
 	Export Flags: 0x00000001
 [Export 363]
 	Full Name: ParticleModuleSizeScaleByTime FX.Drof_PS.ParticleModuleSizeScaleByTime_0
@@ -3115,7 +3119,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSizeScaleByTime
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026328 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000026334 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 364]
 	Full Name: ParticleModuleSizeScaleByTime FX.Drof_PS.ParticleModuleSizeScaleByTime_1
@@ -3123,7 +3127,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSizeScaleByTime
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000264d5 with 0x00000135 Bytes
+	Serialized data: at 0x00000000000264e1 with 0x00000135 Bytes
 	Export Flags: 0x00000001
 [Export 365]
 	Full Name: ParticleModuleSizeScaleByTime FX.Drof_PS.ParticleModuleSizeScaleByTime_2
@@ -3131,7 +3135,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSizeScaleByTime
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002660a with 0x00000105 Bytes
+	Serialized data: at 0x0000000000026616 with 0x00000105 Bytes
 	Export Flags: 0x00000001
 [Export 366]
 	Full Name: ParticleModuleSizeScaleByTime FX.Drof_PS.ParticleModuleSizeScaleByTime_3
@@ -3139,7 +3143,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSizeScaleByTime
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002670f with 0x00000105 Bytes
+	Serialized data: at 0x000000000002671b with 0x00000105 Bytes
 	Export Flags: 0x00000001
 [Export 367]
 	Full Name: ParticleModuleSpawn FX.Drof_black_PS.ParticleModuleSpawn_0
@@ -3147,7 +3151,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSpawn
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026814 with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000026820 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 368]
 	Full Name: ParticleModuleSpawn FX.Drof_black_PS.ParticleModuleSpawn_1
@@ -3155,7 +3159,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSpawn
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000268f5 with 0x000000b5 Bytes
+	Serialized data: at 0x0000000000026901 with 0x000000b5 Bytes
 	Export Flags: 0x00000001
 [Export 369]
 	Full Name: ParticleModuleSpawn FX.Drof_black_PS.ParticleModuleSpawn_2
@@ -3163,7 +3167,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSpawn
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000269aa with 0x000000e1 Bytes
+	Serialized data: at 0x00000000000269b6 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 370]
 	Full Name: ParticleModuleSpawn FX.Drof_black_PS.ParticleModuleSpawn_3
@@ -3171,7 +3175,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSpawn
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026a8b with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000026a97 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 371]
 	Full Name: ParticleModuleSpawn FX.Drof_black_PS.ParticleModuleSpawn_4
@@ -3179,7 +3183,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSpawn
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026b6c with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000026b78 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 372]
 	Full Name: ParticleModuleSpawn FX.Drof_black_PS.ParticleModuleSpawn_5
@@ -3187,7 +3191,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSpawn
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026c4d with 0x000000b5 Bytes
+	Serialized data: at 0x0000000000026c59 with 0x000000b5 Bytes
 	Export Flags: 0x00000001
 [Export 373]
 	Full Name: ParticleModuleSpawn FX.Drof_black_PS.ParticleModuleSpawn_7
@@ -3195,7 +3199,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSpawn
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026d02 with 0x00000172 Bytes
+	Serialized data: at 0x0000000000026d0e with 0x00000172 Bytes
 	Export Flags: 0x00000001
 [Export 374]
 	Full Name: ParticleModuleSpawn FX.Drof_PS.ParticleModuleSpawn_0
@@ -3203,7 +3207,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSpawn
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026e74 with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000026e80 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 375]
 	Full Name: ParticleModuleSpawn FX.Drof_PS.ParticleModuleSpawn_1
@@ -3211,7 +3215,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSpawn
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026f55 with 0x000000b5 Bytes
+	Serialized data: at 0x0000000000026f61 with 0x000000b5 Bytes
 	Export Flags: 0x00000001
 [Export 376]
 	Full Name: ParticleModuleSpawn FX.Drof_PS.ParticleModuleSpawn_2
@@ -3219,7 +3223,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSpawn
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002700a with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000027016 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 377]
 	Full Name: ParticleModuleSpawn FX.Drof_PS.ParticleModuleSpawn_3
@@ -3227,7 +3231,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSpawn
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000270eb with 0x000000e1 Bytes
+	Serialized data: at 0x00000000000270f7 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 378]
 	Full Name: ParticleModuleSpawn FX.Drof_PS.ParticleModuleSpawn_4
@@ -3235,7 +3239,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSpawn
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000271cc with 0x000000e1 Bytes
+	Serialized data: at 0x00000000000271d8 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 379]
 	Full Name: ParticleModuleSpawn FX.Drof_PS.ParticleModuleSpawn_5
@@ -3243,7 +3247,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSpawn
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000272ad with 0x000000b5 Bytes
+	Serialized data: at 0x00000000000272b9 with 0x000000b5 Bytes
 	Export Flags: 0x00000001
 [Export 380]
 	Full Name: ParticleModuleSpawn FX.Drof_PS.ParticleModuleSpawn_7
@@ -3251,7 +3255,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleSpawn
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027362 with 0x00000172 Bytes
+	Serialized data: at 0x000000000002736e with 0x00000172 Bytes
 	Export Flags: 0x00000001
 [Export 381]
 	Full Name: ParticleModuleTypeDataMesh FX.Drof_black_PS.ParticleModuleTypeDataMesh_0
@@ -3259,7 +3263,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000274d4 with 0x0000007e Bytes
+	Serialized data: at 0x00000000000274e0 with 0x0000007e Bytes
 	Export Flags: 0x00000001
 [Export 382]
 	Full Name: ParticleModuleTypeDataMesh FX.Drof_black_PS.ParticleModuleTypeDataMesh_1
@@ -3267,7 +3271,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027552 with 0x0000007e Bytes
+	Serialized data: at 0x000000000002755e with 0x0000007e Bytes
 	Export Flags: 0x00000001
 [Export 383]
 	Full Name: ParticleModuleTypeDataMesh FX.Drof_PS.ParticleModuleTypeDataMesh_0
@@ -3275,7 +3279,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000275d0 with 0x0000007e Bytes
+	Serialized data: at 0x00000000000275dc with 0x0000007e Bytes
 	Export Flags: 0x00000001
 [Export 384]
 	Full Name: ParticleModuleTypeDataMesh FX.Drof_PS.ParticleModuleTypeDataMesh_1
@@ -3283,7 +3287,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleTypeDataMesh
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002764e with 0x0000007e Bytes
+	Serialized data: at 0x000000000002765a with 0x0000007e Bytes
 	Export Flags: 0x00000001
 [Export 385]
 	Full Name: ParticleModuleTypeDataRibbon FX.Drof_black_PS.ParticleModuleTypeDataRibbon_0
@@ -3291,7 +3295,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000276cc with 0x000000b3 Bytes
+	Serialized data: at 0x00000000000276d8 with 0x000000b3 Bytes
 	Export Flags: 0x00000001
 [Export 386]
 	Full Name: ParticleModuleTypeDataRibbon FX.Drof_black_PS.ParticleModuleTypeDataRibbon_1
@@ -3299,7 +3303,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002777f with 0x000000b3 Bytes
+	Serialized data: at 0x000000000002778b with 0x000000b3 Bytes
 	Export Flags: 0x00000001
 [Export 387]
 	Full Name: ParticleModuleTypeDataRibbon FX.Drof_black_PS.ParticleModuleTypeDataRibbon_2
@@ -3307,7 +3311,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027832 with 0x000000b3 Bytes
+	Serialized data: at 0x000000000002783e with 0x000000b3 Bytes
 	Export Flags: 0x00000001
 [Export 388]
 	Full Name: ParticleModuleTypeDataRibbon FX.Drof_black_PS.ParticleModuleTypeDataRibbon_3
@@ -3315,7 +3319,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000278e5 with 0x000000b3 Bytes
+	Serialized data: at 0x00000000000278f1 with 0x000000b3 Bytes
 	Export Flags: 0x00000001
 [Export 389]
 	Full Name: ParticleModuleTypeDataRibbon FX.Drof_PS.ParticleModuleTypeDataRibbon_0
@@ -3323,7 +3327,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027998 with 0x000000b3 Bytes
+	Serialized data: at 0x00000000000279a4 with 0x000000b3 Bytes
 	Export Flags: 0x00000001
 [Export 390]
 	Full Name: ParticleModuleTypeDataRibbon FX.Drof_PS.ParticleModuleTypeDataRibbon_1
@@ -3331,7 +3335,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027a4b with 0x000000b3 Bytes
+	Serialized data: at 0x0000000000027a57 with 0x000000b3 Bytes
 	Export Flags: 0x00000001
 [Export 391]
 	Full Name: ParticleModuleTypeDataRibbon FX.Drof_PS.ParticleModuleTypeDataRibbon_2
@@ -3339,7 +3343,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027afe with 0x000000b3 Bytes
+	Serialized data: at 0x0000000000027b0a with 0x000000b3 Bytes
 	Export Flags: 0x00000001
 [Export 392]
 	Full Name: ParticleModuleTypeDataRibbon FX.Drof_PS.ParticleModuleTypeDataRibbon_3
@@ -3347,7 +3351,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027bb1 with 0x000000b3 Bytes
+	Serialized data: at 0x0000000000027bbd with 0x000000b3 Bytes
 	Export Flags: 0x00000001
 [Export 393]
 	Full Name: ParticleModuleVelocityOverLifetime FX.Drof_black_PS.ParticleModuleVelocityOverLifetime_0
@@ -3355,7 +3359,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027c64 with 0x000000e2 Bytes
+	Serialized data: at 0x0000000000027c70 with 0x000000e2 Bytes
 	Export Flags: 0x00000001
 [Export 394]
 	Full Name: ParticleModuleVelocityOverLifetime FX.Drof_black_PS.ParticleModuleVelocityOverLifetime_1
@@ -3363,7 +3367,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027d46 with 0x000000e2 Bytes
+	Serialized data: at 0x0000000000027d52 with 0x000000e2 Bytes
 	Export Flags: 0x00000001
 [Export 395]
 	Full Name: ParticleModuleVelocityOverLifetime FX.Drof_black_PS.ParticleModuleVelocityOverLifetime_2
@@ -3371,7 +3375,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027e28 with 0x000000e2 Bytes
+	Serialized data: at 0x0000000000027e34 with 0x000000e2 Bytes
 	Export Flags: 0x00000001
 [Export 396]
 	Full Name: ParticleModuleVelocityOverLifetime FX.Drof_black_PS.ParticleModuleVelocityOverLifetime_3
@@ -3379,7 +3383,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027f0a with 0x000000e2 Bytes
+	Serialized data: at 0x0000000000027f16 with 0x000000e2 Bytes
 	Export Flags: 0x00000001
 [Export 397]
 	Full Name: ParticleModuleVelocityOverLifetime FX.Drof_PS.ParticleModuleVelocityOverLifetime_0
@@ -3387,7 +3391,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000027fec with 0x000000e2 Bytes
+	Serialized data: at 0x0000000000027ff8 with 0x000000e2 Bytes
 	Export Flags: 0x00000001
 [Export 398]
 	Full Name: ParticleModuleVelocityOverLifetime FX.Drof_PS.ParticleModuleVelocityOverLifetime_1
@@ -3395,7 +3399,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000280ce with 0x000000e2 Bytes
+	Serialized data: at 0x00000000000280da with 0x000000e2 Bytes
 	Export Flags: 0x00000001
 [Export 399]
 	Full Name: ParticleModuleVelocityOverLifetime FX.Drof_PS.ParticleModuleVelocityOverLifetime_2
@@ -3403,7 +3407,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000281b0 with 0x000000e2 Bytes
+	Serialized data: at 0x00000000000281bc with 0x000000e2 Bytes
 	Export Flags: 0x00000001
 [Export 400]
 	Full Name: ParticleModuleVelocityOverLifetime FX.Drof_PS.ParticleModuleVelocityOverLifetime_3
@@ -3411,7 +3415,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleModuleVelocityOverLifetime
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000028292 with 0x000000e2 Bytes
+	Serialized data: at 0x000000000002829e with 0x000000e2 Bytes
 	Export Flags: 0x00000001
 [Export 401]
 	Full Name: ParticleSpriteEmitter FX.Drof_black_PS.ParticleSpriteEmitter_0
@@ -3419,7 +3423,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSpriteEmitter
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000028374 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000028380 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 402]
 	Full Name: ParticleSpriteEmitter FX.Drof_black_PS.ParticleSpriteEmitter_1
@@ -3427,7 +3431,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSpriteEmitter
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000283c0 with 0x0000004c Bytes
+	Serialized data: at 0x00000000000283cc with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 403]
 	Full Name: ParticleSpriteEmitter FX.Drof_black_PS.ParticleSpriteEmitter_11
@@ -3435,7 +3439,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSpriteEmitter
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002840c with 0x00000025 Bytes
+	Serialized data: at 0x0000000000028418 with 0x00000025 Bytes
 	Export Flags: 0x00000001
 [Export 404]
 	Full Name: ParticleSpriteEmitter FX.Drof_black_PS.ParticleSpriteEmitter_2
@@ -3443,7 +3447,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSpriteEmitter
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000028431 with 0x0000004c Bytes
+	Serialized data: at 0x000000000002843d with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 405]
 	Full Name: ParticleSpriteEmitter FX.Drof_black_PS.ParticleSpriteEmitter_3
@@ -3451,7 +3455,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSpriteEmitter
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002847d with 0x0000004c Bytes
+	Serialized data: at 0x0000000000028489 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 406]
 	Full Name: ParticleSpriteEmitter FX.Drof_black_PS.ParticleSpriteEmitter_4
@@ -3459,7 +3463,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSpriteEmitter
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000284c9 with 0x0000004c Bytes
+	Serialized data: at 0x00000000000284d5 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 407]
 	Full Name: ParticleSpriteEmitter FX.Drof_black_PS.ParticleSpriteEmitter_5
@@ -3467,7 +3471,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSpriteEmitter
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000028515 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000028521 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 408]
 	Full Name: ParticleSpriteEmitter FX.Drof_black_PS.ParticleSpriteEmitter_7
@@ -3475,7 +3479,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSpriteEmitter
 	Outer: Drof_black_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000028561 with 0x0000004c Bytes
+	Serialized data: at 0x000000000002856d with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 409]
 	Full Name: ParticleSpriteEmitter FX.Drof_PS.ParticleSpriteEmitter_0
@@ -3483,7 +3487,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSpriteEmitter
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000285ad with 0x0000004c Bytes
+	Serialized data: at 0x00000000000285b9 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 410]
 	Full Name: ParticleSpriteEmitter FX.Drof_PS.ParticleSpriteEmitter_1
@@ -3491,7 +3495,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSpriteEmitter
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000285f9 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000028605 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 411]
 	Full Name: ParticleSpriteEmitter FX.Drof_PS.ParticleSpriteEmitter_11
@@ -3499,7 +3503,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSpriteEmitter
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000028645 with 0x00000025 Bytes
+	Serialized data: at 0x0000000000028651 with 0x00000025 Bytes
 	Export Flags: 0x00000001
 [Export 412]
 	Full Name: ParticleSpriteEmitter FX.Drof_PS.ParticleSpriteEmitter_2
@@ -3507,7 +3511,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSpriteEmitter
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002866a with 0x0000004c Bytes
+	Serialized data: at 0x0000000000028676 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 413]
 	Full Name: ParticleSpriteEmitter FX.Drof_PS.ParticleSpriteEmitter_3
@@ -3515,7 +3519,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSpriteEmitter
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000286b6 with 0x0000004c Bytes
+	Serialized data: at 0x00000000000286c2 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 414]
 	Full Name: ParticleSpriteEmitter FX.Drof_PS.ParticleSpriteEmitter_4
@@ -3523,7 +3527,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSpriteEmitter
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000028702 with 0x0000004c Bytes
+	Serialized data: at 0x000000000002870e with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 415]
 	Full Name: ParticleSpriteEmitter FX.Drof_PS.ParticleSpriteEmitter_5
@@ -3531,7 +3535,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSpriteEmitter
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002874e with 0x0000004c Bytes
+	Serialized data: at 0x000000000002875a with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 416]
 	Full Name: ParticleSpriteEmitter FX.Drof_PS.ParticleSpriteEmitter_7
@@ -3539,7 +3543,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSpriteEmitter
 	Outer: Drof_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002879a with 0x0000004c Bytes
+	Serialized data: at 0x00000000000287a6 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 417]
 	Full Name: ParticleSystem FX.Drof_black_PS
@@ -3547,7 +3551,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSystem
 	Outer: FX
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000287e6 with 0x000001d1 Bytes
+	Serialized data: at 0x00000000000287f2 with 0x000001d1 Bytes
 	Export Flags: 0x00000001
 [Export 418]
 	Full Name: ParticleSystem FX.Drof_PS
@@ -3555,7 +3559,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSystem
 	Outer: FX
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000289b7 with 0x000001d1 Bytes
+	Serialized data: at 0x00000000000289c3 with 0x000001d1 Bytes
 	Export Flags: 0x00000001
 [Export 419]
 	Full Name: ParticleSystemComponent boost_drof.boost_drof.Boost_Drof_FXActor.ParticleSystemComponent_1
@@ -3563,7 +3567,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ParticleSystemComponent
 	Outer: Boost_Drof_FXActor
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x0000000000028b88 with 0x000001d5 Bytes
+	Serialized data: at 0x0000000000028b94 with 0x000001d5 Bytes
 	Export Flags: 0x00000001
 [Export 420]
 	Full Name: ProductAsset_Boost_TA boost_drof.boost_drof.boost_drof
@@ -3572,7 +3576,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Outer: boost_drof
 	Archetype: ProductAsset_Boost_TA_0
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000028d5d with 0x00000048 Bytes
+	Serialized data: at 0x0000000000028d69 with 0x00000048 Bytes
 	Export Flags: 0x00000001
 [Export 421]
 	Full Name: ProductAttribute_PaintSettings_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0
@@ -3580,7 +3584,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductAttribute_PaintSettings_TA
 	Outer: boost_drof
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000036d2c with 0x00000817 Bytes
+	Serialized data: at 0x0000000000036d38 with 0x00000817 Bytes
 	Export Flags: 0x00000001
 [Export 422]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_0
@@ -3588,7 +3592,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002956c with 0x000001fc Bytes
+	Serialized data: at 0x0000000000029578 with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 423]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_1
@@ -3596,7 +3600,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000029768 with 0x000001fc Bytes
+	Serialized data: at 0x0000000000029774 with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 424]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_10
@@ -3604,7 +3608,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000029964 with 0x000001fc Bytes
+	Serialized data: at 0x0000000000029970 with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 425]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_11
@@ -3612,7 +3616,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000029b60 with 0x000001fc Bytes
+	Serialized data: at 0x0000000000029b6c with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 426]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_12
@@ -3620,7 +3624,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000029d5c with 0x000000c4 Bytes
+	Serialized data: at 0x0000000000029d68 with 0x000000c4 Bytes
 	Export Flags: 0x00000001
 [Export 427]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_13
@@ -3628,7 +3632,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000029e20 with 0x000001fc Bytes
+	Serialized data: at 0x0000000000029e2c with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 428]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_2
@@ -3636,7 +3640,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002a01c with 0x000000c4 Bytes
+	Serialized data: at 0x000000000002a028 with 0x000000c4 Bytes
 	Export Flags: 0x00000001
 [Export 429]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_3
@@ -3644,7 +3648,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002a0e0 with 0x000000c4 Bytes
+	Serialized data: at 0x000000000002a0ec with 0x000000c4 Bytes
 	Export Flags: 0x00000001
 [Export 430]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_4
@@ -3652,7 +3656,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002a1a4 with 0x00000160 Bytes
+	Serialized data: at 0x000000000002a1b0 with 0x00000160 Bytes
 	Export Flags: 0x00000001
 [Export 431]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_5
@@ -3660,7 +3664,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002a304 with 0x000001fc Bytes
+	Serialized data: at 0x000000000002a310 with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 432]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_6
@@ -3668,7 +3672,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002a500 with 0x000001fc Bytes
+	Serialized data: at 0x000000000002a50c with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 433]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_7
@@ -3676,7 +3680,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002a6fc with 0x000001fc Bytes
+	Serialized data: at 0x000000000002a708 with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 434]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_8
@@ -3684,7 +3688,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002a8f8 with 0x000001fc Bytes
+	Serialized data: at 0x000000000002a904 with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 435]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_9
@@ -3692,7 +3696,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002aaf4 with 0x000001fc Bytes
+	Serialized data: at 0x000000000002ab00 with 0x000001fc Bytes
 	Export Flags: 0x00000001
 [Export 436]
 	Full Name: ProductOverride_ParticleSystemComponent_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemComponent_TA_0
@@ -3700,7 +3704,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemComponent_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002acf0 with 0x00000028 Bytes
+	Serialized data: at 0x000000000002acfc with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [Export 437]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_0
@@ -3708,7 +3712,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002ad18 with 0x0000007c Bytes
+	Serialized data: at 0x000000000002ad24 with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 438]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_1
@@ -3716,7 +3720,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002ad94 with 0x0000007c Bytes
+	Serialized data: at 0x000000000002ada0 with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 439]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_10
@@ -3724,7 +3728,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002ae10 with 0x0000007c Bytes
+	Serialized data: at 0x000000000002ae1c with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 440]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_11
@@ -3732,7 +3736,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002ae8c with 0x0000007c Bytes
+	Serialized data: at 0x000000000002ae98 with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 441]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_12
@@ -3740,7 +3744,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002af08 with 0x0000007c Bytes
+	Serialized data: at 0x000000000002af14 with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 442]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_13
@@ -3748,7 +3752,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002af84 with 0x0000007c Bytes
+	Serialized data: at 0x000000000002af90 with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 443]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_14
@@ -3756,7 +3760,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b000 with 0x0000007c Bytes
+	Serialized data: at 0x000000000002b00c with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 444]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_15
@@ -3764,7 +3768,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b07c with 0x0000007c Bytes
+	Serialized data: at 0x000000000002b088 with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 445]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_16
@@ -3772,7 +3776,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b0f8 with 0x0000007c Bytes
+	Serialized data: at 0x000000000002b104 with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 446]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_17
@@ -3780,7 +3784,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b174 with 0x0000007c Bytes
+	Serialized data: at 0x000000000002b180 with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 447]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_18
@@ -3788,7 +3792,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b1f0 with 0x0000007c Bytes
+	Serialized data: at 0x000000000002b1fc with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 448]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_19
@@ -3796,7 +3800,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b26c with 0x0000007c Bytes
+	Serialized data: at 0x000000000002b278 with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 449]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_2
@@ -3804,7 +3808,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b2e8 with 0x0000007c Bytes
+	Serialized data: at 0x000000000002b2f4 with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 450]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_20
@@ -3812,7 +3816,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b364 with 0x0000007c Bytes
+	Serialized data: at 0x000000000002b370 with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 451]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_3
@@ -3820,7 +3824,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b3e0 with 0x0000007c Bytes
+	Serialized data: at 0x000000000002b3ec with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 452]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_4
@@ -3828,7 +3832,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b45c with 0x0000007c Bytes
+	Serialized data: at 0x000000000002b468 with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 453]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_5
@@ -3836,7 +3840,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b4d8 with 0x0000007c Bytes
+	Serialized data: at 0x000000000002b4e4 with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 454]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_6
@@ -3844,7 +3848,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b554 with 0x0000007c Bytes
+	Serialized data: at 0x000000000002b560 with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 455]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_7
@@ -3852,7 +3856,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b5d0 with 0x0000007c Bytes
+	Serialized data: at 0x000000000002b5dc with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 456]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_8
@@ -3860,7 +3864,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b64c with 0x0000007c Bytes
+	Serialized data: at 0x000000000002b658 with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 457]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA boost_drof.boost_drof.boost_drof.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_9
@@ -3868,7 +3872,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002b6c8 with 0x0000007c Bytes
+	Serialized data: at 0x000000000002b6d4 with 0x0000007c Bytes
 	Export Flags: 0x00000001
 [Export 459]
 	Full Name: ShakeComponent_X boost_drof.BoostBase.FXActor.ShakeComponent_X_0
@@ -3876,7 +3880,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ShakeComponent_X
 	Outer: FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000002b744 with 0x0000006d Bytes
+	Serialized data: at 0x000000000002b750 with 0x0000006d Bytes
 	Export Flags: 0x00000001
 [Export 460]
 	Full Name: ShakeComponent_X boost_drof.BoostBase.FXActor.ShakeComponent_X_1
@@ -3884,7 +3888,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: ShakeComponent_X
 	Outer: FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000002b7b1 with 0x0000006d Bytes
+	Serialized data: at 0x000000000002b7bd with 0x0000006d Bytes
 	Export Flags: 0x00000001
 [Export 494]
 	Full Name: StaticMesh SM.Illustrative_Boost_SM
@@ -3892,7 +3896,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: StaticMesh
 	Outer: SM
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000002b81e with 0x00000462 Bytes
+	Serialized data: at 0x000000000002b82a with 0x00000462 Bytes
 	Export Flags: 0x00000001
 [Export 618]
 	Full Name: Texture2D Textures.DrofTile_T
@@ -3900,7 +3904,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000002bc80 with 0x00000cf4 Bytes
+	Serialized data: at 0x000000000002bc8c with 0x00000cf4 Bytes
 	Export Flags: 0x00000001
 [Export 619]
 	Full Name: Texture2D Textures.CausticsMask_Sharp_RGB_02_T
@@ -3908,7 +3912,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000002c974 with 0x00000d10 Bytes
+	Serialized data: at 0x000000000002c980 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [Export 620]
 	Full Name: Texture2D Textures.IllustrativeBoost_Cone_T
@@ -3916,7 +3920,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000002d684 with 0x000007a4 Bytes
+	Serialized data: at 0x000000000002d690 with 0x000007a4 Bytes
 	Export Flags: 0x00000001
 [Export 621]
 	Full Name: Texture2D Textures.Photo_Base_02_T
@@ -3924,7 +3928,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000002de28 with 0x00002d95 Bytes
+	Serialized data: at 0x000000000002de34 with 0x00002d95 Bytes
 	Export Flags: 0x00000001
 [Export 622]
 	Full Name: Texture2D Textures.Photo_Base_Simple_T
@@ -3932,7 +3936,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000030bbd with 0x00002d95 Bytes
+	Serialized data: at 0x0000000000030bc9 with 0x00002d95 Bytes
 	Export Flags: 0x00000001
 [Export 623]
 	Full Name: Texture2D T.boost_Spell_Streak_CloudNoise_N
@@ -3940,7 +3944,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Texture2D
 	Outer: T
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000033952 with 0x00000cd8 Bytes
+	Serialized data: at 0x000000000003395e with 0x00000cd8 Bytes
 	Export Flags: 0x00000001
 [Export 624]
 	Full Name: Texture2D T.White
@@ -3948,7 +3952,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Texture2D
 	Outer: T
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000003462a with 0x00000c68 Bytes
+	Serialized data: at 0x0000000000034636 with 0x00000c68 Bytes
 	Export Flags: 0x00000001
 [Export 627]
 	Full Name: Texture2D Textures.Dot_Soft_Mask
@@ -3956,7 +3960,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000035292 with 0x00000d28 Bytes
+	Serialized data: at 0x000000000003529e with 0x00000d28 Bytes
 	Export Flags: 0x00000001
 [Export 631]
 	Full Name: Texture2D boost_drof.LensFlares_Textures.DirtyLens_Pack
@@ -3964,7 +3968,7 @@ AES: i7kAyCFFS3hKGbJb8wvaD1tn0A/yRR2iye8C1Q9AYJE=
 	Class: Texture2D
 	Outer: LensFlares_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000035fba with 0x00000d1c Bytes
+	Serialized data: at 0x0000000000035fc6 with 0x00000d1c Bytes
 	Export Flags: 0x00000001
 
 

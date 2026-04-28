@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x0000773d Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 226 Name Offset: 0x00000225
-Export Count: 111 Export Offset: 0x00001fa6
-Import Count: 51 Import Offset: 0x00001a12
-Depends Offset: 0x00003ede
-Import Export Guids Offset: 0x00003ede
+Name Count: 297 Name Offset: 0x00000265
+Export Count: 158 Export Offset: 0x00002877
+Import Count: 58 Import Offset: 0x0000221f
+Depends Offset: 0x000054e7
+Import Export Guids Offset: 0x000054e7
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x1af51d38 0x4dd2c7a2 0xaca667af 0xcf478de3
+GUID: 0x7d575e26 0x4ceb67b4 0x1e5570ae 0x7284f27a
 Generations:
 [0]
 	Export Count: 105
@@ -139,6 +139,10 @@ Generations:
 	Export Count: 111
 	Name Count: 226
 	Net Object Count: 0
+[30]
+	Export Count: 158
+	Name Count: 297
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression: ZLIB
@@ -151,10 +155,12 @@ Texture Allocations Texture Types:
 [0]
 	Resolution: [64 x 64]
 	Num Mips: 7
-	Format: DXT1
-	Flags: 1
+	Format: DXT5
+	Flags: 0
 	Exports:
-		[0] Texture2D skin_scar_b_01.body_scar_b.body_scar_b_curvature
+		[0] Texture2D skin_scar_b_01.body_endo.Endo_Chassis_N
+		[1] Texture2D skin_scar_b_01.body_scar_b.chassis_scar_b_n
+		[2] Texture2D Tex.Blank_N
 [1]
 	Resolution: [64 x 64]
 	Num Mips: 7
@@ -163,42 +169,58 @@ Texture Allocations Texture Types:
 	Exports:
 		[0] Texture2D skin_scar_b_01.body_scar_b.body_scar_b_blankskin
 		[1] Texture2D skin_scar_b_01.skin_scar_b_01.skin_scar_b_01_d
-Test Data Size: 0x000037cb
+		[2] Texture2D skin_scar_b_01.body_endo.Endo_Chassis_RGB
+		[3] Texture2D skin_scar_b_01.body_scar_b.chassis_scar_b_rgb
+[2]
+	Resolution: [64 x 64]
+	Num Mips: 7
+	Format: DXT1
+	Flags: 1
+	Exports:
+		[0] Texture2D skin_scar_b_01.body_scar_b.body_scar_b_curvature
+		[1] Texture2D skin_scar_b_01.body_endo.Endo_Chassis_D
+		[2] Texture2D skin_scar_b_01.body_scar_b.chassis_scar_b_d
+Test Data Size: 0x000021aa
 Compressed Chunk Info:
-	Offset: 0x00003cb9
+	Offset: 0x00005282
 	[0]
-		Uncompressed Offset: 0x0000000000003ede
+		Uncompressed Offset: 0x00000000000054e7
 		Uncompressed Size: 0x001168fc
 		Compressed Offset: 0x000000000000773d
 		Compressed Size: 0x0003e122
 	[1]
-		Uncompressed Offset: 0x000000000011a7da
+		Uncompressed Offset: 0x000000000011bde3
 		Uncompressed Size: 0x00001bc6
 		Compressed Offset: 0x000000000004585f
 		Compressed Size: 0x00000673
 	[2]
-		Uncompressed Offset: 0x000000000011c3a0
+		Uncompressed Offset: 0x000000000011d9a9
 		Uncompressed Size: 0x0000216d
 		Compressed Offset: 0x0000000000045ed2
 		Compressed Size: 0x000007cc
 	[3]
-		Uncompressed Offset: 0x000000000011e50d
+		Uncompressed Offset: 0x000000000011fb16
 		Uncompressed Size: 0x00001d2d
 		Compressed Offset: 0x000000000004669e
 		Compressed Size: 0x000006f9
 	[4]
-		Uncompressed Offset: 0x000000000012023a
+		Uncompressed Offset: 0x0000000000121843
 		Uncompressed Size: 0x00002639
 		Compressed Offset: 0x0000000000046d97
 		Compressed Size: 0x00000825
 	[5]
-		Uncompressed Offset: 0x0000000000122873
+		Uncompressed Offset: 0x0000000000123e7c
 		Uncompressed Size: 0x00001a7e
 		Compressed Offset: 0x00000000000475bc
 		Compressed Size: 0x00000693
+	[6]
+		Uncompressed Offset: 0x00000000001258fa
+		Uncompressed Size: 0x0000c458
+		Compressed Offset: 0x0000000000047c4f
+		Compressed Size: 0x00005d85
 Last Block Size: 0x00000008
-Base Header Size: 0x00000225
-Encrypted Header Size: 0x00007510
+Base Header Size: 0x00000265
+Encrypted Header Size: 0x000074d0
 
 AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 
@@ -243,7 +265,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 [Name 34] [0x0007001000000000] ColorLookup
 [Name 35] [0x0007001000000000] ColorMaterialInput
 [Name 36] [0x0007000000000000] CompressionNone
-[Name 37] [0x0007000000000000] CompressionSettings
+[Name 37] [0x0007001000000000] CompressionSettings
 [Name 38] [0x0007001000000000] Coordinates
 [Name 39] [0x0007001000000000] Core
 [Name 40] [0x0007001000000000] CurvaturePack
@@ -304,7 +326,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 [Name 95] [0x0007001000000000] LightingModel
 [Name 96] [0x0007001000000000] LinearColor
 [Name 97] [0x0007000000000000] LODBias
-[Name 98] [0x0007000000000000] LODGroup
+[Name 98] [0x0007001000000000] LODGroup
 [Name 99] [0x0007001000000000] Mask
 [Name 100] [0x0007001000000000] MaskA
 [Name 101] [0x0007001000000000] MaskB
@@ -368,14 +390,14 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 [Name 159] [0x0007001000000000] Sparkle_N
 [Name 160] [0x0007001000000000] SpecularColor
 [Name 161] [0x0007001000000000] SpecularPower
-[Name 162] [0x0007000000000000] SRGB
+[Name 162] [0x0007001000000000] SRGB
 [Name 163] [0x0007001000000000] StandaloneSeekFreeReferencer
 [Name 164] [0x0007001000000000] StrProperty
 [Name 165] [0x0007001000000000] StructProperty
 [Name 166] [0x0007000000000000] TA_Clamp
 [Name 167] [0x0007001000000000] TAGame
 [Name 168] [0x0007000000000000] TC_NormalmapAlpha
-[Name 169] [0x0007000000000000] TC_NormalmapSwizzle
+[Name 169] [0x0007001000000000] TC_NormalmapSwizzle
 [Name 170] [0x0007001000000000] Team2_ColorLookup
 [Name 171] [0x0007001000000000] TeamColor
 [Name 172] [0x0007001000000000] TeamColorScriptedTexture_TA
@@ -389,15 +411,15 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 [Name 180] [0x0007001000000000] Texture
 [Name 181] [0x0007001000000000] Texture2D
 [Name 182] [0x0007000000000000] TextureAddress
-[Name 183] [0x0007000000000000] TextureCompressionSettings
+[Name 183] [0x0007001000000000] TextureCompressionSettings
 [Name 184] [0x0007001000000000] TextureFileCacheName
-[Name 185] [0x0007000000000000] TextureGroup
+[Name 185] [0x0007001000000000] TextureGroup
 [Name 186] [0x0007000000000000] TEXTUREGROUP_ColorLookupTable
 [Name 187] [0x0007000000000000] TEXTUREGROUP_Effects
 [Name 188] [0x0007000000000000] TEXTUREGROUP_UI
-[Name 189] [0x0007000000000000] TEXTUREGROUP_Vehicle
+[Name 189] [0x0007001000000000] TEXTUREGROUP_Vehicle
 [Name 190] [0x0007000000000000] TEXTUREGROUP_VehicleNormalMap
-[Name 191] [0x0007000000000000] TEXTUREGROUP_WorldNormalMap
+[Name 191] [0x0007001000000000] TEXTUREGROUP_WorldNormalMap
 [Name 192] [0x0007000000000000] TextureMipGenSettings
 [Name 193] [0x0007001000000000] TextureParameterValues
 [Name 194] [0x0007001000000000] Textures
@@ -410,7 +432,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 [Name 201] [0x0007000000000000] TMGS_Sharpen5
 [Name 202] [0x0007001000000000] TrimColor
 [Name 203] [0x0007001000000000] TrimPaintable
-[Name 204] [0x0007000000000000] UnpackMin
+[Name 204] [0x0007001000000000] UnpackMin
 [Name 205] [0x0007001000000000] UseColorLookup
 [Name 206] [0x0007001000000000] UseDetailNormals
 [Name 207] [0x0007001000000000] UseDiffuseTexture
@@ -421,7 +443,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 [Name 212] [0x0007001000000000] Vehicle_Parent_Textures
 [Name 213] [0x0007001000000000] VertexColorMasks
 [Name 214] [0x0007001000000000] Function
-[Name 215] [0x0007000000000000] FunctionExpressions
+[Name 215] [0x0007001000000000] FunctionExpressions
 [Name 216] [0x0007001000000000] MaterialExpressionStaticBoolParameter
 [Name 217] [0x0007001000000000] MaterialExpressionTextureObjectParameter
 [Name 218] [0x0007001000000000] MaterialFunction
@@ -432,6 +454,77 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 [Name 223] [0x0007001000000000] StateId
 [Name 224] [0x0007001000000000] TrimOverrideTertiaryMetallic
 [Name 225] [0x0007001000000000] Vehicle_Parent_MaterialFunctions
+[Name 226] [0x0007001000000000] AdditionalBodyParameters
+[Name 227] [0x0007001000000000] AdditionalEmissive
+[Name 228] [0x0007001000000000] AdditionalEmissiveMap
+[Name 229] [0x0007001000000000] AO In Normal Alpha
+[Name 230] [0x0007001000000000] AOMap
+[Name 231] [0x0007001000000000] AOMap Channel
+[Name 232] [0x0007001000000000] BLEND_Translucent
+[Name 233] [0x0007001000000000] BlendMode
+[Name 234] [0x0007001000000000] Body
+[Name 235] [0x0007001000000000] body_endo
+[Name 236] [0x0007001000000000] body_scar_a
+[Name 237] [0x0007001000000000] BodySettings
+[Name 238] [0x0007001000000000] BoostGlowBrightness
+[Name 239] [0x0007001000000000] BoostGlowColor
+[Name 240] [0x0007001000000000] BoostGlowIntensity
+[Name 241] [0x0007001000000000] bPerPixelCameraVector
+[Name 242] [0x0007001000000000] Brake
+[Name 243] [0x0007001000000000] BrushedMetal_Normal
+[Name 244] [0x0007001000000000] CarTextures
+[Name 245] [0x0007001000000000] chassis_scar_b_d
+[Name 246] [0x0007001000000000] chassis_scar_b_n
+[Name 247] [0x0007001000000000] chassis_scar_b_rgb
+[Name 248] [0x0007001000000000] ChassisPaintColor
+[Name 249] [0x0007001000000000] DefaultColor
+[Name 250] [0x0007001000000000] DefaultR
+[Name 251] [0x0007001000000000] Dirty
+[Name 252] [0x0007001000000000] Distortion
+[Name 253] [0x0007001000000000] EBlendMode
+[Name 254] [0x0007001000000000] Emissive Color (BlueMask)
+[Name 255] [0x0007001000000000] Emissive Color (GreenMask)
+[Name 256] [0x0007001000000000] Emissive Color (RedMask)
+[Name 257] [0x0007001000000000] Endo_Chassis_D
+[Name 258] [0x0007001000000000] Endo_Chassis_N
+[Name 259] [0x0007001000000000] Endo_Chassis_RGB
+[Name 260] [0x0007001000000000] EngineGlow
+[Name 261] [0x0007001000000000] ForCodeUseOnly
+[Name 262] [0x0007001000000000] Grass_Textures
+[Name 263] [0x0007001000000000] GrassCube
+[Name 264] [0x0007001000000000] HeadlightBrightness
+[Name 265] [0x0007001000000000] HeadlightColor
+[Name 266] [0x0007101000000000] Input
+[Name 267] [0x0007001000000000] Lights
+[Name 268] [0x0007001000000000] Masks
+[Name 269] [0x0007001000000000] MAT_NewWorldChassis
+[Name 270] [0x0007001000000000] MAT_scar_lens_VertColor
+[Name 271] [0x0007001000000000] MaterialExpressionStaticComponentMaskParameter
+[Name 272] [0x0007001000000000] MaterialParams
+[Name 273] [0x0007001000000000] MIC_chassis_scar_b
+[Name 274] [0x0007001000000000] Name
+[Name 275] [0x0007001000000000] Opacity
+[Name 276] [0x0007001000000000] Painted
+[Name 277] [0x0007001000000000] ParallexCorrectWorldENV
+[Name 278] [0x0007001000000000] Parameters
+[Name 279] [0x0007001000000000] Params
+[Name 280] [0x0007001000000000] ProductAssetReferenceBody_TA
+[Name 281] [0x0007001000000000] ProductID
+[Name 282] [0x0007001000000000] Psy_MaterialFunctions
+[Name 283] [0x0007001000000000] ScalarParameters
+[Name 284] [0x0007001000000000] SpaceStation_FieldAssets
+[Name 285] [0x0007001000000000] TailLightBrightness
+[Name 286] [0x0007001000000000] TailLightColor
+[Name 287] [0x0007001000000000] Tex
+[Name 288] [0x0007001000000000] TextureParameters
+[Name 289] [0x0007001000000000] TextureRenderTargetCube
+[Name 290] [0x0007001000000000] Trophy_Textures
+[Name 291] [0x0007001000000000] UseDiffuseAlphaForCustomColor
+[Name 292] [0x0007001000000000] UseNormalRedForTeamColor
+[Name 293] [0x0007001000000000] Value
+[Name 294] [0x0007001000000000] Vector2MaterialInput
+[Name 295] [0x0007001000000000] VectorParameters
+[Name 296] [0x0007001000000000] WorldPositionOffset
 
 
     ~ Exports ~ 
@@ -443,7 +536,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: Material
 	Outer: Body_Rye
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000122873 with 0x00000978 Bytes
+	Serialized data: at 0x0000000000123e7c with 0x00000978 Bytes
 	Export Flags: 0x00000001
 [Export 1]
 	Full Name: MaterialExpressionScalarParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionScalarParameter_0
@@ -451,7 +544,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000048ce with 0x00000094 Bytes
+	Serialized data: at 0x0000000000005ed7 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 2]
 	Full Name: MaterialExpressionScalarParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionScalarParameter_6
@@ -459,7 +552,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000004962 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000005f6b with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 3]
 	Full Name: MaterialExpressionScalarParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionScalarParameter_67
@@ -467,7 +560,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000049f6 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000005fff with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 4]
 	Full Name: MaterialExpressionScalarParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionScalarParameter_7
@@ -475,7 +568,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000004aaa with 0x00000094 Bytes
+	Serialized data: at 0x00000000000060b3 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 5]
 	Full Name: MaterialExpressionScalarParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionScalarParameter_73
@@ -483,7 +576,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000004b3e with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000006147 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 6]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_0
@@ -491,7 +584,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000004bf2 with 0x00000100 Bytes
+	Serialized data: at 0x00000000000061fb with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 7]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_1
@@ -499,7 +592,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000004cf2 with 0x000001c1 Bytes
+	Serialized data: at 0x00000000000062fb with 0x000001c1 Bytes
 	Export Flags: 0x00000001
 [Export 8]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_100
@@ -507,7 +600,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000004eb3 with 0x00000132 Bytes
+	Serialized data: at 0x00000000000064bc with 0x00000132 Bytes
 	Export Flags: 0x00000001
 [Export 9]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_101
@@ -515,7 +608,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000004fe5 with 0x00000119 Bytes
+	Serialized data: at 0x00000000000065ee with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 10]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_102
@@ -523,7 +616,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000050fe with 0x00000100 Bytes
+	Serialized data: at 0x0000000000006707 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 11]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_103
@@ -531,7 +624,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000051fe with 0x00000170 Bytes
+	Serialized data: at 0x0000000000006807 with 0x00000170 Bytes
 	Export Flags: 0x00000001
 [Export 12]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_104
@@ -539,7 +632,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000536e with 0x00000132 Bytes
+	Serialized data: at 0x0000000000006977 with 0x00000132 Bytes
 	Export Flags: 0x00000001
 [Export 13]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_105
@@ -547,7 +640,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000054a0 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000006aa9 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 14]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_106
@@ -555,7 +648,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000055b9 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000006bc2 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 15]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_107
@@ -563,7 +656,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000056d2 with 0x000001dd Bytes
+	Serialized data: at 0x0000000000006cdb with 0x000001dd Bytes
 	Export Flags: 0x00000001
 [Export 16]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_108
@@ -571,7 +664,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000058af with 0x00000100 Bytes
+	Serialized data: at 0x0000000000006eb8 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 17]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_109
@@ -579,7 +672,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000059af with 0x00000119 Bytes
+	Serialized data: at 0x0000000000006fb8 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 18]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_110
@@ -587,7 +680,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000005ac8 with 0x00000119 Bytes
+	Serialized data: at 0x00000000000070d1 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 19]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_112
@@ -595,7 +688,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000005be1 with 0x00000186 Bytes
+	Serialized data: at 0x00000000000071ea with 0x00000186 Bytes
 	Export Flags: 0x00000001
 [Export 20]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_113
@@ -603,7 +696,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000005d67 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000007370 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 21]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_114
@@ -611,7 +704,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000005e80 with 0x000001e0 Bytes
+	Serialized data: at 0x0000000000007489 with 0x000001e0 Bytes
 	Export Flags: 0x00000001
 [Export 22]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_115
@@ -619,7 +712,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006060 with 0x000001a8 Bytes
+	Serialized data: at 0x0000000000007669 with 0x000001a8 Bytes
 	Export Flags: 0x00000001
 [Export 23]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_116
@@ -627,7 +720,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006208 with 0x00000100 Bytes
+	Serialized data: at 0x0000000000007811 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 24]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_117
@@ -635,7 +728,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006308 with 0x00000100 Bytes
+	Serialized data: at 0x0000000000007911 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 25]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_118
@@ -643,7 +736,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006408 with 0x0000012c Bytes
+	Serialized data: at 0x0000000000007a11 with 0x0000012c Bytes
 	Export Flags: 0x00000001
 [Export 26]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_119
@@ -651,7 +744,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006534 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000007b3d with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 27]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_120
@@ -659,7 +752,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000664d with 0x00000100 Bytes
+	Serialized data: at 0x0000000000007c56 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 28]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_121
@@ -667,7 +760,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000674d with 0x00000119 Bytes
+	Serialized data: at 0x0000000000007d56 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 29]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_122
@@ -675,7 +768,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006866 with 0x0000012d Bytes
+	Serialized data: at 0x0000000000007e6f with 0x0000012d Bytes
 	Export Flags: 0x00000001
 [Export 30]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_123
@@ -683,7 +776,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006993 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000007f9c with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 31]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_124
@@ -691,7 +784,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006aac with 0x00000119 Bytes
+	Serialized data: at 0x00000000000080b5 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 32]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_125
@@ -699,7 +792,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006bc5 with 0x00000132 Bytes
+	Serialized data: at 0x00000000000081ce with 0x00000132 Bytes
 	Export Flags: 0x00000001
 [Export 34]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_2
@@ -707,7 +800,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006d6f with 0x00000100 Bytes
+	Serialized data: at 0x0000000000008378 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 35]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_3
@@ -715,7 +808,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006e6f with 0x00000231 Bytes
+	Serialized data: at 0x0000000000008478 with 0x00000231 Bytes
 	Export Flags: 0x00000001
 [Export 36]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_5
@@ -723,7 +816,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000070a0 with 0x00000231 Bytes
+	Serialized data: at 0x00000000000086a9 with 0x00000231 Bytes
 	Export Flags: 0x00000001
 [Export 37]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_95
@@ -731,7 +824,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000072d1 with 0x00000119 Bytes
+	Serialized data: at 0x00000000000088da with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 38]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_96
@@ -739,7 +832,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000073ea with 0x00000119 Bytes
+	Serialized data: at 0x00000000000089f3 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 39]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_97
@@ -747,7 +840,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007503 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000008b0c with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 40]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_98
@@ -755,7 +848,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000761c with 0x00000170 Bytes
+	Serialized data: at 0x0000000000008c25 with 0x00000170 Bytes
 	Export Flags: 0x00000001
 [Export 41]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticSwitchParameter_99
@@ -763,7 +856,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000778c with 0x00000100 Bytes
+	Serialized data: at 0x0000000000008d95 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 42]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_36
@@ -771,7 +864,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000120c06 with 0x000000d8 Bytes
+	Serialized data: at 0x000000000012220f with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [Export 43]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_37
@@ -779,7 +872,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000120cde with 0x000000ad Bytes
+	Serialized data: at 0x00000000001222e7 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 44]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_38
@@ -787,7 +880,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000120d8b with 0x000000f1 Bytes
+	Serialized data: at 0x0000000000122394 with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 45]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_39
@@ -795,7 +888,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000120e7c with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000122485 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [Export 46]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_40
@@ -803,7 +896,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000120f54 with 0x00000094 Bytes
+	Serialized data: at 0x000000000012255d with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 47]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_41
@@ -811,7 +904,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000120fe8 with 0x000000ad Bytes
+	Serialized data: at 0x00000000001225f1 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 48]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_42
@@ -819,7 +912,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000121095 with 0x00000094 Bytes
+	Serialized data: at 0x000000000012269e with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 49]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_43
@@ -827,7 +920,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000121129 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000122732 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 50]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_44
@@ -835,7 +928,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000001211bd with 0x000000d8 Bytes
+	Serialized data: at 0x00000000001227c6 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [Export 51]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_45
@@ -843,7 +936,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000121295 with 0x000000d8 Bytes
+	Serialized data: at 0x000000000012289e with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [Export 52]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_46
@@ -851,7 +944,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000012136d with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000122976 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [Export 53]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_47
@@ -859,7 +952,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000121445 with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000122a4e with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [Export 55]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureSampleParameter2D_55
@@ -867,7 +960,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000012151d with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000122b26 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 56]
 	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_2
@@ -875,7 +968,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000011cd6c with 0x000000a8 Bytes
+	Serialized data: at 0x000000000011e375 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 57]
 	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_23
@@ -883,7 +976,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008478 with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000009a81 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 58]
 	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_24
@@ -891,7 +984,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008520 with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000009b29 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 59]
 	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_25
@@ -899,7 +992,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000085c8 with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000009bd1 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 60]
 	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_26
@@ -907,7 +1000,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008670 with 0x0000010c Bytes
+	Serialized data: at 0x0000000000009c79 with 0x0000010c Bytes
 	Export Flags: 0x00000001
 [Export 61]
 	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_27
@@ -915,7 +1008,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000877c with 0x0000010c Bytes
+	Serialized data: at 0x0000000000009d85 with 0x0000010c Bytes
 	Export Flags: 0x00000001
 [Export 62]
 	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_28
@@ -923,7 +1016,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008888 with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000009e91 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 63]
 	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_29
@@ -931,7 +1024,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000897c with 0x000000f4 Bytes
+	Serialized data: at 0x0000000000009f85 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 64]
 	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_48
@@ -939,7 +1032,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008a70 with 0x00000145 Bytes
+	Serialized data: at 0x000000000000a079 with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 65]
 	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_49
@@ -947,7 +1040,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008bb5 with 0x0000012c Bytes
+	Serialized data: at 0x000000000000a1be with 0x0000012c Bytes
 	Export Flags: 0x00000001
 [Export 66]
 	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionVectorParameter_50
@@ -955,7 +1048,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008ce1 with 0x00000114 Bytes
+	Serialized data: at 0x000000000000a2ea with 0x00000114 Bytes
 	Export Flags: 0x00000001
 [Export 67]
 	Full Name: MaterialInstanceConstant skin_scar_b_01.skin_scar_b_01.MIC_skin_scar_b_01
@@ -963,21 +1056,21 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialInstanceConstant
 	Outer: skin_scar_b_01
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000001231eb with 0x00001106 Bytes
+	Serialized data: at 0x00000000001247f4 with 0x00001106 Bytes
 	Export Flags: 0x00000001
 [Export 69]
 	Full Name: ObjectReferencer skin_scar_b_01.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000009ec7 with 0x0000002c Bytes
+	Serialized data: at 0x000000000000b4d0 with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [Export 73]
 	Full Name: Package skin_scar_b_01.Body_Rye
 	Name: Body_Rye
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000009f17 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000b520 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -986,7 +1079,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Name: body_scar_b
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000009f23 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000b52c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -995,7 +1088,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Name: skin_scar_b_01
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000009f8f with 0x0000000c Bytes
+	Serialized data: at 0x000000000000b598 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1004,7 +1097,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Name: skin_scar_b_01_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000009f9b with 0x0000000c Bytes
+	Serialized data: at 0x000000000000b5a4 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -1015,7 +1108,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Outer: skin_scar_b_01
 	Archetype: ProductAsset_Skin_TA_0
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000001226d7 with 0x000000e8 Bytes
+	Serialized data: at 0x00000000001258fa with 0x00000410 Bytes
 	Export Flags: 0x00000001
 [Export 94]
 	Full Name: Texture2D skin_scar_b_01.body_scar_b.body_scar_b_blankskin
@@ -1023,7 +1116,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: Texture2D
 	Outer: body_scar_b
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001106f with 0x000017c8 Bytes
+	Serialized data: at 0x0000000000012678 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [Export 95]
 	Full Name: Texture2D skin_scar_b_01.body_scar_b.body_scar_b_curvature
@@ -1031,7 +1124,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: Texture2D
 	Outer: body_scar_b
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000012837 with 0x00000d10 Bytes
+	Serialized data: at 0x0000000000013e40 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [Export 101]
 	Full Name: Texture2D skin_scar_b_01.skin_scar_b_01.skin_scar_b_01_d
@@ -1039,7 +1132,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: Texture2D
 	Outer: skin_scar_b_01
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000018abf with 0x000017c8 Bytes
+	Serialized data: at 0x000000000001a0c8 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [Export 105]
 	Full Name: MaterialExpressionStaticBoolParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionStaticBoolParameter_0
@@ -1047,7 +1140,7 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionStaticBoolParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000011df1a with 0x00000098 Bytes
+	Serialized data: at 0x000000000011f523 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [Export 106]
 	Full Name: MaterialExpressionTextureObjectParameter skin_scar_b_01.Body_Rye.MAT_Body_NewWindshield.MaterialExpressionTextureObjectParameter_0
@@ -1055,7 +1148,387 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: MaterialExpressionTextureObjectParameter
 	Outer: MAT_Body_NewWindshield
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000001227bf with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000123dc8 with 0x000000b4 Bytes
+	Export Flags: 0x00000001
+[Export 111]
+	Full Name: Material skin_scar_b_01.body_endo.MAT_NewWorldChassis
+	Name: MAT_NewWorldChassis
+	Class: Material
+	Outer: body_endo
+	Object Flags: 0x000f000500000000
+	Serialized data: at 0x0000000000125d0a with 0x000004e3 Bytes
+	Export Flags: 0x00000001
+[Export 112]
+	Full Name: Material skin_scar_b_01.body_scar_a.MAT_scar_lens_VertColor
+	Name: MAT_scar_lens_VertColor
+	Class: Material
+	Outer: body_scar_a
+	Object Flags: 0x000f000500000000
+	Serialized data: at 0x00000000001261ed with 0x00000461 Bytes
+	Export Flags: 0x00000001
+[Export 113]
+	Full Name: MaterialExpressionScalarParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionScalarParameter_0
+	Name: MaterialExpressionScalarParameter_0
+	Class: MaterialExpressionScalarParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x000000000012664e with 0x000000c6 Bytes
+	Export Flags: 0x00000001
+[Export 114]
+	Full Name: MaterialExpressionScalarParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionScalarParameter_1
+	Name: MaterialExpressionScalarParameter_1
+	Class: MaterialExpressionScalarParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000126714 with 0x00000098 Bytes
+	Export Flags: 0x00000001
+[Export 115]
+	Full Name: MaterialExpressionScalarParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionScalarParameter_2
+	Name: MaterialExpressionScalarParameter_2
+	Class: MaterialExpressionScalarParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x00000000001267ac with 0x000000b4 Bytes
+	Export Flags: 0x00000001
+[Export 116]
+	Full Name: MaterialExpressionScalarParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionScalarParameter_3
+	Name: MaterialExpressionScalarParameter_3
+	Class: MaterialExpressionScalarParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000126860 with 0x000000b4 Bytes
+	Export Flags: 0x00000001
+[Export 117]
+	Full Name: MaterialExpressionScalarParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionScalarParameter_9
+	Name: MaterialExpressionScalarParameter_9
+	Class: MaterialExpressionScalarParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000126914 with 0x000000c6 Bytes
+	Export Flags: 0x00000001
+[Export 118]
+	Full Name: MaterialExpressionStaticComponentMaskParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionStaticComponentMaskParameter_0
+	Name: MaterialExpressionStaticComponentMaskParameter_0
+	Class: MaterialExpressionStaticComponentMaskParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x00000000001269da with 0x00000165 Bytes
+	Export Flags: 0x00000001
+[Export 119]
+	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionStaticSwitchParameter_0
+	Name: MaterialExpressionStaticSwitchParameter_0
+	Class: MaterialExpressionStaticSwitchParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000126b3f with 0x0000016d Bytes
+	Export Flags: 0x00000001
+[Export 120]
+	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionStaticSwitchParameter_1
+	Name: MaterialExpressionStaticSwitchParameter_1
+	Class: MaterialExpressionStaticSwitchParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000126cac with 0x00000100 Bytes
+	Export Flags: 0x00000001
+[Export 121]
+	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionStaticSwitchParameter_2
+	Name: MaterialExpressionStaticSwitchParameter_2
+	Class: MaterialExpressionStaticSwitchParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000126dac with 0x00000120 Bytes
+	Export Flags: 0x00000001
+[Export 122]
+	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionStaticSwitchParameter_3
+	Name: MaterialExpressionStaticSwitchParameter_3
+	Class: MaterialExpressionStaticSwitchParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000126ecc with 0x00000189 Bytes
+	Export Flags: 0x00000001
+[Export 123]
+	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionStaticSwitchParameter_4
+	Name: MaterialExpressionStaticSwitchParameter_4
+	Class: MaterialExpressionStaticSwitchParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000127055 with 0x000001e0 Bytes
+	Export Flags: 0x00000001
+[Export 124]
+	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionStaticSwitchParameter_5
+	Name: MaterialExpressionStaticSwitchParameter_5
+	Class: MaterialExpressionStaticSwitchParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000127235 with 0x0000018d Bytes
+	Export Flags: 0x00000001
+[Export 125]
+	Full Name: MaterialExpressionStaticSwitchParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionStaticSwitchParameter_8
+	Name: MaterialExpressionStaticSwitchParameter_8
+	Class: MaterialExpressionStaticSwitchParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x00000000001273c2 with 0x00000100 Bytes
+	Export Flags: 0x00000001
+[Export 126]
+	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionTextureSampleParameter2D_0
+	Name: MaterialExpressionTextureSampleParameter2D_0
+	Class: MaterialExpressionTextureSampleParameter2D
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x00000000001274c2 with 0x000000d6 Bytes
+	Export Flags: 0x00000001
+[Export 127]
+	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionTextureSampleParameter2D_1
+	Name: MaterialExpressionTextureSampleParameter2D_1
+	Class: MaterialExpressionTextureSampleParameter2D
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000127598 with 0x000000d8 Bytes
+	Export Flags: 0x00000001
+[Export 128]
+	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionTextureSampleParameter2D_2
+	Name: MaterialExpressionTextureSampleParameter2D_2
+	Class: MaterialExpressionTextureSampleParameter2D
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000127670 with 0x000000cd Bytes
+	Export Flags: 0x00000001
+[Export 129]
+	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionTextureSampleParameter2D_3
+	Name: MaterialExpressionTextureSampleParameter2D_3
+	Class: MaterialExpressionTextureSampleParameter2D
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x000000000012773d with 0x000000cd Bytes
+	Export Flags: 0x00000001
+[Export 130]
+	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionTextureSampleParameter2D_4
+	Name: MaterialExpressionTextureSampleParameter2D_4
+	Class: MaterialExpressionTextureSampleParameter2D
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x000000000012780a with 0x000000b4 Bytes
+	Export Flags: 0x00000001
+[Export 131]
+	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionTextureSampleParameter2D_5
+	Name: MaterialExpressionTextureSampleParameter2D_5
+	Class: MaterialExpressionTextureSampleParameter2D
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x00000000001278be with 0x00000123 Bytes
+	Export Flags: 0x00000001
+[Export 132]
+	Full Name: MaterialExpressionTextureSampleParameter2D skin_scar_b_01.body_scar_a.MAT_scar_lens_VertColor.MaterialExpressionTextureSampleParameter2D_0
+	Name: MaterialExpressionTextureSampleParameter2D_0
+	Class: MaterialExpressionTextureSampleParameter2D
+	Outer: MAT_scar_lens_VertColor
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x00000000001279e1 with 0x000000d8 Bytes
+	Export Flags: 0x00000001
+[Export 133]
+	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionVectorParameter_0
+	Name: MaterialExpressionVectorParameter_0
+	Class: MaterialExpressionVectorParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000127ab9 with 0x000000c8 Bytes
+	Export Flags: 0x00000001
+[Export 134]
+	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionVectorParameter_1
+	Name: MaterialExpressionVectorParameter_1
+	Class: MaterialExpressionVectorParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000127b81 with 0x000000c8 Bytes
+	Export Flags: 0x00000001
+[Export 135]
+	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionVectorParameter_2
+	Name: MaterialExpressionVectorParameter_2
+	Class: MaterialExpressionVectorParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000127c49 with 0x000000c8 Bytes
+	Export Flags: 0x00000001
+[Export 136]
+	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionVectorParameter_3
+	Name: MaterialExpressionVectorParameter_3
+	Class: MaterialExpressionVectorParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000127d11 with 0x000000a8 Bytes
+	Export Flags: 0x00000001
+[Export 137]
+	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionVectorParameter_4
+	Name: MaterialExpressionVectorParameter_4
+	Class: MaterialExpressionVectorParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000127db9 with 0x000000cf Bytes
+	Export Flags: 0x00000001
+[Export 138]
+	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionVectorParameter_5
+	Name: MaterialExpressionVectorParameter_5
+	Class: MaterialExpressionVectorParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000127e88 with 0x000000a8 Bytes
+	Export Flags: 0x00000001
+[Export 139]
+	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionVectorParameter_6
+	Name: MaterialExpressionVectorParameter_6
+	Class: MaterialExpressionVectorParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000127f30 with 0x000000cf Bytes
+	Export Flags: 0x00000001
+[Export 140]
+	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionVectorParameter_7
+	Name: MaterialExpressionVectorParameter_7
+	Class: MaterialExpressionVectorParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000127fff with 0x000000a8 Bytes
+	Export Flags: 0x00000001
+[Export 141]
+	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionVectorParameter_8
+	Name: MaterialExpressionVectorParameter_8
+	Class: MaterialExpressionVectorParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x00000000001280a7 with 0x000000cf Bytes
+	Export Flags: 0x00000001
+[Export 142]
+	Full Name: MaterialExpressionVectorParameter skin_scar_b_01.body_endo.MAT_NewWorldChassis.MaterialExpressionVectorParameter_9
+	Name: MaterialExpressionVectorParameter_9
+	Class: MaterialExpressionVectorParameter
+	Outer: MAT_NewWorldChassis
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000128176 with 0x000000a8 Bytes
+	Export Flags: 0x00000001
+[Export 143]
+	Full Name: MaterialFunction skin_scar_b_01.Psy_MaterialFunctions.ParallexCorrectWorldENV
+	Name: ParallexCorrectWorldENV
+	Class: MaterialFunction
+	Outer: Psy_MaterialFunctions
+	Object Flags: 0x000f000400000000
+	Serialized data: at 0x000000000012821e with 0x00000124 Bytes
+	Export Flags: 0x00000001
+[Export 144]
+	Full Name: MaterialInstanceConstant skin_scar_b_01.body_scar_b.MIC_chassis_scar_b
+	Name: MIC_chassis_scar_b
+	Class: MaterialInstanceConstant
+	Outer: body_scar_b
+	Object Flags: 0x000f000500000000
+	Serialized data: at 0x0000000000128342 with 0x00000769 Bytes
+	Export Flags: 0x00000001
+[Export 145]
+	Full Name: Package skin_scar_b_01.body_endo
+	Name: body_endo
+	Class: Package
+	Object Flags: 0x0007000400000000
+	Serialized data: at 0x0000000000128aab with 0x0000000c Bytes
+	Export Flags: 0x00000001
+	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
+	Package Flags: 0x20000005
+[Export 146]
+	Full Name: Package skin_scar_b_01.body_scar_a
+	Name: body_scar_a
+	Class: Package
+	Object Flags: 0x0007000400000000
+	Serialized data: at 0x0000000000128ab7 with 0x0000000c Bytes
+	Export Flags: 0x00000001
+	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
+	Package Flags: 0x20000005
+[Export 147]
+	Full Name: Package skin_scar_b_01.Psy_MaterialFunctions
+	Name: Psy_MaterialFunctions
+	Class: Package
+	Object Flags: 0x0007000400000000
+	Serialized data: at 0x0000000000128ac3 with 0x0000000c Bytes
+	Export Flags: 0x00000001
+	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
+	Package Flags: 0x20000005
+[Export 148]
+	Full Name: Package skin_scar_b_01.SpaceStation_FieldAssets
+	Name: SpaceStation_FieldAssets
+	Class: Package
+	Object Flags: 0x0007000400000000
+	Serialized data: at 0x0000000000128acf with 0x0000000c Bytes
+	Export Flags: 0x00000001
+	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
+	Package Flags: 0x20000005
+[Export 149]
+	Full Name: Package skin_scar_b_01.SpaceStation_FieldAssets.Tex
+	Name: Tex
+	Class: Package
+	Outer: SpaceStation_FieldAssets
+	Object Flags: 0x0007000400000000
+	Serialized data: at 0x0000000000128adb with 0x0000000c Bytes
+	Export Flags: 0x00000001
+[Export 150]
+	Full Name: ProductAssetReferenceBody_TA skin_scar_b_01.skin_scar_b_01.skin_scar_b_01.ProductAssetReferenceBody_TA_1
+	Name: ProductAssetReferenceBody_TA_1
+	Class: ProductAssetReferenceBody_TA
+	Outer: skin_scar_b_01
+	Object Flags: 0x0007000400000000
+	Serialized data: at 0x0000000000128ae7 with 0x00000028 Bytes
+	Export Flags: 0x00000001
+[Export 151]
+	Full Name: Texture2D skin_scar_b_01.body_endo.Endo_Chassis_D
+	Name: Endo_Chassis_D
+	Class: Texture2D
+	Outer: body_endo
+	Object Flags: 0x000f000400000000
+	Serialized data: at 0x0000000000128b0f with 0x00000d10 Bytes
+	Export Flags: 0x00000001
+[Export 152]
+	Full Name: Texture2D skin_scar_b_01.body_endo.Endo_Chassis_N
+	Name: Endo_Chassis_N
+	Class: Texture2D
+	Outer: body_endo
+	Object Flags: 0x000f000400000000
+	Serialized data: at 0x000000000012981f with 0x00001885 Bytes
+	Export Flags: 0x00000001
+[Export 153]
+	Full Name: Texture2D skin_scar_b_01.body_endo.Endo_Chassis_RGB
+	Name: Endo_Chassis_RGB
+	Class: Texture2D
+	Outer: body_endo
+	Object Flags: 0x000f000400000000
+	Serialized data: at 0x000000000012b0a4 with 0x000017f0 Bytes
+	Export Flags: 0x00000001
+[Export 154]
+	Full Name: Texture2D skin_scar_b_01.body_scar_b.chassis_scar_b_d
+	Name: chassis_scar_b_d
+	Class: Texture2D
+	Outer: body_scar_b
+	Object Flags: 0x000f000400000000
+	Serialized data: at 0x000000000012c894 with 0x00000d10 Bytes
+	Export Flags: 0x00000001
+[Export 155]
+	Full Name: Texture2D skin_scar_b_01.body_scar_b.chassis_scar_b_n
+	Name: chassis_scar_b_n
+	Class: Texture2D
+	Outer: body_scar_b
+	Object Flags: 0x000f000400000000
+	Serialized data: at 0x000000000012d5a4 with 0x00001809 Bytes
+	Export Flags: 0x00000001
+[Export 156]
+	Full Name: Texture2D skin_scar_b_01.body_scar_b.chassis_scar_b_rgb
+	Name: chassis_scar_b_rgb
+	Class: Texture2D
+	Outer: body_scar_b
+	Object Flags: 0x000f000400000000
+	Serialized data: at 0x000000000012edad with 0x000017c8 Bytes
+	Export Flags: 0x00000001
+[Export 157]
+	Full Name: Texture2D Tex.Blank_N
+	Name: Blank_N
+	Class: Texture2D
+	Outer: Tex
+	Object Flags: 0x000f000400000000
+	Serialized data: at 0x0000000000130575 with 0x000017dd Bytes
 	Export Flags: 0x00000001
 
 
@@ -1317,3 +1790,43 @@ AES: qahLAYrllBGXvrDFjfJGO8xOd5SCDGLHt0R0YyrvwlI=
 	Class: Texture2D
 	Class Package: Engine
 	Outer: Vehicle_Parent_Textures
+[Import 51]
+	Full Name: Class Engine.MaterialExpressionStaticComponentMaskParameter
+	Name: MaterialExpressionStaticComponentMaskParameter
+	Class: Class
+	Class Package: Core
+	Outer: Engine
+[Import 52]
+	Full Name: Class Engine.MaterialFunction
+	Name: MaterialFunction
+	Class: Class
+	Class Package: Core
+	Outer: Engine
+[Import 53]
+	Full Name: Class TAGame.ProductAssetReferenceBody_TA
+	Name: ProductAssetReferenceBody_TA
+	Class: Class
+	Class Package: Core
+	Outer: TAGame
+[Import 54]
+	Full Name: Package Grass_Textures
+	Name: Grass_Textures
+	Class: Package
+	Class Package: Core
+[Import 55]
+	Full Name: Package Trophy_Textures
+	Name: Trophy_Textures
+	Class: Package
+	Class Package: Core
+[Import 56]
+	Full Name: Texture2D Trophy_Textures.BrushedMetal_Normal
+	Name: BrushedMetal_Normal
+	Class: Texture2D
+	Class Package: Engine
+	Outer: Trophy_Textures
+[Import 57]
+	Full Name: TextureRenderTargetCube Grass_Textures.GrassCube
+	Name: GrassCube
+	Class: TextureRenderTargetCube
+	Class Package: Engine
+	Outer: Grass_Textures
