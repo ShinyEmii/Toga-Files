@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x00005605 Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 89 Name Offset: 0x00000325
-Export Count: 38 Export Offset: 0x00000dff
-Import Count: 11 Import Offset: 0x00000ccb
-Depends Offset: 0x000018af
-Import Export Guids Offset: 0x000018af
+Name Count: 89 Name Offset: 0x00000331
+Export Count: 38 Export Offset: 0x00000e0b
+Import Count: 11 Import Offset: 0x00000cd7
+Depends Offset: 0x000018bb
+Import Export Guids Offset: 0x000018bb
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x06c8e408 0x45008969 0xbe657591 0xabb603be
+GUID: 0xeeeabe96 0x4a531bea 0xf5f11b89 0xc4528812
 Generations:
 [0]
 	Export Count: 4
@@ -103,6 +103,10 @@ Generations:
 	Export Count: 38
 	Name Count: 89
 	Net Object Count: 0
+[21]
+	Export Count: 38
+	Name Count: 89
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression: ZLIB
@@ -113,22 +117,30 @@ Additional Packages To Cook:
 	Empty
 Texture Allocations Texture Types:
 [0]
-	Resolution: [352 x 100]
+	Resolution: [128 x 128]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Badge_LTM
-		[1] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Badge_Registered
-		[2] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Badge_Viral
+		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.TileButton_Over
+		[1] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.TileButtonBackground
+		[2] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.PlayMenuV4_I29
+		[3] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.PlayMenuV4_I2B
 [1]
-	Resolution: [512 x 64]
+	Resolution: [80 x 80]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.EngagementEventBackground
+		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.regions_list_bg
 [2]
+	Resolution: [220 x 460]
+	Num Mips: 1
+	Format: DXT1
+	Flags: 0
+	Exports:
+		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.regions_bg
+[3]
 	Resolution: [256 x 256]
 	Num Mips: 1
 	Format: DXT5
@@ -137,29 +149,22 @@ Texture Allocations Texture Types:
 		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Icon_MultiSelect
 		[1] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Icon_UnrankedProgress
 		[2] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.PlayMenuV4_I43
-[3]
-	Resolution: [64 x 64]
-	Num Mips: 1
-	Format: DXT5
-	Flags: 0
-	Exports:
-		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Icon_Unavailable_64x64
 [4]
-	Resolution: [452 x 300]
+	Resolution: [512 x 128]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.MultiSelect_Underglow
+		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.PlayMenuV4_I41
 [5]
-	Resolution: [452 x 128]
+	Resolution: [412 x 272]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Playlist_Banner_Locked
-		[1] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Playlist_Banner_Searching
-		[2] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Playlist_Banner_Unavailable
+		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.playMenuCard_SelectFocus_small
+		[1] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.playMenuCard_small
+		[2] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.playMenuCard_topframe_small
 [6]
 	Resolution: [380 x 212]
 	Num Mips: 1
@@ -179,76 +184,80 @@ Texture Allocations Texture Types:
 	Exports:
 		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Playlist_Description_Glow
 [8]
-	Resolution: [412 x 272]
+	Resolution: [452 x 128]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.playMenuCard_SelectFocus_small
-		[1] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.playMenuCard_small
-		[2] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.playMenuCard_topframe_small
+		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Playlist_Banner_Locked
+		[1] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Playlist_Banner_Searching
+		[2] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Playlist_Banner_Unavailable
 [9]
-	Resolution: [128 x 128]
+	Resolution: [452 x 300]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.TileButton_Over
-		[1] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.TileButtonBackground
-		[2] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.PlayMenuV4_I29
-		[3] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.PlayMenuV4_I2B
+		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.MultiSelect_Underglow
 [10]
-	Resolution: [512 x 128]
+	Resolution: [64 x 64]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.PlayMenuV4_I41
+		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Icon_Unavailable_64x64
 [11]
-	Resolution: [220 x 460]
-	Num Mips: 1
-	Format: DXT1
-	Flags: 0
-	Exports:
-		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.regions_bg
-[12]
-	Resolution: [80 x 80]
+	Resolution: [512 x 64]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.regions_list_bg
-Test Data Size: 0x00003cda
+		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.EngagementEventBackground
+[12]
+	Resolution: [352 x 100]
+	Num Mips: 1
+	Format: DXT5
+	Flags: 0
+	Exports:
+		[0] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Badge_LTM
+		[1] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Badge_Registered
+		[2] Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Badge_Viral
+Test Data Size: 0x00003cb6
 Compressed Chunk Info:
 	Offset: 0x0000158a
 	[0]
-		Uncompressed Offset: 0x00000000000018af
+		Uncompressed Offset: 0x00000000000018bb
 		Uncompressed Size: 0x001fb3b2
 		Compressed Offset: 0x0000000000005605
 		Compressed Size: 0x0008d8ed
 	[1]
-		Uncompressed Offset: 0x00000000001fcc61
+		Uncompressed Offset: 0x00000000001fcc6d
 		Uncompressed Size: 0x0005b8d5
 		Compressed Offset: 0x0000000000092ef2
 		Compressed Size: 0x00012ab6
 	[2]
-		Uncompressed Offset: 0x0000000000258536
+		Uncompressed Offset: 0x0000000000258542
 		Uncompressed Size: 0x001ef89d
 		Compressed Offset: 0x00000000000a59a8
 		Compressed Size: 0x000b7c24
 	[3]
-		Uncompressed Offset: 0x0000000000447dd3
+		Uncompressed Offset: 0x0000000000447ddf
 		Uncompressed Size: 0x0003c212
 		Compressed Offset: 0x000000000015d5cc
 		Compressed Size: 0x0000a416
 	[4]
-		Uncompressed Offset: 0x0000000000483fe5
+		Uncompressed Offset: 0x0000000000483ff1
 		Uncompressed Size: 0x001fb094
 		Compressed Offset: 0x00000000001679e2
 		Compressed Size: 0x000b66e9
-Last Block Size: 0x00000000
-Base Header Size: 0x00000325
-Encrypted Header Size: 0x000052e0
+	[5]
+		Uncompressed Offset: 0x000000000067f085
+		Uncompressed Size: 0x001da2a4
+		Compressed Offset: 0x000000000021e0cb
+		Compressed Size: 0x000b3bb8
+Last Block Size: 0x00000004
+Base Header Size: 0x00000331
+Encrypted Header Size: 0x000052d0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -355,14 +364,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000258536 with 0x0000009c Bytes
+	Serialized data: at 0x000000000067f085 with 0x0000009c Bytes
 	Export Flags: 0x00000000
 [Export 1]
 	Full Name: Package GFX_PlayMenuV4.GFX_PlayMenuV4
 	Name: GFX_PlayMenuV4
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000193b with 0x0000000c Bytes
+	Serialized data: at 0x0000000000001947 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -371,7 +380,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: GFX_PlayMenuV4_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000001947 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000001953 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -381,7 +390,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SwfMovie
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000483fe5 with 0x001d9d66 Bytes
+	Serialized data: at 0x000000000067f121 with 0x001da208 Bytes
 	Export Flags: 0x00000001
 [Export 4]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Icon_MultiSelect
@@ -389,7 +398,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000106f66 with 0x00010179 Bytes
+	Serialized data: at 0x0000000000106f72 with 0x00010179 Bytes
 	Export Flags: 0x00000001
 [Export 5]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.playlist_garage_keyart
@@ -397,7 +406,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000001170df with 0x00013c2e Bytes
+	Serialized data: at 0x00000000001170eb with 0x00013c2e Bytes
 	Export Flags: 0x00000001
 [Export 6]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.playlist_itemshop_keyart
@@ -405,7 +414,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000012ad0d with 0x00013c2e Bytes
+	Serialized data: at 0x000000000012ad19 with 0x00013c2e Bytes
 	Export Flags: 0x00000001
 [Export 7]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.playlist_training_keyart
@@ -413,7 +422,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000013e93b with 0x00013c2e Bytes
+	Serialized data: at 0x000000000013e947 with 0x00013c2e Bytes
 	Export Flags: 0x00000001
 [Export 8]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.playMenuCard_SelectFocus_small
@@ -421,7 +430,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000152569 with 0x0001b73e Bytes
+	Serialized data: at 0x0000000000152575 with 0x0001b73e Bytes
 	Export Flags: 0x00000001
 [Export 9]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.playMenuCard_small
@@ -429,7 +438,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000016dca7 with 0x0001b73e Bytes
+	Serialized data: at 0x000000000016dcb3 with 0x0001b73e Bytes
 	Export Flags: 0x00000001
 [Export 10]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.playMenuCard_topframe_small
@@ -437,7 +446,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000001893e5 with 0x0001b73e Bytes
+	Serialized data: at 0x00000000001893f1 with 0x0001b73e Bytes
 	Export Flags: 0x00000001
 [Export 11]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.regions_bg
@@ -445,7 +454,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000001a4b23 with 0x0000c726 Bytes
+	Serialized data: at 0x00000000001a4b2f with 0x0000c726 Bytes
 	Export Flags: 0x00000001
 [Export 12]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.regions_list_bg
@@ -453,7 +462,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000001b1249 with 0x00001a7e Bytes
+	Serialized data: at 0x00000000001b1255 with 0x00001a7e Bytes
 	Export Flags: 0x00000001
 [Export 13]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Badge_LTM
@@ -461,7 +470,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000001b2cc7 with 0x00008afe Bytes
+	Serialized data: at 0x00000000001b2cd3 with 0x00008afe Bytes
 	Export Flags: 0x00000001
 [Export 14]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Badge_Registered
@@ -469,7 +478,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000001bb7c5 with 0x00008afe Bytes
+	Serialized data: at 0x00000000001bb7d1 with 0x00008afe Bytes
 	Export Flags: 0x00000001
 [Export 15]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.EngagementEventBackground
@@ -477,7 +486,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000001c42c3 with 0x00008179 Bytes
+	Serialized data: at 0x00000000001c42cf with 0x00008179 Bytes
 	Export Flags: 0x00000001
 [Export 16]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Icon_Unavailable_64x64
@@ -485,7 +494,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000001cc43c with 0x00001179 Bytes
+	Serialized data: at 0x00000000001cc448 with 0x00001179 Bytes
 	Export Flags: 0x00000001
 [Export 17]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.MultiSelect_Underglow
@@ -493,7 +502,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000065dd4b with 0x0002132e Bytes
+	Serialized data: at 0x000000000065dd57 with 0x0002132e Bytes
 	Export Flags: 0x00000001
 [Export 18]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Playlist_Banner_Locked
@@ -501,7 +510,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000001ee8e3 with 0x0000e37e Bytes
+	Serialized data: at 0x00000000001ee8ef with 0x0000e37e Bytes
 	Export Flags: 0x00000001
 [Export 19]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Playlist_Banner_Searching
@@ -509,7 +518,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000001fcc61 with 0x0000e37e Bytes
+	Serialized data: at 0x00000000001fcc6d with 0x0000e37e Bytes
 	Export Flags: 0x00000001
 [Export 20]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Playlist_Banner_Unavailable
@@ -517,7 +526,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000020afdf with 0x0000e37e Bytes
+	Serialized data: at 0x000000000020afeb with 0x0000e37e Bytes
 	Export Flags: 0x00000001
 [Export 21]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Playlist_Description_Glow
@@ -525,7 +534,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000021935d with 0x00015f7e Bytes
+	Serialized data: at 0x0000000000219369 with 0x00015f7e Bytes
 	Export Flags: 0x00000001
 [Export 22]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.TileButton_Over
@@ -533,7 +542,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000022f2db with 0x00004179 Bytes
+	Serialized data: at 0x000000000022f2e7 with 0x00004179 Bytes
 	Export Flags: 0x00000001
 [Export 23]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.TileButtonBackground
@@ -541,7 +550,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000233454 with 0x00004179 Bytes
+	Serialized data: at 0x0000000000233460 with 0x00004179 Bytes
 	Export Flags: 0x00000001
 [Export 25]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Icon_UnrankedProgress
@@ -549,7 +558,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000002375cd with 0x00010179 Bytes
+	Serialized data: at 0x00000000002375d9 with 0x00010179 Bytes
 	Export Flags: 0x00000001
 [Export 28]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.Badge_Viral
@@ -557,7 +566,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000247746 with 0x00008afe Bytes
+	Serialized data: at 0x0000000000247752 with 0x00008afe Bytes
 	Export Flags: 0x00000001
 [Export 32]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.playlist_challenges_keyart
@@ -565,7 +574,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000004341a5 with 0x00013c2e Bytes
+	Serialized data: at 0x00000000004341b1 with 0x00013c2e Bytes
 	Export Flags: 0x00000001
 [Export 33]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.playlist_fastfreeplay_keyart
@@ -573,7 +582,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000447dd3 with 0x00013c2e Bytes
+	Serialized data: at 0x0000000000447ddf with 0x00013c2e Bytes
 	Export Flags: 0x00000001
 [Export 34]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.PlayMenuV4_I29
@@ -581,7 +590,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000045ba01 with 0x00004179 Bytes
+	Serialized data: at 0x000000000045ba0d with 0x00004179 Bytes
 	Export Flags: 0x00000001
 [Export 35]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.PlayMenuV4_I2B
@@ -589,7 +598,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000045fb7a with 0x00004179 Bytes
+	Serialized data: at 0x000000000045fb86 with 0x00004179 Bytes
 	Export Flags: 0x00000001
 [Export 36]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.PlayMenuV4_I41
@@ -597,7 +606,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000463cf3 with 0x00010179 Bytes
+	Serialized data: at 0x0000000000463cff with 0x00010179 Bytes
 	Export Flags: 0x00000001
 [Export 37]
 	Full Name: Texture2D GFX_PlayMenuV4.GFX_PlayMenuV4.PlayMenuV4_I43
@@ -605,7 +614,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PlayMenuV4
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000473e6c with 0x00010179 Bytes
+	Serialized data: at 0x0000000000473e78 with 0x00010179 Bytes
 	Export Flags: 0x00000001
 
 

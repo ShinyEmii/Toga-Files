@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x000051c9 Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 73 Name Offset: 0x00000285
-Export Count: 24 Export Offset: 0x00000b14
-Import Count: 9 Import Offset: 0x00000a18
-Depends Offset: 0x000011d4
-Import Export Guids Offset: 0x000011d4
+Name Count: 73 Name Offset: 0x00000291
+Export Count: 24 Export Offset: 0x00000b20
+Import Count: 9 Import Offset: 0x00000a24
+Depends Offset: 0x000011e0
+Import Export Guids Offset: 0x000011e0
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x8f64e0bf 0x47261bbc 0xb0d77a8a 0x00f28f63
+GUID: 0xb3d843a7 0x4156c16d 0x85ff53a8 0xd7dbd9af
 Generations:
 [0]
 	Export Count: 8
@@ -95,6 +95,10 @@ Generations:
 	Export Count: 24
 	Name Count: 73
 	Net Object Count: 0
+[19]
+	Export Count: 24
+	Name Count: 73
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression: ZLIB
@@ -105,20 +109,21 @@ Additional Packages To Cook:
 	Empty
 Texture Allocations Texture Types:
 [0]
-	Resolution: [256 x 32]
+	Resolution: [512 x 64]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFx_XPProgressMenu.GFx_XPProgressMenu.Glow_XPFade
+		[0] Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.center_hexagon
+		[1] Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.EngagementEventBackground
+		[2] Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.right_hexagon
 [1]
-	Resolution: [512 x 512]
+	Resolution: [700 x 128]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFx_XPProgressMenu.GFx_XPProgressMenu.RocketPassShieldFreeBG
-		[1] Texture2D GFx_XPProgressMenu.GFx_XPProgressMenu.RocketPassShieldPremiumBG
+		[0] Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.Overglow_00006
 [2]
 	Resolution: [64 x 64]
 	Num Mips: 1
@@ -129,21 +134,19 @@ Texture Allocations Texture Types:
 		[1] Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.left_chevron
 		[2] Texture2D GFx_XPProgressMenu.GFx_XPProgressMenu.Small2XPIcon
 [3]
-	Resolution: [512 x 4]
+	Resolution: [1024 x 256]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFx_XPProgressMenu.GFx_XPProgressMenu.XPListDivider
+		[0] Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.glow_bottom
 [4]
-	Resolution: [512 x 64]
+	Resolution: [256 x 64]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.center_hexagon
-		[1] Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.EngagementEventBackground
-		[2] Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.right_hexagon
+		[0] Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.EngagementIcon_Centered_Sheen
 [5]
 	Resolution: [256 x 256]
 	Num Mips: 1
@@ -156,47 +159,53 @@ Texture Allocations Texture Types:
 		[3] Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.DoubleXPIcon_00108
 		[4] Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.DoubleXPIcon_00136
 [6]
-	Resolution: [256 x 64]
+	Resolution: [512 x 4]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.EngagementIcon_Centered_Sheen
+		[0] Texture2D GFx_XPProgressMenu.GFx_XPProgressMenu.XPListDivider
 [7]
-	Resolution: [1024 x 256]
+	Resolution: [512 x 512]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.glow_bottom
+		[0] Texture2D GFx_XPProgressMenu.GFx_XPProgressMenu.RocketPassShieldFreeBG
+		[1] Texture2D GFx_XPProgressMenu.GFx_XPProgressMenu.RocketPassShieldPremiumBG
 [8]
-	Resolution: [700 x 128]
+	Resolution: [256 x 32]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.Overglow_00006
-Test Data Size: 0x00003fa9
+		[0] Texture2D GFx_XPProgressMenu.GFx_XPProgressMenu.Glow_XPFade
+Test Data Size: 0x00003f85
 Compressed Chunk Info:
 	Offset: 0x00000f4f
 	[0]
-		Uncompressed Offset: 0x00000000000011d4
+		Uncompressed Offset: 0x00000000000011e0
 		Uncompressed Size: 0x0016329f
 		Compressed Offset: 0x00000000000051c9
 		Compressed Size: 0x00079023
 	[1]
-		Uncompressed Offset: 0x0000000000164473
+		Uncompressed Offset: 0x000000000016447f
 		Uncompressed Size: 0x001b3f36
 		Compressed Offset: 0x000000000007e1ec
 		Compressed Size: 0x0007d855
 	[2]
-		Uncompressed Offset: 0x00000000003183a9
+		Uncompressed Offset: 0x00000000003183b5
 		Uncompressed Size: 0x000e0458
 		Compressed Offset: 0x00000000000fba41
 		Compressed Size: 0x0005e648
-Last Block Size: 0x00000004
-Base Header Size: 0x00000285
-Encrypted Header Size: 0x00004f40
+	[3]
+		Uncompressed Offset: 0x00000000003f880d
+		Uncompressed Size: 0x00000040
+		Compressed Offset: 0x000000000015a089
+		Compressed Size: 0x0000003c
+Last Block Size: 0x00000008
+Base Header Size: 0x00000291
+Encrypted Header Size: 0x00004f30
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -287,14 +296,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000000011d4 with 0x00000040 Bytes
+	Serialized data: at 0x00000000003f880d with 0x00000040 Bytes
 	Export Flags: 0x00000000
 [Export 1]
 	Full Name: Package GFx_XPProgressMenu.GFx_XPProgressMenu
 	Name: GFx_XPProgressMenu
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000001214 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000001220 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -303,7 +312,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: GFx_XPProgressMenu_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000001220 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000122c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -313,7 +322,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SwfMovie
 	Outer: GFx_XPProgressMenu
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000003183a9 with 0x000e0458 Bytes
+	Serialized data: at 0x00000000003183b5 with 0x000e0458 Bytes
 	Export Flags: 0x00000001
 [Export 4]
 	Full Name: Texture2D GFx_XPProgressMenu.GFx_XPProgressMenu.Glow_XPFade
@@ -321,7 +330,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFx_XPProgressMenu
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000e1683 with 0x00002179 Bytes
+	Serialized data: at 0x00000000000e168f with 0x00002179 Bytes
 	Export Flags: 0x00000001
 [Export 5]
 	Full Name: Texture2D GFx_XPProgressMenu.GFx_XPProgressMenu.RocketPassShieldFreeBG
@@ -329,7 +338,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFx_XPProgressMenu
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000e37fc with 0x00040179 Bytes
+	Serialized data: at 0x00000000000e3808 with 0x00040179 Bytes
 	Export Flags: 0x00000001
 [Export 6]
 	Full Name: Texture2D GFx_XPProgressMenu.GFx_XPProgressMenu.RocketPassShieldPremiumBG
@@ -337,7 +346,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFx_XPProgressMenu
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000123975 with 0x00040179 Bytes
+	Serialized data: at 0x0000000000123981 with 0x00040179 Bytes
 	Export Flags: 0x00000001
 [Export 7]
 	Full Name: Texture2D GFx_XPProgressMenu.GFx_XPProgressMenu.XPListDivider
@@ -345,14 +354,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFx_XPProgressMenu
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000163aee with 0x00000979 Bytes
+	Serialized data: at 0x0000000000163afa with 0x00000979 Bytes
 	Export Flags: 0x00000001
 [Export 8]
 	Full Name: Package GFx_XPProgressMenu.GFX_EngagementIcon
 	Name: GFX_EngagementIcon
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000164467 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000164473 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -362,7 +371,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SwfMovie
 	Outer: GFX_EngagementIcon
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000164473 with 0x000edc93 Bytes
+	Serialized data: at 0x000000000016447f with 0x000edc93 Bytes
 	Export Flags: 0x00000001
 [Export 10]
 	Full Name: Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.center_hexagon
@@ -370,7 +379,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_EngagementIcon
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000252106 with 0x00008179 Bytes
+	Serialized data: at 0x0000000000252112 with 0x00008179 Bytes
 	Export Flags: 0x00000001
 [Export 11]
 	Full Name: Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.DoublePaintIcon_00071
@@ -378,7 +387,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_EngagementIcon
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000025a27f with 0x00010179 Bytes
+	Serialized data: at 0x000000000025a28b with 0x00010179 Bytes
 	Export Flags: 0x00000001
 [Export 12]
 	Full Name: Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.DoublePaintIcon_00101
@@ -386,7 +395,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_EngagementIcon
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000026a3f8 with 0x00010179 Bytes
+	Serialized data: at 0x000000000026a404 with 0x00010179 Bytes
 	Export Flags: 0x00000001
 [Export 13]
 	Full Name: Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.DoublePaintIcon_00190
@@ -394,7 +403,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_EngagementIcon
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000027a571 with 0x00010179 Bytes
+	Serialized data: at 0x000000000027a57d with 0x00010179 Bytes
 	Export Flags: 0x00000001
 [Export 14]
 	Full Name: Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.DoubleXPIcon_00108
@@ -402,7 +411,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_EngagementIcon
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000028a6ea with 0x00010179 Bytes
+	Serialized data: at 0x000000000028a6f6 with 0x00010179 Bytes
 	Export Flags: 0x00000001
 [Export 15]
 	Full Name: Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.DoubleXPIcon_00136
@@ -410,7 +419,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_EngagementIcon
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000029a863 with 0x00010179 Bytes
+	Serialized data: at 0x000000000029a86f with 0x00010179 Bytes
 	Export Flags: 0x00000001
 [Export 16]
 	Full Name: Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.EngagementEventBackground
@@ -418,7 +427,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_EngagementIcon
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000002aa9dc with 0x00008179 Bytes
+	Serialized data: at 0x00000000002aa9e8 with 0x00008179 Bytes
 	Export Flags: 0x00000001
 [Export 17]
 	Full Name: Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.EngagementIcon_Centered_Sheen
@@ -426,7 +435,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_EngagementIcon
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000002b2b55 with 0x00004179 Bytes
+	Serialized data: at 0x00000000002b2b61 with 0x00004179 Bytes
 	Export Flags: 0x00000001
 [Export 18]
 	Full Name: Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.glow_bottom
@@ -434,7 +443,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_EngagementIcon
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000002b6cce with 0x00040179 Bytes
+	Serialized data: at 0x00000000002b6cda with 0x00040179 Bytes
 	Export Flags: 0x00000001
 [Export 19]
 	Full Name: Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.HourglassIcon_00015
@@ -442,7 +451,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_EngagementIcon
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000002f6e47 with 0x00001179 Bytes
+	Serialized data: at 0x00000000002f6e53 with 0x00001179 Bytes
 	Export Flags: 0x00000001
 [Export 20]
 	Full Name: Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.left_chevron
@@ -450,7 +459,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_EngagementIcon
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000002f7fc0 with 0x00001179 Bytes
+	Serialized data: at 0x00000000002f7fcc with 0x00001179 Bytes
 	Export Flags: 0x00000001
 [Export 21]
 	Full Name: Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.Overglow_00006
@@ -458,7 +467,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_EngagementIcon
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000002f9139 with 0x00015f7e Bytes
+	Serialized data: at 0x00000000002f9145 with 0x00015f7e Bytes
 	Export Flags: 0x00000001
 [Export 22]
 	Full Name: Texture2D GFx_XPProgressMenu.GFX_EngagementIcon.right_hexagon
@@ -466,7 +475,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_EngagementIcon
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000030f0b7 with 0x00008179 Bytes
+	Serialized data: at 0x000000000030f0c3 with 0x00008179 Bytes
 	Export Flags: 0x00000001
 [Export 23]
 	Full Name: Texture2D GFx_XPProgressMenu.GFx_XPProgressMenu.Small2XPIcon
@@ -474,7 +483,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFx_XPProgressMenu
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000317230 with 0x00001179 Bytes
+	Serialized data: at 0x000000000031723c with 0x00001179 Bytes
 	Export Flags: 0x00000001
 
 

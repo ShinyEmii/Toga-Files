@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x00004fa5 Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 69 Name Offset: 0x00000215
-Export Count: 21 Export Offset: 0x000009e2
-Import Count: 9 Import Offset: 0x000008e6
-Depends Offset: 0x00000fca
-Import Export Guids Offset: 0x00000fca
+Name Count: 69 Name Offset: 0x00000221
+Export Count: 21 Export Offset: 0x000009ee
+Import Count: 9 Import Offset: 0x000008f2
+Depends Offset: 0x00000fd6
+Import Export Guids Offset: 0x00000fd6
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x83ac67da 0x45e997ab 0xbcd97f8b 0xd0b5a56b
+GUID: 0x22c81319 0x4339bfa5 0x10d507ac 0xd4fe6cf7
 Generations:
 [0]
 	Export Count: 21
@@ -75,6 +75,10 @@ Generations:
 	Export Count: 21
 	Name Count: 69
 	Net Object Count: 0
+[14]
+	Export Count: 21
+	Name Count: 69
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression: ZLIB
@@ -85,12 +89,16 @@ Additional Packages To Cook:
 	Empty
 Texture Allocations Texture Types:
 [0]
-	Resolution: [256 x 64]
+	Resolution: [128 x 32]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Xbox_Bar_DPad_Right
+		[0] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_A
+		[1] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Bumper
+		[2] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Dpad_Down
+		[3] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Stick
+		[4] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Trigger
 [1]
 	Resolution: [128 x 64]
 	Num Mips: 1
@@ -103,13 +111,20 @@ Texture Allocations Texture Types:
 		[3] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Y
 		[4] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Xbox_Bar_DPad_Down
 [2]
-	Resolution: [32 x 32]
+	Resolution: [64 x 32]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Icon_ThumbStick
+		[0] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Straight
 [3]
+	Resolution: [64 x 64]
+	Num Mips: 1
+	Format: DXT5
+	Flags: 0
+	Exports:
+		[0] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_XB1_LeftStick
+[4]
 	Resolution: [1024 x 512]
 	Num Mips: 1
 	Format: DXT5
@@ -118,52 +133,46 @@ Texture Allocations Texture Types:
 		[0] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Controller_PS4
 		[1] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Controller_Xbox
 		[2] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Controller_XboxOne
-[4]
-	Resolution: [64 x 64]
-	Num Mips: 1
-	Format: DXT5
-	Flags: 0
-	Exports:
-		[0] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_XB1_LeftStick
 [5]
-	Resolution: [128 x 32]
+	Resolution: [32 x 32]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_A
-		[1] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Bumper
-		[2] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Dpad_Down
-		[3] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Stick
-		[4] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Trigger
+		[0] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Icon_ThumbStick
 [6]
-	Resolution: [64 x 32]
+	Resolution: [256 x 64]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Straight
-Test Data Size: 0x00003f8f
+		[0] Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Xbox_Bar_DPad_Right
+Test Data Size: 0x00003f6b
 Compressed Chunk Info:
 	Offset: 0x00000db5
 	[0]
-		Uncompressed Offset: 0x0000000000000fca
+		Uncompressed Offset: 0x0000000000000fd6
 		Uncompressed Size: 0x001f34c6
 		Compressed Offset: 0x0000000000004fa5
 		Compressed Size: 0x0008b984
 	[1]
-		Uncompressed Offset: 0x00000000001f4490
+		Uncompressed Offset: 0x00000000001f449c
 		Uncompressed Size: 0x000869e4
 		Compressed Offset: 0x0000000000090929
 		Compressed Size: 0x000120d7
 	[2]
-		Uncompressed Offset: 0x000000000027ae74
+		Uncompressed Offset: 0x000000000027ae80
 		Uncompressed Size: 0x000f0dd1
 		Compressed Offset: 0x00000000000a2a00
 		Compressed Size: 0x00064cec
-Last Block Size: 0x00000000
-Base Header Size: 0x00000215
-Encrypted Header Size: 0x00004d90
+	[3]
+		Uncompressed Offset: 0x000000000036bc51
+		Uncompressed Size: 0x00000070
+		Compressed Offset: 0x00000000001076ec
+		Compressed Size: 0x00000055
+Last Block Size: 0x00000004
+Base Header Size: 0x00000221
+Encrypted Header Size: 0x00004d80
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -250,14 +259,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000000fca with 0x00000070 Bytes
+	Serialized data: at 0x000000000036bc51 with 0x00000070 Bytes
 	Export Flags: 0x00000000
 [Export 1]
 	Full Name: Package GFX_ControllerLayout.GFX_ControllerLayout
 	Name: GFX_ControllerLayout
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000103a with 0x0000000c Bytes
+	Serialized data: at 0x0000000000001046 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -266,7 +275,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: GFX_ControllerLayout_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000001046 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000001052 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -276,7 +285,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SwfMovie
 	Outer: GFX_ControllerLayout
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000027ae74 with 0x000f0dd1 Bytes
+	Serialized data: at 0x000000000027ae80 with 0x000f0dd1 Bytes
 	Export Flags: 0x00000001
 [Export 4]
 	Full Name: Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_A
@@ -284,7 +293,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_ControllerLayout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000e4966 with 0x00001179 Bytes
+	Serialized data: at 0x00000000000e4972 with 0x00001179 Bytes
 	Export Flags: 0x00000001
 [Export 5]
 	Full Name: Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Bumper
@@ -292,7 +301,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_ControllerLayout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000e5adf with 0x00001179 Bytes
+	Serialized data: at 0x00000000000e5aeb with 0x00001179 Bytes
 	Export Flags: 0x00000001
 [Export 6]
 	Full Name: Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Dpad_Down
@@ -300,7 +309,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_ControllerLayout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000e6c58 with 0x00001179 Bytes
+	Serialized data: at 0x00000000000e6c64 with 0x00001179 Bytes
 	Export Flags: 0x00000001
 [Export 7]
 	Full Name: Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Dpad_Right
@@ -308,7 +317,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_ControllerLayout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000e7dd1 with 0x0000217e Bytes
+	Serialized data: at 0x00000000000e7ddd with 0x0000217e Bytes
 	Export Flags: 0x00000001
 [Export 8]
 	Full Name: Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Dpad_Up
@@ -316,7 +325,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_ControllerLayout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000e9f4f with 0x00002179 Bytes
+	Serialized data: at 0x00000000000e9f5b with 0x00002179 Bytes
 	Export Flags: 0x00000001
 [Export 9]
 	Full Name: Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Stick
@@ -324,7 +333,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_ControllerLayout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000ec0c8 with 0x00001179 Bytes
+	Serialized data: at 0x00000000000ec0d4 with 0x00001179 Bytes
 	Export Flags: 0x00000001
 [Export 10]
 	Full Name: Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Straight
@@ -332,7 +341,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_ControllerLayout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000ed241 with 0x00000979 Bytes
+	Serialized data: at 0x00000000000ed24d with 0x00000979 Bytes
 	Export Flags: 0x00000001
 [Export 11]
 	Full Name: Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Trigger
@@ -340,7 +349,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_ControllerLayout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000edbba with 0x00001179 Bytes
+	Serialized data: at 0x00000000000edbc6 with 0x00001179 Bytes
 	Export Flags: 0x00000001
 [Export 12]
 	Full Name: Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_X
@@ -348,7 +357,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_ControllerLayout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000eed33 with 0x00002179 Bytes
+	Serialized data: at 0x00000000000eed3f with 0x00002179 Bytes
 	Export Flags: 0x00000001
 [Export 13]
 	Full Name: Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_XB1_LeftStick
@@ -356,7 +365,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_ControllerLayout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000f0eac with 0x00001179 Bytes
+	Serialized data: at 0x00000000000f0eb8 with 0x00001179 Bytes
 	Export Flags: 0x00000001
 [Export 14]
 	Full Name: Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Bar_Y
@@ -364,7 +373,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_ControllerLayout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000f2025 with 0x00002179 Bytes
+	Serialized data: at 0x00000000000f2031 with 0x00002179 Bytes
 	Export Flags: 0x00000001
 [Export 15]
 	Full Name: Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Controller_PS4
@@ -372,7 +381,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_ControllerLayout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000f419e with 0x00080179 Bytes
+	Serialized data: at 0x00000000000f41aa with 0x00080179 Bytes
 	Export Flags: 0x00000001
 [Export 16]
 	Full Name: Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Controller_Xbox
@@ -380,7 +389,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_ControllerLayout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000174317 with 0x00080179 Bytes
+	Serialized data: at 0x0000000000174323 with 0x00080179 Bytes
 	Export Flags: 0x00000001
 [Export 17]
 	Full Name: Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Controller_XboxOne
@@ -388,7 +397,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_ControllerLayout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000001f4490 with 0x00080179 Bytes
+	Serialized data: at 0x00000000001f449c with 0x00080179 Bytes
 	Export Flags: 0x00000001
 [Export 18]
 	Full Name: Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Icon_ThumbStick
@@ -396,7 +405,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_ControllerLayout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000274609 with 0x00000579 Bytes
+	Serialized data: at 0x0000000000274615 with 0x00000579 Bytes
 	Export Flags: 0x00000001
 [Export 19]
 	Full Name: Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Xbox_Bar_DPad_Down
@@ -404,7 +413,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_ControllerLayout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000274b82 with 0x00002179 Bytes
+	Serialized data: at 0x0000000000274b8e with 0x00002179 Bytes
 	Export Flags: 0x00000001
 [Export 20]
 	Full Name: Texture2D GFX_ControllerLayout.GFX_ControllerLayout.Xbox_Bar_DPad_Right
@@ -412,7 +421,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_ControllerLayout
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000276cfb with 0x00004179 Bytes
+	Serialized data: at 0x0000000000276d07 with 0x00004179 Bytes
 	Export Flags: 0x00000001
 
 

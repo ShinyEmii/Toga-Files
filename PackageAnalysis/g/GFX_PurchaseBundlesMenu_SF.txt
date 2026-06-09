@@ -9,15 +9,15 @@ Licensee Version: 32
 Total Header Size: 0x00004e2d Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 56 Name Offset: 0x000001b9
-Export Count: 21 Export Offset: 0x00000844
-Import Count: 9 Import Offset: 0x00000748
-Depends Offset: 0x00000e2c
-Import Export Guids Offset: 0x00000e2c
+Name Count: 56 Name Offset: 0x000001c5
+Export Count: 21 Export Offset: 0x00000850
+Import Count: 9 Import Offset: 0x00000754
+Depends Offset: 0x00000e38
+Import Export Guids Offset: 0x00000e38
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0xaf449bf8 0x48362117 0xdd43f699 0x961d1ced
+GUID: 0xc4a68205 0x496c120c 0xe0ab099c 0x50dcc0f6
 Generations:
 [0]
 	Export Count: 20
@@ -95,6 +95,10 @@ Generations:
 	Export Count: 21
 	Name Count: 56
 	Net Object Count: 0
+[19]
+	Export Count: 21
+	Name Count: 56
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression: ZLIB
@@ -105,12 +109,12 @@ Additional Packages To Cook:
 	Empty
 Texture Allocations Texture Types:
 [0]
-	Resolution: [256 x 256]
+	Resolution: [256 x 512]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFX_PurchaseBundlesMenu.GFX_PurchaseBundlesMenu.BundleButtonBG
+		[0] Texture2D GFX_PurchaseBundlesMenu.GFX_PurchaseBundlesMenu.PurchaseKeyBackground
 [1]
 	Resolution: [1024 x 512]
 	Num Mips: 1
@@ -119,28 +123,33 @@ Texture Allocations Texture Types:
 	Exports:
 		[0] Texture2D GFX_PurchaseBundlesMenu.GFX_PurchaseBundlesMenu.CreditBG
 [2]
-	Resolution: [256 x 512]
+	Resolution: [256 x 256]
 	Num Mips: 1
 	Format: DXT5
 	Flags: 0
 	Exports:
-		[0] Texture2D GFX_PurchaseBundlesMenu.GFX_PurchaseBundlesMenu.PurchaseKeyBackground
-Test Data Size: 0x00003fcd
+		[0] Texture2D GFX_PurchaseBundlesMenu.GFX_PurchaseBundlesMenu.BundleButtonBG
+Test Data Size: 0x00003fa9
 Compressed Chunk Info:
 	Offset: 0x00000c73
 	[0]
-		Uncompressed Offset: 0x0000000000000e2c
+		Uncompressed Offset: 0x0000000000000e38
 		Uncompressed Size: 0x0018b832
 		Compressed Offset: 0x0000000000004e2d
 		Compressed Size: 0x00090ae5
 	[1]
-		Uncompressed Offset: 0x000000000018c65e
+		Uncompressed Offset: 0x000000000018c66a
 		Uncompressed Size: 0x0017ba57
 		Compressed Offset: 0x0000000000095912
 		Compressed Size: 0x0008a5e3
-Last Block Size: 0x00000004
-Base Header Size: 0x000001b9
-Encrypted Header Size: 0x00004c70
+	[2]
+		Uncompressed Offset: 0x00000000003080c1
+		Uncompressed Size: 0x00000038
+		Compressed Offset: 0x000000000011fef5
+		Compressed Size: 0x00000035
+Last Block Size: 0x00000008
+Base Header Size: 0x000001c5
+Encrypted Header Size: 0x00004c60
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -214,14 +223,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000000e2c with 0x00000038 Bytes
+	Serialized data: at 0x00000000003080c1 with 0x00000038 Bytes
 	Export Flags: 0x00000000
 [Export 1]
 	Full Name: Package GFX_PurchaseBundlesMenu.GFX_PurchaseBundlesMenu
 	Name: GFX_PurchaseBundlesMenu
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000000e64 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000000e70 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -230,7 +239,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: GFX_PurchaseBundlesMenu_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000000e70 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000000e7c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -240,7 +249,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: SwfMovie
 	Outer: GFX_PurchaseBundlesMenu
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000018c65e with 0x000db765 Bytes
+	Serialized data: at 0x000000000018c66a with 0x000db765 Bytes
 	Export Flags: 0x00000001
 [Export 5]
 	Full Name: Texture2D GFX_PurchaseBundlesMenu.GFX_PurchaseBundlesMenu.CreditBG
@@ -248,7 +257,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PurchaseBundlesMenu
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000267dc3 with 0x00080179 Bytes
+	Serialized data: at 0x0000000000267dcf with 0x00080179 Bytes
 	Export Flags: 0x00000001
 [Export 19]
 	Full Name: Texture2D GFX_PurchaseBundlesMenu.GFX_PurchaseBundlesMenu.PurchaseKeyBackground
@@ -256,7 +265,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PurchaseBundlesMenu
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000002e7f3c with 0x00020179 Bytes
+	Serialized data: at 0x00000000002e7f48 with 0x00020179 Bytes
 	Export Flags: 0x00000001
 [Export 20]
 	Full Name: Texture2D GFX_PurchaseBundlesMenu.GFX_PurchaseBundlesMenu.BundleButtonBG
@@ -264,7 +273,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: GFX_PurchaseBundlesMenu
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000017c4e5 with 0x00010179 Bytes
+	Serialized data: at 0x000000000017c4f1 with 0x00010179 Bytes
 	Export Flags: 0x00000001
 
 
