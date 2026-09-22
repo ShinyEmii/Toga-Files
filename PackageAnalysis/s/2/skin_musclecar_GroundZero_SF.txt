@@ -5,19 +5,19 @@
 
 Tag: 9e2a83c1
 File Version: 868
-Licensee Version: 33
+Licensee Version: 34
 Total Header Size: 0x00006f01 Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 245 Name Offset: 0x00000349
-Export Count: 113 Export Offset: 0x000024d2
-Import Count: 58 Import Offset: 0x00001e7a
-Depends Offset: 0x0000449a
-Import Export Guids Offset: 0x0000449a
+Name Count: 253 Name Offset: 0x00000355
+Export Count: 115 Export Offset: 0x000025b9
+Import Count: 60 Import Offset: 0x00001f29
+Depends Offset: 0x00004611
+Import Export Guids Offset: 0x00004611
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x4867c633 0x4b512095 0x328ba098 0x423753a6
+GUID: 0xa211a54a 0x422d8f44 0xb7ae71b5 0x40f1a777
 Generations:
 [0]
 	Export Count: 51
@@ -199,6 +199,10 @@ Generations:
 	Export Count: 113
 	Name Count: 245
 	Net Object Count: 0
+[45]
+	Export Count: 115
+	Name Count: 253
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression: ZLIB
@@ -248,52 +252,57 @@ Texture Allocations Texture Types:
 	Flags: 0
 	Exports:
 		[0] Texture2D Mat.blank_normal
-Test Data Size: 0x00002943
+Test Data Size: 0x000027a8
 Compressed Chunk Info:
-	Offset: 0x00004151
+	Offset: 0x000042bc
 	[0]
-		Uncompressed Offset: 0x000000000000449a
+		Uncompressed Offset: 0x0000000000004611
 		Uncompressed Size: 0x00117151
 		Compressed Offset: 0x0000000000006f01
 		Compressed Size: 0x00042831
 	[1]
-		Uncompressed Offset: 0x000000000011b5eb
+		Uncompressed Offset: 0x000000000011b762
 		Uncompressed Size: 0x000031ea
 		Compressed Offset: 0x0000000000049732
 		Compressed Size: 0x000006c2
 	[2]
-		Uncompressed Offset: 0x000000000011e7d5
+		Uncompressed Offset: 0x000000000011e94c
 		Uncompressed Size: 0x00000f6f
 		Compressed Offset: 0x0000000000049df4
 		Compressed Size: 0x00000319
 	[3]
-		Uncompressed Offset: 0x000000000011f744
+		Uncompressed Offset: 0x000000000011f8bb
 		Uncompressed Size: 0x00001e34
 		Compressed Offset: 0x000000000004a10d
 		Compressed Size: 0x0000066d
 	[4]
-		Uncompressed Offset: 0x0000000000121578
+		Uncompressed Offset: 0x00000000001216ef
 		Uncompressed Size: 0x00000cc0
 		Compressed Offset: 0x000000000004a77a
 		Compressed Size: 0x000002b4
 	[5]
-		Uncompressed Offset: 0x0000000000122238
+		Uncompressed Offset: 0x00000000001223af
 		Uncompressed Size: 0x00001536
 		Compressed Offset: 0x000000000004aa2e
 		Compressed Size: 0x00000408
 	[6]
-		Uncompressed Offset: 0x000000000012376e
+		Uncompressed Offset: 0x00000000001238e5
 		Uncompressed Size: 0x00008645
 		Compressed Offset: 0x000000000004ae36
 		Compressed Size: 0x000041bc
 	[7]
-		Uncompressed Offset: 0x000000000012bdb3
+		Uncompressed Offset: 0x000000000012bf2a
 		Uncompressed Size: 0x000009ef
 		Compressed Offset: 0x000000000004eff2
 		Compressed Size: 0x0000029a
-Last Block Size: 0x00000008
-Base Header Size: 0x00000349
-Encrypted Header Size: 0x00006bb0
+	[8]
+		Uncompressed Offset: 0x000000000012c919
+		Uncompressed Size: 0x00000537
+		Compressed Offset: 0x000000000004f28c
+		Compressed Size: 0x00000136
+Last Block Size: 0x0000000c
+Base Header Size: 0x00000355
+Encrypted Header Size: 0x00006ba0
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 
@@ -546,6 +555,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 [Name 242] [0x0007001000000000] TrimEmissive
 [Name 243] [0x0007001000000000] Use AO
 [Name 244] [0x0007001000000000] Vehicle_Parent_Materials02
+[Name 245] [0x0007001000000000] Blank_N
+[Name 246] [0x0007001000000000] Detail_Blank
+[Name 247] [0x0007001000000000] Mask
+[Name 248] [0x0007001000000000] MaskB
+[Name 249] [0x0007001000000000] MaskG
+[Name 250] [0x0007001000000000] MaskR
+[Name 251] [0x0007001000000000] NormalMap
+[Name 252] [0x0007001000000000] UseNormalMap
 
 
     ~ Exports ~ 
@@ -557,7 +574,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Material
 	Outer: Vehicle_Parent_Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000121578 with 0x0000085f Bytes
+	Serialized data: at 0x00000000001216ef with 0x0000085f Bytes
 	Export Flags: 0x00000001
 [Export 7]
 	Full Name: MaterialExpressionScalarParameter skin_musclecar_GroundZero.Vehicle_Parent_Materials.MAT_Esport_BodyDiffuse_Parent.MaterialExpressionScalarParameter_3
@@ -565,7 +582,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Esport_BodyDiffuse_Parent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000053f7 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000556e with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 9]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_musclecar_GroundZero.Vehicle_Parent_Materials.MAT_Esport_BodyDiffuse_Parent.MaterialExpressionStaticSwitchParameter_117
@@ -573,7 +590,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Esport_BodyDiffuse_Parent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000055ab with 0x00000120 Bytes
+	Serialized data: at 0x0000000000005722 with 0x00000120 Bytes
 	Export Flags: 0x00000001
 [Export 10]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_musclecar_GroundZero.Vehicle_Parent_Materials.MAT_Esport_BodyDiffuse_Parent.MaterialExpressionStaticSwitchParameter_124
@@ -581,7 +598,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Esport_BodyDiffuse_Parent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000056cb with 0x00000139 Bytes
+	Serialized data: at 0x0000000000005842 with 0x00000139 Bytes
 	Export Flags: 0x00000001
 [Export 11]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_musclecar_GroundZero.Vehicle_Parent_Materials.MAT_Esport_BodyDiffuse_Parent.MaterialExpressionStaticSwitchParameter_2
@@ -589,7 +606,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Esport_BodyDiffuse_Parent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000005804 with 0x00000155 Bytes
+	Serialized data: at 0x000000000000597b with 0x00000155 Bytes
 	Export Flags: 0x00000001
 [Export 15]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_musclecar_GroundZero.Vehicle_Parent_Materials.MAT_Esport_BodyDiffuse_Parent.MaterialExpressionTextureSampleParameter2D_37
@@ -597,7 +614,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Esport_BodyDiffuse_Parent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000120451 with 0x000000cd Bytes
+	Serialized data: at 0x00000000001205c8 with 0x000000cd Bytes
 	Export Flags: 0x00000001
 [Export 16]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_musclecar_GroundZero.Vehicle_Parent_Materials.MAT_Esport_BodyDiffuse_Parent.MaterialExpressionTextureSampleParameter2D_42
@@ -605,7 +622,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Esport_BodyDiffuse_Parent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000012051e with 0x000000cd Bytes
+	Serialized data: at 0x0000000000120695 with 0x000000cd Bytes
 	Export Flags: 0x00000001
 [Export 17]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_musclecar_GroundZero.Vehicle_Parent_Materials.MAT_Esport_BodyDiffuse_Parent.MaterialExpressionTextureSampleParameter2D_5
@@ -613,7 +630,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Esport_BodyDiffuse_Parent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000005d6e with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000005ee5 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 22]
 	Full Name: MaterialExpressionVectorParameter skin_musclecar_GroundZero.Vehicle_Parent_Materials.MAT_Esport_BodyDiffuse_Parent.MaterialExpressionVectorParameter_1
@@ -621,7 +638,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Esport_BodyDiffuse_Parent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006122 with 0x00000118 Bytes
+	Serialized data: at 0x0000000000006299 with 0x00000118 Bytes
 	Export Flags: 0x00000001
 [Export 24]
 	Full Name: MaterialInstanceConstant skin_musclecar_GroundZero.skin_musclecar_GroundZero.MIC_MuscleCar_GroundZero_HM
@@ -629,21 +646,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialInstanceConstant
 	Outer: skin_musclecar_GroundZero
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000012376e with 0x00000461 Bytes
+	Serialized data: at 0x00000000001238e5 with 0x00000461 Bytes
 	Export Flags: 0x00000001
 [Export 26]
 	Full Name: ObjectReferencer skin_musclecar_GroundZero.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000006d00 with 0x0000002c Bytes
+	Serialized data: at 0x0000000000006e77 with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [Export 28]
 	Full Name: Package skin_musclecar_GroundZero.Body_MuscleCar
 	Name: Body_MuscleCar
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000006d38 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000006eaf with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -652,7 +669,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: SARB2_Test02
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000006d5c with 0x0000000c Bytes
+	Serialized data: at 0x0000000000006ed3 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -662,14 +679,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: SARB2_Test02
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000006d68 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000006edf with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 33]
 	Full Name: Package skin_musclecar_GroundZero.skin_musclecar_GroundZero
 	Name: skin_musclecar_GroundZero
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000006d74 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000006eeb with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -678,7 +695,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: skin_musclecar_GroundZero_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000006d80 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000006ef7 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -687,7 +704,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Vehicle_Parent_Materials
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000006d98 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000006f0f with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -696,7 +713,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Vehicle_Parent_Textures
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000006da4 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000006f1b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -707,7 +724,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Outer: skin_musclecar_GroundZero
 	Archetype: ProductAsset_Skin_TA_0
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000012bdb3 with 0x00000416 Bytes
+	Serialized data: at 0x000000000012bf2a with 0x00000416 Bytes
 	Export Flags: 0x00000001
 [Export 39]
 	Full Name: ProductAssetReferenceBody_TA skin_musclecar_GroundZero.skin_musclecar_GroundZero.skin_musclecar_GroundZero.ProductAssetReferenceBody_TA_0
@@ -715,7 +732,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductAssetReferenceBody_TA
 	Outer: skin_musclecar_GroundZero
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000070a2 with 0x00000028 Bytes
+	Serialized data: at 0x0000000000007219 with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [Export 41]
 	Full Name: Texture2D skin_musclecar_GroundZero.Body_MuscleCar.MuscleCar_Chassis_D
@@ -723,7 +740,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Body_MuscleCar
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000071e4 with 0x00000d10 Bytes
+	Serialized data: at 0x000000000000735b with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [Export 42]
 	Full Name: Texture2D skin_musclecar_GroundZero.Body_MuscleCar.MuscleCar_Chassis_N
@@ -731,7 +748,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Body_MuscleCar
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000007ef4 with 0x0000185d Bytes
+	Serialized data: at 0x000000000000806b with 0x0000185d Bytes
 	Export Flags: 0x00000001
 [Export 43]
 	Full Name: Texture2D skin_musclecar_GroundZero.Body_MuscleCar.MuscleCar_Chassis_RGB
@@ -739,7 +756,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Body_MuscleCar
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000009751 with 0x000017c8 Bytes
+	Serialized data: at 0x00000000000098c8 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [Export 47]
 	Full Name: Texture2D Mat.blank_normal
@@ -747,7 +764,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Mat
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000ec76 with 0x00000d95 Bytes
+	Serialized data: at 0x000000000000eded with 0x00000d95 Bytes
 	Export Flags: 0x00000001
 [Export 48]
 	Full Name: Texture2D skin_musclecar_GroundZero.skin_musclecar_GroundZero.Skin_Dominus_GroundZero_Home_Diffuse
@@ -755,7 +772,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: skin_musclecar_GroundZero
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000fa0b with 0x000017c8 Bytes
+	Serialized data: at 0x000000000000fb82 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [Export 50]
 	Full Name: Texture2D skin_musclecar_GroundZero.Vehicle_Parent_Textures.BlankSkin
@@ -763,7 +780,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Vehicle_Parent_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000051397 with 0x00001758 Bytes
+	Serialized data: at 0x000000000005150e with 0x00001758 Bytes
 	Export Flags: 0x00000001
 [Export 52]
 	Full Name: Texture2D skin_musclecar_GroundZero.Body_MuscleCar.MuscleCar_BlankSkin
@@ -771,7 +788,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Body_MuscleCar
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000052b97 with 0x000017c8 Bytes
+	Serialized data: at 0x0000000000052d0e with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [Export 53]
 	Full Name: Texture2D skin_musclecar_GroundZero.Body_MuscleCar.MuscleCar_Body_D
@@ -779,7 +796,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Body_MuscleCar
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000005435f with 0x000017c8 Bytes
+	Serialized data: at 0x00000000000544d6 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [Export 67]
 	Full Name: MaterialExpressionScalarParameter skin_musclecar_GroundZero.Vehicle_Parent_Materials.MAT_Esport_BodyDiffuse_Parent.MaterialExpressionScalarParameter_11
@@ -787,7 +804,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Esport_BodyDiffuse_Parent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000011c2ff with 0x000000b4 Bytes
+	Serialized data: at 0x000000000011c476 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 68]
 	Full Name: MaterialExpressionScalarParameter skin_musclecar_GroundZero.Vehicle_Parent_Materials.MAT_Esport_BodyDiffuse_Parent.MaterialExpressionScalarParameter_12
@@ -795,7 +812,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Esport_BodyDiffuse_Parent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000011c3b3 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000011c52a with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 69]
 	Full Name: MaterialExpressionTextureObjectParameter skin_musclecar_GroundZero.Vehicle_Parent_Materials.MAT_Esport_BodyDiffuse_Parent.MaterialExpressionTextureObjectParameter_4
@@ -803,7 +820,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureObjectParameter
 	Outer: MAT_Esport_BodyDiffuse_Parent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000012138f with 0x00000135 Bytes
+	Serialized data: at 0x0000000000121506 with 0x00000135 Bytes
 	Export Flags: 0x00000001
 [Export 70]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_musclecar_GroundZero.Vehicle_Parent_Materials.MAT_Esport_BodyDiffuse_Parent.MaterialExpressionTextureSampleParameter2D_6
@@ -811,7 +828,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Esport_BodyDiffuse_Parent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000001214c4 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000012163b with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 71]
 	Full Name: MaterialExpressionVectorParameter skin_musclecar_GroundZero.Vehicle_Parent_Materials.MAT_Esport_BodyDiffuse_Parent.MaterialExpressionVectorParameter_19
@@ -819,7 +836,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Esport_BodyDiffuse_Parent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000011c650 with 0x00000145 Bytes
+	Serialized data: at 0x000000000011c7c7 with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 72]
 	Full Name: MaterialExpressionVectorParameter skin_musclecar_GroundZero.Vehicle_Parent_Materials.MAT_Esport_BodyDiffuse_Parent.MaterialExpressionVectorParameter_20
@@ -827,7 +844,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Esport_BodyDiffuse_Parent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000011c795 with 0x0000012c Bytes
+	Serialized data: at 0x000000000011c90c with 0x0000012c Bytes
 	Export Flags: 0x00000001
 [Export 73]
 	Full Name: MaterialExpressionVectorParameter skin_musclecar_GroundZero.Vehicle_Parent_Materials.MAT_Esport_BodyDiffuse_Parent.MaterialExpressionVectorParameter_21
@@ -835,7 +852,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Esport_BodyDiffuse_Parent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000011c8c1 with 0x00000114 Bytes
+	Serialized data: at 0x000000000011ca38 with 0x00000114 Bytes
 	Export Flags: 0x00000001
 [Export 74]
 	Full Name: MaterialExpressionVectorParameter skin_musclecar_GroundZero.Vehicle_Parent_Materials.MAT_Esport_BodyDiffuse_Parent.MaterialExpressionVectorParameter_22
@@ -843,7 +860,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Esport_BodyDiffuse_Parent
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000011c9d5 with 0x000000c8 Bytes
+	Serialized data: at 0x000000000011cb4c with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 81]
 	Full Name: Material skin_musclecar_GroundZero.Body_MuscleCar.MAT_BANDAID_Chassis_Paintable
@@ -851,7 +868,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Material
 	Outer: Body_MuscleCar
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000123fe5 with 0x000004de Bytes
+	Serialized data: at 0x000000000012415c with 0x000004de Bytes
 	Export Flags: 0x00000001
 [Export 82]
 	Full Name: MaterialExpressionScalarParameter skin_musclecar_GroundZero.Body_MuscleCar.MAT_BANDAID_Chassis_Paintable.MaterialExpressionScalarParameter_0
@@ -859,7 +876,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_BANDAID_Chassis_Paintable
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000122d67 with 0x000000c6 Bytes
+	Serialized data: at 0x0000000000122ede with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [Export 83]
 	Full Name: MaterialExpressionScalarParameter skin_musclecar_GroundZero.Body_MuscleCar.MAT_BANDAID_Chassis_Paintable.MaterialExpressionScalarParameter_1
@@ -867,7 +884,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_BANDAID_Chassis_Paintable
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000122e2d with 0x00000098 Bytes
+	Serialized data: at 0x0000000000122fa4 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [Export 84]
 	Full Name: MaterialExpressionScalarParameter skin_musclecar_GroundZero.Body_MuscleCar.MAT_BANDAID_Chassis_Paintable.MaterialExpressionScalarParameter_2
@@ -875,7 +892,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_BANDAID_Chassis_Paintable
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000122ec5 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000012303c with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 85]
 	Full Name: MaterialExpressionScalarParameter skin_musclecar_GroundZero.Body_MuscleCar.MAT_BANDAID_Chassis_Paintable.MaterialExpressionScalarParameter_3
@@ -883,7 +900,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_BANDAID_Chassis_Paintable
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000122f79 with 0x000000b4 Bytes
+	Serialized data: at 0x00000000001230f0 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 86]
 	Full Name: MaterialExpressionScalarParameter skin_musclecar_GroundZero.Body_MuscleCar.MAT_BANDAID_Chassis_Paintable.MaterialExpressionScalarParameter_9
@@ -891,7 +908,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_BANDAID_Chassis_Paintable
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000012302d with 0x000000c6 Bytes
+	Serialized data: at 0x00000000001231a4 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [Export 87]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_musclecar_GroundZero.Body_MuscleCar.MAT_BANDAID_Chassis_Paintable.MaterialExpressionStaticSwitchParameter_1
@@ -899,7 +916,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_BANDAID_Chassis_Paintable
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000001230f3 with 0x00000100 Bytes
+	Serialized data: at 0x000000000012326a with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 88]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_musclecar_GroundZero.Body_MuscleCar.MAT_BANDAID_Chassis_Paintable.MaterialExpressionTextureSampleParameter2D_0
@@ -907,7 +924,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_BANDAID_Chassis_Paintable
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000001231f3 with 0x000000d6 Bytes
+	Serialized data: at 0x000000000012336a with 0x000000d6 Bytes
 	Export Flags: 0x00000001
 [Export 89]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_musclecar_GroundZero.Body_MuscleCar.MAT_BANDAID_Chassis_Paintable.MaterialExpressionTextureSampleParameter2D_1
@@ -915,7 +932,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_BANDAID_Chassis_Paintable
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000001232c9 with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000123440 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [Export 90]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_musclecar_GroundZero.Body_MuscleCar.MAT_BANDAID_Chassis_Paintable.MaterialExpressionTextureSampleParameter2D_2
@@ -923,7 +940,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_BANDAID_Chassis_Paintable
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000001233a1 with 0x000000cd Bytes
+	Serialized data: at 0x0000000000123518 with 0x000000cd Bytes
 	Export Flags: 0x00000001
 [Export 91]
 	Full Name: MaterialExpressionVectorParameter skin_musclecar_GroundZero.Body_MuscleCar.MAT_BANDAID_Chassis_Paintable.MaterialExpressionVectorParameter_0
@@ -931,7 +948,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_BANDAID_Chassis_Paintable
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000012346e with 0x000000c8 Bytes
+	Serialized data: at 0x00000000001235e5 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 92]
 	Full Name: MaterialExpressionVectorParameter skin_musclecar_GroundZero.Body_MuscleCar.MAT_BANDAID_Chassis_Paintable.MaterialExpressionVectorParameter_1
@@ -939,7 +956,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_BANDAID_Chassis_Paintable
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000123536 with 0x000000c8 Bytes
+	Serialized data: at 0x00000000001236ad with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 93]
 	Full Name: MaterialExpressionVectorParameter skin_musclecar_GroundZero.Body_MuscleCar.MAT_BANDAID_Chassis_Paintable.MaterialExpressionVectorParameter_2
@@ -947,7 +964,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_BANDAID_Chassis_Paintable
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000001235fe with 0x000000c8 Bytes
+	Serialized data: at 0x0000000000123775 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 94]
 	Full Name: MaterialExpressionVectorParameter skin_musclecar_GroundZero.Body_MuscleCar.MAT_BANDAID_Chassis_Paintable.MaterialExpressionVectorParameter_3
@@ -955,7 +972,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_BANDAID_Chassis_Paintable
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000001244c3 with 0x000000a8 Bytes
+	Serialized data: at 0x000000000012463a with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 95]
 	Full Name: Material skin_musclecar_GroundZero.Vehicle_Parent_Materials02.MAT_Vehicle_Trim_Base
@@ -963,7 +980,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Material
 	Outer: Vehicle_Parent_Materials02
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000012456b with 0x000002e3 Bytes
+	Serialized data: at 0x000000000012c919 with 0x00000333 Bytes
 	Export Flags: 0x00000001
 [Export 96]
 	Full Name: Material skin_musclecar_GroundZero.Vehicle_Parent_Materials02.MAT_Vehicle_Windshield_Base
@@ -971,7 +988,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Material
 	Outer: Vehicle_Parent_Materials02
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000012484e with 0x00000645 Bytes
+	Serialized data: at 0x00000000001249c5 with 0x00000645 Bytes
 	Export Flags: 0x00000001
 [Export 97]
 	Full Name: MaterialExpressionScalarParameter skin_musclecar_GroundZero.Body_MuscleCar.MAT_BANDAID_Chassis_Paintable.MaterialExpressionScalarParameter_4
@@ -979,7 +996,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_BANDAID_Chassis_Paintable
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000124e93 with 0x00000078 Bytes
+	Serialized data: at 0x000000000012500a with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 98]
 	Full Name: MaterialExpressionScalarParameter skin_musclecar_GroundZero.Vehicle_Parent_Materials02.MAT_Vehicle_Trim_Base.MaterialExpressionScalarParameter_5
@@ -987,7 +1004,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Vehicle_Trim_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000124f0b with 0x00000078 Bytes
+	Serialized data: at 0x0000000000125082 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 99]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_musclecar_GroundZero.Vehicle_Parent_Materials02.MAT_Vehicle_Windshield_Base.MaterialExpressionStaticSwitchParameter_0
@@ -995,7 +1012,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Vehicle_Windshield_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000124f83 with 0x00000100 Bytes
+	Serialized data: at 0x00000000001250fa with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 100]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_musclecar_GroundZero.Vehicle_Parent_Materials02.MAT_Vehicle_Windshield_Base.MaterialExpressionStaticSwitchParameter_6
@@ -1003,7 +1020,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Vehicle_Windshield_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000125083 with 0x00000196 Bytes
+	Serialized data: at 0x00000000001251fa with 0x00000196 Bytes
 	Export Flags: 0x00000001
 [Export 101]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_musclecar_GroundZero.Vehicle_Parent_Materials02.MAT_Vehicle_Trim_Base.MaterialExpressionTextureSampleParameter2D_0
@@ -1011,7 +1028,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Vehicle_Trim_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000125219 with 0x000000d5 Bytes
+	Serialized data: at 0x0000000000125390 with 0x000000d5 Bytes
 	Export Flags: 0x00000001
 [Export 102]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_musclecar_GroundZero.Vehicle_Parent_Materials02.MAT_Vehicle_Windshield_Base.MaterialExpressionTextureSampleParameter2D_1
@@ -1019,7 +1036,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Vehicle_Windshield_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000001252ee with 0x000000ce Bytes
+	Serialized data: at 0x0000000000125465 with 0x000000ce Bytes
 	Export Flags: 0x00000001
 [Export 103]
 	Full Name: MaterialExpressionVectorParameter skin_musclecar_GroundZero.Vehicle_Parent_Materials02.MAT_Vehicle_Trim_Base.MaterialExpressionVectorParameter_3
@@ -1027,7 +1044,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Vehicle_Trim_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000001253bc with 0x000000d9 Bytes
+	Serialized data: at 0x0000000000125533 with 0x000000d9 Bytes
 	Export Flags: 0x00000001
 [Export 104]
 	Full Name: MaterialFunction skin_musclecar_GroundZero.Vehicle_Parent_MaterialFunctions.SPMF_OldWindow_v2022
@@ -1035,7 +1052,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialFunction
 	Outer: Vehicle_Parent_MaterialFunctions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000125495 with 0x000001b0 Bytes
+	Serialized data: at 0x000000000012560c with 0x000001b0 Bytes
 	Export Flags: 0x00000001
 [Export 105]
 	Full Name: MaterialInstanceConstant skin_musclecar_GroundZero.Body_MuscleCar.MIC_Vehicle_Trim_MuscleCar
@@ -1043,7 +1060,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialInstanceConstant
 	Outer: Body_MuscleCar
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000125645 with 0x0000011a Bytes
+	Serialized data: at 0x00000000001257bc with 0x0000011a Bytes
 	Export Flags: 0x00000001
 [Export 106]
 	Full Name: MaterialInstanceConstant skin_musclecar_GroundZero.Body_MuscleCar.MIC_Vehicle_Windshield_MuscleCar
@@ -1051,14 +1068,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialInstanceConstant
 	Outer: Body_MuscleCar
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000012575f with 0x00000129 Bytes
+	Serialized data: at 0x00000000001258d6 with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [Export 107]
 	Full Name: Package skin_musclecar_GroundZero.Body_Octane_Textures
 	Name: Body_Octane_Textures
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000125888 with 0x0000000c Bytes
+	Serialized data: at 0x00000000001259ff with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1067,7 +1084,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Vehicle_Parent_MaterialFunctions
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000125894 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000125a0b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1076,7 +1093,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: Vehicle_Parent_Materials02
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000001258a0 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000125a17 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1086,7 +1103,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Body_MuscleCar
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000001258ac with 0x000057f7 Bytes
+	Serialized data: at 0x0000000000125a23 with 0x000057f7 Bytes
 	Export Flags: 0x00000001
 [Export 111]
 	Full Name: Texture2D skin_musclecar_GroundZero.Body_Octane_Textures.T_Octane_BodyTextures
@@ -1094,7 +1111,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Body_Octane_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000012b0a3 with 0x00000d10 Bytes
+	Serialized data: at 0x000000000012b21a with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [Export 112]
 	Full Name: MaterialInstanceConstant skin_musclecar_GroundZero.Body_MuscleCar.MuscleCar_Chassis_MIC
@@ -1102,7 +1119,23 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialInstanceConstant
 	Outer: Body_MuscleCar
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000012c1c9 with 0x000005d9 Bytes
+	Serialized data: at 0x000000000012c340 with 0x000005d9 Bytes
+	Export Flags: 0x00000001
+[Export 113]
+	Full Name: MaterialExpressionStaticSwitchParameter skin_musclecar_GroundZero.Vehicle_Parent_Materials02.MAT_Vehicle_Trim_Base.MaterialExpressionStaticSwitchParameter_2
+	Name: MaterialExpressionStaticSwitchParameter_2
+	Class: MaterialExpressionStaticSwitchParameter
+	Outer: MAT_Vehicle_Trim_Base
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x000000000012cc4c with 0x00000170 Bytes
+	Export Flags: 0x00000001
+[Export 114]
+	Full Name: MaterialExpressionTextureSampleParameter2D skin_musclecar_GroundZero.Vehicle_Parent_Materials02.MAT_Vehicle_Trim_Base.MaterialExpressionTextureSampleParameter2D_2
+	Name: MaterialExpressionTextureSampleParameter2D_2
+	Class: MaterialExpressionTextureSampleParameter2D
+	Outer: MAT_Vehicle_Trim_Base
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x000000000012cdbc with 0x00000094 Bytes
 	Export Flags: 0x00000001
 
 
@@ -1310,3 +1343,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Class
 	Class Package: Core
 	Outer: Engine
+[Import 58]
+	Full Name: Package Detail_Blank
+	Name: Detail_Blank
+	Class: Package
+	Class Package: Core
+[Import 59]
+	Full Name: Texture2D Detail_Blank.Blank_N
+	Name: Blank_N
+	Class: Texture2D
+	Class Package: Engine
+	Outer: Detail_Blank
