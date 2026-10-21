@@ -9,15 +9,15 @@ Licensee Version: 34
 Total Header Size: 0x00008edd Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 292 Name Offset: 0x000001e5
-Export Count: 147 Export Offset: 0x000025f4
-Import Count: 36 Import Offset: 0x00002204
-Depends Offset: 0x00004f4c
-Import Export Guids Offset: 0x00004f4c
+Name Count: 295 Name Offset: 0x000001f1
+Export Count: 153 Export Offset: 0x0000263f
+Import Count: 36 Import Offset: 0x0000224f
+Depends Offset: 0x00005147
+Import Export Guids Offset: 0x00005147
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x6d0262dc 0x493b568a 0x58ba57b0 0x59d2659f
+GUID: 0x72b0a392 0x45863b80 0xf75fc397 0xbb39ef77
 Generations:
 [0]
 	Export Count: 147
@@ -58,6 +58,10 @@ Generations:
 [9]
 	Export Count: 147
 	Name Count: 292
+	Net Object Count: 0
+[10]
+	Export Count: 153
+	Name Count: 295
 	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
@@ -124,17 +128,22 @@ Texture Allocations Texture Types:
 	Flags: 0
 	Exports:
 		[0] Texture2D Textures.Import_EdgeMasks
-Test Data Size: 0x00003f69
+Test Data Size: 0x00003d4a
 Compressed Chunk Info:
-	Offset: 0x00004d67
+	Offset: 0x00004f56
 	[0]
-		Uncompressed Offset: 0x0000000000004f4c
+		Uncompressed Offset: 0x0000000000005147
 		Uncompressed Size: 0x0002a6e6
 		Compressed Offset: 0x0000000000008edd
 		Compressed Size: 0x00015551
-Last Block Size: 0x00000008
-Base Header Size: 0x000001e5
-Encrypted Header Size: 0x00008cf0
+	[1]
+		Uncompressed Offset: 0x000000000002f82d
+		Uncompressed Size: 0x000010f5
+		Compressed Offset: 0x000000000001e42e
+		Compressed Size: 0x00000429
+Last Block Size: 0x0000000c
+Base Header Size: 0x000001f1
+Encrypted Header Size: 0x00008ce0
 
 AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 
@@ -434,6 +443,9 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 [Name 289] [0x0007001000000000] Window_RGB
 [Name 290] [0x0007001000000000] WorldENV
 [Name 291] [0x0007001000000000] WorldPositionOffset
+[Name 292] [0x0007001000000000] F2Type
+[Name 293] [0x0007001000000000] NonF2Type
+[Name 294] [0x0007001000000000] UseF2Type
 
 
     ~ Exports ~ 
@@ -445,7 +457,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Material
 	Outer: body_beak
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000004f4c with 0x00000552 Bytes
+	Serialized data: at 0x0000000000005147 with 0x00000552 Bytes
 	Export Flags: 0x00000001
 [Export 1]
 	Full Name: Material skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue
@@ -453,7 +465,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Material
 	Outer: skin_ten_livery03
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000000549e with 0x00000711 Bytes
+	Serialized data: at 0x0000000000005699 with 0x00000711 Bytes
 	Export Flags: 0x00000001
 [Export 2]
 	Full Name: Material skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat
@@ -461,7 +473,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Material
 	Outer: Vehicle_Parent_Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000005baf with 0x000005a3 Bytes
+	Serialized data: at 0x0000000000005daa with 0x000005a3 Bytes
 	Export Flags: 0x00000001
 [Export 3]
 	Full Name: Material skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base
@@ -469,7 +481,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Material
 	Outer: Vehicle_Parent_Materials02
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000006152 with 0x00000503 Bytes
+	Serialized data: at 0x000000000002f82d with 0x00000527 Bytes
 	Export Flags: 0x00000001
 [Export 4]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionScalarParameter_11
@@ -477,7 +489,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006655 with 0x00000098 Bytes
+	Serialized data: at 0x0000000000006850 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [Export 5]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionScalarParameter_4
@@ -485,7 +497,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000066ed with 0x000000b4 Bytes
+	Serialized data: at 0x00000000000068e8 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 6]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionScalarParameter_5
@@ -493,7 +505,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000067a1 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000699c with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 7]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionScalarParameter_61
@@ -501,7 +513,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006855 with 0x00000078 Bytes
+	Serialized data: at 0x0000000000006a50 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 8]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionScalarParameter_62
@@ -509,7 +521,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000068cd with 0x00000078 Bytes
+	Serialized data: at 0x0000000000006ac8 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 9]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionScalarParameter_63
@@ -517,7 +529,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006945 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000006b40 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 10]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionScalarParameter_7
@@ -525,7 +537,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000069d9 with 0x000000db Bytes
+	Serialized data: at 0x0000000000006bd4 with 0x000000db Bytes
 	Export Flags: 0x00000001
 [Export 11]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionScalarParameter_8
@@ -533,7 +545,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006ab4 with 0x00000098 Bytes
+	Serialized data: at 0x0000000000006caf with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [Export 12]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionScalarParameter_9
@@ -541,7 +553,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006b4c with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000006d47 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 13]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionScalarParameter_0
@@ -549,7 +561,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006c00 with 0x000000c6 Bytes
+	Serialized data: at 0x0000000000006dfb with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [Export 14]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionScalarParameter_1
@@ -557,7 +569,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006cc6 with 0x00000098 Bytes
+	Serialized data: at 0x0000000000006ec1 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [Export 15]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionScalarParameter_10
@@ -565,7 +577,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006d5e with 0x000000e6 Bytes
+	Serialized data: at 0x0000000000006f59 with 0x000000e6 Bytes
 	Export Flags: 0x00000001
 [Export 16]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionScalarParameter_2
@@ -573,7 +585,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006e44 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000703f with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 17]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionScalarParameter_3
@@ -581,7 +593,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006ef8 with 0x000000b4 Bytes
+	Serialized data: at 0x00000000000070f3 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 18]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionScalarParameter_4
@@ -589,7 +601,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000006fac with 0x000000b4 Bytes
+	Serialized data: at 0x00000000000071a7 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 19]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionScalarParameter_5
@@ -597,7 +609,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007060 with 0x0000012a Bytes
+	Serialized data: at 0x000000000000725b with 0x0000012a Bytes
 	Export Flags: 0x00000001
 [Export 20]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionScalarParameter_7
@@ -605,7 +617,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000718a with 0x000000de Bytes
+	Serialized data: at 0x0000000000007385 with 0x000000de Bytes
 	Export Flags: 0x00000001
 [Export 21]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionScalarParameter_9
@@ -613,7 +625,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007268 with 0x000000c6 Bytes
+	Serialized data: at 0x0000000000007463 with 0x000000c6 Bytes
 	Export Flags: 0x00000001
 [Export 22]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionScalarParameter_0
@@ -621,7 +633,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000732e with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000007529 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 23]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionScalarParameter_1
@@ -629,7 +641,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000073e2 with 0x000000b4 Bytes
+	Serialized data: at 0x00000000000075dd with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 24]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionScalarParameter_2
@@ -637,7 +649,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007496 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000007691 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 25]
 	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionScalarParameter_6
@@ -645,7 +657,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionScalarParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000752a with 0x00000094 Bytes
+	Serialized data: at 0x0000000000007725 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 26]
 	Full Name: MaterialExpressionStaticComponentMaskParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticComponentMaskParameter_0
@@ -653,7 +665,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticComponentMaskParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000075be with 0x00000165 Bytes
+	Serialized data: at 0x00000000000077b9 with 0x00000165 Bytes
 	Export Flags: 0x00000001
 [Export 27]
 	Full Name: MaterialExpressionStaticComponentMaskParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionStaticComponentMaskParameter_0
@@ -661,7 +673,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticComponentMaskParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007723 with 0x00000145 Bytes
+	Serialized data: at 0x000000000000791e with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 28]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionStaticSwitchParameter_1
@@ -669,7 +681,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007868 with 0x00000155 Bytes
+	Serialized data: at 0x0000000000007a63 with 0x00000155 Bytes
 	Export Flags: 0x00000001
 [Export 29]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionStaticSwitchParameter_16
@@ -677,7 +689,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000079bd with 0x0000018d Bytes
+	Serialized data: at 0x0000000000007bb8 with 0x0000018d Bytes
 	Export Flags: 0x00000001
 [Export 30]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_0
@@ -685,7 +697,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007b4a with 0x0000016d Bytes
+	Serialized data: at 0x0000000000007d45 with 0x0000016d Bytes
 	Export Flags: 0x00000001
 [Export 31]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_1
@@ -693,7 +705,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007cb7 with 0x00000100 Bytes
+	Serialized data: at 0x0000000000007eb2 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 32]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_2
@@ -701,7 +713,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007db7 with 0x00000120 Bytes
+	Serialized data: at 0x0000000000007fb2 with 0x00000120 Bytes
 	Export Flags: 0x00000001
 [Export 33]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_3
@@ -709,7 +721,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000007ed7 with 0x00000189 Bytes
+	Serialized data: at 0x00000000000080d2 with 0x00000189 Bytes
 	Export Flags: 0x00000001
 [Export 34]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_4
@@ -717,7 +729,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008060 with 0x000001e0 Bytes
+	Serialized data: at 0x000000000000825b with 0x000001e0 Bytes
 	Export Flags: 0x00000001
 [Export 35]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_5
@@ -725,7 +737,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008240 with 0x0000018d Bytes
+	Serialized data: at 0x000000000000843b with 0x0000018d Bytes
 	Export Flags: 0x00000001
 [Export 36]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_6
@@ -733,7 +745,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000083cd with 0x00000174 Bytes
+	Serialized data: at 0x00000000000085c8 with 0x00000174 Bytes
 	Export Flags: 0x00000001
 [Export 37]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_7
@@ -741,7 +753,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008541 with 0x0000015b Bytes
+	Serialized data: at 0x000000000000873c with 0x0000015b Bytes
 	Export Flags: 0x00000001
 [Export 38]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_8
@@ -749,7 +761,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000869c with 0x00000100 Bytes
+	Serialized data: at 0x0000000000008897 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 39]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionStaticSwitchParameter_9
@@ -757,7 +769,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000879c with 0x0000015b Bytes
+	Serialized data: at 0x0000000000008997 with 0x0000015b Bytes
 	Export Flags: 0x00000001
 [Export 40]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionStaticSwitchParameter_0
@@ -765,7 +777,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000088f7 with 0x000001f1 Bytes
+	Serialized data: at 0x0000000000008af2 with 0x000001f1 Bytes
 	Export Flags: 0x00000001
 [Export 41]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionStaticSwitchParameter_1
@@ -773,7 +785,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008ae8 with 0x000001f9 Bytes
+	Serialized data: at 0x0000000000008ce3 with 0x000001f9 Bytes
 	Export Flags: 0x00000001
 [Export 42]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionStaticSwitchParameter_124
@@ -781,7 +793,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008ce1 with 0x00000100 Bytes
+	Serialized data: at 0x0000000000008edc with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 43]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionStaticSwitchParameter_15
@@ -789,7 +801,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008de1 with 0x000001f9 Bytes
+	Serialized data: at 0x0000000000008fdc with 0x000001f9 Bytes
 	Export Flags: 0x00000001
 [Export 44]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionStaticSwitchParameter_16
@@ -797,7 +809,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000008fda with 0x00000100 Bytes
+	Serialized data: at 0x00000000000091d5 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 45]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionStaticSwitchParameter_18
@@ -805,7 +817,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000090da with 0x00000100 Bytes
+	Serialized data: at 0x00000000000092d5 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 46]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionStaticSwitchParameter_2
@@ -813,7 +825,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000091da with 0x00000119 Bytes
+	Serialized data: at 0x000000000002fd54 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 47]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionStaticSwitchParameter_3
@@ -821,7 +833,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000092f3 with 0x00000243 Bytes
+	Serialized data: at 0x00000000000094ee with 0x00000243 Bytes
 	Export Flags: 0x00000001
 [Export 48]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionStaticSwitchParameter_4
@@ -829,7 +841,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000009536 with 0x000001a9 Bytes
+	Serialized data: at 0x0000000000009731 with 0x000001a9 Bytes
 	Export Flags: 0x00000001
 [Export 49]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionStaticSwitchParameter_5
@@ -837,7 +849,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000096df with 0x000001f9 Bytes
+	Serialized data: at 0x00000000000098da with 0x000001f9 Bytes
 	Export Flags: 0x00000001
 [Export 50]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionStaticSwitchParameter_6
@@ -845,7 +857,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000098d8 with 0x00000170 Bytes
+	Serialized data: at 0x0000000000009ad3 with 0x00000170 Bytes
 	Export Flags: 0x00000001
 [Export 51]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionStaticSwitchParameter_7
@@ -853,7 +865,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000009a48 with 0x000001e1 Bytes
+	Serialized data: at 0x0000000000009c43 with 0x000001e1 Bytes
 	Export Flags: 0x00000001
 [Export 52]
 	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionStaticSwitchParameter_9
@@ -861,7 +873,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000009c29 with 0x000001f9 Bytes
+	Serialized data: at 0x0000000000009e24 with 0x000001f9 Bytes
 	Export Flags: 0x00000001
 [Export 53]
 	Full Name: MaterialExpressionTextureObjectParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionTextureObjectParameter_1
@@ -869,7 +881,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionTextureObjectParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000009e22 with 0x00000135 Bytes
+	Serialized data: at 0x000000000000a01d with 0x00000135 Bytes
 	Export Flags: 0x00000001
 [Export 54]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_ten_livery03.body_beak.MAT_OldWindow_2022.MaterialExpressionTextureSampleParameter2D_1
@@ -877,7 +889,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_OldWindow_2022
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000009f57 with 0x000001b7 Bytes
+	Serialized data: at 0x000000000000a152 with 0x000001b7 Bytes
 	Export Flags: 0x00000001
 [Export 55]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_ten_livery03.body_beak.MAT_OldWindow_2022.MaterialExpressionTextureSampleParameter2D_2
@@ -885,7 +897,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_OldWindow_2022
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a10e with 0x00000129 Bytes
+	Serialized data: at 0x000000000000a309 with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [Export 56]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionTextureSampleParameter2D_1
@@ -893,7 +905,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a237 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000a432 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 57]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionTextureSampleParameter2D_18
@@ -901,7 +913,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a2eb with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000a4e6 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 58]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionTextureSampleParameter2D_2
@@ -909,7 +921,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a39f with 0x000000f8 Bytes
+	Serialized data: at 0x000000000000a59a with 0x000000f8 Bytes
 	Export Flags: 0x00000001
 [Export 59]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionTextureSampleParameter2D_3
@@ -917,7 +929,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a497 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000a692 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 60]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionTextureSampleParameter2D_4
@@ -925,7 +937,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a54b with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000a746 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 61]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionTextureSampleParameter2D_0
@@ -933,7 +945,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a5ff with 0x000000d6 Bytes
+	Serialized data: at 0x000000000000a7fa with 0x000000d6 Bytes
 	Export Flags: 0x00000001
 [Export 62]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionTextureSampleParameter2D_1
@@ -941,7 +953,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a6d5 with 0x000000d8 Bytes
+	Serialized data: at 0x000000000000a8d0 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [Export 63]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionTextureSampleParameter2D_2
@@ -949,7 +961,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a7ad with 0x000000cd Bytes
+	Serialized data: at 0x000000000000a9a8 with 0x000000cd Bytes
 	Export Flags: 0x00000001
 [Export 64]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionTextureSampleParameter2D_3
@@ -957,7 +969,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a87a with 0x000000cd Bytes
+	Serialized data: at 0x000000000000aa75 with 0x000000cd Bytes
 	Export Flags: 0x00000001
 [Export 65]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionTextureSampleParameter2D_4
@@ -965,7 +977,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a947 with 0x000000b4 Bytes
+	Serialized data: at 0x000000000000ab42 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 66]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionTextureSampleParameter2D_5
@@ -973,7 +985,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000a9fb with 0x00000123 Bytes
+	Serialized data: at 0x000000000000abf6 with 0x00000123 Bytes
 	Export Flags: 0x00000001
 [Export 67]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionTextureSampleParameter2D_1
@@ -981,7 +993,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ab1e with 0x00000189 Bytes
+	Serialized data: at 0x000000000000ad19 with 0x00000189 Bytes
 	Export Flags: 0x00000001
 [Export 68]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionTextureSampleParameter2D_2
@@ -989,7 +1001,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000aca7 with 0x00000094 Bytes
+	Serialized data: at 0x000000000000aea2 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 69]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionTextureSampleParameter2D_3
@@ -997,7 +1009,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ad3b with 0x00000094 Bytes
+	Serialized data: at 0x000000000000af36 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 70]
 	Full Name: MaterialExpressionTextureSampleParameter2D skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionTextureSampleParameter2D_37
@@ -1005,7 +1017,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000adcf with 0x00000138 Bytes
+	Serialized data: at 0x000000000000afca with 0x00000138 Bytes
 	Export Flags: 0x00000001
 [Export 71]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionVectorParameter_10
@@ -1013,7 +1025,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000af07 with 0x00000145 Bytes
+	Serialized data: at 0x000000000000b102 with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 72]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionVectorParameter_11
@@ -1021,7 +1033,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b04c with 0x0000012c Bytes
+	Serialized data: at 0x000000000000b247 with 0x0000012c Bytes
 	Export Flags: 0x00000001
 [Export 73]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionVectorParameter_12
@@ -1029,7 +1041,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b178 with 0x00000114 Bytes
+	Serialized data: at 0x000000000000b373 with 0x00000114 Bytes
 	Export Flags: 0x00000001
 [Export 74]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionVectorParameter_14
@@ -1037,7 +1049,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b28c with 0x000000c8 Bytes
+	Serialized data: at 0x000000000000b487 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 75]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionVectorParameter_5
@@ -1045,7 +1057,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b354 with 0x000000c8 Bytes
+	Serialized data: at 0x000000000000b54f with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 76]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionVectorParameter_6
@@ -1053,7 +1065,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b41c with 0x000000c8 Bytes
+	Serialized data: at 0x000000000000b617 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 77]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.skin_ten_livery03.MAT_Body_Metallic_Blue.MaterialExpressionVectorParameter_7
@@ -1061,7 +1073,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Body_Metallic_Blue
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b4e4 with 0x000000c8 Bytes
+	Serialized data: at 0x000000000000b6df with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 78]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_0
@@ -1069,7 +1081,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b5ac with 0x000000c8 Bytes
+	Serialized data: at 0x000000000000b7a7 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 79]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_1
@@ -1077,7 +1089,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b674 with 0x000000c8 Bytes
+	Serialized data: at 0x000000000000b86f with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 80]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_10
@@ -1085,7 +1097,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b73c with 0x00000136 Bytes
+	Serialized data: at 0x000000000000b937 with 0x00000136 Bytes
 	Export Flags: 0x00000001
 [Export 81]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_12
@@ -1093,7 +1105,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b872 with 0x000000a8 Bytes
+	Serialized data: at 0x000000000000ba6d with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 82]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_16
@@ -1101,7 +1113,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b91a with 0x000000a8 Bytes
+	Serialized data: at 0x000000000000bb15 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 83]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_18
@@ -1109,7 +1121,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b9c2 with 0x000000a8 Bytes
+	Serialized data: at 0x000000000000bbbd with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 84]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_2
@@ -1117,7 +1129,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ba6a with 0x000000c8 Bytes
+	Serialized data: at 0x000000000000bc65 with 0x000000c8 Bytes
 	Export Flags: 0x00000001
 [Export 85]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_3
@@ -1125,7 +1137,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bb32 with 0x000000a8 Bytes
+	Serialized data: at 0x000000000000bd2d with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 86]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_4
@@ -1133,7 +1145,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bbda with 0x000000cf Bytes
+	Serialized data: at 0x000000000000bdd5 with 0x000000cf Bytes
 	Export Flags: 0x00000001
 [Export 87]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_5
@@ -1141,7 +1153,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bca9 with 0x000000a8 Bytes
+	Serialized data: at 0x000000000000bea4 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 88]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_6
@@ -1149,7 +1161,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bd51 with 0x000000cf Bytes
+	Serialized data: at 0x000000000000bf4c with 0x000000cf Bytes
 	Export Flags: 0x00000001
 [Export 89]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_7
@@ -1157,7 +1169,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000be20 with 0x000000a8 Bytes
+	Serialized data: at 0x000000000000c01b with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 90]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_8
@@ -1165,7 +1177,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bec8 with 0x000000cf Bytes
+	Serialized data: at 0x000000000000c0c3 with 0x000000cf Bytes
 	Export Flags: 0x00000001
 [Export 91]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials.GoodChassis_Painted_Mat.MaterialExpressionVectorParameter_9
@@ -1173,7 +1185,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: GoodChassis_Painted_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000bf97 with 0x000000a8 Bytes
+	Serialized data: at 0x000000000000c192 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 92]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionVectorParameter_1
@@ -1181,7 +1193,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c03f with 0x0000010c Bytes
+	Serialized data: at 0x000000000000c23a with 0x0000010c Bytes
 	Export Flags: 0x00000001
 [Export 93]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionVectorParameter_2
@@ -1189,7 +1201,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c14b with 0x000000f4 Bytes
+	Serialized data: at 0x000000000000c346 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 94]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionVectorParameter_26
@@ -1197,7 +1209,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c23f with 0x0000010c Bytes
+	Serialized data: at 0x000000000000c43a with 0x0000010c Bytes
 	Export Flags: 0x00000001
 [Export 95]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionVectorParameter_3
@@ -1205,7 +1217,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c34b with 0x000000f4 Bytes
+	Serialized data: at 0x000000000000c546 with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 96]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionVectorParameter_4
@@ -1213,7 +1225,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c43f with 0x000000f4 Bytes
+	Serialized data: at 0x000000000000c63a with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 97]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionVectorParameter_5
@@ -1221,7 +1233,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c533 with 0x000000f4 Bytes
+	Serialized data: at 0x000000000000c72e with 0x000000f4 Bytes
 	Export Flags: 0x00000001
 [Export 98]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionVectorParameter_8
@@ -1229,7 +1241,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c627 with 0x0000010c Bytes
+	Serialized data: at 0x000000000000c822 with 0x0000010c Bytes
 	Export Flags: 0x00000001
 [Export 99]
 	Full Name: MaterialExpressionVectorParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionVectorParameter_9
@@ -1237,7 +1249,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialExpressionVectorParameter
 	Outer: MAT_Vehicle_Plastic_Base
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c733 with 0x0000010c Bytes
+	Serialized data: at 0x000000000000c92e with 0x0000010c Bytes
 	Export Flags: 0x00000001
 [Export 100]
 	Full Name: MaterialFunction skin_ten_livery03.Psy_MaterialFunctions.ParallexCorrectWorldENV
@@ -1245,7 +1257,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialFunction
 	Outer: Psy_MaterialFunctions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000c83f with 0x00000124 Bytes
+	Serialized data: at 0x000000000000ca3a with 0x00000124 Bytes
 	Export Flags: 0x00000001
 [Export 101]
 	Full Name: MaterialFunction skin_ten_livery03.Vehicle_Parent_MaterialFunctions.SPMF_OldWindow_v2022
@@ -1253,7 +1265,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialFunction
 	Outer: Vehicle_Parent_MaterialFunctions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000c963 with 0x000001b0 Bytes
+	Serialized data: at 0x000000000000cb5e with 0x000001b0 Bytes
 	Export Flags: 0x00000001
 [Export 102]
 	Full Name: MaterialInstanceConstant skin_ten_livery03.body_ten.MIC_Body_Ten_Window
@@ -1261,7 +1273,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialInstanceConstant
 	Outer: body_ten
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000000cb13 with 0x00000101 Bytes
+	Serialized data: at 0x000000000000cd0e with 0x00000101 Bytes
 	Export Flags: 0x00000001
 [Export 103]
 	Full Name: MaterialInstanceConstant skin_ten_livery03.body_ten.MIC_chassis_Ten
@@ -1269,7 +1281,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialInstanceConstant
 	Outer: body_ten
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000000cc14 with 0x0000081d Bytes
+	Serialized data: at 0x000000000000ce0f with 0x0000081d Bytes
 	Export Flags: 0x00000001
 [Export 104]
 	Full Name: MaterialInstanceConstant skin_ten_livery03.body_zuse.MIC_Zuse_Plastic
@@ -1277,7 +1289,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialInstanceConstant
 	Outer: body_zuse
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000d431 with 0x0000056d Bytes
+	Serialized data: at 0x000000000002fe6d with 0x0000058d Bytes
 	Export Flags: 0x00000001
 [Export 105]
 	Full Name: MaterialInstanceConstant skin_ten_livery03.skin_ten_livery03.MIC_Skin_Ten_Livery03
@@ -1285,21 +1297,21 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: MaterialInstanceConstant
 	Outer: skin_ten_livery03
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000d99e with 0x00000459 Bytes
+	Serialized data: at 0x000000000000db99 with 0x00000459 Bytes
 	Export Flags: 0x00000001
 [Export 106]
 	Full Name: ObjectReferencer skin_ten_livery03.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x000000000000ddf7 with 0x0000002c Bytes
+	Serialized data: at 0x000000000000dff2 with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [Export 107]
 	Full Name: Package skin_ten_livery03.body_beak
 	Name: body_beak
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000de23 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e01e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1308,7 +1320,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Name: body_endo
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000de2f with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e02a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1317,7 +1329,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Name: Body_Octane_Textures
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000de3b with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e036 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1326,7 +1338,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Name: body_ten
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000de47 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e042 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1335,7 +1347,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Name: body_zuse
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000de53 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e04e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1344,7 +1356,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Name: Psy_MaterialFunctions
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000de5f with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e05a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1353,7 +1365,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Name: skin_melonpan_livery1
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000de6b with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e066 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1362,7 +1374,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Name: Skin_Octane_ExampleRust
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000de77 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e072 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1371,7 +1383,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Name: skin_ten_livery03
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000de83 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e07e with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1380,7 +1392,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Name: skin_ten_livery03_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000de8f with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e08a with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -1389,7 +1401,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Name: Skin_Universal03_Parent
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000de9b with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e096 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1398,7 +1410,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Name: SpaceStation_FieldAssets
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000dea7 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e0a2 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1408,14 +1420,14 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Package
 	Outer: SpaceStation_FieldAssets
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000deb3 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e0ae with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 120]
 	Full Name: Package skin_ten_livery03.Test_NewBodySkins
 	Name: Test_NewBodySkins
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000debf with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e0ba with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1425,14 +1437,14 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Package
 	Outer: Test_NewBodySkins
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000decb with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e0c6 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 122]
 	Full Name: Package skin_ten_livery03.Vehicle_Parent_MaterialFunctions
 	Name: Vehicle_Parent_MaterialFunctions
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000ded7 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e0d2 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1441,7 +1453,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Name: Vehicle_Parent_Materials
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000dee3 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e0de with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1450,7 +1462,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Name: Vehicle_Parent_Materials02
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000deef with 0x0000000c Bytes
+	Serialized data: at 0x000000000000e0ea with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1461,7 +1473,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Outer: skin_ten_livery03
 	Archetype: ProductAsset_Skin_TA_0
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000defb with 0x00000312 Bytes
+	Serialized data: at 0x000000000000e0f6 with 0x00000312 Bytes
 	Export Flags: 0x00000001
 [Export 126]
 	Full Name: ProductAssetReferenceBody_TA skin_ten_livery03.skin_ten_livery03.skin_ten_livery03.ProductAssetReferenceBody_TA_1
@@ -1469,7 +1481,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: ProductAssetReferenceBody_TA
 	Outer: skin_ten_livery03
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000000e20d with 0x00000028 Bytes
+	Serialized data: at 0x000000000000e408 with 0x00000028 Bytes
 	Export Flags: 0x00000001
 [Export 127]
 	Full Name: Texture2D skin_ten_livery03.body_endo.Endo_Chassis_D
@@ -1477,7 +1489,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: body_endo
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000e235 with 0x00000d10 Bytes
+	Serialized data: at 0x000000000000e430 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [Export 128]
 	Full Name: Texture2D skin_ten_livery03.body_endo.Endo_Chassis_N
@@ -1485,7 +1497,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: body_endo
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000ef45 with 0x00001885 Bytes
+	Serialized data: at 0x000000000000f140 with 0x00001885 Bytes
 	Export Flags: 0x00000001
 [Export 129]
 	Full Name: Texture2D skin_ten_livery03.body_endo.Endo_Chassis_RGB
@@ -1493,7 +1505,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: body_endo
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000107ca with 0x000017f0 Bytes
+	Serialized data: at 0x00000000000109c5 with 0x000017f0 Bytes
 	Export Flags: 0x00000001
 [Export 130]
 	Full Name: Texture2D skin_ten_livery03.Body_Octane_Textures.Body_Octane_Bevel_N
@@ -1501,7 +1513,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: Body_Octane_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000011fba with 0x00001885 Bytes
+	Serialized data: at 0x00000000000121b5 with 0x00001885 Bytes
 	Export Flags: 0x00000001
 [Export 131]
 	Full Name: Texture2D skin_ten_livery03.Body_Octane_Textures.T_Octane_BodyTextures
@@ -1509,7 +1521,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: Body_Octane_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001383f with 0x00000d10 Bytes
+	Serialized data: at 0x0000000000013a3a with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [Export 132]
 	Full Name: Texture2D skin_ten_livery03.body_ten.body_ten_blankskin
@@ -1517,7 +1529,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: body_ten
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001454f with 0x000017c8 Bytes
+	Serialized data: at 0x000000000001474a with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [Export 133]
 	Full Name: Texture2D skin_ten_livery03.body_ten.body_ten_Curvature
@@ -1525,7 +1537,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: body_ten
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000015d17 with 0x00000d10 Bytes
+	Serialized data: at 0x0000000000015f12 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [Export 134]
 	Full Name: Texture2D skin_ten_livery03.body_ten.body_ten_D
@@ -1533,7 +1545,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: body_ten
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000016a27 with 0x000017c8 Bytes
+	Serialized data: at 0x0000000000016c22 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [Export 135]
 	Full Name: Texture2D skin_ten_livery03.body_ten.body_ten_N
@@ -1541,7 +1553,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: body_ten
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000181ef with 0x00001885 Bytes
+	Serialized data: at 0x00000000000183ea with 0x00001885 Bytes
 	Export Flags: 0x00000001
 [Export 136]
 	Full Name: Texture2D skin_ten_livery03.body_ten.Body_Ten_Window_RGB
@@ -1549,7 +1561,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: body_ten
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000019a74 with 0x00005764 Bytes
+	Serialized data: at 0x0000000000019c6f with 0x00005764 Bytes
 	Export Flags: 0x00000001
 [Export 137]
 	Full Name: Texture2D skin_ten_livery03.body_ten.chassis_ten_D
@@ -1557,7 +1569,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: body_ten
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001f1d8 with 0x000017c8 Bytes
+	Serialized data: at 0x000000000001f3d3 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [Export 138]
 	Full Name: Texture2D skin_ten_livery03.body_ten.chassis_ten_N
@@ -1565,7 +1577,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: body_ten
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000209a0 with 0x00001885 Bytes
+	Serialized data: at 0x0000000000020b9b with 0x00001885 Bytes
 	Export Flags: 0x00000001
 [Export 139]
 	Full Name: Texture2D skin_ten_livery03.body_ten.chassis_ten_RGB
@@ -1573,7 +1585,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: body_ten
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000022225 with 0x000017c8 Bytes
+	Serialized data: at 0x0000000000022420 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [Export 140]
 	Full Name: Texture2D skin_ten_livery03.body_zuse.T_Zuse_Body_COA
@@ -1581,7 +1593,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: body_zuse
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000239ed with 0x00000d10 Bytes
+	Serialized data: at 0x0000000000023be8 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [Export 141]
 	Full Name: Texture2D skin_ten_livery03.body_zuse.T_Zuse_Body_D
@@ -1589,7 +1601,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: body_zuse
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000246fd with 0x000017c8 Bytes
+	Serialized data: at 0x00000000000248f8 with 0x000017c8 Bytes
 	Export Flags: 0x00000001
 [Export 142]
 	Full Name: Texture2D skin_ten_livery03.skin_melonpan_livery1.Noise_Sparkle_Flake
@@ -1597,7 +1609,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: skin_melonpan_livery1
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000025ec5 with 0x00000cbc Bytes
+	Serialized data: at 0x00000000000260c0 with 0x00000cbc Bytes
 	Export Flags: 0x00000001
 [Export 143]
 	Full Name: Texture2D skin_ten_livery03.Skin_Octane_ExampleRust.Skin_Octane_ExampleRust_N
@@ -1605,7 +1617,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: Skin_Octane_ExampleRust
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000026b81 with 0x00000dcd Bytes
+	Serialized data: at 0x0000000000026d7c with 0x00000dcd Bytes
 	Export Flags: 0x00000001
 [Export 144]
 	Full Name: Texture2D skin_ten_livery03.Skin_Universal03_Parent.Alpha_CrystallizedCloud
@@ -1613,7 +1625,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: Skin_Universal03_Parent
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000002794e with 0x00000d10 Bytes
+	Serialized data: at 0x0000000000027b49 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [Export 145]
 	Full Name: Texture2D Tex.Blank_N
@@ -1621,7 +1633,7 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: Tex
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000002865e with 0x000017dd Bytes
+	Serialized data: at 0x0000000000028859 with 0x000017dd Bytes
 	Export Flags: 0x00000001
 [Export 146]
 	Full Name: Texture2D Textures.Import_EdgeMasks
@@ -1629,7 +1641,55 @@ AES: Wz1atQ97LqS9uAl1cpPllBWIeD7LLE4zguKXuuQWbZE=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000029e3b with 0x000057f7 Bytes
+	Serialized data: at 0x000000000002a036 with 0x000057f7 Bytes
+	Export Flags: 0x00000001
+[Export 147]
+	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionScalarParameter_3
+	Name: MaterialExpressionScalarParameter_3
+	Class: MaterialExpressionScalarParameter
+	Outer: MAT_Vehicle_Plastic_Base
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x00000000000303fa with 0x00000094 Bytes
+	Export Flags: 0x00000001
+[Export 148]
+	Full Name: MaterialExpressionScalarParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionScalarParameter_5
+	Name: MaterialExpressionScalarParameter_5
+	Class: MaterialExpressionScalarParameter
+	Outer: MAT_Vehicle_Plastic_Base
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x000000000003048e with 0x00000094 Bytes
+	Export Flags: 0x00000001
+[Export 149]
+	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionStaticSwitchParameter_10
+	Name: MaterialExpressionStaticSwitchParameter_10
+	Class: MaterialExpressionStaticSwitchParameter
+	Outer: MAT_Vehicle_Plastic_Base
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000030522 with 0x00000100 Bytes
+	Export Flags: 0x00000001
+[Export 150]
+	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionStaticSwitchParameter_13
+	Name: MaterialExpressionStaticSwitchParameter_13
+	Class: MaterialExpressionStaticSwitchParameter
+	Outer: MAT_Vehicle_Plastic_Base
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000030622 with 0x00000100 Bytes
+	Export Flags: 0x00000001
+[Export 151]
+	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionStaticSwitchParameter_14
+	Name: MaterialExpressionStaticSwitchParameter_14
+	Class: MaterialExpressionStaticSwitchParameter
+	Outer: MAT_Vehicle_Plastic_Base
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000030722 with 0x00000100 Bytes
+	Export Flags: 0x00000001
+[Export 152]
+	Full Name: MaterialExpressionStaticSwitchParameter skin_ten_livery03.Vehicle_Parent_Materials02.MAT_Vehicle_Plastic_Base.MaterialExpressionStaticSwitchParameter_8
+	Name: MaterialExpressionStaticSwitchParameter_8
+	Class: MaterialExpressionStaticSwitchParameter
+	Outer: MAT_Vehicle_Plastic_Base
+	Object Flags: 0x0007000100000000
+	Serialized data: at 0x0000000000030822 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 
 

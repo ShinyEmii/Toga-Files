@@ -9,15 +9,15 @@ Licensee Version: 34
 Total Header Size: 0x0000ef0d Bytes
 Folder Name: "None"
 Package Flags: 0x0288028d
-Name Count: 546 Name Offset: 0x000003a1
-Export Count: 382 Export Offset: 0x00004557
-Import Count: 68 Import Offset: 0x00003de7
-Depends Offset: 0x0000b0c7
-Import Export Guids Offset: 0x0000b0c7
+Name Count: 546 Name Offset: 0x000003ad
+Export Count: 382 Export Offset: 0x00004563
+Import Count: 68 Import Offset: 0x00003df3
+Depends Offset: 0x0000b0d3
+Import Export Guids Offset: 0x0000b0d3
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0x2eab007f 0x47273872 0xe5ad7b96 0x304d5bd8
+GUID: 0xcdc7cdf2 0x404fca04 0xbd298888 0xfdfdece7
 Generations:
 [0]
 	Export Count: 321
@@ -251,6 +251,10 @@ Generations:
 	Export Count: 382
 	Name Count: 546
 	Net Object Count: 0
+[58]
+	Export Count: 382
+	Name Count: 546
+	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
 Compression: ZLIB
@@ -261,14 +265,12 @@ Additional Packages To Cook:
 	Empty
 Texture Allocations Texture Types:
 [0]
-	Resolution: [64 x 64]
+	Resolution: [1 x 64]
 	Num Mips: 7
 	Format: A8R8G8B8
 	Flags: 1
 	Exports:
-		[0] Texture2D Textures.Smoke01_D
-		[1] Texture2D Mat.Sphere_Gradient01_D
-		[2] Texture2D Boost_Rainbow.LensFlares_Textures.Flare_Rainbow01_D
+		[0] Texture2D Textures.Rainbow_T
 [1]
 	Resolution: [64 x 64]
 	Num Mips: 7
@@ -277,27 +279,29 @@ Texture Allocations Texture Types:
 	Exports:
 		[0] Texture2D Boost_Rainbow.Boost_Confetti.confettiBoost_T
 [2]
-	Resolution: [1 x 64]
+	Resolution: [64 x 64]
 	Num Mips: 7
 	Format: A8R8G8B8
 	Flags: 1
 	Exports:
-		[0] Texture2D Textures.Rainbow_T
-Test Data Size: 0x00003dfa
+		[0] Texture2D Textures.Smoke01_D
+		[1] Texture2D Mat.Sphere_Gradient01_D
+		[2] Texture2D Boost_Rainbow.LensFlares_Textures.Flare_Rainbow01_D
+Test Data Size: 0x00003dee
 Compressed Chunk Info:
 	Offset: 0x0000ad26
 	[0]
-		Uncompressed Offset: 0x000000000000b0c7
+		Uncompressed Offset: 0x000000000000b0d3
 		Uncompressed Size: 0x0001c31d
 		Compressed Offset: 0x000000000000ef0d
 		Compressed Size: 0x00004634
 	[1]
-		Uncompressed Offset: 0x00000000000273e4
+		Uncompressed Offset: 0x00000000000273f0
 		Uncompressed Size: 0x00000056
 		Compressed Offset: 0x0000000000013541
 		Compressed Size: 0x00000052
-Last Block Size: 0x0000000c
-Base Header Size: 0x000003a1
+Last Block Size: 0x00000000
+Base Header Size: 0x000003ad
 Encrypted Header Size: 0x0000eb60
 
 AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
@@ -863,7 +867,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: AkBank
 	Outer: SFX_Car_Boost
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000b0c7 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000b0d3 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 2]
 	Full Name: AkPlaySoundComponent Boost_Rainbow.Boost_Rainbow.FXActor.AkPlaySoundComponent_0
@@ -871,7 +875,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: AkPlaySoundComponent
 	Outer: FXActor
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x000000000000b0df with 0x00000071 Bytes
+	Serialized data: at 0x000000000000b0eb with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 3]
 	Full Name: AkSoundCue Boost_Rainbow.SFX_Car_Boost.Boost_Rainbow_Loop
@@ -879,7 +883,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: AkSoundCue
 	Outer: SFX_Car_Boost
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000b150 with 0x00000090 Bytes
+	Serialized data: at 0x000000000000b15c with 0x00000090 Bytes
 	Export Flags: 0x00000001
 [Export 4]
 	Full Name: AkSoundCue Boost_Rainbow.SFX_UI_Boost.UI_BoostFail
@@ -887,7 +891,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: AkSoundCue
 	Outer: SFX_UI_Boost
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000273e4 with 0x00000056 Bytes
+	Serialized data: at 0x00000000000273f0 with 0x00000056 Bytes
 	Export Flags: 0x00000001
 [Export 9]
 	Full Name: DistributionVectorParticleParameter Boost_Rainbow.Boost_Rainbow.Boost_PS.ParticleModuleColor_16.DistributionVectorParticleParameter_0
@@ -895,7 +899,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_16
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b236 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000b242 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 10]
 	Full Name: DistributionVectorParticleParameter Boost_Rainbow.Boost_Rainbow.Drive_PS.ParticleModuleColor_1.DistributionVectorParticleParameter_0
@@ -903,7 +907,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000b323 with 0x00000145 Bytes
+	Serialized data: at 0x000000000000b32f with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 11]
 	Full Name: ForceFeedbackWaveform FX.BoostActivated_FF
@@ -911,7 +915,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ForceFeedbackWaveform
 	Outer: FX
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x000000000000b468 with 0x00000170 Bytes
+	Serialized data: at 0x000000000000b474 with 0x00000170 Bytes
 	Export Flags: 0x00000001
 [Export 12]
 	Full Name: ForceFeedbackWaveform FX.ForceFeedback
@@ -919,7 +923,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ForceFeedbackWaveform
 	Outer: FX
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x000000000000b5d8 with 0x00000189 Bytes
+	Serialized data: at 0x000000000000b5e4 with 0x00000189 Bytes
 	Export Flags: 0x00000001
 [Export 13]
 	Full Name: FXActor_Boost_TA Boost_Rainbow.Boost_Rainbow.FXActor
@@ -927,7 +931,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: FXActor_Boost_TA
 	Outer: Boost_Rainbow
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x000000000000b761 with 0x00000f50 Bytes
+	Serialized data: at 0x000000000000b76d with 0x00000f50 Bytes
 	Export Flags: 0x00000001
 [Export 14]
 	Full Name: FXActor_Boost_TA Boost_Rainbow.BoostBase.FXActor
@@ -935,7 +939,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: FXActor_Boost_TA
 	Outer: BoostBase
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x000000000000c6b1 with 0x000006be Bytes
+	Serialized data: at 0x000000000000c6bd with 0x000006be Bytes
 	Export Flags: 0x00000001
 [Export 18]
 	Full Name: LensFlare Boost_Rainbow.Boost_Rainbow.BoostFlare_LF
@@ -943,7 +947,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: LensFlare
 	Outer: Boost_Rainbow
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000000cd6f with 0x000038ab Bytes
+	Serialized data: at 0x000000000000cd7b with 0x000038ab Bytes
 	Export Flags: 0x00000001
 [Export 19]
 	Full Name: LensFlareComponent Boost_Rainbow.Boost_Rainbow.FXActor.LensFlareComponent_0
@@ -951,7 +955,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: LensFlareComponent
 	Outer: FXActor
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x000000000001061a with 0x00000064 Bytes
+	Serialized data: at 0x0000000000010626 with 0x00000064 Bytes
 	Export Flags: 0x00000001
 [Export 20]
 	Full Name: Material Materials.Confetti_Mat
@@ -959,7 +963,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000001067e with 0x000003f0 Bytes
+	Serialized data: at 0x000000000001068a with 0x000003f0 Bytes
 	Export Flags: 0x00000001
 [Export 21]
 	Full Name: Material Boost_Rainbow.Boost_Rainbow.BoostRibbon_Mat
@@ -967,7 +971,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Material
 	Outer: Boost_Rainbow
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000010a6e with 0x000001ad Bytes
+	Serialized data: at 0x0000000000010a7a with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 22]
 	Full Name: Material Materials.SmokeRainbow_Mat
@@ -975,7 +979,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000010c1b with 0x00000246 Bytes
+	Serialized data: at 0x0000000000010c27 with 0x00000246 Bytes
 	Export Flags: 0x00000001
 [Export 23]
 	Full Name: Material Materials.Rainbow_PartHalo_Mat
@@ -983,7 +987,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000010e61 with 0x000001a9 Bytes
+	Serialized data: at 0x0000000000010e6d with 0x000001a9 Bytes
 	Export Flags: 0x00000001
 [Export 24]
 	Full Name: Material Materials.SoftCircle_Mat
@@ -991,7 +995,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000001100a with 0x00000192 Bytes
+	Serialized data: at 0x0000000000011016 with 0x00000192 Bytes
 	Export Flags: 0x00000001
 [Export 26]
 	Full Name: MaterialExpressionScalarParameter Materials.Confetti_Mat.MaterialExpressionScalarParameter_0
@@ -999,7 +1003,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001119c with 0x00000094 Bytes
+	Serialized data: at 0x00000000000111a8 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 27]
 	Full Name: MaterialExpressionScalarParameter Materials.Confetti_Mat.MaterialExpressionScalarParameter_1
@@ -1007,7 +1011,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011230 with 0x00000094 Bytes
+	Serialized data: at 0x000000000001123c with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 28]
 	Full Name: MaterialExpressionScalarParameter Materials.Confetti_Mat.MaterialExpressionScalarParameter_10
@@ -1015,7 +1019,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000112c4 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000112d0 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 29]
 	Full Name: MaterialExpressionScalarParameter Materials.Confetti_Mat.MaterialExpressionScalarParameter_11
@@ -1023,7 +1027,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011358 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000011364 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 30]
 	Full Name: MaterialExpressionScalarParameter Materials.Confetti_Mat.MaterialExpressionScalarParameter_13
@@ -1031,7 +1035,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000113ec with 0x00000094 Bytes
+	Serialized data: at 0x00000000000113f8 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 31]
 	Full Name: MaterialExpressionScalarParameter Materials.Confetti_Mat.MaterialExpressionScalarParameter_15
@@ -1039,7 +1043,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011480 with 0x00000094 Bytes
+	Serialized data: at 0x000000000001148c with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 32]
 	Full Name: MaterialExpressionScalarParameter Materials.Confetti_Mat.MaterialExpressionScalarParameter_2
@@ -1047,7 +1051,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011514 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000011520 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 33]
 	Full Name: MaterialExpressionScalarParameter Materials.Confetti_Mat.MaterialExpressionScalarParameter_3
@@ -1055,7 +1059,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000115a8 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000115b4 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 34]
 	Full Name: MaterialExpressionScalarParameter Materials.Confetti_Mat.MaterialExpressionScalarParameter_4
@@ -1063,7 +1067,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001163c with 0x00000094 Bytes
+	Serialized data: at 0x0000000000011648 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 35]
 	Full Name: MaterialExpressionScalarParameter Materials.Confetti_Mat.MaterialExpressionScalarParameter_5
@@ -1071,7 +1075,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000116d0 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000116dc with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 36]
 	Full Name: MaterialExpressionScalarParameter Materials.Confetti_Mat.MaterialExpressionScalarParameter_6
@@ -1079,7 +1083,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011764 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000011770 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 37]
 	Full Name: MaterialExpressionScalarParameter Materials.Confetti_Mat.MaterialExpressionScalarParameter_7
@@ -1087,7 +1091,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000117f8 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000011804 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 38]
 	Full Name: MaterialExpressionScalarParameter Materials.Confetti_Mat.MaterialExpressionScalarParameter_8
@@ -1095,7 +1099,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001188c with 0x00000094 Bytes
+	Serialized data: at 0x0000000000011898 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 39]
 	Full Name: MaterialExpressionScalarParameter Materials.Confetti_Mat.MaterialExpressionScalarParameter_9
@@ -1103,7 +1107,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011920 with 0x00000094 Bytes
+	Serialized data: at 0x000000000001192c with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 40]
 	Full Name: MaterialExpressionScalarParameter Boost_Rainbow.Boost_Rainbow.BoostRibbon_Mat.MaterialExpressionScalarParameter_0
@@ -1111,7 +1115,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: BoostRibbon_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000119b4 with 0x00000074 Bytes
+	Serialized data: at 0x00000000000119c0 with 0x00000074 Bytes
 	Export Flags: 0x00000001
 [Export 53]
 	Full Name: MaterialExpressionStaticSwitchParameter Materials.SmokeRainbow_Mat.MaterialExpressionStaticSwitchParameter_0
@@ -1119,7 +1123,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: SmokeRainbow_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011a28 with 0x00000154 Bytes
+	Serialized data: at 0x0000000000011a34 with 0x00000154 Bytes
 	Export Flags: 0x00000001
 [Export 54]
 	Full Name: MaterialExpressionTextureSampleParameter2D Materials.Confetti_Mat.MaterialExpressionTextureSampleParameter2D_0
@@ -1127,7 +1131,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011b7c with 0x000000d8 Bytes
+	Serialized data: at 0x0000000000011b88 with 0x000000d8 Bytes
 	Export Flags: 0x00000001
 [Export 55]
 	Full Name: MaterialExpressionVectorParameter Materials.SoftCircle_Mat.MaterialExpressionVectorParameter_0
@@ -1135,7 +1139,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: SoftCircle_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011c54 with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000011c60 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 56]
 	Full Name: MaterialExpressionVectorParameter Materials.SoftCircle_Mat.MaterialExpressionVectorParameter_2
@@ -1143,7 +1147,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionVectorParameter
 	Outer: SoftCircle_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000011cfc with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000011d08 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 64]
 	Full Name: MaterialInstanceConstant Materials.Flowers_MIC
@@ -1151,21 +1155,21 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialInstanceConstant
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000011da4 with 0x00000600 Bytes
+	Serialized data: at 0x0000000000011db0 with 0x00000600 Bytes
 	Export Flags: 0x00000001
 [Export 71]
 	Full Name: ObjectReferencer Boost_Rainbow.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x00000000000123a4 with 0x0000002c Bytes
+	Serialized data: at 0x00000000000123b0 with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [Export 72]
 	Full Name: Package Boost_Rainbow.Ball_FX
 	Name: Ball_FX
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000123d0 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000123dc with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1175,14 +1179,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Ball_FX
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000123dc with 0x0000000c Bytes
+	Serialized data: at 0x00000000000123e8 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 106]
 	Full Name: Package Boost_Rainbow.Boost_Confetti
 	Name: Boost_Confetti
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000123e8 with 0x0000000c Bytes
+	Serialized data: at 0x00000000000123f4 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1192,14 +1196,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Boost_Confetti
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000123f4 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000012400 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 111]
 	Full Name: Package Boost_Rainbow.Boost_Flowers
 	Name: Boost_Flowers
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000012400 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001240c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
@@ -1209,14 +1213,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Boost_Flowers
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001240c with 0x0000000c Bytes
+	Serialized data: at 0x0000000000012418 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 118]
 	Full Name: Package Boost_Rainbow.Boost_Rainbow
 	Name: Boost_Rainbow
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000012418 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000012424 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000105
@@ -1226,14 +1230,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Boost_Rainbow
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000012424 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000012430 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 120]
 	Full Name: Package Boost_Rainbow.Boost_Rainbow_SF
 	Name: Boost_Rainbow_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000012430 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001243c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -1242,7 +1246,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: BoostBase
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001243c with 0x0000000c Bytes
+	Serialized data: at 0x0000000000012448 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1252,14 +1256,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: BoostBase
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000012448 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000012454 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 132]
 	Full Name: Package Boost_Rainbow.Gradient_FX
 	Name: Gradient_FX
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000012454 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000012460 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1269,14 +1273,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Gradient_FX
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000012460 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001246c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 134]
 	Full Name: Package Boost_Rainbow.LensFlares
 	Name: LensFlares
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001246c with 0x0000000c Bytes
+	Serialized data: at 0x0000000000012478 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1286,14 +1290,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: LensFlares
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000012478 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000012484 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 136]
 	Full Name: Package Boost_Rainbow.LensFlares_Textures
 	Name: LensFlares_Textures
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000012484 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000012490 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1302,7 +1306,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: SFX_Car_Boost
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000012490 with 0x0000000c Bytes
+	Serialized data: at 0x000000000001249c with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1311,7 +1315,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Name: SFX_UI_Boost
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000001249c with 0x0000000c Bytes
+	Serialized data: at 0x00000000000124a8 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1321,7 +1325,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParameterDispenser_X
 	Outer: FXActor
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x00000000000124a8 with 0x00000010 Bytes
+	Serialized data: at 0x00000000000124b4 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 144]
 	Full Name: ParameterDispenser_X Boost_Rainbow.BoostBase.FXActor.ParameterDispenser_X_0
@@ -1329,7 +1333,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParameterDispenser_X
 	Outer: FXActor
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x00000000000124b8 with 0x00000010 Bytes
+	Serialized data: at 0x00000000000124c4 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 145]
 	Full Name: ParticleLODLevel Boost_Rainbow.Boost_Rainbow.Boost_PS.ParticleSpriteEmitter_3.ParticleLODLevel_6
@@ -1337,7 +1341,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000124c8 with 0x000000ac Bytes
+	Serialized data: at 0x00000000000124d4 with 0x000000ac Bytes
 	Export Flags: 0x00000001
 [Export 146]
 	Full Name: ParticleLODLevel Boost_Rainbow.Boost_Rainbow.Drive_PS.ParticleSpriteEmitter_0.ParticleLODLevel_0
@@ -1345,7 +1349,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012574 with 0x000000a0 Bytes
+	Serialized data: at 0x0000000000012580 with 0x000000a0 Bytes
 	Export Flags: 0x00000001
 [Export 147]
 	Full Name: ParticleLODLevel Boost_Rainbow.Boost_Rainbow.Drive_PS.ParticleSpriteEmitter_0.ParticleLODLevel_1
@@ -1353,7 +1357,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012614 with 0x000000bc Bytes
+	Serialized data: at 0x0000000000012620 with 0x000000bc Bytes
 	Export Flags: 0x00000001
 [Export 148]
 	Full Name: ParticleModuleColor Boost_Rainbow.Boost_Rainbow.Boost_PS.ParticleModuleColor_16
@@ -1361,7 +1365,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleColor
 	Outer: Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000126d0 with 0x000000d1 Bytes
+	Serialized data: at 0x00000000000126dc with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 149]
 	Full Name: ParticleModuleColor Boost_Rainbow.Boost_Rainbow.Drive_PS.ParticleModuleColor_0
@@ -1369,7 +1373,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleColor
 	Outer: Drive_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000127a1 with 0x0000011d Bytes
+	Serialized data: at 0x00000000000127ad with 0x0000011d Bytes
 	Export Flags: 0x00000001
 [Export 150]
 	Full Name: ParticleModuleColor Boost_Rainbow.Boost_Rainbow.Drive_PS.ParticleModuleColor_1
@@ -1377,7 +1381,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleColor
 	Outer: Drive_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000128be with 0x000000fd Bytes
+	Serialized data: at 0x00000000000128ca with 0x000000fd Bytes
 	Export Flags: 0x00000001
 [Export 151]
 	Full Name: ParticleModuleColorScaleOverLife Boost_Rainbow.Boost_Rainbow.Boost_PS.ParticleModuleColorScaleOverLife_16
@@ -1385,7 +1389,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000129bb with 0x00000249 Bytes
+	Serialized data: at 0x00000000000129c7 with 0x00000249 Bytes
 	Export Flags: 0x00000001
 [Export 152]
 	Full Name: ParticleModuleColorScaleOverLife Boost_Rainbow.Boost_Rainbow.Drive_PS.ParticleModuleColorScaleOverLife_0
@@ -1393,7 +1397,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Drive_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012c04 with 0x00000285 Bytes
+	Serialized data: at 0x0000000000012c10 with 0x00000285 Bytes
 	Export Flags: 0x00000001
 [Export 153]
 	Full Name: ParticleModuleLifetime Boost_Rainbow.Boost_Rainbow.Boost_PS.ParticleModuleLifetime_16
@@ -1401,7 +1405,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleLifetime
 	Outer: Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012e89 with 0x0000009d Bytes
+	Serialized data: at 0x0000000000012e95 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 154]
 	Full Name: ParticleModuleLifetime Boost_Rainbow.Boost_Rainbow.Drive_PS.ParticleModuleLifetime_0
@@ -1409,7 +1413,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleLifetime
 	Outer: Drive_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012f26 with 0x00000108 Bytes
+	Serialized data: at 0x0000000000012f32 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 155]
 	Full Name: ParticleModuleParameterDynamic Boost_Rainbow.Boost_Rainbow.Drive_PS.ParticleModuleParameterDynamic_0
@@ -1417,7 +1421,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleParameterDynamic
 	Outer: Drive_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001302e with 0x000007a9 Bytes
+	Serialized data: at 0x000000000001303a with 0x000007a9 Bytes
 	Export Flags: 0x00000001
 [Export 156]
 	Full Name: ParticleModuleParameterDynamic Boost_Rainbow.Boost_Rainbow.Drive_PS.ParticleModuleParameterDynamic_1
@@ -1425,7 +1429,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleParameterDynamic
 	Outer: Drive_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000137d7 with 0x000007a9 Bytes
+	Serialized data: at 0x00000000000137e3 with 0x000007a9 Bytes
 	Export Flags: 0x00000001
 [Export 157]
 	Full Name: ParticleModuleRequired Boost_Rainbow.Boost_Rainbow.Boost_PS.ParticleModuleRequired_3
@@ -1433,7 +1437,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleRequired
 	Outer: Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000013f80 with 0x00000113 Bytes
+	Serialized data: at 0x0000000000013f8c with 0x00000113 Bytes
 	Export Flags: 0x00000001
 [Export 158]
 	Full Name: ParticleModuleRequired Boost_Rainbow.Boost_Rainbow.Drive_PS.ParticleModuleRequired_0
@@ -1441,7 +1445,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleRequired
 	Outer: Drive_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014093 with 0x00000189 Bytes
+	Serialized data: at 0x000000000001409f with 0x00000189 Bytes
 	Export Flags: 0x00000001
 [Export 159]
 	Full Name: ParticleModuleRotation Boost_Rainbow.Boost_Rainbow.Drive_PS.ParticleModuleRotation_0
@@ -1449,7 +1453,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleRotation
 	Outer: Drive_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001421c with 0x00000071 Bytes
+	Serialized data: at 0x0000000000014228 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 160]
 	Full Name: ParticleModuleSize Boost_Rainbow.Boost_Rainbow.Boost_PS.ParticleModuleSize_3
@@ -1457,7 +1461,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSize
 	Outer: Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001428d with 0x000000ad Bytes
+	Serialized data: at 0x0000000000014299 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 161]
 	Full Name: ParticleModuleSize Boost_Rainbow.Boost_Rainbow.Drive_PS.ParticleModuleSize_0
@@ -1465,7 +1469,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSize
 	Outer: Drive_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001433a with 0x00000128 Bytes
+	Serialized data: at 0x0000000000014346 with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [Export 162]
 	Full Name: ParticleModuleSize Boost_Rainbow.Boost_Rainbow.Drive_PS.ParticleModuleSize_1
@@ -1473,7 +1477,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSize
 	Outer: Drive_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014462 with 0x00000128 Bytes
+	Serialized data: at 0x000000000001446e with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [Export 163]
 	Full Name: ParticleModuleSizeMultiplyLife Boost_Rainbow.Boost_Rainbow.Drive_PS.ParticleModuleSizeMultiplyLife_0
@@ -1481,7 +1485,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: Drive_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001458a with 0x000001ad Bytes
+	Serialized data: at 0x0000000000014596 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 164]
 	Full Name: ParticleModuleSpawn Boost_Rainbow.Boost_Rainbow.Boost_PS.ParticleModuleSpawn_5
@@ -1489,7 +1493,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSpawn
 	Outer: Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014737 with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000014743 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 165]
 	Full Name: ParticleModuleSpawn Boost_Rainbow.Boost_Rainbow.Drive_PS.ParticleModuleSpawn_0
@@ -1497,7 +1501,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSpawn
 	Outer: Drive_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014818 with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000014824 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 166]
 	Full Name: ParticleModuleSpawnPerUnit Boost_Rainbow.Boost_Rainbow.Boost_PS.ParticleModuleSpawnPerUnit_7
@@ -1505,7 +1509,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSpawnPerUnit
 	Outer: Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000148f9 with 0x000000b9 Bytes
+	Serialized data: at 0x0000000000014905 with 0x000000b9 Bytes
 	Export Flags: 0x00000001
 [Export 167]
 	Full Name: ParticleModuleSubUV Boost_Rainbow.Boost_Rainbow.Drive_PS.ParticleModuleSubUV_0
@@ -1513,7 +1517,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleSubUV
 	Outer: Drive_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000149b2 with 0x0000008d Bytes
+	Serialized data: at 0x00000000000149be with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 168]
 	Full Name: ParticleModuleTypeDataRibbon Boost_Rainbow.Boost_Rainbow.Boost_PS.ParticleModuleTypeDataRibbon_4
@@ -1521,7 +1525,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleTypeDataRibbon
 	Outer: Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014a3f with 0x000000b3 Bytes
+	Serialized data: at 0x0000000000014a4b with 0x000000b3 Bytes
 	Export Flags: 0x00000001
 [Export 169]
 	Full Name: ParticleModuleVelocity Boost_Rainbow.Boost_Rainbow.Drive_PS.ParticleModuleVelocity_0
@@ -1529,7 +1533,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleModuleVelocity
 	Outer: Drive_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014af2 with 0x0000016c Bytes
+	Serialized data: at 0x0000000000014afe with 0x0000016c Bytes
 	Export Flags: 0x00000001
 [Export 170]
 	Full Name: ParticleSpriteEmitter Boost_Rainbow.Boost_Rainbow.Boost_PS.ParticleSpriteEmitter_2
@@ -1537,7 +1541,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSpriteEmitter
 	Outer: Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014c5e with 0x00000025 Bytes
+	Serialized data: at 0x0000000000014c6a with 0x00000025 Bytes
 	Export Flags: 0x00000001
 [Export 171]
 	Full Name: ParticleSpriteEmitter Boost_Rainbow.Boost_Rainbow.Boost_PS.ParticleSpriteEmitter_3
@@ -1545,7 +1549,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSpriteEmitter
 	Outer: Boost_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014c83 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000014c8f with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 172]
 	Full Name: ParticleSpriteEmitter Boost_Rainbow.Boost_Rainbow.Drive_PS.ParticleSpriteEmitter_0
@@ -1553,7 +1557,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSpriteEmitter
 	Outer: Drive_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014ccf with 0x00000050 Bytes
+	Serialized data: at 0x0000000000014cdb with 0x00000050 Bytes
 	Export Flags: 0x00000001
 [Export 173]
 	Full Name: ParticleSystem Boost_Rainbow.Boost_Rainbow.Boost_PS
@@ -1561,7 +1565,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSystem
 	Outer: Boost_Rainbow
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000014d1f with 0x00000158 Bytes
+	Serialized data: at 0x0000000000014d2b with 0x00000158 Bytes
 	Export Flags: 0x00000001
 [Export 174]
 	Full Name: ParticleSystem Boost_Rainbow.Boost_Rainbow.Drive_PS
@@ -1569,7 +1573,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSystem
 	Outer: Boost_Rainbow
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000014e77 with 0x0000011c Bytes
+	Serialized data: at 0x0000000000014e83 with 0x0000011c Bytes
 	Export Flags: 0x00000001
 [Export 175]
 	Full Name: ParticleSystemComponent Boost_Rainbow.Boost_Rainbow.FXActor.ParticleSystemComponent_0
@@ -1577,7 +1581,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSystemComponent
 	Outer: FXActor
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x0000000000014f93 with 0x00000061 Bytes
+	Serialized data: at 0x0000000000014f9f with 0x00000061 Bytes
 	Export Flags: 0x00000001
 [Export 176]
 	Full Name: ParticleSystemComponent Boost_Rainbow.Boost_Rainbow.FXActor.ParticleSystemComponent_1
@@ -1585,7 +1589,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ParticleSystemComponent
 	Outer: FXActor
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x0000000000014ff4 with 0x00000061 Bytes
+	Serialized data: at 0x0000000000015000 with 0x00000061 Bytes
 	Export Flags: 0x00000001
 [Export 177]
 	Full Name: ProductAsset_Boost_TA Boost_Rainbow.Boost_Rainbow.Boost_Rainbow
@@ -1593,7 +1597,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ProductAsset_Boost_TA
 	Outer: Boost_Rainbow
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000015055 with 0x00000044 Bytes
+	Serialized data: at 0x0000000000015061 with 0x00000044 Bytes
 	Export Flags: 0x00000001
 [Export 178]
 	Full Name: ShakeComponent_X Boost_Rainbow.BoostBase.FXActor.ShakeComponent_X_0
@@ -1601,7 +1605,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ShakeComponent_X
 	Outer: FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000015099 with 0x0000006d Bytes
+	Serialized data: at 0x00000000000150a5 with 0x0000006d Bytes
 	Export Flags: 0x00000001
 [Export 179]
 	Full Name: ShakeComponent_X Boost_Rainbow.BoostBase.FXActor.ShakeComponent_X_1
@@ -1609,7 +1613,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: ShakeComponent_X
 	Outer: FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000015106 with 0x0000006d Bytes
+	Serialized data: at 0x0000000000015112 with 0x0000006d Bytes
 	Export Flags: 0x00000001
 [Export 311]
 	Full Name: Texture2D Textures.Smoke01_D
@@ -1617,7 +1621,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000015173 with 0x00005780 Bytes
+	Serialized data: at 0x000000000001517f with 0x00005780 Bytes
 	Export Flags: 0x00000001
 [Export 312]
 	Full Name: Texture2D Boost_Rainbow.Boost_Confetti.confettiBoost_T
@@ -1625,7 +1629,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Boost_Confetti
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001a8f3 with 0x00000cf4 Bytes
+	Serialized data: at 0x000000000001a8ff with 0x00000cf4 Bytes
 	Export Flags: 0x00000001
 [Export 319]
 	Full Name: Texture2D Mat.Sphere_Gradient01_D
@@ -1633,7 +1637,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Mat
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000001b5e7 with 0x00005780 Bytes
+	Serialized data: at 0x000000000001b5f3 with 0x00005780 Bytes
 	Export Flags: 0x00000001
 [Export 320]
 	Full Name: Texture2D Boost_Rainbow.LensFlares_Textures.Flare_Rainbow01_D
@@ -1641,7 +1645,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: LensFlares_Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000020d67 with 0x00005796 Bytes
+	Serialized data: at 0x0000000000020d73 with 0x00005796 Bytes
 	Export Flags: 0x00000001
 [Export 321]
 	Full Name: FXTrait_BoostParticle_TA Boost_Rainbow.Boost_Rainbow.FXActor.FXTrait_BoostParticle_TA_43
@@ -1649,7 +1653,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: FXTrait_BoostParticle_TA
 	Outer: FXActor
 	Object Flags: 0x0007000402000000
-	Serialized data: at 0x00000000000264fd with 0x00000180 Bytes
+	Serialized data: at 0x0000000000026509 with 0x00000180 Bytes
 	Export Flags: 0x00000001
 [Export 322]
 	Full Name: FXTrait_BoostParticle_TA Boost_Rainbow.Boost_Rainbow.FXActor.FXTrait_BoostParticle_TA_44
@@ -1657,7 +1661,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: FXTrait_BoostParticle_TA
 	Outer: FXActor
 	Object Flags: 0x0007000402000000
-	Serialized data: at 0x000000000002667d with 0x000006e0 Bytes
+	Serialized data: at 0x0000000000026689 with 0x000006e0 Bytes
 	Export Flags: 0x00000001
 [Export 323]
 	Full Name: FXTrait_BoostParticle_TA Boost_Rainbow.Boost_Rainbow.FXActor.FXTrait_BoostParticle_TA_45
@@ -1665,7 +1669,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: FXTrait_BoostParticle_TA
 	Outer: FXActor
 	Object Flags: 0x0007000402000000
-	Serialized data: at 0x0000000000026d5d with 0x0000000c Bytes
+	Serialized data: at 0x0000000000026d69 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 328]
 	Full Name: MaterialExpressionScalarParameter Materials.Confetti_Mat.MaterialExpressionScalarParameter_12
@@ -1673,7 +1677,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026d69 with 0x00000078 Bytes
+	Serialized data: at 0x0000000000026d75 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 329]
 	Full Name: MaterialExpressionScalarParameter Materials.Confetti_Mat.MaterialExpressionScalarParameter_14
@@ -1681,7 +1685,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026de1 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000026ded with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 330]
 	Full Name: MaterialExpressionScalarParameter Materials.Confetti_Mat.MaterialExpressionScalarParameter_16
@@ -1689,7 +1693,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026e75 with 0x00000078 Bytes
+	Serialized data: at 0x0000000000026e81 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 331]
 	Full Name: MaterialExpressionScalarParameter Materials.Confetti_Mat.MaterialExpressionScalarParameter_17
@@ -1697,14 +1701,14 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: MaterialExpressionScalarParameter
 	Outer: Confetti_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000026eed with 0x00000078 Bytes
+	Serialized data: at 0x0000000000026ef9 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 334]
 	Full Name: Package Boost_Rainbow.Boost_Hearts
 	Name: Boost_Hearts
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000026f65 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000026f71 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1714,7 +1718,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Package
 	Outer: Boost_Hearts
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000026f71 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000026f7d with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 341]
 	Full Name: Texture2D Textures.Rainbow_T
@@ -1722,7 +1726,7 @@ AES: x99rEyUqzHFHu1HJitfjS3/lALd/pfqyk+LyTmsX53k=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000026f7d with 0x00000467 Bytes
+	Serialized data: at 0x0000000000026f89 with 0x00000467 Bytes
 	Export Flags: 0x00000001
 
 

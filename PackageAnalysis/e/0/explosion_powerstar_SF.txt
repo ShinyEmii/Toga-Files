@@ -9,15 +9,15 @@ Licensee Version: 34
 Total Header Size: 0x0000f511 Bytes
 Folder Name: "None"
 Package Flags: 0x02880a8d
-Name Count: 545 Name Offset: 0x0000011d
-Export Count: 423 Export Offset: 0x000045e1
-Import Count: 93 Import Offset: 0x00003bb5
-Depends Offset: 0x0000bcd9
-Import Export Guids Offset: 0x0000bcd9
+Name Count: 546 Name Offset: 0x00000129
+Export Count: 423 Export Offset: 0x00004605
+Import Count: 93 Import Offset: 0x00003bd9
+Depends Offset: 0x0000bcfd
+Import Export Guids Offset: 0x0000bcfd
 Import Guids Count: 0
 Export Guids Count: 0
 Thumbnail Table Offset: 0x00000000
-GUID: 0xd78be859 0x472ddd28 0x6c789fa7 0x50e8887f
+GUID: 0x3646f475 0x41238d7d 0x6257ada3 0xa3871e32
 Generations:
 [0]
 	Export Count: 402
@@ -26,6 +26,10 @@ Generations:
 [1]
 	Export Count: 423
 	Name Count: 545
+	Net Object Count: 0
+[2]
+	Export Count: 423
+	Name Count: 546
 	Net Object Count: 0
 Engine Version: 10897
 Cooked Content Version: 136
@@ -66,22 +70,27 @@ Texture Allocations Texture Types:
 	Flags: 1
 	Exports:
 		[0] Texture2D Textures.CausticsNoMip_D
-Test Data Size: 0x000037ec
+Test Data Size: 0x000037a4
 Compressed Chunk Info:
-	Offset: 0x0000bbbc
+	Offset: 0x0000bbd4
 	[0]
-		Uncompressed Offset: 0x000000000000bcd9
+		Uncompressed Offset: 0x000000000000bcfd
 		Uncompressed Size: 0x00131b08
 		Compressed Offset: 0x000000000000f511
 		Compressed Size: 0x00040b01
 	[1]
-		Uncompressed Offset: 0x000000000013d7e1
+		Uncompressed Offset: 0x000000000013d805
 		Uncompressed Size: 0x00002a22
 		Compressed Offset: 0x0000000000050012
 		Compressed Size: 0x00000700
-Last Block Size: 0x00000004
-Base Header Size: 0x0000011d
-Encrypted Header Size: 0x0000f3f0
+	[2]
+		Uncompressed Offset: 0x0000000000140227
+		Uncompressed Size: 0x000001d3
+		Compressed Offset: 0x0000000000050712
+		Compressed Size: 0x00000070
+Last Block Size: 0x00000008
+Base Header Size: 0x00000129
+Encrypted Header Size: 0x0000f3e0
 
 AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 
@@ -634,6 +643,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 [Name 542] [0x0007001000000000] MaskA
 [Name 543] [0x0007001000000000] Mat
 [Name 544] [0x0007001000000000] Vehicle_Shared
+[Name 545] [0x0007001000000000] Translation
 
 
     ~ Exports ~ 
@@ -645,7 +655,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: AkBank
 	Outer: SFX_GoalExplosions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000bcd9 with 0x0000000c Bytes
+	Serialized data: at 0x000000000000bcfd with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 1]
 	Full Name: AkPlaySoundComponent explosion_powerstar.explosion_powerstar.FXActorExplosion_ReactiveFree01_MVP.AkPlaySoundComponent_2
@@ -653,7 +663,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: AkPlaySoundComponent
 	Outer: FXActorExplosion_ReactiveFree01_MVP
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000000bce5 with 0x0000005e Bytes
+	Serialized data: at 0x000000000000bd09 with 0x0000005e Bytes
 	Export Flags: 0x00000001
 [Export 2]
 	Full Name: AkPlaySoundComponent explosion_powerstar.explosion_powerstar.FXActorExplosion_ReactiveFree01_MVP.AkPlaySoundComponent_3
@@ -661,7 +671,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: AkPlaySoundComponent
 	Outer: FXActorExplosion_ReactiveFree01_MVP
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000000bd43 with 0x0000005e Bytes
+	Serialized data: at 0x000000000000bd67 with 0x0000005e Bytes
 	Export Flags: 0x00000001
 [Export 3]
 	Full Name: AkSoundCue explosion_powerstar.SFX_GoalExplosions.GoalExplosion_PowerStar_End
@@ -669,7 +679,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: AkSoundCue
 	Outer: SFX_GoalExplosions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000bda1 with 0x00000065 Bytes
+	Serialized data: at 0x000000000000bdc5 with 0x00000065 Bytes
 	Export Flags: 0x00000001
 [Export 4]
 	Full Name: AkSoundCue explosion_powerstar.SFX_GoalExplosions.GoalExplosion_PowerStar_Start
@@ -677,7 +687,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: AkSoundCue
 	Outer: SFX_GoalExplosions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000000be06 with 0x00000067 Bytes
+	Serialized data: at 0x000000000000be2a with 0x00000067 Bytes
 	Export Flags: 0x00000001
 [Export 5]
 	Full Name: CameraShake Explosion.Explosion_Large_CameraShake
@@ -685,7 +695,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: CameraShake
 	Outer: Explosion
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x000000000000be6d with 0x000002d4 Bytes
+	Serialized data: at 0x000000000000be91 with 0x000002d4 Bytes
 	Export Flags: 0x00000001
 [Export 6]
 	Full Name: DistributionFloatConstant explosion_powerstar.explosion_powerstar.FXActorExplosion_ReactiveFree01_MVP.ShakeComponent_X_0.DistributionFloatConstant_0
@@ -693,7 +703,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatConstant
 	Outer: ShakeComponent_X_0
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000000c141 with 0x0000002c Bytes
+	Serialized data: at 0x000000000000c165 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 7]
 	Full Name: DistributionFloatConstant explosion_powerstar.explosion_powerstar.FXActorExplosion_ReactiveFree01_MVP.ShakeComponent_X_0.DistributionFloatConstant_1
@@ -701,7 +711,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatConstant
 	Outer: ShakeComponent_X_0
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000000c16d with 0x0000002c Bytes
+	Serialized data: at 0x000000000000c191 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 8]
 	Full Name: DistributionFloatConstant explosion_powerstar.explosion_powerstar.FXActorExplosion_ReactiveFree01_MVP.ShakeComponent_X_0.DistributionFloatConstant_2
@@ -709,7 +719,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatConstant
 	Outer: ShakeComponent_X_0
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x000000000000c199 with 0x0000002c Bytes
+	Serialized data: at 0x000000000000c1bd with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 9]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleParameterDynamic_0.DistributionFloatParticleParameter_1
@@ -717,7 +727,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c1c5 with 0x000000c5 Bytes
+	Serialized data: at 0x000000000000c1e9 with 0x000000c5 Bytes
 	Export Flags: 0x00000001
 [Export 10]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleParameterDynamic_0.DistributionFloatParticleParameter_13
@@ -725,7 +735,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c28a with 0x0000008d Bytes
+	Serialized data: at 0x000000000000c2ae with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 11]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleParameterDynamic_0.DistributionFloatParticleParameter_7
@@ -733,7 +743,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c317 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000c33b with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 12]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleParameterDynamic_18.DistributionFloatParticleParameter_1
@@ -741,7 +751,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_18
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c3a4 with 0x000000c5 Bytes
+	Serialized data: at 0x000000000000c3c8 with 0x000000c5 Bytes
 	Export Flags: 0x00000001
 [Export 13]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleParameterDynamic_18.DistributionFloatParticleParameter_13
@@ -749,7 +759,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_18
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c469 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000c48d with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 14]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleParameterDynamic_18.DistributionFloatParticleParameter_7
@@ -757,7 +767,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_18
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c4f6 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000c51a with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 15]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleParameterDynamic_19.DistributionFloatParticleParameter_1
@@ -765,7 +775,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_19
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c583 with 0x000000c5 Bytes
+	Serialized data: at 0x000000000000c5a7 with 0x000000c5 Bytes
 	Export Flags: 0x00000001
 [Export 16]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleParameterDynamic_19.DistributionFloatParticleParameter_13
@@ -773,7 +783,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_19
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c648 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000c66c with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 17]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleParameterDynamic_19.DistributionFloatParticleParameter_7
@@ -781,7 +791,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_19
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c6d5 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000c6f9 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 18]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_10.DistributionFloatParticleParameter_0
@@ -789,7 +799,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleColor_10
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c762 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000c786 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 19]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_0.DistributionFloatParticleParameter_5
@@ -797,7 +807,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c7ef with 0x0000008d Bytes
+	Serialized data: at 0x000000000000c813 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 20]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_0.DistributionFloatParticleParameter_6
@@ -805,7 +815,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c87c with 0x0000008d Bytes
+	Serialized data: at 0x000000000000c8a0 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 21]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_14.DistributionFloatParticleParameter_1
@@ -813,7 +823,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_14
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c909 with 0x000000a9 Bytes
+	Serialized data: at 0x000000000000c92d with 0x000000a9 Bytes
 	Export Flags: 0x00000001
 [Export 22]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_14.DistributionFloatParticleParameter_13
@@ -821,7 +831,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_14
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000c9b2 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000c9d6 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 23]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_14.DistributionFloatParticleParameter_2
@@ -829,7 +839,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_14
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ca3f with 0x0000008d Bytes
+	Serialized data: at 0x000000000000ca63 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 24]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_14.DistributionFloatParticleParameter_3
@@ -837,7 +847,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_14
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cacc with 0x0000008d Bytes
+	Serialized data: at 0x000000000000caf0 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 25]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_16.DistributionFloatParticleParameter_5
@@ -845,7 +855,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_16
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cb59 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000cb7d with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 26]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_16.DistributionFloatParticleParameter_6
@@ -853,7 +863,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_16
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cbe6 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000cc0a with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 27]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_3.DistributionFloatParticleParameter_0
@@ -861,7 +871,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cc73 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000cc97 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 28]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_3.DistributionFloatParticleParameter_13
@@ -869,7 +879,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cd00 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000cd24 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 29]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_3.DistributionFloatParticleParameter_3
@@ -877,7 +887,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cd8d with 0x000000c5 Bytes
+	Serialized data: at 0x000000000000cdb1 with 0x000000c5 Bytes
 	Export Flags: 0x00000001
 [Export 30]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_4.DistributionFloatParticleParameter_0
@@ -885,7 +895,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ce52 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000ce76 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 31]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_5.DistributionFloatParticleParameter_0
@@ -893,7 +903,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_5
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cedf with 0x0000008d Bytes
+	Serialized data: at 0x000000000000cf03 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 32]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_5.DistributionFloatParticleParameter_6
@@ -901,7 +911,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_5
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cf6c with 0x0000008d Bytes
+	Serialized data: at 0x000000000000cf90 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 33]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_6.DistributionFloatParticleParameter_1
@@ -909,7 +919,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_6
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000cff9 with 0x000000a9 Bytes
+	Serialized data: at 0x000000000000d01d with 0x000000a9 Bytes
 	Export Flags: 0x00000001
 [Export 34]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_6.DistributionFloatParticleParameter_13
@@ -917,7 +927,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_6
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d0a2 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000d0c6 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 35]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_6.DistributionFloatParticleParameter_2
@@ -925,7 +935,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_6
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d12f with 0x0000008d Bytes
+	Serialized data: at 0x000000000000d153 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 36]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_6.DistributionFloatParticleParameter_3
@@ -933,7 +943,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_6
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d1bc with 0x0000008d Bytes
+	Serialized data: at 0x000000000000d1e0 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 37]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_8.DistributionFloatParticleParameter_0
@@ -941,7 +951,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_8
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d249 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000d26d with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 38]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_8.DistributionFloatParticleParameter_13
@@ -949,7 +959,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_8
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d2d6 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000d2fa with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 39]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_8.DistributionFloatParticleParameter_3
@@ -957,7 +967,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_8
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d363 with 0x000000c5 Bytes
+	Serialized data: at 0x000000000000d387 with 0x000000c5 Bytes
 	Export Flags: 0x00000001
 [Export 40]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_9.DistributionFloatParticleParameter_4
@@ -965,7 +975,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_9
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d428 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000d44c with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 41]
 	Full Name: DistributionFloatParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_9.DistributionFloatParticleParameter_5
@@ -973,7 +983,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionFloatParticleParameter
 	Outer: ParticleModuleParameterDynamic_9
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d4b5 with 0x0000008d Bytes
+	Serialized data: at 0x000000000000d4d9 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 42]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.Complements_PS.ParticleModuleColor_22.DistributionVectorParticleParameter_4
@@ -981,7 +991,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_22
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d542 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000d566 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 43]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleColor_0.DistributionVectorParticleParameter_0
@@ -989,7 +999,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d62f with 0x000000ed Bytes
+	Serialized data: at 0x000000000000d653 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 44]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleColor_2.DistributionVectorParticleParameter_1
@@ -997,7 +1007,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d71c with 0x000000ed Bytes
+	Serialized data: at 0x000000000000d740 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 45]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleColor_3.DistributionVectorParticleParameter_5
@@ -1005,7 +1015,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d809 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000d82d with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 46]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleColorScaleOverLife_0.DistributionVectorParticleParameter_0
@@ -1013,7 +1023,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColorScaleOverLife_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d8f6 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000d91a with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 47]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_10.DistributionVectorParticleParameter_3
@@ -1021,7 +1031,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_10
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000d9e3 with 0x00000075 Bytes
+	Serialized data: at 0x000000000000da07 with 0x00000075 Bytes
 	Export Flags: 0x00000001
 [Export 48]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_14.DistributionVectorParticleParameter_1
@@ -1029,7 +1039,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_14
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000da58 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000da7c with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 49]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_15.DistributionVectorParticleParameter_1
@@ -1037,7 +1047,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_15
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000db45 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000db69 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 50]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_16.DistributionVectorParticleParameter_1
@@ -1045,7 +1055,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_16
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000dc32 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000dc56 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 51]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_19.DistributionVectorParticleParameter_1
@@ -1053,7 +1063,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_19
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000dd1f with 0x000000ed Bytes
+	Serialized data: at 0x000000000000dd43 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 52]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_20.DistributionVectorParticleParameter_1
@@ -1061,7 +1071,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_20
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000de0c with 0x000000ed Bytes
+	Serialized data: at 0x000000000000de30 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 53]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_22.DistributionVectorParticleParameter_3
@@ -1069,7 +1079,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_22
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000def9 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000df1d with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 54]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_26.DistributionVectorParticleParameter_0
@@ -1077,7 +1087,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_26
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000dfe6 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000e00a with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 55]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_3.DistributionVectorParticleParameter_2
@@ -1085,7 +1095,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e0d3 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000e0f7 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 56]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_8.DistributionVectorParticleParameter_1
@@ -1093,7 +1103,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_8
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e1c0 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000e1e4 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 57]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_10.DistributionVectorParticleParameter_5
@@ -1101,7 +1111,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColorScaleOverLife_10
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e2ad with 0x000000ed Bytes
+	Serialized data: at 0x000000000000e2d1 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 58]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_11.DistributionVectorParticleParameter_6
@@ -1109,7 +1119,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColorScaleOverLife_11
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e39a with 0x000000ed Bytes
+	Serialized data: at 0x000000000000e3be with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 59]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_13.DistributionVectorParticleParameter_7
@@ -1117,7 +1127,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColorScaleOverLife_13
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e487 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000e4ab with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 60]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_14.DistributionVectorParticleParameter_9
@@ -1125,7 +1135,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColorScaleOverLife_14
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e574 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000e598 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 61]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_16.DistributionVectorParticleParameter_0
@@ -1133,7 +1143,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColorScaleOverLife_16
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e661 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000e685 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 62]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_19.DistributionVectorParticleParameter_0
@@ -1141,7 +1151,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColorScaleOverLife_19
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e74e with 0x000000ed Bytes
+	Serialized data: at 0x000000000000e772 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 63]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_20.DistributionVectorParticleParameter_0
@@ -1149,7 +1159,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColorScaleOverLife_20
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e83b with 0x000000ed Bytes
+	Serialized data: at 0x000000000000e85f with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 64]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_22.DistributionVectorParticleParameter_8
@@ -1157,7 +1167,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColorScaleOverLife_22
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000e928 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000e94c with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 65]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_7.DistributionVectorParticleParameter_0
@@ -1165,7 +1175,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColorScaleOverLife_7
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000ea15 with 0x000000ed Bytes
+	Serialized data: at 0x000000000000ea39 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 66]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_9.DistributionVectorParticleParameter_2
@@ -1173,7 +1183,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColorScaleOverLife_9
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000000eb02 with 0x000000cd Bytes
+	Serialized data: at 0x000000000000eb26 with 0x000000cd Bytes
 	Export Flags: 0x00000001
 [Export 67]
 	Full Name: ForceFeedbackWaveform Explosion.Explosion_Large_FF
@@ -1181,7 +1191,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ForceFeedbackWaveform
 	Outer: Explosion
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x000000000000ebcf with 0x000002b8 Bytes
+	Serialized data: at 0x000000000000ebf3 with 0x000002b8 Bytes
 	Export Flags: 0x00000001
 [Export 68]
 	Full Name: FXActor_TA Archetypes.Explosion_Parent_FXActor
@@ -1189,7 +1199,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: FXActor_TA
 	Outer: Archetypes
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x000000000000ee87 with 0x0000036b Bytes
+	Serialized data: at 0x000000000000eeab with 0x0000036b Bytes
 	Export Flags: 0x00000001
 [Export 69]
 	Full Name: FXActor_TA explosion_powerstar.explosion_powerstar.FXActorExplosion_ReactiveFree01_MVP
@@ -1197,7 +1207,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: FXActor_TA
 	Outer: explosion_powerstar
 	Object Flags: 0x000f000502000400
-	Serialized data: at 0x000000000000f1f2 with 0x0000121e Bytes
+	Serialized data: at 0x000000000000f216 with 0x0000121e Bytes
 	Export Flags: 0x00000001
 [Export 70]
 	Full Name: Material explosion_powerstar.boost_singularity.Particles_MAT
@@ -1205,7 +1215,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Material
 	Outer: boost_singularity
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000010410 with 0x00000196 Bytes
+	Serialized data: at 0x0000000000010434 with 0x00000196 Bytes
 	Export Flags: 0x00000001
 [Export 71]
 	Full Name: Material explosion_powerstar.Explosion_GeoGeometry.Waves_Mat
@@ -1213,7 +1223,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Material
 	Outer: Explosion_GeoGeometry
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000105a6 with 0x00000186 Bytes
+	Serialized data: at 0x00000000000105ca with 0x00000186 Bytes
 	Export Flags: 0x00000001
 [Export 72]
 	Full Name: Material explosion_powerstar.explosion_laserbeam.RadialExplosion_MAT
@@ -1221,7 +1231,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Material
 	Outer: explosion_laserbeam
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000001072c with 0x00000207 Bytes
+	Serialized data: at 0x0000000000010750 with 0x00000207 Bytes
 	Export Flags: 0x00000001
 [Export 73]
 	Full Name: Material explosion_powerstar.explosion_powerstar.CircleFlare_Mat
@@ -1229,7 +1239,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Material
 	Outer: explosion_powerstar
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000010933 with 0x000001d1 Bytes
+	Serialized data: at 0x0000000000010957 with 0x000001d1 Bytes
 	Export Flags: 0x00000001
 [Export 74]
 	Full Name: Material explosion_powerstar.explosion_powerstar.Flipbook_M_T
@@ -1237,7 +1247,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Material
 	Outer: explosion_powerstar
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000010b04 with 0x0000025e Bytes
+	Serialized data: at 0x0000000000010b28 with 0x0000025e Bytes
 	Export Flags: 0x00000001
 [Export 75]
 	Full Name: Material Materials.ImpactFrame_MAT
@@ -1245,7 +1255,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000013d7e1 with 0x000005fc Bytes
+	Serialized data: at 0x000000000013d805 with 0x000005fc Bytes
 	Export Flags: 0x00000001
 [Export 76]
 	Full Name: Material Materials.MainStarCenter_MAT
@@ -1253,7 +1263,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000001130a with 0x000001ff Bytes
+	Serialized data: at 0x000000000001132e with 0x000001ff Bytes
 	Export Flags: 0x00000001
 [Export 77]
 	Full Name: Material Materials.Streaks_Base_Mat
@@ -1261,7 +1271,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Material
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000011509 with 0x000002d5 Bytes
+	Serialized data: at 0x000000000001152d with 0x000002d5 Bytes
 	Export Flags: 0x00000001
 [Export 78]
 	Full Name: Material explosion_powerstar.explosion_powerstar.Sprites_Mat
@@ -1269,7 +1279,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Material
 	Outer: explosion_powerstar
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000117de with 0x000001cd Bytes
+	Serialized data: at 0x0000000000011802 with 0x000001cd Bytes
 	Export Flags: 0x00000001
 [Export 79]
 	Full Name: Material explosion_powerstar.explosion_powerstar.Strip_Mat
@@ -1277,7 +1287,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Material
 	Outer: explosion_powerstar
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x00000000000119ab with 0x00000219 Bytes
+	Serialized data: at 0x00000000000119cf with 0x00000219 Bytes
 	Export Flags: 0x00000001
 [Export 80]
 	Full Name: Material explosion_powerstar.explosion_spellbook.Portal_MAT
@@ -1285,7 +1295,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Material
 	Outer: explosion_spellbook
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000011bc4 with 0x00000450 Bytes
+	Serialized data: at 0x0000000000011be8 with 0x00000450 Bytes
 	Export Flags: 0x00000001
 [Export 81]
 	Full Name: Material explosion_powerstar.explosion_spellbook.Traces_Mat
@@ -1293,7 +1303,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Material
 	Outer: explosion_spellbook
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000012014 with 0x000002bd Bytes
+	Serialized data: at 0x0000000000012038 with 0x000002bd Bytes
 	Export Flags: 0x00000001
 [Export 82]
 	Full Name: MaterialExpressionScalarParameter explosion_powerstar.explosion_powerstar.CircleFlare_Mat.MaterialExpressionScalarParameter_0
@@ -1301,7 +1311,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: CircleFlare_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000122d1 with 0x00000074 Bytes
+	Serialized data: at 0x00000000000122f5 with 0x00000074 Bytes
 	Export Flags: 0x00000001
 [Export 83]
 	Full Name: MaterialExpressionScalarParameter explosion_powerstar.explosion_powerstar.Flipbook_M_T.MaterialExpressionScalarParameter_0
@@ -1309,7 +1319,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: Flipbook_M_T
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012345 with 0x00000078 Bytes
+	Serialized data: at 0x0000000000012369 with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 84]
 	Full Name: MaterialExpressionScalarParameter Materials.ImpactFrame_MAT.MaterialExpressionScalarParameter_0
@@ -1317,7 +1327,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000123bd with 0x00000094 Bytes
+	Serialized data: at 0x00000000000123e1 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 85]
 	Full Name: MaterialExpressionScalarParameter Materials.ImpactFrame_MAT.MaterialExpressionScalarParameter_12
@@ -1325,7 +1335,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012451 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000012475 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 86]
 	Full Name: MaterialExpressionScalarParameter Materials.ImpactFrame_MAT.MaterialExpressionScalarParameter_13
@@ -1333,7 +1343,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012505 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000012529 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 87]
 	Full Name: MaterialExpressionScalarParameter Materials.ImpactFrame_MAT.MaterialExpressionScalarParameter_14
@@ -1341,7 +1351,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000125b9 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000125dd with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 88]
 	Full Name: MaterialExpressionScalarParameter Materials.ImpactFrame_MAT.MaterialExpressionScalarParameter_16
@@ -1349,7 +1359,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001264d with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000012671 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 89]
 	Full Name: MaterialExpressionScalarParameter Materials.ImpactFrame_MAT.MaterialExpressionScalarParameter_17
@@ -1357,7 +1367,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012701 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000012725 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 90]
 	Full Name: MaterialExpressionScalarParameter Materials.ImpactFrame_MAT.MaterialExpressionScalarParameter_18
@@ -1365,7 +1375,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012795 with 0x00000098 Bytes
+	Serialized data: at 0x00000000000127b9 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [Export 91]
 	Full Name: MaterialExpressionScalarParameter Materials.ImpactFrame_MAT.MaterialExpressionScalarParameter_19
@@ -1373,7 +1383,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001282d with 0x00000094 Bytes
+	Serialized data: at 0x0000000000012851 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 92]
 	Full Name: MaterialExpressionScalarParameter Materials.ImpactFrame_MAT.MaterialExpressionScalarParameter_26
@@ -1381,7 +1391,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000128c1 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000128e5 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 93]
 	Full Name: MaterialExpressionScalarParameter Materials.ImpactFrame_MAT.MaterialExpressionScalarParameter_27
@@ -1389,7 +1399,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012955 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000012979 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 94]
 	Full Name: MaterialExpressionScalarParameter Materials.ImpactFrame_MAT.MaterialExpressionScalarParameter_28
@@ -1397,7 +1407,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000129e9 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000012a0d with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 95]
 	Full Name: MaterialExpressionScalarParameter Materials.ImpactFrame_MAT.MaterialExpressionScalarParameter_29
@@ -1405,7 +1415,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012a7d with 0x00000094 Bytes
+	Serialized data: at 0x0000000000012aa1 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 96]
 	Full Name: MaterialExpressionScalarParameter Materials.ImpactFrame_MAT.MaterialExpressionScalarParameter_34
@@ -1413,7 +1423,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012b11 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000012b35 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 97]
 	Full Name: MaterialExpressionScalarParameter Materials.ImpactFrame_MAT.MaterialExpressionScalarParameter_7
@@ -1421,7 +1431,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012ba5 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000012bc9 with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 98]
 	Full Name: MaterialExpressionScalarParameter Materials.ImpactFrame_MAT.MaterialExpressionScalarParameter_8
@@ -1429,7 +1439,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012c59 with 0x000000b4 Bytes
+	Serialized data: at 0x0000000000012c7d with 0x000000b4 Bytes
 	Export Flags: 0x00000001
 [Export 99]
 	Full Name: MaterialExpressionScalarParameter Materials.Streaks_Base_Mat.MaterialExpressionScalarParameter_0
@@ -1437,7 +1447,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: Streaks_Base_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012d0d with 0x00000094 Bytes
+	Serialized data: at 0x0000000000012d31 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 100]
 	Full Name: MaterialExpressionScalarParameter explosion_powerstar.explosion_spellbook.Portal_MAT.MaterialExpressionScalarParameter_1
@@ -1445,7 +1455,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionScalarParameter
 	Outer: Portal_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012da1 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000012dc5 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 101]
 	Full Name: MaterialExpressionStaticBoolParameter Materials.ImpactFrame_MAT.MaterialExpressionStaticBoolParameter_6
@@ -1453,7 +1463,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionStaticBoolParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012e35 with 0x00000091 Bytes
+	Serialized data: at 0x0000000000012e59 with 0x00000091 Bytes
 	Export Flags: 0x00000001
 [Export 102]
 	Full Name: MaterialExpressionStaticBoolParameter Materials.ImpactFrame_MAT.MaterialExpressionStaticBoolParameter_7
@@ -1461,7 +1471,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionStaticBoolParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012ec6 with 0x00000078 Bytes
+	Serialized data: at 0x0000000000012eea with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 103]
 	Full Name: MaterialExpressionStaticSwitchParameter Materials.Streaks_Base_Mat.MaterialExpressionStaticSwitchParameter_0
@@ -1469,7 +1479,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Streaks_Base_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000012f3e with 0x00000100 Bytes
+	Serialized data: at 0x0000000000012f62 with 0x00000100 Bytes
 	Export Flags: 0x00000001
 [Export 104]
 	Full Name: MaterialExpressionStaticSwitchParameter explosion_powerstar.explosion_powerstar.Strip_Mat.MaterialExpressionStaticSwitchParameter_0
@@ -1477,7 +1487,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionStaticSwitchParameter
 	Outer: Strip_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001303e with 0x00000119 Bytes
+	Serialized data: at 0x0000000000013062 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 105]
 	Full Name: MaterialExpressionTextureObjectParameter Materials.ImpactFrame_MAT.MaterialExpressionTextureObjectParameter_6
@@ -1485,7 +1495,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionTextureObjectParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000013157 with 0x000000ad Bytes
+	Serialized data: at 0x000000000001317b with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 106]
 	Full Name: MaterialExpressionTextureObjectParameter Materials.ImpactFrame_MAT.MaterialExpressionTextureObjectParameter_7
@@ -1493,7 +1503,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionTextureObjectParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000013204 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000013228 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 107]
 	Full Name: MaterialExpressionTextureSampleParameter2D explosion_powerstar.boost_singularity.Particles_MAT.MaterialExpressionTextureSampleParameter2D_1
@@ -1501,7 +1511,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Particles_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000132b1 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000132d5 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 108]
 	Full Name: MaterialExpressionTextureSampleParameter2D explosion_powerstar.boost_singularity.Particles_MAT.MaterialExpressionTextureSampleParameter2D_2
@@ -1509,7 +1519,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Particles_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000013345 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000013369 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 109]
 	Full Name: MaterialExpressionTextureSampleParameter2D explosion_powerstar.explosion_laserbeam.RadialExplosion_MAT.MaterialExpressionTextureSampleParameter2D_0
@@ -1517,7 +1527,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: RadialExplosion_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000133d9 with 0x00000094 Bytes
+	Serialized data: at 0x00000000000133fd with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 110]
 	Full Name: MaterialExpressionTextureSampleParameter2D explosion_powerstar.explosion_powerstar.Sprites_Mat.MaterialExpressionTextureSampleParameter2D_0
@@ -1525,7 +1535,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionTextureSampleParameter2D
 	Outer: Sprites_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001346d with 0x00000094 Bytes
+	Serialized data: at 0x0000000000013491 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 111]
 	Full Name: MaterialExpressionVectorParameter Materials.ImpactFrame_MAT.MaterialExpressionVectorParameter_1
@@ -1533,7 +1543,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionVectorParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000013501 with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000013525 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 112]
 	Full Name: MaterialExpressionVectorParameter Materials.ImpactFrame_MAT.MaterialExpressionVectorParameter_2
@@ -1541,7 +1551,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionVectorParameter
 	Outer: ImpactFrame_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000135a9 with 0x00000078 Bytes
+	Serialized data: at 0x00000000000135cd with 0x00000078 Bytes
 	Export Flags: 0x00000001
 [Export 113]
 	Full Name: MaterialExpressionVectorParameter Materials.Streaks_Base_Mat.MaterialExpressionVectorParameter_0
@@ -1549,7 +1559,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionVectorParameter
 	Outer: Streaks_Base_Mat
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000013621 with 0x000000a8 Bytes
+	Serialized data: at 0x0000000000013645 with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 114]
 	Full Name: MaterialExpressionVectorParameter explosion_powerstar.explosion_spellbook.Portal_MAT.MaterialExpressionVectorParameter_0
@@ -1557,7 +1567,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialExpressionVectorParameter
 	Outer: Portal_MAT
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000136c9 with 0x000000a8 Bytes
+	Serialized data: at 0x00000000000136ed with 0x000000a8 Bytes
 	Export Flags: 0x00000001
 [Export 115]
 	Full Name: MaterialFunction Functions.ChromaBlur
@@ -1565,7 +1575,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialFunction
 	Outer: Functions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000013771 with 0x00000228 Bytes
+	Serialized data: at 0x0000000000013795 with 0x00000228 Bytes
 	Export Flags: 0x00000001
 [Export 116]
 	Full Name: MaterialFunction explosion_powerstar.Psy_MaterialFunctions.AlphaThreshold_Normalized
@@ -1573,7 +1583,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialFunction
 	Outer: Psy_MaterialFunctions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000013999 with 0x00000099 Bytes
+	Serialized data: at 0x00000000000139bd with 0x00000099 Bytes
 	Export Flags: 0x00000001
 [Export 117]
 	Full Name: MaterialFunction explosion_powerstar.Psy_MaterialFunctions.SubUV
@@ -1581,7 +1591,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialFunction
 	Outer: Psy_MaterialFunctions
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000013a32 with 0x00000130 Bytes
+	Serialized data: at 0x0000000000013a56 with 0x00000130 Bytes
 	Export Flags: 0x00000001
 [Export 118]
 	Full Name: MaterialInstanceConstant explosion_powerstar.explosion_powerstar.CircleFlare_Mic
@@ -1589,7 +1599,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialInstanceConstant
 	Outer: explosion_powerstar
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000013b62 with 0x000000e8 Bytes
+	Serialized data: at 0x0000000000013b86 with 0x000000e8 Bytes
 	Export Flags: 0x00000001
 [Export 119]
 	Full Name: MaterialInstanceConstant explosion_powerstar.explosion_powerstar.Strip_MIC
@@ -1597,21 +1607,21 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialInstanceConstant
 	Outer: explosion_powerstar
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000013c4a with 0x00000109 Bytes
+	Serialized data: at 0x0000000000013c6e with 0x00000109 Bytes
 	Export Flags: 0x00000001
 [Export 120]
 	Full Name: ObjectReferencer explosion_powerstar.StandaloneSeekFreeReferencer
 	Name: StandaloneSeekFreeReferencer
 	Class: ObjectReferencer
 	Object Flags: 0x0007000000000000
-	Serialized data: at 0x0000000000013d53 with 0x0000002c Bytes
+	Serialized data: at 0x0000000000013d77 with 0x0000002c Bytes
 	Export Flags: 0x00000000
 [Export 121]
 	Full Name: Package explosion_powerstar.boost_fireball
 	Name: boost_fireball
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013d7f with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013da3 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1621,14 +1631,14 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Package
 	Outer: boost_fireball
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013d8b with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013daf with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 123]
 	Full Name: Package explosion_powerstar.boost_singularity
 	Name: boost_singularity
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013d97 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013dbb with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1638,14 +1648,14 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Package
 	Outer: boost_singularity
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013da3 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013dc7 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 125]
 	Full Name: Package explosion_powerstar.CameraShakes
 	Name: CameraShakes
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013daf with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013dd3 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1655,14 +1665,14 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Package
 	Outer: CameraShakes
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013dbb with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013ddf with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 127]
 	Full Name: Package explosion_powerstar.Explosion_Assets
 	Name: Explosion_Assets
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013dc7 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013deb with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1672,7 +1682,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Package
 	Outer: Explosion_Assets
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013dd3 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013df7 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 129]
 	Full Name: Package explosion_powerstar.Explosion_Assets.Functions
@@ -1680,7 +1690,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Package
 	Outer: Explosion_Assets
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013ddf with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013e03 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 130]
 	Full Name: Package explosion_powerstar.Explosion_Assets.Textures
@@ -1688,14 +1698,14 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Package
 	Outer: Explosion_Assets
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013deb with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013e0f with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 131]
 	Full Name: Package explosion_powerstar.Explosion_GeoGeometry
 	Name: Explosion_GeoGeometry
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013df7 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013e1b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1704,7 +1714,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Name: explosion_illustrated_bursts
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013e03 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013e27 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1714,14 +1724,14 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Package
 	Outer: explosion_illustrated_bursts
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013e0f with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013e33 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 134]
 	Full Name: Package explosion_powerstar.explosion_laserbeam
 	Name: explosion_laserbeam
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013e1b with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013e3f with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1730,7 +1740,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Name: explosion_powerstar
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013e27 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013e4b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1740,14 +1750,14 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Package
 	Outer: explosion_powerstar
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013e33 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013e57 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 [Export 137]
 	Full Name: Package explosion_powerstar.explosion_powerstar_SF
 	Name: explosion_powerstar_SF
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013e3f with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013e63 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x0288000d
@@ -1756,7 +1766,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Name: explosion_spellbook
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013e4b with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013e6f with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1765,7 +1775,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Name: Psy_MaterialFunctions
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013e57 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013e7b with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1774,7 +1784,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Name: SFX_GoalExplosions
 	Class: Package
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000013e63 with 0x0000000c Bytes
+	Serialized data: at 0x0000000000013e87 with 0x0000000c Bytes
 	Export Flags: 0x00000001
 	Package GUID: 0x00000000 0x00000000 0x00000000 0x00000000
 	Package Flags: 0x20000005
@@ -1785,7 +1795,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Outer: Explosion_Parent_FXActor
 	Archetype: DefaultParameters
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x0000000000013e6f with 0x00000010 Bytes
+	Serialized data: at 0x0000000000013e93 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 142]
 	Full Name: ParameterDispenser_X explosion_powerstar.explosion_powerstar.FXActorExplosion_ReactiveFree01_MVP.DefaultParameters
@@ -1794,7 +1804,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Outer: FXActorExplosion_ReactiveFree01_MVP
 	Archetype: DefaultParameters
 	Object Flags: 0x0007000402000400
-	Serialized data: at 0x0000000000013e7f with 0x00000010 Bytes
+	Serialized data: at 0x0000000000013ea3 with 0x00000010 Bytes
 	Export Flags: 0x00000001
 [Export 143]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.Complements_PS.ParticleSpriteEmitter_24.ParticleLODLevel_2
@@ -1802,7 +1812,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_24
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000013e8f with 0x00000094 Bytes
+	Serialized data: at 0x0000000000013eb3 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 144]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleSpriteEmitter_1.ParticleLODLevel_1
@@ -1810,7 +1820,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000013f23 with 0x000000b0 Bytes
+	Serialized data: at 0x0000000000013f47 with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [Export 145]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleSpriteEmitter_2.ParticleLODLevel_2
@@ -1818,7 +1828,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_2
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000013fd3 with 0x000000a4 Bytes
+	Serialized data: at 0x0000000000013ff7 with 0x000000a4 Bytes
 	Export Flags: 0x00000001
 [Export 146]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleSpriteEmitter_3.ParticleLODLevel_3
@@ -1826,7 +1836,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_3
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014077 with 0x000000a4 Bytes
+	Serialized data: at 0x000000000001409b with 0x000000a4 Bytes
 	Export Flags: 0x00000001
 [Export 147]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleSpriteEmitter_4.ParticleLODLevel_4
@@ -1834,7 +1844,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001411b with 0x00000098 Bytes
+	Serialized data: at 0x000000000001413f with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [Export 148]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_11.ParticleLODLevel_0
@@ -1842,7 +1852,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_11
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000141b3 with 0x0000008c Bytes
+	Serialized data: at 0x00000000000141d7 with 0x0000008c Bytes
 	Export Flags: 0x00000001
 [Export 149]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_12.ParticleLODLevel_2
@@ -1850,7 +1860,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_12
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001423f with 0x000000b0 Bytes
+	Serialized data: at 0x0000000000014263 with 0x000000b0 Bytes
 	Export Flags: 0x00000001
 [Export 150]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_13.ParticleLODLevel_2
@@ -1858,7 +1868,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_13
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000142ef with 0x000000a0 Bytes
+	Serialized data: at 0x0000000000014313 with 0x000000a0 Bytes
 	Export Flags: 0x00000001
 [Export 151]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_14.ParticleLODLevel_3
@@ -1866,7 +1876,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_14
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001438f with 0x0000009c Bytes
+	Serialized data: at 0x00000000000143b3 with 0x0000009c Bytes
 	Export Flags: 0x00000001
 [Export 152]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_15.ParticleLODLevel_0
@@ -1874,7 +1884,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_15
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013dddd with 0x00000098 Bytes
+	Serialized data: at 0x000000000013de01 with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [Export 153]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_16.ParticleLODLevel_4
@@ -1882,7 +1892,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_16
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000144c3 with 0x000000b8 Bytes
+	Serialized data: at 0x00000000000144e7 with 0x000000b8 Bytes
 	Export Flags: 0x00000001
 [Export 154]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_19.ParticleLODLevel_2
@@ -1890,7 +1900,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_19
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001457b with 0x000000c0 Bytes
+	Serialized data: at 0x000000000001459f with 0x000000c0 Bytes
 	Export Flags: 0x00000001
 [Export 155]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_20.ParticleLODLevel_1
@@ -1898,7 +1908,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_20
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001463b with 0x000000bc Bytes
+	Serialized data: at 0x000000000001465f with 0x000000bc Bytes
 	Export Flags: 0x00000001
 [Export 156]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_21.ParticleLODLevel_0
@@ -1906,7 +1916,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_21
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000146f7 with 0x000000b8 Bytes
+	Serialized data: at 0x000000000001471b with 0x000000b8 Bytes
 	Export Flags: 0x00000001
 [Export 157]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_23.ParticleLODLevel_0
@@ -1914,7 +1924,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_23
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000147af with 0x000000a4 Bytes
+	Serialized data: at 0x00000000000147d3 with 0x000000a4 Bytes
 	Export Flags: 0x00000001
 [Export 158]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_24.ParticleLODLevel_1
@@ -1922,7 +1932,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_24
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014853 with 0x000000a4 Bytes
+	Serialized data: at 0x0000000000014877 with 0x000000a4 Bytes
 	Export Flags: 0x00000001
 [Export 159]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_25.ParticleLODLevel_2
@@ -1930,7 +1940,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_25
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013de75 with 0x000000a4 Bytes
+	Serialized data: at 0x000000000013de99 with 0x000000a4 Bytes
 	Export Flags: 0x00000001
 [Export 160]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_27.ParticleLODLevel_29
@@ -1938,7 +1948,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_27
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001499b with 0x00000098 Bytes
+	Serialized data: at 0x00000000000149bf with 0x00000098 Bytes
 	Export Flags: 0x00000001
 [Export 161]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_4.ParticleLODLevel_0
@@ -1946,7 +1956,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_4
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014a33 with 0x000000a4 Bytes
+	Serialized data: at 0x0000000000014a57 with 0x000000a4 Bytes
 	Export Flags: 0x00000001
 [Export 162]
 	Full Name: ParticleModuleCameraOffset explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleCameraOffset_0
@@ -1954,7 +1964,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleCameraOffset
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014ad7 with 0x0000009d Bytes
+	Serialized data: at 0x0000000000014afb with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 163]
 	Full Name: ParticleModuleCameraOffset explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleCameraOffset_1
@@ -1962,7 +1972,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleCameraOffset
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014b74 with 0x000000b6 Bytes
+	Serialized data: at 0x0000000000014b98 with 0x000000b6 Bytes
 	Export Flags: 0x00000001
 [Export 164]
 	Full Name: ParticleModuleCameraOffset explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleCameraOffset_5
@@ -1970,7 +1980,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleCameraOffset
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014c2a with 0x000000b6 Bytes
+	Serialized data: at 0x0000000000014c4e with 0x000000b6 Bytes
 	Export Flags: 0x00000001
 [Export 165]
 	Full Name: ParticleModuleCameraOffset explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleCameraOffset_7
@@ -1978,7 +1988,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleCameraOffset
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014ce0 with 0x0000009d Bytes
+	Serialized data: at 0x0000000000014d04 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 166]
 	Full Name: ParticleModuleCameraOffset explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleCameraOffset_8
@@ -1986,7 +1996,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleCameraOffset
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014d7d with 0x000000b6 Bytes
+	Serialized data: at 0x0000000000014da1 with 0x000000b6 Bytes
 	Export Flags: 0x00000001
 [Export 167]
 	Full Name: ParticleModuleCameraOffset explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleCameraOffset_9
@@ -1994,7 +2004,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleCameraOffset
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014e33 with 0x0000009d Bytes
+	Serialized data: at 0x0000000000014e57 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 168]
 	Full Name: ParticleModuleColor explosion_powerstar.explosion_powerstar.Complements_PS.ParticleModuleColor_22
@@ -2002,7 +2012,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColor
 	Outer: Complements_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014ed0 with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000014ef4 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 169]
 	Full Name: ParticleModuleColor explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleColor_0
@@ -2010,7 +2020,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColor
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000014fa1 with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000014fc5 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 170]
 	Full Name: ParticleModuleColor explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleColor_2
@@ -2018,7 +2028,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColor
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015072 with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000015096 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 171]
 	Full Name: ParticleModuleColor explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleColor_3
@@ -2026,7 +2036,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColor
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015143 with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000015167 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 172]
 	Full Name: ParticleModuleColor explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_10
@@ -2034,7 +2044,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColor
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015214 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000015238 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 173]
 	Full Name: ParticleModuleColor explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_14
@@ -2042,7 +2052,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColor
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015301 with 0x000000ea Bytes
+	Serialized data: at 0x0000000000015325 with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [Export 174]
 	Full Name: ParticleModuleColor explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_15
@@ -2050,7 +2060,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColor
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000153eb with 0x000000d1 Bytes
+	Serialized data: at 0x000000000001540f with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 175]
 	Full Name: ParticleModuleColor explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_16
@@ -2058,7 +2068,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColor
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000154bc with 0x000000ea Bytes
+	Serialized data: at 0x00000000000154e0 with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [Export 176]
 	Full Name: ParticleModuleColor explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_19
@@ -2066,7 +2076,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColor
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000155a6 with 0x000000d1 Bytes
+	Serialized data: at 0x00000000000155ca with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 177]
 	Full Name: ParticleModuleColor explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_20
@@ -2074,7 +2084,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColor
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015677 with 0x000000ea Bytes
+	Serialized data: at 0x000000000001569b with 0x000000ea Bytes
 	Export Flags: 0x00000001
 [Export 178]
 	Full Name: ParticleModuleColor explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_22
@@ -2082,7 +2092,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColor
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015761 with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000015785 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 179]
 	Full Name: ParticleModuleColor explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_26
@@ -2090,7 +2100,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColor
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015832 with 0x000000fd Bytes
+	Serialized data: at 0x0000000000015856 with 0x000000fd Bytes
 	Export Flags: 0x00000001
 [Export 180]
 	Full Name: ParticleModuleColor explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_3
@@ -2098,7 +2108,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColor
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001592f with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000015953 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 181]
 	Full Name: ParticleModuleColor explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_8
@@ -2106,7 +2116,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColor
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015a00 with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000015a24 with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 182]
 	Full Name: ParticleModuleColorOverLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorOverLife_1
@@ -2114,7 +2124,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColorOverLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013df19 with 0x000001a1 Bytes
+	Serialized data: at 0x000000000013df3d with 0x000001a1 Bytes
 	Export Flags: 0x00000001
 [Export 183]
 	Full Name: ParticleModuleColorScaleOverLife explosion_powerstar.explosion_powerstar.Complements_PS.ParticleModuleColorScaleOverLife_19
@@ -2122,7 +2132,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: Complements_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015c4a with 0x000000f1 Bytes
+	Serialized data: at 0x0000000000015c6e with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 184]
 	Full Name: ParticleModuleColorScaleOverLife explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleColorScaleOverLife_0
@@ -2130,7 +2140,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015d3b with 0x000000ed Bytes
+	Serialized data: at 0x0000000000015d5f with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 185]
 	Full Name: ParticleModuleColorScaleOverLife explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleColorScaleOverLife_4
@@ -2138,7 +2148,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015e28 with 0x00000185 Bytes
+	Serialized data: at 0x0000000000015e4c with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 186]
 	Full Name: ParticleModuleColorScaleOverLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_10
@@ -2146,7 +2156,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000015fad with 0x00000181 Bytes
+	Serialized data: at 0x0000000000015fd1 with 0x00000181 Bytes
 	Export Flags: 0x00000001
 [Export 187]
 	Full Name: ParticleModuleColorScaleOverLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_11
@@ -2154,7 +2164,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001612e with 0x00000181 Bytes
+	Serialized data: at 0x0000000000016152 with 0x00000181 Bytes
 	Export Flags: 0x00000001
 [Export 188]
 	Full Name: ParticleModuleColorScaleOverLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_12
@@ -2162,7 +2172,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000162af with 0x00000171 Bytes
+	Serialized data: at 0x00000000000162d3 with 0x00000171 Bytes
 	Export Flags: 0x00000001
 [Export 189]
 	Full Name: ParticleModuleColorScaleOverLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_13
@@ -2170,7 +2180,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016420 with 0x00000135 Bytes
+	Serialized data: at 0x0000000000016444 with 0x00000135 Bytes
 	Export Flags: 0x00000001
 [Export 190]
 	Full Name: ParticleModuleColorScaleOverLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_14
@@ -2178,7 +2188,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016555 with 0x0000015d Bytes
+	Serialized data: at 0x0000000000016579 with 0x0000015d Bytes
 	Export Flags: 0x00000001
 [Export 191]
 	Full Name: ParticleModuleColorScaleOverLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_16
@@ -2186,7 +2196,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000166b2 with 0x000000ed Bytes
+	Serialized data: at 0x00000000000166d6 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 192]
 	Full Name: ParticleModuleColorScaleOverLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_17
@@ -2194,7 +2204,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001679f with 0x0000017d Bytes
+	Serialized data: at 0x00000000000167c3 with 0x0000017d Bytes
 	Export Flags: 0x00000001
 [Export 193]
 	Full Name: ParticleModuleColorScaleOverLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_19
@@ -2202,7 +2212,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001691c with 0x000000ed Bytes
+	Serialized data: at 0x0000000000016940 with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 194]
 	Full Name: ParticleModuleColorScaleOverLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_20
@@ -2210,7 +2220,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016a09 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000016a2d with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 195]
 	Full Name: ParticleModuleColorScaleOverLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_22
@@ -2218,7 +2228,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016af6 with 0x000000d1 Bytes
+	Serialized data: at 0x0000000000016b1a with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 196]
 	Full Name: ParticleModuleColorScaleOverLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_7
@@ -2226,7 +2236,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016bc7 with 0x000000ed Bytes
+	Serialized data: at 0x0000000000016beb with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 197]
 	Full Name: ParticleModuleColorScaleOverLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_9
@@ -2234,7 +2244,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016cb4 with 0x00000151 Bytes
+	Serialized data: at 0x0000000000016cd8 with 0x00000151 Bytes
 	Export Flags: 0x00000001
 [Export 198]
 	Full Name: ParticleModuleEventGenerator explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleEventGenerator_0
@@ -2242,7 +2252,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleEventGenerator
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016e05 with 0x00000154 Bytes
+	Serialized data: at 0x0000000000016e29 with 0x00000154 Bytes
 	Export Flags: 0x00000001
 [Export 199]
 	Full Name: ParticleModuleEventReceiverSpawn explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleEventReceiverSpawn_0
@@ -2250,7 +2260,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleEventReceiverSpawn
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000016f59 with 0x00000161 Bytes
+	Serialized data: at 0x0000000000016f7d with 0x00000161 Bytes
 	Export Flags: 0x00000001
 [Export 200]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.Complements_PS.ParticleModuleLifetime_24
@@ -2258,7 +2268,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: Complements_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000170ba with 0x000000b9 Bytes
+	Serialized data: at 0x00000000000170de with 0x000000b9 Bytes
 	Export Flags: 0x00000001
 [Export 201]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleLifetime_1
@@ -2266,7 +2276,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017173 with 0x0000009d Bytes
+	Serialized data: at 0x0000000000017197 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 202]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleLifetime_2
@@ -2274,7 +2284,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017210 with 0x00000108 Bytes
+	Serialized data: at 0x0000000000017234 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 203]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleLifetime_3
@@ -2282,7 +2292,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017318 with 0x00000108 Bytes
+	Serialized data: at 0x000000000001733c with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 204]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleLifetime_4
@@ -2290,7 +2300,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017420 with 0x0000009d Bytes
+	Serialized data: at 0x0000000000017444 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 205]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLifetime_11
@@ -2298,7 +2308,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000174bd with 0x0000009d Bytes
+	Serialized data: at 0x00000000000174e1 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 206]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLifetime_12
@@ -2306,7 +2316,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001755a with 0x0000009d Bytes
+	Serialized data: at 0x000000000001757e with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 207]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLifetime_13
@@ -2314,7 +2324,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000175f7 with 0x00000108 Bytes
+	Serialized data: at 0x000000000001761b with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 208]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLifetime_14
@@ -2322,7 +2332,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000176ff with 0x0000009d Bytes
+	Serialized data: at 0x0000000000017723 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 209]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLifetime_16
@@ -2330,7 +2340,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001779c with 0x0000009d Bytes
+	Serialized data: at 0x00000000000177c0 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 210]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLifetime_19
@@ -2338,7 +2348,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017839 with 0x0000009d Bytes
+	Serialized data: at 0x000000000001785d with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 211]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLifetime_20
@@ -2346,7 +2356,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000178d6 with 0x0000009d Bytes
+	Serialized data: at 0x00000000000178fa with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 212]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLifetime_22
@@ -2354,7 +2364,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017973 with 0x00000108 Bytes
+	Serialized data: at 0x0000000000017997 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 213]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLifetime_23
@@ -2362,7 +2372,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017a7b with 0x0000009d Bytes
+	Serialized data: at 0x0000000000017a9f with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 214]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLifetime_24
@@ -2370,7 +2380,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017b18 with 0x00000108 Bytes
+	Serialized data: at 0x0000000000017b3c with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 215]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLifetime_26
@@ -2378,7 +2388,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017c20 with 0x00000108 Bytes
+	Serialized data: at 0x0000000000017c44 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 216]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLifetime_4
@@ -2386,7 +2396,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017d28 with 0x00000108 Bytes
+	Serialized data: at 0x0000000000017d4c with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 217]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLifetime_6
@@ -2394,7 +2404,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017e30 with 0x0000009d Bytes
+	Serialized data: at 0x0000000000017e54 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 218]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLifetime_9
@@ -2402,7 +2412,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013e0ba with 0x0000009d Bytes
+	Serialized data: at 0x000000000013e0de with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 219]
 	Full Name: ParticleModuleLocation explosion_powerstar.explosion_powerstar.Complements_PS.ParticleModuleLocation_13
@@ -2410,7 +2420,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLocation
 	Outer: Complements_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000017f6a with 0x00000128 Bytes
+	Serialized data: at 0x0000000000017f8e with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [Export 220]
 	Full Name: ParticleModuleLocation explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleLocation_0
@@ -2418,7 +2428,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLocation
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018092 with 0x00000071 Bytes
+	Serialized data: at 0x00000000000180b6 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 221]
 	Full Name: ParticleModuleLocation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLocation_1
@@ -2426,7 +2436,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLocation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018103 with 0x00000071 Bytes
+	Serialized data: at 0x0000000000018127 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 222]
 	Full Name: ParticleModuleLocation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLocation_10
@@ -2434,7 +2444,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLocation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018174 with 0x00000071 Bytes
+	Serialized data: at 0x0000000000018198 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 223]
 	Full Name: ParticleModuleLocation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLocation_11
@@ -2442,7 +2452,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLocation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000181e5 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000018209 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 224]
 	Full Name: ParticleModuleLocation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLocation_13
@@ -2450,7 +2460,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLocation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018292 with 0x00000071 Bytes
+	Serialized data: at 0x00000000000182b6 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 225]
 	Full Name: ParticleModuleLocation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLocation_14
@@ -2458,7 +2468,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLocation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018303 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000018327 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 226]
 	Full Name: ParticleModuleLocation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLocation_17
@@ -2466,7 +2476,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLocation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000183b0 with 0x00000071 Bytes
+	Serialized data: at 0x00000000000183d4 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 227]
 	Full Name: ParticleModuleLocation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLocation_6
@@ -2474,7 +2484,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLocation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018421 with 0x00000071 Bytes
+	Serialized data: at 0x0000000000018445 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 228]
 	Full Name: ParticleModuleLocation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLocation_7
@@ -2482,7 +2492,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLocation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018492 with 0x000000ad Bytes
+	Serialized data: at 0x00000000000184b6 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 229]
 	Full Name: ParticleModuleLocation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLocation_8
@@ -2490,7 +2500,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLocation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001853f with 0x00000071 Bytes
+	Serialized data: at 0x0000000000018563 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 230]
 	Full Name: ParticleModuleLocation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLocation_9
@@ -2498,7 +2508,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLocation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000185b0 with 0x00000071 Bytes
+	Serialized data: at 0x00000000000185d4 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 231]
 	Full Name: ParticleModuleLocationPrimitiveSphere explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleLocationPrimitiveSphere_0
@@ -2506,7 +2516,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLocationPrimitiveSphere
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018621 with 0x0000013e Bytes
+	Serialized data: at 0x0000000000018645 with 0x0000013e Bytes
 	Export Flags: 0x00000001
 [Export 232]
 	Full Name: ParticleModuleLocationPrimitiveSphere explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleLocationPrimitiveSphere_1
@@ -2514,7 +2524,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLocationPrimitiveSphere
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001875f with 0x0000016d Bytes
+	Serialized data: at 0x0000000000018783 with 0x0000016d Bytes
 	Export Flags: 0x00000001
 [Export 233]
 	Full Name: ParticleModuleLocationPrimitiveSphere explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleLocationPrimitiveSphere_2
@@ -2522,7 +2532,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLocationPrimitiveSphere
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000188cc with 0x00000183 Bytes
+	Serialized data: at 0x00000000000188f0 with 0x00000183 Bytes
 	Export Flags: 0x00000001
 [Export 234]
 	Full Name: ParticleModuleLocationPrimitiveSphere explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLocationPrimitiveSphere_10
@@ -2530,7 +2540,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLocationPrimitiveSphere
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018a4f with 0x000001a9 Bytes
+	Serialized data: at 0x0000000000018a73 with 0x000001a9 Bytes
 	Export Flags: 0x00000001
 [Export 235]
 	Full Name: ParticleModuleLocationPrimitiveSphere explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLocationPrimitiveSphere_2
@@ -2538,7 +2548,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLocationPrimitiveSphere
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018bf8 with 0x00000183 Bytes
+	Serialized data: at 0x0000000000018c1c with 0x00000183 Bytes
 	Export Flags: 0x00000001
 [Export 236]
 	Full Name: ParticleModuleLocationPrimitiveSphere explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLocationPrimitiveSphere_9
@@ -2546,7 +2556,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLocationPrimitiveSphere
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018d7b with 0x00000125 Bytes
+	Serialized data: at 0x0000000000018d9f with 0x00000125 Bytes
 	Export Flags: 0x00000001
 [Export 237]
 	Full Name: ParticleModuleMeshRotation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleMeshRotation_3
@@ -2554,7 +2564,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleMeshRotation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018ea0 with 0x00000110 Bytes
+	Serialized data: at 0x0000000000018ec4 with 0x00000110 Bytes
 	Export Flags: 0x00000001
 [Export 238]
 	Full Name: ParticleModuleMeshRotation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleMeshRotation_5
@@ -2562,7 +2572,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleMeshRotation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000018fb0 with 0x00000110 Bytes
+	Serialized data: at 0x0000000000018fd4 with 0x00000110 Bytes
 	Export Flags: 0x00000001
 [Export 239]
 	Full Name: ParticleModuleMeshRotation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleMeshRotation_6
@@ -2570,7 +2580,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleMeshRotation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000190c0 with 0x00000071 Bytes
+	Serialized data: at 0x00000000000190e4 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 240]
 	Full Name: ParticleModuleMeshRotationRate explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleMeshRotationRate_2
@@ -2578,7 +2588,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleMeshRotationRate
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019131 with 0x00000129 Bytes
+	Serialized data: at 0x0000000000019155 with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [Export 241]
 	Full Name: ParticleModuleMeshRotationRate explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleMeshRotationRate_3
@@ -2586,7 +2596,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleMeshRotationRate
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001925a with 0x00000129 Bytes
+	Serialized data: at 0x000000000001927e with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [Export 242]
 	Full Name: ParticleModuleMeshRotationRate explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleMeshRotationRate_4
@@ -2594,7 +2604,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleMeshRotationRate
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019383 with 0x00000129 Bytes
+	Serialized data: at 0x00000000000193a7 with 0x00000129 Bytes
 	Export Flags: 0x00000001
 [Export 243]
 	Full Name: ParticleModuleOrbit explosion_powerstar.explosion_powerstar.Complements_PS.ParticleModuleOrbit_2
@@ -2602,7 +2612,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleOrbit
 	Outer: Complements_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000194ac with 0x00000273 Bytes
+	Serialized data: at 0x00000000000194d0 with 0x00000273 Bytes
 	Export Flags: 0x00000001
 [Export 244]
 	Full Name: ParticleModuleOrbit explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleOrbit_0
@@ -2610,7 +2620,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleOrbit
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001971f with 0x000001de Bytes
+	Serialized data: at 0x0000000000019743 with 0x000001de Bytes
 	Export Flags: 0x00000001
 [Export 245]
 	Full Name: ParticleModuleOrientationAxisLock explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleOrientationAxisLock_0
@@ -2618,7 +2628,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleOrientationAxisLock
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000198fd with 0x00000055 Bytes
+	Serialized data: at 0x0000000000019921 with 0x00000055 Bytes
 	Export Flags: 0x00000001
 [Export 246]
 	Full Name: ParticleModuleParameterDynamic explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleParameterDynamic_0
@@ -2626,7 +2636,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleParameterDynamic
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000019952 with 0x00000751 Bytes
+	Serialized data: at 0x0000000000019976 with 0x00000751 Bytes
 	Export Flags: 0x00000001
 [Export 247]
 	Full Name: ParticleModuleParameterDynamic explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleParameterDynamic_18
@@ -2634,7 +2644,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleParameterDynamic
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a0a3 with 0x00000751 Bytes
+	Serialized data: at 0x000000000001a0c7 with 0x00000751 Bytes
 	Export Flags: 0x00000001
 [Export 248]
 	Full Name: ParticleModuleParameterDynamic explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleParameterDynamic_19
@@ -2642,7 +2652,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleParameterDynamic
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001a7f4 with 0x00000751 Bytes
+	Serialized data: at 0x000000000001a818 with 0x00000751 Bytes
 	Export Flags: 0x00000001
 [Export 249]
 	Full Name: ParticleModuleParameterDynamic explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_0
@@ -2650,7 +2660,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleParameterDynamic
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001af45 with 0x00000761 Bytes
+	Serialized data: at 0x000000000001af69 with 0x00000761 Bytes
 	Export Flags: 0x00000001
 [Export 250]
 	Full Name: ParticleModuleParameterDynamic explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_11
@@ -2658,7 +2668,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleParameterDynamic
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001b6a6 with 0x000007cd Bytes
+	Serialized data: at 0x000000000001b6ca with 0x000007cd Bytes
 	Export Flags: 0x00000001
 [Export 251]
 	Full Name: ParticleModuleParameterDynamic explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_14
@@ -2666,7 +2676,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleParameterDynamic
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001be73 with 0x00000741 Bytes
+	Serialized data: at 0x000000000001be97 with 0x00000741 Bytes
 	Export Flags: 0x00000001
 [Export 252]
 	Full Name: ParticleModuleParameterDynamic explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_16
@@ -2674,7 +2684,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleParameterDynamic
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001c5b4 with 0x00000761 Bytes
+	Serialized data: at 0x000000000001c5d8 with 0x00000761 Bytes
 	Export Flags: 0x00000001
 [Export 253]
 	Full Name: ParticleModuleParameterDynamic explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_3
@@ -2682,7 +2692,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleParameterDynamic
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001cd15 with 0x00000751 Bytes
+	Serialized data: at 0x000000000001cd39 with 0x00000751 Bytes
 	Export Flags: 0x00000001
 [Export 254]
 	Full Name: ParticleModuleParameterDynamic explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_4
@@ -2690,7 +2700,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleParameterDynamic
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001d466 with 0x000007bd Bytes
+	Serialized data: at 0x000000000001d48a with 0x000007bd Bytes
 	Export Flags: 0x00000001
 [Export 255]
 	Full Name: ParticleModuleParameterDynamic explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_5
@@ -2698,7 +2708,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleParameterDynamic
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001dc23 with 0x00000761 Bytes
+	Serialized data: at 0x000000000001dc47 with 0x00000761 Bytes
 	Export Flags: 0x00000001
 [Export 256]
 	Full Name: ParticleModuleParameterDynamic explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_6
@@ -2706,7 +2716,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleParameterDynamic
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001e384 with 0x00000741 Bytes
+	Serialized data: at 0x000000000001e3a8 with 0x00000741 Bytes
 	Export Flags: 0x00000001
 [Export 257]
 	Full Name: ParticleModuleParameterDynamic explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_7
@@ -2714,7 +2724,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleParameterDynamic
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013e157 with 0x0000078d Bytes
+	Serialized data: at 0x000000000013e17b with 0x0000078d Bytes
 	Export Flags: 0x00000001
 [Export 258]
 	Full Name: ParticleModuleParameterDynamic explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_8
@@ -2722,7 +2732,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleParameterDynamic
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001f26a with 0x00000751 Bytes
+	Serialized data: at 0x000000000001f28e with 0x00000751 Bytes
 	Export Flags: 0x00000001
 [Export 259]
 	Full Name: ParticleModuleParameterDynamic explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleParameterDynamic_9
@@ -2730,7 +2740,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleParameterDynamic
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000001f9bb with 0x00000761 Bytes
+	Serialized data: at 0x000000000001f9df with 0x00000761 Bytes
 	Export Flags: 0x00000001
 [Export 260]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.Complements_PS.ParticleModuleRequired_24
@@ -2738,7 +2748,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: Complements_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002011c with 0x00000151 Bytes
+	Serialized data: at 0x0000000000020140 with 0x00000151 Bytes
 	Export Flags: 0x00000001
 [Export 261]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleRequired_1
@@ -2746,7 +2756,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002026d with 0x00000113 Bytes
+	Serialized data: at 0x0000000000020291 with 0x00000113 Bytes
 	Export Flags: 0x00000001
 [Export 262]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleRequired_2
@@ -2754,7 +2764,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020380 with 0x00000113 Bytes
+	Serialized data: at 0x00000000000203a4 with 0x00000113 Bytes
 	Export Flags: 0x00000001
 [Export 263]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleRequired_3
@@ -2762,7 +2772,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020493 with 0x00000110 Bytes
+	Serialized data: at 0x00000000000204b7 with 0x00000110 Bytes
 	Export Flags: 0x00000001
 [Export 264]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleRequired_4
@@ -2770,7 +2780,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000205a3 with 0x0000012c Bytes
+	Serialized data: at 0x00000000000205c7 with 0x0000012c Bytes
 	Export Flags: 0x00000001
 [Export 265]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRequired_11
@@ -2778,7 +2788,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013e8e4 with 0x0000012f Bytes
+	Serialized data: at 0x000000000013e908 with 0x0000012f Bytes
 	Export Flags: 0x00000001
 [Export 266]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRequired_12
@@ -2786,7 +2796,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000207fe with 0x00000138 Bytes
+	Serialized data: at 0x0000000000020822 with 0x00000138 Bytes
 	Export Flags: 0x00000001
 [Export 267]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRequired_13
@@ -2794,7 +2804,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020936 with 0x00000113 Bytes
+	Serialized data: at 0x000000000002095a with 0x00000113 Bytes
 	Export Flags: 0x00000001
 [Export 268]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRequired_14
@@ -2802,7 +2812,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020a49 with 0x00000113 Bytes
+	Serialized data: at 0x0000000000020a6d with 0x00000113 Bytes
 	Export Flags: 0x00000001
 [Export 269]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRequired_15
@@ -2810,7 +2820,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020b5c with 0x00000148 Bytes
+	Serialized data: at 0x0000000000020b80 with 0x00000148 Bytes
 	Export Flags: 0x00000001
 [Export 270]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRequired_16
@@ -2818,7 +2828,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020ca4 with 0x00000110 Bytes
+	Serialized data: at 0x0000000000020cc8 with 0x00000110 Bytes
 	Export Flags: 0x00000001
 [Export 271]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRequired_19
@@ -2826,7 +2836,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020db4 with 0x0000012c Bytes
+	Serialized data: at 0x0000000000020dd8 with 0x0000012c Bytes
 	Export Flags: 0x00000001
 [Export 272]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRequired_20
@@ -2834,7 +2844,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000020ee0 with 0x00000148 Bytes
+	Serialized data: at 0x0000000000020f04 with 0x00000148 Bytes
 	Export Flags: 0x00000001
 [Export 273]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRequired_21
@@ -2842,7 +2852,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021028 with 0x00000110 Bytes
+	Serialized data: at 0x000000000002104c with 0x00000110 Bytes
 	Export Flags: 0x00000001
 [Export 274]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRequired_23
@@ -2850,7 +2860,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021138 with 0x00000157 Bytes
+	Serialized data: at 0x000000000002115c with 0x00000157 Bytes
 	Export Flags: 0x00000001
 [Export 275]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRequired_24
@@ -2858,7 +2868,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002128f with 0x0000012c Bytes
+	Serialized data: at 0x00000000000212b3 with 0x0000012c Bytes
 	Export Flags: 0x00000001
 [Export 276]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRequired_25
@@ -2866,7 +2876,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000213bb with 0x00000157 Bytes
+	Serialized data: at 0x00000000000213df with 0x00000157 Bytes
 	Export Flags: 0x00000001
 [Export 277]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRequired_27
@@ -2874,7 +2884,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021512 with 0x0000015e Bytes
+	Serialized data: at 0x0000000000021536 with 0x0000015e Bytes
 	Export Flags: 0x00000001
 [Export 278]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRequired_4
@@ -2882,7 +2892,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021670 with 0x0000012c Bytes
+	Serialized data: at 0x0000000000021694 with 0x0000012c Bytes
 	Export Flags: 0x00000001
 [Export 279]
 	Full Name: ParticleModuleRotation explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleRotation_0
@@ -2890,7 +2900,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRotation
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002179c with 0x00000071 Bytes
+	Serialized data: at 0x00000000000217c0 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 280]
 	Full Name: ParticleModuleRotation explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleRotation_1
@@ -2898,7 +2908,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRotation
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002180d with 0x00000071 Bytes
+	Serialized data: at 0x0000000000021831 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 281]
 	Full Name: ParticleModuleRotation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRotation_2
@@ -2906,7 +2916,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRotation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002187e with 0x00000071 Bytes
+	Serialized data: at 0x00000000000218a2 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 282]
 	Full Name: ParticleModuleRotation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRotation_3
@@ -2914,7 +2924,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRotation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000218ef with 0x00000071 Bytes
+	Serialized data: at 0x0000000000021913 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 283]
 	Full Name: ParticleModuleRotation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRotation_5
@@ -2922,7 +2932,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRotation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021960 with 0x00000071 Bytes
+	Serialized data: at 0x0000000000021984 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 284]
 	Full Name: ParticleModuleRotation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRotation_6
@@ -2930,7 +2940,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRotation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000219d1 with 0x00000071 Bytes
+	Serialized data: at 0x00000000000219f5 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 285]
 	Full Name: ParticleModuleRotation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRotation_7
@@ -2938,7 +2948,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRotation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021a42 with 0x00000071 Bytes
+	Serialized data: at 0x0000000000021a66 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 286]
 	Full Name: ParticleModuleRotation explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRotation_8
@@ -2946,7 +2956,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRotation
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021ab3 with 0x00000071 Bytes
+	Serialized data: at 0x0000000000021ad7 with 0x00000071 Bytes
 	Export Flags: 0x00000001
 [Export 287]
 	Full Name: ParticleModuleRotationRate explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRotationRate_0
@@ -2954,7 +2964,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRotationRate
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021b24 with 0x0000009d Bytes
+	Serialized data: at 0x0000000000021b48 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 288]
 	Full Name: ParticleModuleRotationRate explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRotationRate_1
@@ -2962,7 +2972,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRotationRate
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021bc1 with 0x00000108 Bytes
+	Serialized data: at 0x0000000000021be5 with 0x00000108 Bytes
 	Export Flags: 0x00000001
 [Export 289]
 	Full Name: ParticleModuleRotationRate explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRotationRate_2
@@ -2970,7 +2980,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRotationRate
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021cc9 with 0x0000009d Bytes
+	Serialized data: at 0x0000000000021ced with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 290]
 	Full Name: ParticleModuleRotationRate explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRotationRate_3
@@ -2978,7 +2988,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRotationRate
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021d66 with 0x0000009d Bytes
+	Serialized data: at 0x0000000000021d8a with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 291]
 	Full Name: ParticleModuleRotationRateMultiplyLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRotationRateMultiplyLife_0
@@ -2986,7 +2996,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRotationRateMultiplyLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021e03 with 0x00000105 Bytes
+	Serialized data: at 0x0000000000021e27 with 0x00000105 Bytes
 	Export Flags: 0x00000001
 [Export 292]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.Complements_PS.ParticleModuleSize_24
@@ -2994,7 +3004,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: Complements_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000021f08 with 0x00000128 Bytes
+	Serialized data: at 0x0000000000021f2c with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [Export 293]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleSize_1
@@ -3002,7 +3012,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022030 with 0x00000128 Bytes
+	Serialized data: at 0x0000000000022054 with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [Export 294]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleSize_2
@@ -3010,7 +3020,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022158 with 0x00000149 Bytes
+	Serialized data: at 0x000000000002217c with 0x00000149 Bytes
 	Export Flags: 0x00000001
 [Export 295]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleSize_3
@@ -3018,7 +3028,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000222a1 with 0x000000ad Bytes
+	Serialized data: at 0x00000000000222c5 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 296]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSize_10
@@ -3026,7 +3036,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013ea13 with 0x000000ad Bytes
+	Serialized data: at 0x000000000013ea37 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 297]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSize_11
@@ -3034,7 +3044,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000223fb with 0x000000ad Bytes
+	Serialized data: at 0x000000000002241f with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 298]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSize_12
@@ -3042,7 +3052,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000224a8 with 0x000000ad Bytes
+	Serialized data: at 0x00000000000224cc with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 299]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSize_13
@@ -3050,7 +3060,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022555 with 0x00000128 Bytes
+	Serialized data: at 0x0000000000022579 with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [Export 300]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSize_15
@@ -3058,7 +3068,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002267d with 0x000000ad Bytes
+	Serialized data: at 0x00000000000226a1 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 301]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSize_18
@@ -3066,7 +3076,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002272a with 0x000000ad Bytes
+	Serialized data: at 0x000000000002274e with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 302]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSize_19
@@ -3074,7 +3084,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000227d7 with 0x00000128 Bytes
+	Serialized data: at 0x00000000000227fb with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [Export 303]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSize_20
@@ -3082,7 +3092,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000228ff with 0x000000ad Bytes
+	Serialized data: at 0x0000000000022923 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 304]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSize_22
@@ -3090,7 +3100,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000229ac with 0x000000ad Bytes
+	Serialized data: at 0x00000000000229d0 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 305]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSize_23
@@ -3098,7 +3108,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022a59 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000022a7d with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 306]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSize_24
@@ -3106,7 +3116,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022b06 with 0x00000128 Bytes
+	Serialized data: at 0x0000000000022b2a with 0x00000128 Bytes
 	Export Flags: 0x00000001
 [Export 307]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSize_26
@@ -3114,7 +3124,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022c2e with 0x00000149 Bytes
+	Serialized data: at 0x0000000000022c52 with 0x00000149 Bytes
 	Export Flags: 0x00000001
 [Export 308]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSize_3
@@ -3122,7 +3132,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022d77 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000022d9b with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 309]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSize_5
@@ -3130,7 +3140,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022e24 with 0x000000ad Bytes
+	Serialized data: at 0x0000000000022e48 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 310]
 	Full Name: ParticleModuleSizeMultiplyLife explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleSizeMultiplyLife_0
@@ -3138,7 +3148,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022ed1 with 0x000000c9 Bytes
+	Serialized data: at 0x0000000000022ef5 with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 311]
 	Full Name: ParticleModuleSizeMultiplyLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSizeMultiplyLife_10
@@ -3146,7 +3156,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000022f9a with 0x000001ad Bytes
+	Serialized data: at 0x0000000000022fbe with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 312]
 	Full Name: ParticleModuleSizeMultiplyLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSizeMultiplyLife_13
@@ -3154,7 +3164,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023147 with 0x000000c9 Bytes
+	Serialized data: at 0x000000000002316b with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 313]
 	Full Name: ParticleModuleSizeMultiplyLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSizeMultiplyLife_15
@@ -3162,7 +3172,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023210 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000023234 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 314]
 	Full Name: ParticleModuleSizeMultiplyLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSizeMultiplyLife_2
@@ -3170,7 +3180,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000233bd with 0x000001ad Bytes
+	Serialized data: at 0x00000000000233e1 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 315]
 	Full Name: ParticleModuleSizeMultiplyLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSizeMultiplyLife_5
@@ -3178,7 +3188,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002356a with 0x000000c9 Bytes
+	Serialized data: at 0x000000000002358e with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 316]
 	Full Name: ParticleModuleSizeMultiplyLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSizeMultiplyLife_9
@@ -3186,7 +3196,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023633 with 0x000001ad Bytes
+	Serialized data: at 0x0000000000023657 with 0x000001ad Bytes
 	Export Flags: 0x00000001
 [Export 317]
 	Full Name: ParticleModuleSizeScale explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleSizeScale_0
@@ -3194,7 +3204,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSizeScale
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000237e0 with 0x000000c9 Bytes
+	Serialized data: at 0x0000000000023804 with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 318]
 	Full Name: ParticleModuleSizeScale explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleSizeScale_1
@@ -3202,7 +3212,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSizeScale
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000238a9 with 0x000000c9 Bytes
+	Serialized data: at 0x00000000000238cd with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 319]
 	Full Name: ParticleModuleSizeScale explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSizeScale_2
@@ -3210,7 +3220,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSizeScale
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023972 with 0x00000135 Bytes
+	Serialized data: at 0x0000000000023996 with 0x00000135 Bytes
 	Export Flags: 0x00000001
 [Export 320]
 	Full Name: ParticleModuleSizeScale explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSizeScale_4
@@ -3218,7 +3228,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSizeScale
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023aa7 with 0x000000c9 Bytes
+	Serialized data: at 0x0000000000023acb with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 321]
 	Full Name: ParticleModuleSizeScale explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSizeScale_5
@@ -3226,7 +3236,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSizeScale
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023b70 with 0x00000135 Bytes
+	Serialized data: at 0x0000000000023b94 with 0x00000135 Bytes
 	Export Flags: 0x00000001
 [Export 322]
 	Full Name: ParticleModuleSizeScale explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSizeScale_6
@@ -3234,7 +3244,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSizeScale
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023ca5 with 0x000000c9 Bytes
+	Serialized data: at 0x0000000000023cc9 with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 323]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.Complements_PS.ParticleModuleSpawn_24
@@ -3242,7 +3252,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: Complements_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023d6e with 0x000000fd Bytes
+	Serialized data: at 0x0000000000023d92 with 0x000000fd Bytes
 	Export Flags: 0x00000001
 [Export 324]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleSpawn_1
@@ -3250,7 +3260,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023e6b with 0x00000175 Bytes
+	Serialized data: at 0x0000000000023e8f with 0x00000175 Bytes
 	Export Flags: 0x00000001
 [Export 325]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleSpawn_2
@@ -3258,7 +3268,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000023fe0 with 0x000000e1 Bytes
+	Serialized data: at 0x0000000000024004 with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 326]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleSpawn_3
@@ -3266,7 +3276,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000240c1 with 0x000000fd Bytes
+	Serialized data: at 0x00000000000240e5 with 0x000000fd Bytes
 	Export Flags: 0x00000001
 [Export 327]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleModuleSpawn_4
@@ -3274,7 +3284,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000241be with 0x00000159 Bytes
+	Serialized data: at 0x00000000000241e2 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 328]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSpawn_11
@@ -3282,7 +3292,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024317 with 0x00000159 Bytes
+	Serialized data: at 0x000000000002433b with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 329]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSpawn_12
@@ -3290,7 +3300,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024470 with 0x00000185 Bytes
+	Serialized data: at 0x0000000000024494 with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 330]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSpawn_13
@@ -3298,7 +3308,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000245f5 with 0x00000159 Bytes
+	Serialized data: at 0x0000000000024619 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 331]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSpawn_14
@@ -3306,7 +3316,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002474e with 0x00000159 Bytes
+	Serialized data: at 0x0000000000024772 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 332]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSpawn_15
@@ -3314,7 +3324,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000248a7 with 0x00000185 Bytes
+	Serialized data: at 0x00000000000248cb with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 333]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSpawn_16
@@ -3322,7 +3332,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024a2c with 0x00000159 Bytes
+	Serialized data: at 0x0000000000024a50 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 334]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSpawn_19
@@ -3330,7 +3340,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024b85 with 0x00000159 Bytes
+	Serialized data: at 0x0000000000024ba9 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 335]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSpawn_20
@@ -3338,7 +3348,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024cde with 0x00000159 Bytes
+	Serialized data: at 0x0000000000024d02 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 336]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSpawn_21
@@ -3346,7 +3356,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024e37 with 0x00000159 Bytes
+	Serialized data: at 0x0000000000024e5b with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 337]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSpawn_23
@@ -3354,7 +3364,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000024f90 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000024fb4 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 338]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSpawn_24
@@ -3362,7 +3372,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000250a9 with 0x00000159 Bytes
+	Serialized data: at 0x00000000000250cd with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 339]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSpawn_25
@@ -3370,7 +3380,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025202 with 0x00000119 Bytes
+	Serialized data: at 0x0000000000025226 with 0x00000119 Bytes
 	Export Flags: 0x00000001
 [Export 340]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSpawn_27
@@ -3378,7 +3388,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002531b with 0x000000e1 Bytes
+	Serialized data: at 0x000000000002533f with 0x000000e1 Bytes
 	Export Flags: 0x00000001
 [Export 341]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSpawn_4
@@ -3386,7 +3396,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000253fc with 0x00000159 Bytes
+	Serialized data: at 0x0000000000025420 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 342]
 	Full Name: ParticleModuleTypeDataMesh explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleTypeDataMesh_3
@@ -3394,7 +3404,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleTypeDataMesh
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025555 with 0x000000a3 Bytes
+	Serialized data: at 0x0000000000025579 with 0x000000a3 Bytes
 	Export Flags: 0x00000001
 [Export 343]
 	Full Name: ParticleModuleTypeDataMesh explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleTypeDataMesh_5
@@ -3402,7 +3412,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleTypeDataMesh
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000255f8 with 0x00000062 Bytes
+	Serialized data: at 0x000000000002561c with 0x00000062 Bytes
 	Export Flags: 0x00000001
 [Export 344]
 	Full Name: ParticleModuleTypeDataMesh explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleTypeDataMesh_6
@@ -3410,7 +3420,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleTypeDataMesh
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002565a with 0x00000094 Bytes
+	Serialized data: at 0x000000000002567e with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 345]
 	Full Name: ParticleModuleTypeDataMesh explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleTypeDataMesh_7
@@ -3418,7 +3428,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleTypeDataMesh
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000256ee with 0x00000062 Bytes
+	Serialized data: at 0x0000000000025712 with 0x00000062 Bytes
 	Export Flags: 0x00000001
 [Export 346]
 	Full Name: ParticleModuleTypeDataMesh explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleTypeDataMesh_8
@@ -3426,7 +3436,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleTypeDataMesh
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025750 with 0x00000094 Bytes
+	Serialized data: at 0x0000000000025774 with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 347]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.Complements_PS.ParticleSpriteEmitter_24
@@ -3434,7 +3444,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: Complements_PS
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000257e4 with 0x0000002c Bytes
+	Serialized data: at 0x0000000000025808 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 348]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleSpriteEmitter_1
@@ -3442,7 +3452,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025810 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000025834 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 349]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleSpriteEmitter_2
@@ -3450,7 +3460,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002585c with 0x0000004c Bytes
+	Serialized data: at 0x0000000000025880 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 350]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleSpriteEmitter_3
@@ -3458,7 +3468,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000258a8 with 0x0000004c Bytes
+	Serialized data: at 0x00000000000258cc with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 351]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact.ParticleSpriteEmitter_4
@@ -3466,7 +3476,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_PowerStar_BallImpact
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000258f4 with 0x0000002c Bytes
+	Serialized data: at 0x0000000000025918 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 352]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_11
@@ -3474,7 +3484,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025920 with 0x0000002c Bytes
+	Serialized data: at 0x0000000000025944 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 353]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_12
@@ -3482,7 +3492,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000002594c with 0x0000004c Bytes
+	Serialized data: at 0x0000000000025970 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 354]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_13
@@ -3490,7 +3500,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025998 with 0x0000002c Bytes
+	Serialized data: at 0x00000000000259bc with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 355]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_14
@@ -3498,7 +3508,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000259c4 with 0x0000002c Bytes
+	Serialized data: at 0x00000000000259e8 with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 356]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_15
@@ -3506,7 +3516,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000000259f0 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000025a14 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 357]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_16
@@ -3514,7 +3524,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025a3c with 0x0000004c Bytes
+	Serialized data: at 0x0000000000025a60 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 358]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_19
@@ -3522,7 +3532,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025a88 with 0x0000002c Bytes
+	Serialized data: at 0x0000000000025aac with 0x0000002c Bytes
 	Export Flags: 0x00000001
 [Export 359]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_20
@@ -3530,7 +3540,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025ab4 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000025ad8 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 360]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_21
@@ -3538,7 +3548,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025b00 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000025b24 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 361]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_23
@@ -3546,7 +3556,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025b4c with 0x0000004c Bytes
+	Serialized data: at 0x0000000000025b70 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 362]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_24
@@ -3554,7 +3564,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025b98 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000025bbc with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 363]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_25
@@ -3562,7 +3572,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025be4 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000025c08 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 364]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_27
@@ -3570,7 +3580,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025c30 with 0x0000004c Bytes
+	Serialized data: at 0x0000000000025c54 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 365]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_4
@@ -3578,7 +3588,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x0000000000025c7c with 0x0000004c Bytes
+	Serialized data: at 0x0000000000025ca0 with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 366]
 	Full Name: ParticleSystem explosion_powerstar.explosion_powerstar.Complements_PS
@@ -3586,7 +3596,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSystem
 	Outer: explosion_powerstar
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000025cc8 with 0x0000011f Bytes
+	Serialized data: at 0x0000000000025cec with 0x0000011f Bytes
 	Export Flags: 0x00000001
 [Export 367]
 	Full Name: ParticleSystem explosion_powerstar.explosion_powerstar.PS_PowerStar_BallImpact
@@ -3594,7 +3604,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSystem
 	Outer: explosion_powerstar
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x0000000000025de7 with 0x0000012b Bytes
+	Serialized data: at 0x0000000000025e0b with 0x0000012b Bytes
 	Export Flags: 0x00000001
 [Export 368]
 	Full Name: ParticleSystem explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP
@@ -3602,7 +3612,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSystem
 	Outer: explosion_powerstar
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000013eac0 with 0x0000015b Bytes
+	Serialized data: at 0x000000000013eae4 with 0x0000015b Bytes
 	Export Flags: 0x00000001
 [Export 369]
 	Full Name: ParticleSystemComponent explosion_powerstar.explosion_powerstar.FXActorExplosion_ReactiveFree01_MVP.ParticleSystemComponent_1
@@ -3610,7 +3620,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSystemComponent
 	Outer: FXActorExplosion_ReactiveFree01_MVP
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000026065 with 0x00000061 Bytes
+	Serialized data: at 0x0000000000140227 with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 370]
 	Full Name: ParticleSystemComponent_TA explosion_powerstar.explosion_powerstar.FXActorExplosion_ReactiveFree01_MVP.ParticleSystemComponent_TA_0
@@ -3618,7 +3628,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSystemComponent_TA
 	Outer: FXActorExplosion_ReactiveFree01_MVP
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x00000000000260c6 with 0x0000008d Bytes
+	Serialized data: at 0x00000000001402b4 with 0x000000b9 Bytes
 	Export Flags: 0x00000001
 [Export 371]
 	Full Name: ParticleSystemComponent_TA explosion_powerstar.explosion_powerstar.FXActorExplosion_ReactiveFree01_MVP.ParticleSystemComponent_TA_1
@@ -3626,7 +3636,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSystemComponent_TA
 	Outer: FXActorExplosion_ReactiveFree01_MVP
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000026153 with 0x00000061 Bytes
+	Serialized data: at 0x000000000014036d with 0x0000008d Bytes
 	Export Flags: 0x00000001
 [Export 372]
 	Full Name: ProductAsset_GoalExplosion_TA explosion_powerstar.explosion_powerstar.explosion_powerstar
@@ -3635,7 +3645,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Outer: explosion_powerstar
 	Archetype: ProductAsset_GoalExplosion_TA_0
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000261b4 with 0x00000048 Bytes
+	Serialized data: at 0x00000000000261d8 with 0x00000048 Bytes
 	Export Flags: 0x00000001
 [Export 373]
 	Full Name: ProductAttribute_PaintSettings_TA explosion_powerstar.explosion_powerstar.explosion_powerstar.ProductAttribute_PaintSettings_TA_0
@@ -3643,7 +3653,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ProductAttribute_PaintSettings_TA
 	Outer: explosion_powerstar
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000261fc with 0x00000246 Bytes
+	Serialized data: at 0x0000000000026220 with 0x00000246 Bytes
 	Export Flags: 0x00000001
 [Export 374]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA explosion_powerstar.explosion_powerstar.explosion_powerstar.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_0
@@ -3651,7 +3661,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000026442 with 0x000000c4 Bytes
+	Serialized data: at 0x0000000000026466 with 0x000000c4 Bytes
 	Export Flags: 0x00000001
 [Export 375]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA explosion_powerstar.explosion_powerstar.explosion_powerstar.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_1
@@ -3659,7 +3669,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000026506 with 0x000000c4 Bytes
+	Serialized data: at 0x000000000002652a with 0x000000c4 Bytes
 	Export Flags: 0x00000001
 [Export 376]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA explosion_powerstar.explosion_powerstar.explosion_powerstar.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_2
@@ -3667,7 +3677,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x00000000000265ca with 0x000000c4 Bytes
+	Serialized data: at 0x00000000000265ee with 0x000000c4 Bytes
 	Export Flags: 0x00000001
 [Export 377]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA explosion_powerstar.explosion_powerstar.explosion_powerstar.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_3
@@ -3675,7 +3685,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002668e with 0x000000c4 Bytes
+	Serialized data: at 0x00000000000266b2 with 0x000000c4 Bytes
 	Export Flags: 0x00000001
 [Export 378]
 	Full Name: ProductOverride_ParticleSystemColorParameter_TA explosion_powerstar.explosion_powerstar.explosion_powerstar.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemColorParameter_TA_4
@@ -3683,7 +3693,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ProductOverride_ParticleSystemColorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000026752 with 0x000000c4 Bytes
+	Serialized data: at 0x0000000000026776 with 0x000000c4 Bytes
 	Export Flags: 0x00000001
 [Export 379]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_powerstar.explosion_powerstar.explosion_powerstar.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_0
@@ -3691,7 +3701,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000026816 with 0x00000138 Bytes
+	Serialized data: at 0x000000000002683a with 0x00000138 Bytes
 	Export Flags: 0x00000001
 [Export 380]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_powerstar.explosion_powerstar.explosion_powerstar.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_1
@@ -3699,7 +3709,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x000000000002694e with 0x0000017c Bytes
+	Serialized data: at 0x0000000000026972 with 0x0000017c Bytes
 	Export Flags: 0x00000001
 [Export 381]
 	Full Name: ProductOverride_ParticleSystemFloatParameter_TA explosion_powerstar.explosion_powerstar.explosion_powerstar.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemFloatParameter_TA_2
@@ -3707,7 +3717,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ProductOverride_ParticleSystemFloatParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000026aca with 0x0000006c Bytes
+	Serialized data: at 0x0000000000026aee with 0x0000006c Bytes
 	Export Flags: 0x00000001
 [Export 382]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA explosion_powerstar.explosion_powerstar.explosion_powerstar.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_0
@@ -3715,7 +3725,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000026b36 with 0x000000d0 Bytes
+	Serialized data: at 0x0000000000026b5a with 0x000000d0 Bytes
 	Export Flags: 0x00000001
 [Export 383]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA explosion_powerstar.explosion_powerstar.explosion_powerstar.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_1
@@ -3723,7 +3733,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000026c06 with 0x000000d0 Bytes
+	Serialized data: at 0x0000000000026c2a with 0x000000d0 Bytes
 	Export Flags: 0x00000001
 [Export 384]
 	Full Name: ProductOverride_ParticleSystemVectorParameter_TA explosion_powerstar.explosion_powerstar.explosion_powerstar.ProductAttribute_PaintSettings_TA_0.ProductOverride_ParticleSystemVectorParameter_TA_2
@@ -3731,7 +3741,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ProductOverride_ParticleSystemVectorParameter_TA
 	Outer: ProductAttribute_PaintSettings_TA_0
 	Object Flags: 0x0007000400000000
-	Serialized data: at 0x0000000000026cd6 with 0x000000d0 Bytes
+	Serialized data: at 0x0000000000026cfa with 0x000000d0 Bytes
 	Export Flags: 0x00000001
 [Export 385]
 	Full Name: ShakeComponent_X Archetypes.Explosion_Parent_FXActor.ShakeComponent_X_0
@@ -3739,7 +3749,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ShakeComponent_X
 	Outer: Explosion_Parent_FXActor
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000026da6 with 0x000000b2 Bytes
+	Serialized data: at 0x0000000000026dca with 0x000000b2 Bytes
 	Export Flags: 0x00000001
 [Export 386]
 	Full Name: ShakeComponent_X explosion_powerstar.explosion_powerstar.FXActorExplosion_ReactiveFree01_MVP.ShakeComponent_X_0
@@ -3747,7 +3757,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ShakeComponent_X
 	Outer: FXActorExplosion_ReactiveFree01_MVP
 	Object Flags: 0x0007000502000400
-	Serialized data: at 0x0000000000026e58 with 0x0000032e Bytes
+	Serialized data: at 0x0000000000026e7c with 0x0000032e Bytes
 	Export Flags: 0x00000001
 [Export 387]
 	Full Name: StaticMesh explosion_powerstar.explosion_powerstar.Cilinder_SM
@@ -3755,7 +3765,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: StaticMesh
 	Outer: explosion_powerstar
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000027186 with 0x00001191 Bytes
+	Serialized data: at 0x00000000000271aa with 0x00001191 Bytes
 	Export Flags: 0x00000001
 [Export 388]
 	Full Name: StaticMesh explosion_powerstar.explosion_powerstar.Vortex1_SM
@@ -3763,7 +3773,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: StaticMesh
 	Outer: explosion_powerstar
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000028317 with 0x000030e9 Bytes
+	Serialized data: at 0x000000000002833b with 0x000030e9 Bytes
 	Export Flags: 0x00000001
 [Export 389]
 	Full Name: StaticMesh explosion_powerstar.explosion_spellbook.Portal3D_SM
@@ -3771,7 +3781,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: StaticMesh
 	Outer: explosion_spellbook
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000002b400 with 0x000073cd Bytes
+	Serialized data: at 0x000000000002b424 with 0x000073cd Bytes
 	Export Flags: 0x00000001
 [Export 390]
 	Full Name: Texture2D Textures.Destello_RGB_T
@@ -3779,7 +3789,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000327cd with 0x00000cf4 Bytes
+	Serialized data: at 0x00000000000327f1 with 0x00000cf4 Bytes
 	Export Flags: 0x00000001
 [Export 391]
 	Full Name: Texture2D Txt.VoidTransparency_M_T
@@ -3787,7 +3797,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Texture2D
 	Outer: Txt
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x00000000000334c1 with 0x00001790 Bytes
+	Serialized data: at 0x00000000000334e5 with 0x00001790 Bytes
 	Export Flags: 0x00000001
 [Export 392]
 	Full Name: Texture2D Textures.CausticsNoMip_D
@@ -3795,7 +3805,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000034c51 with 0x00100194 Bytes
+	Serialized data: at 0x0000000000034c75 with 0x00100194 Bytes
 	Export Flags: 0x00000001
 [Export 393]
 	Full Name: Texture2D explosion_powerstar.Explosion_GeoGeometry.GeoGeometry_Diff01_T
@@ -3803,7 +3813,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Texture2D
 	Outer: Explosion_GeoGeometry
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000134de5 with 0x00000d10 Bytes
+	Serialized data: at 0x0000000000134e09 with 0x00000d10 Bytes
 	Export Flags: 0x00000001
 [Export 394]
 	Full Name: Texture2D Textures.Dot_Soft_Mask
@@ -3811,7 +3821,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000135af5 with 0x00000d28 Bytes
+	Serialized data: at 0x0000000000135b19 with 0x00000d28 Bytes
 	Export Flags: 0x00000001
 [Export 395]
 	Full Name: Texture2D Textures.StarGlint_02_mask
@@ -3819,7 +3829,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Texture2D
 	Outer: Textures
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000013681d with 0x00000d28 Bytes
+	Serialized data: at 0x0000000000136841 with 0x00000d28 Bytes
 	Export Flags: 0x00000001
 [Export 396]
 	Full Name: Texture2D explosion_powerstar.explosion_laserbeam.RadialExplosion_M_T
@@ -3827,7 +3837,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Texture2D
 	Outer: explosion_laserbeam
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000137545 with 0x00000cd8 Bytes
+	Serialized data: at 0x0000000000137569 with 0x00000cd8 Bytes
 	Export Flags: 0x00000001
 [Export 397]
 	Full Name: Texture2D explosion_powerstar.explosion_powerstar.CircleLight_M_T
@@ -3835,7 +3845,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Texture2D
 	Outer: explosion_powerstar
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000013821d with 0x00000cd8 Bytes
+	Serialized data: at 0x0000000000138241 with 0x00000cd8 Bytes
 	Export Flags: 0x00000001
 [Export 398]
 	Full Name: Texture2D explosion_powerstar.explosion_powerstar.Energy_M_T
@@ -3843,7 +3853,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Texture2D
 	Outer: explosion_powerstar
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000138ef5 with 0x00000cf4 Bytes
+	Serialized data: at 0x0000000000138f19 with 0x00000cf4 Bytes
 	Export Flags: 0x00000001
 [Export 399]
 	Full Name: Texture2D explosion_powerstar.explosion_powerstar.Star1_TXT
@@ -3851,7 +3861,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Texture2D
 	Outer: explosion_powerstar
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x0000000000139be9 with 0x00001790 Bytes
+	Serialized data: at 0x0000000000139c0d with 0x00001790 Bytes
 	Export Flags: 0x00000001
 [Export 400]
 	Full Name: Texture2D explosion_powerstar.explosion_spellbook.NormalHole_normals
@@ -3859,7 +3869,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Texture2D
 	Outer: explosion_spellbook
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000013b379 with 0x00001790 Bytes
+	Serialized data: at 0x000000000013b39d with 0x00001790 Bytes
 	Export Flags: 0x00000001
 [Export 401]
 	Full Name: Texture2D explosion_powerstar.explosion_spellbook.Portal_T_RGB
@@ -3867,7 +3877,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: Texture2D
 	Outer: explosion_spellbook
 	Object Flags: 0x000f000400000000
-	Serialized data: at 0x000000000013cb09 with 0x00000cd8 Bytes
+	Serialized data: at 0x000000000013cb2d with 0x00000cd8 Bytes
 	Export Flags: 0x00000001
 [Export 402]
 	Full Name: DistributionVectorParticleParameter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_0.DistributionVectorParticleParameter_3
@@ -3875,7 +3885,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: DistributionVectorParticleParameter
 	Outer: ParticleModuleColor_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013ec1b with 0x000000ed Bytes
+	Serialized data: at 0x000000000013ec3f with 0x000000ed Bytes
 	Export Flags: 0x00000001
 [Export 403]
 	Full Name: MaterialInstanceConstant Materials.ImpactFrame_MIC
@@ -3883,7 +3893,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: MaterialInstanceConstant
 	Outer: Materials
 	Object Flags: 0x000f000500000000
-	Serialized data: at 0x000000000013ed08 with 0x00000471 Bytes
+	Serialized data: at 0x000000000013ed2c with 0x00000471 Bytes
 	Export Flags: 0x00000001
 [Export 404]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_0.ParticleLODLevel_0
@@ -3891,7 +3901,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_0
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013f179 with 0x00000094 Bytes
+	Serialized data: at 0x000000000013f19d with 0x00000094 Bytes
 	Export Flags: 0x00000001
 [Export 405]
 	Full Name: ParticleLODLevel explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_1.ParticleLODLevel_1
@@ -3899,7 +3909,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleLODLevel
 	Outer: ParticleSpriteEmitter_1
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013f20d with 0x00000090 Bytes
+	Serialized data: at 0x000000000013f231 with 0x00000090 Bytes
 	Export Flags: 0x00000001
 [Export 406]
 	Full Name: ParticleModuleCameraOffset explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleCameraOffset_0
@@ -3907,7 +3917,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleCameraOffset
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013f29d with 0x0000009d Bytes
+	Serialized data: at 0x000000000013f2c1 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 407]
 	Full Name: ParticleModuleColor explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_0
@@ -3915,7 +3925,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColor
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013f33a with 0x000000d1 Bytes
+	Serialized data: at 0x000000000013f35e with 0x000000d1 Bytes
 	Export Flags: 0x00000001
 [Export 408]
 	Full Name: ParticleModuleColor explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColor_1
@@ -3923,7 +3933,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColor
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013f40b with 0x000000f1 Bytes
+	Serialized data: at 0x000000000013f42f with 0x000000f1 Bytes
 	Export Flags: 0x00000001
 [Export 409]
 	Full Name: ParticleModuleColorScaleOverLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_0
@@ -3931,7 +3941,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013f4fc with 0x00000185 Bytes
+	Serialized data: at 0x000000000013f520 with 0x00000185 Bytes
 	Export Flags: 0x00000001
 [Export 410]
 	Full Name: ParticleModuleColorScaleOverLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleColorScaleOverLife_1
@@ -3939,7 +3949,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleColorScaleOverLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013f681 with 0x000001a1 Bytes
+	Serialized data: at 0x000000000013f6a5 with 0x000001a1 Bytes
 	Export Flags: 0x00000001
 [Export 411]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLifetime_0
@@ -3947,7 +3957,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013f822 with 0x0000009d Bytes
+	Serialized data: at 0x000000000013f846 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 412]
 	Full Name: ParticleModuleLifetime explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleLifetime_1
@@ -3955,7 +3965,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleLifetime
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013f8bf with 0x0000009d Bytes
+	Serialized data: at 0x000000000013f8e3 with 0x0000009d Bytes
 	Export Flags: 0x00000001
 [Export 413]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRequired_0
@@ -3963,7 +3973,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013f95c with 0x00000145 Bytes
+	Serialized data: at 0x000000000013f980 with 0x00000145 Bytes
 	Export Flags: 0x00000001
 [Export 414]
 	Full Name: ParticleModuleRequired explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleRequired_1
@@ -3971,7 +3981,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleRequired
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013faa1 with 0x00000113 Bytes
+	Serialized data: at 0x000000000013fac5 with 0x00000113 Bytes
 	Export Flags: 0x00000001
 [Export 415]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSize_0
@@ -3979,7 +3989,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013fbb4 with 0x000000ad Bytes
+	Serialized data: at 0x000000000013fbd8 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 416]
 	Full Name: ParticleModuleSize explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSize_1
@@ -3987,7 +3997,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSize
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013fc61 with 0x000000ad Bytes
+	Serialized data: at 0x000000000013fc85 with 0x000000ad Bytes
 	Export Flags: 0x00000001
 [Export 417]
 	Full Name: ParticleModuleSizeMultiplyLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSizeMultiplyLife_0
@@ -3995,7 +4005,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013fd0e with 0x000000c9 Bytes
+	Serialized data: at 0x000000000013fd32 with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 418]
 	Full Name: ParticleModuleSizeMultiplyLife explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSizeMultiplyLife_1
@@ -4003,7 +4013,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSizeMultiplyLife
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013fdd7 with 0x000000c9 Bytes
+	Serialized data: at 0x000000000013fdfb with 0x000000c9 Bytes
 	Export Flags: 0x00000001
 [Export 419]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSpawn_0
@@ -4011,7 +4021,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013fea0 with 0x00000159 Bytes
+	Serialized data: at 0x000000000013fec4 with 0x00000159 Bytes
 	Export Flags: 0x00000001
 [Export 420]
 	Full Name: ParticleModuleSpawn explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleModuleSpawn_1
@@ -4019,7 +4029,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleModuleSpawn
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000013fff9 with 0x00000172 Bytes
+	Serialized data: at 0x000000000014001d with 0x00000172 Bytes
 	Export Flags: 0x00000001
 [Export 421]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_0
@@ -4027,7 +4037,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x000000000014016b with 0x0000004c Bytes
+	Serialized data: at 0x000000000014018f with 0x0000004c Bytes
 	Export Flags: 0x00000001
 [Export 422]
 	Full Name: ParticleSpriteEmitter explosion_powerstar.explosion_powerstar.PS_ReactiveFree01_MVP.ParticleSpriteEmitter_1
@@ -4035,7 +4045,7 @@ AES: vUoxJXAZiE849/WHwbNJNfXdmr7uL6APzesNc5GIz2w=
 	Class: ParticleSpriteEmitter
 	Outer: PS_ReactiveFree01_MVP
 	Object Flags: 0x0007000100000000
-	Serialized data: at 0x00000000001401b7 with 0x0000004c Bytes
+	Serialized data: at 0x00000000001401db with 0x0000004c Bytes
 	Export Flags: 0x00000001
 
 
