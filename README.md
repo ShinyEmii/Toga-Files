@@ -9,6 +9,8 @@ This info includes:
 - Exports
 ## [PackageDecrypted](PackageDecrypted/)
 This directory is deprecated. Instead use this [UEViewer](https://github.com/ShinyEmii/UEViewer) fork that handles Rocket League packages.
+## [EWEMDecrypted](EWEMDecrypted/)
+This directory is deprecated.
 # Files
 ## [aes.txt](aes.txt)
 Every AES key currently used in game.
