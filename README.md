@@ -12,6 +12,8 @@ This directory is deprecated. Instead use this [UEViewer](https://github.com/Shi
 ## [EWEMDecrypted](EWEMDecrypted/)
 This directory is deprecated.
 # Files
+## [meta.txt](meta.txt)
+Info about the build.
 ## [aes.txt](aes.txt)
 Every AES key currently used in game.
 ## [sorted_aes.txt](sorted_aes.txt)
